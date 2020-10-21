@@ -1,0 +1,1970 @@
+Contributor,Date,Message,Files
+Kevin Hester,2014-03-27,first commit,['README.md']
+Kevin Hester,2014-03-27,add apache license,['LICENSE']
+Kevin Hester,2014-03-27,Move previous sketch into this project.,"['README.md,.gitignore,DroneApi.py,client_sketch.py']"
+Kevin Hester,2014-03-27,initial guess at a setup.py script,['setup.py']
+Kevin Hester,2014-03-27,change directory structure,"['.gitignore,DroneApi.py']"
+Kevin Hester,2014-03-27,module loads now in mavproxy,"['.gitignore,.gitignore,DroneApi.py,api.py']"
+Kevin Hester,2014-03-27,"mavproxy api module approximately works, now adding missing functions","['DroneApi.py,api.py']"
+Kevin Hester,2014-03-27,make HasAttributeObservers work,['DroneApi.py']
+Kevin Hester,2014-03-28,attitude/location works,"['DroneApi.py,api.py']"
+Kevin Hester,2014-03-28,gps info works,"['README.md,DroneApi.py,api.py']"
+Kevin Hester,2014-03-28,basic parameter access works,"['DroneApi.py,api.py']"
+Kevin Hester,2014-03-28,waypoints approximately work,"['DroneApi.py,api.py']"
+Kevin Hester,2014-03-28,Updates to make nice packages,"['DroneApi.py,api.py,setup.py']"
+Kevin Hester,2014-03-28,add a small stand-alone demo,"['.gitignore,small-demo.py']"
+Kevin Hester,2014-03-29,add fake data for the gpsd service (follow-me example),"['fake-gps-data.log,run-fake-gps.sh']"
+Kevin Hester,2014-03-29,allow running API stuff in theads,['api.py']
+Kevin Hester,2014-03-29,A minimal API example,['small-demo.py']
+Kevin Hester,2014-03-30,add follow-me example,"['api.py,follow_me.py,run-fake-gps.sh,small_demo.py,setup.py']"
+Kevin Hester,2014-03-30,fix doc typos,['follow_me.py']
+Kevin Hester,2014-03-30,python autodoc tools,"['.gitignore,Makefile,.gitignore,.gitignore,conf.py,index.rst,update-docs.sh']"
+Kevin Hester,2014-03-30,add links to readme,['README.md']
+Kevin Hester,2014-03-31,README typos,['README.md']
+Kevin Hester,2014-04-02,update release script,"['README.md,setup.py']"
+Kevin Hester,2014-04-24,turn on CI builds...,['README.md']
+Kevin Hester,2014-04-24,deployment script for releases,['do-upload.sh']
+Kevin Hester,2014-04-24,requirements for CI builds,['requirements.txt']
+Kevin Hester,2014-05-10,add new API callbacks,['api.py']
+Kevin Hester,2014-05-10,better docs,['']
+Kevin Hester,2014-05-23,fix hasobservers,['api.py']
+Kevin Hester,2014-05-23,Fix reading of current next wpt (see example below),"['api.py,small_demo.py,setup.py']"
+Kevin Hester,2014-05-25,fix message_factory,['api.py']
+Kevin Hester,2014-05-25,"Add test-case/example for sending raw mavlink:
+
++msg = v.message_factory.command_long_encode(0, 0,
++                                  mavutil.mavlink.MAV_CMD_CONDITION_YAW, 0,
++                                  0, 0, 0, 0, 1, 0, 0)
++print ""Created msg: %s"" % msg
++v.send_mavlink(msg)
+
+When run the following output is expected:
+
+AUTO> api start small_demo.py
+Mode: VehicleMode:AUTO
+Location: Location:lat=37.5210376,lon=-122.3092347,alt=152.720001221,is_relative=True
+Attitude: Attitude:-0.181670248508,-2.71582651138,0.0766400620341
+GPS: GPSInfo:fix=3,num_sat=7
+Param: 75.0
+waiting for download
+AUTO> Requesting 10 waypoints t=Sun May 25 09:51:00 2014 now=Sun May 25 09:51:00 2014
+Home WP: MISSION_ITEM {target_system : 255, target_component : 0, seq : 0, frame : 0, command : 16, current : 0, autocontinue : 1, param1 : 0.0, param2 : 0.0, param3 : 0.0, param4 : 0.0, x : 37.5210456848, y : -122.309158325, z : 151.539993286}
+Current dest: 1
+Created msg: COMMAND_LONG {target_system : 0, target_component : 0, command : 115, confirmation : 0, param1 : 0, param2 : 0, param3 : 0, param4 : 0, param5 : 1, param6 : 0, param7 : 0}
+APIThread-0 exiting...
+Got MAVLink msg: COMMAND_ACK {command : 115, result : 3}
+APM: command received:",['small_demo.py']
+Kevin Hester,2014-05-25,bump to version 0.1.3 and release to pip,['setup.py']
+cclauss,2014-05-25,"Minor typo in README.md
+
+Changed `The the` to `The`.",['README.md']
+Kevin Hester,2014-05-25,"Merge pull request #1 from cclauss/patch-1
+
+Minor typo in README.md",['']
+Kevin Hester,2014-06-03,add link to tutorial wiki,['README.md']
+Kevin Hester,2014-06-03,Merge branch 'master' of github.com:diydrones/droneapi-python,['']
+Kevin Hester,2014-06-03,add first cut of protocol buffer client,"['compile-protobufs.sh,webapi_pb2.py,setup.py']"
+Kevin Hester,2014-06-03,Set indentation rules,['.editorconfig']
+Kevin Hester,2014-06-15,version 0.1.4 - add an 'armed' attribute to vehicles.,"['api.py,small_demo.py,setup.py']"
+Kevin Hester,2014-06-15,fix release script,['do-upload.sh']
+Kevin Hester,2014-06-18,publish attribute change notifications for mode,['api.py']
+Kevin Hester,2014-06-18,Add microgcs - an ultra minimal GCS example app,['microgcs.py']
+Kevin Hester,2014-06-25,minor doc update,['microgcs.py']
+Kevin Hester,2014-06-30,add missing airspeed/groundspeed properties,"['api.py,small_demo.py,setup.py']"
+Kevin Hester,2014-06-30,"make v.armed settable to arm/disarm vehicle
+
+I missed this originally
+To update do
+sudo pip install --upgrade droneapi","['api.py,small_demo.py,setup.py']"
+Kevin Hester,2014-07-04,Use new rc override methods I just added to mavproxy,"['api.py,small_demo.py']"
+Kevin Hester,2014-07-05,implement v.rc_readback per spec,"['api.py,small_demo.py']"
+Kevin Hester,2014-07-07,release 0.1.7: depend on new mavproxy,['setup.py']
+Jaime Machuca,2014-07-17,"Fix Cancel override example
+
+Added channel number and 0 value to cancel overrides",['small_demo.py']
+Kevin Hester,2014-07-18,"Merge pull request #5 from jmachuca77/master
+
+Fix Cancel override example",['']
+Kevin Hester,2014-07-18,Provide vehicle velocity as a list,"['api.py,small_demo.py']"
+Kevin Hester,2014-07-18,Release 0.2.0,['setup.py']
+Kevin Hester,2014-07-29,"Fix #6 - set_mavlink_callback already works, fix the docs and add example",['small_demo.py']
+Kevin Hester,2014-07-31,Provide vehicle velocity as a list,"['api.py,small_demo.py']"
+Kevin Hester,2014-07-31,Release 0.2.0,['setup.py']
+Kevin Hester,2014-07-31,"Fix #6 - set_mavlink_callback already works, fix the docs and add example",['small_demo.py']
+Kevin Hester,2014-07-31,"example script to show how to use REST upload API (for GCSdev)
+
+usage:
+sudo pip install poster
+add your dev key
+python test-upload.py","['test-upload.py,test.tlog']"
+Kevin Hester,2014-07-31,update to latest protobufs,['webapi_pb2.py']
+Kevin Hester,2014-07-31,use ssl links for connection to server,['test-upload.py']
+Kevin Hester,2014-07-31,"Add ""web"" command for connecting to API server/tunneling","['WebClient.py,api.py,test-web.py']"
+Kevin Hester,2014-07-31,uplink now works,"['WebClient.py,api.py']"
+Kevin Hester,2014-07-31,downlink (commands from web) works,"['WebClient.py,api.py']"
+Kevin Hester,2014-07-31,don't keep missions if they are not closed gracefully,['WebClient.py']
+Kevin Hester,2014-08-01,remote commands are now accepted by the local vehicle,['api.py']
+Kevin Hester,2014-08-04,Gracefully handle failure to connect,"['WebClient.py,api.py']"
+Kevin Hester,2014-08-04,allow user to drop connection any time they want,"['WebClient.py,api.py']"
+Kevin Hester,2014-08-04,Ready to go for alpha release of mavproxy to droneapi server,['api.py']
+Kevin Hester,2014-08-04,Pull in api server work,['']
+Kevin Hester,2014-08-04,release 0.2.1: API server connections,['setup.py']
+Kevin Hester,2014-08-04,release 0.2.1: API server connections,"['WebClient.py,setup.py']"
+Kevin Hester,2014-08-04,"Merge branch 'master' of github.com:diydrones/droneapi-python
+
+Conflicts:
+	setup.py",['']
+Thomas Lillis,2014-08-04,"Link now not broken for ""python autodocs""
+
+""http://3drobotics.github.io/droneapi-python/"" was not an actual page. Changed to: ""http://diydrones.github.io/droneapi-python/""",['README.md']
+Kevin Hester,2014-08-07,"Merge pull request #8 from tlillies/patch-1
+
+Fixed link for ""python autodocs""",['']
+Kevin Hester,2014-08-07,"0.2.3: If vehicle is still initializing, wait before allowing mode changes.
+
+Fix #9 (probably)","['api.py,setup.py']"
+Kevin Hester,2014-09-12,"0.2.4: Fix wpt download for fast booting boards
+
+Thanks @mrpollo for the report.","['api.py,setup.py']"
+Kevin Hester,2014-09-12,require latest mavproxy,['setup.py']
+Kevin Hester,2014-09-12,don't publish stale docs,['update-docs.sh']
+Kevin Hester,2014-09-12,don't publish stale docs,"['index.rst,update-docs.sh']"
+Kevin Hester,2014-09-12,Merge branch 'master' of github.com:diydrones/droneapi-python,['']
+Kevin Hester,2014-09-12,even more docs fixes,['update-docs.sh']
+Kevin Hester,2014-10-06,release 1.0.0 - depend on mavproxy 1.3.13 for my windows fixes,['setup.py']
+Kevin Hester,2014-12-05,"Wait on reading params until after they have been fetched from vehicle.
+
+Fixes a bug reported by D Hugues.",['api.py']
+Kevin Hester,2014-12-05,bump version to 1.0.1 and release,['setup.py']
+Eric Liao,2014-12-08,Added querying of mount_status.,['api.py']
+Kevin Hester,2014-12-11,"Merge pull request #14 from eliao/master
+
+Added querying of mount_status.",['']
+Kevin Hester,2014-12-11,Basic test harness to measure latency/computation costs,['perf_test.py']
+Kevin Hester,2014-12-11,measure intervals a little more nicely.,['perf_test.py']
+Kevin Hester,2014-12-15,remove debugging output,['api.py']
+Kevin Hester,2014-12-15,Print perf measurements less often,['perf_test.py']
+Kevin Hester,2014-12-16,update perftest results with various platforms,['perf_test.py']
+Kevin Hester,2014-12-17,Finished performance tests,['perf_test.py']
+The Gitter Badger,2014-12-18,Added Gitter badge,['README.md']
+Kevin Hester,2014-12-18,"Merge pull request #16 from gitter-badger/gitter-badge
+
+Add a Gitter chat badge to README.md",['']
+Ramón Roche,2014-12-18,add a global load_path for app context,['api.py']
+Ramón Roche,2014-12-18,check if thread is alive before trying to kill it,['api.py']
+Ramón Roche,2014-12-18,organize demos,"['fake-gps-data.log,follow_me.py,run-fake-gps.sh,client_sketch.py,small_demo.py']"
+Ramón Roche,2014-12-18,drone delivery example app,"['drone_delivery.py,drone_tracker.py,styles.css,bottom-scripts.html,command.html,head.html,header.html,index.html,mapbox.html,track.html,requirements.pip']"
+Ramón Roche,2014-12-18,remove duplicate file,['drone_tracker.py']
+Ramón Roche,2014-12-18,streamline drone control,['drone_delivery.py']
+Ramón Roche,2014-12-18,cleanup mapbox coordinate mess,"['command.html,mapbox.html,track.html']"
+Ramón Roche,2014-12-18,fix root path and changed name of main class,['drone_delivery.py']
+Ramón Roche,2014-12-18,organize samples,"['microgcs.py,perf_test.py']"
+Ramón Roche,2014-12-19,Wait for GPS lock to startup Webserver,['drone_delivery.py']
+Ramón Roche,2014-12-19,if armed gps signal is lost,['drone_delivery.py']
+Ramón Roche,2014-12-19,api takeoff,['api.py']
+Ramón Roche,2014-12-19,arm and takeoff before webserver,['drone_delivery.py']
+Kevin Hester,2014-12-20,"Merge pull request #17 from mrpollo/api_load_path_context
+
+Api load path context",['']
+Kevin Hester,2014-12-20,"Merge pull request #15 from mrpollo/sample_demos
+
+Sample demos",['']
+Kevin Hester,2014-12-28,"Add missing example init script for mavlink daemon.
+
+Thanks @jmachuca77 for noticing that this was missing!",['mavgateway']
+Kevin Hester,2014-12-29,Flight replay demo WIP,['flight_replay.py']
+Kevin Hester,2014-12-29,flight replay works nice,"['api.py,flight_replay.py']"
+Kevin Hester,2014-12-29,use abspath of the script to derive local_path,['api.py']
+Kevin Hester,2014-12-29,Flight replay demo seems basically done,['flight_replay.py']
+Ramón Roche,2015-01-05,"demo 1, goto location",['simple_goto.py']
+Kevin Hester,2015-01-05,"Merge pull request #18 from mrpollo/demo-1
+
+demo 1, goto location",['']
+Ramón Roche,2015-01-15,add examples to readme and style better,['README.md']
+Kevin Hester,2015-01-20,"Merge pull request #22 from mrpollo/fix_readme
+
+add examples to readme and style better",['']
+Kevin Hester,2015-01-20,Use correct mission number in flight replay,['flight_replay.py']
+Kevin Hester,2015-01-20,Begin making new demo text,['README.md']
+Kevin Hester,2015-01-20,begin moving over old wiki docs,"['README.md,follow-me-demo.md,hello-world-demo.md,install.md,win-screenshot.png']"
+Kevin Hester,2015-01-20,fix formatting on old demo docs,"['follow-me-demo.md,hello-world-demo.md']"
+Kevin Hester,2015-02-11,examples: show usage of mode attribute callbacks,['small_demo.py']
+Kevin Hester,2015-02-11,observers: print error msg for malformed observer callbacks,['']
+Kevin Hester,2015-02-11,relase: 1.0.2 with minor error msg fixes,['setup.py']
+Kevin Hester,2015-02-12,profile: optimize handling of chatty autopilot messages,"['api.py,tx_perf_test.py']"
+Kevin Hester,2015-02-12,release: 1.0.3,['setup.py']
+Ramón Roche,2015-02-22,"REST Api client lib
+
+- It supports only GET calls at the moment
+- Some of the functions don't match the url endpoints because of how
+  python manages variable names (see test-cloud.py for examples on how
+to run some calls)
+- If a new call has to be added and it includes dots in name add to
+  REST_CALLS, and see source for reference","['CloudClient.py,requirements.txt,test-cloud.py']"
+Ramón Roche,2015-02-22,fixes test-upload.py it now posts,"['requirements.txt,test-upload.py']"
+Ramón Roche,2015-02-22,"test throwing an error outside scope of test
+
+disabling for now, we have to fix test.tlog
+Error: HTTP Error 406: Invalid location data was found in that log, ignoring",['test-upload.py']
+Ramón Roche,2015-02-22,small test runner for build server,['test-runner.sh']
+Ramón Roche,2015-02-22,make sure we dont do false positives with regexes,['test-runner.sh']
+Ramón Roche,2015-02-23,"test upload now lives in the example folder
+
+since this wasnt really meant to be a test","['test-upload.py,test.tlog']"
+Ramón Roche,2015-02-23,tests are now a package,"['test-web.py,cloud_client_test.py,test-runner.sh,web_integration_test.py']"
+Ramón Roche,2015-02-23,tests now require env DRONEAPI_KEY to be set,['cloud_client_test.py']
+Kevin Hester,2015-02-23,"Merge pull request #23 from mrpollo/rest-client
+
+REST Api client lib",['']
+Kevin Hester,2015-02-24,Fixes to work in python3,['api.py']
+Kevin Hester,2015-03-03,Merge branch 'newdemos' into diyd-virgin,['']
+Kevin Hester,2015-03-03,Pull over placeholders for demo1-3 text.,"['README.md,drone-delivery-demo.md,flight-replay-demo.md,simple-goto-demo.md']"
+Kevin Hester,2015-03-03,Merge branch 'diyd-virgin' into newdemos,['']
+Kevin Hester,2015-03-03,provide some real text for the remaining demo docs,"['drone-delivery-command.png,drone-delivery-demo.md,drone-delivery-splash.png,drone-delivery-track.png,simple-goto-demo.md']"
+Kevin Hester,2015-03-03,minor typos in the drone-delivery demo,['drone_delivery.py']
+Kevin Hester,2015-03-03,add flight_replay demo text,"['README.md,drone-delivery-demo.md,flight-replay-demo.md,flight_replay_example.png']"
+Kevin Hester,2015-03-03,fix doc formatting (looked strange on github),['flight-replay-demo.md']
+Kevin Hester,2015-03-03,Add pointer to the python autodocs.,['README.md']
+Kevin Hester,2015-03-18,"Add docs and update docs theme to 3DR theme
+
+- Use Sphinx 3DR Theme
+- add Getting Started page
+- update requirements
+- Filled out the getting started guide
+- Ported Kevin's getting started with the demos over from GitHub
+- updated getting started to include linux, osx, windows instructions
+- updated first app doc based on doc on droneapi-python
+- NOTE: this hasn't been sphinx-build yet","['automodule.rst,conf.py,example_1.rst,example_2.rst,example_3.rst,example_4.rst,first_app.rst,getting_started.rst,index.rst,README.md,requirements.txt']"
+Kevin Hester,2015-03-18,"Merge pull request #25 from diydrones/dronekit
+
+doc cleanup and styling",['']
+Kevin Hester,2015-03-18,"Add auto takeoff to the simple_goto demo
+
+Makes for a nicer ELC demo...",['simple_goto.py']
+Phu Nguyen,2015-03-19,- fixed formatting errors on the fourth example,['example_4.rst']
+Kevin Hester,2015-03-20,ELC: Add class notes,['ELC.md']
+Kevin Hester,2015-03-21,ELC: Add screenshot of microgcs,"['ELC.md,screenshot.png']"
+Kevin Hester,2015-03-21,Merge branch 'elc',['']
+Kevin Hester,2015-03-21,Change project name to DroneKit,['README.md']
+Kevin Hester,2015-03-21,Link to new dronekit website,['README.md']
+Kevin Hester,2015-03-21,remove unneeded warning,['README.md']
+Kevin Hester,2015-03-22,ELC: minor tutorial tweaks from virgin install on my third machine,['ELC.md']
+Kevin Hester,2015-03-24,ELC: Add note about serial ports,['ELC.md']
+Phu Nguyen,2015-03-24,- link to instructions on how to set up a companion computer,['getting_started.rst']
+Ramon Roche,2015-03-24,"Merge pull request #27 from diydrones/bug/doc-errors
+
+Bug/doc updates",['']
+Dirk Gorissen,2015-03-26,Fix typo,['follow_me.py']
+Ramon Roche,2015-03-26,"Merge pull request #28 from dgorissen/patch-1
+
+fixes typo on follow me code comment",['']
+Ramon Roche,2015-03-30,"fix pip package name
+
+fix install command on docs, ```droneapi-python``` is not the correct pip package name",['getting_started.rst']
+Kevin Hester,2015-03-30,"Merge pull request #29 from diydrones/fix-pip-package-name
+
+fix pip package name",['']
+Hamish Willee,2015-03-30,Minor fixes to remove all build errors and fix linking/highlighting,"['.gitignore,automodule.rst,example_1.rst,example_2.rst,example_3.rst,example_4.rst,getting_started.rst,index.rst']"
+Hamish Willee,2015-03-30,Fix incorrect pip package name in getting started: https://github.com/3drobotics/dronekit.io/issues/35,['getting_started.rst']
+Kevin Hester,2015-03-31,"Merge pull request #34 from hamishwillee/master
+
+Minor fixes to remove all build errors and fix linking/highlighting",['']
+Hamish Willee,2015-03-31,"Rename API Reference doc, as in #36","['automodule.rst,example_4.rst']"
+Hamish Willee,2015-03-31,Improve entry point description as described in #40,['index.rst']
+Hamish Willee,2015-03-31,Fixed dependency list information for pip component as described in #41,['getting_started.rst']
+Ramon Roche,2015-04-02,"Merge pull request #38 from hamishwillee/master
+
+Rename API Reference doc",['']
+hamishwillee,2015-04-03,Update contact details for project to point to stackoverflow/issues rather than individuals (kevin),['README.md']
+Phu Nguyen,2015-04-04,- moved supported companion computers to bigger link,"['getting_started.rst,index.rst']"
+Ramon Roche,2015-04-05,"Merge pull request #46 from diydrones/update-docs-links
+
+(Docs) Moved supported companion computers to bigger link",['']
+Chris Anderson,2015-04-06,"Add list of companion computers
+
+- change getting started copy
+- add helpful advice on how to setup a simulated vehicle",['getting_started.rst']
+Chris Anderson,2015-04-06,Typo fix,['getting_started.rst']
+Chris Anderson,2015-04-06,Update getting_started.rst,['getting_started.rst']
+Chris Anderson,2015-04-06,Moved sections around,['getting_started.rst']
+hamishwillee,2015-04-07,Merge branch 'master' of https://github.com/diydrones/dronekit-python,['']
+Phu Nguyen,2015-04-06,removed the big link,['index.rst']
+hamishwillee,2015-04-07,"Change copyright to 3DRobotics, 2015",['conf.py']
+Ramon Roche,2015-04-07,"Merge pull request #49 from diydrones/remove-big-companion-computer-link
+
+removed the big companion computers link on sidebar",['']
+Ramon Roche,2015-04-07,"Merge pull request #44 from hamishwillee/master
+
+Update contact details for project",['']
+Ramón Roche,2015-04-07,pymavlink is also a requirement,['requirements.txt']
+Ramón Roche,2015-04-07,fix the import path for sphinx,['conf.py']
+Ramón Roche,2015-04-07,add Vagrant for cross platform doc builds,"['.gitignore,Vagrantfile']"
+hamishwillee,2015-04-07,Tidy heading levels and fix doc build warnings caused by errors in __init__.py,"['automodule.rst,example_1.rst,example_2.rst,example_3.rst,example_4.rst,first_app.rst,getting_started.rst,index.rst']"
+hamishwillee,2015-04-07,Update contact details for project to point to stackoverflow/issues rather than individuals (kevin),['README.md']
+Chris Anderson,2015-04-07,Moved sections around,['getting_started.rst']
+Ramon Roche,2015-04-07,"Merge pull request #45 from diydrones/vagrant
+
+Vagrant for cross-platform doc builds",['']
+Ramón Roche,2015-04-07,"bump sphinx theme version to a stable
+
+previously the builds failed due to a package problem on the theme where
+it didnt include required files for the theme.",['requirements.txt']
+Ramon Roche,2015-04-07,"Merge pull request #51 from diydrones/fix_theme_dep
+
+bump sphinx theme version to a stable",['']
+Fabio Kru,2015-04-08,"Fixed the error ""AttributeError: 'MPStatus' object has no attribute
+'target_system'"" when trying to send a mavlink message.",['api.py']
+hamishwillee,2015-04-09,Add docs explaining how to contribute to the project,"['contributing.rst,index.rst']"
+Ramon Roche,2015-04-08,"Merge pull request #55 from hamishwillee/master
+
+Add docs explaining how to contribute to the project",['']
+hamishwillee,2015-04-09,tidied up contributing doc to remove unwanted block quotes in bulleted list,['contributing.rst']
+hamishwillee,2015-04-09,"Add todo markup to the API docs so that general discussion is hidden in normal builds. IN the automodule, added a directive to list all TODOS in special builds",['automodule.rst']
+hamishwillee,2015-04-09,Renamed reference page in index to plain API Reference - it is obvious it is Python reference.,['index.rst']
+hamishwillee,2015-04-10,tidied up contributing doc to remove unwanted block quotes in bulleted list,['contributing.rst']
+hamishwillee,2015-04-10,"Add todo markup to the API docs so that general discussion is hidden in normal builds. IN the automodule, added a directive to list all TODOS in special builds",['automodule.rst']
+hamishwillee,2015-04-10,Renamed reference page in index to plain API Reference - it is obvious it is Python reference.,['index.rst']
+Ramon Roche,2015-04-10,"Merge pull request #53 from jmacgithu/FixMPStatusAttributeError
+
+fixed the error ""AttributeError: 'MPStatus' object has no attribute",['']
+Ramón Roche,2015-04-10,"bump mavproxy and update version
+
+this is a critical fix for latest mavproxy","['requirements.txt,setup.py']"
+Ramón Roche,2015-04-10,bump pymavlink and push to 1.1.1,"['requirements.txt,setup.py']"
+hamishwillee,2015-04-13,adds Index as a sub-menu of API reference,['automodule.rst']
+hamishwillee,2015-04-13,add Index as sub-menu of API Reference,['']
+Hamish Willee,2015-04-16,Adds script to retrieve the latest release notes from a specified git repo,['get_release_notes.py']
+Hamish Willee,2015-04-16,Add release notes (including file containing release notes from github),"['github_latest_release.txt,release_notes.rst']"
+jmacgithu,2015-04-20,"Merge pull request #1 from diydrones/master
+
+Merge",['']
+Fabio Kru,2015-04-27,"Added an example to show the GUIDED mode with POSITION_TARGET_LOCAL_NED
+MAVLink command.","['guided-set-speed-yaw-demo.md,guided_set_speed_yaw.py,readme.md']"
+Ramon Roche,2015-04-27,"Merge pull request #69 from jmacgithu/Example-set_position_target_local_ned
+
+Example set position target local ned",['']
+hamishwillee,2015-04-28,Fix typo in example - virst instead of first,['follow_me.py']
+hamishwillee,2015-04-28,Move the contributing doc into about folder,"['contributing.rst,index.rst']"
+hamishwillee,2015-04-30,Significant changes to API reference - including addition of introductory section and code snippets throughout API. Also put warnings for APIs that are still not implemented or not intended for third party use,['']
+hamishwillee,2015-04-30,tidied up contributing doc to remove unwanted block quotes in bulleted list,['contributing.rst']
+hamishwillee,2015-04-30,"Add todo markup to the API docs so that general discussion is hidden in normal builds. IN the automodule, added a directive to list all TODOS in special builds",['automodule.rst']
+hamishwillee,2015-04-30,Renamed reference page in index to plain API Reference - it is obvious it is Python reference.,['index.rst']
+hamishwillee,2015-04-30,adds Index as a sub-menu of API reference,['automodule.rst']
+Hamish Willee,2015-04-30,Adds script to retrieve the latest release notes from a specified git repo,['get_release_notes.py']
+Hamish Willee,2015-04-30,Add release notes (including file containing release notes from github),"['github_latest_release.txt,release_notes.rst']"
+hamishwillee,2015-04-30,Fix typo in example - virst instead of first,['follow_me.py']
+hamishwillee,2015-04-30,Move the contributing doc into about folder,"['contributing.rst,index.rst']"
+hamishwillee,2015-04-30,Significant changes to API reference - including addition of introductory section and code snippets throughout API. Also put warnings for APIs that are still not implemented or not intended for third party use,['']
+hamishwillee,2015-04-30,Tidy up the English in guided-set-speed-yaw-demo as discussed in #69,['guided-set-speed-yaw-demo.md']
+hamishwillee,2015-04-30,Remove merge conflict in file,['']
+hamishwillee,2015-05-04,Move examples into old folder and under own index. Rename as Example rather than Demo. Simplify their presentation in the sidebar.,"['automodule.rst,drone_delivery.rst,flight_replay.rst,follow_me.rst,index.rst,running_examples.rst,simple_goto.rst,index.rst']"
+hamishwillee,2015-05-05,"Hide API items from reference as per #65: Mission, get_mission, ConnectionInfo, web_connect, AuthInfo",['automodule.rst']
+hamishwillee,2015-05-05,Update docs introduction in line with #75,"['companion-computers.rst,index.rst,license.rst,overview.rst,index.rst']"
+hamishwillee,2015-05-05,Remove companion computers from getting_started as it is now in its own document,['getting_started.rst']
+Ramon Roche,2015-05-05,"Merge pull request #58 from hamishwillee/master
+
+Fixes the API Reference and also tidies some layout issues in the contributing docs.",['']
+hamishwillee,2015-05-06,"Hide Vehicle.delete from api docs, as discussed in #65. Update source file to also make usage clear for people reading that directly",['automodule.rst']
+hamishwillee,2015-05-06,Fix flight replay source code and docs to use the Command class,"['flight_replay.rst,flight_replay.py']"
+hamishwillee,2015-05-06,"Delete invalid non-DroneKit-Python example, as discussed in #62","['test-upload.py,test.tlog']"
+Ramon Roche,2015-05-06,"Merge pull request #81 from hamishwillee/tmp_flight_replay66
+
+Fix flight replay source code and docs to use the Command class",['']
+Ramon Roche,2015-05-06,"Merge pull request #80 from hamishwillee/hideapi
+
+Hide Vehicle.delete from api docs",['']
+Ramon Roche,2015-05-06,"Merge pull request #82 from hamishwillee/tmp_delete_test_upload
+
+Tidy Flight Replay example. Remove another invalid example.",['']
+hamishwillee,2015-05-06,Update all examples to include source code section that contains the current build-time code for the example and a link to the version on github,"['drone_delivery.rst,flight_replay.rst,follow_me.rst,simple_goto.rst']"
+Ramon Roche,2015-05-06,"Merge pull request #88 from diydrones/example-updates
+
+Update all examples to include source code section",['']
+hamishwillee,2015-05-07,Fixes APIRef around GPSInfo doc (#86) and send_mavlink (#85),['']
+hamishwillee,2015-05-08,Update GPSInfo to clarify that its parameter values are set to None if there is no GPS lock,['']
+Ramon Roche,2015-05-08,"Merge pull request #90 from hamishwillee/tmp_ref_gpsinfo_sndmsg
+
+Fixes APIRef around GPSInfo and send_mavlink",['']
+hamishwillee,2015-05-11,Move companion computers doc into guide (more appropriate),['companion-computers.rst']
+hamishwillee,2015-05-11,"Creation of Quick Start, Update of Getting Started/Running Examples, Restructure docs into guide","['index.rst,index.rst,running_examples.rst,getting_started.rst,companion-computers.rst,getting_started.rst,index.rst,index.rst,quick_start.rst']"
+hamishwillee,2015-05-11,Fix build errors in docs,"['license.rst,overview.rst,follow_me.rst']"
+hamishwillee,2015-05-11,Move all example documentation into the official documentation. Update README appropriately.,"['drone-delivery-command.png,drone-delivery-splash.png,drone-delivery-track.png,flight_replay_example.png,guided-set-speed-yaw-demo.rst,index.rst,win-screenshot.png,README.md,drone-delivery-demo.md,flight-replay-demo.md,follow-me-demo.md,guided-set-speed-yaw-demo.md,hello-world-demo.md,install.md,simple-goto-demo.md']"
+hamishwillee,2015-05-11,Update examples to use the local files (moved in previous commit) rather than use URL link to version in Github,"['drone_delivery.rst,flight_replay.rst']"
+hamishwillee,2015-05-11,Add instructions for setting up a serial link on a companion computer as per https://github.com/diydrones/ardupilot-wiki-issue-tracker/issues/90,['getting_started.rst']
+hamishwillee,2015-05-12,Add missing image. Also update the information on how to update mavinit.scr for Windows,"['MissionPlanner_ConnectPort.png,getting_started.rst,quick_start.rst']"
+hamishwillee,2015-05-13,"Fixes to parameters docs, removal of docs for non-implemented fuctionality. Addresses #101, #100, #103,#89, #99",['overview.rst']
+hamishwillee,2015-05-14,Added back in code to disable to arming check and load params,"['running_examples.rst,quick_start.rst']"
+Ramon Roche,2015-05-14,"Merge pull request #94 from hamishwillee/getting_started
+
+Create Getting Started/QuickStart and restructure",['']
+Ramon Roche,2015-05-14,"Merge pull request #96 from hamishwillee/tmp_tidy_examples_93
+
+Move all example documentation to official documentation set",['']
+Ramon Roche,2015-05-14,"Merge pull request #108 from hamishwillee/tmp_apiref_home_n_paramobservers
+
+Fixes to API Reference to remove non-implemented functions from docs",['']
+hamishwillee,2015-05-15,"Add debugging topic. Add anchor in contributing.rst so can link to it. Note, not yet connected in index","['contributing.rst,debugging.rst']"
+hamishwillee,2015-05-15,Add debugging topic to the index,['index.rst']
+hamishwillee,2015-05-15,Add note about issue where we are tracking debugging improvements (#118) and highlight pdb site,['debugging.rst']
+Ramon Roche,2015-05-18,"Merge pull request #117 from hamishwillee/tmp_debugging
+
+Adds a debugging topic.",['']
+hamishwillee,2015-05-19,Rename small_demo.py,['vehicle_state.py']
+hamishwillee,2015-05-19,First draft of example .py file and documentation,"['index.rst,vehicle_state.rst,vehicle_state.py']"
+hamishwillee,2015-05-19,Create first draft of the vehicle state/parameters guide,"['vehicle_state.rst,index.rst,vehicle_state_and_parameters.rst']"
+hamishwillee,2015-05-19,Replace small_demo with vehicle_state in quickstart and getting started,"['getting_started.rst,quick_start.rst']"
+hamishwillee,2015-05-19,Quick review/subedit,['vehicle_state_and_parameters.rst']
+hamishwillee,2015-05-19,Delete the client sketch as per #97,['client_sketch.py']
+hamishwillee,2015-05-19,"Recommend best modes to use with DroneKit, as per #119",['']
+hamishwillee,2015-05-19,Update instructions for preferred VehicleMode on Plane/Rover,['']
+Matteo Ruina,2015-05-28,Add Battery object,['api.py']
+Matteo Ruina,2015-05-28,Add Pycharm support,['.gitignore']
+Ramon Roche,2015-05-28,"Merge pull request #124 from hamishwillee/tmp_vehicle_state
+
+Guide and examples for working with states and parameters.",['']
+Ramon Roche,2015-05-28,"Merge pull request #126 from hamishwillee/tmp_del_client_sketch
+
+Delete the client sketch",['']
+Ramon Roche,2015-05-28,"Merge pull request #127 from hamishwillee/tmp_mode_recommend_119
+
+Recommend best modes to use with DroneKit",['']
+hamishwillee,2015-05-29,"Improves simple_goto for copter, and adds guide and reference for taking off","['simple_goto.rst,index.rst,taking_off.rst,simple_goto.py']"
+Ramon Roche,2015-05-28,"Merge pull request #134 from hamishwillee/tmp_simple_goto
+
+Improve copter simple_goto and adds guide and reference for takeoff",['']
+Ramon Roche,2015-05-28,"Merge pull request #135 from maruina/master
+
+Add main battery support",['']
+hamishwillee,2015-06-01,Move all examples under /examples folder,"['README.md,drone_delivery.py,styles.css,bottom-scripts.html,command.html,head.html,header.html,index.html,mapbox.html,track.html,requirements.pip,flight_replay.py,fake-gps-data.log,follow_me.py,run-fake-gps.sh,microgcs.py,screenshot.png,guided_set_speed_yaw.py,readme.md,perf_test.py,tx_perf_test.py,simple_goto.py,vehicle_state.py']"
+hamishwillee,2015-06-01,fixing up links in docs to moved examples,"['drone_delivery.rst,flight_replay.rst,follow_me.rst,guided-set-speed-yaw-demo.rst,running_examples.rst,simple_goto.rst,vehicle_state.rst,getting_started.rst,quick_start.rst']"
+Ramon Roche,2015-05-31,"Merge pull request #138 from hamishwillee/tmp-move-examples
+
+Move examples from directory example to examples",['']
+Matteo Ruina,2015-06-01,Fix #137,['']
+Matteo Ruina,2015-06-01,Merge remote-tracking branch 'upstream/master',['']
+tcr3dr,2015-06-01,"Fixes ""examples"" links in README.",['README.md']
+Ramon Roche,2015-06-01,"Merge pull request #140 from tcr3dr/patch-1
+
+Fixes ""examples"" links in README.",['']
+Matteo Ruina,2015-06-02,"Better docstring
+Fix __str__ style",['']
+Ramon Roche,2015-06-02,"Merge pull request #139 from maruina/master
+
+Fix #137",['']
+tcr3dr,2015-06-02,"One more ""examples"" change.
+
+I will be breaking all my commits into one character changes.",['README.md']
+Ramón Roche,2015-06-02,example -> examples and whitespace,"['ELC.md,setup.py']"
+Ramon Roche,2015-06-02,"Merge pull request #143 from diydrones/example_examples
+
+Example -> Examples",['']
+Ramón Roche,2015-06-02,bump to 1.2.0,['setup.py']
+Ramón Roche,2015-06-02,docs latest release v1.2.0,['github_latest_release.txt']
+Tim Ryan,2015-06-02,Corrects gitter.im link.,['README.md']
+Ramon Roche,2015-06-02,"Merge pull request #145 from tcr3dr/patch-3
+
+Corrects gitter.im link.",['']
+hamishwillee,2015-06-03,Remove link to deleted client sketch. Update link to vehicle_state,['README.md']
+hamishwillee,2015-06-03,Tidy documentation for addition of Battery class #137,"['vehicle_state.rst,vehicle_state.py']"
+hamishwillee,2015-06-03,Update contributions section with instructions on how to set up a development environment,"['index.rst,contributions_api.rst,contributions_documentation.rst,developer_setup_linux.rst,developer_setup_vagrant.rst,getting_started.rst,index.rst,index.rst']"
+hamishwillee,2015-06-05,Add sections for first setup/updating. Fixes to issues reported by daniel,"['developer_setup_linux.rst,developer_setup_vagrant.rst,index.rst']"
+hamishwillee,2015-06-05,Much simplified/module development docs,"['contributions_api.rst,developer_setup_linux.rst,developer_setup_vagrant.rst,developer_setup_windows.rst,index.rst,getting_started.rst,quick_start.rst']"
+hamishwillee,2015-06-05,fix link to removed document,['index.rst']
+hamishwillee,2015-06-05,Add needed version for Python to getting started,['getting_started.rst']
+Ramon Roche,2015-06-09,"Merge pull request #146 from hamishwillee/tmp_fix_readme_links
+
+Remove link to deleted client sketch. Update link to vehicle_state",['']
+Ramon Roche,2015-06-09,"Merge pull request #148 from hamishwillee/tmp-battery-docs
+
+Tidy documentation for addition of Battery class",['']
+Ramon Roche,2015-06-09,"Merge pull request #149 from hamishwillee/tmp_contributing_updates
+
+Update contributions section with how to set up a dev environment",['']
+Tim Ryan,2015-06-10,Adds wxpython to the requirements for running wx on mac.,['getting_started.rst']
+Tim Ryan,2015-06-10,Adds opencv.,['getting_started.rst']
+Ramon Roche,2015-06-11,"Merge pull request #157 from tcr3dr/patch-4
+
+Adds wxpython to the requirements for running wx on mac.",['']
+hamishwillee,2015-06-12,Restructure to getting started and removal of quickstart as discussed in #155,"['overview.rst,developer_setup_windows.rst,running_examples.rst,simple_goto.rst,vehicle_state.rst,getting_started.rst,index.rst,sitl_setup.rst,index.rst,quick_start.rst']"
+hamishwillee,2015-06-12,Fix typo in overview doc,['overview.rst']
+Ramon Roche,2015-06-11,"Merge pull request #158 from hamishwillee/tmp_guide_restructure
+
+Restructure to getting started and removal of quickstart",['']
+Stephen Dade,2015-06-13,Created windows installer. Use batch file to run it,"['droneapiWinBuild.bat,droneapi_installer.iss,returnVersion.py']"
+Stephen Dade,2015-06-16,Consistent naming scheme,['droneapi_installer.iss']
+Ramon Roche,2015-06-15,"Merge pull request #161 from stephendade/WinInstaller
+
+Created windows installer. Use batch file to run it",['']
+Fabio Kru,2015-06-23,Added Rangefinder class,['api.py']
+hamishwillee,2015-06-24,Updates to guide and examples to support a complete Guided Mode Copter topic,"['GuidedModeExample_FlyByPosition.png,GuidedModeExample_FlyByVelocity.png,guided-set-speed-yaw-demo.rst,index.rst,guided_mode.rst,index.rst,guided_set_speed_yaw.py']"
+hamishwillee,2015-06-25,Fix bug in the example calling wrong goto command in each section,"['guided-set-speed-yaw-demo.rst,guided_set_speed_yaw.py']"
+Ramon Roche,2015-06-25,"Merge pull request #170 from hamishwillee/tmp_guided_mode_copter_docs
+
+Guided Mode Copter Topic",['']
+hamishwillee,2015-06-26,Add information about clearing ROI,['guided_mode.rst']
+Daniel Nugent,2015-06-26,Added inf and NaN check on takeoff,['api.py']
+Ramon Roche,2015-06-26,"Merge pull request #174 from djnugent/takeoff_chk
+
+Added inf and NaN check on takeoff",['']
+Ramon Roche,2015-07-01,"Merge pull request #175 from jmacgithu/rangefinder
+
+Added Rangefinder class",['']
+Tim Ryan,2015-07-06,v1.3.0,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-07-06,"Merge pull request #178 from diydrones/tcr-release
+
+v1.3.0",['']
+hamishwillee,2015-07-07,Add sudo to instructions for installing DK on MAC,['getting_started.rst']
+Daniel Nugent,2015-07-07,Fixed import error for takeoff checks,['api.py']
+Tim Ryan,2015-07-07,"Merge pull request #182 from djnugent/takeoff_fix
+
+Fixed import error for takeoff checks",['']
+Tim Ryan,2015-07-07,v1.3.1,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-07-07,"Merge pull request #183 from diydrones/tcr-release
+
+v1.3.1",['']
+Tim Ryan,2015-07-07,"Merge pull request #180 from hamishwillee/tmp_getstarted_sudo_mac
+
+Add sudo to instructions for installing DK on MAC",['']
+hamishwillee,2015-07-08,Add Vehicle.rangefinder attribute to docs,['']
+hamishwillee,2015-07-08,Update vehicle_state example with rangefinder attribute. Include info about setting up rangefinder on SITL,"['vehicle_state.rst,vehicle_state.py']"
+hamishwillee,2015-07-08,Update guide for attributes to incluude rangefinder links. Also improve the observer docs,['vehicle_state_and_parameters.rst']
+Tim Ryan,2015-07-08,"Corrects link to Github version of ""vehicle_state"" example.",['vehicle_state.rst']
+Hamish Willee,2015-07-09,"Merge pull request #186 from diydrones/tcr3dr-patch-1
+
+Corrects link to Github version of ""vehicle_state"" example.",['']
+hamishwillee,2015-07-09,Tidy clear-ROI text,['guided_mode.rst']
+Tim Ryan,2015-07-09,Explains DRONEAPI_KEY.,['README.md']
+Tim Ryan,2015-07-09,Ignores *.pyc files.,['.gitignore']
+Tim Ryan,2015-07-09,Converts tests to nose. Formats using yapf.,"['cloud_client_test.py,web_integration_test.py']"
+Tim Ryan,2015-07-09,Updates instructions about running nose.,"['README.md,test-runner.sh']"
+Tim Ryan,2015-07-09,Adds nose to requirements.txt.,['requirements.txt']
+Ramon Roche,2015-07-09,"Merge pull request #190 from diydrones/tcr-tests
+
+Update existing tests with nose.",['']
+Tim Ryan,2015-07-10,Adds initial cross-platform CI tests.,"['.travis.yml,README.md,appveyor.yml,circle.yml,incisor.yml']"
+Tim Ryan,2015-07-10,Fixes MSG_WAITALL implementation for Windows.,['WebClient.py']
+Tim Ryan,2015-07-10,Removes CodeShip.,['README.md']
+Tim Ryan,2015-07-10,"Adds ""requests"" to setup.py",['setup.py']
+Tim Ryan,2015-07-10,"Adds ""requests"" to setup.py",['setup.py']
+Tim Ryan,2015-07-10,Fixes MSG_WAITALL implementation for Windows.,['WebClient.py']
+Tim Ryan,2015-07-10,"Merge pull request #194 from diydrones/tcr-fixes
+
+Fixes tests to work on Windows.",['']
+Tim Ryan,2015-07-10,"Merge pull request #192 from diydrones/tcr-ci
+
+Adds cross-platform CI testing.",['']
+Tim Ryan,2015-07-10,Reformats incisor.yml.,"['.travis.yml,circle.yml,incisor.yml']"
+Tim Ryan,2015-07-10,"Merge pull request #196 from diydrones/tcr-simple
+
+Simple CI fix.",['']
+Tim Ryan,2015-07-10,Corrects Travis build and fixes Appveyor link.,"['.travis.yml,README.md']"
+Tim Ryan,2015-07-10,Adds a framework for testing with SITL.,"['__main__.py,test_12.py,test_simple.py,testlib.py']"
+Tim Ryan,2015-07-10,Moves web tests to subfolder.,"['cloud_client_test.py,web_integration_test.py']"
+Tim Ryan,2015-07-13,Updates CI tests to run SITL tests.,"['.travis.yml,appveyor.yml,circle.yml,incisor.yml,requirements.txt,__main__.py,testlib.py']"
+Ramon Roche,2015-07-14,"Merge pull request #197 from diydrones/tcr-sitltest
+
+Adds SITL test infrastructure.",['']
+Tim Ryan,2015-07-15,Updates SITL resiliency and caching on Appveyor.,"['appveyor.yml,__main__.py']"
+Tim Ryan,2015-07-15,"Merge pull request #204 from diydrones/tcr-appveyor
+
+Updates SITL resiliency and caching on Appveyor.",['']
+Tim Ryan,2015-07-15,Corrects Appveyor build cache link.,['appveyor.yml']
+Tim Ryan,2015-07-15,Restores Appveyor testing.,['appveyor.yml']
+Tim Ryan,2015-07-16,Adds speedup for sitl tests.,"['.travis.yml,appveyor.yml,circle.yml,__main__.py']"
+Tim Ryan,2015-07-16,Adds vehicle GOTO test.,['test_goto.py']
+Tim Ryan,2015-07-16,Allows TEST_VERBOSE to be set to enable verbose messaging.,['__main__.py']
+Tim Ryan,2015-07-16,Allows test names to be passed to python -m sitl.,['__main__.py']
+Tim Ryan,2015-07-16,"Merge pull request #172 from hamishwillee/tmp_roi_doc_fix
+
+Add information about clearing ROI",['']
+hamishwillee,2015-07-17,Improve docs to reduce issues from #132,"['flight_replay.rst,flight_replay.py']"
+Tim Ryan,2015-07-17,"Merge pull request #213 from diydrones/fix_use_of_cmds_clear
+
+Improve docs to reduce issues from #132 mk 2",['']
+hamishwillee,2015-07-18,Add python-dev as a dronekit dependency on linux,['getting_started.rst']
+Ramon Roche,2015-07-20,"Merge pull request #216 from diydrones/tmp_add_pythondev_dependency
+
+Add python-dev as a dronekit dependency on linux",['']
+Ramon Roche,2015-07-20,"Merge pull request #199 from diydrones/tcr-gototest
+
+Adds goto test.",['']
+Tim Ryan,2015-07-21,Adds initial unit tests.,['test_api.py']
+Tim Ryan,2015-07-21,Adds unit tests to CI.,"['.travis.yml,appveyor.yml,circle.yml']"
+Tim Ryan,2015-07-21,"Merge pull request #223 from diydrones/tcr-unit
+
+Adds unit tests as a class of test.",['']
+Tim Ryan,2015-07-21,Allows python -m tests.sitl invocation.,"['.travis.yml,appveyor.yml,circle.yml']"
+Tim Ryan,2015-07-22,"Merge pull request #214 from diydrones/tcr-testssitl
+
+Allows python -m tests.sitl invocation.",['']
+Tim Ryan,2015-07-22,Prevents Travis from running web tests on forks.,['incisor.yml']
+Tim Ryan,2015-07-22,"Merge pull request #229 from diydrones/tcr-notravisweb
+
+Prevents Travis from running web tests on forks.",['']
+Tim Ryan,2015-07-23,Adds CONTRIBUTING.md as a thin link to guides.,['CONTRIBUTING.md']
+Tim Ryan,2015-07-23,Adds very basic contribution information for tests.,['contributions_api.rst']
+Tim Ryan,2015-07-23,Updates contribution docs with unit tests.,['contributions_api.rst']
+hamishwillee,2015-07-23,"Minor restructure, subedit, fix markup",['contributions_api.rst']
+Tim Ryan,2015-07-23,Updates to address Hamish feedback.,['contributions_api.rst']
+Hamish Willee,2015-07-24,Update contributions_api.rst,['contributions_api.rst']
+Hamish Willee,2015-07-24,"Update contributions_api.rst
+
+Fix another minor typo",['contributions_api.rst']
+Tim Ryan,2015-07-24,"Merge pull request #212 from diydrones/tcr-contrib
+
+Adds CONTRIBUTING info for tests.",['']
+Tim Ryan,2015-07-24,v1.4.0,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-07-24,Merge branch 'tmp_rangefinder_docs' of https://github.com/hamishwillee/dronekit-python into hamishwillee-tmp_rangefinder_docs,['']
+Tim Ryan,2015-07-24,"Merge pull request #237 from diydrones/tcr-184
+
+Merges #184 into patch.",['']
+Stephen Dade,2015-07-27,Windows Installer: Added protobuf to installer,"['droneapiWinBuild.bat,droneapi_installer.iss']"
+Tim Ryan,2015-07-27,Updates windows builder script for compat and not to pause.,['droneapiWinBuild.bat']
+Tim Ryan,2015-07-27,Enables Windows SITL tests to use mavproxy.exe,['__main__.py']
+Tim Ryan,2015-07-27,Updates Appveyor tests to use Windows installer.,['appveyor.yml']
+Tim Ryan,2015-07-27,s/diydrones\/dronekit-python/dronekit\/dronekit-python/,"['ELC.md,README.md,github_latest_release.txt,license.rst,overview.rst,release_notes.rst,contributions_api.rst,contributions_documentation.rst,developer_setup_linux.rst,developer_setup_windows.rst,getting_started.rst,drone_delivery.rst,flight_replay.rst,follow_me.rst,guided-set-speed-yaw-demo.rst,running_examples.rst,simple_goto.rst,vehicle_state.rst,get_release_notes.py,guided_mode.rst,debugging.rst,vehicle_state_and_parameters.rst,README.md,droneapi_installer.iss']"
+Tim Ryan,2015-07-27,v1.4.1,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-07-27,Changes Travis and Appveyor to test PRs only once.,"['.travis.yml,appveyor.yml']"
+Tim Ryan,2015-07-29,Disables Travis web requests on branches.,['.travis.yml']
+Ramón Roche,2015-07-29,travis would you please notify team on slack,['.travis.yml']
+Tim Ryan,2015-07-29,Publishes Windows installers on versioned tags.,['appveyor.yml']
+Tim Ryan,2015-07-29,"Improves test_12.py, also removes stdout",['test_12.py']
+Tim Ryan,2015-07-29,Expands test_simpledemo.,"['test_simple.py,test_simpledemo.py']"
+Tim Ryan,2015-07-29,Comments out print lines from test_goto (still useful),['test_goto.py']
+Tim Ryan,2015-07-29,Adds test for #110.,['test_110.py']
+Tim Ryan,2015-07-29,Ensures observers can't be added twice. Fixes #110,['test_110.py']
+Ramon Roche,2015-07-29,"Merge pull request #224 from dronekit/tcr-110
+
+Ensures observers can't be added twice. Fixes #110",['']
+Tim Ryan,2015-07-29,v1.4.2,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-07-29,"Merge pull request #257 from dronekit/patch
+
+v1.4.2",['']
+hamishwillee,2015-07-30,Add Mission documentation,"['index.rst,mission_basic.rst,mission_import_export.rst,auto_mode.rst,index.rst,mission_basic.py,mission_import_export.py']"
+hamishwillee,2015-07-31,Update gettingstarted/running examples to address issue #251,"['running_examples.rst,getting_started.rst']"
+Tim Ryan,2015-07-31,Removes leading slashes from local paths.,"['running_examples.rst,getting_started.rst']"
+Tim Ryan,2015-07-31,Updates Appveyor upload URL.,['appveyor.yml']
+Tim Ryan,2015-07-31,"Merge pull request #264 from dronekit/hamishwillee-tmp_examplesinfo_in_gettingstarted_251
+
+Merges #261 into patch",['']
+Tim Ryan,2015-07-31,"Merge pull request #265 from dronekit/tcr-righturl
+
+Updates Appveyor upload URL.",['']
+hamishwillee,2015-08-05,Fixes to docs suggested by @tcr3dr,"['mission_basic.rst,auto_mode.rst,mission_basic.py,mission_import_export.py']"
+Tim Ryan,2015-08-06,Fixes SITL tests with dronekit-sitl 2.0.0.,['__main__.py']
+Tim Ryan,2015-08-06,Merge branch 'tmp_auto_mode_missions' of https://github.com/hamishwillee/dronekit-python into hamishwillee-tmp_auto_mode_missions,['']
+Tim Ryan,2015-08-06,"Merge pull request #272 from dronekit/hamishwillee-tmp_auto_mode_missions
+
+Add Mission documentation, passing tests.",['']
+hamishwillee,2015-08-06,Add all changes needed to support windows dk installer,"['developer_setup_windows.rst,running_examples.rst,getting_started.rst']"
+Tim Ryan,2015-08-06,"Merge pull request #273 from dronekit/hamishwillee-tmp_dk_windows_install_getstart_164
+
+Add all changes needed to support windows dk installer.",['']
+Tim Ryan,2015-08-10,v1.4.3,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-08-10,"Merge pull request #279 from dronekit/release-1.4.3
+
+v1.4.3",['']
+Tim Ryan,2015-08-11,Adds steps to prevent not publishing.,['appveyor.yml']
+Tim Ryan,2015-08-12,"Merge pull request #280 from dronekit/tcr-nopublishwhynot
+
+Adds steps to prevent not publishing.",['']
+hamishwillee,2015-08-12,Improve documentation now we can unset notification for raw mavlink messages,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Tim Ryan,2015-08-12,Removes observers when API thread terminates.,['api.py']
+Tim Ryan,2015-08-12,Enables moddebug for VERBOSE outputs.,['__main__.py']
+Tim Ryan,2015-08-12,Adds a test to ensure no regressions in #115.,['test_115.py']
+Tim Ryan,2015-08-12,Enables set_mavlink_callback to be passed None. Fixes #115,['api.py']
+Tim Ryan,2015-08-12,Updates test_115 to use unset_mavlink_callback and stricter checks,['test_115.py']
+Tim Ryan,2015-08-12,Adds docs publishing script.,['do-pushdocs.sh']
+Tim Ryan,2015-08-12,"Removes old ""mavgateway"" script.",['mavgateway']
+Tim Ryan,2015-08-12,Consolidates scripts into scripts/ directory.,"['compile-protobufs.sh,get_release_notes.py,publish-docs.sh,publish-pypi.sh,update-docs.sh']"
+Tim Ryan,2015-08-12,Corrects script running paths.,"['compile-protobufs.sh,publish-pypi.sh,update-docs.sh']"
+Tim Ryan,2015-08-12,"Merge pull request #283 from dronekit/tcr-ff
+
+Fast forward changes to minor.",['']
+Tim Ryan,2015-08-12,v1.5.0,"['github_latest_release.txt,setup.py']"
+Tim Ryan,2015-08-12,"Merge pull request #284 from dronekit/release-1.5.0
+
+v1.5.0",['']
+Tim Ryan,2015-08-14,"Updates README with forums link, correct badges.",['README.md']
+Tim Ryan,2015-08-14,"Merge pull request #290 from dronekit/tcr-readme
+
+Updates README with forums link, correct badges.",['']
+hamishwillee,2015-08-15,Fixes broken link to DK windows installer,['getting_started.rst']
+Ramon Roche,2015-08-14,"Merge pull request #293 from hamishwillee/tmp_fix_dk_installer_link
+
+Fixes broken link to DK windows installer",['']
+Tim Ryan,2015-09-21,Adds initial reader code.,['reader.py']
+Tim Ryan,2015-09-21,Run with python -m droneapi,['__main__.py']
+Tim Ryan,2015-09-21,Loads params listing.,['__main__.py']
+Tim Ryan,2015-09-21,Expands Vehicle example.,['__main__.py']
+Tim Ryan,2015-09-21,Adds modes.,['__main__.py']
+Tim Ryan,2015-09-21,Updates params loading.,['__main__.py']
+Tim Ryan,2015-09-21,Deletes experimental code.,['reader.py']
+Tim Ryan,2015-09-21,Updates tests to be run with nose.,"['__main__.py,__main__.py,test_12.py,test_goto.py,test_simpledemo.py,testlib.py']"
+Tim Ryan,2015-09-21,Fixes param value types.,['']
+Tim Ryan,2015-09-21,Supports parameter assignment.,['']
+Tim Ryan,2015-09-21,Removes MAVProxy as a dependency.,"['api.py,requirements.txt,setup.py']"
+Tim Ryan,2015-09-21,Fixes parameter loading check.,['']
+Tim Ryan,2015-09-21,Updates test to remove testlib rig.,"['test_115.py,test_12.py']"
+Tim Ryan,2015-09-21,Tests some SITL integration.,['test_12.py']
+Tim Ryan,2015-09-21,Adds SITL demo.,['test_12.py']
+Tim Ryan,2015-09-21,Adds SITL test wrapper.,['test_12.py']
+Tim Ryan,2015-09-21,Adds SITL control to each test.,"['test_115.py,test_goto.py,test_simpledemo.py']"
+Tim Ryan,2015-09-21,Adds support for mavlink callbacks.,['']
+Tim Ryan,2015-09-21,Fixes class hierarchies. Dispatches mavrx messages.,['api.py']
+Tim Ryan,2015-09-21,Merges MAVLink packet handling from APIModule.,['test_goto.py']
+Tim Ryan,2015-09-21,Updates CI to test sitl using nosetests.,"['.travis.yml,appveyor.yml,circle.yml']"
+Tim Ryan,2015-09-21,Updates requirements and unit tests.,"['requirements.txt,test_api.py']"
+Tim Ryan,2015-09-21,Removes Appveyor scripts temporarily.,['appveyor.yml']
+Tim Ryan,2015-09-21,Adds parameter to local_connect,"['test_115.py,test_12.py,test_goto.py,test_simpledemo.py']"
+Tim Ryan,2015-09-21,Updates to add test_110.,['test_110.py']
+Tim Ryan,2015-09-21,Corrects tests 110 and goto.,"['test_110.py,test_goto.py']"
+Tim Ryan,2015-09-21,Removes sitl_connect.,['']
+Tim Ryan,2015-09-21,Renames local_connect to connect.,"['test_110.py,test_115.py,test_12.py,test_goto.py,test_simpledemo.py']"
+Tim Ryan,2015-09-21,Removes legacy atexit register.,['']
+Tim Ryan,2015-09-21,Modifications to test Appveyor success.,['appveyor.yml']
+Tim Ryan,2015-09-21,Removes psutil requirement.,['']
+Tim Ryan,2015-09-21,Corrects system to work with udpout.,['']
+Tim Ryan,2015-09-21,Modifies connect() to return a vehicle.,['']
+hamishwillee,2015-09-21,Change to DKPY 2.0 boilerplate connection,['vehicle_state.py']
+hamishwillee,2015-09-21,Add Migrating guide to dkpy 2.0,"['index.rst,migrating.rst,vehicle_state.py']"
+Tim Ryan,2015-09-21,Makes parameter fetch more reliable.,['']
+Tim Ryan,2015-09-21,Limits parameter fetching to initialization.,['']
+Tim Ryan,2015-09-21,Stubs out fix_targets.,['']
+Tim Ryan,2015-09-21,Improves parameter await logic.,['']
+Tim Ryan,2015-09-21,Wrap entire thread in a try catch. Why Python.,['']
+Tim Ryan,2015-09-21,Pass tests.,"['test_110.py,test_115.py,test_12.py,test_goto.py,test_simpledemo.py']"
+Tim Ryan,2015-09-21,Removes outdated WebClient connections (not part of DKCloud),"['WebClient.py,webapi_pb2.py,api.py,web_integration_test.py']"
+Tim Ryan,2015-09-21,"Updates vehicle_state example.
+Updates vehicle_state with --connect and await_params.",['vehicle_state.py']
+Tim Ryan,2015-09-21,Adds StatusText printer.,['vehicle_state.py']
+Tim Ryan,2015-09-21,Removes stay arming check from examples.,['vehicle_state.py']
+Tim Ryan,2015-09-21,Adds heartbeat timeouts. Not on main thread yet.,['']
+Tim Ryan,2015-09-21,Ignores virtualenv.,['.gitignore']
+Tim Ryan,2015-09-21,Neuters link timeout exception to pass tests :(,['']
+Tim Ryan,2015-09-21,Adds SITL speedup and rate changes.,"['.travis.yml,appveyor.yml,circle.yml']"
+Tim Ryan,2015-09-21,"Merge pull request #314 from dronekit/release-2.0.0
+
+Merges dev branch into master.",['']
+hamishwillee,2015-09-21,Adds note to clarify point in #285,['guided_mode.rst']
+Tim Ryan,2015-09-21,"Merge pull request #315 from dronekit/hamishwillee-tmp_condition_yaw_285
+
+Adds note to clarify point in #285 (Merges #307)",['']
+Tim Ryan,2015-09-30,Fixes invalid timeout duration for heartbeats.,['']
+Tim Ryan,2015-09-30,"Merge pull request #326 from dronekit/tcr-wait
+
+Fixes invalid timeout duration for heartbeats.",['']
+Tim Ryan,2015-10-08,"Assign a dedicated, public version.","['.gitignore,__main__.py,CloudClient.py,api.py,setup.py']"
+Tim Ryan,2015-10-08,"Renames ""droneapi"" to ""dronekit"".","['.gitignore,ELC.md,release_notes.rst,automodule.rst,developer_setup_windows.rst,drone_delivery.rst,follow_me.rst,mission_basic.rst,running_examples.rst,simple_goto.rst,vehicle_state.rst,auto_mode.rst,guided_mode.rst,debugging.rst,getting_started.rst,migrating.rst,taking_off.rst,vehicle_state_and_parameters.rst,__main__.py,api.py,drone_delivery.py,requirements.pip,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,perf_test.py,simple_goto.py,vehicle_state.py,compile-protobufs.sh,setup.py,test_110.py,test_115.py,test_12.py,test_goto.py,test_simpledemo.py,test_api.py,cloud_client_test.py,droneapiWinBuild.bat,droneapi_installer.iss']"
+Tim Ryan,2015-10-08,Removes numpy dependency.,"['appveyor.yml,getting_started.rst,requirements.pip,incisor.yml,requirements.txt']"
+Tim Ryan,2015-10-08,Cleans up CI files.,"['.travis.yml,appveyor.yml,circle.yml,incisor.yml,requirements.txt,setup.py']"
+Tim Ryan,2015-10-08,"Merge pull request #327 from dronekit/tcr-betapublic
+
+Assign a dedicated, public version.",['']
+Tim Ryan,2015-10-08,Also build wheels.,['publish-pypi.sh']
+Tim Ryan,2015-10-08,"Merge pull request #328 from dronekit/tcr-wheelsandeggs
+
+Also build wheels.",['']
+Hamish Willee,2015-10-09,"DKPY2 fixes to getting started, running examples, and developer setup windows. Consequent fixups to links elsewhere","['license.rst,overview.rst,developer_setup_windows.rst,running_examples.rst,getting_started.rst,migrating.rst,sitl_setup.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Hamish Willee,2015-10-09,Migrate simple_goto.py,['simple_goto.py']
+Hamish Willee,2015-10-09,Migrate guided_set_speed_yaw.py to DKPY2,"['guided_set_speed_yaw.py,readme.md']"
+Hamish Willee,2015-10-12,Remove git merge rubbish,['getting_started.rst']
+Tim Ryan,2015-10-12,"Merge pull request #320 from dronekit/tmp_getting_started_dkpy2
+
+DKPY2 fixes to getting started, running examples, and developer setup…",['']
+Tim Ryan,2015-10-13,Supports reading and sending waypoints.,"['api.py,vehicle_state.py']"
+Tim Ryan,2015-10-13,"Removes some read-only, deprecated properties.",['api.py']
+Tim Ryan,2015-10-13,Removes stray print.,['']
+Tim Ryan,2015-10-13,Removes synthetic clock.,['']
+Tim Ryan,2015-10-13,"Merge pull request #330 from dronekit/tcr-way
+
+Implements waypoints in DKPY2.",['']
+Tim Ryan,2015-10-13,Adds ekf_of flag.,['api.py']
+Tim Ryan,2015-10-13,Fixes raise error hiding stack trace.,['']
+Tim Ryan,2015-10-13,Corrects ekf_ok armed check.,['']
+Tim Ryan,2015-10-13,Adds loading block for dronekit.sitl.,['']
+Tim Ryan,2015-10-13,Cleans up EKF code.,['']
+Tim Ryan,2015-10-13,Bumps beta version.,"['requirements.txt,setup.py']"
+Tim Ryan,2015-10-13,"Merge pull request #332 from dronekit/tcr-ekf
+
+Adds ekf_of flag.",['']
+Hamish Willee,2015-10-13,Update/add mavlink message example for DKPY2.x -untested,"['create_attribute.rst,index.rst,index.rst,mavlink_messages.rst,create_attribute.py']"
+Tim Ryan,2015-10-13,"Merge pull request #334 from dronekit/tmp_new_mavlink_message_example_277
+
+Improved MAVLink message example and guide #277 mk2",['']
+Tim Ryan,2015-10-13,Abstracts MAVLink listeners in the constructor.,['']
+Tim Ryan,2015-10-13,Corrects status_printer.,['']
+Tim Ryan,2015-10-13,Adds ability to abstract Vehicle class.,['api.py']
+Tim Ryan,2015-10-13,Adds Vehicle inheritance test.,"['api.py,test_vehicleclass.py']"
+Tim Ryan,2015-10-14,"Merge pull request #340 from dronekit/tcr-mavstract
+
+Abstracts MAVLink listening into observers, enabling dronekit-python-solo extension.",['']
+Tim Ryan,2015-10-14,Removes protobuf dependency. Closes #339,"['requirements.txt,compile-protobufs.sh,setup.py,droneapiWinBuild.bat,droneapi_installer.iss']"
+Tim Ryan,2015-10-14,"Merge pull request #341 from dronekit/tcr-notobuf
+
+Removes protobuf dependency. Closes #339",['']
+Tim Ryan,2015-10-14,Adds Solo-specific system_status impl.,['api.py']
+Tim Ryan,2015-10-14,"Merge pull request #344 from dronekit/tcr-sysstat
+
+Adds Solo-specific system_status impl.",['']
+Tim Ryan,2015-10-14,Adds undocumented interface for parameters setting.,['api.py']
+Tim Ryan,2015-10-14,Adds a close method.,"['api.py,setup.py']"
+Tim Ryan,2015-10-14,2.0.0b5,['setup.py']
+Ramon Roche,2015-10-14,"Merge pull request #347 from dronekit/tcr-parammod
+
+Adds interfaces for Dronekit-SITL",['']
+Tim Ryan,2015-10-15,Adds request rate parameter.,['']
+Tim Ryan,2015-10-15,Adds default rate of 4 (like MAVProxy),['']
+Tim Ryan,2015-10-15,2.0.0b6,['setup.py']
+Tim Ryan,2015-10-15,"Merge pull request #349 from dronekit/tcr-rate
+
+Adds rate param to connect.",['']
+Tim Ryan,2015-10-15,Tests that parameter setting is less than 1s. Closes #12,['test_12.py']
+Tim Ryan,2015-10-20,"Merge pull request #345 from dronekit/tcr-test12time
+
+Tests that parameter setting is less than 1s. Closes #12",['']
+Hamish Willee,2015-10-21,Add vehicle.close and local_path information to migration guide,['migrating.rst']
+Tim Ryan,2015-10-21,"Merge pull request #363 from dronekit/hgw_migrating_guide_add_vehicle_close
+
+Add vehicle.close and local_path information to migration guide",['']
+Hamish Willee,2015-10-22,Test and fix up simple_goto.py and example docs for DKPY2 (b6),"['simple_goto.rst,simple_goto.py']"
+Hamish Willee,2015-10-22,Update taking off guide for DKPY2 (b6),['taking_off.rst']
+Hamish Willee,2015-10-22,Updates to the create_attribute example and associated guide for dkpy2. Code still has issues due to #352,"['create_attribute.rst,mavlink_messages.rst,create_attribute.py']"
+Hamish Willee,2015-10-22,Image used by goto example docs,['simple_goto_example_copter_path.png']
+Hamish Willee,2015-10-22,Update guided-set-speed-yaw-demo with new connect and vehicle.close. Test.,"['guided-set-speed-yaw-demo.rst,guided_set_speed_yaw.py']"
+Hamish Willee,2015-10-22,Updates mission examples/docs/guide to DKPY2. Further testing/update required when #355 fixed,"['mission_basic.rst,mission_import_export.rst,auto_mode.rst,mission_basic.py,mission_import_export.py,mpmission.txt']"
+Hamish Willee,2015-10-22,Fix help description for examples,"['mission_basic.py,mission_import_export.py']"
+Hamish Willee,2015-10-22,Improvements to wording around connection defaults. Add warnings to mission examples because bugs not yet fixed,"['create_attribute.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,mission_import_export.rst,simple_goto.rst']"
+Hamish Willee,2015-10-22,Fixes in response to @tcr3dr comments,"['guided-set-speed-yaw-demo.rst,mission_basic.rst,mission_import_export.rst,simple_goto.rst,taking_off.rst,simple_goto.py']"
+Tim Ryan,2015-10-22,"Merge pull request #353 from dronekit/hgw_example_updates_for_dkpy2
+
+Hgw example updates for dkpy2",['']
+Hamish Willee,2015-10-22,follow me example updates for dkpy2,"['follow_me.rst,follow_me.py']"
+Hamish Willee,2015-10-22,Fix example's help description,['follow_me.py']
+Hamish Willee,2015-10-22,Docs tidy up in response to feedback,"['follow_me.rst,follow_me.py']"
+Hamish Willee,2015-10-22,Fix up directory path directions to forward slash in documentation,['follow_me.rst']
+Tim Ryan,2015-10-22,"Merge pull request #356 from dronekit/hgw_follow_me_dkpy2
+
+follow me example updates for dkpy2",['']
+Hamish Willee,2015-10-22,"Fix up flight_replay.py doc/example to DKPY2. Note, still has bug #355","['flight_replay.rst,flight_replay.py']"
+Hamish Willee,2015-10-22,Update in line with Tims comments,"['flight_replay.rst,flight_replay.py']"
+Tim Ryan,2015-10-22,"Merge pull request #360 from dronekit/hgw_flight_replay_example_docs
+
+Fix up flight_replay.py doc/example to DKPY2. Note, still has bug #355",['']
+Hamish Willee,2015-10-22,"Minimal changes to drone_delivery for dkpy2. This is broken by #357, and that is documented too","['drone_delivery.rst,drone_delivery.py']"
+Tim Ryan,2015-10-22,"Merge pull request #361 from dronekit/tmp_exampleupdate_drone_delivery
+
+Minimal changes to drone_delivery for dkpy2",['']
+Tim Ryan,2015-10-22,Removes stray forward slash replace in STATUSTEXT.,['']
+Tim Ryan,2015-10-22,"Merge pull request #364 from dronekit/tcr-slashone
+
+Removes stray forward slash replace in STATUSTEXT.",['']
+squilter,2015-10-22,add local position support,['api.py']
+squilter,2015-10-22,update examples for local position,"['__main__.py,vehicle_state.py']"
+squilter,2015-10-22,add sitl test for local position and update old sitl test,"['test_goto.py,test_localposition.py']"
+Tim Ryan,2015-10-22,"Updates API, adds backward compatibility to local/global loc.","['__main__.py,api.py,vehicle_state.py,test_goto.py,test_localposition.py']"
+Tim Ryan,2015-10-22,Adds backcompat for earlier clients.,['']
+Tim Ryan,2015-10-22,Updates test to pass locally.,['test_localposition.py']
+Tim Ryan,2015-10-22,"Merge pull request #351 from dronekit/tcr-localpos
+
+Integrates local-position class.",['']
+Tim Ryan,2015-10-22,Corrects fix_type check.,['']
+Tim Ryan,2015-10-22,"Merge pull request #366 from dronekit/tcr-fixtype
+
+Corrects fix_type check.",['']
+Tim Ryan,2015-10-22,2.0.0b7,['setup.py']
+Tim Ryan,2015-10-22,"Merge pull request #367 from dronekit/tcr-newv
+
+2.0.0b7",['']
+Hamish Willee,2015-10-22,Addresses #329 by creating a stand-alone channel overrides example and removing this information from elsewhere,"['channel_overrides.rst,index.rst,vehicle_state.rst,vehicle_state_and_parameters.rst,channel_overrides.py']"
+Hamish Willee,2015-10-22,Fix up Vehicle state docs to remove mavlink messages information (now in own example). Tidy up example and add vehicle.close.,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Hamish Willee,2015-10-22,Fix help description. Add vehicle.close to the example,['channel_overrides.py']
+Hamish Willee,2015-10-22,Fix up directory paths to forward slashes. Improve vehicle_state.py handling of attribute accumulation,"['channel_overrides.rst,vehicle_state.rst,vehicle_state.py']"
+Tim Ryan,2015-10-22,"Merge pull request #335 from dronekit/hgw_rc_overrides_329
+
+Adds stand-alone channel overrides example",['']
+Ramón Roche,2015-10-22,"VehicleMode is now comparable
+
+fixes #278",['test_api.py']
+Tim Ryan,2015-10-22,Fixes VehicleMode test.,['test_api.py']
+Tim Ryan,2015-10-22,"Merge pull request #292 from dronekit/compare_vehicle_mode
+
+VehicleMode is now comparable",['']
+Tim Ryan,2015-10-22,Adds PyPi published version,['README.md']
+Tim Ryan,2015-10-22,Support working SITL versions.,['requirements.txt']
+Tim Ryan,2015-10-26,"Merge pull request #369 from dronekit/tcr-pypishield
+
+Adds PyPi published version",['']
+Tim Ryan,2015-10-26,Runs Windows four times.,['appveyor.yml']
+Tim Ryan,2015-10-26,"Merge pull request #373 from dronekit/tcr-retrywindows
+
+Runs Windows four times.",['']
+Hamish Willee,2015-10-26,Fix docs showing connection string for Windows,['getting_started.rst']
+Hamish Willee,2015-10-26,"Remove flush everywhere it is not needed (in examples, docs, test code). This assumes flush is only needed after adding/clearing - not for takeoff etc","['flight_replay.rst,follow_me.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,simple_goto.rst,auto_mode.rst,guided_mode.rst,migrating.rst,taking_off.rst,vehicle_state_and_parameters.rst,channel_overrides.py,drone_delivery.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,perf_test.py,simple_goto.py,vehicle_state.py,test_110.py,test_115.py,test_goto.py']"
+Hamish Willee,2015-10-26,Fix up API Reference so that connect is used rather than APICOnnection etc,['automodule.rst']
+Hamish Willee,2015-10-26,Fix layout issue in todo reminder note - just removes build warnings,['mission_import_export.rst']
+Hamish Willee,2015-10-26,Global updates to fix the examples to use LocationGlobal rather than Location,"['drone_delivery.rst,follow_me.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,simple_goto.rst,vehicle_state.rst,auto_mode.rst,guided_mode.rst,taking_off.rst,vehicle_state_and_parameters.rst,drone_delivery.py,follow_me.py,guided_set_speed_yaw.py,mission_basic.py,simple_goto.py,vehicle_state.py']"
+Tim Ryan,2015-10-26,"Merge pull request #372 from dronekit/hgw_docs_location_flush_vehiclemode
+
+Hgw docs fix for  location and use of flush",['']
+Tim Ryan,2015-10-26,Fixes waypoints clear.,"['api.py,test_waypoints.py']"
+Tim Ryan,2015-10-26,"Merge pull request #374 from dronekit/tcr-fixwaypoints
+
+Fixes waypoints clear.",['']
+Tim Ryan,2015-10-26,2.0.0c1,['setup.py']
+Tim Ryan,2015-10-26,"Merge pull request #375 from dronekit/tcr-cversion
+
+2.0.0c1",['']
+Tim Ryan,2015-10-27,Cleans up many shim classes.,"['api.py,test_api.py']"
+Tim Ryan,2015-10-27,Merges MPParameters with Parameters.,['api.py']
+Tim Ryan,2015-10-27,Merges MPCommandSequence into CommandSequence.,['api.py']
+Tim Ryan,2015-10-27,Merges Vehicle class with MPVehicle.,"['api.py,test_110.py,test_115.py,test_12.py,test_goto.py,test_localposition.py,test_simpledemo.py,test_vehicleclass.py,test_waypoints.py']"
+Hamish Willee,2015-10-28,Fixes incorrect string for serial connection to device with baud rate,['getting_started.rst']
+Hamish Willee,2015-10-28,Improve about section of docs,"['github_latest_release.txt,overview.rst,release_notes.rst']"
+Tim Ryan,2015-10-27,"Merge pull request #378 from dronekit/hgw_getting_started_baud_rate
+
+Fixes incorrect string for serial connection to device with baud rate",['']
+Hamish Willee,2015-10-28,Remove focus on air-interface,"['overview.rst,index.rst']"
+Hamish Willee,2015-10-28,Merge branch 'master' of https://github.com/dronekit/dronekit-python into hgw_about_docs,['']
+Tim Ryan,2015-10-28,"Merge pull request #380 from dronekit/hgw_about_docs
+
+Improve about section of docs",['']
+Tim Ryan,2015-10-28,Merge branch 'master' into tcr-cleanup,['']
+Tim Ryan,2015-10-28,"Merge pull request #377 from dronekit/tcr-cleanup
+
+Removes ""MP"" classes",['']
+Tim Ryan,2015-10-28,Exports Commands. Implements Commands.__len__,['test_waypoints.py']
+Tim Ryan,2015-10-28,Implements waypoint uploading.,['test_waypoints.py']
+Tim Ryan,2015-10-28,"Merge pull request #381 from dronekit/tcr-wayup
+
+Implements waypoint uploading.",['']
+Tim Ryan,2015-10-28,2.0.0rc2,['setup.py']
+Tim Ryan,2015-10-29,"Merge pull request #385 from dronekit/tcr-rc2
+
+2.0.0rc2",['']
+Hamish Willee,2015-10-29,"Update README.md
+
+New readme - already reviewed by @mrpollo",['README.md']
+Hamish Willee,2015-10-29,"Update README.md
+
+Fix up some of the links",['README.md']
+Hamish Willee,2015-10-29,"Update README.md
+
+More fixes to the way links are presented, and one typo fix.",['README.md']
+Hamish Willee,2015-10-29,"Update README.md
+
+Yet another typo fix. Grrr.",['README.md']
+Tim Ryan,2015-10-29,Removes dronekit.module,['api.py']
+Tim Ryan,2015-10-29,Removes dronekit.__main__,['__main__.py']
+Tim Ryan,2015-10-29,Removes dronekit.module installation.,['setup.py']
+Tim Ryan,2015-10-29,"Merge pull request #383 from dronekit/hgw_updated_readme
+
+Update README.md",['']
+Tim Ryan,2015-10-29,Merge branch 'master' into tcr-cleanup,['']
+Tim Ryan,2015-10-30,"Merge pull request #387 from dronekit/tcr-cleanup
+
+Removes two unused modules.",['']
+Tim Ryan,2015-10-30,Makes mode-mapping semi-private for Solo.,['']
+Tim Ryan,2015-10-30,Exposes heading as a vehicle property.,['']
+Tim Ryan,2015-10-30,2.0.0rc3,['setup.py']
+Tim Ryan,2015-10-30,"Merge pull request #388 from dronekit/tcr-fixe
+
+Exposes two features for Solo.",['']
+Tim Ryan,2015-11-02,Use mavutils' reset logic rather than new connection.,['']
+Tim Ryan,2015-11-02,Adds baud parameter to connect(). Fixes #393.,['']
+Tim Ryan,2015-11-02,"Merge pull request #394 from dronekit/tcr-baud
+
+Adds baud parameter to connect(). Fixes #393.",['']
+Tim Ryan,2015-11-02,Fixes reset logic.,['']
+Tim Ryan,2015-11-02,"Merge pull request #399 from dronekit/tcr-resetlogic
+
+Fixes reset logic.",['']
+Tim Ryan,2015-11-02,Moves home_location out of commands array.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Adds home checks. Statically creates commands array.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Allows clear() on empty commands array. Fixes len < 0 bug.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Corrects home_location to be LocationGlobal.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Implements slicing and iteration for commands.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Fixes indexing logic.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Adds upload() command.,['test_waypoints.py']
+Hamish Willee,2015-11-02,Fix up mission examples now that home_location is not the first index. Update home_location in API Ref too,"['automodule.rst,mission_basic.rst,mission_basic_example_copter_path.png,mission_import_export.rst,auto_mode.rst,migrating.rst,mission_basic.py,mission_import_export.py,mpmission.txt']"
+Hamish Willee,2015-11-02,Further fixes to correct use vehicle.home_location and other minor changes,"['channel_overrides.rst,create_attribute.rst,drone_delivery.rst,flight_replay.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,mission_import_export.rst,simple_goto.rst,vehicle_state.rst,guided_mode.rst,vehicle_state_and_parameters.rst,flight_replay.py,guided_set_speed_yaw.py,vehicle_state.py']"
+Tim Ryan,2015-11-02,Corrects last_waypoint and .next setting. Closes #390.,['test_waypoints.py']
+Tim Ryan,2015-11-02,Adds ability to set home_location.,['test_waypoints.py']
+Hamish Willee,2015-11-02,Add note about rounding errors in returned values,['mission_import_export.rst']
+Hamish Willee,2015-11-02,Add doc for clear(). Fix up warning/deprecated for flush(),['']
+Tim Ryan,2015-11-02,"Merge pull request #384 from dronekit/tcr-home
+
+Moves home_location out of commands array.",['']
+Tim Ryan,2015-11-02,Fixes reset logic.,['']
+Tim Ryan,2015-11-02,Directly adds message listeners to Vehicle object.,['']
+Tim Ryan,2015-11-02,Removes mavlinkrx callback.,['test_115.py']
+Tim Ryan,2015-11-02,Adds all non-trivial values to Vehicle directly.,['']
+Tim Ryan,2015-11-02,Moves over all message listeners.,['']
+Tim Ryan,2015-11-02,Reimplements waypoint tracking on Vehicle.,['']
+Tim Ryan,2015-11-02,Reimplements heartbeats and waypoints as event loop listeners.,['']
+Tim Ryan,2015-11-02,Merges all handling code into Vehicle.,['']
+Tim Ryan,2015-11-02,Reconfigures await_params and handler logic.,['']
+Tim Ryan,2015-11-02,Removes wait_init.,['']
+Tim Ryan,2015-11-02,Implements await_params in terms of wait_ready.,['test_110.py']
+Tim Ryan,2015-11-02,Replaces wait_valid with wait_ready.,"['auto_mode.rst,guided_mode.rst,vehicle_state_and_parameters.rst,flight_replay.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,perf_test.py,vehicle_state.py,test_waypoints.py']"
+Tim Ryan,2015-11-02,Fixes fallout from rebase.,"['auto_mode.rst,vehicle_state_and_parameters.rst,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,vehicle_state.py,test_waypoints.py']"
+Tim Ryan,2015-11-03,Small docs fix.,['']
+Tim Ryan,2015-11-03,"Merge pull request #401 from dronekit/tcr-statemerge
+
+Extracts MPState object logic into Vehicle. Implements wait_ready.",['']
+Hamish Willee,2015-11-03,Update examples and documentation to reflect get/set behaviour of vehicle.home_location - as per #392,"['guided-set-speed-yaw-demo.rst,vehicle_state.rst,guided_mode.rst,vehicle_state_and_parameters.rst,guided_set_speed_yaw.py,vehicle_state.py']"
+Tim Ryan,2015-11-03,Fixes remaining wait_ready renames.,"['mission_import_export.py,vehicle_state.py']"
+Tim Ryan,2015-11-03,"Merge pull request #403 from dronekit/hgw_home_location_docs_392
+
+Examples/doc updates to reflect get/set behaviour of Vehicle.home_location",['']
+Tim Ryan,2015-11-03,Adds Parameters.get function.,['test_parameters.py']
+Tim Ryan,2015-11-03,"Merge pull request #404 from dronekit/tcr-paramget
+
+Adds Parameters.get function.",['']
+Tim Ryan,2015-11-03,2.0.0rc5,['setup.py']
+Tim Ryan,2015-11-03,"Merge pull request #405 from dronekit/tcr-rc5
+
+2.0.0rc5",['']
+Tim Ryan,2015-11-03,"Adds wait_ready to connect, and Vehicle defaults.",['']
+Tim Ryan,2015-11-03,Replaces await_params with wait_ready.,"['README.md,create_attribute.rst,auto_mode.rst,getting_started.rst,migrating.rst,taking_off.rst,channel_overrides.py,create_attribute.py,drone_delivery.py,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,perf_test.py,simple_goto.py,vehicle_state.py,test_110.py,test_115.py,test_12.py,test_goto.py,test_localposition.py,test_simpledemo.py,test_waypoints.py']"
+Tim Ryan,2015-11-03,"Merge pull request #408 from dronekit/tcr-await
+
+Replaces await_params with wait_ready.",['']
+Tim Ryan,2015-11-03,Fixes SITL importing.,['']
+Tim Ryan,2015-11-03,2.0.0rc6,['setup.py']
+Tim Ryan,2015-11-03,Moves tests to dronekit.test folder.,"['.travis.yml,appveyor.yml,circle.yml,README.md,test_110.py,test_115.py,test_12.py,test_goto.py,test_localposition.py,test_parameters.py,test_simpledemo.py,test_vehicleclass.py,test_waypoints.py,test_api.py,cloud_client_test.py,util.py,setup.py']"
+Tim Ryan,2015-11-03,2.0.0rc7,['setup.py']
+Tim Ryan,2015-11-03,"Merge pull request #409 from dronekit/tcr-fixsitl
+
+Moves tests into dronekit.test",['']
+Hamish Willee,2015-11-04,Fix errors in API ref generation due to file structure,['']
+Tim Ryan,2015-11-04,"Merge pull request #411 from dronekit/hgw_fix_apiref_intro
+
+Hgw fix apiref intro",['']
+Hamish Willee,2015-11-04,"Add docs on new connect baud parameter - #393. Fix up the debugging doc - #118, Fix auto-mode doc use of slice. Remove excluded methods from automodule generation as these are not longer present in init","['automodule.rst,auto_mode.rst,debugging.rst,getting_started.rst,migrating.rst']"
+Tim Ryan,2015-11-05,"Merge pull request #410 from dronekit/hgw_baud_debugging
+
+Add/fix docs on baud parameter, debugg -",['']
+Tim Ryan,2015-11-05,Reworks timeout logic. Supports hard timeout of 30s.,['test_timeout.py']
+Tim Ryan,2015-11-05,Fixes Windows tests by closing connections.,"['appveyor.yml,test_110.py,test_115.py,test_12.py,test_goto.py,test_localposition.py,test_parameters.py,test_simpledemo.py,test_vehicleclass.py,test_waypoints.py,util.py']"
+Tim Ryan,2015-11-05,Improves localposition test.,['test_localposition.py']
+Tim Ryan,2015-11-05,Adds heartbeat timeouts and tests.,"['test_timeout.py,test_timeout.py']"
+Tim Ryan,2015-11-05,Supports Copter 3.3 and new DroneKit SITL.,"['test_110.py,test_goto.py,test_localposition.py,requirements.txt']"
+Tim Ryan,2015-11-05,Allows timeout to be set to 0.,['']
+Tim Ryan,2015-11-05,"Merge pull request #407 from dronekit/tcr-timeout
+
+Reworks timeout logic. Fixes windows tests. Supports Copter 3.3 release in tests.",['']
+Hamish Willee,2015-11-05,Update the main attribute_observer examples and docs,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Hamish Willee,2015-11-05,"Update the mavlink message handling ref, guide, example to use the new message_listener decorator etc","['create_attribute.rst,mavlink_messages.rst,create_attribute.py,drone_delivery.py']"
+Hamish Willee,2015-11-05,Add observer/message listener info to migrating guide. Message listener updates to API Ref,['migrating.rst']
+Tim Ryan,2015-11-05,"Merge pull request #420 from dronekit/hgw_update_docs_observer_changes_413
+
+Update attribute_observer examples and docs",['']
+Hamish Willee,2015-11-05,Fix GPSInfo to remove units from eph and epv definition,['']
+Tim Ryan,2015-11-05,"Merge pull request #418 from dronekit/hgw_fix_gps_0_eph_epv_ref
+
+Fix GPSInfo to remove units from eph and epv definition",['']
+Tim Ryan,2015-11-05,Adds docs building to Circle CI test.,['circle.yml']
+Tim Ryan,2015-11-05,Removes empty excluded-members line.,['automodule.rst']
+Tim Ryan,2015-11-05,"Merge pull request #422 from dronekit/tcr-docsbuild
+
+Adds docs building to Circle CI test.",['']
+Tim Ryan,2015-11-06,Don't try to reconnect during failed sends.,['']
+Tim Ryan,2015-11-06,Removes race condition in test_parameters,['test_parameters.py']
+Tim Ryan,2015-11-06,"Merge pull request #424 from dronekit/tcr-paramtimeout
+
+Fixes timeout logic and a race condition in tests.",['']
+Tim Ryan,2015-11-06,Corrects .next definition to be current waypoint (not command entry).,['mission_basic.py']
+Tim Ryan,2015-11-06,"Merge pull request #423 from dronekit/tcr-nextvexd
+
+Corrects .next definition to be current waypoint (not command entry).",['']
+Tim Ryan,2015-11-06,2.0.0rc8,['setup.py']
+Tim Ryan,2015-11-06,"Merge pull request #425 from dronekit/tcr-rc8
+
+2.0.0rc8",['']
+Tim Ryan,2015-11-06,"Renames on_attribute to add_attribute_listener, attribute_listener to on_attribute.","['create_attribute.rst,mavlink_messages.rst,migrating.rst,vehicle_state_and_parameters.rst,test_110.py,test_115.py,test_vehicleclass.py,create_attribute.py,drone_delivery.py,vehicle_state.py']"
+Tim Ryan,2015-11-06,Makes notification functions public.,"['create_attribute.rst,create_attribute.py']"
+Tim Ryan,2015-11-06,Passes attribute value into listener.,['test_110.py']
+Hamish Willee,2015-11-09,Fixes attribute/message callback docs for #426,"['create_attribute.rst,vehicle_state.rst,mavlink_messages.rst,migrating.rst,vehicle_state_and_parameters.rst,create_attribute.py,vehicle_state.py']"
+Hamish Willee,2015-11-09,Tidy example in response to #420 comment,['create_attribute.py']
+Hamish Willee,2015-11-09,"Add attributes docs for system_status, heading as per #305","['vehicle_state.rst,migrating.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Hamish Willee,2015-11-09,Addition file changes (this should have been part of last commit),['']
+Tim Ryan,2015-11-09,Updates AppVeyor configuration.,['appveyor.yml']
+Tim Ryan,2015-11-09,"Merge pull request #436 from dronekit/tcr-4262
+
+Merges #426.",['']
+Tim Ryan,2015-11-09,Supports cached home_location.,['']
+Hamish Willee,2015-11-09,Changes documentation in line with new home_location behaviour,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Tim Ryan,2015-11-09,"Merge pull request #429 from dronekit/tcr-homefix
+
+Supports cached home_location, replaces default 0,0,0 location with None.",['']
+Tim Ryan,2015-11-09,2.0.0rc9,['setup.py']
+Tim Ryan,2015-11-09,"Merge pull request #438 from dronekit/tcr-rc9
+
+2.0.0rc9",['']
+Tim Ryan,2015-11-09,Updates Create Attribute example.,"['create_attribute.py,my_vehicle.py']"
+Tim Ryan,2015-11-09,Adds is_armable check.,"['test_goto.py,test_localposition.py,simple_goto.py']"
+Hamish Willee,2015-11-10,Updates to docs for is_armable attribute. Update to two main examples.,"['simple_goto.rst,vehicle_state.rst,migrating.rst,taking_off.rst,vehicle_state_and_parameters.rst,simple_goto.py,vehicle_state.py']"
+Tim Ryan,2015-11-09,"Merge pull request #430 from dronekit/tcr-addarm
+
+Adds is_armable property.",['']
+Hamish Willee,2015-11-10,Fix up documentation to go with new create_attribute example. Remove unnecessary imports from examples,"['create_attribute.rst,create_attribute.py,my_vehicle.py']"
+Hamish Willee,2015-11-10,Merge branch 'master' of https://github.com/dronekit/dronekit-python into tcr-example,['']
+Tim Ryan,2015-11-10,"Merge pull request #437 from dronekit/tcr-example
+
+Updates Create Attribute example.",['']
+Tim Ryan,2015-11-10,Implements SystemStatus property.,['test_state.py']
+Hamish Willee,2015-11-10,Update example to print vehicle.system_status.state,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Tim Ryan,2015-11-10,"Merge pull request #441 from dronekit/tcr-system_status
+
+Implements SystemStatus property.",['']
+Tim Ryan,2015-11-10,Adds test for #227.,['test_waypoints.py']
+Tim Ryan,2015-11-10,"Merge pull request #439 from dronekit/tcr-227
+
+Adds test for #227.",['']
+Hamish Willee,2015-11-10,Fix typo in note about setting yaw,['guided_mode.rst']
+Hamish Willee,2015-11-10,Fixes connect docs as per #395. Makes the docs display,['']
+Hamish Willee,2015-11-10,Document current parameter download strategy as per #352,['vehicle_state_and_parameters.rst']
+Hamish Willee,2015-11-10,Add ekf_ok attribute docs,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Hamish Willee,2015-11-10,Update migrating doc to make it clear that numpy is no longer a dependency and note that it may now be possible to use other python distributions,['migrating.rst']
+Tim Ryan,2015-11-10,"Merge pull request #443 from dronekit/hgw_params_etc
+
+Hgw params etc",['']
+Tim Ryan,2015-11-10,Prevents arming while already armed.,['']
+Tim Ryan,2015-11-10,"Merge pull request #444 from dronekit/tcr-doublearm
+
+Prevents arming while already armed.",['']
+Tim Ryan,2015-11-10,Restores RC capability.,['']
+Tim Ryan,2015-11-10,Adds tests and fixes dict objects in channels.,['test_channels.py']
+Hamish Willee,2015-11-10,Fix up docs and examples for new channel overrides class,"['channel_overrides.rst,channel_overrides.py']"
+Tim Ryan,2015-11-10,Adds more extensive tests.,"['test_channels.py,noise.py']"
+Tim Ryan,2015-11-10,Adds more extensive tests to channels.,"['test_channels.py,noise.py']"
+Tim Ryan,2015-11-10,Adds callback test.,['test_channels.py']
+Hamish Willee,2015-11-10,Tidy up example/docs now that index 8 on channels.overrides works and clearing all overrides. Also added doc to migration guide,"['channel_overrides.rst,migrating.rst,channel_overrides.py']"
+Tim Ryan,2015-11-10,"Merge pull request #427 from dronekit/tcr-rc
+
+Implements Channels functionality as its own object.",['']
+Tim Ryan,2015-11-11,Memoize attribute listeners to not call them on equal values.,['test_110.py']
+Hamish Willee,2015-11-11,Updates to docs now observers may be cached ... or not,"['create_attribute.rst,vehicle_state.rst,migrating.rst,vehicle_state_and_parameters.rst,my_vehicle.py,vehicle_state.py']"
+Hamish Willee,2015-11-11,Fix typos in example,['vehicle_state.py']
+Tim Ryan,2015-11-11,"Merge pull request #446 from dronekit/tcr-attrup
+
+Memoize attribute listeners to not call them on equal values.",['']
+Tim Ryan,2015-11-11,Adds smarter error notification when errors occur.,['']
+Tim Ryan,2015-11-11,"Merge pull request #447 from dronekit/tcr-432
+
+Adds smarter error notification when errors occur.",['']
+Tim Ryan,2015-11-11,Allows parameters to be iterated over.,['test_parameters.py']
+Tim Ryan,2015-11-11,Enables vehicle.parameters to be observed.,['test_parameters.py']
+Tim Ryan,2015-11-11,Makes parameters case-insensitive.,['']
+Tim Ryan,2015-11-11,Caches parameters notifications.,['']
+Tim Ryan,2015-11-11,"Merge pull request #442 from dronekit/tcr-iterparams
+
+Allows parameters to be iterated and observed.",['']
+Tim Ryan,2015-11-11,Prevents division error in battery instantiation.,['test_298.py']
+Tim Ryan,2015-11-11,"Fixes battery test, fixes battery bug!",['test_earlyattrs.py']
+Tim Ryan,2015-11-11,Removes excess print statements from test_channels.,['test_channels.py']
+Tim Ryan,2015-11-11,"Merge pull request #431 from dronekit/tcr-batteryrace
+
+Prevents division error in battery instantiation.",['']
+Tim Ryan,2015-11-11,Fixes drone delivery example to start on other thread.,['drone_delivery.py']
+Tim Ryan,2015-11-11,"Improves drone delivery example, also cleanup.",['drone_delivery.py']
+Tim Ryan,2015-11-11,"Merge pull request #440 from dronekit/tcr-dronedelivery
+
+Fixes drone delivery example.",['']
+Tim Ryan,2015-11-11,2.0.0rc10,['setup.py']
+Tim Ryan,2015-11-11,"Merge pull request #449 from dronekit/tcr-r9
+
+2.0.0rc10",['']
+Hamish Willee,2015-11-12,Update apiref for wait_ready in Vehicle and connect(),['']
+Hamish Willee,2015-11-12,"Updates to docs/examples/ref for parameter observers, wait_ready. UPdates to migration guide for this to. UPdated main entry point to link to migration guide","['vehicle_state.rst,migrating.rst,vehicle_state_and_parameters.rst,index.rst,vehicle_state.py']"
+Hamish Willee,2015-11-12,minor fixup,['vehicle_state.py']
+Tim Ryan,2015-11-12,Renames msg arg to value.,['vehicle_state_and_parameters.rst']
+Tim Ryan,2015-11-12,"Merge pull request #450 from dronekit/hgw_paramater_docs
+
+Hgw parameter docs",['']
+Tim Ryan,2015-11-16,Exposes target_system on connect().,['']
+Tim Ryan,2015-11-16,Create MAVConnection abstraction to implement forwarding.,"['mavlink.py,test_mavlink.py,setup.py']"
+Tim Ryan,2015-11-16,"Merge pull request #448 from dronekit/tcr-targets
+
+Exposes target_system on connect(). Exposes MAVConnection.",['']
+Tim Ryan,2015-11-17,Corrects is_relative attr of vehicle.location.,['']
+Tim Ryan,2015-11-17,Corrects fame to 'frame' :(,['']
+Tim Ryan,2015-11-17,"Refactors locations, adds LocationGlobalRelative","['test_goto.py,drone_delivery.py,follow_me.py,mission_basic.py,simple_goto.py']"
+Hamish Willee,2015-11-17,"Fixes to API ref, example, documentation","['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Tim Ryan,2015-11-17,Removes is_relative from LocationGlobal*.,['']
+Tim Ryan,2015-11-17,Fixes localposition. Allows wait_ready on location.local_frame.,['test_localposition.py']
+Tim Ryan,2015-11-17,Makes generic locations test. Checks location.on_attribute.,['test_locations.py']
+Tim Ryan,2015-11-17,Waits for non-0 alt on global_frame.,['test_locations.py']
+Tim Ryan,2015-11-17,Adds error exception in message listener.,['mavlink.py']
+Hamish Willee,2015-11-17,"Fix up examples to test against isarmable, Fix up location accesses to relative.","['vehicle_state.rst,vehicle_state_and_parameters.rst,follow_me.py,guided_set_speed_yaw.py,mission_basic.py,simple_goto.py']"
+Tim Ryan,2015-11-17,Populates frames with None values. Fixes float bug in alt.,['test_locations.py']
+Hamish Willee,2015-11-17,"Update docs to reflect new Location behaviour - ie None values for alt, lat, etc","['drone_delivery.rst,vehicle_state.rst,migrating.rst,taking_off.rst,drone_delivery.py']"
+Tim Ryan,2015-11-17,"Merge pull request #445 from dronekit/tcr-frame
+
+Implements LocationGlobalRelative.",['']
+Tim Ryan,2015-11-17,2.0.0rc11,['setup.py']
+Tim Ryan,2015-11-17,"Merge pull request #459 from dronekit/tcr-rc11
+
+2.0.0rc11",['']
+Hamish Willee,2015-11-18,"updates target_system information in connect, and also the send_mavlink information that relates to it",['guided_mode.rst']
+Tim Ryan,2015-11-17,"Merge pull request #460 from dronekit/hgw-system-target
+
+updates target_system documentation",['']
+Tim Ryan,2015-11-17,Implements target_system lookup. Implements better target semantics.,['mavlink.py']
+Hamish Willee,2015-11-18,Tidies up connect() and related docs for heartbeat and source_system,['guided_mode.rst']
+Hamish Willee,2015-11-18,Fix the connection timeout information,['']
+Hamish Willee,2015-11-18,Fix the connection timeout typo,['']
+Tim Ryan,2015-11-18,"Merge pull request #461 from dronekit/tcr-forward
+
+Implements target_system lookup. Implements better target semantics.",['']
+Tim Ryan,2015-11-18,Adds last_heartbeat property.,['']
+Hamish Willee,2015-11-18,Add documentation/examples for the last_heartbeat attribute,"['vehicle_state.rst,migrating.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Tim Ryan,2015-11-18,"Merge pull request #457 from dronekit/tcr-heartbeat
+
+Adds last_heartbeat property.",['']
+Tim Ryan,2015-11-18,2.0.0rc12,['setup.py']
+Tim Ryan,2015-11-18,"Merge pull request #464 from dronekit/tcr-rc12
+
+2.0.0rc12",['']
+Tim Ryan,2015-11-18,Restructures dronekit.lib to be just dronekit.,"['README.md,automodule.rst,channel_overrides.rst,create_attribute.rst,drone_delivery.rst,follow_me.rst,mission_basic.rst,simple_goto.rst,vehicle_state.rst,auto_mode.rst,guided_mode.rst,getting_started.rst,mavlink_messages.rst,migrating.rst,taking_off.rst,vehicle_state_and_parameters.rst,CloudClient.py,lib.py,mavlink.py,test_channels.py,test_api.py,cloud_client_test.py,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,perf_test.py,simple_goto.py,vehicle_state.py,setup.py']"
+Tim Ryan,2015-11-18,Formats code using yapf.,"['.style.yapf,CloudClient.py,mavlink.py,test_110.py,test_115.py,test_12.py,test_channels.py,test_earlyattrs.py,test_goto.py,test_locations.py,test_mavlink.py,test_parameters.py,test_simpledemo.py,test_state.py,test_timeout.py,test_vehicleclass.py,test_waypoints.py,test_api.py,util.py']"
+Tim Ryan,2015-11-18,"Merge pull request #465 from dronekit/tcr-lib
+
+dronekit.lib -> dronekit and final code reformatting.",['']
+Tim Ryan,2015-11-18,2.0.0rc13,['setup.py']
+Tim Ryan,2015-11-18,"Merge pull request #466 from dronekit/tcr-rc13
+
+2.0.0rc13",['']
+Hamish Willee,2015-11-19,Move Vehicle docs alongside properties. Tidy up descriptions. Make linking consistent,['']
+Hamish Willee,2015-11-19,Fix link to forums rather than stack overflow,['overview.rst']
+Hamish Willee,2015-11-19,"Fixes as a result of retesting examples. For example, velocity movement commands are signficantly different in AC3.3","['guided-set-speed-yaw-demo.rst,mission_basic.rst,simple_goto.rst,auto_mode.rst,guided_mode.rst,guided_set_speed_yaw.py,mission_basic.py,simple_goto.py,vehicle_state.py']"
+Tim Ryan,2015-11-19,"Merge pull request #468 from dronekit/hgw-final-doc-tidy
+
+Documentation tidy",['']
+Ahmed Agbabiaka,2015-11-19,"Update vehicle_state.py
+
+vehicle.home_location requires a float, not an integer. changed my_location_alt.alt value from 222 to 222.0",['vehicle_state.py']
+Tim Ryan,2015-11-19,Fixes vehicle.commands.goto with LocationGlobal.,['']
+Tim Ryan,2015-11-19,"Merge pull request #469 from dronekit/tcr-gotofix
+
+Fixes vehicle.commands.goto with LocationGlobal.",['']
+Tim Ryan,2015-11-19,Makes airspeed/groundspeed settable.,['']
+Tim Ryan,2015-11-19,Adds speed params to goto.,['']
+Tim Ryan,2015-11-19,Fixes examples.,['']
+Tim Ryan,2015-11-19,Renames to simple_goto and simple_takeoff,"['test_goto.py,test_locations.py,drone_delivery.py,follow_me.py,guided_set_speed_yaw.py,mission_basic.py,simple_goto.py']"
+Hamish Willee,2015-11-20,"Fixes to lots of examples and docs for new settable speed, simple_takeoff and simple_goto","['follow_me.rst,guided-set-speed-yaw-demo.rst,simple_goto.rst,vehicle_state.rst,guided_mode.rst,migrating.rst,taking_off.rst,vehicle_state_and_parameters.rst,drone_delivery.py,simple_goto.py,vehicle_state.py']"
+Tim Ryan,2015-11-20,"Merge pull request #473 from dronekit/tcr-speeds
+
+Makes airspeed/groundspeed settable.",['']
+Tim Ryan,2015-11-23,Merge branch 'master' of https://github.com/franknitty69/dronekit-python into franknitty69-master,['']
+Tim Ryan,2015-11-23,"Merge pull request #477 from dronekit/franknitty69-master
+
+Update vehicle_state.py to use float values.",['']
+Hamish Willee,2015-11-23,Fixes to mission_basic.py example and related docs,"['mission_basic.rst,auto_mode.rst,mission_basic.py']"
+Hamish Willee,2015-11-23,Modify example to use wait_ready when downloading commands,['mission_import_export.py']
+Hamish Willee,2015-11-23,Minor fix to create attribute docs to explain when cache should be called,['create_attribute.rst']
+Hamish Willee,2015-11-23,Fixes to follow_me example docs due to changed LocationGlobalRelative,"['follow_me.rst,follow_me.py']"
+Hamish Willee,2015-11-23,Fix a few typos in the channel_overrides example docs,['channel_overrides.rst']
+Hamish Willee,2015-11-23,Fix error due to incorrect access of location in callback in drone_delivery,"['drone_delivery.rst,drone_delivery.py']"
+Hamish Willee,2015-11-23,improve description of how example works,['drone_delivery.rst']
+Tim Ryan,2015-11-23,"Merge pull request #474 from dronekit/hgw_test_fix_remaining_examples
+
+Hgw test fix remaining examples",['']
+Hamish Willee,2015-11-23,Remove CommandSequence.takeoff docs. Update simple_goto.py example and associated docs,"['simple_goto.rst,simple_goto_example_copter_path.png,taking_off.rst,simple_goto.py']"
+Hamish Willee,2015-11-23,update guided mode instructions for setting speed in positional mode,"['guided-set-speed-yaw-demo.rst,guided_mode.rst,guided_set_speed_yaw.py']"
+Tim Ryan,2015-11-23,"Merge pull request #476 from dronekit/hgw_more_fixes_for_goto_takeoff
+
+Hgw more fixes for goto takeoff",['']
+Tim Ryan,2015-11-23,"Defaults vehicle_class to None, not Vehicle.",['']
+Tim Ryan,2015-11-23,"Merge pull request #479 from dronekit/tcr-vehiclenone
+
+Defaults vehicle_class to None, not Vehicle.",['']
+Tim Ryan,2015-11-24,2.0.0,"['CHANGELOG.md,github_latest_release.txt,get_release_notes.py,update-docs.sh,update-releasenotes.sh,setup.py']"
+Tim Ryan,2015-11-24,"Merge pull request #480 from dronekit/tcr-cl2
+
+2.0.0",['']
+Hamish Willee,2015-11-24,Add links to legacy docs and examples on front page and migration guide. Make it a little more clear these are the v2 docs,"['migrating.rst,index.rst']"
+Tim Ryan,2015-11-24,"Merge pull request #481 from dronekit/hgw_links_to_v1_5_docs
+
+Add links to legacy docs and examples",['']
+Hamish Willee,2015-11-26,Improve information about setting baud rate when connecting,['getting_started.rst']
+Hamish Willee,2015-11-26,Further updates in line with feedback,['getting_started.rst']
+Tim Ryan,2015-11-30,"Merge pull request #483 from dronekit/hgw_improve_connection_string_info
+
+Improve information about setting baud rate when connecting",['']
+Mark Wieder,2015-11-30,fixed Unknown Endpoint message,['CloudClient.py']
+Tim Ryan,2015-11-30,"Merge pull request #486 from dronekit/mwieder-fix_typos
+
+Pull in #485.",['']
+Tim Ryan,2015-11-30,Bumps required requests versions.,['requirements.txt']
+Tim Ryan,2015-11-30,2.0.1,"['CHANGELOG.md,setup.py']"
+Tim Ryan,2015-11-30,"Merge pull request #487 from dronekit/tcr-requests
+
+Bumps required requests versions.",['']
+Tim Ryan,2015-11-30,Fixes setup.py to match requirements.txt.,['setup.py']
+Tim Ryan,2015-11-30,2.0.2,"['CHANGELOG.md,setup.py']"
+Tim Ryan,2015-11-30,"Merge pull request #488 from dronekit/tcr-2
+
+Fixes setup.py to match requirements.txt.",['']
+GOPI,2015-12-01,"drone_delivery fails when try to execute go to command, this is due to a bug executing simple_goto
+changed line 113 and 120 from self.simple_goto to self.vehicle.simple_goto",['drone_delivery.py']
+Tim Ryan,2015-12-01,"Merge pull request #492 from dronekit/GOPINATH-GS4-master
+
+Pulls in #491.",['']
+Hamish Willee,2015-12-04,Remove note about not documenting patch releases,['release_notes.rst']
+Hamish Willee,2015-12-04,Update test instructions to dkpy2,['contributions_api.rst']
+Tim Ryan,2015-12-06,"Merge pull request #493 from dronekit/hgw_remove_patch_comment
+
+Remove note about not documenting patch releases",['']
+Hamish Willee,2015-12-07,Update with information on how to run tests and additional dependencies for tests,['contributions_api.rst']
+Ramon Roche,2015-12-07,"Merge pull request #495 from dronekit/hgw_test_update_dkpy2
+
+Update test instructions to dkpy2",['']
+Daniel Nugent,2015-12-10,Gimbal: Added gimbal control,['']
+Hamish Willee,2015-12-11,Update API reference docs and add the gimbal property,['']
+Hamish Willee,2015-12-11,Update example docs and guide following testing,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Hamish Willee,2015-12-14,Add pointer to gimbal simulation docs,['vehicle_state.rst']
+Tim Ryan,2015-12-13,"Merge pull request #498 from dronekit/djnugent-gimbal-control
+
+Gimbal: Added gimbal control",['']
+Hamish Willee,2015-12-23,"Move topics into new folders (breaks index, will repair later)","['migrating.rst,companion-computers.rst,sitl_setup.rst']"
+Hamish Willee,2015-12-23,Migrate to new structure and fix up links. Omits best-practise guide,"['index.rst,migrating.rst,developer_setup_linux.rst,developer_setup_windows.rst,coding_standards.rst,index.rst,installation.rst,channel_overrides.rst,create_attribute.rst,drone_delivery.rst,flight_replay.rst,follow_me.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,mission_import_export.rst,simple_goto.rst,vehicle_state.rst,connecting_vehicle.rst,getting_started.rst,index.rst,quick_start.rst,taking_off.rst,index.rst,simple_goto.py']"
+Hamish Willee,2015-12-29,Add Best Practice Section,"['MissionPlanner_ConnectPort.png,best_practice.rst,index.rst,installation.rst']"
+Hamish Willee,2015-12-29,Improve the Connecting topic,['connecting_vehicle.rst']
+Ramon Roche,2015-12-29,"Merge pull request #505 from dronekit/hgw_prgramming_guide
+
+Restructured DroneKit Documentation",['']
+Hamish Willee,2015-12-30,Fix link typo in quickstart,['quick_start.rst']
+Hamish Willee,2015-12-30,Update instructions to use DK-SITL,['sitl_setup.rst']
+Ramon Roche,2015-12-30,"Merge pull request #507 from dronekit/hgw_simulation_update
+
+docs simulation update",['']
+Ramon Roche,2016-01-28,small typo fix on quick-start guide,['quick_start.rst']
+Hamish Willee,2016-01-29,"Merge pull request #519 from dronekit/rr-quickstart-typo
+
+small typo fix on quick-start guide",['']
+Hamish Willee,2016-02-01,Update the readme for ask community to share their cool uses of DK,['README.md']
+Ramon Roche,2016-01-31,"Merge pull request #523 from dronekit/hgw_readme_dk_use_query
+
+Update the readme for ask community to share their cool uses of DK",['']
+Hamish Willee,2016-02-03,Fix minor typo in sitl introduction,['sitl_setup.rst']
+Peter Barker,2016-02-03,"Merge pull request #521 from dronekit/hgw_fix_typo_sitl
+
+Fix minor typo in sitl introduction",['']
+Daniel Habib,2016-02-03,"Clean Documentation
+
+Remove Unnecessary import",['quick_start.rst']
+Peter Barker,2016-02-03,"Merge pull request #525 from dronekit/DanielHabib-clean-documentation
+
+Rebased and waited for tests to pass.  Thanks Daniel!",['']
+Hamish Willee,2016-02-03,Fix incorrect property marker for airspeed,['']
+Ramon Roche,2016-02-03,"Merge pull request #527 from dronekit/hgw_fix_docs_airspeed_fail
+
+Fix incorrect property marker for airspeed",['']
+mgrennan,2016-02-04,Updates for debuging and connections via TCP,"['connecting_vehicle.rst,debugging.rst']"
+Hamish Willee,2016-02-04,Additions to debugging and connecting_vehicle,"['connecting_vehicle.rst,debugging.rst']"
+Peter Barker,2016-02-04,"Merge pull request #529 from dronekit/hgw_tidy_mgrennan_patch
+
+Hgw tidy mgrennan patch",['']
+Hamish Willee,2016-02-04,Update copyright range to 2015-2016,['conf.py']
+Peter Barker,2016-02-04,"Merge pull request #526 from dronekit/hgw_update_copyright_range
+
+UPdate copyright range to 2015-2016",['']
+Hamish Willee,2016-02-04,Add easy_install to docs as alternative to apt-get for installing pip,['installation.rst']
+Peter Barker,2016-02-04,"Merge pull request #522 from dronekit/hgw_add_pip_easyinstall_option
+
+Add easy_install to docs as alternative to apt-get for installing pip",['']
+Hamish Willee,2016-02-05,Remove test that hasn't been updated to DKPY2.0 and doesn't appear to do anything useful,['tx_perf_test.py']
+Hamish Willee,2016-02-05,Rename the performance test for consistency,['performance_test.py']
+Hamish Willee,2016-02-05,Fix/simplify and document the performance test.,"['index.rst,performance_test.py']"
+Peter Barker,2016-02-08,"Merge pull request #533 from dronekit/hgw_performance_example
+
+Hgw performance example",['']
+Peter Barker,2016-02-08,"Do not use a hard-coded default home location for drone_delivery
+
+Wait for the vehicle to supply us with a location before starting
+the web server
+
+Fixes #362",['drone_delivery.py']
+Hamish Willee,2016-02-08,"Merge pull request #532 from dronekit/drone-delivery-home
+
+Drone delivery home - sets the home location to be initial location, and the map aligns correctly.",['']
+Hamish Willee,2016-02-08,Make drone delivery example use DK-SITL simulator if no connect string specified. Fix docs,"['drone_delivery.rst,drone_delivery.py']"
+Hamish Willee,2016-02-09,whitespace fix to beat Travis into submission,['drone_delivery.rst']
+Peter Barker,2016-02-09,"Merge pull request #539 from dronekit/hgw_drone_delivery_example
+
+Make drone delivery example use DK-SITL simulator",['']
+Peter Barker,2016-02-09,Temporarily disable web tests - failing with DRONEAPI_KEY issue,"['.travis.yml,appveyor.yml,circle.yml']"
+Hamish Willee,2016-02-09,"Merge pull request #542 from dronekit/disable-web-tests
+
+Temporarily disable web tests - failing with DRONEAPI_KEY issue",['']
+Niels Joubert,2016-02-09,"Fix mount status to return float degrees, not int degrees",['']
+Hamish Willee,2016-02-09,"Merge pull request #541 from dronekit/nj-fix-mount-data-type
+
+Fix mount status to return float degrees, not int degrees",['']
+Peter Barker,2016-02-09,"Harmonise nosetest options across each of the integration platforms
+
+This should make the outputs comparable","['.travis.yml,appveyor.yml,circle.yml']"
+Hamish Willee,2016-02-09,"Merge pull request #543 from dronekit/harmoise-integration-nosetests
+
+Harmonise nosetest options across each of the integration platforms",['']
+Daniel Habib,2016-02-09,Update best_practice.rst,['best_practice.rst']
+Hamish Willee,2016-02-09,"Merge pull request #544 from dronekit/dh-best-practise
+
+Update best_practice.rst",['']
+Peter Barker,2016-02-10,"Increase timeouts, factor out a wait_for call","['test_110.py,test_locations.py']"
+Hamish Willee,2016-02-10,"Merge pull request #554 from dronekit/wait_for
+
+Increase timeouts, factor out a wait_for call",['']
+Hamish Willee,2016-02-10,Update  mission_import_export.py to use dk-sitl by default,"['mission_import_export.rst,mission_import_export.py']"
+Peter Barker,2016-02-10,"Merge pull request #549 from dronekit/hgw_dk_sitl_example_mission_export
+
+Update  mission_import_export.py to use dk-sitl by default",['']
+Hamish Willee,2016-02-10,"Update simple_goto example to use dronekit-sitl by default
+
+Minor tidy up to wording of using dk-sitl
+
+Improve code for closing sitl in examples","['simple_goto.rst,simple_goto.py']"
+Peter Barker,2016-02-10,"Merge pull request #546 from dronekit/hgw_dk_sitl_simple_goto
+
+Update simple_goto example to use dronekit-sitl by default",['']
+Hamish Willee,2016-02-10,Update channel_overrides example to use dronekit-sitl by default,"['channel_overrides.rst,channel_overrides.py']"
+Peter Barker,2016-02-10,"Merge pull request #553 from dronekit/hgw_dk_sitl_example_channels
+
+Update channel_overrides example to use dronekit-sitl by default",['']
+Hamish Willee,2016-02-10,"Update create_attribute example to use dk-sitl by default
+
+Improve code for closing sitl in examples","['create_attribute.rst,create_attribute.py,my_vehicle.py']"
+Peter Barker,2016-02-10,"Merge pull request #550 from dronekit/hgw_dk_sitl_example_create_attribute
+
+Update create_attribute example to use dk-sitl",['']
+Hamish Willee,2016-02-10,Update follow_me example to use dk-sitl by default,"['follow_me.rst,follow_me.py']"
+Peter Barker,2016-02-10,"Merge pull request #551 from dronekit/hgw_dk_sitl_example_follow_me
+
+Update follow_me example to use dk-sitl by default",['']
+Hamish Willee,2016-02-10,Update mission_basic.py example to use dk-sitl by default,"['mission_basic.rst,mission_basic.py']"
+Peter Barker,2016-02-10,"Merge pull request #548 from dronekit/hgw_dk_sitl_example_mission_basic
+
+Update mission_basic.py example to use dk-sitl by default",['']
+Hamish Willee,2016-02-10,Update guided example to use dronekit-sitl by default,"['guided-set-speed-yaw-demo.rst,guided_set_speed_yaw.py']"
+Peter Barker,2016-02-11,"Merge pull request #547 from dronekit/hgw_dk_sitl_guided_example
+
+Update guided example to use dronekit-sitl by default",['']
+Hamish Willee,2016-02-11,Update setup.py and doc.conf to release 2.1.0,"['conf.py,setup.py']"
+Hamish Willee,2016-02-11,Fix best practice information regarding sleeping your thread to refer to CPU not memory,['best_practice.rst']
+Peter Barker,2016-02-11,"Merge pull request #558 from dronekit/hgw_fix_best_practice_memory_recommendation
+
+Fix best practice information regarding sleeping your thread",['']
+squilter,2016-02-11,Remove duplicate imports,['']
+squilter,2016-02-11,Implement version class and capabilities class,"['test_capability_and_version.py,vehicle_state.py']"
+Peter Barker,2016-02-11,Refetch capabilities until ArduCopter complies,['test_capability_and_version.py']
+Peter Barker,2016-02-11,Improve stringification of Version object,['']
+Hamish Willee,2016-02-11,Fix doc strings in library,['']
+Hamish Willee,2016-02-11,Fix up examples for new version and capabilities attributes,"['vehicle_state.rst,vehicle_state_and_parameters.rst,vehicle_state.py']"
+Peter Barker,2016-02-11,"Wait for autpilot version, correct version numbers
+
+Also break out methods to get version and release type
+
+print more information in vehcicle_state","['test_capability_and_version.py,vehicle_state.py']"
+Hamish Willee,2016-02-11,Update docs for new release_type et al methods,['vehicle_state.rst']
+Hamish Willee,2016-02-11,Tidy up Sitl startup/shut down code. Add consistent example spacing,['vehicle_state.py']
+Hamish Willee,2016-02-12,"Merge pull request #545 from dronekit/versions_and_capability
+
+Versions and capability",['']
+Hamish Willee,2016-02-12,UPdate running examples page and simulation instructions,"['sitl_setup.rst,running_examples.rst']"
+Hamish Willee,2016-02-12,Clarify platforms for which SITL binaries provided,['sitl_setup.rst']
+Peter Barker,2016-02-12,"Merge pull request #555 from dronekit/hgw_running_examples
+
+UPdate running examples page and simulation instructions",['']
+Peter Barker,2016-02-15,Rejig flight replay example to use a telemetry log,"['flight.tlog,flight_replay.py']"
+Hamish Willee,2016-02-15,Update flight_replay docs and also to use standard takeoff function,"['flight_replay.rst,flight_replay_example.png,flight_replay.py']"
+Hamish Willee,2016-02-15,Make example keep only points separated by at least 3m,"['flight_replay.rst,flight_replay_example.png,flight_replay.py']"
+Peter Barker,2016-02-15,"Merge pull request #559 from dronekit/flight-replay-localfile
+
+Rejig flight replay example to use a telemetry log
+
+
+peter.barker
+5:08 PM All looks good to me.  You OK if I merge that one?
+hamishwillee
+5:08 PM Yes please!",['']
+Hamish Willee,2016-02-15,Fix windows style slashes in cd path in examples,['running_examples.rst']
+Peter Barker,2016-02-15,"Merge pull request #560 from dronekit/hgw_fix_slashes_example
+
+Fix windows style slashes in cd path in examples",['']
+Hamish Willee,2016-02-16,Merge branch 'master' into release_branch_2_1_0_update,['']
+Hamish Willee,2016-02-16,"Merge pull request #557 from dronekit/release_branch_2_1_0_update
+
+Update setup.py and doc.conf to release 2.1.0",['']
+sander,2016-02-17,Check if mode_mapping has items before iteration,['']
+Ramon Roche,2016-02-17,"Merge pull request #565 from sanderux/dronekit_px4
+
+Check if mode_mapping has items before iteration",['']
+Hamish Willee,2016-02-18,Improve description of dronekit on PyPi,['setup.py']
+Peter Barker,2016-02-19,Correct addition and removal of capabilities request HEARBTEAT listener,['']
+Peter Barker,2016-02-19,Wait for capabilities to be set by ArduPilot <3.3,['']
+Ramon Roche,2016-02-18,"Merge pull request #573 from dronekit/pb-fix-capa-requests
+
+Correct addition and removal of capabilities request HEARBTEAT listener",['']
+Tim Ryan,2016-02-19,Fixes test_goto with empty waypoint list.,['']
+Tim Ryan,2016-02-19,Splits outbound messages into its own thread.,['mavlink.py']
+Tim Ryan,2016-02-19,Adds sanity check to packet forwarding.,['mavlink.py']
+Tim Ryan,2016-02-19,Attempts to fix forwarding issues using mavnative.,['mavlink.py']
+Peter Barker,2016-02-19,"Avoid item-not-in-list exception
+
+This happens if you attempt to remove a listener if is registered",['']
+Ramon Roche,2016-02-18,"Merge pull request #570 from dronekit/tcr-writethread
+
+Splits outbound messages into its own thread.",['']
+Ramón Roche,2016-02-18,bump release to 2.2.0,"['conf.py,setup.py']"
+Ramon Roche,2016-02-18,"Merge pull request #575 from dronekit/rroche/version_2.2.0
+
+bump release to 2.2.0",['']
+Ramon Roche,2016-02-19,Merge branch 'master' into hgw_improve_pip_repo_description_dronekit,['']
+sander,2016-02-19,Validate existence of custom_mode before setting,['']
+sander,2016-02-19,Avoid double evaluation,['']
+Tim Ryan,2016-02-19,"Merge pull request #577 from dronekit/rroche/custom-mode-fix
+
+Validate existence of custom_mode before setting",['']
+Hamish Willee,2016-02-23,Remove requests as a dependency from setup.py,['setup.py']
+Hamish Willee,2016-02-24,Fix typo in GPS VDOP description,['']
+Peter Barker,2016-02-24,"Remove heartbeat listener if 5 bad AUTOPILOT_VERSIONs received
+
+Older versions of ArduPilot always send capabilities through as 0.",['']
+Ramon Roche,2016-02-24,"Merge pull request #586 from dronekit/autopilot-version-timeout
+
+Remove heartbeat listener if 5 bad AUTOPILOT_VERSIONs received",['']
+Ramon Roche,2016-02-24,Merge branch 'master' into hgw_fix_gps_ref_doc,['']
+Ramon Roche,2016-02-24,Merge branch 'master' into hgw_remove_requests_dependency,['']
+Ramon Roche,2016-02-24,"Merge pull request #582 from dronekit/hgw_remove_requests_dependency
+
+Remove requests as a dependency from setup.py",['']
+Ramon Roche,2016-02-24,Merge branch 'master' into hgw_fix_gps_ref_doc,['']
+Ramon Roche,2016-02-24,"Merge pull request #584 from dronekit/hgw_fix_gps_ref_doc
+
+Fix typo in GPS VDOP description",['']
+Ramón Roche,2016-02-24,whitespace killer!,['']
+Ramón Roche,2016-02-24,cleanup vehicle mode setting api,['test_mode_settings.py']
+Peter Barker,2016-02-25,"Merge pull request #579 from dronekit/rroche/cleanup-mode-api
+
+cleanup vehicle mode settings api",['']
+Peter Barker,2016-02-25,bump version to 2.3.0,"['conf.py,setup.py']"
+Peter Barker,2016-02-25,"Merge pull request #589 from dronekit/v2.3-versioning
+
+bump version to 2.3.0",['']
+Hamish Willee,2016-02-26,Update changelist/release notes,"['CHANGELOG.md,github_latest_release.txt']"
+Hamish Willee,2016-02-26,"Merge pull request #590 from dronekit/hgw_update_changenotes
+
+Update changelist/release notes",['']
+Ramón Roche,2016-02-26,cache ekf_ok callbacks,['']
+Peter Barker,2016-02-26,"Merge pull request #591 from dronekit/rroche/cache-ekf-status
+
+cache ekf_ok callbacks",['']
+dtaniwaki,2016-02-28,Fix ports in example documents,"['flight_replay.rst,vehicle_state.rst']"
+Hamish Willee,2016-02-29,"Merge pull request #596 from dtaniwaki/fix-documents
+
+Fix ports in example documents",['']
+Ramón Roche,2016-02-29,add monotonic lib,"['requirements.txt,setup.py']"
+Ramón Roche,2016-02-29,use monotonic clock on heartbeat checks,['']
+Ramón Roche,2016-02-29,use monotonic clock on parameter actions,['']
+Ramón Roche,2016-02-29,use monotonic clock on wait_ready for attributes,['']
+Ramón Roche,2016-02-29,"update version check for monotonic package
+
+we can modify this if we need to later","['requirements.txt,setup.py']"
+Tim Ryan,2016-02-29,"Merge pull request #594 from dronekit/rroche/time-warp
+
+time warp!",['']
+Ramón Roche,2016-02-29,bump to v2.4.0,"['CHANGELOG.md,github_latest_release.txt,conf.py,setup.py']"
+Hamish Willee,2016-03-01,Fix typos in release notes,"['CHANGELOG.md,github_latest_release.txt']"
+Peter Barker,2016-03-01,"Merge pull request #598 from dronekit/rroche/bump-2.4.0
+
+bump to 2.4.0",['']
+Tim Ryan,2016-03-01,Swallow message errors and continue.,['']
+Tim Ryan,2016-03-01,Swallow attribute errors and continue.,['']
+Peter Barker,2016-03-01,"Merge pull request #587 from dronekit/tcr-please
+
+Catch and display message and attribute errors, then continue.",['']
+Hamish Willee,2016-03-01,"Update taking_off.rst
+
+Takeoff was not calling simple-takeoff!",['taking_off.rst']
+Hamish Willee,2016-03-02,"Merge pull request #600 from dronekit/hamishwillee-fix-takeoff
+
+Update taking_off.rst",['']
+Ramón Roche,2016-03-01,circleci use deployment command strategy,['circle.yml']
+Hamish Willee,2016-03-02,"Merge pull request #601 from dronekit/rroche/travis-auto-build-docs
+
+publish docs after merge to master",['']
+Adric,2016-03-13,"MAV Type for rover was incorrect.
+
+When connecting to AMPRovers this failed due to the incorrect type, This is now corrected",['']
+Hamish Willee,2016-03-15,"Merge pull request #605 from adricl/patch-1
+
+MAV Type for rover was incorrect.",['']
+Fnoop,2016-04-04,#610: Wrap iterable call in try..except to deal with unrecognised vehicle codes,['']
+Hamish Willee,2016-04-06,Fix broken links on companion computer page,['companion-computers.rst']
+Hamish Willee,2016-04-06,"Merge pull request #612 from dronekit/hgw_fix_broken_links_to_ardupilot
+
+Fix broken links on companion computer page",['']
+Peter Barker,2016-04-08,drone_delivery: explain port to connect to,['drone_delivery.py']
+Peter Barker,2016-04-08,"Merge pull request #615 from dronekit/dd-improve-output
+
+drone_delivery: explain port to connect to",['']
+Peter Barker,2016-04-08,test_channels.py: remove infinite loop,['test_channels.py']
+Hamish Willee,2016-04-08,"Merge pull request #616 from dronekit/test-channels-loopfix
+
+test_channels.py: remove infinite loop",['']
+Peter Barker,2016-04-09,"microgcs: use sitl, update for new API",['microgcs.py']
+Ramon Roche,2016-04-12,"Merge pull request #614 from dronekit/microgcs-fixes
+
+microgcs: use sitl, update for new API",['']
+Peter Barker,2016-04-13,Reorder instructions in quickstart guide,['quick_start.rst']
+Hamish Willee,2016-04-13,"Merge pull request #564 from dronekit/reorder-quickstart
+
+Reorder instructions in quickstart guide",['']
+Peter Barker,2016-04-13,"Make running dronekit examples possible in Vagrant
+
+Add some extra packages.
+Create a private network to host machine",['Vagrantfile']
+Hamish Willee,2016-04-13,"Merge pull request #536 from dronekit/dronekit-examples-in-vagrant
+
+Make running dronekit examples possible in Vagrant",['']
+Fnoop,2016-04-16,Merge branch 'master' into master,['']
+fnoop,2016-04-17,#610: Add test case that triggers the bug,['test_modeavailable.py']
+fnoop,2016-04-17,Update test description,['test_modeavailable.py']
+Ramon Roche,2016-04-19,"Merge pull request #611 from fnoop/master
+
+#610: Wrap iterable call in try..except to deal with unrecognised vehicle codes",['']
+Ramón Roche,2016-05-04,bump 2.5.0,"['CHANGELOG.md,github_latest_release.txt,setup.py']"
+Ramon Roche,2016-05-04,"Merge pull request #621 from dronekit/rroche/bump-2.5.0
+
+bump 2.5.0",['']
+Peter Barker,2016-05-16,Use dronekit_sitl start_default to remove boilerplate,"['channel_overrides.py,create_attribute.py,drone_delivery.py,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,performance_test.py,simple_goto.py,vehicle_state.py']"
+Peter Barker,2016-05-16,Update quick start guide for start_default,['quick_start.rst']
+Hamish Willee,2016-05-16,"Merge pull request #624 from dronekit/use-start_default
+
+Use dronekit_sitl start_default to remove boilerplate",['']
+Peter Barker,2016-05-24,Pass kwargs through in monkey-patched sendfn,['mavlink.py']
+Hamish Willee,2016-05-25,"Merge pull request #627 from dronekit/monkey-kwargs
+
+Pass kwargs through in monkey-patched sendfn",['']
+Brenton Sutherland,2016-05-26,Added copyright notice to example files.,"['channel_overrides.py,create_attribute.py,my_vehicle.py,drone_delivery.py,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,performance_test.py,simple_goto.py,vehicle_state.py']"
+Hamish Willee,2016-05-28,"Merge pull request #631 from brenton311/master
+
+Added copyright notice to example files.",['']
+Peter Barker,2016-06-01,"Examples: set document character set encoding
+
+The recent addition of the copyright symbol into the code causes issues on some versions of Python - the scripts don't run.
+
+We now define the encoding according to https://www.python.org/dev/peps/pep-0263/","['channel_overrides.py,create_attribute.py,my_vehicle.py,drone_delivery.py,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,performance_test.py,simple_goto.py,vehicle_state.py']"
+Ramon Roche,2016-06-20,"Merge pull request #633 from dronekit/set-encodings
+
+Examples: set document character set encoding",['']
+Ramón Roche,2016-06-20,bump 2.6.0,"['CHANGELOG.md,github_latest_release.txt,setup.py']"
+Tim Ryan,2016-06-20,Supports udpin: with multiple endpoints.,['mavlink.py']
+Ramón Roche,2016-06-20,whitespace killer :knife:,['.editorconfig']
+Ramon Roche,2016-06-21,"Merge pull request #642 from dronekit/tcr-udpinmulti
+
+enable udpin-multi",['']
+Ramón Roche,2016-06-21,bump 2.7.0,"['CHANGELOG.md,github_latest_release.txt,setup.py']"
+George Hines,2016-07-14,add listener to set home location when a HOME_POSITION message is received from the vehicle,['']
+George Hines,2016-07-14,correct a typo from messing up an emacs shortcut,['']
+Ramon Roche,2016-07-15,"Merge pull request #646 from georgehines/home_position-listener
+
+Home position listener",['']
+Ramón Roche,2016-07-15,bump 2.8.0,"['CHANGELOG.md,github_latest_release.txt,setup.py']"
+Peter Barker,2016-07-16,MAVConnection: stop threads on exit and connection close,['mavlink.py']
+Hamish Willee,2016-07-19,"Merge pull request #648 from peterbarker/stop-threads
+
+MAVConnection: stop threads on exit and connection close",['']
+Mikael Ferland,2016-08-14,Make dronekit working with the PX4 Pro as https://github.com/mavlink/mavlink/pull/603 will be merged.,['']
+Mikael Ferland,2016-08-14,base_mode is now optional to success on unit tests,['']
+Peter Barker,2016-08-15,"Merge pull request #652 from MikaelFerland/master
+
+Make dronekit working with the PX4 Pro",['']
+peng,2016-08-22,"fix a bug where global_frame is used in case which global_relative_frame should be used instead, it causes the drone to take off using a very low sea-level altitude, so it won't leave the ground and its engine will be disarmed shortly after.",['test_goto.py']
+Hamish Willee,2016-08-23,"Merge pull request #653 from tribbloid/fix-test_goto
+
+fix a global_frame altitude caused bug in sitl test",['']
+Ramón Roche,2016-08-29,"bump pymavlink
+
+- greatly increases PX4 Pro compatibility
+- makes sure we don't fall behind on pymavlink upgrades
+- cleans up dependencies, its long overdue.","['requirements.txt,setup.py']"
+Ramon Roche,2016-08-29,"Merge pull request #654 from dronekit/rroche/test_new_pymavlink
+
+bump pymavlink",['']
+Ramón Roche,2016-08-29,bump 2.9.0,"['CHANGELOG.md,github_latest_release.txt,setup.py']"
+Ramón Roche,2016-08-29,there is no :cloud:,"['.travis.yml,appveyor.yml,circle.yml,contributions_api.rst,CloudClient.py,cloud_client_test.py,setup.py']"
+Hamish Willee,2016-08-30,"Merge pull request #656 from dronekit/rroche/remove_cloud
+
+there is no ☁️",['']
+Hamish Willee,2016-08-30,adds notification whenever home location is changed (#650),['']
+Ramon Roche,2016-08-31,notify ci status to gitter (#658),"['.travis.yml,circle.yml']"
+Ramon Roche,2016-09-19,"basic python 3 support (#655)
+
+* basic python 3 support
+
+* pyenv support
+
+* test python 2 and 3 on travis
+
+* test py 2.7 3.5 on circleci
+
+* debug travis nose tests
+
+* install to virtualenv","['.gitignore,.travis.yml,circle.yml,mavlink.py,requirements.txt,setup.py']"
+Ramon Roche,2016-09-22,update sitl (#660),['requirements.txt']
+glemero,2017-02-23,fix missing ** operator,['mavlink.py']
+glemero,2017-03-03,adding *args to send method in case pymavlink modifies its send method signature,['mavlink.py']
+Peter Barker,2017-03-04,"Merge pull request #699 from gwen-le-mero/master
+
+fix missing ** operator",['']
+cclauss,2017-04-18,"Step up testing to Python 2.7.13 and 3.6.0 (#702)
+
+* Step up testing to Python 3.6
+
+* Python 2.7.13 and 3.6.0
+
+* Python 2.7.13
+
+* allow_failures: python: 3.6","['.travis.yml,circle.yml']"
+Will Silva,2017-04-18,"add support for a logger function in errprinter (#681)
+
+* add support for a logger function in errprinter
+
+* this enables other software to monkey patch the logger function to capture dronekit output and exceptions
+
+* moved print to stderr to logger function
+
+* monkey patching logger will replace the print to stderr functionality instead of supplement it",['util.py']
+Will Silva,2017-04-18,"adds a method to LocationLocal that returns distance from home, in me… (#679)
+
+* adds a method to LocationLocal that returns distance from home, in meters
+
+* Return 3D distance to home if `down` is known, otherwise return 2D distance
+
+* also, rename `distance` to `distance_home`",['']
+Peter Barker,2017-04-21,requirements: any pymavlink gte 2.0.6,['requirements.txt']
+Amilcar Lucas,2017-04-21,"Fix windows installer, it is called dronekit, not droneapi. (#708)
+
+Improve documentation a bit","['dronekitWinBuild.bat,dronekit_installer.iss']"
+Amilcar Lucas,2017-04-21,"convert paratenter set value to single precision floating point number (the type used by low level mavlink messages) before sending/comparing it (#707)
+
+This fixes bougus ""timeout setting parameter x to y"" messages when the passed double value and it's single representation differ",['']
+cclauss,2017-04-21,"Python 3: define basestring, use bytes.decode() (#705)
+
+* Run flake8 tests against both Python 2 and 3
+
+* Python 3: from past.builtins import basestring
+
+* Python 3: from __future__ import print_function
+
+* Update simple_goto.py
+
+* flake8 --max-line-length=127
+
+* Python 3: from __future__ import print_function
+
+* Separate flak8 run just for syntax errors","['.travis.yml,drone_delivery.py,simple_goto.py']"
+Ramón Roche,2017-04-21,bump 2.9.1,"['CHANGELOG.md,github_latest_release.txt,setup.py']"
+cclauss,2017-04-22,pymavlink==2.0.8,['requirements.txt']
+Dr.-Ing. Amilcar Do Carmo Lucas,2017-04-24,Ignore Visual studio file,['.gitignore']
+Jerry Lynch,2017-04-27,fix BaseException.message deprecated in 2.6 and now an error in 3.x,['mavlink.py']
+moobsen,2017-05-17,"Update README.md
+
+updated dead link",['README.md']
+Peter Barker,2017-06-01,"Add play_tune() method on vehicle, example for same",['play_tune.py']
+Peter Barker,2017-06-19,Improve diagnostics for heartbeat flight mode issues,['']
+mhefny,2017-07-01,fixing altitude float,['']
+Lars Kellogg-Stedman,2017-07-04,"allow setting flight mode using a string value
+
+This modifies mode.setter so that we can write:
+
+    vehicle.mode = 'LOITER'
+
+Rather than:
+
+    vehicle.mode = VehicleMode('LOITER')",['']
+auturgy,2017-07-10,"Update requirements.txt
+
+update pymavlink",['requirements.txt']
+Hamish Willee,2017-07-11,"Merge pull request #732 from auturgy/patch-1
+
+Update requirements.txt",['']
+Peter Barker,2017-07-24,setup.py: bump pymavlink requirement to 2.2.3 to match requirements.txt,['setup.py']
+sanderux,2017-07-24,Ignore heartbeats from groundstations,['']
+Peter Barker,2017-07-27,examples: vehicle_state no longer arms the vehicle,['vehicle_state.py']
+cclauss,2017-09-07,"Define name `time_max` in sitl/test_110.py
+
+Without this change, a NameError is raised on line 50.",['test_110.py']
+cclauss,2017-10-03,Modernize Python 2 code to get ready for Python 3,"['.travis.yml,channel_overrides.py,create_attribute.py,flight_replay.py,follow_me.py,microgcs.py,guided_set_speed_yaw.py,mission_basic.py,mission_import_export.py,performance_test.py,vehicle_state.py,returnVersion.py']"
+Lars Kellogg-Stedman,2017-11-01,"send_capabilities_request was misspelled
+
+this corrects the spelling of ""capabilities"" and adds an alias to the
+old name to avoid breaking existing code.",['']
+Lars Kellogg-Stedman,2017-11-08,"raise ValueError if we are passed a bad value
+
+Given a bad value, we were sometimes raising a bare Exception,
+sometimes raising a ValueError, and sometimes raising an APIError.
+This commit attempts to make things consistent by raising ValueError
+when that's what we mean.
+
+There is also a drive-by correction to the spelling of ""Expecting"".",['']
+Lars Kellogg-Stedman,2017-11-08,"raise KeyError instead of a bare Exception
+
+This removes the last instance of the code raising a bare Exception.
+Since this is a failure in a __setitem__ method it seems reasonable to
+raise a KeyError.",['']
+Lars Kellogg-Stedman,2017-11-08,"add convenience methods for common synchronous operations
+
+this adds wait_for_armable, arm, disarm, wait_for_mode, and wait_for_alt
+methods that wrap common operations with wait-for-complete behavior
+with an optional timeout.",['']
+SJKim,2017-12-05,"Examples: add example for set_attitude_target
+Add an example code for movement in GUIDED_NOGPS mode
+
+Add the caution to the preface comment and delete the copyright
+
+Unify the format of print function
+
+Unify the format of comments
+
+Change the format of printing current altitude to improve the message visibility in Python 2
+
+Add console messages to give users more information about current status",['set_attitude_target.py']
+Lars Kellogg-Stedman,2018-01-09,"update connecting_vehicle with a serial example
+
+New dronekit users will often encounter timeout errors when attempting
+to open a serial connection (as in #704 and
+https://stackoverflow.com/q/48168953/147356).  This updates the
+documentation to include an example for a serial connection and a note
+about setting the baud rate.",['connecting_vehicle.rst']
+Hamish Willee,2018-01-10,"Merge pull request #780 from larsks/feature/serial-docs
+
+update connecting_vehicle with a serial example",['']
+pietrodn,2018-01-23,Fixes for intermittent timing failures of tests,"['test_mavlink.py,test_parameters.py']"
+pietrodn,2018-03-19,Fixes to make the test suite run under Python 3 also,"['test_channels.py,test_parameters.py']"
+Pietro De Nicolao,2018-03-19,Take out the .rstrip(b’\x00’),['']
+pietrodn,2018-03-19,"String encoding to bytes should be done in pymavlink, not here",['']
+Pietro De Nicolao,2018-03-26,"circle.yml: use latest available Python versions
+
+https://circleci.com/docs/1.0/build-image-trusty/#python",['circle.yml']
+Pietro De Nicolao,2018-03-26,"circle.yml: these versions surely work
+
+https://github.com/dronekit/dronekit-python/commit/fb004baddbedc510e17726474e8c40af88ccb208",['circle.yml']
+Pietro De Nicolao,2018-03-27,"circle.yml: fix the build
+
+- Install future beforehand as workaround to pymavlink bug: https://github.com/ArduPilot/pymavlink/issues/25
+- Install dependencies before dronekit, not after",['circle.yml']
+pietrodn,2018-03-31,Implement autopilot reboot + test,['test_reboot.py']
+Peter Barker,2018-03-31,examples: add a reboot example,['reboot.py']
+Pietro De Nicolao,2018-04-11,"Upgrade CircleCI configuration to version 2.0 (#810)
+
+* Upgrade CircleCI config to version 2.0
+
+- Parallel Python 2, Python 3 builds
+- Well-defined environments using Docker
+- CircleCI 1.0 will be deprecated soon
+
+* config.yml: disable Python 3 testing
+
+Comment out Python 3 testing until support is ready.
+Otherwise, the ""deploy"" step will fail.","['config.yml,circle.yml']"
+Ramon Roche,2018-04-11,"disable docs deploy from circleci (#814)
+
+we are migrating service providers and need to disable deployments of
+docs",['config.yml']
+Ramon Roche,2018-04-11,"travisci: disable python3 environment tests (#815)
+
+TODO: re enable tests once we fix pymavlink",['.travis.yml']
+michael-hart,2018-05-15,"Home location set command corrected
+
+param1 should have value 0 rather than 2",['']
+Pietro De Nicolao,2018-08-14,"__init__.py: rename variable ""await""
+
+As of Python 3.7, ""await"" is a reserved word (PEP 492).",['']
+pietrodn,2018-10-22,"Properly close Vehicle instances after SITL tests
+
+If Vehicle instances are left unclosed, the latest pymavlink (2.2.20)
+will spam a lot of ""EOF on TCP socket"" warning messages:
+https://github.com/ArduPilot/pymavlink/issues/230","['test_capability_and_version.py,test_locations.py,test_mavlink.py,test_mode_settings.py,test_reboot.py,test_state.py,test_timeout.py,test_waypoints.py']"
+pietrodn,2018-10-22,Update pymavlink for Python 3 support,"['config.yml,requirements.txt,setup.py']"
+Hamish Willee,2018-10-22,"Merge pull request #828 from michael-hart/master
+
+Home location set command corrected, fixes #827",['']
+pietrodn,2018-11-01,"mavlink.py: efficient I/O waiting with select()
+
+pymavlink uses non-blocking sockets and serial ports: polling for
+data in a while loop with a sleep(0.05) is inefficient and leads to
+increased latency for incoming MAVLink messages (issue #863).",['mavlink.py']
+Peter Barker,2018-11-01,Correct comment on play_tune,['']
+Peter Barker,2018-11-01,Add still-waiting interval and callback to wait_ready,['']
+Peter Barker,2018-11-01,"Add timeout to kwargs in connect, pass to wait_ready",['']
+Peter Barker,2018-11-01,examples/follow_me: set timeout on connect to 300,['follow_me.py']
+Peter Barker,2018-11-01,fixup! Add still-waiting interval and callback to wait_ready,['']
+pietrodn,2018-11-01,"Faster comparisons with None/True/False, various performance fixes",['']
+pietrodn,2018-11-01,Fix virtualenv installation for CircleCI,['config.yml']
+pietrodn,2018-11-01,Travis: build for Python 3; resolve #816,['.travis.yml']
+pietrodn,2018-11-01,mavlink.py: specific exception handling for MAVError,['mavlink.py']
+pietrodn,2018-11-02,PEP8 and style improvements,"['mavlink.py,test_110.py,test_115.py,test_12.py,test_capability_and_version.py,test_channels.py,test_earlyattrs.py,test_locations.py,test_mavlink.py,test_mode_settings.py,test_modeavailable.py,test_parameters.py,test_simpledemo.py,test_state.py,test_timeout.py,test_vehicleclass.py,test_waypoints.py,test_api.py,util.py']"
+pietrodn,2018-11-06,Avoid pinning requirements to specific version (#872),"['requirements.txt,setup.py']"
+pietrodn,2018-11-12,"Logging: use builting logging module, not print()
+
+Deprecate status_printer and log STATUSTEXT messages on a separate
+logger with the correct severity.
+
+Improved exception logging with stack traces in the log where necessary.",['mavlink.py']
+pietrodn,2018-11-12,"Backwards compatibility for status_printer
+
+Add test for status_printer support","['test_errprinter.py,util.py']"
+pietrodn,2018-11-15,"param_request_read_send wants bytes, not str",['']
+Hamish Willee,2018-11-16,Explain using native SITL with dk-sitl,['sitl_setup.rst']
+Yuuya Fujiwara,2018-11-16,"mission import / export example :
+Displayed message changed,  file names get from argument.",['mission_import_export.py']
+pietrodn,2018-11-19,AppVeyor: test on multiple Python versions,['appveyor.yml']
+Huibean,2018-12-28,incase None > int in python3,['']
+Huibean,2018-12-31,add logging basic config,['']
+pietrodn,2018-12-31,Add commands and tests for sensor calibration,['test_sensor_calibration.py']
+pietrodn,2018-12-31,Corrections,['test_sensor_calibration.py']
+pietrodn,2018-12-31,"Rename calibrate_board_level -> calibrate_vehicle level;
+don't auto-reboot on mag calibration.",['test_sensor_calibration.py']
+pietrodn,2018-12-31,Remove extraneous logging line,['']
+pietrodn,2018-12-31,"Rename ""calibrate_*"" to ""send_calibrate_*"" (non-blocking methods)",['test_sensor_calibration.py']
+huibean,2019-01-11,add MOUNT_ORIENTATION support,['']
+Yuuya Fujiwara,2019-01-26,revise URL in comment.,['my_vehicle.py']
+Afsoon Afzal,2019-02-01,Set a timeout for uploading missions,['']
+Afsoon Afzal,2019-02-01,updating the comment,['']
+Jaime Machuca,2019-02-11,Add Source Component ID parameter to connect function to allow setting a different comp ID than 0. Default to 0 to make it backwards compatible.,['mavlink.py']
+pietrodn,2019-02-27,"setup.py, requirements.txt, README.md improvements
+
+- future is not a direct dependency of dronekit: remove it
+- README.md: Python 3-compatible ""Hello World""
+- PyPI badge: link to the package page on PyPI
+- setup.py: add classifier for Python 3
+- setup.py: install monotonic only for Python<3.3
+- setup.py: automatically discover packages with setuptools","['README.md,requirements.txt,setup.py']"
+pietrodn,2019-02-27,monotonic is actually needed,['setup.py']
+Dr Nic Williams,2019-03-13,"fix URL to mavproxy documentation
+
+New MAVProxy docs are at http://ardupilot.github.io/MAVProxy/html/getting_started/starting.html
+
+Signed-off-by: Dr Nic Williams <drnicwilliams@gmail.com>",['connecting_vehicle.rst']
+deb0ch,2019-03-14,improve set_attitude_target example,['set_attitude_target.py']
+Peter Barker,2019-03-14,examples: set_attitude_target: avoid use of None in to_quaternion,['set_attitude_target.py']
+mohamed ali rashad,2019-03-18,"Adding README to PyPi & minimizing imports
+
+Adding the README as a long description in PyPi and minimizing the setuptools import to only setup and find_packages",['setup.py']
+Peter Barker,2019-03-18,Release 2.9.2 notes and version bump,"['CHANGELOG.md,setup.py']"
+Peter Barker,2019-03-19,setup.py: add long_description_content_type,['setup.py']
+Roman Dvořák,2019-06-27,change of mavlink message name.,['']
+Roman Dvořák,2019-06-27,"support for booth messages - RC_CHANNELS ad RC_CHANNELS_RAW., clean code.",['']
+Roman Dvořák,2019-06-27,message names in list,['']
+Hamish Willee,2019-07-05,Fix up links to point to readthedos,['README.md']
+Ross Higa,2019-11-13,"Fixed error in code comments
+
+The serial example code said it was for a UDP endpoint",['connecting_vehicle.rst']
+Pietro De Nicolao,2020-07-03,"docs: Python 3 is supported
+
+Using `sudo` is actually a bad idea",['installation.rst']
+Pietro De Nicolao,2020-07-03,docs: ensurepip also works for Python 2.7,['installation.rst']
