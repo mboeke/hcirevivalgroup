@@ -1,0 +1,2002 @@
+Contributor,Date,Message,Files
+Sean D'Epagnier,2019-06-11,improve keypresses,"['hat.py,lcd.py']"
+Sean D'Epagnier,2019-06-11,improve debugging message,['calibration_fit.py']
+Sean D'Epagnier,2019-06-11,fix lcd hat config,"['hat.py,lcd.py']"
+Sean D'Epagnier,2019-06-11,fix failure message refresh,['lcd.py']
+Sean D'Epagnier,1970-01-01,update version,"['generate_version.py,pypilot_version.h']"
+Sean D'Epagnier,2019-06-11,improve keypresses,"['hat.py,lcd.py']"
+Sean D'Epagnier,2019-06-11,improve debugging message,['calibration_fit.py']
+Sean D'Epagnier,2019-06-11,fix lcd hat config,"['hat.py,lcd.py']"
+Sean D'Epagnier,2019-06-11,fix failure message refresh,['lcd.py']
+Sean D'Epagnier,1970-01-01,update version,"['generate_version.py,pypilot_version.h']"
+Sean D'Epagnier,1970-01-01,correct numeric choices,['values.py']
+Sean D'Epagnier,1980-01-05,consolidate gains and add wind gust gain,"['autopilot.py,basic.py,simple.py,wind.py']"
+Sean D'Epagnier,1980-01-05,correct true wind calculation,['autopilot.py']
+Sean D'Epagnier,1980-01-05,correct true wind calculation,['autopilot.py']
+Sean D'Epagnier,1980-01-05,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-09-15,fix calibration script,['autopilot_calibration.py']
+Sean D'Epagnier,2019-09-24,improve buffer,['bufferedsocket.py']
+Sean D'Epagnier,2019-09-15,Merge openplotter:pypilot,['']
+Sean D'Epagnier,1980-01-05,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-09-15,fix calibration script,['autopilot_calibration.py']
+Sean D'Epagnier,2019-09-24,improve buffer,['bufferedsocket.py']
+Sean D'Epagnier,2019-09-15,Merge openplotter:pypilot,['']
+Sean D'Epagnier,1980-01-05,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,1980-01-05,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,1980-01-10,improve wind sensors,['weathersensors.ino']
+Sean D'Epagnier,1980-01-10,improve wind sensors,['weathersensors.ino']
+Sean D'Epagnier,1980-01-10,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,1980-01-10,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2018-06-11,support configuring wifi from webapp,"['pypilot_control.js,index.html,webapp.py']"
+Sean D'Epagnier,2018-06-11,multiple pilot support,"['client.py,autopilot.py,learning.py,setup.py']"
+sean d'epagnier,2018-10-09,"Merge pull request #9 from stelian42/arduino-fixes
+
+Arduino fixes",['']
+Sean D'Epagnier,2018-10-13,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2018-10-16,default contrast 60,"['motor.ino,ugfx.cpp,autopilot.py']"
+Sean D'Epagnier,2018-10-26,correct display with no imu,['client.py']
+Sean D'Epagnier,2018-10-26,"remove dead code, add comment",['pipeserver.py']
+Sean D'Epagnier,2018-10-26,add tacking support,['tacking.py']
+Sean D'Epagnier,2018-10-26,ensure current heading is set when ap is enabled,['autopilot.py']
+Sean D'Epagnier,2018-10-26,reduce D2 gain range,['basic_autopilot.py']
+Sean D'Epagnier,2018-10-31,improve control to work with servo only,"['README,Makefile,autopilot_control.py']"
+Sean D'Epagnier,2018-11-01,support  vnh2sp30,"['crc.h,motor.ino']"
+Sean D'Epagnier,2018-11-01,fix startup jerk,['motor.ino']
+Sean D'Epagnier,2018-11-04,greatly improve h-bridge support,['motor.ino']
+Sean D'Epagnier,2018-11-04,fix blacklist,['serialprobe.py']
+Sean D'Epagnier,2018-11-04,increase buffer size and fix message,"['arduino_servo.cpp,arduino_servo.h']"
+Sean D'Epagnier,2018-11-04,improve autopilot control,['autopilot_control.py']
+Sean D'Epagnier,2018-11-12,change base rate from 10hz to 25hz,"['weathersensors.ino,boatimu.py']"
+Stelian Pop,2018-11-12,"Implement volts/amps correction by offset and gain compensation.
+
+The offset and gain values are stored in EEPROM and can be modified
+by the clients using special codes.
+
+In addition, a few other parameters (max controller temp,
+max motor temp, rudder range, max slew) are also stored in EEPROM
+making the controller safe even if no client is connected.
+
+Conflicts:
+	arduino/motor/motor.ino","['Makefile,motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2018-11-12,improve signature logic and eeprom writes,['motor.ino']
+Stelian Pop,2018-11-12,"UI and core changes to support the current/voltage correction.
+
+Since the correction parameters are stored into the controller's flash,
+we do not want the same behaviour as for the max_xxx parameters, which
+are always send on startup from pypilot to the controller.
+
+Instead, we want to retrieve first the stored values, and only then
+allow modifications from the UI which needs to be send back to the
+controller.
+
+Conflicts:
+	pypilot/arduino_servo/arduino_servo.cpp","['motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Stelian Pop,2018-11-13,"More changes to support the saving of parameters inside the controller's EEPROM
+
+max_current, max_controller_temp, max_motor_temp, min/max_rudder_pos,
+max_slew_speed/slow are now stored inside the controller's EEPROM.
+
+The UI allows configuration of all these parameters, except for the
+rudder position (the rudder calibration process is not yet implemented).
+
+Conflicts:
+	pypilot/arduino_servo/arduino_servo.cpp","['motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-11-21,add support for changing pilots during runtime,"['Makefile,autopilot.py,basic.py,learning.py,simple.py,setup.py,calibration_plot.py']"
+Sean D'Epagnier,2018-11-25,move setting storage logic off of the arduino,"['Makefile,motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py,setup.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-11-27,support multiple pilots in ui,"['autopilot.py,basic.py,simple.py,client.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-12-16,Merge remote-tracking branch 'refs/remotes/origin/master',['']
+Sean D'Epagnier,2018-12-16,fix for high current controller and pwm,['motor.ino']
+Sean D'Epagnier,2018-12-16,max motor typo,"['arduino_servo.cpp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-12-16,allow calibration to run without wavefront module,['boatplot.py']
+Sean D'Epagnier,2018-12-21,update for gtk3,['autopilot_control.py']
+Sean D'Epagnier,2018-12-21,support autopilot without rtimu,"['arduino_servo.cpp,autopilot.py,boatimu.py']"
+Sean D'Epagnier,2018-12-21,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-04,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-05,correct rudder reading,"['Makefile,motor.ino']"
+Sean D'Epagnier,2019-01-05,prevent corrected negative currents,['servo.py']
+Sean D'Epagnier,2019-01-05,find wind sensor min/max range,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2019-01-08,correct installed import for multiple pilots,"['basic.py,learning.py,simple.py,tacking.py']"
+Sean D'Epagnier,2019-01-15,attempt to probe servo without blocking main thread,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py']"
+Sean D'Epagnier,2019-01-15,remove debugging print,['client.py']
+Sean D'Epagnier,2018-06-11,correct improved servo probing,['servo.py']
+Sean D'Epagnier,2018-06-11,fix standalone boatimu and resetting alignment,['boatimu.py']
+Sean D'Epagnier,2018-06-11,allow numeric enums,"['servo.py,values.py']"
+Sean D'Epagnier,2018-06-11,correct tacking error,['tacking.py']
+Sean D'Epagnier,2018-06-11,correct rudder angle nmea output,['nmea.py']
+Sean D'Epagnier,2018-06-11,improve rudder input handling,['nmea.py']
+Sean D'Epagnier,2018-06-11,do not fault before gps loaded,['gpsdpoller.py']
+Sean D'Epagnier,2018-06-11,fixup initial servo nonlinearity support,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py']"
+Sean D'Epagnier,2018-06-11,correct lcd bug,['ugfx.i']
+Sean D'Epagnier,2018-06-11,improve rudder calibration,"['arduino_servo.cpp,arduino_servo_eeprom.cpp,servo.py']"
+Sean D'Epagnier,2018-06-11,support both 10hz and 25hz rates,"['autopilot.py,boatimu.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2018-06-11,correct rudder feedback and centering,"['arduino_servo.cpp,servo.py,autopilot_calibration.py']"
+Sean D'Epagnier,2018-06-19,add wifi config file for webapp,['wifi.html']
+Sean D'Epagnier,2019-01-15,don't display winddir as 0 if the sensor has failed,['weathersensors.ino']
+Sean D'Epagnier,2019-01-20,write min/max direction values to eeprom,['weathersensors.ino']
+Sean D'Epagnier,2019-01-20,bump version,['autopilot.py']
+Sean D'Epagnier,2019-01-20,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-21,re-enable autopilot,['autopilot.py']
+Sean D'Epagnier,2019-01-21,refactor buffered socket code,"['nmea_bridge.py,bufferedsocket.py,client.py,server.py']"
+Sean D'Epagnier,2019-01-21,correct buffered socket,"['bufferedsocket.py,client.py,server.py']"
+Sean D'Epagnier,2019-01-21,formatting changes and handle numeric choices,['client_wx.py']
+Sean D'Epagnier,2019-01-25,improve readme,['README']
+Sean D'Epagnier,2019-01-25,fix closing servo bug,['servo.py']
+Sean D'Epagnier,2019-01-25,small updates to kivy app,"['autopilotcontrol.kv,main.py']"
+Sean D'Epagnier,2019-01-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-25,add servo gain to calibration ui,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-01-25,slight correction to servo test,['servo.py']
+Sean D'Epagnier,2019-01-26,improve pyudev warning,['serialprobe.py']
+Sean D'Epagnier,2019-01-26,improve tacking,['tacking.py']
+Sean D'Epagnier,2019-01-30,use naked ISR and ensure symmetric drive,['motor.ino']
+Sean D'Epagnier,2019-01-30,ensure no negative currents,['servo.py']
+Sean D'Epagnier,2019-02-05,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2019-02-06,correct rounding,['arduino_servo_eeprom.cpp']
+Sean D'Epagnier,2019-02-06,support parts with high back light and slow down spi clock,"['PCD8544.cpp,weathersensors.ino']"
+Sean D'Epagnier,2019-02-07,"correct offsets, and set high current max to 40 amps","['motor.ino,arduino_servo.cpp,servo.py']"
+Sean D'Epagnier,2019-02-12,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2019-02-15,default not high backlight,['weathersensors.ino']
+Sean D'Epagnier,2019-02-15,increase dead time,"['README,motor.ino']"
+Sean D'Epagnier,2019-02-16,correct speed/slow parameters which accidentally got swapped,['arduino_servo.cpp']
+Sean D'Epagnier,2019-02-16,"reset badvoltage flag, and ignore commands if bad voltage",['motor.ino']
+Sean D'Epagnier,2019-02-16,fix rudder calibration gui,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-02-16,support new pywavefront,['boatplot.py']
+Sean D'Epagnier,2019-02-16,update README,['README']
+Sean D'Epagnier,2019-02-26,support rudder feedback input via nmea,['nmea.py']
+Sean D'Epagnier,2019-02-26,add rudder feedback sketch for nmea rudder feedback input,"['Makefile,rudder.ino']"
+Sean D'Epagnier,2019-02-26,make client more portable,['ugfx.i']
+Sean D'Epagnier,2019-02-26,slight changes and remove unused sketches,"['bmp280.ino,motor.ino,weathersensors.ino,windsensor.ino']"
+Sean D'Epagnier,2019-02-26,rework wind measurement,['weathersensors.ino']
+Sean D'Epagnier,2019-03-10,update readme,['README']
+Sean D'Epagnier,2019-03-10,formatting,['serialprobe.py']
+Sean D'Epagnier,2019-03-10,initial improved rudder feedback calibration with nonlinearity,"['servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-03-11,improve rudder feedback and calibration script effiency,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-03-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-03-12,centering and autogain,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-03-12,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-03-15,fix typo,['autopilot_calibration.py']
+Sean D'Epagnier,2019-03-15,improve logic for wind speed sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-15,improve wind direction sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-17,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-03-18,improve wind speed sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-21,update README and add dependencies script,"['README,get_dependencies.sh']"
+Sean D'Epagnier,2019-03-21,adjust wind direction sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-21,work around new issues and rename lcd to make less client.py,"['glut.py,lcd.py,ugfx.cpp,ugfx.h,ugfx.i,setup.py,scope.py']"
+Sean D'Epagnier,2019-03-21,improve menu to scroll and enumerate gains,['lcd.py']
+Sean D'Epagnier,2019-03-21,better error output,['server.py']
+Sean D'Epagnier,2019-03-21,save config,['client.py']
+Sean D'Epagnier,2019-03-21,improve rudder handling,"['nmea.py,servo.py']"
+Sean D'Epagnier,2019-03-21,improve menu handling,['lcd.py']
+Sean D'Epagnier,2019-03-21,update dependencies,"['README,webapp.py']"
+Sean D'Epagnier,2019-03-21,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-03-21,implement rudder feedback and gain setting in webapp,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-03-23,support farenheit compile option,['weathersensors.ino']
+Sean D'Epagnier,2019-03-23,read settings from file and support running as services,"['lcd.py,pypilot.service,pypilot_boatimu.service,pypilot_lcd.service,pypilot_webapp.service,update_systemd_openplotter.sh,webapp.py']"
+Sean D'Epagnier,2019-03-23,ifdef for davis for now,['weathersensors.ino']
+Sean D'Epagnier,2019-03-23,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-03-23,improve duty and gain,['servo.py']
+Sean D'Epagnier,2019-03-23,improve error reporting,['nmea.py']
+Sean D'Epagnier,2019-03-23,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-03-23,correct farenheit temp output,"['make_charset.py,weathersensors.ino']"
+Sean D'Epagnier,2019-03-25,correct previous change,['lcd.py']
+Sean D'Epagnier,2019-03-25,allow switching to ap mode and disable encryption from lcd,['lcd.py']
+Sean D'Epagnier,2019-03-25,quote changes,['webapp.py']
+Sean D'Epagnier,2019-03-25,improve calibration of wind direction,['weathersensors.ino']
+Sean D'Epagnier,2019-03-26,set correct defaults,['weathersensors.ino']
+Sean D'Epagnier,2019-03-27,make wind speed reading more lenient,['weathersensors.ino']
+Sean D'Epagnier,2019-03-27,improve tacking,"['basic.py,tacking.py']"
+Sean D'Epagnier,2019-03-27,add select page,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2019-03-27,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-03-27,correct initial list,['lcd.py']
+Sean D'Epagnier,2019-03-27,update script,['update_systemd_openplotter.sh']
+Sean D'Epagnier,2019-03-27,warning on edge detect fail,['lcd.py']
+Sean D'Epagnier,2019-03-28,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-04-01,initial device management and new nmea handling,"['arduino_servo.cpp,autopilot.py,gpsdpoller.py,nmea.py,servo.py']"
+Sean D'Epagnier,2019-04-01,fix fail message,['calibration_fit.py']
+Sean D'Epagnier,2019-04-01,improve control interface,"['gpsprobe.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-04-01,use new rudder control,"['lcd.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py,pypilot_control.js']"
+Sean D'Epagnier,2019-04-01,add rudder as separate from servo,['rudder.py']
+Sean D'Epagnier,2019-04-02,initial working with rehandled sensors,"['autopilot.py,gpsd.py,nmea.py,rudder.py,sensors.py,serialprobe.py,servo.py,tacking.py,values.py']"
+Sean D'Epagnier,2019-04-04,correct min/max and other errors,['servo.py']
+Sean D'Epagnier,2019-04-04,correct wind weight,['autopilot.py']
+Sean D'Epagnier,2019-04-04,correct rudder calibration,['rudder.py']
+Sean D'Epagnier,2019-04-05,update rudder position and debug message better,"['autopilot.py,nmea.py,servo.py']"
+Frederic Guilbault,2019-04-06,Formating the webapp readme + Documenting port number.,['README']
+Frederic Guilbault,2019-04-06,Missing wiringpi depedency in README,['README']
+Frederic Guilbault,2019-04-06,Rephrasing,['README']
+sean d'epagnier,2019-04-06,"Merge pull request #20 from FredericGuilbault/FredericGuilbault-patch-2
+
+Update the web_app README",['']
+sean d'epagnier,2019-04-06,"Merge pull request #17 from FredericGuilbault/FredericGuilbault-patch-3
+
+Missing wiringpi depedency in the README",['']
+Sean D'Epagnier,2019-04-06,correct previous commit for setting webapp port,['webapp.py']
+Sean D'Epagnier,2019-04-06,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-04-07,minor fix,"['autopilot_calibration.py,boatplot.py']"
+Sean D'Epagnier,2019-04-08,"initial python3 support, only signalk client working","['setup.py,bufferedsocket.py,client.py,kjson.py,values.py']"
+Sean D'Epagnier,2019-04-09,fix rudder calibration ui,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-04-09,fix rudder calibration,"['boatimu.py,rudder.py']"
+Sean D'Epagnier,2019-04-09,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-04-09,fix to make python 2.7 work from change to support python 3,['bufferedsocket.py']
+Sean D'Epagnier,1999-08-24,Merge 192.168.14.35:pypilot,['']
+Sean D'Epagnier,1999-08-24,fix build and version,"['pypilot_lcd.mo,pypilot_lcd.mo,Makefile,pypilot_logo.h,splash.cpp,ugfx.cpp,setup.py']"
+Sean D'Epagnier,1999-08-31,discard invalid nmea gps input,['nmea.py']
+Sean D'Epagnier,1999-09-01,improve log message,['sensors.py']
+Sean D'Epagnier,1999-09-01,improve gps parsing,['nmea.py']
+Sean D'Epagnier,1999-09-01,improve true wind mode,['autopilot.py']
+Sean D'Epagnier,2019-04-10,python3,"['client.py,pipeserver.py,scope.py,scope_wx.py,server.py']"
+Sean D'Epagnier,2019-04-10,python3,"['client.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2019-04-11,support python3,"['weathersensors.ino,font.py,glut.py,lcd.py,autopilot.py,boatimu.py,calibration_fit.py,quaternion.py,client.py,values.py,webapp.py']"
+Sean D'Epagnier,2019-04-11,fix text draw,['scope.py']
+Sean D'Epagnier,2019-04-17,improve tacking,['tacking.py']
+Sean D'Epagnier,2019-04-17,improve parsing and handling invalid nmea,"['nmea.py,values.py']"
+Sean D'Epagnier,2019-04-17,improve rudder feedback,"['rudder.py,servo.py']"
+Sean D'Epagnier,2019-04-17,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,1999-09-01,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,1999-09-01,improve serial probing,"['gpsd.py,nmea.py,sensors.py,serialprobe.py']"
+Sean D'Epagnier,1999-09-01,improve sensor timeout,"['nmea.py,sensors.py']"
+Sean D'Epagnier,1999-10-08,fix crash from lost sensor,['sensors.py']
+Sean D'Epagnier,2018-06-20,rework autopilot mode calculation,"['autopilot.py,basic.py']"
+Sean D'Epagnier,2019-04-17,improve lost connections,"['nmea.py,sensors.py']"
+Sean D'Epagnier,2019-04-17,add wind pilot,['autopilot.py']
+Sean D'Epagnier,2019-04-17,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-04-17,bump version,['setup.py']
+Sean D'Epagnier,2019-04-18,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-04-26,tolerate unset lock bits for now,['motor.ino']
+Sean D'Epagnier,2019-04-26,unify version,"['autopilot.py,setup.py']"
+Sean D'Epagnier,2019-04-26,correct fail to write,['bufferedsocket.py']
+Sean D'Epagnier,2019-04-26,implement reset logic,"['gpsd.py,rudder.py,sensors.py,servo.py']"
+Sean D'Epagnier,2018-06-20,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,2018-06-11,correct pilots and bump version,"['autopilot.py,servo.py,setup.py']"
+Sean D'Epagnier,2018-06-13,round rudder to 2 decimal,['rudder.py']
+Sean D'Epagnier,2018-06-13,improve eeprom sync speed,"['motor.ino,arduino_servo.cpp,arduino_servo_eeprom.h']"
+Sean D'Epagnier,2018-06-13,add version file,['version.py']
+Sean D'Epagnier,2019-05-16,improve rudder out of range,"['motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2019-05-18,fast eeprom,"['motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2019-05-18,Merge 10.10.10.166:pypilot,['']
+Sean D'Epagnier,2019-05-20,update servo gain,['autopilot_calibration.py']
+Sean D'Epagnier,2019-05-24,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2019-05-26,format config easier to read,['server.py']
+Sean D'Epagnier,2019-05-26,format change,['rudder.py']
+Sean D'Epagnier,2019-05-29,Merge 10.10.10.103:pypilot,['']
+Sean D'Epagnier,2019-06-06,slight fixes,"['autopilot.py,servo.py']"
+Sean D'Epagnier,2019-06-11,correct apb and sensor handling,"['autopilot.py,nmea.py,sensors.py,servo.py']"
+Sean D'Epagnier,2019-06-11,correct apb and sensor handling,"['autopilot.py,nmea.py,sensors.py,servo.py']"
+Sean D'Epagnier,2019-06-11,improve  timing message,['nmea.py']
+Sean D'Epagnier,2019-06-11,improve  timing message,['nmea.py']
+Sean D'Epagnier,2019-06-11,improvements for new lcd screens,"['lcd.py,pypilot_version.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-06-11,improvements for new lcd screens,"['lcd.py,pypilot_version.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-09-27,rename servo states,['servo.py']
+Sean D'Epagnier,2019-06-11,correct servo calibration logic,['servo.py']
+Sean D'Epagnier,2019-09-27,rename servo states,['servo.py']
+Sean D'Epagnier,2019-06-11,correct servo calibration logic,['servo.py']
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.54:pypilot,['']
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.54:pypilot,['']
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.54:pypilot,['']
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.54:pypilot,['']
+Sean D'Epagnier,2019-06-11,variable name,['autopilot.py']
+Sean D'Epagnier,2019-06-11,variable name,['autopilot.py']
+Sean D'Epagnier,2019-06-11,correct port of link,['pypilot_control.js']
+Sean D'Epagnier,2019-06-11,install rf app,['setup.py']
+Sean D'Epagnier,2019-06-11,improve and update hat control script,"['arduino.py,buzzer.py,font.py,gpio.py,hat.py,lcd.py,lirc.py,hat_config.js,index.html,ugfx.cpp,web.py']"
+Sean D'Epagnier,2019-06-11,detect improperly initialized IMU and reset sensors automatically,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2019-12-02,python3 fixes,"['weathersensors.ino,arduino_servo.cpp,autopilot.py,calibration_fit.py,learning.py,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2019-12-02,remove serial debugging,['pypilothat.ino']
+Sean D'Epagnier,2019-12-02,improve lcd driver,"['pypilot_version.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-12-03,jlx lcd improvements,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2019-12-03,support rf remotes and configuration for them,"['pypilothat.ino,rf.py,rf_config.js,index.html,setup.py,values.py,pypilot_control.js']"
+Sean D'Epagnier,2019-12-03,test program,['testrf.py']
+Sean D'Epagnier,2019-12-03,rcswitch arduino library,"['RCSwitch.cpp,RCSwitch.h']"
+Sean D'Epagnier,2019-12-03,add rf service script,"['pypilot_lcd.service,pypilot_rf.service']"
+Sean D'Epagnier,2019-12-03,bump version,['version.py']
+Sean D'Epagnier,2019-12-03,update version,['pypilot_version.h']
+Sean D'Epagnier,2019-12-17,toggle reset pin of onboard arduino for programming,['Makefile']
+Sean D'Epagnier,2019-12-17,support spi commands to onboard arduino,['pypilothat.ino']
+Sean D'Epagnier,2019-12-17,correct errors,['calibration_plot.py']
+Sean D'Epagnier,2019-12-22,make default alignment more accurate,"['boatimu.py,values.py']"
+Sean D'Epagnier,2019-12-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-12-30,simplify imports,['boatimu.py']
+Sean D'Epagnier,2019-12-30,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-12-30,merge lcd and rf scripts into hat script,"['arduino.py,#script.sh#,README,eeprom_settings.txt,pypilot_hat.conf,script.sh,font.py,glut.py,gpio.py,hat.py,lcd.py,lirc.py,hat_config.js,index.css,jquery.min.js,socket.io.min.js,w3.css,index.html,test.py,testlirc.py,testrf.py,web.py,.gitignore,README,Makefile,POTFILES.in,README,apertium-po.py,pypilot_lcd.mo,pypilot_lcd.mo,translate.sh,.gitignore,Makefile,generate_version.py,pypilot_logo.h,pypilot_version.h,setup.py,splash.cpp,ugfx.build,ugfx.cpp,ugfx.h,ugfx.i,rf.py,testlatency.py,pypilot_rf.service,setup.py,autopilot_calibration.py,boatplot.py']"
+Sean D'Epagnier,2019-12-30,fixup,['pypilot_hat.service']
+Sean D'Epagnier,2019-12-30,add ugfx back,"['Makefile,generate_version.py,pypilot_logo.h,pypilot_version.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-06-12,improve hat interface,"['arduino.py,buzzer.py,font.ttf,hat.py,lirc.py,hat_config.js,index.html,web.py,setup.py']"
+Sean D'Epagnier,2019-12-31,improve hat and RF reception,"['Makefile,RCSwitch.cpp,RCSwitch.h,crc.h,hat.ino,pypilothat.ino,arduino.py,crc.py,eeprom_settings.txt,pypilot_hat.conf,gpio.py,hat.py,lcd.py,lirc.py,Makefile,POTFILES.in,README,apertium-po.py,pypilot_hat.mo,pypilot_hat.mo,translate.sh,index.html,testrf.py,web.py']"
+Sean D'Epagnier,2020-01-08,improve jlx12864 driver more robust,['ugfx.cpp']
+Sean D'Epagnier,2020-01-08,slightly improve driver,"['hat.ino,splash.cpp,ugfx.cpp']"
+Sean D'Epagnier,2020-01-08,update hat program to use buzzer,"['arduino.py,buzzer.py,pypilot_hat.conf,hat.py,lcd.py']"
+Sean D'Epagnier,2020-01-09,promote slew speed settings,['servo.py']
+Sean D'Epagnier,2020-01-09,improve reshape of boatplot,['boatplot.py']
+Sean D'Epagnier,2020-01-09,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-06-11,improve description,['pypilot_control.js']
+Sean D'Epagnier,2019-06-11,fix control of slew rates,['servo.py']
+Sean D'Epagnier,2019-06-11,add hat readme,['README']
+Sean D'Epagnier,2019-06-11,correct port of link,['pypilot_control.js']
+Sean D'Epagnier,2019-06-11,install rf app,['setup.py']
+Sean D'Epagnier,2019-06-11,improve and update hat control script,"['arduino.py,buzzer.py,font.py,gpio.py,hat.py,lcd.py,lirc.py,hat_config.js,index.html,ugfx.cpp,web.py']"
+Sean D'Epagnier,2019-06-11,detect improperly initialized IMU and reset sensors automatically,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2019-12-02,python3 fixes,"['weathersensors.ino,arduino_servo.cpp,autopilot.py,calibration_fit.py,learning.py,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2019-12-02,remove serial debugging,['pypilothat.ino']
+Sean D'Epagnier,2019-12-02,improve lcd driver,"['pypilot_version.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-12-03,jlx lcd improvements,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2019-12-03,support rf remotes and configuration for them,"['pypilothat.ino,rf.py,rf_config.js,index.html,setup.py,values.py,pypilot_control.js']"
+Sean D'Epagnier,2019-12-03,test program,['testrf.py']
+Sean D'Epagnier,2019-12-03,rcswitch arduino library,"['RCSwitch.cpp,RCSwitch.h']"
+Sean D'Epagnier,2019-12-03,add rf service script,"['pypilot_lcd.service,pypilot_rf.service']"
+Sean D'Epagnier,2019-12-03,bump version,['version.py']
+Sean D'Epagnier,2019-12-03,update version,['pypilot_version.h']
+Sean D'Epagnier,2019-12-17,toggle reset pin of onboard arduino for programming,['Makefile']
+Sean D'Epagnier,2019-12-17,support spi commands to onboard arduino,['pypilothat.ino']
+Sean D'Epagnier,2019-12-17,correct errors,['calibration_plot.py']
+Sean D'Epagnier,2019-12-22,make default alignment more accurate,"['boatimu.py,values.py']"
+Sean D'Epagnier,2019-12-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-12-30,simplify imports,['boatimu.py']
+Sean D'Epagnier,2019-12-30,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-12-30,merge lcd and rf scripts into hat script,"['arduino.py,#script.sh#,README,eeprom_settings.txt,pypilot_hat.conf,script.sh,font.py,glut.py,gpio.py,hat.py,lcd.py,lirc.py,hat_config.js,index.css,jquery.min.js,socket.io.min.js,w3.css,index.html,test.py,testlirc.py,testrf.py,web.py,.gitignore,README,Makefile,POTFILES.in,README,apertium-po.py,pypilot_lcd.mo,pypilot_lcd.mo,translate.sh,.gitignore,Makefile,generate_version.py,pypilot_logo.h,pypilot_version.h,setup.py,splash.cpp,ugfx.build,ugfx.cpp,ugfx.h,ugfx.i,rf.py,testlatency.py,pypilot_rf.service,setup.py,autopilot_calibration.py,boatplot.py']"
+Sean D'Epagnier,2019-12-30,fixup,['pypilot_hat.service']
+Sean D'Epagnier,2019-12-30,add ugfx back,"['Makefile,generate_version.py,pypilot_logo.h,pypilot_version.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-06-12,improve hat interface,"['arduino.py,buzzer.py,font.ttf,hat.py,lirc.py,hat_config.js,index.html,web.py,setup.py']"
+Sean D'Epagnier,2019-12-31,improve hat and RF reception,"['Makefile,RCSwitch.cpp,RCSwitch.h,crc.h,hat.ino,pypilothat.ino,arduino.py,crc.py,eeprom_settings.txt,pypilot_hat.conf,gpio.py,hat.py,lcd.py,lirc.py,Makefile,POTFILES.in,README,apertium-po.py,pypilot_hat.mo,pypilot_hat.mo,translate.sh,index.html,testrf.py,web.py']"
+Sean D'Epagnier,2020-01-08,improve jlx12864 driver more robust,['ugfx.cpp']
+Sean D'Epagnier,2020-01-08,slightly improve driver,"['hat.ino,splash.cpp,ugfx.cpp']"
+Sean D'Epagnier,2020-01-08,update hat program to use buzzer,"['arduino.py,buzzer.py,pypilot_hat.conf,hat.py,lcd.py']"
+Sean D'Epagnier,2020-01-09,promote slew speed settings,['servo.py']
+Sean D'Epagnier,2020-01-09,improve reshape of boatplot,['boatplot.py']
+Sean D'Epagnier,2020-01-09,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-06-11,improve description,['pypilot_control.js']
+Sean D'Epagnier,2019-06-11,fix control of slew rates,['servo.py']
+Sean D'Epagnier,2019-06-11,add hat readme,['README']
+Sean D'Epagnier,2019-06-11,rename webapp to web,"['README,hat.ino,generate_version.py,pypilot_version.h,version.py,README,pypilot_webapp.service,setup.py,README,pypilot_web.wsgi,index.css,jquery.min.js,pypilot_control.js,pypilot_control.js~,socket.io.min.js,w3.css,index.html,index.html~,wifi.html,web.py']"
+Sean D'Epagnier,2019-06-11,rename webapp to web,"['README,hat.ino,generate_version.py,pypilot_version.h,version.py,README,pypilot_webapp.service,setup.py,README,pypilot_web.wsgi,index.css,jquery.min.js,pypilot_control.js,pypilot_control.js~,socket.io.min.js,w3.css,index.html,index.html~,wifi.html,web.py']"
+Sean D'Epagnier,2019-06-11,fix enumerating settings,"['lcd.py,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py,tacking.py,values.py']"
+Sean D'Epagnier,2019-06-11,fix enumerating settings,"['lcd.py,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py,tacking.py,values.py']"
+Sean D'Epagnier,2019-06-11,correct pilot handling errors,"['autopilot.py,learning.py,simple.py,wind.py']"
+Sean D'Epagnier,2019-06-11,merge,"['arduino_servo.h,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,rudder.py,servo.py,server.py,wifi.html,webapp.py']"
+sean d'epagnier,2019-08-28,"Merge pull request #26 from rmvdmr/master
+
+GPAPB with empty data will crash NMEA communication",['']
+Sean D'Epagnier,2019-08-29,fix misspelling,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2019-08-29,initial revison of rf control,['rf.py']
+Sean D'Epagnier,2019-08-29,typo,['README']
+Sean D'Epagnier,2019-08-30,"update autopilot logic, add wind pilot","['arduino_servo.cpp,autopilot.py,basic.py,simple.py,wind.py']"
+sean d'epagnier,2019-09-03,"Merge pull request #28 from rmvdmr/master
+
+Update nmea.py try:",['']
+Sean D'Epagnier,2019-09-05,fix  tacking errors from before,['tacking.py']
+Sean D'Epagnier,2019-09-05,fix typo,"['autopilot.py,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2019-09-05,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-09-05,add GP5 and GP6 for left and right buttons,['lcd.py']
+Sean D'Epagnier,2019-09-07,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-09-09,formatting,['servo.py']
+Sean D'Epagnier,2019-09-09,reduce store time  from 5 minutes to 30 seconds,['server.py']
+Sean D'Epagnier,2019-09-09,initial update to correct rudder range calculations,"['arduino_servo.cpp,arduino_servo.h,rudder.py,servo.py']"
+Sean D'Epagnier,2019-06-12,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,2019-06-11,fix nokia5110 display,['ugfx.cpp']
+Sean D'Epagnier,2019-06-11,fix socket id for nmea,"['nmea.py,sensors.py']"
+Sean D'Epagnier,2019-06-11,add version to boot splash,"['pypilot_version.h,splash.cpp']"
+Sean D'Epagnier,2019-06-11,improve rudder calibration,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-09-13,slightly increase deadtime,['motor.ino']
+Sean D'Epagnier,2019-09-13,fix warning compiling,['ugfx.cpp']
+Sean D'Epagnier,2019-09-13,first pass at re-enumerating configuration in ui,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,autopilot.py,rudder.py,sensors.py,servo.py,tacking.py,version.py,values.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-06-11,correct range settings,"['autopilot.py,boatimu.py,calibration_fit.py,crc.py,pgm.py,quaternion.py,rudder.py,sensors.py,servo.py,tacking.py,server.py,values.py']"
+Sean D'Epagnier,2019-06-11,correct servo logic,"['servo.py,client_wx.py']"
+Sean D'Epagnier,2019-06-11,correct units,['servo.py']
+Sean D'Epagnier,2019-06-12,correct a few code errors,"['autopilot.py,servo.py']"
+Sean D'Epagnier,2019-09-13,improve calibration script,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-13,fix settings in calibration,"['autopilot_calibration.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-14,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-14,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-15,correct PR gain input,['basic.py']
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,2019-06-11,fix config for webapp,"['servo.py,pypilot_control.js']"
+Sean D'Epagnier,2019-06-11,fix  webapp gains,['pypilot_control.js']
+Sean D'Epagnier,2019-06-11,fix menu,['lcd.py']
+Sean D'Epagnier,2019-06-11,correct pilot handling errors,"['autopilot.py,learning.py,simple.py,wind.py']"
+Sean D'Epagnier,2019-06-11,merge,"['arduino_servo.h,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,rudder.py,servo.py,server.py,wifi.html,webapp.py']"
+Sean D'Epagnier,2019-06-11,fix types,"['arduino_servo.cpp,arduino_servo.h,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py']"
+Sean D'Epagnier,2019-06-11,support more spi lcd,"['lcd.py,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-06-11,fix error loading persistent data,['server.py']
+Sean D'Epagnier,2019-06-11,fix webapp to support client wifi,"['wifi.html,webapp.py']"
+Sean D'Epagnier,2019-06-11,handle case with no imu,['autopilot_calibration.py']
+Sean D'Epagnier,2019-06-16,correct wind speed units,['nmea.py']
+Sean D'Epagnier,2019-06-22,remove this wind pilot,['wind.py']
+Sean D'Epagnier,2019-06-22,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-06-22,make servo eeprom data more reliable,"['arduino_servo_eeprom.cpp,arduino_servo_eeprom.h']"
+Sean D'Epagnier,2019-06-28,fix sendfail message print,['bufferedsocket.py']
+Sean D'Epagnier,2019-06-28,correct watchlist for compass calibration plot,['autopilot_calibration.py']
+Sean D'Epagnier,2019-07-05,ratiometric mode,['motor.ino']
+Sean D'Epagnier,2019-07-05,fix watches,['autopilot_calibration.py']
+Sean D'Epagnier,2019-07-05,adjust badfit setting,['calibration_fit.py']
+Sean D'Epagnier,2019-07-05,remove D2 gain,['basic.py']
+Sean D'Epagnier,2019-07-05,fix servo position mode,['servo.py']
+Sean D'Epagnier,2019-07-05,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-07-15,"improve comment, no functional change",['motor.ino']
+Sean D'Epagnier,2019-07-23,update readme,['README']
+Sean D'Epagnier,2019-07-23,fix rudder calibration for webapp,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-07-23,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-07-25,improve serial probe to include non-scanned devices,['serialprobe.py']
+Sean D'Epagnier,2019-07-25,correct nmea test script to use sensors.py instead,"['README,nmea.py,sensors.py']"
+Sean D'Epagnier,2019-07-25,update readme,['README']
+Sean D'Epagnier,2019-07-25,ui improvements,"['autopilot_control.fbp,autopilot_control_ui.py,index.html']"
+Sean D'Epagnier,2019-07-25,update readme,['README']
+Sean D'Epagnier,2019-07-25,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-07-27,fixtime parameter,['calibration_fit.py']
+Sean D'Epagnier,2019-07-30,update weather sensors,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2019-08-05,not connected,['autopilot_calibration.py']
+Sean D'Epagnier,2019-08-06,support ratiometric mode,"['Makefile,motor.ino']"
+Sean D'Epagnier,2019-08-06,update comments,['motor.ino']
+Sean D'Epagnier,2019-08-06,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-08-11,add servo.use_eeprom setting,['servo.py']
+Sean D'Epagnier,2019-08-11,logic corrections,['servo.py']
+Sean D'Epagnier,2019-08-11,merge,"['weathersensors.ino,calibration_plot.py']"
+Sean D'Epagnier,2019-08-11,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-08-11,handle GPAPB differently,['nmea.py']
+Sean D'Epagnier,2019-08-25,update comment,['motor.ino']
+Sean D'Epagnier,2019-08-25,"initial revision of apb nmea route following
+
+1) support input from serial nmea streams
+2) support sensors.apb.* for monitoring
+3) user adjustable gain on xte correction","['nmea.py,sensors.py']"
+Sean D'Epagnier,2019-08-25,weather sensors update,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2019-08-25,Merge 10.10.10.103:pypilot,['']
+Sean D'Epagnier,2019-08-26,correct logic error,['servo.py']
+Sean D'Epagnier,2019-08-27,fix typos,"['nmea.py,sensors.py,servo.py']"
+Sean D'Epagnier,2019-08-27,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-08-27,support python3 for signalk and ui control,"['client_wx.py,scope.py,scope_wx.py,values.py,autopilot_calibration.py,autopilot_control.py,boatplot.py,calibration_plot.py,shape.py']"
+Sean D'Epagnier,2019-08-27,support python3 for lcd,"['font.py,lcd.py,ugfx.i']"
+Sean D'Epagnier,2019-08-27,finish python3 support,"['test.py,testlirc.py,setup.py,autogain.py,autopilot.py,boatimu.py,calibration_fit.py,gpsd.py,nmea.py,nmea_bridge.py,rudder.py,sensors.py,serialprobe.py,servo.py,servo_calibration.py,bufferedsocket.py,pipeserver.py,server.py']"
+rmvdmr,2019-08-28,"try except as nmea communication will crash on $GPAPB,,,.,,,,,.,,,.,,.,*hh<CR><LF> (might still be some dots in there?)
+
+Plotters (at least Garmin does) do output constant an empty GPAPB sentence if there is no waypoint selected. Doing the float on this without a try except wil crash NMEA communication. As soon as there is an active waypoint GPAPB has data in it.",['nmea.py']
+rmvdmr,2019-08-28,"Do follow waypoint on GPAPB
+
+Current return makes following the waypoint for GPAPB not possible this slight 'mod' wil make that possible",['sensors.py']
+sean d'epagnier,2019-08-28,"Merge pull request #26 from rmvdmr/master
+
+GPAPB with empty data will crash NMEA communication",['']
+Sean D'Epagnier,2019-08-29,fix misspelling,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2019-08-29,initial revison of rf control,['rf.py']
+Sean D'Epagnier,2019-08-29,typo,['README']
+Sean D'Epagnier,2019-08-30,"update autopilot logic, add wind pilot","['arduino_servo.cpp,autopilot.py,basic.py,simple.py,wind.py']"
+rmvdmr,2019-09-03,Update nmea.py,['nmea.py']
+sean d'epagnier,2019-09-03,"Merge pull request #28 from rmvdmr/master
+
+Update nmea.py try:",['']
+Sean D'Epagnier,2019-09-05,fix  tacking errors from before,['tacking.py']
+Sean D'Epagnier,2019-09-05,fix typo,"['autopilot.py,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2019-09-05,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-09-05,add GP5 and GP6 for left and right buttons,['lcd.py']
+Sean D'Epagnier,2019-09-07,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-09-09,formatting,['servo.py']
+Sean D'Epagnier,2019-09-09,reduce store time  from 5 minutes to 30 seconds,['server.py']
+Sean D'Epagnier,2019-09-09,initial update to correct rudder range calculations,"['arduino_servo.cpp,arduino_servo.h,rudder.py,servo.py']"
+Sean D'Epagnier,2019-06-12,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,2019-06-11,fix nokia5110 display,['ugfx.cpp']
+Sean D'Epagnier,2019-06-11,fix socket id for nmea,"['nmea.py,sensors.py']"
+Sean D'Epagnier,2019-06-11,add version to boot splash,"['pypilot_version.h,splash.cpp']"
+Sean D'Epagnier,2019-06-11,improve rudder calibration,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-09-13,slightly increase deadtime,['motor.ino']
+Sean D'Epagnier,2019-09-13,fix warning compiling,['ugfx.cpp']
+Sean D'Epagnier,2019-09-13,first pass at re-enumerating configuration in ui,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,autopilot.py,rudder.py,sensors.py,servo.py,tacking.py,version.py,values.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-06-11,correct range settings,"['autopilot.py,boatimu.py,calibration_fit.py,crc.py,pgm.py,quaternion.py,rudder.py,sensors.py,servo.py,tacking.py,server.py,values.py']"
+Sean D'Epagnier,2019-06-11,correct servo logic,"['servo.py,client_wx.py']"
+Sean D'Epagnier,2019-06-11,correct units,['servo.py']
+Sean D'Epagnier,2019-06-12,correct a few code errors,"['autopilot.py,servo.py']"
+Sean D'Epagnier,2019-09-13,improve calibration script,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-13,fix settings in calibration,"['autopilot_calibration.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-13,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-14,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-14,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-15,correct PR gain input,['basic.py']
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,2019-06-11,fix config for webapp,"['servo.py,pypilot_control.js']"
+Sean D'Epagnier,2019-06-11,fix  webapp gains,['pypilot_control.js']
+Sean D'Epagnier,2019-06-11,fix menu,['lcd.py']
+Sean D'Epagnier,2019-06-11,rename servo flags to simplify fault display logic,"['motor.ino,lcd.py,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2019-06-11,improve mode change logic,['autopilot.py']
+Sean D'Epagnier,2019-06-11,correct mode fallback logic,['autopilot.py']
+Sean D'Epagnier,2019-06-11,fix lcd menu,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2019-06-11,greatly improve rudder feedback calibration,"['arduino_servo.cpp,arduino_servo_eeprom.cpp,calibration_fit.py,rudder.py,servo.py']"
+Sean D'Epagnier,2019-09-26,improve ui showing servo flags on rudder calibration page,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-09-26,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-06-11,try to improve driver,"['Makefile,splash.cpp,ugfx.cpp']"
+Sean D'Epagnier,2019-09-26,update readme,['README']
+Sean D'Epagnier,2019-09-26,initial arduino sketch for the pypilot hat,"['Makefile,pypilothat.ino']"
+Sean D'Epagnier,2019-09-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-26,Merge pypilot:pypilot into HEAD,['']
+Sean D'Epagnier,2019-09-26,correct mode logic,"['autopilot.py,boatimu.py,basic.py,wind.py']"
+Sean D'Epagnier,2019-09-26,add absolute pilot,['absolute.py']
+Sean D'Epagnier,2019-09-26,improve error message,['server.py']
+Sean D'Epagnier,2019-09-30,"improve reaction timing, and rudder feedback stops","['Makefile,motor.ino,arduino_servo.cpp,servo.py']"
+Sean D'Epagnier,2019-09-30,improve rudder offset to be near zero,"['arduino_servo.cpp,arduino_servo_eeprom.cpp,rudder.py']"
+Sean D'Epagnier,2019-10-22,correct imports,['']
+Sean D'Epagnier,2019-09-26,Merge openplotter:pypilot into HEAD,['']
+Sean D'Epagnier,2019-09-26,Merge pypilot:pypilot into HEAD,['']
+Sean D'Epagnier,2019-09-27,correct flag name changes,['motor.ino']
+Sean D'Epagnier,2019-10-31,remove file,['pgm.py']
+Sean D'Epagnier,2019-10-31,issue #32,['autopilot.py']
+Sean D'Epagnier,2019-11-01,correct tacking,['tacking.py']
+Sean D'Epagnier,2019-11-01,change comments and formatting,"['calibration_fit.py,wind.py']"
+Sean D'Epagnier,2019-11-06,improvements to support python3,"['README,learning.py,setup.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,calibration_plot.py,shape.py']"
+Sean D'Epagnier,2019-11-12,make script quieter,['pypilot_boatimu.service']
+Sean D'Epagnier,2019-11-12,improve pilot importing and make a pilot failing non-fatal,"['autopilot.py,absolute.py,basic.py,learning.py,simple.py,wind.py']"
+Sean D'Epagnier,2019-11-12,python3 fixes,"['autopilot.py,boatimu.py,calibration_fit.py,learning.py,sensors.py,servo.py,tacking.py']"
+Sean D'Epagnier,2019-11-12,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-11-13,correct import and other errors for different pilots,"['autopilot.py,absolute.py,basic.py,learning.py,wind.py,resolv.py']"
+Sean D'Epagnier,2019-11-14,improve readme,['README']
+Sean D'Epagnier,2019-11-14,handle non-floating point numbers better,"['rudder.py,server.py']"
+Sean D'Epagnier,2019-11-14,add pretraining,['learning.py']
+Sean D'Epagnier,2019-11-14,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-11-14,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-11-14,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-11-14,re-enable nmea forwarding from serial to tcp socket,['nmea.py']
+Sean D'Epagnier,2019-11-14,handle forced float values,['values.py']
+Sean D'Epagnier,2019-11-14,python3 support,"['calibration_fit.py,vector.py']"
+Sean D'Epagnier,2019-11-23,improve servo flags,['servo.py']
+Sean D'Epagnier,2019-11-23,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Viktor Partyshev,2019-11-23,fix privent tacking from crash,['tacking.py']
+Viktor Partyshev,2019-11-23,After import changes quaternion functions calls appeared not in global,['calibration_fit.py']
+Sean D'Epagnier,2019-11-23,autogenerate version image for splash screen,"['Makefile,generate_version.py,pypilot_version.h,splash.cpp,arduino_servo.cpp,version.py']"
+sean d'epagnier,2019-11-23,"Merge pull request #35 from partyvi/master
+
+fix privent tacking from crash pypilot server",['']
+Viktor Partyshev,2019-11-23,fix crash in wind pilot in case if GPS is active,['wind.py']
+sean d'epagnier,2019-11-23,"Merge pull request #36 from partyvi/master
+
+fix crash in wind pilot in case if GPS is active",['']
+Sean D'Epagnier,2019-11-23,correct slight error in true wind calculation for wind pilot,['wind.py']
+Sean D'Epagnier,2019-11-23,update comment,['wind.py']
+Viktor Partyshev,2019-11-23,"make weathersensor code compilable, variable name misprint fix",['weathersensors.ino']
+Sean D'Epagnier,2019-11-24,improve serial probe error message,['serialprobe.py']
+Mitch Davis,2019-11-25,Fix typos from errant search and replace rename,['motor.ino']
+sean d'epagnier,2019-11-25,"Merge pull request #39 from CapnKernel/mjd-rev-typo
+
+Fix typos from errant search and replace rename",['']
+sean d'epagnier,2019-11-25,"Merge pull request #38 from partyvi/master
+
+make weathersensor code compilable, variable name misprint fix",['']
+Sean D'Epagnier,2019-11-25,Merge pypilot:pypilot,['']
+Mitch Davis,2019-11-26,Added missing backslash to fix wrong dead time when running at 4MHz,['motor.ino']
+Mitch Davis,2019-11-26,"Squash compiler warning about unused var for lock bits, which we don't check.",['motor.ino']
+Viktor Partyshev,2019-11-26,Pypilot and calibration ui window size and boatplot Sizer adjust to make it useful on 800x480 screens,"['autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,boatplot.py']"
+Sean D'Epagnier,2019-11-27,python3 fix map,['client_wx.py']
+Sean D'Epagnier,2019-11-27,correct no controller display,['lcd.py']
+sean d'epagnier,2019-11-28,"Merge pull request #40 from CapnKernel/mjd-nixlockbits
+
+Squash compiler warning about unused var for lock bits",['']
+sean d'epagnier,2019-11-28,"Merge pull request #41 from CapnKernel/mjd-fixdeadtime
+
+Added missing backslash to fix wrong dead time when running at 4MHz",['']
+sean d'epagnier,2019-11-28,"Merge pull request #43 from partyvi/master
+
+Pypilot and calibration ui adjust to make it useful on 800x480 screens",['']
+Sean D'Epagnier,2019-11-30,improve warning on lcd,['lcd.py']
+Sean D'Epagnier,2019-11-30,change default gains,['basic.py']
+Sean D'Epagnier,2019-11-30,update default values,['servo.py']
+Sean D'Epagnier,2019-11-30,change default current limit from 4 to 7 amps.,['servo.py']
+Sean D'Epagnier,2019-12-09,add rf,"['index.css,jquery.min.js,rf_config.js,socket.io.min.js,w3.css,index.html,testlatency.py']"
+Sean D'Epagnier,2019-12-09,Merge /media/sean/rootfs/home/pi/pypilot,['']
+Sean D'Epagnier,2020-01-11,correct GPAPB message handling,['sensors.py']
+Sean D'Epagnier,2020-01-11,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-01-14,increase max connections,['server.py']
+Sean D'Epagnier,2020-01-14,support setting values from commandline client,['client.py']
+Sean D'Epagnier,2020-01-14,support client nmea tcp connection,['nmea.py']
+Sean D'Epagnier,2020-01-15,fix client tcp,['nmea.py']
+Sean D'Epagnier,2020-01-15,update web interface for wifi client support,"['wifi.html,web.py']"
+Sean D'Epagnier,2020-01-15,update comments,['calibration_fit.py']
+Sean D'Epagnier,2019-06-11,fix nmea client,"['autopilot.py,nmea.py']"
+Sean D'Epagnier,2019-06-11,improve wifi configuration for client mode,"['wifi.html,web.py']"
+Sean D'Epagnier,2019-06-11,improve menu interface for config and wifi,"['hat.py,lcd.py,splash.cpp']"
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.20:pypilot,['']
+Sean D'Epagnier,2019-06-11,rename servo flags to simplify fault display logic,"['motor.ino,lcd.py,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2019-06-11,improve mode change logic,['autopilot.py']
+Sean D'Epagnier,2019-06-11,correct mode fallback logic,['autopilot.py']
+Sean D'Epagnier,2019-06-11,fix lcd menu,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2019-06-11,greatly improve rudder feedback calibration,"['arduino_servo.cpp,arduino_servo_eeprom.cpp,calibration_fit.py,rudder.py,servo.py']"
+Sean D'Epagnier,2019-09-26,improve ui showing servo flags on rudder calibration page,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-09-26,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-06-11,try to improve driver,"['Makefile,splash.cpp,ugfx.cpp']"
+Sean D'Epagnier,2019-09-26,update readme,['README']
+Sean D'Epagnier,2019-09-26,initial arduino sketch for the pypilot hat,"['Makefile,pypilothat.ino']"
+Sean D'Epagnier,2019-09-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-09-26,Merge pypilot:pypilot into HEAD,['']
+Sean D'Epagnier,2019-09-26,correct mode logic,"['autopilot.py,boatimu.py,basic.py,wind.py']"
+Sean D'Epagnier,2019-09-26,add absolute pilot,['absolute.py']
+Sean D'Epagnier,2019-09-26,improve error message,['server.py']
+Sean D'Epagnier,2019-09-30,"improve reaction timing, and rudder feedback stops","['Makefile,motor.ino,arduino_servo.cpp,servo.py']"
+Sean D'Epagnier,2019-09-30,improve rudder offset to be near zero,"['arduino_servo.cpp,arduino_servo_eeprom.cpp,rudder.py']"
+Sean D'Epagnier,2019-10-22,correct imports,['']
+Sean D'Epagnier,2019-09-26,Merge openplotter:pypilot into HEAD,['']
+Sean D'Epagnier,2019-09-26,Merge pypilot:pypilot into HEAD,['']
+Sean D'Epagnier,2019-09-27,correct flag name changes,['motor.ino']
+Sean D'Epagnier,2019-10-31,remove file,['pgm.py']
+Sean D'Epagnier,2019-10-31,issue #32,['autopilot.py']
+Sean D'Epagnier,2019-11-01,correct tacking,['tacking.py']
+Sean D'Epagnier,2019-11-01,change comments and formatting,"['calibration_fit.py,wind.py']"
+Sean D'Epagnier,2019-11-06,improvements to support python3,"['README,learning.py,setup.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,calibration_plot.py,shape.py']"
+Sean D'Epagnier,2019-11-12,make script quieter,['pypilot_boatimu.service']
+Sean D'Epagnier,2019-11-12,improve pilot importing and make a pilot failing non-fatal,"['autopilot.py,absolute.py,basic.py,learning.py,simple.py,wind.py']"
+Sean D'Epagnier,2019-11-12,python3 fixes,"['autopilot.py,boatimu.py,calibration_fit.py,learning.py,sensors.py,servo.py,tacking.py']"
+Sean D'Epagnier,2019-11-12,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-11-13,correct import and other errors for different pilots,"['autopilot.py,absolute.py,basic.py,learning.py,wind.py,resolv.py']"
+Sean D'Epagnier,2019-11-14,improve readme,['README']
+Sean D'Epagnier,2019-11-14,handle non-floating point numbers better,"['rudder.py,server.py']"
+Sean D'Epagnier,2019-11-14,add pretraining,['learning.py']
+Sean D'Epagnier,2019-11-14,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-11-14,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-11-14,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-11-14,re-enable nmea forwarding from serial to tcp socket,['nmea.py']
+Sean D'Epagnier,2019-11-14,handle forced float values,['values.py']
+Sean D'Epagnier,2019-11-14,python3 support,"['calibration_fit.py,vector.py']"
+Sean D'Epagnier,2019-11-23,improve servo flags,['servo.py']
+Sean D'Epagnier,2019-11-23,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Viktor Partyshev,2019-11-23,fix privent tacking from crash,['tacking.py']
+Viktor Partyshev,2019-11-23,After import changes quaternion functions calls appeared not in global,['calibration_fit.py']
+Sean D'Epagnier,2019-11-23,autogenerate version image for splash screen,"['Makefile,generate_version.py,pypilot_version.h,splash.cpp,arduino_servo.cpp,version.py']"
+sean d'epagnier,2019-11-23,"Merge pull request #35 from partyvi/master
+
+fix privent tacking from crash pypilot server",['']
+Viktor Partyshev,2019-11-23,fix crash in wind pilot in case if GPS is active,['wind.py']
+sean d'epagnier,2019-11-23,"Merge pull request #36 from partyvi/master
+
+fix crash in wind pilot in case if GPS is active",['']
+Sean D'Epagnier,2019-11-23,correct slight error in true wind calculation for wind pilot,['wind.py']
+Sean D'Epagnier,2019-11-23,update comment,['wind.py']
+Viktor Partyshev,2019-11-23,"make weathersensor code compilable, variable name misprint fix",['weathersensors.ino']
+Sean D'Epagnier,2019-11-24,improve serial probe error message,['serialprobe.py']
+Mitch Davis,2019-11-25,Fix typos from errant search and replace rename,['motor.ino']
+sean d'epagnier,2019-11-25,"Merge pull request #39 from CapnKernel/mjd-rev-typo
+
+Fix typos from errant search and replace rename",['']
+sean d'epagnier,2019-11-25,"Merge pull request #38 from partyvi/master
+
+make weathersensor code compilable, variable name misprint fix",['']
+Sean D'Epagnier,2019-11-25,Merge pypilot:pypilot,['']
+Mitch Davis,2019-11-26,Added missing backslash to fix wrong dead time when running at 4MHz,['motor.ino']
+Mitch Davis,2019-11-26,"Squash compiler warning about unused var for lock bits, which we don't check.",['motor.ino']
+Viktor Partyshev,2019-11-26,Pypilot and calibration ui window size and boatplot Sizer adjust to make it useful on 800x480 screens,"['autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,boatplot.py']"
+Sean D'Epagnier,2019-11-27,python3 fix map,['client_wx.py']
+Sean D'Epagnier,2019-11-27,correct no controller display,['lcd.py']
+sean d'epagnier,2019-11-28,"Merge pull request #40 from CapnKernel/mjd-nixlockbits
+
+Squash compiler warning about unused var for lock bits",['']
+sean d'epagnier,2019-11-28,"Merge pull request #41 from CapnKernel/mjd-fixdeadtime
+
+Added missing backslash to fix wrong dead time when running at 4MHz",['']
+sean d'epagnier,2019-11-28,"Merge pull request #43 from partyvi/master
+
+Pypilot and calibration ui adjust to make it useful on 800x480 screens",['']
+Sean D'Epagnier,2019-11-30,improve warning on lcd,['lcd.py']
+Sean D'Epagnier,2019-11-30,change default gains,['basic.py']
+Sean D'Epagnier,2019-11-30,update default values,['servo.py']
+Sean D'Epagnier,2019-11-30,change default current limit from 4 to 7 amps.,['servo.py']
+Sean D'Epagnier,2019-12-09,add rf,"['index.css,jquery.min.js,rf_config.js,socket.io.min.js,w3.css,index.html,testlatency.py']"
+Sean D'Epagnier,2019-12-09,Merge /media/sean/rootfs/home/pi/pypilot,['']
+Sean D'Epagnier,2020-01-11,correct GPAPB message handling,['sensors.py']
+Sean D'Epagnier,2020-01-11,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-01-14,increase max connections,['server.py']
+Sean D'Epagnier,2020-01-14,support setting values from commandline client,['client.py']
+Sean D'Epagnier,2020-01-14,support client nmea tcp connection,['nmea.py']
+Sean D'Epagnier,2020-01-15,fix client tcp,['nmea.py']
+Sean D'Epagnier,2020-01-15,update web interface for wifi client support,"['wifi.html,web.py']"
+Sean D'Epagnier,2020-01-15,update comments,['calibration_fit.py']
+Sean D'Epagnier,2019-06-11,fix nmea client,"['autopilot.py,nmea.py']"
+Sean D'Epagnier,2019-06-11,improve wifi configuration for client mode,"['wifi.html,web.py']"
+Sean D'Epagnier,2019-06-11,improve menu interface for config and wifi,"['hat.py,lcd.py,splash.cpp']"
+Sean D'Epagnier,2019-06-11,Merge 192.168.14.20:pypilot,['']
+Sean D'Epagnier,2019-06-12,add heading offset,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-06-12,fixup pilots,"['absolute.py,learning.py,pilot.py,simple.py,wind.py']"
+Sean D'Epagnier,2019-06-11,simplify and improve timestamps,"['autopilot.py,boatimu.py,gpsd.py,absolute.py,basic.py,learning.py,pilot.py,wind.py,rudder.py,sensors.py,servo.py,servo_calibration.py,pipeserver.py,scope.py,server.py,values.py']"
+Sean D'Epagnier,2019-06-12,add heading offset,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-06-12,fixup pilots,"['absolute.py,learning.py,pilot.py,simple.py,wind.py']"
+Sean D'Epagnier,2019-06-11,simplify and improve timestamps,"['autopilot.py,boatimu.py,gpsd.py,absolute.py,basic.py,learning.py,pilot.py,wind.py,rudder.py,sensors.py,servo.py,servo_calibration.py,pipeserver.py,scope.py,server.py,values.py']"
+Sean D'Epagnier,2019-06-11,improve new timestamp logic,"['autopilot.py,boatimu.py']"
+Sean D'Epagnier,2019-06-11,improve new timestamp logic,"['autopilot.py,boatimu.py']"
+Sean D'Epagnier,2019-06-12,fix wifi rendering,['lcd.py']
+Sean D'Epagnier,2019-06-12,fix wifi rendering,['lcd.py']
+Sean D'Epagnier,2019-06-12,fix import,['web.py']
+Sean D'Epagnier,2019-06-12,fix import,['web.py']
+Sean D'Epagnier,2019-06-12,improve calibration display and debugging,"['autopilot.py,boatimu.py,calibration_fit.py,version.py,pipeserver.py,values.py']"
+Sean D'Epagnier,2019-06-12,improve calibration display and debugging,"['autopilot.py,boatimu.py,calibration_fit.py,version.py,pipeserver.py,values.py']"
+Sean D'Epagnier,2019-06-12,fix timestamps,"['learning.py,simple.py']"
+Sean D'Epagnier,2019-06-12,fix timestamps,"['learning.py,simple.py']"
+Sean D'Epagnier,2019-06-12,improve compass calibration,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2019-06-12,improve compass calibration,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2019-06-12,remove points older than 20 minutes,['calibration_fit.py']
+Sean D'Epagnier,2019-06-12,remove points older than 20 minutes,['calibration_fit.py']
+Sean D'Epagnier,2019-06-12,detect bad sensor data faster,['boatimu.py']
+Sean D'Epagnier,2019-06-12,detect bad sensor data faster,['boatimu.py']
+Sean D'Epagnier,2020-01-13,disable learning pilot for now (avoid loading tensorflow),['learning.py']
+Sean D'Epagnier,2020-01-13,improve debugging,['serialprobe.py']
+Sean D'Epagnier,2020-01-13,fix syntax,['calibration_fit.py']
+Sean D'Epagnier,2020-01-13,correct problem of leveling,['values.py']
+Sean D'Epagnier,2020-01-13,fix indentation,['values.py']
+Sean D'Epagnier,2020-01-13,small bug for python3 calibration,['calibration_fit.py']
+Frederic Guilbault,2020-01-16,Fix reading port from config file for the pypilot web,"['README,web.py']"
+Sean D'Epagnier,2020-01-19,remove debugging printf,['arduino_servo.cpp']
+Sean D'Epagnier,2020-01-19,python3 fixes for calibration,['calibration_fit.py']
+Sean D'Epagnier,2020-01-19,correct alignment reset,['autopilot_calibration.py']
+Sean D'Epagnier,2020-01-19,Merge 10.10.10.1:pypilot,['']
+sean d'epagnier,2020-01-19,"Merge pull request #49 from FredericGuilbault/master
+
+Fix reading port from config file for the pypilot web",['']
+Sean D'Epagnier,2020-01-19,clear cal points on connection reset,['autopilot_calibration.py']
+Sean D'Epagnier,2020-01-19,support calibration python 3,"['calibration_fit.py,vector.py']"
+Sean D'Epagnier,2020-01-19,slight update,['calibration_fit.py']
+Sean D'Epagnier,2020-01-19,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-01-19,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-01-21,cleanup calibrations,"['README,autopilot.py,boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2020-01-22,rearrange calibration ui,"['autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2020-01-28,hopefully improve calibration debugging and display,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2020-01-29,improve comments and remove unused array member,"['pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2020-01-30,allow fuse high byte 0xde,['motor.ino']
+Sean D'Epagnier,2020-01-31,slight fixes to clients,"['client.py,client_wx.py']"
+Sean D'Epagnier,2020-01-31,improve calibration,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2020-01-31,disable simple pilot by default,"['learning.py,simple.py']"
+Sean D'Epagnier,2020-01-31,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-01-31,consolidate pilot logic,"['autopilot.py,absolute.py,basic.py,pilot.py,simple.py,wind.py']"
+Sean D'Epagnier,2020-01-31,send as float if float,['client.py']
+Sean D'Epagnier,2020-02-03,more learning pilot improvements,"['intellect.py,learning.py']"
+Sean D'Epagnier,2020-02-06,improve learning scripts,"['intellect.py,learning.py']"
+Sean D'Epagnier,2020-01-11,no longer publish filtered wind and gps speed,['autopilot.py']
+Sean D'Epagnier,2020-01-13,disable learning pilot for now (avoid loading tensorflow),['learning.py']
+Sean D'Epagnier,2020-01-13,improve debugging,['serialprobe.py']
+Sean D'Epagnier,2020-01-13,fix syntax,['calibration_fit.py']
+Sean D'Epagnier,2020-01-13,correct problem of leveling,['values.py']
+Sean D'Epagnier,2020-01-13,fix indentation,['values.py']
+Sean D'Epagnier,2020-01-13,small bug for python3 calibration,['calibration_fit.py']
+Sean D'Epagnier,2020-01-19,remove debugging printf,['arduino_servo.cpp']
+Sean D'Epagnier,2020-01-19,python3 fixes for calibration,['calibration_fit.py']
+Sean D'Epagnier,2020-01-19,correct alignment reset,['autopilot_calibration.py']
+Sean D'Epagnier,2020-01-19,Merge 10.10.10.1:pypilot,['']
+sean d'epagnier,2020-01-19,"Merge pull request #49 from FredericGuilbault/master
+
+Fix reading port from config file for the pypilot web",['']
+Sean D'Epagnier,2020-01-19,clear cal points on connection reset,['autopilot_calibration.py']
+Sean D'Epagnier,2020-01-19,support calibration python 3,"['calibration_fit.py,vector.py']"
+Sean D'Epagnier,2020-01-19,slight update,['calibration_fit.py']
+Sean D'Epagnier,2020-01-19,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-01-19,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-01-21,cleanup calibrations,"['README,autopilot.py,boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2020-01-22,rearrange calibration ui,"['autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2020-01-28,hopefully improve calibration debugging and display,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2020-01-29,improve comments and remove unused array member,"['pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2020-01-30,allow fuse high byte 0xde,['motor.ino']
+Sean D'Epagnier,2020-01-31,slight fixes to clients,"['client.py,client_wx.py']"
+Sean D'Epagnier,2020-01-31,improve calibration,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2020-01-31,disable simple pilot by default,"['learning.py,simple.py']"
+Sean D'Epagnier,2020-01-31,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-01-31,consolidate pilot logic,"['autopilot.py,absolute.py,basic.py,pilot.py,simple.py,wind.py']"
+Sean D'Epagnier,2020-01-31,send as float if float,['client.py']
+Sean D'Epagnier,2020-02-03,more learning pilot improvements,"['intellect.py,learning.py']"
+Sean D'Epagnier,2020-02-06,improve learning scripts,"['intellect.py,learning.py']"
+Sean D'Epagnier,2020-01-11,no longer publish filtered wind and gps speed,['autopilot.py']
+Sean D'Epagnier,2020-01-11,improve break,['client.py']
+Sean D'Epagnier,2020-01-11,improve break,['client.py']
+Sean D'Epagnier,2020-01-11,improve scope for new timestamp,"['scope.py,scope_wx.py']"
+Sean D'Epagnier,2020-01-11,improve scope for new timestamp,"['scope.py,scope_wx.py']"
+Sean D'Epagnier,2020-01-11,move file,['intellect.py']
+Sean D'Epagnier,2020-01-11,move file,['intellect.py']
+Sean D'Epagnier,2020-01-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-01-11,Merge pypilot:pypilot,['']
+Frederic Guilbault,2020-01-16,Fix reading port from config file for the pypilot web,"['README,web.py']"
+Sean D'Epagnier,2020-02-08,fix scope,"['scope.py,scope_wx.py,autopilot_calibration.py']"
+Sean D'Epagnier,2020-02-08,fix scope,"['scope.py,scope_wx.py,autopilot_calibration.py']"
+Sean D'Epagnier,2020-02-08,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-02-08,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-02-08,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-02-08,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-02-08,correct a few typos,['calibration_fit.py']
+Sean D'Epagnier,2020-02-08,correct a few typos,['calibration_fit.py']
+border,2020-02-09,Create the theme selectors radio buttons,"['dark_theme.css,pypilot_control.js,index.html']"
+Sean D'Epagnier,2020-02-10,slight fixes,"['autopilot.py,boatimu.py,learning.py,autopilot_calibration.py,autopilot_control_ui.py,boatplot.py']"
+Sean D'Epagnier,2020-02-10,slight fixes,"['autopilot.py,boatimu.py,learning.py,autopilot_calibration.py,autopilot_control_ui.py,boatplot.py']"
+Sean D'Epagnier,2020-02-10,correct watchlist,"['autopilot_calibration.py,calibration_plot.py']"
+Sean D'Epagnier,2020-02-10,correct watchlist,"['autopilot_calibration.py,calibration_plot.py']"
+Sean D'Epagnier,2020-02-10,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-02-10,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2020-02-10,revert previous change,['boatplot.py']
+Sean D'Epagnier,2020-02-10,revert previous change,['boatplot.py']
+border,2020-02-10,Disable w3.css on dark theme.,['pypilot_control.js']
+border,2020-02-10,Style the Head tabs bar.,"['dark_theme.css,pypilot_control.js,index.html']"
+Sean D'Epagnier,2020-02-10,fix imports for python3,"['autopilot.py,absolute.py,basic.py,learning.py,simple.py,wind.py']"
+Sean D'Epagnier,2020-02-10,fix imports for python3,"['autopilot.py,absolute.py,basic.py,learning.py,simple.py,wind.py']"
+border,2020-02-11,Style AP Toggle button + Add shadow on head tabs.,['dark_theme.css']
+border,2020-02-12,Theme steer buttons & text blocks & mive theme selector to the config tab. (there is some html changes in this commit),"['dark_theme.css,index.html']"
+border,2020-02-12,fix buttons in all tabs,['dark_theme.css']
+border,2020-02-12,Add cookie to store theme selection.,['pypilot_control.js']
+border,2020-02-12,move .theme_selector outside configuration_container to avoid overwite.,['index.html']
+Sean D'Epagnier,2020-02-13,rename services,['setup.py']
+Frederic Guilbault,2020-02-17,Fix sliders.,['dark_theme.css']
+Sean D'Epagnier,2020-02-17,improve intelligence,['intellect.py']
+sean d'epagnier,2020-02-17,"Merge pull request #53 from FredericGuilbault/dark-theme-web
+
+Dark theme for the web client",['']
+Sean D'Epagnier,2020-02-17,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-02-17,remove backup files,"['pypilot_control.js~,index.html~']"
+Sean D'Epagnier,1970-01-01,Merge 192.168.14.96:pypilot,['']
+Sean D'Epagnier,1970-01-01,slight fixes to web interface,"['gpio.py,hat.py,index.html,web.py']"
+Sean D'Epagnier,1980-01-05,consolidate gains and add wind gust gain,"['autopilot.py,basic.py,simple.py,wind.py']"
+Sean D'Epagnier,1980-01-05,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,1980-01-05,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2016-02-11,detect wiringpi libraries,['setup.py']
+Sean D'Epagnier,2016-02-11,add scripts for debian,"['README,hostapd.conf,pypilot.service,pypilot_lcdclient.service']"
+Sean D'Epagnier,2016-12-22,optimizations and updates for new board,"['autopilot.py,boatimu.py,calibration_fit.py,gpspoller.py,quaternion.py,serialprobe.py,servo.py,server.py']"
+Sean D'Epagnier,2017-03-04,update calibration routines,['calibration_fit.py']
+Sean D'Epagnier,2017-03-04,update lcdclient,"['apertium-po.py,client.py,ugfx.py']"
+Sean D'Epagnier,2017-03-04,integrate nmea bridge into autopilot and support externally networked gps,"['autopilot.py,boatimu.py,gpspoller.py,nmea_bridge.py,servo.py,wind.py,setup.py,values.py']"
+Sean D'Epagnier,2016-12-22,correct runtime,"['pypilot_webapp.py,pypilot_control.js']"
+Sean D'Epagnier,2016-12-22,update nmea bridge,"['autopilot.py,boatimu.py,calibration_fit.py,gpspoller.py,nmea_bridge.py,simple_autopilot.py,server.py']"
+Sean D'Epagnier,2016-12-22,autogen file,['ugfx.py']
+Sean D'Epagnier,2016-12-22,add readme file,['README']
+Sean D'Epagnier,2016-12-22,correct wifi inidcator,['client.py']
+Sean D'Epagnier,2016-12-22,improve serial detection and display,"['autopilot.py,boatimu.py,gpspoller.py,serialprobe.py,servo.py,vector.py,wind.py,client.py,server.py']"
+Sean D'Epagnier,2016-12-22,improve client for buttons without lcd,['client.py']
+Sean D'Epagnier,2016-12-22,correct previous performance changes,"['autopilot.py,boatimu.py,calibration_fit.py,servo.py']"
+Sean D'Epagnier,2016-12-26,initial commit,"['.gitignore,motor.ino,autopilot.py,boatimu.py,boatplot.py,calibration_fit.py,crc.py,gpspoller.py,nmea_bridge.py,quaternion.py,servo.py,servo_calibration.py,simple_autopilot.py,vector.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,compass_calibration_plot.py,lcdclient.py,README,pypilot_webapp.py,pypilot_webapp.wsgi,index.css,jquery.min.js,pypilot_control.js,socket.io.min.js,w3.css,index.html,setup.py,client.py,client_wx.py,scope.py,scope_ui.fbp,scope_ui.py,scope_wx.py,server.py,values.py']"
+Sean D'Epagnier,2016-12-26,initial corrections,"['autopilot.py,boatimu.py,gpspoller.py,nmea_bridge.py,autopilot_calibration.py,setup.py']"
+Sean D'Epagnier,2016-12-26,initial corrections,"['autopilot_calibration.py,boatplot.py,compass_calibration_plot.py,lcdclient.py,client.py,client_wx.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2016-12-26,Merge piCore:/mnt/mmcblk0p2/pypilot,['']
+Sean D'Epagnier,2016-12-22,add continuous option to client,"['client.py,client_wx.py,scope_wx.py']"
+Sean D'Epagnier,2016-12-22,more efficient lcd client without dependencies,"['client.py,font.py,test.py,Makefile,pypilot_logo.h,setup.py,splash.cpp,ugfx.build,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2016-12-22,"ensure child processes terminate, and move webapp to port 80","['autopilot.py,boatimu.py,calibration_fit.py,nmea_bridge.py,simple_autopilot.py,vector.py,lcdclient.py,pypilot_webapp.py,setup.py']"
+Sean D'Epagnier,2016-12-22,update fonts and lcd interface,"['client.py,font.py,test.py,Makefile,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2016-12-22,"servo min speed, and gyro bias fix","['autopilot.py,boatimu.py,servo.py,simple_autopilot.py,setup.py']"
+Sean D'Epagnier,2016-12-22,tinycore linux build package script,['pypilot.build']
+Sean D'Epagnier,2016-12-23,update display and autopilot logic,"['autopilot.py,boatimu.py,servo.py,client.py,ugfx.build']"
+Sean D'Epagnier,2016-12-22,add new heading offset,"['autopilot.py,boatimu.py,calibration_fit.py,quaternion.py,simple_autopilot.py,client.py,values.py']"
+Sean D'Epagnier,2016-12-23,improve imu output,"['autopilot.py,boatimu.py,calibration_fit.py,serialprobe.py,servo.py,servo_calibration.py,client.py,values.py']"
+Sean D'Epagnier,2017-01-31,use lower resolution as emulation is very inefficient,['client.py']
+Sean D'Epagnier,2017-02-03,slight updates,"['autopilot_calibration.py,autopilot_control.py,boatplot.py,compass_calibration_plot.py,client_wx.py']"
+Sean D'Epagnier,2017-02-04,update ui for wind sensor,['autopilot_control.py']
+Sean D'Epagnier,2017-01-01,add wind sensor arduino sketch,['windsensor.ino']
+Sean D'Epagnier,2017-01-06,"autoreconnect, update gains and plotting","['autopilot_calibration.py,autopilot_control.py,compass_calibration_plot.py,client.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2017-01-19,improve graphics in lcd significantly,"['autopilot.py,boatimu.py,servo.py,client.py,font.py,test.py,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i,setup.py']"
+Sean D'Epagnier,2017-01-18,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-01-27,move level logic to server and update clients,"['boatimu.py,client.py,pypilot_control.js']"
+Sean D'Epagnier,2017-01-27,update client to use server leveling logic,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-01-29,update server and clients for better mode logic,"['autopilot.py,servo.py,simple_autopilot.py,client.py,pypilot_webapp.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2017-01-28,update autopilot control for mode,"['autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-01-28,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-01-31,improve graphics in lcd significantly,"['autopilot.py,boatimu.py,servo.py,client.py,font.py,test.py,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i,setup.py']"
+Sean D'Epagnier,2017-01-31,update client to use server leveling logic,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-01-31,update autopilot control for mode,"['autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-01-31,move level logic to server and update clients,"['boatimu.py,client.py,pypilot_control.js']"
+Sean D'Epagnier,2017-01-31,update server and clients for better mode logic,"['autopilot.py,servo.py,simple_autopilot.py,client.py,pypilot_webapp.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2017-01-31,fix case where socket becomes closed,['server.py']
+Sean D'Epagnier,2017-01-31,implement gps probing for gpsd,"['gpspoller.py,servo.py,client.py,values.py']"
+Sean D'Epagnier,2017-01-31,move gps probe logic to separate service,"['gpspoller.py,gpsdate,gpsdate.py,gpsprobe.py']"
+Sean D'Epagnier,2090-09-13,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-01-31,fix lcdclient for glut emulation,"['client.py,test.py,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i,gpsdate.py']"
+Sean D'Epagnier,2017-01-31,add missing file,['glut.py']
+Sean D'Epagnier,2017-01-31,correct emulation logic,"['client.py,glut.py,test.py']"
+Sean D'Epagnier,2017-01-31,correct glut import,['client.py']
+Sean D'Epagnier,2017-01-31,correct reversed logic,['client.py']
+Sean D'Epagnier,2017-02-02,improve error reports,"['autopilot.py,boatimu.py,gpspoller.py,servo.py,servo_calibration.py,simple_autopilot.py,client.py,pypilot_control.js,index.html,client.py,server.py,values.py']"
+Sean D'Epagnier,2017-02-04,implement wind sensor,"['autopilot.py,boatimu.py,serialprobe.py,servo.py,simple_autopilot.py,wind.py,client.py,pypilot_control.js,index.html,server.py']"
+Sean D'Epagnier,2017-02-04,"simplify sensor timestamps, update ap logic","['autopilot.py,boatimu.py,gpspoller.py,serialprobe.py,servo.py,wind.py,client.py,pypilot_control.js,values.py']"
+Sean D'Epagnier,2017-02-06,use device id to probe serial ports more efficiently,['serialprobe.py']
+Sean D'Epagnier,2017-02-06,update control programs and settings,"['autopilot.py,servo.py,simple_autopilot.py,client.py,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i,pypilot_control.js']"
+Sean D'Epagnier,2017-02-06,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-02-06,updates to motor sketch,"['motor.ino,autopilot_control.py']"
+Sean D'Epagnier,2017-02-14,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-02-14,update calibration plot,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,boatplot.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2017-03-05,update calibration plot,['compass_calibration_plot.py']
+Sean D'Epagnier,2017-03-05,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-03-07,add simple searching autogain,"['autogain.py,nmea_bridge.py']"
+Sean D'Epagnier,2017-03-08,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-03-08,update readme,['README']
+Sean D'Epagnier,2017-03-19,Merge piCore:pypilot,['']
+Sean D'Epagnier,2017-03-19,calculate noise,['scope.py']
+Sean D'Epagnier,2017-03-19,simplify directory names,"['apertium-po.py,client.py,font.py,glut.py,test.py,Makefile,pypilot_logo.h,setup.py,splash.cpp,ugfx.build,ugfx.cpp,ugfx.h,ugfx.i,autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,boatplot.py,compass_calibration_plot.py,README,pypilot_webapp.py,pypilot_webapp.wsgi,index.css,jquery.min.js,pypilot_control.js,socket.io.min.js,w3.css,index.html']"
+Sean D'Epagnier,2017-03-19,correct new paths,['setup.py']
+Sean D'Epagnier,2016-12-22,update calibration,"['calibration_fit.py,vector.py']"
+Sean D'Epagnier,2016-12-22,optimize clients and servers reducing cpu usage considerably,"['client.py,boatimu.py,calibration_fit.py,nmea_bridge.py,servo.py,client.py,server.py,values.py']"
+Sean D'Epagnier,2017-03-29,initial kivy ui,"['autopilotcontrol.kv,main.py']"
+Sean D'Epagnier,2017-03-29,add buildozer spec for android,['buildozer.spec']
+Sean D'Epagnier,2017-04-03,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-04-06,add pressure sensor sketch,['bmp280.ino']
+Sean D'Epagnier,2017-04-06,change motor sketch to use rate of main loop not 3x,['motor.ino']
+Sean D'Epagnier,2017-04-06,add kivy control app,"['autopilotcontrol.kv,buildozer.spec,main.py']"
+Sean D'Epagnier,2017-04-06,misc updates to calibration,"['autopilot_calibration.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2016-12-22,Merge 192.168.14.20:pypilot,['']
+Sean D'Epagnier,2016-12-23,misc optimizations,"['autopilot.py,boatimu.py,calibration_fit.py,gpspoller.py,nmea_bridge.py,serialprobe.py,servo.py,simple_autopilot.py,wind.py,server.py,values.py']"
+Sean D'Epagnier,2016-12-25,"implement signalk pipe server
+
+offloading all non-deterministic
+cpu usage from autopilot process","['autopilot.py,boatimu.py,gpspoller.py,nmea_bridge.py,servo.py,simple_autopilot.py,wind.py,client.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2016-12-28,correct timestamps and line parsing,"['autopilot.py,boatimu.py,calibration_fit.py,nmea_bridge.py,servo.py,simple_autopilot.py,wind.py,client.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2017-04-07,scope to handle reconnection nicer,"['client.py,scope.py,scope_wx.py,autopilot_calibration.py']"
+Sean D'Epagnier,2053-12-12,misc improvements,"['windsensor.ino,wind.py,client.py,client_wx.py,server.py,main.py']"
+Sean D'Epagnier,2053-12-12,add davis wind sensor sketch,['daviswindsensor.ino']
+Sean D'Epagnier,2017-04-12,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-04-12,improved timestamps,"['client.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2017-04-14,add weather sensor sketches,"['bmp280.ino,daviswindsensor.ino,Makefile,weathersensors.ino']"
+Sean D'Epagnier,2017-04-14,reduce watch list,['autopilot_control.py']
+Sean D'Epagnier,2017-04-14,nmea processing and timestamps,"['autopilot.py,gpspoller.py,nmea_bridge.py,serialprobe.py,wind.py,pipeserver.py,server.py']"
+Sean D'Epagnier,2017-04-18,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-04-29,greatly improve nmea bridge reduce cpu usage,"['client.py,autopilot.py,boatimu.py,gpsdpoller.py,gpspoller.py,nmea.py,nmea_bridge.py,serialprobe.py,servo.py,wind.py,gpsdate.py,gpsprobe.py,client.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2017-04-29,remove debugging output,['compass_calibration_plot.py']
+Sean D'Epagnier,2017-04-29,apply deadband correction,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2017-04-29,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-05-03,initial 5110 lcd support,"['PCD8544.py,client.py,glut.py,nokia5110lcd.py,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2017-05-03,optimizations,"['boatimu.py,calibration_fit.py,gpsdpoller.py,nmea.py,serialprobe.py']"
+Sean D'Epagnier,2017-05-05,many optimizations and true wind mode,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_python.py,autopilot.py,boatimu.py,calibration_fit.py,gpsdpoller.py,nmea.py,serialprobe.py,servo.py,setup.py,pipeserver.py,server.py,values.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2017-05-05,update ui for true wind moe,"['client.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,index.html']"
+Sean D'Epagnier,2017-05-05,optimizations,"['autopilot.py,nmea.py,servo.py,server.py']"
+Sean D'Epagnier,2017-05-05,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-05-10,add linebuffer,"['nmea.py,linebuffer.cpp,linebuffer.h,linebuffer.i']"
+Sean D'Epagnier,2017-05-10,fix overflow in linebuffer,"['linebuffer.cpp,linebuffer.h,linebuffer.i,server.py']"
+Sean D'Epagnier,2017-05-12,improve linebuffer and client handling,"['client.py,linebuffer.cpp,linebuffer.h,linebuffer.i,server.py,autopilot_control.py']"
+Sean D'Epagnier,2017-05-14,improvements from testing,"['boatimu.py,calibration_fit.py,gpsdpoller.py,nmea.py,nmea_bridge.py,serialprobe.py,servo.py,simple_autopilot.py,pipeserver.py']"
+Sean D'Epagnier,2017-05-14,make weather sensors more robust,"['.gitignore,Makefile,twi.c,weathersensors.ino']"
+Sean D'Epagnier,2017-05-15,add flask webapp,['webapp.py']
+Sean D'Epagnier,2017-05-15,typo,['font.py']
+Sean D'Epagnier,2017-05-21,Merge 192.168.14.20:pypilot,['']
+Sean D'Epagnier,2017-05-16,"directional values, and improve data handling","['autopilot.py,basic_autopilot.py,boatimu.py,calibration_fit.py,gpsdpoller.py,nmea.py,nmea_bridge.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2017-05-19,update clients for simplified calibration,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2017-05-19,improve client handling,"['client.py,scope_wx.py']"
+Sean D'Epagnier,2017-05-19,simplify and improve persistent value support,"['pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2017-05-21,correct reconnection and crash in ugfx blit,"['client.py,ugfx.cpp,client.py']"
+Sean D'Epagnier,2017-05-21,update ui for improved calibration,"['autopilot_control.py,boatplot.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2017-05-21,improve servo calibration,['servo_calibration.py']
+Sean D'Epagnier,2017-05-21,improve calibration and error messages,"['autogain.py,autopilot.py,basic_autopilot.py,boatimu.py,calibration_fit.py,gpsdpoller.py,nmea.py,nmea_bridge.py,serialprobe.py,servo.py,simple_autopilot.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2017-05-21,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-05-22,add -i switch,['client.py']
+Sean D'Epagnier,2017-05-22,support directional sensors,"['scope.py,scope_wx.py']"
+Sean D'Epagnier,2017-05-22,slight improvements to weather sensors,['weathersensors.ino']
+Sean D'Epagnier,2017-05-25,greatly reduce cpu consumption,"['client.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2017-05-27,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-05-27,improve wind sensors,"['bmp280.ino,Makefile,twi.c,weathersensors.ino']"
+Sean D'Epagnier,2017-05-27,update for better calibration,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-05-27,reduce cpu usage,"['scope.py,scope_wx.py']"
+Sean D'Epagnier,2017-06-05,improve serial probing and linebuffer,"['README,autogain.py,nmea.py,serialprobe.py,setup.py,linebuffer.cpp,linebuffer.i']"
+Sean D'Epagnier,2017-06-07,update client for nokia5110 lcd,"['client.py,font.py,nokia5110lcd.py,ugfx.cpp,ugfx.h,ugfx.i,calibration_fit.py']"
+Sean D'Epagnier,2017-06-07,Merge rpicamera:pypilot,['']
+Sean D'Epagnier,2017-06-08,improve lcd client,"['client.py,nokia5110lcd.py,boatimu.py,setup.py,client.py']"
+Sean D'Epagnier,2017-06-12,updates to make pypilot compatible with nanopi,"['client.py,font.py,nokia5110lcd.py,setup.py,ugfx.cpp,ugfx.h,ugfx.i,boatimu.py,server.py']"
+Sean D'Epagnier,2017-06-16,cleanup lcdclient,"['client.py,setup.py']"
+Sean D'Epagnier,2017-06-16,"Merge 192.168.15.70:pypilot
+
+Conflicts:
+	lcd/client.py
+	lcd/nokia5110lcd.py
+	pypilot/boatimu.py
+	setup.py",['']
+Sean D'Epagnier,2017-06-16,correct lcdclient driver,"['client.py,nokia5110lcd.py']"
+Sean D'Epagnier,2017-06-16,Merge 192.168.15.70:pypilot,['']
+Sean D'Epagnier,2017-06-16,automatically generate translations,"['README,Makefile,POTFILES.in,README,apertium-po.py,pypilot_lcdclient.mo,pypilot_lcdclient.mo,translate.sh,setup.py']"
+Sean D'Epagnier,2017-06-16,correct languages,"['client.py,pypilot_lcdclient.mo,pypilot_lcdclient.mo']"
+Sean D'Epagnier,2017-06-16,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2017-06-16,Merge 192.168.15.70:pypilot,['']
+Sean D'Epagnier,2017-06-16,simplify and report version,"['autopilot.py,basic_autopilot.py,calibration_fit.py,simple_autopilot.py']"
+Sean D'Epagnier,2017-06-17,add checksum to font data,['ugfx.cpp']
+Sean D'Epagnier,2017-06-17,correct setup,"['font.py,setup.py,README']"
+Sean D'Epagnier,2017-06-18,greatly improve webapp performance and use sliders for gains,"['README,pypilot_webapp.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2017-06-18,slight improvements with stable server,"['setup.py,client.py,pipeserver.py,server.py']"
+Sean D'Epagnier,2017-06-17,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2017-06-21,use pywavefront for 3d models,['boatplot.py']
+Sean D'Epagnier,2017-06-21,slight corrections,"['README,client.py,font.py,ugfx.cpp,setup.py']"
+Sean D'Epagnier,2017-06-30,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-06-30,support orange pi,"['client.py,nokia5110lcd.py,ugfx.cpp,setup.py']"
+Sean D'Epagnier,2017-06-30,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2017-06-30,print overcurrent message,['client.py']
+Sean D'Epagnier,2017-06-30,changes to detect serial port on orange pi,['serialprobe.py']
+Sean D'Epagnier,2017-07-01,Merge /media/sean/d00b548f-42bb-44e4-aa5d-da053db3e25d/home/pypilot/pypilot,['']
+Sean D'Epagnier,2017-07-02,update readme,"['README,autopilot_control.py,main.py']"
+Sean D'Epagnier,2017-07-02,add makefile for motor controller sketch to build without arduino ide,"['bmp280.ino,Makefile,motor.ino,.gitignore,Makefile,twi.c,weathersensors.ino,windsensor.ino']"
+Sean D'Epagnier,2017-07-02,improve serial probe for servo,"['serialprobe.py,servo.py']"
+Sean D'Epagnier,2017-07-02,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2017-07-02,"create directories, and update config with last specified host",['client.py']
+Sean D'Epagnier,2017-07-02,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2017-07-02,update readme,['README']
+Sean D'Epagnier,2017-07-02,add gitignore files,"['.gitignore,.gitignore,.gitignore,.gitignore,.gitignore,.gitignore']"
+Sean D'Epagnier,2017-07-04,correct scope for improved opengl api,['scope.py']
+Sean D'Epagnier,2017-07-04,correct argument in wx scope,['scope_wx.py']
+Sean D'Epagnier,2017-07-04,"correct build issues, and bypp error","['Makefile,setup.py,ugfx.cpp']"
+Sean D'Epagnier,2017-07-04,initial support for ir remote control,"['Makefile,client.py']"
+Sean D'Epagnier,2017-07-06,new servo protocol,"['motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2017-06-30,fix scripts for debian orange pi,"['client.py,calibration_fit.py,pypilot.service,pypilot_lcdclient.service']"
+Sean D'Epagnier,2017-06-30,abort autopilot if imu doesn't initialize,['boatimu.py']
+Sean D'Epagnier,2017-06-30,save config when contrast changed,['client.py']
+Sean D'Epagnier,2017-06-30,work on servo calibration,"['servo.py,servo_calibration.py']"
+Sean D'Epagnier,2017-07-01,improve calibration,"['servo.py,servo_calibration.py']"
+Sean D'Epagnier,2017-07-01,handle speed range better,['servo.py']
+Sean D'Epagnier,2017-07-07,update text,['servo.py']
+Sean D'Epagnier,2017-07-07,add additional debugging prints,['boatimu.py']
+Sean D'Epagnier,2017-05-24,add debian config files,"['dnsmasq.conf,hostapd.conf,udhcpd.conf']"
+Sean D'Epagnier,2017-07-08,"make serial ports reenumerate, and always probing",['serialprobe.py']
+Sean D'Epagnier,2017-07-09,update scripts,"['hostapd,dhcpd.conf,hostapd.conf,interfaces,pypilot.service,pypilot_lcdclient.service']"
+Sean D'Epagnier,2017-07-09,improve servo,"['arduino_servo.cpp,arduino_servo.h,serialprobe.py,servo.py']"
+Sean D'Epagnier,2017-07-10,add flip ability to lcd,"['client.py,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2017-07-10,simplify logic,['arduino_servo.cpp']
+Sean D'Epagnier,2017-07-10,improve servo calibration,"['serialprobe.py,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2017-07-10,correct flaw in motor sketch,"['Makefile,motor.ino']"
+Sean D'Epagnier,2017-07-09,Merge 192.168.14.2:/media/sean/sean/pypilot,['']
+Sean D'Epagnier,2016-02-11,Merge /media/sean/sean/pypilot,['']
+Sean D'Epagnier,2017-09-21,correct driver timout logic,['servo.py']
+Sean D'Epagnier,2016-02-11,correct pipeserver demo,['pipeserver.py']
+Sean D'Epagnier,2016-02-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-10-01,add fwd/rev fault and rudder sense,['motor.ino']
+Sean D'Epagnier,2017-10-01,add slew rate setting to menu,['client.py']
+Sean D'Epagnier,2017-10-01,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-10-09,improve color of gain display,['autopilot_control.py']
+Sean D'Epagnier,2017-10-09,update calibration program,['compass_calibration_plot.py']
+Sean D'Epagnier,2016-02-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-08-06,improve control,['autopilot_control.py']
+Sean D'Epagnier,2017-08-06,correct scope when clock is set,['scope.py']
+Sean D'Epagnier,2017-08-06,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2016-02-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2016-02-11,improve servo connection,"['Makefile,motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2017-05-11,correct case where pin is not in mapping,['client.py']
+Sean D'Epagnier,2017-05-11,correct lirc initialization,['client.py']
+Sean D'Epagnier,2017-05-11,correct default serial port,['Makefile']
+Sean D'Epagnier,2017-05-11,update client for remote control to repeat keys,['client.py']
+Sean D'Epagnier,2017-05-12,increase gain rainge,['basic_autopilot.py']
+Sean D'Epagnier,2017-05-12,improvements to run client on framebuffer,"['client.py,font.py,Makefile,setup.py,ugfx.cpp']"
+Sean D'Epagnier,2017-05-15,correct nmea parsing to receive gps from opencpn,['nmea.py']
+Sean D'Epagnier,2017-05-15,increase linebuffer size,"['linebuffer.cpp,linebuffer.h']"
+Sean D'Epagnier,2017-05-15,improve gains,"['autopilot.py,basic_autopilot.py,boatimu.py']"
+Sean D'Epagnier,2017-05-15,disable debugging messages,['calibration_fit.py']
+Sean D'Epagnier,2017-05-15,improve servo windup,"['autopilot.py,basic_autopilot.py,boatimu.py,calibration_fit.py,servo.py']"
+Sean D'Epagnier,2017-05-15,Merge 192.168.14.35:pypilot,['']
+Sean D'Epagnier,2017-07-14,use ujson library for parsing for improved performance,"['boatimu.py,calibration_fit.py,client.py,kjson.py,scope.py,server.py']"
+Sean D'Epagnier,2017-07-14,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-07-19,avoid 360 command,['autopilot.py']
+Sean D'Epagnier,2017-07-19,update readme,['README']
+Sean D'Epagnier,2017-07-19,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-07-19,add lcd readme,['README']
+Sean D'Epagnier,2017-05-16,implement faster response modulated motor output,['servo.py']
+Sean D'Epagnier,2017-08-01,update servo,"['motor.ino,arduino_servo.cpp,arduino_servo.h,servo.py']"
+Sean D'Epagnier,2017-08-01,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-05-15,Merge 192.168.14.35:pypilot,['']
+Sean D'Epagnier,2017-06-15,"improve error reporting, and servo","['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,autopilot.py,basic_autopilot.py,boatimu.py,calibration_fit.py,gpsdpoller.py,nmea.py,servo.py,pipeserver.py']"
+Sean D'Epagnier,2017-05-11,"improve names, and interfaces","['client.py,font.py,nokia5110lcd.py,nmea.py,servo.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2017-05-11,improve constant,['pypilot_control.js']
+Sean D'Epagnier,2017-05-11,correct lcdclient,"['client.py,font.py,nokia5110lcd.py']"
+Sean D'Epagnier,2017-05-11,improve default cal,['servo.py']
+Sean D'Epagnier,2017-05-11,improve gps and wind,['autopilot.py']
+Sean D'Epagnier,2017-05-11,Merge 192.168.14.35:pypilot,['']
+Sean D'Epagnier,2017-07-09,add webapp systemd script,['pypilot_webapp.service']
+Sean D'Epagnier,2017-07-09,corrections for orangepi,"['client.py,font.py,nokia5110lcd.py,arduino_servo.cpp,autopilot.py']"
+Sean D'Epagnier,2017-07-09,make ugfx module with init script,['']
+Sean D'Epagnier,2017-08-16,improve sensor names,"['servo_calibration.py,autopilot_calibration.py,autopilot_control.py']"
+Sean D'Epagnier,2017-08-16,correct sleep bug resulting in high cpu for boatimu test,['boatimu.py']
+Sean D'Epagnier,2017-08-16,improve motor timing,"['Makefile,motor.ino,arduino_servo.cpp,autopilot.py,servo.py']"
+Sean D'Epagnier,2017-08-16,add calibration entry point,"['setup.py,autopilot_calibration.py']"
+Sean D'Epagnier,2017-08-25,update readme,"['README,pypilot.build']"
+Sean D'Epagnier,2017-08-25,improve servo calibration,"['autopilot.py,servo.py,servo_calibration.py,autopilot_calibration.py']"
+sailoog,2017-08-26,fix syntax error and update dependencies in README,"['README,arduino_servo.cpp']"
+sean d'epagnier,2017-08-26,"Merge pull request #2 from sailoog/master
+
+fix syntax error and update dependencies in README",['']
+Sean D'Epagnier,2017-08-27,improve servo and update filters,"['autopilot.py,basic_autopilot.py,servo.py']"
+Sean D'Epagnier,2017-08-27,update servo for more efficient controller,"['Makefile,motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2017-08-28,Merge /media/sean/a02d2d78-3372-4a56-ad8a-4365dc452d37/tinypilot/pypilot,['']
+Sean D'Epagnier,2017-08-28,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2017-07-09,Merge 192.168.14.6:pypilot,['']
+Sean D'Epagnier,2017-07-09,correct data handling,"['autopilot.py,servo.py,values.py']"
+Sean D'Epagnier,2017-08-30,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-08-31,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-05-11,Merge 192.168.14.118:pypilot,['']
+Sean D'Epagnier,2017-05-12,"fix issues with servo logic, and report more flags","['servo.py,servo_calibration.py']"
+Sean D'Epagnier,2017-05-12,increase overcurrent timeout,['motor.ino']
+Sean D'Epagnier,2017-05-12,fix sampling logic,"['autopilot.py,nmea.py']"
+Sean D'Epagnier,2017-05-14,"add feed-forward gain, and correct and improve steer to wind","['autopilot.py,basic_autopilot.py,boatimu.py,simple_autopilot.py']"
+Sean D'Epagnier,2017-08-11,improve error display,['client.py']
+Sean D'Epagnier,2017-08-11,correct errors in mode change logic,['autopilot.py']
+Sean D'Epagnier,2017-08-11,fix timeout logic,['servo.py']
+Sean D'Epagnier,2017-08-11,fix steer to wind logic,['autopilot.py']
+Sean D'Epagnier,2017-08-11,fix startup,['servo_calibration.py']
+Sean D'Epagnier,2017-08-11,"rewrite nokia5110 driver in c++ eliminating several python dependencies,
+and allowing the splash screen to start much earlier","['client.py,Makefile,pypilot_logo.h,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2017-08-11,add test program for ir remote,['testlirc.py']
+Sean D'Epagnier,2017-08-11,improve wind and gps logic,['autopilot.py']
+Sean D'Epagnier,2017-09-10,increase ranges for maximum current and temperatures,['servo.py']
+Sean D'Epagnier,2017-09-10,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-09-11,fix mode select logic,['client.py']
+Sean D'Epagnier,2017-09-11,correct filter error,['autopilot.py']
+Sean D'Epagnier,2017-09-12,report controller toui,"['autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-09-12,"default max current 1, to avoid initial overcurrent","['Makefile,motor.ino']"
+Sean D'Epagnier,2017-09-12,remove duplicated logic,['autopilot.py']
+Sean D'Epagnier,2017-09-12,improve servo and update filters,"['autopilot.py,pgm.py']"
+Sean D'Epagnier,2017-09-12,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-09-12,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-09-12,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-09-13,improve calibration display to use less points,['compass_calibration_plot.py']
+Sean D'Epagnier,2017-09-13,improve default scale of boat plot,['boatplot.py']
+Sean D'Epagnier,2016-02-12,make calibration age persistent,['boatimu.py']
+Sean D'Epagnier,2016-02-12,fixup,['boatimu.py']
+Sean D'Epagnier,2016-02-12,add drive timeout flag,"['servo.py,values.py']"
+Sean D'Epagnier,2017-08-11,correct nmea handling error,"['calibration_fit.py,nmea.py,serialprobe.py']"
+Sean D'Epagnier,2017-08-11,"correct typos, and initial install problems","['client.py,boatimu.py,calibration_fit.py,servo.py,vector.py,client.py,values.py']"
+Sean D'Epagnier,2017-08-11,improve invalid heading display,['client.py']
+Sean D'Epagnier,2017-08-12,correct new code arrangement,['servo.py']
+Sean D'Epagnier,2017-08-12,correctly redraw warning,['client.py']
+Sean D'Epagnier,2017-08-12,tweak for new kernel and raspberry w,"['autopilot.py,boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2017-08-12,Merge odroid:pypilot,['']
+Sean D'Epagnier,2017-09-18,use . as the signalk separator rather than /,"['client.py,autogain.py,autopilot.py,boatimu.py,nmea.py,nmea_bridge.py,servo.py,servo_calibration.py,autopilot_calibration.py,autopilot_control.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2017-09-19,corrections for orange pi,"['client.py,Makefile,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2017-09-19,update webapp for . separator,"['servo.py,servo_calibration.py,pypilot_control.js']"
+Sean D'Epagnier,2017-09-19,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-09-19,add installer script,['install_packages']
+Sean D'Epagnier,2017-09-19,add readme for arduino sketches,['README']
+Sean D'Epagnier,2017-08-11,Merge 192.168.14.47:pypilot,['']
+Sean D'Epagnier,2017-08-11,more cases of new signalk format,['nmea.py']
+Sean D'Epagnier,2017-08-11,correct gains,['client.py']
+Sean D'Epagnier,2017-08-11,correct string comparison,['client.py']
+Sean D'Epagnier,2017-08-11,"correctly process wind and gps timeout, process remote keys better","['client.py,ugfx.i,nmea.py,lircd.conf']"
+Sean D'Epagnier,2017-08-11,nicer cal error display,['client.py']
+Sean D'Epagnier,2017-08-11,handle poll error better,['arduino_servo.cpp']
+Sean D'Epagnier,2017-08-11,correct shutdown of processes,['autopilot.py']
+Sean D'Epagnier,2017-08-11,revert to more intuitive roll outputi,['boatimu.py']
+Sean D'Epagnier,2017-08-11,work in progress calibration updates,['calibration_fit.py']
+Sean D'Epagnier,2017-08-13,user adjustable big and small steps,['client.py']
+Sean D'Epagnier,2017-08-13,make compass calibration more strict,"['calibration_fit.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2017-08-17,improve failure display,['client.py']
+Sean D'Epagnier,2017-08-17,improve fit text,['client.py']
+Sean D'Epagnier,2017-08-11,add new remote,['lircd.conf']
+Sean D'Epagnier,2017-08-11,improve remote control,['client.py']
+Sean D'Epagnier,2017-08-11,improve signal handling,['autopilot.py']
+Sean D'Epagnier,2017-08-11,correct feed forward gain,['basic_autopilot.py']
+Sean D'Epagnier,2017-08-11,make heading offset persistent,['boatimu.py']
+Sean D'Epagnier,2017-08-12,improve lcd logic,['client.py']
+Sean D'Epagnier,2017-08-12,correct ir remote mapping,['lircd.conf']
+Sean D'Epagnier,2017-08-11,reduce max temp default to 55C,['servo.py']
+Sean D'Epagnier,2017-08-12,improve manual control,['client.py']
+Sean D'Epagnier,2017-08-12,ensure temp limit is sent,['arduino_servo.cpp']
+Sean D'Epagnier,2017-08-12,correct gyro calculation for rotation,['boatimu.py']
+Sean D'Epagnier,2017-08-12,improve gps and wind steering and default max temp 60C,"['autopilot.py,servo.py']"
+Sean D'Epagnier,2017-08-12,correct gains,['client.py']
+Sean D'Epagnier,2017-08-12,improve error message,['server.py']
+Sean D'Epagnier,2017-08-14,"rework automatic magnetometer calibration, hopefully making it more reliable
+and accurate","['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2017-08-13,update client for new calibration,['client.py']
+Sean D'Epagnier,2017-08-13,allow non-fatal exception,['nmea.py']
+Sean D'Epagnier,2017-08-13,adjust gain range,['basic_autopilot.py']
+Sean D'Epagnier,2017-08-13,correct new calibration routines,['calibration_fit.py']
+Sean D'Epagnier,2017-08-13,fix calibration fit for debugging,['calibration_fit.py']
+Sean D'Epagnier,2017-08-13,correct age/runtime values,['boatimu.py']
+Sean D'Epagnier,2017-08-13,correct for sigpipe errors,"['autopilot.py,nmea.py,server.py']"
+Sean D'Epagnier,2017-08-13,update new gains and improve error message,['client.py']
+Sean D'Epagnier,2017-08-13,"remove old integral gain, rename gains, and add square root gain","['autopilot.py,basic_autopilot.py']"
+Sean D'Epagnier,2017-08-15,change gain names back,['basic_autopilot.py']
+Sean D'Epagnier,2017-08-15,improve wind steering modes,['autopilot.py']
+Sean D'Epagnier,2017-10-21,improve calibration plot,['compass_calibration_plot.py']
+Sean D'Epagnier,2017-10-21,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-11-10,correct drawing on raspberry gl driver,['compass_calibration_plot.py']
+Sean D'Epagnier,2017-11-10,add note about pywavefront,['README']
+Sean D'Epagnier,2017-11-14,add lcd for arduino weather sensors,"['Makefile,PCD8544.cpp,PCD8544.h,make_charset.py,weathersensors.ino']"
+Sean D'Epagnier,2017-11-15,update weather sensors,"['PCD8544.cpp,make_charset.py,weathersensors.ino']"
+Sean D'Epagnier,2017-11-22,correct putpixel,['PCD8544.cpp']
+Sean D'Epagnier,2017-11-22,improve weather sensors display,"['Makefile,make_charset.py,weathersensors.ino']"
+Sean D'Epagnier,2017-11-22,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2017-12-29,improve control to be non-linear (allow tacking and wider changes(,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2017-12-29,implement reconnect logic,"['client.py,autopilot_control.py']"
+Sean D'Epagnier,2018-01-06,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-01-07,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-01-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-01-14,rename iteration routine,['autopilot.py']
+Sean D'Epagnier,2018-01-14,"allow ""none"" device to disable probing",['serialprobe.py']
+Sean D'Epagnier,2018-01-14,improvements for openplotter integration,"['boatimu.py,setup.py,webapp.py']"
+Sean D'Epagnier,2018-01-19,remove unused variable,['autopilot.py']
+Sean D'Epagnier,2018-01-19,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2018-01-19,handle rare conditions (bad wiring?),['motor.ino']
+Sean D'Epagnier,2018-01-19,tweak backlight settings,['weathersensors.ino']
+Sean D'Epagnier,2018-01-19,improve client console output,['client.py']
+Sean D'Epagnier,2018-01-19,correct missing exception,"['servo.py,autopilot_control.py']"
+Sean D'Epagnier,2018-01-28,correct comment formatting,['nmea.py']
+Sean D'Epagnier,2018-01-28,add rudder sense,"['Makefile,motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2018-01-14,correct rudder sense,"['arduino_servo.cpp,arduino_servo.h,servo.py']"
+Sean D'Epagnier,2018-01-15,allow remote host in gpsdate script,['gpsdate.py']
+Sean D'Epagnier,2018-01-30,"implement rudder feedback, limit travel for fwd and reverse conditions","['Makefile,motor.ino,Makefile,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2018-01-30,send rudder position nmea message,['nmea.py']
+Sean D'Epagnier,2018-01-30,change controller rudder data from 14 bit to 16 bit,"['motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2018-02-01,improve timing,['motor.ino']
+Sean D'Epagnier,2018-02-01,slight changes for faster speed data,"['arduino_servo.cpp,arduino_servo.h']"
+Sean D'Epagnier,2018-02-01,try to reduce 3d fit errors,['calibration_fit.py']
+Sean D'Epagnier,2018-02-01,improve manual control,['autopilot_control.py']
+Sean D'Epagnier,2018-02-01,"improve higher rate servo support, and correct driver timeout detection",['servo.py']
+Sean D'Epagnier,2017-08-11,Merge 192.168.14.122:/media/pi/sean/pypilot,['']
+Sean D'Epagnier,2017-08-14,auto enumerate autopilot gains in webapp,['pypilot_control.js']
+Sean D'Epagnier,2017-08-14,improve webapp control,"['pypilot_control.js,index.html,webapp.py']"
+Sean D'Epagnier,2017-08-14,simplify and report servo temperatures,['client.py']
+Sean D'Epagnier,2018-06-04,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-06-04,calibration improvements,['calibration_fit.py']
+Sean D'Epagnier,2018-06-04,improve display,"['autogain.py,boatimu.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2018-06-05,update readme for debian install,"['README,dnsmasq.conf,dhcpd.conf,hostapd.conf,udhcpd.conf']"
+Sean D'Epagnier,2018-06-05,add sudoers file,"['README,010_pypilot-nopasswd,README']"
+Sean D'Epagnier,2018-06-05,add calibration lock to lcd display,"['client.py,glut.py']"
+Sean D'Epagnier,2018-06-05,add ubuntu hostapd for orange pi zero,['hostapd.conf']
+Sean D'Epagnier,2018-06-05,update interfaces,['interfaces']
+Sean D'Epagnier,2018-06-05,fix ugfx makefile for splash,['Makefile']
+Sean D'Epagnier,2018-06-05,add calibration lock to webapp,"['pypilot_control.js,index.html,webapp.py']"
+Sean D'Epagnier,2018-06-06,change dependency,['README']
+Sean D'Epagnier,2018-06-06,improve comments on motor controller,['motor.ino']
+Sean D'Epagnier,2018-06-12,support new high current controller,['motor.ino']
+Sean D'Epagnier,2018-06-12,improve timing for current statistics,['servo.py']
+Sean D'Epagnier,2018-06-12,correct startup command to neutral,['arduino_servo.cpp']
+Sean D'Epagnier,2018-06-12,improve autogain,"['autogain.py,calibration_fit.py']"
+Sean D'Epagnier,2018-06-14,"add divide clock option to improve idle power consumption
+and fix watchdog",['motor.ino']
+Sean D'Epagnier,2018-06-14,improve comment,['motor.ino']
+Sean D'Epagnier,2018-06-15,improve calibration,"['boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2018-06-16,improve serial probing,"['autopilot.py,gpsdpoller.py,nmea.py,serialprobe.py,servo.py']"
+Sean D'Epagnier,2018-06-11,improve calibration,['calibration_fit.py']
+Sean D'Epagnier,2018-06-11,improve serial probe and add blacklist,['serialprobe.py']
+Sean D'Epagnier,2018-06-11,slight code corrections,"['nmea.py,servo.py']"
+Sean D'Epagnier,2017-08-11,improve error display for failed sensors,"['client.py,boatimu.py']"
+Sean D'Epagnier,2017-08-13,correct socket handling and apb parsing,"['client.py,nmea.py']"
+Sean D'Epagnier,2017-08-13,keep gps mode even with low gps speed,"['autopilot.py,nmea.py']"
+Sean D'Epagnier,2017-08-14,update ap heading command even if not enabled,['nmea.py']
+Sean D'Epagnier,2017-08-14,reimplement integral gain,"['autopilot.py,basic_autopilot.py']"
+Sean D'Epagnier,2017-08-11,add arduino servo test,"['Makefile,test.cpp']"
+Sean D'Epagnier,2017-08-11,remove filter menu,['client.py']
+Sean D'Epagnier,2017-08-11,report failure rather than crash,['ugfx.cpp']
+Sean D'Epagnier,2018-03-13,correct bug causing calibration fit to fail for 1d and 2d fit and improve initial guess,['calibration_fit.py']
+Sean D'Epagnier,2018-03-14,correctly project initial guess values for calibration,"['calibration_fit.py,vector.py']"
+Sean D'Epagnier,2018-03-15,"report many more quaternion digits, and correct possible rounding errors in calibration display","['boatimu.py,values.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2018-03-16,remove debugging print,['values.py']
+Sean D'Epagnier,2018-03-16,add placeholder with comment,['calibration_fit.py']
+Sean D'Epagnier,2017-08-12,add voltage and other info to the lcd and webapp,"['client.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2018-02-14,improve backlight logic,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2018-02-14,improve debugging message,['motor.ino']
+Sean D'Epagnier,2018-02-15,change mpu code to support mpu925x,['boatimu.py']
+Sean D'Epagnier,2018-02-16,resend config to recover from data errors each frame,"['PCD8544.cpp,PCD8544.h']"
+Sean D'Epagnier,2018-02-17,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-02-17,don't measure temp for older boards,['motor.ino']
+Sean D'Epagnier,2018-02-17,update gains... we should really scan for these,['pypilot_control.js']
+Sean D'Epagnier,2018-02-17,improve webapp reconnect abilities,"['pypilot_control.js,webapp.py']"
+Sean D'Epagnier,2018-02-18,make lastdir directional,['servo.py']
+Sean D'Epagnier,2018-02-18,implement watchdog,['motor.ino']
+Sean D'Epagnier,2018-02-17,ensure pwm out is low when disengauged,['motor.ino']
+Sean D'Epagnier,2018-02-22,high current controller,['motor.ino']
+Sean D'Epagnier,2018-02-22,remove brake hack and rename stop command to reset,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2018-02-22,add motor readme,['README']
+Sean D'Epagnier,2018-03-07,implement serial port list,['serialprobe.py']
+Sean D'Epagnier,2018-03-07,make gpsdpoller test client,['gpsdpoller.py']
+Sean D'Epagnier,2018-04-11,add servo test and detection flag used by openplotter,"['servo.py,setup.py']"
+Sean D'Epagnier,2018-04-11,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2018-04-20,"install data files for boat display, improve ui","['README,setup.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py,boatplot.py']"
+Sean D'Epagnier,2018-04-20,fix buggy wxforumbuilder,['autopilot_control_ui.py']
+Sean D'Epagnier,2017-08-11,implement calibration plots on lcd,['client.py']
+Sean D'Epagnier,2017-08-11,increase max position gain,['basic_autopilot.py']
+Sean D'Epagnier,2017-08-12,update remotes,['lircd.conf']
+Sean D'Epagnier,2017-08-12,"correct quaternion rounding error, and improve process cleanup","['autopilot.py,boatimu.py,calibration_fit.py,quaternion.py']"
+Sean D'Epagnier,2018-04-28,close config files ensuring data is written,['client.py']
+Sean D'Epagnier,2018-05-01,bump version,['autopilot.py']
+Sean D'Epagnier,2018-05-01,git Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-05-06,update readme for fuses,['README']
+Sean D'Epagnier,2018-05-07,correct current measurement,['motor.ino']
+Sean D'Epagnier,2018-05-08,add slew rate limits for motor speeding and slowing,"['motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py']"
+Sean D'Epagnier,2018-05-08,add barometer plot,"['Makefile,PCD8544.cpp,weathersensors.ino']"
+Sean D'Epagnier,2018-05-08,"correct wx client to handle reconnections, and improve client","['client.py,client_wx.py']"
+Sean D'Epagnier,2018-05-10,improve rounding for client display,['client.py']
+Sean D'Epagnier,2018-05-10,use faster json,['values.py']
+Sean D'Epagnier,2018-05-10,correct command line arguments,['scope_wx.py']
+Sean D'Epagnier,2018-05-10,hopefully improve persistent data reliability,"['pipeserver.py,server.py']"
+Sean D'Epagnier,2018-05-10,add xte support,['nmea.py']
+Sean D'Epagnier,2018-05-10,enable anenometer display by default,['weathersensors.ino']
+Sean D'Epagnier,2018-05-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-05-12,correct missing persistent data,['server.py']
+Sean D'Epagnier,2018-05-12,correct connection populating,['client_wx.py']
+Sean D'Epagnier,2018-05-12,fix broken python setup,['pypilot.build']
+Sean D'Epagnier,2018-05-14,set default min speed to 100%,['servo.py']
+Sean D'Epagnier,2018-05-15,increase max temp defaults,['servo.py']
+Sean D'Epagnier,2018-06-11,slow spi clock more,['ugfx.cpp']
+Sean D'Epagnier,2018-06-18,improve logging,['webapp.py']
+Sean D'Epagnier,2018-06-18,cleanup logging,['gpsprobe.py']
+Sean D'Epagnier,2018-06-18,add debugging,['client.py']
+Sean D'Epagnier,2018-06-11,make D2 gain effective,['basic_autopilot.py']
+Sean D'Epagnier,2018-06-11,"if no imu, show no other message",['client.py']
+Sean D'Epagnier,2018-06-11,correct logic in reporting error,['client.py']
+Sean D'Epagnier,2018-06-11,support configuring wifi from webapp,"['pypilot_control.js,index.html,webapp.py']"
+Sean D'Epagnier,2018-06-11,correct text margin,['client.py']
+Sean D'Epagnier,2018-06-11,add accelerometer calibration and rename fields,"['autopilot.py,boatimu.py,calibration_fit.py']"
+Sean D'Epagnier,2018-06-17,fix udev serial probe,"['autopilot.py,serialprobe.py']"
+Sean D'Epagnier,2018-06-18,correct hostapd.conf file,"['dnsmasq.conf,hostapd.conf']"
+Sean D'Epagnier,2018-06-18,increase default calibration multiplier,['servo.py']
+Sean D'Epagnier,2018-06-18,improve serial probe,"['serialprobe.py,servo.py']"
+Sean D'Epagnier,2018-06-18,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-06-18,improve serialprobe more,['serialprobe.py']
+Sean D'Epagnier,2018-06-18,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-06-19,correct serial probe (again),['serialprobe.py']
+Sean D'Epagnier,2018-06-19,fix and use div_clock by default for motor controller,['motor.ino']
+Sean D'Epagnier,2018-06-22,correct issue with setting values without value in pipeserver,"['motor.ino,pipeserver.py,server.py']"
+Sean D'Epagnier,2018-07-25,motor controller to detect output type for io pin 6,['motor.ino']
+Sean D'Epagnier,2018-07-25,spelling correction,"['motor.ino,arduino_servo.h,arduino_servo.i,autopilot.py,servo.py,servo_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py,pypilot_control.js,index.html']"
+Sean D'Epagnier,2018-07-26,fix typo on serialprobe detection (affects openplotter),['serialprobe.py']
+Sean D'Epagnier,2018-07-27,correct spelling and timing register,['motor.ino']
+Sean D'Epagnier,2018-07-27,rename data fields and add accel calibration plot,"['client.py,boatimu.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py,calibration_plot.py,compass_calibration_plot.py']"
+Sean D'Epagnier,2018-06-11,Merge 192.168.14.71:/media/pi/sean/pypilot,['']
+Sean D'Epagnier,2018-06-11,"pypilot version 0.2
+
+update calibration, and rudder position","['arduino_servo.cpp,boatimu.py,calibration_fit.py,nmea.py,servo.py,setup.py']"
+Sean D'Epagnier,2018-06-12,rename to rudder.range,['servo.py']
+Sean D'Epagnier,2018-07-28,correct calibration display,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py,calibration_plot.py']"
+Sean D'Epagnier,2018-07-30,add current range sense,"['motor.ino,servo.py,values.py']"
+Sean D'Epagnier,2018-07-30,add calibration plost,"['autopilot_control_ui.py,calibration_plot.py']"
+Sean D'Epagnier,2018-07-30,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-07-30,correct typo,['servo.py']
+Sean D'Epagnier,2018-07-30,"Merge pypilot:pypilot
+
+Conflicts:
+	pypilot/servo.py",['']
+Sean D'Epagnier,2018-07-30,rudder calibration,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,boatimu.py,nmea.py,servo.py,values.py,autopilot_calibration.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-07-31,add shape file,"['autopilot_control_ui.py,shape.py']"
+Sean D'Epagnier,2018-06-11,correct servo output,"['nmea.py,servo.py']"
+Sean D'Epagnier,2018-06-11,fix typo,"['autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-06-11,correct rudder range to allow reversed sensors,['servo.py']
+Sean D'Epagnier,2018-06-11,multiple pilot support,"['client.py,autopilot.py,learning.py,setup.py']"
+Sean D'Epagnier,2018-06-11,correct exception on error message and improve debugging,"['calibration_fit.py,nmea.py']"
+Sean D'Epagnier,2018-06-11,improve debugging on nmea socket lost,['nmea.py']
+Sean D'Epagnier,2018-06-11,improve debugging more,['nmea.py']
+Sean D'Epagnier,2018-06-12,improve lcd reliability with slower clock,['ugfx.cpp']
+Sean D'Epagnier,2018-06-18,correct feedforward direction for wind,['basic_autopilot.py']
+Sean D'Epagnier,2018-06-18,correct servo fault counter,['servo.py']
+Sean D'Epagnier,2018-07-31,correct rudder calibration,['autopilot_calibration.py']
+Sean D'Epagnier,2018-07-31,fixup,['servo.py']
+Sean D'Epagnier,2018-07-31,improve motor controller accuracy,['motor.ino']
+Sean D'Epagnier,2018-08-02,accept apb sentences from serial inputs,['nmea.py']
+Sean D'Epagnier,2018-08-02,use raw offset coordinates for rudder offset,"['servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-08-02,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-08-03,"Merge pypilot:pypilot
+
+Conflicts:
+	pypilot/nmea.py",['']
+Sean D'Epagnier,2018-08-04,correct sleep hang from clock change,"['autopilot.py,boatimu.py,nmea.py']"
+Sean D'Epagnier,2018-08-04,improve debugging,['server.py']
+Sean D'Epagnier,2018-08-04,sample rudder feedback more,['motor.ino']
+Sean D'Epagnier,2018-08-04,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-08-11,improve ability to reset pressure sensor on faults,"['Makefile,twi.c,weathersensors.ino']"
+Sean D'Epagnier,2018-08-11,"improve comments, and age display","['motor.ino,boatimu.py,server.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-08-13,increase idle output rate,"['nmea.py,servo.py']"
+Sean D'Epagnier,2018-08-26,increase max current,['arduino_servo.cpp']
+Sean D'Epagnier,2018-08-26,add overvoltage and saturation flags,"['motor.ino,servo.py']"
+Sean D'Epagnier,2018-08-26,report lost mode,"['autopilot.py,autopilot_control.py']"
+Sean D'Epagnier,2018-08-26,increase max value for D2 gain,['basic_autopilot.py']
+Sean D'Epagnier,2018-08-27,increase xte max error,['nmea.py']
+Sean D'Epagnier,2018-08-29,remove unused files,"['PCD8544.py,nokia5110lcd.py']"
+Sean D'Epagnier,2018-09-02,report errors in fuse bits,"['motor.ino,servo.py']"
+Sean D'Epagnier,2018-09-02,correct mode,['autopilot.py']
+Sean D'Epagnier,2018-09-03,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2018-09-07,update sketch to detect high/low current controller,['motor.ino']
+Sean D'Epagnier,2018-09-07,increase rate of autopilot to 25hz,"['boatimu.py,client.py']"
+Sean D'Epagnier,2018-09-08,improve calibration ui slightly,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-09-08,store more often,['server.py']
+Sean D'Epagnier,2018-09-10,require more coverage,['calibration_fit.py']
+Sean D'Epagnier,2018-09-11,set period to 10hz until further testing,['boatimu.py']
+Sean D'Epagnier,2018-09-21,remove broken size hint,['autopilot_control_ui.py']
+Sean D'Epagnier,2018-09-21,default anemometer,['weathersensors.ino']
+Sean D'Epagnier,2018-09-21,support 24 volts,"['motor.ino,servo.py']"
+Sean D'Epagnier,2018-09-22,"correct program to allow spi output even when xorg is running or
+glut display has been used","['client.py,font.py']"
+Sean D'Epagnier,2018-09-29,fix indent error,['client.py']
+Sean D'Epagnier,2018-09-30,slower starting slew rates,['motor.ino']
+Sean D'Epagnier,2018-10-05,handle exceptions for gps nmea parsing,['nmea.py']
+Sean D'Epagnier,2018-06-18,Merge 192.168.14.71:/media/pi/sean/pypilot,['']
+Stelian Pop,2018-10-09,Fix resistance value on D12,['motor.ino']
+Stelian Pop,2018-10-09,AVR ADC works in 1024 steps not 1023.,['motor.ino']
+Stelian Pop,2018-10-09,"Code cleanups.
+
+- use symbolic names for all pins
+- move some code around for better understanding
+- whitespace removal",['motor.ino']
+sean d'epagnier,2018-10-09,"Merge pull request #9 from stelian42/arduino-fixes
+
+Arduino fixes",['']
+Sean D'Epagnier,2018-10-13,add fuse check,['weathersensors.ino']
+Sean D'Epagnier,2018-10-13,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2018-10-16,default contrast 60,"['motor.ino,ugfx.cpp,autopilot.py']"
+Sean D'Epagnier,2018-10-26,correct display with no imu,['client.py']
+Sean D'Epagnier,2018-10-26,"remove dead code, add comment",['pipeserver.py']
+Sean D'Epagnier,2018-10-26,add tacking support,['tacking.py']
+Sean D'Epagnier,2018-10-26,ensure current heading is set when ap is enabled,['autopilot.py']
+Sean D'Epagnier,2018-10-26,reduce D2 gain range,['basic_autopilot.py']
+Sean D'Epagnier,2018-10-31,improve control to work with servo only,"['README,Makefile,autopilot_control.py']"
+Sean D'Epagnier,2018-11-01,support  vnh2sp30,"['crc.h,motor.ino']"
+Sean D'Epagnier,2018-11-01,fix startup jerk,['motor.ino']
+Sean D'Epagnier,2018-11-04,greatly improve h-bridge support,['motor.ino']
+Sean D'Epagnier,2018-11-04,fix blacklist,['serialprobe.py']
+Sean D'Epagnier,2018-11-04,increase buffer size and fix message,"['arduino_servo.cpp,arduino_servo.h']"
+Sean D'Epagnier,2018-11-04,improve autopilot control,['autopilot_control.py']
+Sean D'Epagnier,2018-11-12,change base rate from 10hz to 25hz,"['weathersensors.ino,boatimu.py']"
+Stelian Pop,2018-11-12,"Implement volts/amps correction by offset and gain compensation.
+
+The offset and gain values are stored in EEPROM and can be modified
+by the clients using special codes.
+
+In addition, a few other parameters (max controller temp,
+max motor temp, rudder range, max slew) are also stored in EEPROM
+making the controller safe even if no client is connected.
+
+Conflicts:
+	arduino/motor/motor.ino","['Makefile,motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2018-11-12,improve signature logic and eeprom writes,['motor.ino']
+Stelian Pop,2018-11-12,"UI and core changes to support the current/voltage correction.
+
+Since the correction parameters are stored into the controller's flash,
+we do not want the same behaviour as for the max_xxx parameters, which
+are always send on startup from pypilot to the controller.
+
+Instead, we want to retrieve first the stored values, and only then
+allow modifications from the UI which needs to be send back to the
+controller.
+
+Conflicts:
+	pypilot/arduino_servo/arduino_servo.cpp","['motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Stelian Pop,2018-11-13,"More changes to support the saving of parameters inside the controller's EEPROM
+
+max_current, max_controller_temp, max_motor_temp, min/max_rudder_pos,
+max_slew_speed/slow are now stored inside the controller's EEPROM.
+
+The UI allows configuration of all these parameters, except for the
+rudder position (the rudder calibration process is not yet implemented).
+
+Conflicts:
+	pypilot/arduino_servo/arduino_servo.cpp","['motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-11-21,add support for changing pilots during runtime,"['Makefile,autopilot.py,basic.py,learning.py,simple.py,setup.py,calibration_plot.py']"
+Sean D'Epagnier,2018-11-25,move setting storage logic off of the arduino,"['Makefile,motor.ino,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py,setup.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-11-27,support multiple pilots in ui,"['autopilot.py,basic.py,simple.py,client.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-12-16,work with images better,"['boatplot.py,buildozer.spec']"
+Sean D'Epagnier,2018-12-16,Merge remote-tracking branch 'refs/remotes/origin/master',['']
+Sean D'Epagnier,2018-12-16,fix for high current controller and pwm,['motor.ino']
+Sean D'Epagnier,2018-12-16,max motor typo,"['arduino_servo.cpp,autopilot_control_ui.py']"
+Sean D'Epagnier,2018-12-16,allow calibration to run without wavefront module,['boatplot.py']
+Sean D'Epagnier,2018-12-21,update for gtk3,['autopilot_control.py']
+Sean D'Epagnier,2018-12-21,support autopilot without rtimu,"['arduino_servo.cpp,autopilot.py,boatimu.py']"
+Sean D'Epagnier,2018-12-21,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-04,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-05,correct rudder reading,"['Makefile,motor.ino']"
+Sean D'Epagnier,2019-01-05,prevent corrected negative currents,['servo.py']
+Sean D'Epagnier,2019-01-05,find wind sensor min/max range,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2019-01-08,correct installed import for multiple pilots,"['basic.py,learning.py,simple.py,tacking.py']"
+Sean D'Epagnier,2019-01-15,attempt to probe servo without blocking main thread,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py']"
+Sean D'Epagnier,2019-01-15,remove debugging print,['client.py']
+Sean D'Epagnier,2018-06-11,correct improved servo probing,['servo.py']
+Sean D'Epagnier,2018-06-11,handle missing or invalid wind data,['nmea.py']
+Sean D'Epagnier,2018-06-11,fix standalone boatimu and resetting alignment,['boatimu.py']
+Sean D'Epagnier,2018-06-11,allow numeric enums,"['servo.py,values.py']"
+Sean D'Epagnier,2018-06-11,correct tacking error,['tacking.py']
+Sean D'Epagnier,2018-06-11,correct rudder angle nmea output,['nmea.py']
+Sean D'Epagnier,2018-06-11,improve rudder input handling,['nmea.py']
+Sean D'Epagnier,2018-06-11,do not fault before gps loaded,['gpsdpoller.py']
+Sean D'Epagnier,2018-06-11,fixup initial servo nonlinearity support,"['arduino_servo.cpp,arduino_servo.h,arduino_servo.i,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py']"
+Sean D'Epagnier,2018-06-11,correct lcd bug,['ugfx.i']
+Sean D'Epagnier,2018-06-11,improve rudder calibration,"['arduino_servo.cpp,arduino_servo_eeprom.cpp,servo.py']"
+Sean D'Epagnier,2018-06-11,support both 10hz and 25hz rates,"['autopilot.py,boatimu.py,pipeserver.py,server.py,values.py']"
+Sean D'Epagnier,2018-06-11,correct rudder feedback and centering,"['arduino_servo.cpp,servo.py,autopilot_calibration.py']"
+Sean D'Epagnier,2018-06-19,add wifi config file for webapp,['wifi.html']
+Sean D'Epagnier,2019-01-15,don't display winddir as 0 if the sensor has failed,['weathersensors.ino']
+Sean D'Epagnier,2019-01-20,write min/max direction values to eeprom,['weathersensors.ino']
+Sean D'Epagnier,2019-01-20,bump version,['autopilot.py']
+Sean D'Epagnier,2019-01-20,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-21,re-enable autopilot,['autopilot.py']
+Sean D'Epagnier,2019-01-21,refactor buffered socket code,"['nmea_bridge.py,bufferedsocket.py,client.py,server.py']"
+Sean D'Epagnier,2019-01-21,correct buffered socket,"['bufferedsocket.py,client.py,server.py']"
+Sean D'Epagnier,2019-01-21,formatting changes and handle numeric choices,['client_wx.py']
+Sean D'Epagnier,2019-01-25,improve readme,['README']
+Sean D'Epagnier,2019-01-25,fix closing servo bug,['servo.py']
+Sean D'Epagnier,2019-01-25,small updates to kivy app,"['autopilotcontrol.kv,main.py']"
+Sean D'Epagnier,2019-01-25,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-01-25,add servo gain to calibration ui,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-01-25,slight correction to servo test,['servo.py']
+Sean D'Epagnier,2019-01-26,improve pyudev warning,['serialprobe.py']
+Sean D'Epagnier,2019-01-26,improve tacking,['tacking.py']
+Sean D'Epagnier,2019-01-30,use naked ISR and ensure symmetric drive,['motor.ino']
+Sean D'Epagnier,2019-01-30,ensure no negative currents,['servo.py']
+Sean D'Epagnier,2019-02-05,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2019-02-06,correct rounding,['arduino_servo_eeprom.cpp']
+Sean D'Epagnier,2019-02-06,support parts with high back light and slow down spi clock,"['PCD8544.cpp,weathersensors.ino']"
+Sean D'Epagnier,2019-02-07,"correct offsets, and set high current max to 40 amps","['motor.ino,arduino_servo.cpp,servo.py']"
+Sean D'Epagnier,2019-02-12,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2019-02-15,default not high backlight,['weathersensors.ino']
+Sean D'Epagnier,2019-02-15,increase dead time,"['README,motor.ino']"
+Sean D'Epagnier,2019-02-16,correct speed/slow parameters which accidentally got swapped,['arduino_servo.cpp']
+Sean D'Epagnier,2019-02-16,"reset badvoltage flag, and ignore commands if bad voltage",['motor.ino']
+Sean D'Epagnier,2019-02-16,fix rudder calibration gui,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-02-16,support new pywavefront,['boatplot.py']
+Sean D'Epagnier,2019-02-16,update README,['README']
+Sean D'Epagnier,2019-02-26,support rudder feedback input via nmea,['nmea.py']
+Sean D'Epagnier,2019-02-26,add rudder feedback sketch for nmea rudder feedback input,"['Makefile,rudder.ino']"
+Sean D'Epagnier,2019-02-26,make client more portable,['ugfx.i']
+Sean D'Epagnier,2019-02-26,slight changes and remove unused sketches,"['bmp280.ino,motor.ino,weathersensors.ino,windsensor.ino']"
+Sean D'Epagnier,2019-02-26,rework wind measurement,['weathersensors.ino']
+Sean D'Epagnier,2019-03-10,update readme,['README']
+Sean D'Epagnier,2019-03-10,formatting,['serialprobe.py']
+Sean D'Epagnier,2019-03-10,initial improved rudder feedback calibration with nonlinearity,"['servo.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-03-11,improve rudder feedback and calibration script effiency,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-03-11,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-03-12,centering and autogain,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-03-12,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-03-15,fix typo,['autopilot_calibration.py']
+Sean D'Epagnier,2019-03-15,improve logic for wind speed sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-15,improve wind direction sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-17,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-03-18,improve wind speed sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-21,update README and add dependencies script,"['README,get_dependencies.sh']"
+Sean D'Epagnier,2019-03-21,adjust wind direction sampling,['weathersensors.ino']
+Sean D'Epagnier,2019-03-21,work around new issues and rename lcd to make less client.py,"['glut.py,lcd.py,ugfx.cpp,ugfx.h,ugfx.i,setup.py,scope.py']"
+Sean D'Epagnier,2019-03-21,improve menu to scroll and enumerate gains,['lcd.py']
+Sean D'Epagnier,2019-03-21,better error output,['server.py']
+Sean D'Epagnier,2019-03-21,save config,['client.py']
+Sean D'Epagnier,2019-03-21,improve rudder handling,"['nmea.py,servo.py']"
+Sean D'Epagnier,2019-03-21,improve menu handling,['lcd.py']
+Sean D'Epagnier,2019-03-21,update dependencies,"['README,webapp.py']"
+Sean D'Epagnier,2019-03-21,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-03-21,implement rudder feedback and gain setting in webapp,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-03-23,support farenheit compile option,['weathersensors.ino']
+Sean D'Epagnier,2019-03-23,read settings from file and support running as services,"['lcd.py,pypilot.service,pypilot_boatimu.service,pypilot_lcd.service,pypilot_webapp.service,update_systemd_openplotter.sh,webapp.py']"
+Sean D'Epagnier,2019-03-23,ifdef for davis for now,['weathersensors.ino']
+Sean D'Epagnier,2019-03-23,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-03-23,improve duty and gain,['servo.py']
+Sean D'Epagnier,2019-03-23,improve error reporting,['nmea.py']
+Sean D'Epagnier,2019-03-23,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-03-23,correct farenheit temp output,"['make_charset.py,weathersensors.ino']"
+Sean D'Epagnier,2019-03-25,correct previous change,['lcd.py']
+Sean D'Epagnier,2019-03-25,allow switching to ap mode and disable encryption from lcd,['lcd.py']
+Sean D'Epagnier,2019-03-25,quote changes,['webapp.py']
+Sean D'Epagnier,2019-03-25,improve calibration of wind direction,['weathersensors.ino']
+Sean D'Epagnier,2019-03-26,set correct defaults,['weathersensors.ino']
+Sean D'Epagnier,2019-03-27,make wind speed reading more lenient,['weathersensors.ino']
+Sean D'Epagnier,2019-03-27,improve tacking,"['basic.py,tacking.py']"
+Sean D'Epagnier,2019-03-27,add select page,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2019-03-27,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-03-27,correct initial list,['lcd.py']
+Sean D'Epagnier,2019-03-27,update script,['update_systemd_openplotter.sh']
+Sean D'Epagnier,2019-03-27,warning on edge detect fail,['lcd.py']
+Sean D'Epagnier,2019-03-28,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-04-01,initial device management and new nmea handling,"['arduino_servo.cpp,autopilot.py,gpsdpoller.py,nmea.py,servo.py']"
+Sean D'Epagnier,2019-04-01,fix fail message,['calibration_fit.py']
+Sean D'Epagnier,2019-04-01,improve control interface,"['gpsprobe.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-04-01,use new rudder control,"['lcd.py,autopilot_calibration.py,autopilot_control.fbp,autopilot_control_ui.py,pypilot_control.js']"
+Sean D'Epagnier,2019-04-01,add rudder as separate from servo,['rudder.py']
+Sean D'Epagnier,2019-04-02,initial working with rehandled sensors,"['autopilot.py,gpsd.py,nmea.py,rudder.py,sensors.py,serialprobe.py,servo.py,tacking.py,values.py']"
+Sean D'Epagnier,2019-04-04,correct min/max and other errors,['servo.py']
+Sean D'Epagnier,2019-04-04,correct wind weight,['autopilot.py']
+Sean D'Epagnier,2019-04-04,correct rudder calibration,['rudder.py']
+Sean D'Epagnier,2019-04-05,update rudder position and debug message better,"['autopilot.py,nmea.py,servo.py']"
+Frederic Guilbault,2019-04-06,Formating the webapp readme + Documenting port number.,['README']
+Frederic Guilbault,2019-04-06,Missing wiringpi depedency in README,['README']
+Frederic Guilbault,2019-04-06,Rephrasing,['README']
+sean d'epagnier,2019-04-06,"Merge pull request #20 from FredericGuilbault/FredericGuilbault-patch-2
+
+Update the web_app README",['']
+sean d'epagnier,2019-04-06,"Merge pull request #17 from FredericGuilbault/FredericGuilbault-patch-3
+
+Missing wiringpi depedency in the README",['']
+Sean D'Epagnier,2019-04-06,correct previous commit for setting webapp port,['webapp.py']
+Sean D'Epagnier,2019-04-06,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2019-04-07,minor fix,"['autopilot_calibration.py,boatplot.py']"
+Sean D'Epagnier,2019-04-08,"initial python3 support, only signalk client working","['setup.py,bufferedsocket.py,client.py,kjson.py,values.py']"
+Sean D'Epagnier,2019-04-09,fix rudder calibration ui,"['autopilot_calibration.py,autopilot_control.fbp,autopilot_control.py,autopilot_control_ui.py']"
+Sean D'Epagnier,2019-04-09,fix rudder calibration,"['boatimu.py,rudder.py']"
+Sean D'Epagnier,2019-04-09,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-04-09,fix to make python 2.7 work from change to support python 3,['bufferedsocket.py']
+Sean D'Epagnier,1999-08-24,Merge 192.168.14.35:pypilot,['']
+Sean D'Epagnier,1999-08-24,fix build and version,"['pypilot_lcd.mo,pypilot_lcd.mo,Makefile,pypilot_logo.h,splash.cpp,ugfx.cpp,setup.py']"
+Sean D'Epagnier,1999-08-31,discard invalid nmea gps input,['nmea.py']
+Sean D'Epagnier,1999-09-01,improve log message,['sensors.py']
+Sean D'Epagnier,1999-09-01,improve gps parsing,['nmea.py']
+Sean D'Epagnier,1999-09-01,improve true wind mode,['autopilot.py']
+Sean D'Epagnier,2019-04-10,python3,"['client.py,pipeserver.py,scope.py,scope_wx.py,server.py']"
+Sean D'Epagnier,2019-04-10,python3,"['client.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2019-04-11,support python3,"['weathersensors.ino,font.py,glut.py,lcd.py,autopilot.py,boatimu.py,calibration_fit.py,quaternion.py,client.py,values.py,webapp.py']"
+Sean D'Epagnier,2019-04-11,fix text draw,['scope.py']
+Sean D'Epagnier,2019-04-17,improve tacking,['tacking.py']
+Sean D'Epagnier,2019-04-17,improve parsing and handling invalid nmea,"['nmea.py,values.py']"
+Sean D'Epagnier,2019-04-17,improve rudder feedback,"['rudder.py,servo.py']"
+Sean D'Epagnier,2019-04-17,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,1999-09-01,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,1999-09-01,improve serial probing,"['gpsd.py,nmea.py,sensors.py,serialprobe.py']"
+Sean D'Epagnier,1999-09-01,improve sensor timeout,"['nmea.py,sensors.py']"
+Sean D'Epagnier,1999-10-08,fix crash from lost sensor,['sensors.py']
+Sean D'Epagnier,2018-06-20,rework autopilot mode calculation,"['autopilot.py,basic.py']"
+Sean D'Epagnier,2019-04-17,improve lost connections,"['nmea.py,sensors.py']"
+Sean D'Epagnier,2019-04-17,add wind pilot,['autopilot.py']
+Sean D'Epagnier,2019-04-17,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-04-17,bump version,['setup.py']
+Sean D'Epagnier,2019-04-18,Merge 10.10.10.116:pypilot,['']
+Sean D'Epagnier,2019-04-26,tolerate unset lock bits for now,['motor.ino']
+Sean D'Epagnier,2019-04-26,unify version,"['autopilot.py,setup.py']"
+Sean D'Epagnier,2019-04-26,correct fail to write,['bufferedsocket.py']
+Sean D'Epagnier,2019-04-26,implement reset logic,"['gpsd.py,rudder.py,sensors.py,servo.py']"
+Sean D'Epagnier,2018-06-20,Merge 192.168.14.82:pypilot,['']
+Sean D'Epagnier,2018-06-11,correct pilots and bump version,"['autopilot.py,servo.py,setup.py']"
+Sean D'Epagnier,2018-06-13,round rudder to 2 decimal,['rudder.py']
+Sean D'Epagnier,2018-06-13,improve eeprom sync speed,"['motor.ino,arduino_servo.cpp,arduino_servo_eeprom.h']"
+Sean D'Epagnier,2018-06-13,add version file,['version.py']
+Sean D'Epagnier,2019-05-16,improve rudder out of range,"['motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2019-05-18,fast eeprom,"['motor.ino,arduino_servo.cpp']"
+Sean D'Epagnier,2019-05-18,Merge 10.10.10.166:pypilot,['']
+Sean D'Epagnier,2019-05-20,update servo gain,['autopilot_calibration.py']
+Sean D'Epagnier,2019-05-24,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2019-05-26,format config easier to read,['server.py']
+Sean D'Epagnier,2019-05-26,format change,['rudder.py']
+Sean D'Epagnier,2019-05-29,Merge 10.10.10.103:pypilot,['']
+Sean D'Epagnier,2019-06-06,slight fixes,"['autopilot.py,servo.py']"
+Sean D'Epagnier,2019-06-11,fix types,"['arduino_servo.cpp,arduino_servo.h,arduino_servo_eeprom.cpp,arduino_servo_eeprom.h,servo.py']"
+Sean D'Epagnier,2019-06-11,support more spi lcd,"['lcd.py,splash.cpp,ugfx.cpp,ugfx.h,ugfx.i']"
+Sean D'Epagnier,2019-06-11,fix error loading persistent data,['server.py']
+Sean D'Epagnier,2019-06-11,fix webapp to support client wifi,"['wifi.html,webapp.py']"
+Sean D'Epagnier,2019-06-11,handle case with no imu,['autopilot_calibration.py']
+Sean D'Epagnier,2019-06-16,correct wind speed units,['nmea.py']
+Sean D'Epagnier,2019-06-22,remove this wind pilot,['wind.py']
+Sean D'Epagnier,2019-06-22,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2019-06-22,make servo eeprom data more reliable,"['arduino_servo_eeprom.cpp,arduino_servo_eeprom.h']"
+Sean D'Epagnier,2019-06-28,fix sendfail message print,['bufferedsocket.py']
+Sean D'Epagnier,2019-06-28,correct watchlist for compass calibration plot,['autopilot_calibration.py']
+Sean D'Epagnier,2019-07-05,ratiometric mode,['motor.ino']
+Sean D'Epagnier,2019-07-05,fix watches,['autopilot_calibration.py']
+Sean D'Epagnier,2019-07-05,adjust badfit setting,['calibration_fit.py']
+Sean D'Epagnier,2019-07-05,remove D2 gain,['basic.py']
+Sean D'Epagnier,2019-07-05,fix servo position mode,['servo.py']
+Sean D'Epagnier,2019-07-05,Merge pypilot:pypilot,['']
+Sean D'Epagnier,2019-07-15,"improve comment, no functional change",['motor.ino']
+Sean D'Epagnier,2019-07-23,update readme,['README']
+Sean D'Epagnier,2019-07-23,fix rudder calibration for webapp,"['pypilot_control.js,index.html']"
+Sean D'Epagnier,2019-07-23,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-07-25,improve serial probe to include non-scanned devices,['serialprobe.py']
+Sean D'Epagnier,2019-07-25,correct nmea test script to use sensors.py instead,"['README,nmea.py,sensors.py']"
+Sean D'Epagnier,2019-07-25,update readme,['README']
+Sean D'Epagnier,2019-07-25,ui improvements,"['autopilot_control.fbp,autopilot_control_ui.py,index.html']"
+Sean D'Epagnier,2019-07-25,update readme,['README']
+Sean D'Epagnier,2019-07-25,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-07-27,fixtime parameter,['calibration_fit.py']
+Sean D'Epagnier,2019-07-30,update weather sensors,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2019-08-05,not connected,['autopilot_calibration.py']
+Sean D'Epagnier,2019-08-06,support ratiometric mode,"['Makefile,motor.ino']"
+Sean D'Epagnier,2019-08-06,update comments,['motor.ino']
+Sean D'Epagnier,2019-08-06,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-08-11,add servo.use_eeprom setting,['servo.py']
+Sean D'Epagnier,2019-08-11,logic corrections,['servo.py']
+Sean D'Epagnier,2019-08-11,merge,"['weathersensors.ino,calibration_plot.py']"
+Sean D'Epagnier,2019-08-11,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-08-11,handle GPAPB differently,['nmea.py']
+Sean D'Epagnier,2019-08-25,update comment,['motor.ino']
+Sean D'Epagnier,2019-08-25,"initial revision of apb nmea route following
+
+1) support input from serial nmea streams
+2) support sensors.apb.* for monitoring
+3) user adjustable gain on xte correction","['nmea.py,sensors.py']"
+Sean D'Epagnier,2019-08-25,weather sensors update,"['Makefile,weathersensors.ino']"
+Sean D'Epagnier,2019-08-25,Merge 10.10.10.103:pypilot,['']
+Sean D'Epagnier,2019-08-26,correct logic error,['servo.py']
+Sean D'Epagnier,2019-08-27,fix typos,"['nmea.py,sensors.py,servo.py']"
+Sean D'Epagnier,2019-08-27,Merge openplotter:pypilot,['']
+Sean D'Epagnier,2019-08-27,support python3 for signalk and ui control,"['client_wx.py,scope.py,scope_wx.py,values.py,autopilot_calibration.py,autopilot_control.py,boatplot.py,calibration_plot.py,shape.py']"
+Sean D'Epagnier,2019-08-27,support python3 for lcd,"['font.py,lcd.py,ugfx.i']"
+Sean D'Epagnier,2019-08-27,finish python3 support,"['test.py,testlirc.py,setup.py,autogain.py,autopilot.py,boatimu.py,calibration_fit.py,gpsd.py,nmea.py,nmea_bridge.py,rudder.py,sensors.py,serialprobe.py,servo.py,servo_calibration.py,bufferedsocket.py,pipeserver.py,server.py']"
+rmvdmr,2019-08-28,"try except as nmea communication will crash on $GPAPB,,,.,,,,,.,,,.,,.,*hh<CR><LF> (might still be some dots in there?)
+
+Plotters (at least Garmin does) do output constant an empty GPAPB sentence if there is no waypoint selected. Doing the float on this without a try except wil crash NMEA communication. As soon as there is an active waypoint GPAPB has data in it.",['nmea.py']
+rmvdmr,2019-08-28,"Do follow waypoint on GPAPB
+
+Current return makes following the waypoint for GPAPB not possible this slight 'mod' wil make that possible",['sensors.py']
+rmvdmr,2019-09-03,Update nmea.py,['nmea.py']
+Sean D'Epagnier,2020-02-24,measure times,['intellect.py']
+Sean D'Epagnier,2020-02-24,remove unused,['autopilot.py']
+Sean D'Epagnier,2020-02-24,support micropython on esp8266,"['bufferedsocket.py,client.py,kjson.py']"
+Sean D'Epagnier,2020-02-24,"no longer mention signalk as data format for pypilot
+signalk will eventually be handled with a pypilot plugin for signalk-node-server","['README,weathersensors.ino,arduino.py,hat.py,lcd.py,hat_config.js,autogain.py,autopilot.py,boatimu.py,bufferedsocket.py,calibration_fit.py,client.py,gpsd.py,kjson.py,.gitignore,linebuffer.cpp,linebuffer.h,linebuffer.i,nmea.py,basic.py,intellect.py,learning.py,pilot.py,wind.py,pipeserver.py,rudder.py,sensors.py,server.py,servo.py,servo_calibration.py,tacking.py,values.py,version.py,setup.py,autopilot_calibration.py,autopilot_control.py,calibration_plot.py,client_wx.py,main.py,scope.py,scope_ui.fbp,scope_ui.py,scope_wx.py,pypilot_control.js,index.html,web.py']"
+Sean D'Epagnier,2020-02-24,improve package structure,"['hat.py,server.py,values.py,setup.py,autopilot_calibration.py,autopilot_control.py,calibration_plot.py,scope_wx.py']"
+Sean D'Epagnier,2020-02-24,simplify name,"['client.py,kjson.py,server.py,values.py']"
+Sean D'Epagnier,2020-03-02,improve dictionary,['pypilot_control.js']
+Sean D'Epagnier,2020-03-02,improve logging,['intellect.py']
+Sean D'Epagnier,2020-03-02,correct json,"['calibration_fit.py,client.py,serialprobe.py,server.py,servo.py,servo_calibration.py,values.py']"
+Sean D'Epagnier,2020-03-02,correct scope,['scope_wx.py']
+Sailoog,2020-03-06,fix import,['client.py']
+Sailoog,2020-03-06,missing import,['scope_wx.py']
+Sailoog,2020-03-06,fix import,['server.py']
+Sailoog,2020-03-06,fix import,['values.py']
+Sailoog,2020-03-06,fix path,['autopilot_calibration.py']
+Sailoog,2020-03-06,fix paths,['autopilot_control.py']
+Sailoog,2020-03-06,"python 2/3 compatibility
+
+using entry points instead of python command to make it python2/3 compatible",['autopilot_calibration.py']
+Sailoog,2020-03-06,"python 2/3 compatibility
+
+using entry points instead of python command to make it python2/3 compatible",['autopilot_control.py']
+sean d'epagnier,2020-03-06,"Merge pull request #55 from sailoog/master
+
+fix import errors and python2/3 compatibility",['']
+Sean D'Epagnier,2020-03-07,work in progress new format,"['arduino.py,hat.py,lcd.py,autopilot.py,boatimu.py,bufferedsocket.py,calibration_fit.py,client.py,gpsd.py,linebuffer.cpp,nmea.py,intellect.py,pyjson.py,sensors.py,server.py,servo.py,values.py,autopilot_calibration.py,autopilot_control.py,calibration_plot.py,client_wx.py,scope.py,scope_wx.py,pypilot_control.js,web.py']"
+Sean D'Epagnier,2020-03-08,additional changes for new format,"['arduino.py,buzzer.py,hat.py,lcd.py,lirc.py,web.py,autogain.py,autopilot.py,boatimu.py,bufferedsocket.py,calibration_fit.py,client.py,gpsd.py,nmea.py,nonblockingpipe.py,basic.py,intellect.py,learning.py,wind.py,pipeserver.py,rudder.py,sensors.py,serialprobe.py,server.py,servo.py,servo_calibration.py,tacking.py,values.py,autopilot_calibration.py,autopilot_control.py,scope.py,web.py']"
+Sean D'Epagnier,2020-03-11,more new format changes,"['autopilot.py,boatimu.py,bufferedsocket.py,calibration_fit.py,client.py,gpsd.py,nmea.py,nonblockingpipe.py,basic.py,learning.py,pilot.py,wind.py,pipeserver.py,rudder.py,sensors.py,serialprobe.py,server.py,servo.py,tacking.py,values.py']"
+Sean D'Epagnier,2020-03-11,update webapp,"['client.py,pypilot_control.js,web.py']"
+Sean D'Epagnier,2020-03-12,add new pypilot <-> signalk translation,['signalk.py']
+Sean D'Epagnier,2020-03-12,improve multiprocessing,"['client.py,sensors.py,server.py,networking.py,web.py']"
+Sean D'Epagnier,2020-03-13,update for new data format to ui,"['hat.py,lcd.py,web.py,client.py,autopilot_calibration.py,autopilot_control.py,client_wx.py,scope_wx.py,pypilot_control.js,web.py']"
+Sean D'Epagnier,2020-03-13,correct logic error,['networking.py']
+Sean D'Epagnier,2020-03-14,improve pipe performance,"['autopilot.py,boatimu.py,bufferedsocket.py,calibration_fit.py,client.py,nonblockingpipe.py,server.py,signalk.py,values.py']"
+Sean D'Epagnier,2020-03-17,slight fixes to display,"['menu.py,page.py']"
+Sean D'Epagnier,2020-03-14,fix wifi lcd menu bug,['menu.py']
+Sean D'Epagnier,2020-03-14,improve calibration debugging,['calibration_fit.py']
+Sean D'Epagnier,2020-03-14,improve lcd display,['page.py']
+Sean D'Epagnier,2020-09-17,improve rendering warnings,"['font.py,page.py,ugfx.cpp']"
+Sean D'Epagnier,2020-09-17,rework gpsd and serialprobe,"['gpsd.py,serialprobe.py']"
+Sean D'Epagnier,2020-09-17,allow calibration process to restart,"['autopilot.py,boatimu.py,calibration_fit.py,client.py,server.py,signalk.py']"
+Sean D'Epagnier,2020-09-18,tune processing requirements,"['arduino.py,hat.py,lcd.py,menu.py,page.py,splash.cpp,ugfx.cpp,web.py']"
+Sean D'Epagnier,2020-03-14,improve rendering lcd,"['arduino.py,font.py,page.py']"
+Sean D'Epagnier,2020-03-14,set pullup on reset pin,"['Makefile,arduino.py,pypilot_hat.conf,lircd.py']"
+Sean D'Epagnier,2020-07-28,add files for remote,"['Makefile,config.py,config_esp32.py,gpio_esp32.py,lcd.py']"
+Sean D'Epagnier,2020-07-29,Merge 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-07-31,improve power and sleep use for remote,"['lcd_esp32.py,upy_client.py']"
+Sean D'Epagnier,2020-08-11,small tweaks,"['motor.ino,hat.py']"
+Sean D'Epagnier,2020-08-11,Merge branch 'new_format' of 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-08-11,merge,"['IRLibHardware.cpp,IRLibHardware.h']"
+Sean D'Epagnier,2020-08-11,fix python buffered socket,['bufferedsocket.py']
+Sean D'Epagnier,2020-08-15,improve translations,"['pypilot_hat.mo,pypilot_hat.mo,translate.sh,menu.py,page.py']"
+Sean D'Epagnier,2020-03-14,Merge 10.10.10.136:pypilot,['']
+Sean D'Epagnier,2020-03-15,improve serial probe,"['autopilot.py,boatimu.py,serialprobe.py,servo.py']"
+Sean D'Epagnier,2020-03-15,Merge branch 'new_format' of 192.168.14.20:pypilot,['']
+Sean D'Epagnier,2020-03-14,cleanup udp sockets,['server.py']
+Sean D'Epagnier,2020-03-14,hat application working with new format,"['arduino.py,buzzer.py,font.py,gpio.py,hat.py,lcd.py,lirc.py,test.py,testlirc.py,web.py,setup.py']"
+Sean D'Epagnier,2020-03-14,allow delayed loading of hat configuration webserver,"['hat.py,lircd.py']"
+Sean D'Epagnier,2020-03-14,add translations,"['pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,pypilot_hat.po,translate.sh']"
+Sean D'Epagnier,2020-03-14,improve display,"['font.py,lircd.py,menu.py']"
+Sean D'Epagnier,2020-03-14,correct issues with python3 and new data format,"['hat.py,lcd.py,pypilot.build,boatimu.py,bufferedsocket.py,calibration_fit.py,client.py,nonblockingpipe.py,server.py,gpsdate.py,gpsprobe.py,setup.py']"
+Sean D'Epagnier,2020-03-14,fix problems with web control,"['networking.py,pypilot_control.js,wifi.html,tinypilot.py,web.py']"
+Sean D'Epagnier,2020-03-14,finally signalk supported as sensor input,"['arduino.py,boatimu.py,calibration_fit.py,signalk.py']"
+Sean D'Epagnier,2020-03-14,small fixes,"['ugfx.cpp,boatimu.py,nmea.py,pilot.py,signalk.py,web.py']"
+Sean D'Epagnier,2020-03-14,debugging new format,"['#script.sh#,pypilot_hat.conf,font.py,hat.py,lcd.py,autopilot.py,boatimu.py,client.py,nmea.py,sensors.py,serialprobe.py,server.py,signalk.py,version.py']"
+Sean D'Epagnier,2020-03-16,correct client,['client.py']
+Sean D'Epagnier,2020-03-16,Merge pypilot:pypilot into new_format,['']
+Sean D'Epagnier,2020-03-16,correct more errors in hat service,"['arduino.py,hat.py,lcd.py']"
+Sean D'Epagnier,2020-03-20,slight changes,['client.py']
+Sean D'Epagnier,2020-03-23,new format and new controller,"['Makefile,README,motor.ino,weathersensors.ino,sensors.py,signalk.py']"
+Sean D'Epagnier,2020-03-24,Merge branch 'master' into new_format,['']
+Sean D'Epagnier,2020-03-24,make nonblocking,['signalk.py']
+Sean D'Epagnier,2020-03-24,fix more issues with new format,"['client.py,gpsd.py,nmea.py,rudder.py,server.py,servo.py,signalk.py,values.py,version.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2020-03-26,improve new format control,"['servo.py,autopilot_control.py']"
+Sean D'Epagnier,2020-04-03,new format improvements,"['motor.ino,weathersensors.ino,bufferedsocket.py,client.py,gpsd.py,serialprobe.py,autopilot_control.py']"
+Sean D'Epagnier,2020-04-10,Merge branch 'master' into new_format,['']
+Sean D'Epagnier,2020-04-10,Merge pypilot:pypilot into new_format,['']
+Sean D'Epagnier,2020-03-14,Merge branch 'new_format' of 192.168.14.20:pypilot,['']
+Sean D'Epagnier,2020-03-14,update lowpass constants,['boatimu.py']
+Sean D'Epagnier,2020-03-15,fix performance issues,"['arduino.py,font.py,hat.py,lcd.py,page.py']"
+Sean D'Epagnier,2020-03-15,avoid repeating request for token,"['Makefile,bufferedsocket.py,client.py,signalk.py']"
+Sean D'Epagnier,2020-03-14,Merge branch 'new_format' of 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-03-14,mirror image,['ugfx.cpp']
+Sean D'Epagnier,2020-03-14,fix fuse commands,"['Makefile,arduino.py,hat.py']"
+Sean D'Epagnier,2020-03-14,delete deadcode and small fixes,"['arduino.py,buzzer.py,font.py,gpio.py,hat.py,lcd.py,lircd.py']"
+Sean D'Epagnier,2020-03-14,languages in their own,['menu.py']
+Sean D'Epagnier,2020-04-27,retune rudder reaction rate,['motor.ino']
+Sean D'Epagnier,2020-05-07,slight changes to motor.ino,"['motor.ino,servo.py']"
+Sean D'Epagnier,2020-05-16,"many updates for new format hat
+o","['arduino.py,README,script.sh,hat.py,lcd.py,lirc.py,ugfx.cpp']"
+Sean D'Epagnier,2020-05-16,improve new format,"['README,Makefile,hat.ino,autopilot.py,boatimu.py,calibration_fit.py,client.py,nonblockingpipe.py,pilot.py,server.py,autopilot_calibration.py,autopilot_control.py,calibration_plot.py']"
+Sean D'Epagnier,2020-05-19,new format fixes,"['Makefile,hat.ino,arduino.py,hat.py,lcd.py,hat_config.js,index.html,web.py,autopilot.py,boatimu.py,calibration_fit.py,client.py,nmea.py,server.py,tacking.py,autopilot_calibration.py,client_wx.py,scope.py,scope_wx.py,pypilot_control.js,web.py']"
+Sean D'Epagnier,2020-05-19,finish web support new format,"['boatimu.py,client.py,learning.py,server.py,servo.py,pypilot_control.js,web.py']"
+Sean D'Epagnier,2020-05-24,correct logic,['client.py']
+Sean D'Epagnier,2020-05-24,fix calibration,"['autopilot_calibration.py,calibration_plot.py']"
+Sean D'Epagnier,2020-05-24,signalk working with subscriptions to feed pypilot data,['signalk.py']
+Sean D'Epagnier,2020-05-24,improve signalk support,"['client.py,signalk.py']"
+Sean D'Epagnier,2020-05-25,"rename faults for debugging, and improve response of manual control",['servo.py']
+Sean D'Epagnier,2020-05-25,restructure ugfx,"['jlx12864.h,nokia5110.h,ugfx.cpp,ugfx.h']"
+Sean D'Epagnier,2020-05-25,fix charge time,['motor.ino']
+Sean D'Epagnier,2020-05-25,enable lcd,['weathersensors.ino']
+Sean D'Epagnier,2020-05-25,remove future imports as python 2 is no longer supported,"['bufferedsocket.py,nmea.py,serialprobe.py,servo.py,servo_calibration.py']"
+Sean D'Epagnier,2020-05-25,fix update settings,['autopilot_calibration.py']
+Sean D'Epagnier,2020-05-27,add bootloader,['Makefile']
+Sean D'Epagnier,2020-05-27,add missing file,"['lcd.py,lircd.py']"
+Sean D'Epagnier,2020-05-27,updates calibration,"['hat.ino,calibration_fit.py,client.py,server.py,servo.py,autopilot_calibration.py,boatplot.py,calibration_plot.py']"
+Sean D'Epagnier,2020-05-29,Allow nmea with ! as well as $,['nmea.py']
+Sean D'Epagnier,2020-05-31,support ! in nmea packages,['linebuffer.cpp']
+Sean D'Epagnier,2020-05-31,many improvements to coding style,"['arduino.py,font.py,glut.py,hat.py,lcd.py,menu.py,page.py,tftscreen.py,ugfx.cpp,ugfx.h,upy_client.py']"
+Sean D'Epagnier,2020-06-03,support ais nmea message,['linebuffer.cpp']
+Sean D'Epagnier,2020-06-03,slight improvements to display,"['weathersensors.ino,font.py,hat.py,lcd.py,menu.py,page.py,ugfx.cpp,client.py']"
+Sean D'Epagnier,2020-06-03,Merge branch 'master' into new_format,['']
+Sean D'Epagnier,2020-06-02,update display drivers,"['lcd.py,ugfx.cpp']"
+Sean D'Epagnier,2020-06-03,fix merge,"['jlx12864.h,nokia5110.h,ugfx.cpp,ugfx.h,nmea.py,servo.py']"
+Sean D'Epagnier,2020-06-04,fix non-blocking connection,"['Makefile,ugfx.cpp,client.py,servo.py,signalk.py,autopilot_control.py']"
+Sean D'Epagnier,2020-06-08,tft ugfx,"['tftscreen.py,ugfx.cpp']"
+Sean D'Epagnier,2020-06-11,small fixes,"['hat.ino,servo.py']"
+Sean D'Epagnier,2020-06-11,Merge branch 'new_format' of 10.10.10.166:pypilot into new_format,['']
+Sean D'Epagnier,2020-06-14,merge,"['boot.py,font.py,gpio_esp32.py,lcd.py,lcd_esp32.py,menu.py,page.py,upy_client.py,wifi_esp32.py,bufferedsocket.py,client.py,server.py,scope.py']"
+Sean D'Epagnier,2020-06-14,Merge branch 'new_format' of 10.10.10.120:pypilot into new_format,['']
+Sean D'Epagnier,2020-06-14,lower baud rate,['Makefile']
+Sean D'Epagnier,2020-06-14,improve display,"['arduino.py,pypilot_hat.conf,page.py,ugfx.cpp']"
+Sean D'Epagnier,2020-06-14,improve data handling,"['autopilot.py,boatimu.py,bufferedsocket.py,client.py,basic.py,pilot.py']"
+Sean D'Epagnier,2020-06-14,increase spi speed,"['arduino.py,ugfx.cpp']"
+Sean D'Epagnier,2020-06-14,Merge branch 'new_format' of 10.10.10.120:pypilot into new_format,['']
+Sean D'Epagnier,2020-06-15,small improvements to server and hat,"['arduino.py,hat.py,page.py,bufferedsocket.py,client.py,server.py']"
+Sean D'Epagnier,2020-06-17,fonts working on remote,"['font.py,lcd.py,page.py,ugfx.cpp,ugfx.h,ugfx.i,upy_client.py,client.py']"
+Sean D'Epagnier,2020-06-18,improve display,"['font.py,hat.py,lcd.py,menu.py,page.py,tftscreen.py,upy_client.py']"
+Sean D'Epagnier,2020-06-18,improve learning pilot,"['intellect.py,learning.py']"
+Sean D'Epagnier,2020-06-18,improve pilot selection,['autopilot.py']
+Sean D'Epagnier,2020-06-18,many more improvements to clients and lcd display,"['lcd.py,upy_client.py,client.py']"
+Sean D'Epagnier,2020-06-19,support esp32 with lcd display and wifi control,"['.gitignore,boot.py,font.py,gpio_esp32.py,lcd.py,lcd_esp32.py,menu.py,page.py,testmem.py,wifi_esp32.py,client.py']"
+Sean D'Epagnier,2020-06-19,improve delay connection,"['client.py,server.py']"
+Sean D'Epagnier,2020-06-19,improve menu display,"['boot.py,font.py,lcd.py,menu.py,page.py,upy_client.py,wifi_esp32.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2020-06-21,support udp packets,"['bufferedsocket.py,client.py,server.py']"
+Sean D'Epagnier,2020-06-22,many improvements to display,"['boot.py,font.py,gpio_esp32.py,lcd.py,lcd_esp32.py,menu.py,page.py,upy_client.py,wifi_esp32.py']"
+Sean D'Epagnier,2020-06-22,small fixes,"['client.py,scope.py']"
+Sean D'Epagnier,2020-06-23,improve display,"['font.py,gpio_esp32.py,lcd.py,lcd_esp32.py,menu.py,page.py']"
+Sean D'Epagnier,2020-06-23,fix imports,['lcd.py']
+Sean D'Epagnier,2020-06-23,improve hat,"['lcd.py,lcd_esp32.py,menu.py,page.py,upy_client.py,wifi_esp32.py']"
+Sean D'Epagnier,2020-06-23,Merge 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-06-25,fix keys,"['arduino.py,gpio_esp32.py,hat.py,lcd.py,lcd_esp32.py,page.py,upy_client.py']"
+Sean D'Epagnier,2020-06-15,Merge branch 'new_format' of 10.10.10.120:pypilot into new_format,['']
+Sean D'Epagnier,2020-06-16,fix keypresses more,"['hat.ino,arduino.py,gpio_esp32.py,hat.py,lcd.py,lcd_esp32.py,page.py,web.py']"
+Sean D'Epagnier,2020-06-19,work in progress to improve hat processes,"['arduino.py,pypilot_hat.conf,gpio.py,hat.py,lcd.py,lircd.py,hat_config.js,index.html,ugfx.cpp,web.py']"
+Sean D'Epagnier,2020-06-28,improve ui,"['autopilot_control.fbp,autopilot_control_ui.py']"
+Sean D'Epagnier,2020-06-28,Merge branch 'new_format' of 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-07-05,improve sketch increase rates supported,"['Makefile,crc.h,hat.ino']"
+Sean D'Epagnier,2020-07-05,greatly improve throuput and simplify logic,"['arduino.py,crc.py,hat.py,lcd.py,hat_config.js,index.html,testmem.py']"
+Sean D'Epagnier,2020-07-05,improve data handling,"['boatimu.py,bufferedsocket.py,client.py,gpsd.py,nmea.py,nonblockingpipe.py,server.py']"
+Sean D'Epagnier,2020-07-05,update watch periods,"['networking.py,pypilot_control.js']"
+Sean D'Epagnier,2020-07-05,Merge branch 'new_format' of 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-07-05,tune hat transfers,"['RCSwitch.cpp,hat.ino,arduino.py']"
+Sean D'Epagnier,2020-07-05,correct switch timing,"['RCSwitch.cpp,hat.ino,arduino.py']"
+Sean D'Epagnier,2020-07-05,fix clear/default,"['hat.py,lcd.py,lircd.py,page.py,hat_config.js,index.html,web.py']"
+Sean D'Epagnier,2020-07-06,Merge branch 'new_format' of 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-07-06,fix contrast,"['Makefile,hat.ino,arduino.py,hat.py,lcd.py,menu.py,splash.cpp,ugfx.cpp,client.py']"
+Sean D'Epagnier,2020-07-06,Merge branch 'new_format' of 10.10.10.1:pypilot into new_format,['']
+Sean D'Epagnier,2020-07-06,add micropython module,"['modugfx.c,ugfx.cpp,ugfx.h,ugfx_mkfont.py,upy_wrap.cpp,upy_wrap.h']"
+Sean D'Epagnier,2020-07-11,update makefie,['Makefile']
+Sean D'Epagnier,2020-07-11,add ir lib,"['IRLibDecodeBase.cpp,IRLibDecodeBase.h,IRLibRecvBase.cpp,IRLibRecvBase.h,IRLibHardware.cpp,IRLibHardware.h,IRLibRecvPCI.cpp,IRLibRecvPCI.h,wiring.c']"
+Sean D'Epagnier,2020-07-13,add readfuses,['Makefile']
+Sean D'Epagnier,2020-07-18,fix fonts,['ugfx.cpp']
+Sean D'Epagnier,2020-07-18,improve signalk,['signalk.py']
+Sean D'Epagnier,2020-03-14,Merge branch 'new_format' of 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-07-29,fix plot,"['autopilot_calibration.py,boatplot.py,calibration_plot.py']"
+Sean D'Epagnier,2020-07-29,Merge 10.10.10.177:pypilot into new_format,['']
+Sean D'Epagnier,2020-07-31,add missing headers,"['IRLibGlobals.h,IRLibCombo.h,IRLibProtocols.h,IRLib_HashRaw.h,IRLib_P01_NEC.h,IRLib_P02_Sony.h,IRLib_P03_RC5.h,IRLib_P04_RC6.h,IRLib_P05_Panasonic_Old.h,IRLib_P07_NECx.h,hat.ino']"
+Sean D'Epagnier,2020-08-06,wait longer on fail,['signalk.py']
+Sean D'Epagnier,2020-08-06,work on translations,"['Makefile,POTFILES.in,apertium-po.py,pypilot_hat.mo,pypilot_hat.mo,translate.sh']"
+Sean D'Epagnier,2020-08-06,fix voltage reading,['hat.ino']
+Sean D'Epagnier,2020-08-06,reenable servo,['servo.py']
+Sean D'Epagnier,2020-08-06,Merge 10.10.10.178:pypilot into new_format,['']
+Sean D'Epagnier,2020-08-08,correct exception,['servo.py']
+Sean D'Epagnier,2020-08-08,change fuses,"['Makefile,hat.py']"
+Sean D'Epagnier,2020-08-11,fix config and deadtime,"['hat.ino,motor.ino,arduino.py,eeprom_settings.txt,script.sh,font.py,hat.py,lcd.py,pypilot_hat.mo,pypilot_hat.mo,menu.py,page.py,ugfx.cpp,web.py,bufferedsocket.py,client.py,autopilot_control.py']"
+Sean D'Epagnier,2020-08-12,improve hat,"['arduino.py,hat.py,page.py,hat_config.js,index.html,web.py']"
+Sean D'Epagnier,2020-08-12,charge time new deadtime,['motor.ino']
+Sean D'Epagnier,2020-08-12,fix ir reception and improve data handling,"['IRLibRecvPCI.cpp,hat.ino']"
+Sean D'Epagnier,2020-08-12,correct nmea pipe handling,['nmea.py']
+Sean D'Epagnier,2020-08-12,fix serial probe,['serialprobe.py']
+Sean D'Epagnier,2020-08-12,small tweaks to motor,['motor.ino']
+Sean D'Epagnier,2020-08-13,range setting pairs,['servo.py']
+Sean D'Epagnier,2020-08-15,Merge 10.10.10.106:pypilot into new_format,['']
+Sean D'Epagnier,2020-08-15,fix language,"['menu.py,page.py']"
+Sean D'Epagnier,2020-08-15,improve translation,"['motor.ino,translate.sh,menu.py,page.py,autopilot_control.py']"
+Sean D'Epagnier,2020-08-15,Merge 10.10.10.106:pypilot into new_format,['']
+Sean D'Epagnier,2020-08-16,finally pypilot able to send signalk to server,"['servo.py,signalk.py']"
+Sean D'Epagnier,2020-08-16,improve reconnect signalk,['signalk.py']
+Sean D'Epagnier,2020-03-14,fix a rather obnoxious race condition,"['lcd.py,page.py']"
+Sean D'Epagnier,2020-03-14,enable lirc again,"['hat.py,lircd.py']"
+Sean D'Epagnier,2020-03-14,improve debugging out,['signalk.py']
+Sean D'Epagnier,2020-03-14,fix logical errors,['server.py']
+Sean D'Epagnier,2020-03-14,improve startup time,"['arduino.py,font.py,hat.py,lcd.py,page.py,signalk.py']"
+Sean D'Epagnier,2020-03-14,speed startup,"['arduino.py,lircd.py']"
+Sean D'Epagnier,2020-08-18,remove debugging lines,['hat.py']
+Sean D'Epagnier,2020-08-18,Merge 10.10.10.109:pypilot into new_format,['']
+Sean D'Epagnier,2020-03-14,improve hat web configuration,"['arduino.py,hat.py,lircd.py,hat_config.js,index.html']"
+Sean D'Epagnier,2020-03-14,fix many unfortunate bugs,"['pypilot.build,boatimu.py,bufferedsocket.py,client.py,nmea.py,pipeserver.py,server.py,servo.py']"
+Sean D'Epagnier,2020-03-15,improve remote response time,"['arduino.py,hat.py,lcd.py']"
+Sean D'Epagnier,2020-03-15,change mode,"['serialprobe.py,servo.py']"
+Sean D'Epagnier,2020-03-15,improve hat web config,"['arduino.py,font.py,hat.py,lcd.py,lircd.py,index.html,web.py']"
+Sean D'Epagnier,2020-08-21,small improvements to hat,"['Makefile,hat.ino,arduino.py,pypilot_hat.conf,hat.py']"
+Sean D'Epagnier,2020-03-14,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-03-14,fix arduino ir reception with lirc,"['arduino.py,wifi.html,web.py']"
+Sean D'Epagnier,2020-03-14,fixes now that scipy can load dynamically,['autopilot.py']
+Sean D'Epagnier,2020-03-14,fixup,['boatimu.py']
+Sean D'Epagnier,2020-03-14,improve gpsd and serial probing,"['gpsd.py,nmea.py,sensors.py,serialprobe.py,servo.py,signalk.py,version.py']"
+Sean D'Epagnier,2020-03-14,fix splash,['splash.cpp']
+Sean D'Epagnier,2020-03-14,fix issues with signalk data,['signalk.py']
+Sean D'Epagnier,2020-03-14,fix issues with serial probing,"['gpsd.py,nmea.py,serialprobe.py,servo.py']"
+Sean D'Epagnier,2020-03-14,correct nmea output,['nmea.py']
+Sean D'Epagnier,2020-03-16,add calibration plot to web using webgl,"['calibration_plot.js,pypilot_control.js,calibrationplot.html,index.html,web.py']"
+Sean D'Epagnier,2020-09-25,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-03-14,fix gps signalk output,"['sensors.py,signalk.py']"
+Sean D'Epagnier,2020-03-14,fix merge,"['hat.ino,gpsd.py']"
+Sean D'Epagnier,2020-03-14,remember gpsd device baud for next boot,['gpsd.py']
+Sean D'Epagnier,2020-03-14,fix gpsd device bug,['gpsd.py']
+Sean D'Epagnier,2020-03-14,fix gpsd parsing,['gpsd.py']
+Sean D'Epagnier,2020-03-14,rework serial probing,"['serialprobe.py,servo.py']"
+Sean D'Epagnier,2020-03-14,increase hat config web load,['hat.py']
+Sean D'Epagnier,2020-03-14,reduce lowpass constants,['boatimu.py']
+Sean D'Epagnier,2020-03-14,whitespace only,['arduino.py']
+Sean D'Epagnier,2020-03-14,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-03-14,improve fast key presses,['lircd.py']
+Sean D'Epagnier,2020-03-14,fix wifi config from lcd,"['arduino.py,hat.py,menu.py,autopilot.py']"
+Sean D'Epagnier,2020-03-14,fix apb messages,['sensors.py']
+Sean D'Epagnier,2020-10-04,add RTIMULIb2 instructions to readme,['README']
+Sean D'Epagnier,2020-10-05,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-10-05,Merge 10.10.10.60:pypilot,['']
+Sean D'Epagnier,2020-10-09,"remove dead code
+wq",['motor.ino']
+Sean D'Epagnier,2020-10-09,conform to newer python standar,['autopilot_control.py']
+Sean D'Epagnier,2020-10-09,improve wifi remote,"['Makefile,gpio_esp32.py,lcd_esp32.py']"
+Sean D'Epagnier,2020-10-11,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2020-10-11,improve standby sleep current,['motor.ino']
+Sean D'Epagnier,2020-03-14,prevent keys that timed out from being reapplied,['hat.py']
+Sean D'Epagnier,2020-03-14,add pypilot rf remote to default actions,['web.py']
+Sean D'Epagnier,2020-03-14,maybe fix lcd output breakage,['ugfx.cpp']
+Sean D'Epagnier,2020-03-14,improve control,"['lcd.py,menu.py,page.py']"
+Sean D'Epagnier,2020-03-14,fix test programs,"['Makefile,arduino_servo.cpp,arduino_servo.h,arduino_servo.i,test.cpp']"
+Sean D'Epagnier,2020-03-14,fix test detection,['servo.py']
+Sean D'Epagnier,2020-03-14,fix a few cases of invalid values,"['server.py,values.py']"
+Sean D'Epagnier,2020-03-14,fix typo,['web.py']
+Sean D'Epagnier,2020-03-14,use previouos hat config in case eeprom fails,['hat.py']
+Sean D'Epagnier,2020-03-14,attempt to increase priority of arduino process,['hat.py']
+Sean D'Epagnier,2020-03-14,improve web calibration plot to display accel,"['calibration_plot.js,calibrationplot.html']"
+Sean D'Epagnier,2020-03-14,implement display of wind modes from -180 to 180,"['page.py,autopilot.py,pilot.py,wind.py,sensors.py,values.py,pypilot_control.js']"
+Sean D'Epagnier,2020-03-14,"fix more issues with gps, nmea parsing and multiple gps","['gpsd.py,nmea.py,sensors.py,serialprobe.py']"
+Sean D'Epagnier,2020-03-14,fix mode redraw bug,['page.py']
+Sean D'Epagnier,2020-03-14,signalk reception bug,"['sensors.py,signalk.py']"
+Sean D'Epagnier,2020-03-14,slightly improve gpio,"['gpio.py,hat.py']"
+Sean D'Epagnier,2020-03-17,fix remote config,"['arduino.py,hat.py,web.py']"
+Sean D'Epagnier,2020-03-17,fix command change in web app,"['version.py,pypilot_control.js']"
+Sean D'Epagnier,2020-03-18,improve heading command display,['page.py']
+Sean D'Epagnier,2020-03-18,fix page wifi from lcd menu,['menu.py']
+Sean D'Epagnier,2020-03-23,small fix error,"['client.py,server.py,values.py,autopilot_control_ui.py,scope_ui.py,scope_wx.py']"
+Sean D'Epagnier,2020-03-23,Merge branch 'master' of github.com:pypilot/pypilot,['']
+Sean D'Epagnier,2020-03-24,improve motor sketch,"['Makefile,motor.ino']"
+Sean D'Epagnier,2020-03-24,limit temperatures in python not c,"['arduino_servo.cpp,servo.py,autopilot_control.py']"
+Sean D'Epagnier,2020-03-26,fix imports,['pilot.py']
+Sean D'Epagnier,2020-04-09,autodetect xtal speed and reboot flag,"['motor.ino,servo.py']"
+Sean D'Epagnier,2020-04-21,typo,['motor.ino']
+Sean D'Epagnier,2020-04-21,"improve comments, no function change",['motor.ino']
+Sean D'Epagnier,2020-04-21,improve comment,['basic.py']
+Sean D'Epagnier,2020-04-26,improve faults and prevent movement at startup from rudder feedback,['servo.py']
+Sean D'Epagnier,2020-04-26,improve timings,"['client.py,pipeserver.py,autopilot_control.py,scope.py,scope_wx.py']"
+Sean D'Epagnier,2020-04-26,improve motor controller from 0-85% and 99.8% to 0-95% and 99.9%,['motor.ino']
+rmvdmr,2020-05-16,"Merge pull request #1 from pypilot/master
+
+fork update",['']
+rmvdmr,2020-05-16,GPAPB was switching again from gps to compass mode,['nmea.py']
+rmvdmr,2020-05-16,Update sensors.py,['sensors.py']
+rmvdmr,2020-05-16,GPAPB was switching to compass again,['sensors.py']
+sean d'epagnier,2020-05-17,"Merge pull request #60 from rmvdmr/master
+
+GPAPB is switching from gps to compass again",['']
+Sean D'Epagnier,2020-07-17,support python3 for font gen,"['Makefile,make_charset.py']"
+Sean D'Epagnier,2020-07-17,update comment,"['serialprobe.py,servo.py']"
+Sean D'Epagnier,2020-08-10,fix config,"['#script.sh#,eeprom_settings.txt,pypilot_hat.conf,script.sh']"
+Sean D'Epagnier,2020-08-23,Merge branch 'new_format',['']
+Sean D'Epagnier,2020-08-23,Merge /media/sean/ab8d10da-a8b7-4852-b39d-f7328f492c6b/tinypilot/pypilot,['']
+Sean D'Epagnier,2020-08-24,fix imports and glut lcd emulation keys,"['font.py,glut.py,lcd.py,page.py,bufferedsocket.py,servo.py,setup.py']"
+Sean D'Epagnier,2020-09-01,fix indent and debugging,"['boatimu.py,bufferedsocket.py']"
+Sean D'Epagnier,2020-09-01,fix nmea parsing and support gps lat and lon,"['gpsd.py,linebuffer.cpp,nmea.py,sensors.py,servo.py']"
+Sean D'Epagnier,2020-09-01,update signalk to perform conversions and output data input from other sources,['signalk.py']
+Sean D'Epagnier,2020-08-31,Merge 10.10.10.60:pypilot,['']
+Sean D'Epagnier,2020-09-05,small data fixes for gps,"['gpsd.py,sensors.py,serialprobe.py,signalk.py']"
+Sean D'Epagnier,2020-09-05,add missing header,['IRLibHardware.h']
+Sean D'Epagnier,2020-09-06,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-09-06,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-09-08,support uid for signalk and verbose output,"['weathersensors.ino,gpsd.py,sensors.py,signalk.py']"
+Sean D'Epagnier,2020-09-08,Merge 10.10.10.60:pypilot,['']
+Sean D'Epagnier,2020-09-09,Merge 10.10.10.60:pypilot,['']
+Sean D'Epagnier,2020-09-10,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-09-21,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-09-28,add rf remote,"['Makefile,RCSwitch.cpp,RCSwitch.h,rfremote.ino,wiring.c']"
+Sean D'Epagnier,2020-09-28,improve logic,['nmea.py']
+Sean D'Epagnier,2020-09-28,small corrections,"['Makefile,shape.py']"
+Sean D'Epagnier,2020-09-28,Merge 10.10.10.60:pypilot,['']
+Sean D'Epagnier,2020-09-29,Merge 10.10.10.60:pypilot,['']
+Sean D'Epagnier,2020-09-29,improve rf remote,"['Makefile,rfremote.ino']"
+Sean D'Epagnier,2020-10-01,add missing file,['IRLibHardware.cpp']
+Sean D'Epagnier,2020-10-03,improve backlight and hat settings,"['Makefile,hat.ino,motor.ino,arduino.py,eeprom_settings.txt,pypilot_hat.conf,hat.py,lcd.py,lircd.py,menu.py']"
+Sean D'Epagnier,2020-10-10,optimize rf reception,"['RCSwitch.cpp,RCSwitch.h,hat.ino']"
+Sean D'Epagnier,2020-10-11,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2020-10-14,Merge /media/sean/ab8d10da-a8b7-4852-b39d-f7328f492c6b/tinypilot/pypilot,['']
+Sean D'Epagnier,2020-10-17,Merge 10.10.10.1:pypilot,['']
+Sean D'Epagnier,2020-10-17,Merge 192.168.14.1:pypilot,['']
+Sean D'Epagnier,2020-10-17,error messages for if python2 is used,"['weathersensors.ino,boatimu.py,client.py,failedimports.py,nonblockingpipe.py,setup.py']"
+Sean D'Epagnier,2020-10-22,fix version check,"['weathersensors.ino,setup.py']"
+Sean D'Epagnier,2020-10-23,fix gyrobias store,['boatimu.py']
+Sean D'Epagnier,2020-10-23,formatting,"['basic.py,pilot.py']"
+Sean D'Epagnier,2020-10-23,improve servo windup calculation,['servo.py']
+Sean D'Epagnier,2020-10-23,fix data backup,['server.py']
+Sean D'Epagnier,2020-10-23,fix windup calculation,['servo.py']
+Sean D'Epagnier,2020-10-23,Merge 192.168.14.1:pypilot,['']

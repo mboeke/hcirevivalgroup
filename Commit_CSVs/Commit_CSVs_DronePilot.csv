@@ -1,0 +1,432 @@
+Contributor,Date,Message,Files
+Aldo Vargas,2015-04-01,Initial commit,['LICENSE']
+Aldo Vargas,2015-04-02,"First upload
+
+Essential modules to communicate with multiwii and a small example that
+will drive the rest of the components.","['LICENSE,README.md,first.py,pyMultiwii.py']"
+Aldo Vargas,2015-04-13,"Joystick using UDP script
+
+First control test, using a ground station sending UDP commands from a
+joystick, using matlab (on the ground station)","['first.py,joystick-test.py,.gitignore,UDPserver.py,pyMultiwii.py']"
+Aldo Vargas,2015-04-15,"Bug fixes, added security
+
+Bug fixes, added security and robustness.","['.gitignore,UDPserver.py,pyMultiwii.py,joystick-test.py']"
+Aldo Vargas,2015-04-15,"UDP bug fixes
+
+If UDP lost connection, then don’t send commands… added robustness","['UDPserver.py,pyMultiwii.py,joystick-test.py']"
+Aldo Vargas,2015-04-15,"Position control added
+
+First test of a position controller using PID’s","['pid.py,pyMultiwii.py,joystick-test.py,position-control.py']"
+Aldo Vargas,2015-04-16,"Improvements
+
+Improvements:
+- New pyMultiwii with arm/disarm
+- 2 PID libraries
+- updated equations to calculate desired roll / pitch
+- updated and corrected name
+- utils module added
+- map function
+- topwm function","['UDPserver.py,pid.py,pid2.py,pyMultiwii.py,utils.py,hover-controller.py,position-control.py']"
+Aldo Vargas,2015-04-16,"PID improvents
+
+PID improvements by using 2 different modules, tests to be conducted…","['pid.py,hover-controller.py']"
+Aldo Vargas,2015-04-16,"Extra functions
+
+Couple of extra functions on utils, and 2 pid tests, bugged out.","['utils.py,hover-controller.py']"
+Aldo Vargas,2015-04-16,"Separation of control and comms
+
+Control was separated from the comms (sending commands) due to the fact
+that it was slowing down sending commands.","['pid.py,hover-controller.py']"
+Aldo Vargas,2015-04-16,"PID performance
+
+Check and time performance on the PID’s","['pid.py,pid2.py']"
+Aldo Vargas,2015-04-28,"3 issues fixed
+
+3 issues fixed:
+- desiredRoll & pitch are not global...
+- pitch and roll problem (with murray suggestion)
+- Positon print integer","['utils.py,hover-controller.py']"
+Aldo Vargas,2015-04-28,PID one being used and issues,"['pid.py,hover-controller.py']"
+Aldo Vargas,2015-06-01,"XYZ errors
+
+After several days trying to see what was the reason it wasn’t working,
+the error was that Y was being Z… U_U","['utils.py,hover-controller.py']"
+Aldo Vargas,2015-06-05,"Major changes
+
+New pid library (untested, unused), major changes to hover-controller,
+added the logging function, everything to be tested.","['UDPserver.py,pid3.py,hover-controller.py']"
+Aldo Vargas,2015-06-05,"Logger test
+
+Added the log to cvs test, to try on the RPI.","['hover-controller.py,06_05_17-01-22.csv']"
+Aldo Vargas,2015-06-18,"General update
+
+Modules moved, started a vision module and a pixhawk example.","['README.md,.gitignore,UDPserver.py,pid.py,pid2.py,pid3.py,pyMultiwii.py,utils.py,vision.py,mw-hover-controller.py,mw-joystick-test.py,pix-logdata.py']"
+Aldo Vargas,2015-06-18,"Pixhawk + computer vision log
+
+Test script for handling comms between a pixhawk and a computer vision
+algorithm to just save data while flying.","['vision.py,pix-logdata.py']"
+Aldo Vargas,2015-06-18,"Takeoff example and modifications
+
+Takeoff example and modifications to log data script.","['README.md,pix-logdata.py,pix-takeoff.py']"
+Kyle Brown,2015-06-19,"Bug correction to takeoff
+
+Modified ordered of import modules. General debugging and now is
+working in simulation. Land function added.",['pix-takeoff.py']
+Aldo Vargas,2015-06-19,"Indentation issue
+
+Small indentation issue and readme update","['README.md,pix-takeoff.py']"
+Aldo Vargas,2015-06-19,"nano copy-paste error....
+
+nano copy-paste error....",['pix-takeoff.py']
+Aldo Vargas,2015-06-19,"Takeoff take 2
+
+Takeoff take 2",['pix-takeoff2.py']
+Aldo Vargas,2015-06-20,"Name change
+
+Name changes, just one takeoff script.","['pix-takeoff.py,pix-takeoff2.py']"
+Kyle Brown,2015-06-23,Update pix-logdata.py,['pix-logdata.py']
+Kyle Brown,2015-06-23,Fix print attitude issue,['pix-logdata.py']
+Kyle Brown,2015-06-23,Fix issues,['pix-logdata.py']
+Kyle Brown,2015-06-23,Formatting of print to terminal,['pix-logdata.py']
+Aldo Vargas,2015-06-24,"Go to mission and modules
+
+Go to scripted mission example and modules to support that application.","['vehicle.py,pix-goto.py']"
+Aldo Vargas,2015-06-24,"GoTo fix
+
+GoTo fix","['vehicle.py,pix-goto.py']"
+Aldo Vargas,2015-06-24,Fix,['pix-goto.py']
+Aldo Vargas,2015-06-24,Change of WP,['pix-goto.py']
+Aldo Vargas,2015-06-24,WP check,['pix-goto.py']
+Aldo Vargas,2015-06-24,WP fix,['pix-goto.py']
+Aldo Vargas,2015-06-24,GOTO fixes,['pix-goto.py']
+Aldo Vargas,2015-06-25,"Goto with reach to target function
+
+Goto with reach to target function.
+
+New function that check if the vehicle reached its target location and
+protect it with a timeout.","['pix-goto.py,pix-takeoff.py']"
+Aldo Vargas,2015-06-25,"Velocity vector test script
+
+Velocity vector test script added, total vehicle control functions:
+
+- arm and take off
+- go to waypoint
+- velocity vector
+- conditional yaw","['README.md,pix-goto.py,pix-takeoff.py,pix-velocity-vector.py']"
+Aldo Vargas,2015-06-25,"Updated readme
+
+Updates on the readme file, with how tos and descriptions.",['README.md']
+Aldo Vargas,2015-06-25,ReadMe Update,['README.md']
+Aldo Vargas,2015-06-26,Lists readme,['README.md']
+Kyle Brown,2015-06-26,"Added waypoint numbering
+
+Printed the waypoint number to terminal.
+
+Changed the dTarget variable name to distance.",['pix-goto.py']
+Aldo Vargas,2015-06-26,"Drop packet script
+
+Drop packet script",['pix-drop-packet.py']
+Kyle Brown,2015-06-26,"Test for payload
+
+Hardware test",['pix-drop-packet-test.py']
+Kyle Brown,2015-06-26,Added variable servo port command,"['pix-drop-packet-test.py,pix-drop-packet.py']"
+Aldo Vargas,2015-06-26,Readme update,"['README.md,pix-drop-packet-test.py,pix-drop-packet.py']"
+Aldo Vargas,2015-06-28,"GOTO fix and README update
+
+GOTO fix and README update","['README.md,pix-goto.py']"
+Aldo Vargas,2015-06-28,"Grand challenge example mission
+
+Added a grand challenge example mission.",['pix-grand-challenge.py']
+Aldo Vargas,2015-06-28,"Mission correction
+
+Correction on waypoints.",['pix-grand-challenge.py']
+Kyle Brown,2015-06-28,Added payload delivery functionality,['pix-goto.py']
+Aldo Vargas,2015-07-01,"Actual mission
+
+Actual mission parameters","['1-mission.py,2-mission.py,pix-grand-challenge.py']"
+Aldo Vargas,2015-07-01,"Error on the runway
+
+Errors on the runway","['1-mission.py,2-mission.py']"
+Aldo Vargas,2015-07-01,"Sample automatic mission
+
+Sample automatic mission",['sample-auto.py']
+Aldo Vargas,2015-07-09,"Tidy up repository after challenge
+
+Just a general tidy up of the examples used on the UAS Grand Challenge
+2015.","['1-mission.py,2-mission.py,drop-packet-test.py,sample-auto.py,victoria-park.py,README.md']"
+Aldo Vargas,2015-07-14,"New scripts and readme files
+
+Joystick script for the pixhawk, and read files. Ready to test in the
+MAST Lab.","['README.md,README.md,pix-joystick.py,pix-logdata.py']"
+Aldo Vargas,2015-08-01,"New PID
+
+New PID module to test on the hover controller. Test and gain tuning
+required.","['pids.py,mw-hover-controller.py']"
+Aldo Vargas,2015-08-17,"UDP corrections
+
+Added UDP corrections to make it work with dronekit.","['README.md,mw-joystick.py,pix-joystick-all-included.py,pix-joystick.py']"
+Aldo Vargas,2015-08-17,"Added the MW all included test
+
+Added the MW all included test",['mw-joystick-all-included.py']
+Aldo Vargas,2015-08-18,"Tests for new structure
+
+Tests for new structure","['2-threads.py,pix-joystick.py']"
+Aldo Vargas,2015-08-18,Remove unnecessary items and added new ones,"['2-threads.py,mavinit.scr,mw-joystick-all-included.py,pix-joystick-all-included.py,pix-joystick.py,pix-logdata.py']"
+Aldo Vargas,2015-08-19,"New module
+
+New module and bug corrections on joystick script","['pixVehicle.py,pix-logdata.py']"
+Aldo Vargas,2015-08-19,Error correction on joystick,['pix-joystick.py']
+Aldo Vargas,2015-08-19,"Bugs before testing
+
+Some bugs on the new modules.","['pixVehicle.py,pix-joystick.py']"
+Aldo Vargas,2015-08-19,"Bug corrections after successful flying
+
+pix-joystick is flying great!!!","['pixVehicle.py,pix-joystick.py']"
+Aldo Vargas,2015-08-21,"Add the logit function
+
+Logit function to log data while the vehicle is armed and its flying.","['pix-joystick.py,pix-logdata.py']"
+Aldo Vargas,2015-08-21,"Saving proper variables
+
+After checking the name of the variables, put the proper data in the
+print and save function. Delete unnecessary stuff and less words by
+using the “as” in the module import.","['pix-joystick.py,pix-logdata.py']"
+Aldo Vargas,2015-08-21,"logit function inside threads
+
+Putting the log function inside a thread to make work with the similar
+structure as the rest of the scripts.",['pix-logdata.py']
+Aldo Vargas,2015-08-21,"Control mechanisms
+
+Just added a couple of control mechanisms to make it easier to start
+recording…",['pix-logdata.py']
+Aldo Vargas,2015-08-21,Utilities added,['README.md']
+Aldo Vargas,2015-08-24,"Added videos and small corrections
+
+Added videos and small corrections","['drop-packet-test.py,README.md,utils.py,mw-joystick.py,pix-joystick.py,pix-logdata.py']"
+Aldo Vargas,2015-08-24,"Show data script added
+
+Just a script to see the stream of requested data.","['pix-logdata.py,pix-showdata.py']"
+Aldo Vargas,2015-08-26,"Data log with MW and corrections to all
+
+Data log with MW and corrections to pix-logdata and mw-joystick.","['mw-joystick.py,mw-logdata.py,pix-logdata.py']"
+Aldo Vargas,2015-08-26,"MultiWii adjusments
+
+Change time to boot multi (naze32 is way faster to boot) and
+corrections in order to record","['pyMultiwii.py,mw-logdata.py,pix-logdata.py']"
+Kyle Brown,2015-08-31,Script for loading payload,"['pix-payload-load,pix-payload-lock,pix-payload-release']"
+Kyle Brown,2015-08-31,"Delete Pix-payload-load
+
+Mistakenly added",['pix-payload-load']
+Kyle Brown,2015-08-31,"Delete pix-payload-lock
+
+Mistakenly added",['pix-payload-lock']
+Kyle Brown,2015-08-31,"Mistakenly added
+
+Test file mistakenly added",['pix-payload-release']
+Aldo Vargas,2015-09-04,"pyMultiwii bug
+
+Fix the bug of pyMultiwii.","['README.md,pyMultiwii.py,mw-logdata.py']"
+Aldo Vargas,2015-09-15,"Low latency
+
+Added help for more video stuff.",['README.md']
+Aldo Vargas,2015-09-28,"Fixes to hover controller
+
+New fixes to hover controller in order to test on lab.","['mw-hover-controller.py,mw-logdata.py']"
+Aldo Vargas,2015-09-28,"New controller
+
+Just a new controller script based on working log data script file.",['mw-hover-controller2.py']
+Aldo Vargas,2015-09-29,"Updated controllers
+
+New controllers updated to test, hover_controller uses a new
+methodology considering headfree mode (test the max and min corrections
+to map values properly). Hover_controller2 is the working version with
+two different gains for pitch and roll.","['pid.py,utils.py,mw-hover-controller.py,mw-hover-controller2.py']"
+Aldo Vargas,2015-10-16,"Simulink controller script
+
+Corrections on multiwii joystick script and added a new script to allow
+simulink to control a vehicle. Testing needed.","['UDPserver.py,mw-joystick.py,mw-simulink-controller.py']"
+Aldo Vargas,2015-10-28,Minor adjustment to scripts,"['mw-joystick.py,mw-logdata.py,mw-simulink-controller.py']"
+Aldo Vargas,2015-11-06,"Logging possibility
+
+Add the logging part to save data.",['mw-simulink-controller.py']
+Aldo Vargas,2015-11-06,"Avoid using sleeps
+
+Sleeps removed from the main loop. Everything runs at 100hz",['mw-simulink-controller.py']
+Aldo Vargas,2015-11-06,"Increased performance, no sleeps
+
+Performance and precision increased by no using sleeps on the main
+loop, it was exchanged by a while loop checking the time. Several
+already tested, need to test all of them.","['mw-joystick.py,mw-logdata.py,mw-simulink-controller.py,pix-joystick.py,pix-logdata.py,pix-simulink-controller.py']"
+Aldo Vargas,2015-11-09,"Added pan/tilt example (not completed)
+
+Pan tilt example to the rpi camera and track the object.","['pixVehicle.py,vision.py,pix-logdata.py,pix-pan-tilt-camera.py']"
+Aldo Vargas,2015-11-16,Vision module updated,"['vision.py,pix-pan-tilt-camera.py']"
+Aldo Vargas,2015-11-16,Class error,['pix-pan-tilt-camera.py']
+Aldo Vargas,2015-11-16,Bug,['pix-pan-tilt-camera.py']
+Aldo Vargas,2015-11-16,RC override instead of RC servo,['pix-pan-tilt-camera.py']
+Aldo Vargas,2015-11-18,Everything on modules,"['vision.py,pix-pan-tilt-camera.py']"
+Aldo Vargas,2015-11-18,New vision module,['vision.py']
+Aldo Vargas,2015-12-08,"Bugs HZ while loop
+
+Bug in the loop when waiting for an specific time.","['mw-simulink-controller.py,pix-pan-tilt-camera.py']"
+Aldo Vargas,2015-12-10,"Kalman Filter 1st test
+
+First kaman filter to test on yaw.","['utils.py,mw-hover-controller.py,mw-simulink-controller.py']"
+Aldo Vargas,2015-12-10,Kalman integration,"['mw-hover-controller2.py,mw-simulink-controller.py']"
+Aldo Vargas,2015-12-10,Kaman update 2,['mw-hover-controller2.py']
+Aldo Vargas,2015-12-10,Controller test 1,['mw-hover-controller2.py']
+Aldo Vargas,2015-12-10,Controller test 2,['mw-hover-controller2.py']
+Aldo Vargas,2015-12-15,"PID improvement
+
+Added corrections to Derivative and Integral term.","['pid.py,mw-hover-controller2.py']"
+Aldo Vargas,2015-12-18,"Code clean up after success
+
+A bit of code clean up after successful PID work.","['pid2.py,pid3.py,pids.py,utils.py,mw-hover-controller.py,mw-hover-controller2.py']"
+Aldo Vargas,2015-12-21,"First height controller
+
+First height controller to check values",['mw-hover-controller.py']
+Aldo Vargas,2015-12-21,"Height Controller bug 1
+
+Height Controller bug 1",['mw-hover-controller.py']
+Aldo Vargas,2015-12-21,Height Controller bug 2,['mw-hover-controller.py']
+Aldo Vargas,2015-12-21,Height Controller correction 3,['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,"Added a filter before derivate
+
+Added a filter before derivation to get a cleaner error signal.","['utils.py,mw-hover-controller.py']"
+Aldo Vargas,2015-12-22,"Filter declaration error
+
+Filter declaration error","['utils.py,mw-hover-controller.py']"
+Aldo Vargas,2015-12-22,"PID filter correction and LPF
+
+PID filter correction and LPF","['utils.py,mw-hover-controller.py']"
+Aldo Vargas,2015-12-22,Yaw issues?,['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,"Fixed Position controller
+
+Fixed Position controller",['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,"Height controller bugs 1
+
+Height controller bugs 1",['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,Height controller bugs 2,['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,"Working height controller!
+
+Working height and position controller!!",['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,Faster gains and update height controller,['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,"Tested new gains - Working
+
+New gains tested, they work, we can make them faster, but first the
+trajectory generation must be done.",['mw-hover-controller.py']
+Aldo Vargas,2015-12-22,"Final working
+
+Still a bit wobbly….",['mw-hover-controller.py']
+Aldo Vargas,2016-01-05,Changes before hovering tests,['mw-hover-controller.py']
+Aldo Vargas,2016-01-05,Added flight mode variable,['mw-hover-controller.py']
+Aldo Vargas,2016-01-05,Small error...,['mw-hover-controller.py']
+Aldo Vargas,2016-01-06,"First waypoint script
+
+Uploaded a first attempt to do a waypoint controller.",['mw-waypoint.py']
+Aldo Vargas,2016-01-06,"Small adjustment
+
+Adjustment to test the functionality of the mission thread and the
+go_to function. It will NOT update PIDs.",['mw-waypoint.py']
+Aldo Vargas,2016-01-07,"Bugs after first flight
+
+Rate limiter needed.","['UDPserver.py,mw-waypoint.py']"
+Aldo Vargas,2016-01-07,Adjustments for improvement,"['utils.py,mw-hover-controller.py,mw-waypoint.py']"
+Aldo Vargas,2016-01-18,Added desired position to logs,['mw-hover-controller.py']
+Aldo Vargas,2016-01-18,Added desired position to WP,['mw-waypoint.py']
+Aldo Vargas,2016-01-25,"ADSP yaw controller
+
+To be tested.",['mw-hover-controller.py']
+Aldo Vargas,2016-01-25,"Yaw controller fixed
+
+Working yaw controller!!",['mw-hover-controller.py']
+Aldo Vargas,2016-01-29,"Moving to DK2.0
+
+Moving from dronkit 1.5 to 2.0","['README.md,pixVehicle.py,pix-showdata.py,pix-takeoff.py']"
+Aldo Vargas,2016-02-03,"PID set point updates - DK2.0 updates
+
+Making the error calculation before calling the update PID function.
+
+Extra drone kit 2.0 changes to a couple of scripts.","['README.md,utils.py,mw-hover-controller.py,pix-joystick.py,pix-showdata.py,pix-takeoff.py']"
+Aldo Vargas,2016-02-03,Fix heading bug and test new timing loop,['mw-hover-controller.py']
+Aldo Vargas,2016-02-03,"New loop count
+
+A new way (tested before and did not worked…) to make a perfect
+update_rate loop. working at 50hz and 100hz with no issues.",['mw-hover-controller.py']
+Aldo Vargas,2016-02-03,"Ubuntu tutorial and updates to pix joystick
+
+I was able to run pix-joystick with SITL using a joystick from matlab.","['README.md,pix-joystick.py,pix-takeoff.py']"
+Aldo Vargas,2016-02-04,"Update desiredPos inside 100hz loop
+
+Waypoint not working, this is a test to see if it works better when the
+position is being activated inside the high rate controller.",['mw-waypoint.py']
+Aldo Vargas,2016-02-08,DK 2 updates,"['pix-02_08_09-41-48.csv,pixVehicle.py,mw-hover-controller.py,mw-waypoint.py,pix-goto.py,pix-hover-controller.py,pix-joystick.py,pix-logdata.py,pix-pan-tilt-camera.py,pix-showdata.py,pix-simulink-controller.py,pix-velocity-vector.py']"
+Aldo Vargas,2016-02-08,NED speed added,"['README.md,pixVehicle.py,pix-velocity-vector.py']"
+Aldo Vargas,2016-02-17,"Neural Network Script
+
+Ready to test","['network.csv,pyrenn.py,mw-neural.py']"
+Aldo Vargas,2016-02-23,"Added new examples
+
+Height controller, Joystick sender using python, sonar test script,
+corrections to mw-neural and corrections to UDP server.","['06_05_17-01-22.csv,pix-02_08_09-41-48.csv,UDPserver.py,sonar-test.py,mw-height-controller.py,mw-neural.py,send-joystick.py']"
+Aldo Vargas,2016-02-24,Bug sonar and integration thread,"['sonar-test.py,mw-height-controller.py']"
+Aldo Vargas,2016-02-24,while true missing,['mw-height-controller.py']
+Aldo Vargas,2016-02-24,bug2,['mw-height-controller.py']
+Aldo Vargas,2016-02-24,bug3,['mw-height-controller.py']
+Aldo Vargas,2016-02-24,bug4,"['altimeter.py,mw-height-controller.py']"
+Aldo Vargas,2016-02-24,bug5,['altimeter.py']
+Aldo Vargas,2016-02-24,bug6,['altimeter.py']
+Aldo Vargas,2016-02-24,"Removing sonar, adding MoCap
+
+Remove the sonar stuff and adding the example to make it work with
+MoCap Z.","['altimeter.py,sonar-test.py,mw-height-controller.py']"
+Aldo Vargas,2016-02-24,Remove files not being used,['pid.py']
+Aldo Vargas,2016-02-25,"UDP message update
+
+Added an extra trackable to the UDP message.","['mw-02_25_15-47-35.csv,UDPserver.py,mw-height-controller.py,mw-hover-controller.py,mw-neural.py']"
+Aldo Vargas,2016-02-25,Working Joystick example,['send-joystick.py']
+Aldo Vargas,2016-02-26,Logging Slung Load,['mw-hover-controller.py']
+Aldo Vargas,2016-03-04,GNU License,['LICENSE']
+Aldo Vargas,2016-03-30,Saving motor PWMs,"['pyMultiwii.py,mw-hover-controller.py']"
+Aldo Vargas,2016-04-04,Acro controller,"['utils.py,mw-hover-controller-acro.py,mw-hover-controller.py']"
+Aldo Vargas,2016-04-05,Slung load controller and adjustments,"['mw-hover-controller.py,mw-simulink-controller.py,mw-slung-load.py,pix-joystick.py,pix-showdata.py']"
+Aldo Vargas,2016-04-08,Added hybrid loiter script,"['mw-hybrid-loiter.py,mw-slung-load.py,pix-showdata.py']"
+Aldo Vargas,2016-04-08,Float mapping function,"['utils.py,mw-hybrid-loiter.py']"
+Aldo Vargas,2016-04-08,Corrections,"['utils.py,mw-hybrid-loiter.py,mw-slung-load.py']"
+Aldo Vargas,2016-04-10,Velocity calculation and upgrades,"['UDPserver.py,utils.py,mw-hybrid-loiter.py,mw-slung-load.py']"
+Aldo Vargas,2016-04-11,Corrections after testings,"['mw-hybrid-loiter.py,mw-slung-load.py']"
+Aldo Vargas,2016-04-13,Fixes,"['mw-hybrid-loiter.py,mw-slung-load.py']"
+Aldo Vargas,2016-04-13,Gain change,['mw-slung-load.py']
+Aldo Vargas,2016-04-15,Slung load correction,"['mw-logdata.py,mw-slung-load.py,mw-trajectory.py']"
+Aldo Vargas,2016-04-15,Added circle trajectory,"['utils.py,mw-trajectory.py']"
+Aldo Vargas,2016-04-15,Fixes to trajectory,"['utils.py,mw-trajectory.py']"
+Aldo Vargas,2016-04-20,Bug corrections and new trajectory,"['utils.py,mw-slung-load-trajectory.py,mw-slung-load.py,mw-trajectory.py']"
+Aldo Vargas,2016-04-20,Adjustments,['mw-slung-load.py']
+Aldo Vargas,2016-04-21,Bugs,"['utils.py,mw-trajectory.py']"
+Aldo Vargas,2016-04-21,Corrections and tracking trajectory to SL,"['mw-slung-load-trajectory.py,mw-slung-load.py,mw-trajectory.py']"
+Aldo Vargas,2016-04-27,bug,['mw-slung-load-trajectory.py']
+Aldo Vargas,2016-04-27,Bug on trajectory,['mw-slung-load-trajectory.py']
+Aldo Vargas,2016-04-27,Added security,['mw-slung-load-trajectory.py']
+Aldo Vargas,2016-04-27,Print on trajectory,['mw-slung-load-trajectory.py']
+Aldo Vargas,2016-04-27,Working dampened trajectory,['mw-slung-load-trajectory.py']
+Aldo Vargas,2016-08-11,Some crucial updates,"['gars-cube.py,pixVehicle.py,pix-ground-control.py']"
+Aldo Vargas,2016-08-11,Bug corrections,"['pixVehicle.py,pix-ground-control.py']"
+Aldo Vargas,2016-08-12,Bug fix,"['pixVehicle.py,pix-ground-control.py']"
+Aldo Vargas,2016-08-16,Minor updates,"['mw-height-controller.py,mw-hover-controller.py,mw-hybrid-loiter.py,mw-joystick.py,mw-neural.py,mw-slung-load-trajectory.py,mw-slung-load.py,mw-trajectory.py,pix-goto.py,pix-ground-control.py,pix-hover-controller.py,pix-joystick.py,pix-logdata.py,pix-pan-tilt-camera.py,pix-showdata.py,pix-takeoff.py,pix-velocity-vector.py,send-joystick.py']"
+Aldo Vargas,2016-09-13,General update,"['.gitignore,pyMultiwii.py,utils.py,vehicle.py,vision.py,pix-velocity-vector.py']"
+Aldo Vargas,2016-10-27,Year update,"['mw-joystick.py,mw-neural.py,mw-waypoint.py,pix-goto.py,pix-ground-control.py,pix-hover-controller.py,pix-joystick.py,pix-logdata.py']"
+Aldo Vargas,2016-10-27,General update,"['1-mission.py,2-mission.py,README.md,drop-packet-test.py,gars-cube.py,sample-auto.py,victoria-park.py']"
+Aldo Vargas,2016-11-07,Pilot->Pose neural test,"['networkNOV.csv,mw-neural.py']"
+Aldo Vargas,2016-11-09,Slung load altitude hold only mode,['mw-slung-load-no-control.py']
+Aldo Vargas,2016-11-18,"Slung Load Prediction Test
+
+Added script for making the SL prediction test.","['sl_rtrl_best.csv,mw-neural.py,mw-slung-load-neural.py']"
+Aldo Vargas,2016-11-22,More SL networks added,"['sl_bptt_500.csv,sl_rtrl_500.csv,mw-slung-load-neural.py']"
+Aldo Vargas,2016-12-08,Added SL simulation,"['BPTT_slungload_test.csv,RTRL_slungload_test.csv,sl-c-inf15-1.csv,sl-neural-bptt-500.csv,simulation-slung-load.py']"
+Aldo Vargas,2016-12-08,SL step responses,['mw-slung-load-neural.py']
+Aldo Vargas,2016-12-11,"Step response way-point
+
+Added the step response way-point function",['mw-slung-load-neural.py']
+Aldo Vargas,2016-12-14,Changes for long exposures,"['sl_bptt_step_control.csv,sl_rtrl_step_control.csv,sl-c-inf15-1.csv,sl-neural-bptt-500.csv,mw-slung-load-neural.py,mw-slung-load-trajectory.py,simulation-slung-load.py']"
+Aldo Vargas,2016-12-14,Update of trajectory work,['mw-slung-load-trajectory.py']
+Aldo Vargas,2016-12-14,Variable bug,['mw-slung-load-trajectory.py']
+Aldo Vargas,2017-01-03,Modification for ML SL flights,['mw-slung-load-neural.py']

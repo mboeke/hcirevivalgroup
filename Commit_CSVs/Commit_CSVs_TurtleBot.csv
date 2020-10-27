@@ -1,0 +1,1547 @@
+Contributor,Date,Message,Files
+Tully Foote,2011-02-23,initial import from create_robot,"['CMakeLists.txt,Makefile,ROS_BUILD_BLACKLIST,create.launch,create_solo.launch,mainpage.dox,manifest.xml,CMakeLists.txt,Makefile,manifest.xml,rosdoc.yaml,create_driver.py,CMakeLists.txt,Makefile,mainpage.dox,manifest.xml,BatteryState.msg,CreateSensorState.msg,Drive.msg,RawCreateSensorState.msg,RoombaSensorState.msg,Turtle.msg,create_node.py,rosdoc.yaml,diagnostics.py,gyro.py,SetCreateMode.srv,SetDigitalOutputs.srv,CMakeLists.txt,Makefile,mainpage.dox,manifest.xml,create_body.dae,create_body.stl,create.urdf.xacro,create_base.xacro,create_wheel.xacro,materials.urdf.xacro']"
+Tully Foote,2011-02-23,global search and replace create -> turtlebot,"['create.launch,create_solo.launch,mainpage.dox,manifest.xml,manifest.xml,create_driver.py,mainpage.dox,manifest.xml,create_node.py,diagnostics.py,gyro.py,SetCreateMode.srv,mainpage.dox,manifest.xml,create_body.dae,create.urdf.xacro,create_base.xacro,create_wheel.xacro']"
+Tully Foote,2011-02-23,"fixing filenames
+
+--HG--
+rename : turtlebot_bringup/create.launch => turtlebot_bringup/turtlebot.launch
+rename : turtlebot_bringup/create_solo.launch => turtlebot_bringup/turtlebot_solo.launch
+rename : turtlebot_driver/src/create_driver.py => turtlebot_driver/src/turtlebot_driver.py
+rename : turtlebot_node/nodes/create_node.py => turtlebot_node/nodes/turtlebot_node.py
+rename : turtlebot_node/src/create_node/__init__.py => turtlebot_node/src/turtlebot_node/__init__.py
+rename : turtlebot_node/src/create_node/diagnostics.py => turtlebot_node/src/turtlebot_node/diagnostics.py
+rename : turtlebot_node/src/create_node/gyro.py => turtlebot_node/src/turtlebot_node/gyro.py
+rename : turtlebot_urdf/urdf/create.urdf.xacro => turtlebot_urdf/urdf/turtlebot.urdf.xacro
+rename : turtlebot_urdf/urdf/create_base.xacro => turtlebot_urdf/urdf/turtlebot_base.xacro
+rename : turtlebot_urdf/urdf/create_wheel.xacro => turtlebot_urdf/urdf/turtlebot_wheel.xacro","['turtlebot.launch,turtlebot_solo.launch,turtlebot_driver.py,turtlebot_node.py,diagnostics.py,gyro.py,turtlebot.urdf.xacro,turtlebot_base.xacro,turtlebot_wheel.xacro']"
+Tully Foote,2011-02-23,initial import of turtlebot_apps,"['CMakeLists.txt,Makefile,mainpage.dox,manifest.xml,create_joy.cpp']"
+Tully Foote,2011-02-23,global search and replace create -> turtlebot,"['CMakeLists.txt,mainpage.dox,manifest.xml,create_joy.cpp']"
+Tully Foote,2011-02-23,initial stack files,"['CMakeLists.txt,Makefile,stack.xml']"
+Tully Foote,2011-02-23,"one more rename
+
+--HG--
+rename : turtlebot_teleop/src/create_joy.cpp => turtlebot_teleop/src/turtle_joy.cpp",['turtle_joy.cpp']
+Tully Foote,2011-02-23,"two more renames
+
+--HG--
+rename : turtlebot_navigation/config/amcl_create.launch => turtlebot_navigation/config/amcl_turtlebot.launch
+rename : turtlebot_teleop/src/turtle_joy.cpp => turtlebot_teleop/src/turtlebot_joy.cpp",['turtlebot_joy.cpp']
+Tully Foote,2011-02-24,"more file renames movements
+
+--HG--
+rename : turtlebot_node/msg/RawCreateSensorState.msg => turtlebot_node/msg/RawTurtlebotSensorState.msg
+rename : turtlebot_node/msg/CreateSensorState.msg => turtlebot_node/msg/TurtlebotSensorState.msg
+rename : turtlebot_node/srv/SetCreateMode.srv => turtlebot_node/srv/SetTurtlebotMode.srv","['RawTurtlebotSensorState.msg,TurtlebotSensorState.msg,SetTurtlebotMode.srv']"
+Tully Foote,2011-02-24,fixing typo and frame ids,"['turtlebot.launch,diagnostics.py']"
+Tully Foote,2011-02-24,mostly running with new repos,['turtlebot.launch']
+Tully Foote,2011-02-24,adding ignore rules,['.hgignore']
+Tully Foote,2011-02-24,teleop launch file,['teleop.launch']
+Tully Foote,2011-02-24,base robot.launch',['robot.launch']
+Tully Foote,2011-02-24,remove typo,"['robot.launch,turtlebot.launch']"
+Melonee Wise,2011-02-25,adding .hgignore,"['.hgignore,turtlebot_node.py']"
+Melonee Wise,2011-02-25,removing blacklist,['ROS_BUILD_BLACKLIST']
+Tully Foote,2011-02-26,laptop battery status diagnostics,"['robot.launch,laptop_battery.py']"
+Tully Foote,2011-02-26,merging,['']
+Tully Foote,2011-02-26,adding direction to current,['laptop_battery.py']
+Tully Foote,2011-02-26,removing debugging code,['laptop_battery.py']
+Tully Foote,2011-02-26,migrating analyzer definitions into bringup from dashboard to break link,"['diagnostics.yaml,robot.launch']"
+Melonee Wise,2011-02-27,adding a starter urdf,"['turtlebot.urdf.xacro,turtlebot.xacro']"
+Melonee Wise,2011-02-27,merging,['']
+Melonee Wise,2011-02-27,adding create dae,"['68-04545_iRobot_Create.STL,68-04545_iRobot_Create.dae']"
+Melonee Wise	,2011-02-28,adding new cool models,"['68-02403-125_Spacer.dae,Turtlebot_Plate_0_Logo.dae,Turtlebot_Plate_0_Logo_color.png,turtlebot.xacro,turtlebot_hardware.xacro']"
+Melonee Wise	,2011-02-28,adding the next models in the chain,"['68-04552-1000-RA_Turtlebot_M-F_Standoff.dae,68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png,Turtlebot_Plate_0_Logo.dae,turtlebot.xacro,turtlebot_hardware.xacro']"
+Melonee Wise	,2011-02-28,added two more layers to the model almost done,"['68-04552-2000-RA_Turtlebot_M-F_Standoff.dae,68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png,Turtlebot_Plate_1_Logo.dae,Turtlebot_Plate_1_Logo_color.png,turtlebot.xacro,turtlebot_hardware.xacro']"
+Melonee Wise	,2011-02-28,first pass.. ned to fix the top plate and add the kinect but looks good,"['68-02421-8000-RA_Turtlebot_F-F_Standoff.dae,68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png,Turtlebot_Plate_2_Logo.dae,Turtlebot_Plate_2_Logo_color.png,turtlebot.xacro,turtlebot_hardware.xacro']"
+Tully Foote,2011-02-28,fixing parameters,['robot.launch']
+Tully Foote,2011-02-28,merging new urdf,['']
+Tully Foote,2011-02-28,adding pointcloud_to_laserscan from ni stack here,"['CMakeLists.txt,Makefile,kinect_laser.launch,mainpage.dox,manifest.xml,nodelets.xml,cloud_throttle.cpp,cloud_to_scan.cpp']"
+Tully Foote,2011-02-28,"missing depend, and switching to use nodelets completely","['manifest.xml,robot.launch,turtlebot.urdf.xacro']"
+Tully Foote,2011-02-28,speeding up teleop to full speed,['teleop.launch']
+Melonee Wise,2011-03-01,adding new mesh,"['robot.launch,turtlebot_solo.launch,Turtlebot_Plate_0_Logo.dae,Turtlebot_Plate_0_Logo_color.png,Turtlebot_Plate_1_Logo.dae,Turtlebot_Plate_1_Logo_color.png,Turtlebot_Plate_2_Logo.dae,Turtlebot_Plate_2_Logo_color.png,plate_0_logo.dae,plate_0_logo_color.tga,plate_1_logo.dae,plate_1_logo_color.tga,plate_2_logo.dae,plate_2_logo_color.tga,turtlebot.xacro']"
+Melonee Wise,2011-03-02,adding final touches,"['68-04546_Kinect_Sensor.3ds,68-04556-RA_Kinect_Standoff_Assy.3ds,turtlebot.xacro,turtlebot_hardware.xacro']"
+Melonee Wise,2011-03-02,updating frame names,['robot.launch']
+Tully Foote,2011-03-02,adding base_footprint,['turtlebot.xacro']
+Tully Foote,2011-03-02,merging urdf changes,['']
+Tully Foote,2011-03-02,fixing parameter name,['robot.launch']
+Tully Foote,2011-03-02,fixing stack dependencies,['stack.xml']
+Tully Foote,2011-03-02,removing circular dependency,"['stack.xml,manifest.xml,turtlebot.launch,turtlebot_solo.launch']"
+Tully Foote,2011-03-02,merging,['']
+Tully Foote,2011-03-02,Added tag turtlebot-0.1.0 for changeset e9f242f8330f,['.hgtags']
+Tully Foote,2011-03-02,Added tag diamondback for changeset 377aad7b0e15,['.hgtags']
+Tully Foote,2011-03-02,making frame_id match,['robot.launch']
+Melonee Wise,2011-03-02,cleaning up the urdf package,"['manifest.xml,materials.urdf.xacro,turtlebot_base.xacro,turtlebot_wheel.xacro']"
+Melonee Wise,2011-03-02,updating dox,['mainpage.dox']
+Tully Foote,2011-03-02,reving for release,['CMakeLists.txt']
+Tully Foote,2011-03-02,merging cleanup,['']
+Tully Foote,2011-03-03,Added tag turtlebot-0.1.1 for changeset 3673fe052a7b,['.hgtags']
+Tully Foote,2011-03-03,Added tag diamondback for changeset 0ea30d24edf0,['.hgtags']
+Tully Foote,2011-03-03,robot_pose_ekf into robot.launch,['robot.launch']
+Melonee Wise,2011-03-03,"renaming urdf package to be consistent with the rest of ROS
+
+--HG--
+rename : turtlebot_urdf/CMakeLists.txt => turtlebot_description/CMakeLists.txt
+rename : turtlebot_urdf/Makefile => turtlebot_description/Makefile
+rename : turtlebot_urdf/mainpage.dox => turtlebot_description/mainpage.dox
+rename : turtlebot_urdf/manifest.xml => turtlebot_description/manifest.xml
+rename : turtlebot_urdf/meshes/68-02403-125_Spacer.dae => turtlebot_description/meshes/68-02403-125_Spacer.dae
+rename : turtlebot_urdf/meshes/68-02421-8000-RA_Turtlebot_F-F_Standoff.dae => turtlebot_description/meshes/68-02421-8000-RA_Turtlebot_F-F_Standoff.dae
+rename : turtlebot_urdf/meshes/68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png => turtlebot_description/meshes/68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png
+rename : turtlebot_urdf/meshes/68-04545_iRobot_Create.STL => turtlebot_description/meshes/68-04545_iRobot_Create.STL
+rename : turtlebot_urdf/meshes/68-04545_iRobot_Create.dae => turtlebot_description/meshes/68-04545_iRobot_Create.dae
+rename : turtlebot_urdf/meshes/68-04546_Kinect_Sensor.3ds => turtlebot_description/meshes/68-04546_Kinect_Sensor.3ds
+rename : turtlebot_urdf/meshes/68-04552-1000-RA_Turtlebot_M-F_Standoff.dae => turtlebot_description/meshes/68-04552-1000-RA_Turtlebot_M-F_Standoff.dae
+rename : turtlebot_urdf/meshes/68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png => turtlebot_description/meshes/68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png
+rename : turtlebot_urdf/meshes/68-04552-2000-RA_Turtlebot_M-F_Standoff.dae => turtlebot_description/meshes/68-04552-2000-RA_Turtlebot_M-F_Standoff.dae
+rename : turtlebot_urdf/meshes/68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png => turtlebot_description/meshes/68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png
+rename : turtlebot_urdf/meshes/68-04556-RA_Kinect_Standoff_Assy.3ds => turtlebot_description/meshes/68-04556-RA_Kinect_Standoff_Assy.3ds
+rename : turtlebot_urdf/meshes/create_body.dae => turtlebot_description/meshes/create_body.dae
+rename : turtlebot_urdf/meshes/create_body.stl => turtlebot_description/meshes/create_body.stl
+rename : turtlebot_urdf/meshes/plate_0_logo.dae => turtlebot_description/meshes/plate_0_logo.dae
+rename : turtlebot_urdf/meshes/plate_0_logo_color.tga => turtlebot_description/meshes/plate_0_logo_color.tga
+rename : turtlebot_urdf/meshes/plate_1_logo.dae => turtlebot_description/meshes/plate_1_logo.dae
+rename : turtlebot_urdf/meshes/plate_1_logo_color.tga => turtlebot_description/meshes/plate_1_logo_color.tga
+rename : turtlebot_urdf/meshes/plate_2_logo.dae => turtlebot_description/meshes/plate_2_logo.dae
+rename : turtlebot_urdf/meshes/plate_2_logo_color.tga => turtlebot_description/meshes/plate_2_logo_color.tga
+rename : turtlebot_urdf/urdf/turtlebot.urdf.xacro => turtlebot_description/urdf/turtlebot.urdf.xacro
+rename : turtlebot_urdf/urdf/turtlebot.xacro => turtlebot_description/urdf/turtlebot.xacro
+rename : turtlebot_urdf/urdf/turtlebot_hardware.xacro => turtlebot_description/urdf/turtlebot_hardware.xacro","['CMakeLists.txt,Makefile,mainpage.dox,manifest.xml,68-02403-125_Spacer.dae,68-02421-8000-RA_Turtlebot_F-F_Standoff.dae,68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png,68-04545_iRobot_Create.STL,68-04545_iRobot_Create.dae,68-04546_Kinect_Sensor.3ds,68-04552-1000-RA_Turtlebot_M-F_Standoff.dae,68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png,68-04552-2000-RA_Turtlebot_M-F_Standoff.dae,68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png,68-04556-RA_Kinect_Standoff_Assy.3ds,create_body.dae,create_body.stl,plate_0_logo.dae,plate_0_logo_color.tga,plate_1_logo.dae,plate_1_logo_color.tga,plate_2_logo.dae,plate_2_logo_color.tga,turtlebot.urdf.xacro,turtlebot.xacro,turtlebot_hardware.xacro,manifest.xml']"
+Melonee Wise,2011-03-03,search and replace on urdf,"['turtlebot.urdf.xacro,turtlebot.xacro,turtlebot_hardware.xacro']"
+Tully Foote,2011-03-03,explaining the nameing as turtlebot,['manifest.xml']
+Tully Foote,2011-03-03,merging,['']
+Melonee Wise,2011-03-03,search and replace urdf,"['manifest.xml,robot.launch']"
+Melonee Wise,2011-03-03,updating manifest,['manifest.xml']
+Melonee Wise,2011-03-03,updating stack.xml,"['CMakeLists.txt,stack.xml']"
+Melonee Wise,2011-03-03,fixing the build,['stack.xml']
+Tully Foote,2011-03-03,"adding keyboard teleop and standardizing with joystick
+
+--HG--
+rename : turtlebot_teleop/teleop.launch => turtlebot_teleop/joystick_teleop.launch","['CMakeLists.txt,joystick_teleop.launch,keyboard_teleop.launch,turtlebot_key.cpp']"
+Tully Foote,2011-03-03,catching more to get clean exit when Ctrl-Cd,['laptop_battery.py']
+Tully Foote,2011-03-03,simple script to turn on kinect breaker at startup,"['robot.launch,kinect_breaker_enabler.py']"
+Tully Foote,2011-03-03,merging,['']
+Tully Foote,2011-03-04,switching to openni_kinect stack name,['stack.xml']
+Tully Foote,2011-03-04,changing to update covariance instead of zeroing gyro,"['turtlebot_node.py,gyro.py']"
+Tully Foote,2011-03-04,exposing gyro_scale_correction as a parameter,['gyro.py']
+Tully Foote,2011-03-04,exposing angle and linear correction factors for odom,['turtlebot_node.py']
+Tully Foote,2011-03-04,fixing laptop battery stats,['laptop_battery.py']
+Tully Foote,2011-03-04,increasing gyro averaging period,['gyro.py']
+Tully Foote,2011-03-04,one more catch on laptop exceptions,['laptop_battery.py']
+Tully Foote,2011-03-04,adding imu/raw and turning off breakers on shutdown,"['turtlebot_node.py,gyro.py']"
+Tully Foote,2011-03-04,typo on parameter names,['turtlebot_node.py']
+Melonee Wise,2011-03-04,updating error bounds on gyro,['diagnostics.py']
+Tully Foote,2011-03-04,reving for release,['CMakeLists.txt']
+Tully Foote,2011-03-04,Added tag turtlebot-0.1.1 for changeset e2ac34e73bad,['.hgtags']
+Tully Foote,2011-03-04,Added tag diamondback for changeset 12fe9695c0f0,['.hgtags']
+Tully Foote,2011-03-06,fixing revision 0.1.2 0.1.1 was already out,"['.hgignore,CMakeLists.txt']"
+Tully Foote,2011-03-06,merging,['']
+Tully Foote,2011-03-06,Added tag turtlebot-0.1.2 for changeset e0f250656685,['.hgtags']
+Tully Foote,2011-03-06,Added tag diamondback for changeset ab8cfe867fde,['.hgtags']
+Tully Foote,2011-03-07,double mutation bug in debugging code,['gyro.py']
+Tully Foote,2011-03-07,reving to 0.1.3,['CMakeLists.txt']
+Tully Foote,2011-03-07,Added tag turtlebot-0.1.3 for changeset c156420ab6ca,['.hgtags']
+Tully Foote,2011-03-07,Added tag diamondback for changeset ff56c0c163ae,['.hgtags']
+Ken Conley,2011-03-24,Adding app_manager to bringup,['robot.launch']
+Ken Conley,2011-03-24,Mocking in more app stuff for the turtlebot,"['logitech_teleop.app,teleop.interface']"
+Ken Conley,2011-04-01,adding image_transport_plugins as base dependency of turtlebot for teleoperation apps,"['stack.xml,manifest.xml']"
+Ken Conley,2011-04-01,experimenting with more minimal bringup file,['minimal.lauch']
+Ken Conley,2011-04-01,skeleton of simplified interface for controlling turtlebot base,"['.hgignore,CMakeLists.txt,Makefile,Turn.action,manifest.xml']"
+Ken Conley,2011-04-05,0.1.4,['CMakeLists.txt']
+Ken Conley,2011-04-05,Added tag turtlebot-0.1.4 for changeset 299c8a293c8e,['.hgtags']
+Ken Conley,2011-04-05,Added tag diamondback for changeset 7bcce823ab26,['.hgtags']
+Ken Conley,2011-04-05,updating kinect_laser.launch for driver updates,['kinect_laser.launch']
+Ken Conley,2011-04-05,merging,['']
+Ken Conley,2011-04-06,Adding in android teleop capabilities,"['android_teleop.app,android_teleop.interface,android_teleop.launch']"
+Ken Conley,2011-04-06,"Creating config and launch for app manager on turtlebot
+
+--HG--
+rename : turtlebot_mock_apps/turtlebot_apps.installed => turtlebot_app_manager/mock_apps/turtlebot_apps.installed","['android_teleop.app,logitech_teleop.app']"
+Ken Conley,2011-04-06,paring down minimal more,"['base.launch,minimal.lauch,params.launch']"
+Ken Conley,2011-04-06,minimal bringup depends on app_manager,['manifest.xml']
+Ken Conley,2011-04-06,Depends on multimaster_experimental for app_manager,['stack.xml']
+Ken Conley,2011-04-06,reworking launch files to use minimal.launch in bringup instead,['android_teleop.launch']
+Ken Conley,2011-04-06,merge,['']
+Ken Conley,2011-04-06,"fixing filename
+
+--HG--
+rename : turtlebot_bringup/minimal.lauch => turtlebot_bringup/minimal.launch",['minimal.launch']
+Ken Conley,2011-04-06,integrated with app_manager updates,"['app_manager.launch,minimal.lauch,turtlebot_apps.installed']"
+Ken Conley,2011-04-06,"merged
+
+--HG--
+rename : turtlebot_bringup/minimal.lauch => turtlebot_bringup/minimal.launch",['']
+Ken Conley,2011-04-06,0.1.5,['CMakeLists.txt']
+Ken Conley,2011-04-06,Added tag turtlebot-0.1.5 for changeset 3e24190d956a,['.hgtags']
+Ken Conley,2011-04-06,Added tag diamondback for changeset efbadaf304d5,['.hgtags']
+Ken Conley,2011-04-06,documentation bug,['android_teleop.launch']
+Ken Conley,2011-04-07,fixing xml syntax for parameters',['params.launch']
+Ken Conley,2011-04-07,turtlebot_node now robust to robot power on and off.  It will wait for USB port to appear and connect.  And give a nice error message and quit if USB is unplugged.',['turtlebot_node.py']
+Ken Conley,2011-04-08,adding in attempt to wake robot if unreachable,['turtlebot_node.py']
+Ken Conley,2011-04-08,better error catching,['diagnostics.py']
+Ken Conley,2011-04-08,wake did not work right,['turtlebot_node.py']
+Tully Foote,2011-04-08,reving for release,['CMakeLists.txt']
+Tully Foote,2011-04-08,Added tag turtlebot-0.1.6 for changeset 2be6f78a9cf3,['.hgtags']
+Tully Foote,2011-04-08,Added tag diamondback for changeset 0ef5da3dee64,['.hgtags']
+Ken Conley,2011-04-08,simple script to determine wireless address,['turtlebot_addr.py']
+Ken Conley,2011-04-08,merging,['']
+Ken Conley,2011-04-08,Bug fixes,['turtlebot_addr.py']
+Ken Conley,2011-04-08,appmaster now part of launch,['app_manager.launch']
+Ken Conley,2011-04-11,adding cmd_vel to interface,['android_teleop.interface']
+Ken Conley,2011-04-11,QQVGA for images,['android_teleop.launch']
+Ken Conley,2011-04-11,merge,['']
+Dave Hershberger,2011-04-11,Added chirp app to mock_apps list,['turtlebot_apps.installed']
+Dave Hershberger,2011-04-11,merge,['']
+Ken Conley,2011-04-11,working upstart scripts,"['README,turtlebot-start,turtlebot-stop,turtlebot.conf']"
+Tully Foote,2011-04-11,ps3 joystick,['ps3_teleop.launch']
+Tully Foote,2011-04-11,merging,['']
+Ken Conley,2011-04-12,removing unused path element,['turtlebot_apps.installed']
+Ken Conley,2011-04-12,merging,['']
+Dave Hershberger,2011-04-14,"Changed android_teleop.launch to respawn open-ni node, and added android-teleop icon.","['android_teleop.app,android_teleop.launch,android-lightning-turtlebot.png']"
+gerkey@willowgarage.com,2011-04-14,"Added params for stopping on bumpers and for setting minimum abs yaw
+velocity.","['robot.launch,turtlebot_node.py']"
+gerkey@willowgarage.com,2011-04-15,"added nodelet to produce narrow scan, for localization",['robot.launch']
+Ken Conley,2011-04-15,updated ps3 for app manager,"['ps3_teleop.app,ps3_teleop.launch']"
+Ken Conley,2011-04-15,enabling ps3 joystick app,['turtlebot_apps.installed']
+Ken Conley,2011-04-15,0.1.7,['CMakeLists.txt']
+Ken Conley,2011-04-15,Added tag turtlebot-0.1.7 for changeset a942707f5e4a,['.hgtags']
+Ken Conley,2011-04-15,Added tag diamondback for changeset 869ad2668f60,['.hgtags']
+Ken Conley,2011-04-15,ps3joy upstart,['ps3joy.conf']
+Ken Conley,2011-04-15,adding base app,"['base.app,base.interface,turtlebot_apps.installed']"
+Ken Conley,2011-04-15,0.1.8,['CMakeLists.txt']
+Ken Conley,2011-04-15,Added tag turtlebot-0.1.8 for changeset 5aeb162e3e8b,['.hgtags']
+Ken Conley,2011-04-15,Added tag diamondback for changeset 27de0de4fbcf,['.hgtags']
+Ken Conley,2011-04-15,0.1.6.  Bug fixes for joystick app.,"['ps3_teleop.launch,turtlebot_joy.cpp']"
+Nate Koenig,2011-04-20,Fixed up the robot urdf and meshes,"['.hgignore,68-04545_iRobot_Create.STL,68-04545_iRobot_Create.dae,68-04546_Kinect_Sensor.3ds,create_body.dae,create_body.stl,create_body.tga,kinect.dae,kinect.tga,plate_0_logo.dae,plate_0_logo.tga,plate_0_logo_color.tga,plate_1_logo.dae,plate_1_logo.tga,plate_1_logo_color.tga,plate_2_logo.dae,plate_2_logo.tga,plate_2_logo_color.tga,gazebo.urdf.xacro,turtlebot.xacro,turtlebot_hardware.xacro']"
+Tully Foote,2011-04-22,patch for #ros-pkg4877,['turtlebot_key.cpp']
+Nate Koenig,2011-04-26,Added kinect to the gazebo.urdf.xacro,['gazebo.urdf.xacro']
+Dave Hershberger,2011-04-26,turtlebot android teleop now shows maps,['android_teleop.launch']
+Tully Foote,2011-04-26,parameterizing update rate and only sending commands when they were different,"['base.launch,robot.launch,turtlebot_node.py']"
+Tully Foote,2011-04-26,spoofing joint states in driver,['turtlebot_node.py']
+Tully Foote,2011-04-26,non freestanding launch file for ps3 teleop,['ps3_teleop_simple.launch']
+Tully Foote,2011-04-26,merging dave's changes,['']
+Melonee Wise,2011-04-28,adding charging soft reset when in passive mode and adding switching to mode when vel_cmd sent,"['turtlebot_driver.py,turtlebot_node.py']"
+Melonee Wise,2011-04-28,adding other maintainer,['stack.xml']
+Ken Conley,2011-05-02,"Optimizing and cleaning up turtlebot driver.  Moving sensing up into the
+ROS layer.  In progress and untested.  Still need to push more state back
+out into Gyro and elsewhere so that actual node layer implements very
+thin logic.","['turtlebot_driver.py,turtlebot_node.py,diagnostics.py,gyro.py,sense.py,songs.py']"
+Ken Conley,2011-05-02,"Numerous bug fixes to previous refactoring.  Mainly issues
+with deserialization.","['turtlebot_driver.py,TurtlebotSensorState.msg,turtlebot_node.py,sense.py']"
+Ken Conley,2011-05-02,bug fix to endianness,['sense.py']
+Ken Conley,2011-05-02,"Tweaked watchdog behavior to allow longer timeout on first
+key press so that the robot doesn't jerk around as much.",['turtlebot_key.cpp']
+Ken Conley,2011-05-03,Removing old deserialization code to eliminate confusion,"['turtlebot_driver.py,sense.py']"
+Ken Conley,2011-05-03,"Moving more logic from node into gyro/diagnostics.  Moved song table
+into songs.py.","['turtlebot_driver.py,turtlebot_node.py,diagnostics.py,gyro.py,songs.py']"
+Ken Conley,2011-05-03,bug fix in new gyro code consolidation,['gyro.py']
+Ken Conley,2011-05-03,moved pubsub init to avoid race condition with setting breaker state,['turtlebot_node.py']
+Ken Conley,2011-05-03,Code cleanup,['turtlebot_node.py']
+Ken Conley,2011-05-03,"Limit joint_states to 10hz for performance.
+Bug fix in rate limiting of diagnostics to 1hz.","['turtlebot_node.py,diagnostics.py']"
+Ken Conley,2011-05-03,Changing except to 2.5+ style,['diagnostics.py']
+Melonee Wise,2011-05-04,adding extra sensor to urdf,['turtlebot.xacro']
+Ken Conley,2011-05-04,node now fast-fails if USB disconnected and has a --respawnable option to throttle restarting,['turtlebot_node.py']
+Ken Conley,2011-05-04,merge,['']
+Ken Conley,2011-05-04,"Add back in logic to catch DriverError and keep device up.
+Usual case is Create is off, rather than unplugged",['turtlebot_node.py']
+Tully Foote,2011-05-04,"Restructured launch files to use respawnable driver, which is now part of minimal","['base.launch,minimal.launch,robot.launch']"
+Tully Foote,2011-05-04,Respawnable driver is now more robust,['turtlebot_node.py']
+Tully Foote,2011-05-04,new driver launch element,['driver.launch']
+Melonee Wise,2011-05-04,Removing duplicate driver element,['robot.launch']
+Melonee Wise,2011-05-04,Fixed soft reboot logic and digital outputs calls,['turtlebot_node.py']
+Melonee Wise,2011-05-04,moved laptop_battery driver into minimal,"['base.launch,minimal.launch']"
+Melonee Wise,2011-05-04,robot_state_publisher into minimal,"['base.launch,minimal.launch']"
+Ken Conley,2011-05-05,0.1.9,['CMakeLists.txt']
+Ken Conley,2011-05-05,Added tag turtlebot-0.1.9 for changeset 6d33eae9fa67,['.hgtags']
+Ken Conley,2011-05-05,Added tag diamondback for changeset fab37275a4c5,['.hgtags']
+Ken Conley,2011-05-05,"Adding follower, removing base",['turtlebot_apps.installed']
+Ken Conley,2011-05-05,merge,['']
+Ken Conley,2011-05-05,0.1.10,['CMakeLists.txt']
+Ken Conley,2011-05-05,Added tag turtlebot-0.1.10 for changeset d8539fcc35da,['.hgtags']
+Ken Conley,2011-05-05,Added tag diamondback for changeset 1b61b704c4db,['.hgtags']
+Dave Hershberger,2011-05-06,"For android_teleop app, reduced bandwidth consumed by camera images.  Fixed conflict between two different publishers to 'camera' topic that was causing output to switch between high res and low res.","['android_teleop.interface,android_teleop.launch']"
+Nate Koenig,2011-05-06,Added sensors for the cliff sensors,"['gazebo.urdf.xacro,turtlebot.xacro']"
+Nate Koenig,2011-05-06,merge,['']
+Nate Koenig,2011-05-06,Added links for more sensors in my previous commit,['gazebo.urdf.xacro']
+Dave Hershberger,2011-05-06,added fallback from /dev/ttyUSB0 to /dev/ttyUSB1 in turtlebot_node.,['turtlebot_node.py']
+Dave Hershberger,2011-05-06,added no-map and no-map-no-cam versions of android-teleop app,['turtlebot_apps.installed']
+Dave Hershberger,2011-05-06,added no-map and no-map-no-cam versions of android-teleop app,"['android_joystick.app,android_joystick.interface,android_joystick.launch,android_teleop.app,android_teleop_no_map.app,android_teleop_no_map.interface,android_teleop_no_map.launch']"
+Ken Conley,2011-05-09,0.1.10,['CMakeLists.txt']
+Ken Conley,2011-05-09,Added tag turtlebot-0.1.11 for changeset 99e8462a1474,['.hgtags']
+Ken Conley,2011-05-09,Added tag diamondback for changeset 8fb64da4917f,['.hgtags']
+Dave Hershberger,2011-05-13,added a tf change_notifier node to android_teleop.launch to narrow the TF firehose going to Android,['android_teleop.launch']
+Dave Hershberger,2011-05-13,"reverted change df3795d5bcd1, my botched /dev/ttyUSB1 failover code",['turtlebot_node.py']
+Dave Hershberger,2011-05-17,Modified upstart scripts to handle arbitrary network interface stops and starts.  New version maintains ROS always running with IP address from most-recently-added network interface.,"['install.bash,turtlebot-boot.conf,turtlebot-net-down.conf,turtlebot-net-up.conf,turtlebot-start,turtlebot-stop,turtlebot.conf']"
+Dave Hershberger,2011-05-18,new version of turtlebot_bringup/upstart files.  Now you specify at install time which network interface you want to use.  My previous attempt at an automagic system was not able to do the right thing reliably.  See turtlebot_bringup/upstart/README for details.,"['README,install.bash,turtlebot-net-down.conf,turtlebot-net-up.conf,turtlebot-start,turtlebot-stop,turtlebot.conf']"
+Melonee Wise,2011-05-19,changing default behavior for bumps and wheel drops,"['turtlebot_node.py,diagnostics.py']"
+Dave Hershberger,2011-05-20,fixed teleop.interface file to match latest minimal.launch to make ps3 joystick app work again.,['teleop.interface']
+Dave Hershberger,2011-05-24,switched from base_link to base_footprint frame in android_teleop.launch,['android_teleop.launch']
+Dave Hershberger,2011-05-27,"removed lores camera node from android_teleop.launch, was causing trouble.  Added android_make_a_map app and launch file.","['android_make_a_map.app,android_make_a_map.launch,android_teleop.launch,map.jpg']"
+Dave Hershberger,2011-05-27,merge,['']
+Dave Hershberger,2011-05-27,Added new 'Make a Map' app to mock_apps/turtlebot_apps.installed,['turtlebot_apps.installed']
+Ken Conley,2011-06-08,0.1.12,['CMakeLists.txt']
+Ken Conley,2011-06-08,Added tag turtlebot-0.1.12 for changeset 60e779d17dc9,['.hgtags']
+Ken Conley,2011-06-08,Added tag unstable for changeset 936dd741c9c3,['.hgtags']
+Dave Hershberger,2011-06-13,added android_map_nav app,"['android_map_nav.app,android_map_nav.launch']"
+Dave Hershberger,2011-06-13,added android_map_nav app to mock_apps,['turtlebot_apps.installed']
+Tully Foote,2011-06-14,"removing rpy from inertial elements of links, to get rid of not supported warning",['turtlebot.xacro']
+Ken Conley,2011-06-14,removing turtle_drive for release,"['CMakeLists.txt,Makefile,Turn.action,manifest.xml']"
+Ken Conley,2011-06-14,merging,['']
+Nate Koenig,2011-06-15,Made sensor links have non-zero mass. A zero-mass caused urdf2gazebo to ignore the sensor links,"['gazebo.urdf.xacro,turtlebot.xacro']"
+Tully Foote,2011-06-15,fixing typo,['gazebo.urdf.xacro']
+Dave Hershberger,2011-06-15,pruned out extra and unfinished apps from mock_apps/turtlebot_apps.installed,['turtlebot_apps.installed']
+Dave Hershberger,2011-06-15,merge,['']
+Dave Hershberger,2011-06-15,"cleaned up turtlebot_teleop package: moved app files into app subdirectory and removed extraneous app files
+
+--HG--
+rename : turtlebot_teleop/android_make_a_map.launch => turtlebot_teleop/app/android_make_a_map.launch
+rename : turtlebot_teleop/android_map_nav.launch => turtlebot_teleop/app/android_map_nav.launch
+rename : turtlebot_teleop/android_teleop.app => turtlebot_teleop/app/android_teleop.app
+rename : turtlebot_teleop/android_teleop.interface => turtlebot_teleop/app/android_teleop.interface
+rename : turtlebot_teleop/ps3_teleop.app => turtlebot_teleop/app/ps3_teleop.app
+rename : turtlebot_teleop/ps3_teleop.launch => turtlebot_teleop/app/ps3_teleop.launch","['android_joystick.app,android_joystick.launch,android_teleop.interface,android_teleop.launch,android_teleop_no_map.app,android_teleop_no_map.interface,android_teleop_no_map.launch,android_make_a_map.app,android_make_a_map.launch,android_map_nav.app,android_map_nav.launch,android_teleop.app,android_teleop.interface,android_teleop.launch,logitech_teleop.app,ps3_teleop.app,ps3_teleop.interface,ps3_teleop.launch,teleop.interface']"
+Melonee Wise,2011-06-16,turtlebot auto wakeuphg diff hg diff hg diff hg diff,['turtlebot_driver.py']
+Melonee Wise,2011-06-16,merging,['']
+Melonee Wise,2011-06-16,shortening delay,['turtlebot_driver.py']
+Tully Foote,2011-06-16,rerelease,['CMakeLists.txt']
+Tully Foote,2011-06-16,Added tag turtlebot-0.1.13 for changeset ac636db76744,['.hgtags']
+Tully Foote,2011-06-16,Added tag diamondback for changeset 51bd9aab3a1e,['.hgtags']
+Tully Foote,2011-06-16,Added tag unstable for changeset 6c2fcb5338a3,['.hgtags']
+Melonee Wise,2011-06-28,updating urdf to use the new gazebo plugin,['gazebo.urdf.xacro']
+Melonee Wise,2011-06-29,changing clipping plane to mimic kinect behavior,['gazebo.urdf.xacro']
+Melonee Wise,2011-06-30,changing topic names in gazebo urdf,['gazebo.urdf.xacro']
+Melonee Wise,2011-06-30,preparing for release,['CMakeLists.txt']
+Melonee Wise,2011-06-30,Added tag turtlebot-0.1.14 for changeset b982ddc77143,['.hgtags']
+Melonee Wise,2011-06-30,Added tag unstable for changeset b69a58fe92d6,['.hgtags']
+Melonee Wise,2011-07-18,bug in diagnostics when gyro false,['diagnostics.py']
+Melonee Wise,2011-07-19,changing enabler to put the turtlebot in full mode,['kinect_breaker_enabler.py']
+Melonee Wise,2011-07-19,adding state to diagnostics to catch quasi on state of the robot and notify user,"['turtlebot_node.py,diagnostics.py']"
+Melonee Wise,2011-07-19,"renaming to be more consistent
+
+--HG--
+rename : turtlebot_teleop/ps3_teleop_simple.launch => turtlebot_teleop/ps3_teleop.launch",['ps3_teleop.launch']
+Melonee Wise,2011-07-20,fixing diagnostics bug,['diagnostics.py']
+Melonee Wise,2011-07-20,fixing diagnostics bug,['diagnostics.py']
+Melonee Wise,2011-07-25,updating urdf to reflect production turtlebot changes,['turtlebot.xacro']
+Melonee Wise,2011-07-25,adding test.launch to test the urdf easliy,['test.launch']
+pratkanis@willowgarage.com,2011-07-26,Change map launch files for new warehouse,"['android_make_a_map.launch,android_map_nav.launch']"
+pratkanis@willowgarage.com,2011-07-26,"Rename launch files to avoid joystick conflict.
+
+--HG--
+rename : turtlebot_teleop/app/ps3_teleop.launch => turtlebot_teleop/app/ps3_teleop_app.launch","['ps3_teleop.app,ps3_teleop_app.launch']"
+pratkanis@willowgarage.com,2011-08-05,Add launch file for the kinect,['kinect.launch']
+Melonee Wise,2011-08-05,adding breaker to launch,['kinect.launch']
+Melonee Wise,2011-08-08,setting near cliff to warn,['diagnostics.py']
+Tully Foote,2011-08-08,tuning kinect time offset and disabling registration for cpu savings,"['base.launch,kinect.launch']"
+Tully Foote,2011-08-08,reving for 0.1.15 release into diamondback,['CMakeLists.txt']
+Tully Foote,2011-08-08,Added tag turtlebot-0.1.15 for changeset 0d48066bc630,['.hgtags']
+Tully Foote,2011-08-08,Added tag diamondback for changeset 1a24d31ce109,['.hgtags']
+Melonee Wise,2011-08-09,adding dynamic reconfigure cfg,"['CMakeLists.txt,turtlebot_dynamic_reconfigure.cfg,manifest.xml']"
+Melonee Wise,2011-08-09,"adding dymanic reconfigure
+
+--HG--
+rename : turtlebot_node/cfg/turtlebot_dynamic_reconfigure.cfg => turtlebot_node/cfg/TurtleBot.cfg","['TurtleBot.cfg,turtlebot_dynamic_reconfigure.cfg,turtlebot_node.py']"
+Melonee Wise,2011-08-09,removing bonus bool from reconfigure,"['TurtleBot.cfg,turtlebot_node.py']"
+Melonee Wise,2011-08-09,adding dynamic reconfigure,"['CMakeLists.txt,manifest.xml,cloud_to_scan.cpp']"
+Melonee Wise,2011-08-10,adding config file,['CloudScan.cfg']
+Tully Foote,2011-08-10,reving for release,['CMakeLists.txt']
+Tully Foote,2011-08-10,merging,['']
+Tully Foote,2011-08-10,Added tag turtlebot-0.1.16 for changeset ae11a9d0338d,['.hgtags']
+Tully Foote,2011-08-10,Added tag diamondback for changeset be9ac410a4f9,['.hgtags']
+Melonee Wise,2011-08-11,updating gyro scale correction for dynamic reconfigure,['turtlebot_node.py']
+Melonee Wise,2011-08-11,merging,['']
+Melonee Wise,2011-08-24,Added tag turtlebot-0.1.16 for changeset 187c56a864da,['.hgtags']
+Melonee Wise,2011-08-24,Added tag electric for changeset a3c8d0a5e14f,['.hgtags']
+Melonee Wise,2011-08-25,clean up,['turtlebot_joy.cpp']
+Melonee Wise,2011-08-25,adding launch file for kinect on electric,['kinect.launch']
+Melonee Wise,2011-08-25,merging into head,['']
+Melonee Wise,2011-08-25,preparing for electric release,"['CMakeLists.txt,stack.xml']"
+Melonee Wise,2011-08-25,Added tag turtlebot-0.2.0 for changeset c2f6b4a56667,['.hgtags']
+Melonee Wise,2011-08-25,Added tag electric for changeset 8d96df9b46a1,['.hgtags']
+Michael Ferguson,2011-08-29,Update upstart to use /opt/ros/electric,"['README,ps3joy.conf,turtlebot-start,turtlebot-stop']"
+Michael Ferguson,2011-08-29,Update teleop to use sensor_msgs::Joy,['turtlebot_joy.cpp']
+Michael Ferguson,2011-09-08,Roll back to diamondback-style driver,['kinect.launch']
+Michael Ferguson,2011-09-08,Roll back to diamondback-style driver,['kinect.launch']
+Michael Ferguson,2011-09-08,Roll back to diamondback-style driver,['manifest.xml']
+Michael Ferguson,2011-09-09,add space for calibration,"['turtlebot.xacro,turtlebot_calibration.xacro']"
+Michael Ferguson,2011-09-09,update launch files,"['kinect_laser.launch,cloud_to_scan.cpp,kinect.launch']"
+Melonee Wise,2011-09-11,adding more info to the diagnostics,['diagnostics.py']
+Melonee Wise,2011-09-11,merging in changes,['']
+Michael Ferguson,2011-09-12,odom_combined->odom (close #3),['base.launch']
+Michael Ferguson,2011-09-12,rework upstart for easier storage of customizations,"['CMakeLists.txt,minimal.launch,bringup.launch,turtlebot-start']"
+Michael Ferguson,2011-09-12,replace teleop_keyboard,"['CMakeLists.txt,turtlebot_key,keyboard_teleop.launch']"
+Michael Ferguson,2011-09-12,"replace teleop_keyboard
+
+--HG--
+rename : turtlebot_teleop/bin/turtlebot_key => turtlebot_teleop/bin/turtlebot_teleop_key",['turtlebot_teleop_key']
+Michael Ferguson,2011-09-12,"don't reset breakers 1,2 if already on when switching to full mode",['turtlebot_node.py']
+Helen Oleynikova,2011-09-14,Changed rear_wheel_link to be fixed to fix the robot model.,['turtlebot.xacro']
+hsu,2011-09-20,fix masses for turtlebot,"['gazebo.urdf.xacro,turtlebot.xacro,turtlebot_hardware.xacro']"
+hsu,2011-09-20,merging,['']
+hsu,2011-09-20,"fixed joints get reduced, breaking plugin looking for the joint in simulation",['turtlebot.xacro']
+hsu,2011-09-20,"change back to fixed, not sure why, but must be useful?",['turtlebot.xacro']
+John Hsu,2011-09-20,"making casters fixed.  fix simulation params, now the robot is controllable.","['gazebo.urdf.xacro,turtlebot.xacro']"
+Michael Ferguson,2011-09-23,"revise upstart to match pr2 stuff
+
+--HG--
+rename : turtlebot_bringup/upstart/bringup.launch => turtlebot_bringup/upstart/turtlebot.launch","['install.bash,turtlebot-start,turtlebot.launch']"
+Michael Ferguson,2011-09-23,"make upstart executable, add default setup.bash",['install.bash']
+Michael Ferguson,2011-09-23,add note to upstart script about installation,['turtlebot-start']
+Michael Ferguson,2011-09-23,fix dynamic reconfigure in laser,['cloud_to_scan.cpp']
+Michael Ferguson,2011-09-23,Fix launch file nodelet manager,['kinect_laser.launch']
+Melonee Wise,2011-09-23,removing robot.launch,['robot.launch']
+Melonee Wise,2011-09-23,removing unused launch file,['kinect_laser.launch']
+Melonee Wise,2011-09-23,preparing for release,['stack.xml']
+Melonee Wise,2011-09-23,Added tag turtlebot-0.2.1 for changeset ffb17335ea67,['.hgtags']
+Melonee Wise,2011-09-23,Added tag electric for changeset 5dd9fbd3c603,['.hgtags']
+Michael Ferguson,2011-09-28,"(turtlebot_bringup) fix chmod on upstart install script
+
+--HG--
+extra : transplant_source : %F5%B56S%98%E6%BCkqA%AA7%D4%EC%3F%18%C5E%BD%0B",['install.bash']
+Michael Ferguson,2011-11-01,"bring cmd_vel to top, fix #86",['turtlebot_node.py']
+Michael Ferguson,2011-11-01,"bring cmd_vel to top, fix #86","['joystick_teleop.launch,keyboard_teleop.launch']"
+Michael Ferguson,2011-11-01,"reduce the number of launch files, #70","['base.app,base.interface,base.launch,driver.launch,minimal.launch,params.launch']"
+Michael Ferguson,2011-11-02,set use_sim_time to false when loading minimal.launch,['minimal.launch']
+Michael Ferguson,2011-11-02,Rename chirp to turtlebot_sounds,['turtlebot_apps.installed']
+Michael Ferguson,2011-11-05,add -p to mkdir,['install.bash']
+Melonee Wise,2011-11-08,updating cmd_vel topic,['turtlebot_joy.cpp']
+Melonee Wise,2011-11-09,preparing for release,['CMakeLists.txt']
+Melonee Wise,2011-11-09,merging,['']
+Melonee Wise,2011-11-09,Added tag turtlebot-0.2.3 for changeset 9a0a6de11a59,['.hgtags']
+Melonee Wise,2011-11-09,Added tag electric for changeset ad17ceb6659c,['.hgtags']
+Michael Ferguson,2011-12-04,patches to fix android teleop apps,"['android_make_a_map.app,android_make_a_map.launch,android_map_nav.app,android_map_nav.launch,android_teleop.app,android_teleop.launch,ps3_teleop_app.launch']"
+kevinwwatts@gmail.com,2011-12-05,"Rewrite of laptop_battery_monitor, #98","['LaptopChargeStatus.msg,laptop_battery.py']"
+kevinwwatts@gmail.com,2011-12-05,"Fix base clamping logic, #92",['turtlebot_node.py']
+kevinwwatts@gmail.com,2011-12-05,"Cloud to laser scan lazy, fix min range data in output scans, #99",['cloud_to_scan.cpp']
+kevinwwatts@gmail.com,2011-12-08,Turtlebot laptop diagnostics correctly sets discharging rate to negative,['laptop_battery.py']
+Melonee Wise,2011-12-13,updating dynamic reconfigure to allow for negatice height values #93,['CloudScan.cfg']
+kevinwwatts@gmail.com,2011-12-15,"Change robot state publisher update rate, #104",['minimal.launch']
+kevinwwatts@gmail.com,2011-12-15,merge,['']
+kevinwwatts@gmail.com,2011-12-16,Fix syntax error in turtlebot node,['turtlebot_node.py']
+mwise,2011-12-16,removing extra parens,['turtlebot_node.py']
+ser=mwise,2011-12-22,better diagnostics for when the turtlebot_node is not connecting due to power button off or when cable unplugged,"['diagnostics.yaml,turtlebot_node.py,diagnostics.py']"
+mwise,2011-12-23,adding critical battery level in full mode restart 15% battery will for the create to start charging,['turtlebot_node.py']
+watts,2011-12-29,"Adding turtlebot patches for #110 to tbot_improve branch
+
+--HG--
+branch : tbot_improve","['turtlebot_node.py,diagnostics.py']"
+watts,2011-12-29,"Discard first sensor readings from Create on startup
+
+--HG--
+branch : tbot_improve",['turtlebot_node.py']
+kevinwwatts@gmail.com,2012-01-03,"Fixing Turtlebot URDF to add IMU in simulation (#91), adding Hokuyo sensor to laser link
+
+--HG--
+branch : tbot_improve
+rename : turtlebot_description/urdf/turtlebot.urdf.xacro => turtlebot_description/robots/turtlebot.urdf.xacro","['minimal.launch,turtlebot.launch,CMakeLists.txt,turtlebot.urdf.xacro,test.launch,test_urdf.cpp,gazebo.urdf.xacro,microstrain_3dmgx2_imu.gazebo.xacro,microstrain_3dmgx2_imu.urdf.xacro,turtlebot.urdf.xacro,turtlebot.xacro']"
+kevinwwatts@gmail.com,2012-01-03,"merge
+
+--HG--
+branch : tbot_improve",['']
+kevinwwatts@gmail.com,2012-01-03,"Switching to new-style xacro:macro's
+
+--HG--
+branch : tbot_improve","['turtlebot.xacro,turtlebot_hardware.xacro']"
+kevinwwatts@gmail.com,2012-01-03,"Refactored URDF for TBot to allow replacement of Kinect
+
+--HG--
+branch : tbot_improve
+rename : turtlebot_description/urdf/turtlebot_hardware.xacro => turtlebot_description/urdf/turtlebot_hardware.urdf.xacro","['gazebo.urdf.xacro,microstrain_3dmgx2_imu.gazebo.xacro,microstrain_3dmgx2_imu.urdf.xacro,turtlebot.xacro,turtlebot_body.urdf.xacro,turtlebot_hardware.urdf.xacro,turtlebot_kinect.urdf.xacro']"
+kevinwwatts@gmail.com,2012-01-03,"Adding TurtleBot file for ASUS Xtion PRO camera instead of Kinect.
+
+--HG--
+branch : tbot_improve
+rename : turtlebot_description/robots/turtlebot.urdf.xacro => turtlebot_description/robots/turtlebot_xtion_pro.urdf.xacro
+rename : turtlebot_description/urdf/turtlebot_kinect.urdf.xacro => turtlebot_description/urdf/asus_xtion_pro.urdf.xacro","['turtlebot.urdf.xacro,turtlebot_xtion_pro.urdf.xacro,asus_xtion_pro.urdf.xacro,gazebo.urdf.xacro,turtlebot.urdf.xacro,turtlebot.xacro']"
+kevinwwatts@gmail.com,2012-01-04,"TurtleBot node stores odometry to prevent it from resetting when Create shuts down
+
+--HG--
+branch : tbot_improve",['turtlebot_node.py']
+Michael Ferguson,2012-02-08,close #96 (add rosdep for daemontools),"['rosdep.yaml,manifest.xml']"
+Michael Ferguson,2012-02-12,close #116,['turtlebot_node.py']
+Michael Ferguson,2012-02-12,close #118 (add param for baudrate),"['turtlebot_driver.py,turtlebot_node.py']"
+mwise,2012-02-12,merging in tbot_improve,['']
+Michael Ferguson,2012-02-12,"make turtlebot work with 500 series
+
+--HG--
+rename : turtlebot_node/src/turtlebot_node/sense.py => turtlebot_node/src/turtlebot_node/create_sensor_handler.py","['turtlebot_driver.py,turtlebot_node.py,covariances.py,create_sensor_handler.py,robot_types.py,roomba_sensor_handler.py']"
+Michael Ferguson,2012-02-12,merge,['']
+Melonee Wise,2012-02-12,updating config file,['diagnostics.yaml']
+Melonee Wise,2012-02-12,closing ticket 124,['']
+Michael Ferguson,2012-02-12,"merge patch for #25, #108, #111","['TurtleBot.cfg,turtlebot_node.py,gyro.py']"
+Michael Ferguson,2012-02-12,merge,['']
+Michael Ferguson,2012-02-12,"make turtlebot teleop awesome, thanks to brown university",['turtlebot_teleop_key']
+Melonee Wise,2012-02-12,preparing for 0.2.5 release,"['CMakeLists.txt,stack.xml']"
+Melonee Wise,2012-02-12,Added tag turtlebot-0.2.4 for changeset 963c9a6cd9a4,['.hgtags']
+Melonee Wise,2012-02-12,Added tag electric for changeset a763ec3f8300,['.hgtags']
+Michael Ferguson,2012-02-12,cleanup kinect/camera naming stuffs,"['kinect.launch,asus_xtion_pro.urdf.xacro,turtlebot_calibration.xacro,turtlebot_kinect.urdf.xacro']"
+mwise,2012-02-12,cleaning up driver,"['turtlebot_driver.py,turtlebot_node.py']"
+Melonee Wise,2012-02-12,preparing for release,['CMakeLists.txt']
+Melonee Wise,2012-02-12,Added tag turtlebot-0.9.0 for changeset 3dd21cf606f6,['.hgtags']
+Melonee Wise,2012-02-12,Added tag electric for changeset e71e4c8a9d1a,['.hgtags']
+Michael Ferguson,2012-02-20,trying to revive mapping apps,"['android_make_a_map.launch,android_map_nav.launch']"
+Melonee Wise,2012-02-21,patch #121,['turtlebot_node.py']
+Michael Ferguson,2012-02-21,bring back mapping apps (they may not totally work... but we should support them when they do),['turtlebot_apps.installed']
+Michael Ferguson,2012-02-21,initialize max_abs_yaw_vel,['turtlebot_node.py']
+Melonee Wise,2012-02-22,preparing for release,['CMakeLists.txt']
+Melonee Wise,2012-02-22,Added tag turtlebot-0.9.1 for changeset fe9754b74001,['.hgtags']
+Melonee Wise,2012-02-22,Added tag electric for changeset 2dd9a0884353,['.hgtags']
+Melonee Wise,2012-02-28,fixing gazebo urdf,['gazebo.urdf.xacro']
+Melonee Wise,2012-02-28,applying patch from lorenz,['turtlebot_node.py']
+Melonee Wise,2012-02-28,preparing for release,['CMakeLists.txt']
+Melonee Wise,2012-02-28,Added tag turtlebot-0.9.2 for changeset 13aafc71be77,['.hgtags']
+Melonee Wise,2012-02-28,Added tag electric for changeset 6c40283d3090,['.hgtags']
+Melonee Wise,2012-03-29,removing rosdep.yaml,['rosdep.yaml']
+Melonee Wise,2012-03-29,OH YA 1.0,['CMakeLists.txt']
+Melonee Wise,2012-03-29,Added tag turtlebot-1.0.0 for changeset 7005f3c75ecb,['.hgtags']
+Melonee Wise,2012-03-29,Added tag fuerte for changeset 40005608d1e7,['.hgtags']
+Melonee Wise,2012-03-30,fixing the models to work with gazebo,"['68-02421-8000-RA_Turtlebot_F-F_Standoff.dae,68-04552-1000-RA_Turtlebot_M-F_Standoff.dae,68-04552-2000-RA_Turtlebot_M-F_Standoff.dae,turtlebot_hardware.urdf.xacro']"
+Melonee Wise,2012-03-30,adding dae,['68-04556-RA_Kinect_Standoff_Assy.dae']
+Melonee Wise,2012-03-30,"preparing to release 1.0.1, it's all john's fault :P",['CMakeLists.txt']
+Melonee Wise,2012-03-30,merging,['']
+Melonee Wise,2012-03-30,Added tag turtlebot-1.0.1 for changeset 33c7c0164f7a,['.hgtags']
+Melonee Wise,2012-03-30,Added tag fuerte for changeset fbb02b99d055,['.hgtags']
+Sarah Elliott,2012-04-24,Add web interface components.,"['android_teleop.launch,keyboard-arrows.png,turtlebot_teleop.html']"
+Michael Brindle,2012-05-09,"Ros fuerte + precise kinda works (it launches). Currently I am aware of 2 major bugs: kinect does not work, and teleop does not work.","['kinect.launch,install.bash,create_sensor_handler.py']"
+Michael Brindle,2012-05-10,"Added auto-detect of default wireless device.
+Added check for existance of turtlebot user and group, and creation of said user and group if they don't exist.","['README,install.bash']"
+Michael Brindle,2012-05-10,Removed redundancy.,['install.bash']
+Michael Brindle,2012-05-21,added udev rule for turtlebot.,"['52-turtlebot.rules,install.bash,turtlebot_body.urdf.xacro']"
+Ze'ev Klapow,2012-06-05,"#122 added a parameter which allows the turtlebot to be teleoped in safe mode
+
+--HG--
+branch : bugfix",['turtlebot_node.py']
+mbrindle,2012-06-05,fixed turtlebot_bringup/upstart/install.sh to go to `rospack find turtlebot_bringup`/upstart before it does its thing.,['install.bash']
+Ze'ev Klapow,2012-06-05,"#122 added a parameter which allows the turtlebot to be teleoped in safe mode
+
+--HG--
+extra : transplant_source : %7E%E8%1A%E8%9CK%CAcM%E3%C5%D6%D7D%AC%A7%20%8A%FD%25",['']
+Melonee Wise,2012-06-05,preparing for release,['CMakeLists.txt']
+Melonee Wise,2012-06-05,applying patch from ticket 134,['laptop_battery.py']
+Melonee Wise,2012-06-05,adding battery path example to launch file,['minimal.launch']
+Melonee Wise,2012-06-05,ticket 135 changing from map_loader to map_manager,['android_map_nav.launch']
+Melonee Wise,2012-06-05,Added tag turtlebot-1.0.2 for changeset a9980e742035,['.hgtags']
+Melonee Wise,2012-06-05,Added tag fuerte for changeset cdf5a14d7569,['.hgtags']
+Daniel Stonier,2012-09-26,git tags updated.,['.gitignore']
+Daniel Stonier,2012-09-26,launcher files moved in from kobuki_bringup.,"['.hgtags,.gitignore,.gitignore,.cproject,.project,turtlebot_apps.installed,turtlebot_apps.installed,app_manager.launch,netbook.launch,robot.launch,zeroconf.launch,mobile_base.launch,kinect.launch,mobile_base.launch,minimal.launch,minimal.launch,diagnostics.yaml,base.yaml,diagnostics.yaml,zeroconf.yaml,.cproject,.gitignore,.project,.pydevproject,.cproject,.gitignore,.project,.pydevproject,.gitignore,minimal_launcher.py']"
+Daniel Stonier,2012-09-26,bugfix the laptop battery check.,['laptop_battery.py']
+Daniel Stonier,2012-09-26,rewound laptop battery power checking (kobuki's used an earlier version missing some changes.,"['.hgignore,laptop_battery.py']"
+Daniel Stonier,2012-09-27,launcher cleanup.,"['.project,.pydevproject,_app_manager.launch,_netbook.launch,_robot.launch,_zeroconf.launch,_mobile_base.launch,_mobile_base.launch,minimal.launch,diagnostics.yaml,base.yaml,diagnostics.yaml,zeroconf.yaml,laptop_battery.py']"
+Daniel Stonier,2012-09-27,kobuki_node->turtlbot_node and reinsert battery parameterisation.,['laptop_battery.py']
+Daniel Stonier,2012-09-27,"kobuki_node->turtlbot_node and reinsert battery parameterisation, closes #3",['laptop_battery.py']
+Daniel Stonier,2012-09-27,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-09-27,exception to gracefully abort with a warning when battery is not present.,['laptop_battery.py']
+Daniel Stonier,2012-09-27,kinect launch file merged.,"['.gitignore,_kinect_extras.launch,kinect.launch,_kinect_extras.launch']"
+Daniel Stonier,2012-09-27,"some rviz launchers, move these to turtlebot_viz later.","['view_navigation.launch,view_robot.launch,navigation.vcg,turtlebot.vcg']"
+Daniel Stonier,2012-09-27,updated robot rviz configuration.,['turtlebot.vcg']
+Daniel Stonier,2012-09-27,"checked, and noticed the oepnni_launch method is recommended as too heavy. Made comments re that in the file.","['kinect.launch,view_robot.launch,kinect.yaml']"
+Daniel Stonier,2012-09-27,diagnostics monitor.,['diagnostics.launch']
+Daniel Stonier,2012-09-28,Adding a turtlebot2 changelog.,['Changelog']
+Daniel Stonier,2012-09-28,"trying a lower resolution depth mode to run faster, refer to #11.",['kinect.yaml']
+Daniel Stonier,2012-09-28,testing with the kinect...a crudely working openni_launch usage for reference.,"['kinect.launch,minimal.launch,navigation.vcg,turtlebot.vcg']"
+Daniel Stonier,2012-09-28,"rewinding mode setting back, closes #11.",['kinect.yaml']
+Daniel Stonier,2012-09-28,"environment variable for battery settings - move to a proper configurable solution later, #16.","['_netbook.launch,minimal.launch']"
+Daniel Stonier,2012-09-28,eclipse project files.,"['.cproject,.project']"
+Daniel Stonier,2012-09-28,"app map nav fixes for fuerte and updates for turtlebot2, partially implements #3",['android_map_nav.launch']
+Daniel Stonier,2012-09-28,remove commented old map_loader reference.,['android_map_nav.launch']
+Daniel Stonier,2012-09-28,"depth_registration to true for the openni launcher, #10.",['kinect.launch']
+Daniel Stonier,2012-09-28,"kobuki map nav app -> turtlebot, #15",['turtlebot_apps.installed']
+Jihoon,2012-10-04,moving launch files into launch directory,"['joystick_teleop.launch,keyboard_teleop.launch,ps3_teleop.launch']"
+Jihoon,2012-10-04,make_a_map map_nav teleop fixed.,"['android_make_a_map.launch,android_map_nav.launch,android_teleop.launch']"
+Jihoon,2012-10-05,restructuring,"['android_make_a_map.app,android_make_a_map.launch,android_map_nav.app,android_map_nav.launch,android_teleop.app,android_teleop.interface,android_teleop.launch,ps3_teleop.app,ps3_teleop.interface,ps3_teleop_app.launch']"
+Jihoon,2012-10-05,merging kobuki and create apps.installed file,"['turtlebot_apps.installed,turtlebot_apps.installed']"
+Jihoon,2012-10-05,creating directory for logitec teleop app,['logitech_teleop.app']
+Jihoon,2012-10-05,remapping argument,['_app_manager.launch']
+Jihoon,2012-10-05,merging teleop_key script,"['turtlebot_teleop_key,keyboard_teleop.launch']"
+Jihoon,2012-10-05,use kobuki description for turtlebot2,"['_robot.launch,_robot.launch,minimal.launch']"
+Marcus Liebhardt,2012-10-09,changes openni stack name,['stack.xml']
+Marcus Liebhardt,2012-10-09,"adds convenient eclipse config files and gitignore for excluding bin, build and lib folders","['.cproject,.gitignore,.project']"
+Marcus Liebhardt,2012-10-12,adds xacros for turtlebot2 with kinect and xtion,"['turtlebot2_kinect.urdf.xacro,turtlebot2_xtion.urdf.xacro']"
+Marcus Liebhardt,2012-10-12,"adds urdf description for the turtlebot2 stack (plates & poles) and
+the kinect & xtion with poles","['kinect_turtlebot2.urdf.xacro,turtlebot2_stack.urdf.xacro,xtion_turtlebot2.urdf.xacro']"
+Marcus Liebhardt,2012-10-12,"adds meshes (stl only so far) for the turtlebot2 stack (plates & poles);
+also adds IHeart's Xtion collada file (thanks IHeart!)","['asus_xtion_pro_live.dae,asus_xtion_pro_live.png,poll_1st.stl,poll_2nd.stl,poll_3rd.stl,poll_kinect.stl,stack_1st.stl,stack_2nd.stl,stack_3rd.stl']"
+Marcus Liebhardt,2012-10-12,adjusts the xacro file name for the turtlebot2,['_robot.launch']
+Marcus Liebhardt,2012-10-12,adds a bunch of renamings,"['plate_bottom.stl,plate_middle.stl,plate_top.stl,pole_bottom.stl,pole_kinect.stl,pole_middle.stl,pole_top.stl']"
+Marcus Liebhardt,2012-10-12,adds minor name adjustments,"['common_properties.urdf.xacro,kinect_turtlebot2.urdf.xacro,turtlebot2_stack.urdf.xacro,xtion_turtlebot2.urdf.xacro']"
+Marcus Liebhardt,2012-10-12,changes remaining kinect/xtion mentioning in the link/joint names,"['kinect_turtlebot2.urdf.xacro,xtion_turtlebot2.urdf.xacro']"
+Marcus Liebhardt,2012-10-12,changes remaining kinect/xtion mentioning in the link/joint names,"['kinect_turtlebot2.urdf.xacro,xtion_turtlebot2.urdf.xacro']"
+Marcus Liebhardt,2012-10-12,"adds a bunch of parameters Gazebo was noting to be missing; default
+values are the same as Gazebo was choosing so far",['gazebo.urdf.xacro']
+Marcus Liebhardt,2012-10-12,Merge branch 'master' of https://github.com/turtlebot/turtlebot.git,['']
+Daniel Stonier,2012-10-14,"map store dependency, closes #6.",['manifest.xml']
+Daniel Stonier,2012-10-16,"standardised launch prefixes and folders (like openni_launch), easy to sort.","['_app_manager.launch,_netbook.launch,_zeroconf.launch,minimal.launch,manifest.xml']"
+Daniel Stonier,2012-10-16,"standardised launch prefixes and folders (like openni_launch), easy to sort.","['android_make_a_map.launch,android_map_nav.launch']"
+Jihoon,2012-10-18,adding panorama app,['turtlebot_apps.installed']
+Jihoon,2012-10-18,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-10-18,added throttled and rgb cloud configurations.,['turtlebot.vcg']
+Jorge Santos,2012-10-18,"New parameter: bumper_pc_radius. Needed to implement issue #1: bumper
+sensor in navigation.",['base.yaml']
+Jorge Santos,2012-10-18,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-10-18,turtlebot2 descriptions rejiggled.,"['_robot.launch,_robot.launch,minimal.launch,turtlebot.vcg,.cproject,.project,create_body.dae,create_body.tga,asus_xtion_pro_live.dae,asus_xtion_pro_live.png,kinect.dae,kinect.tga,68-02403-125_Spacer.dae,68-02421-8000-RA_Turtlebot_F-F_Standoff.dae,68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png,68-04552-1000-RA_Turtlebot_M-F_Standoff.dae,68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png,68-04552-2000-RA_Turtlebot_M-F_Standoff.dae,68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png,68-04556-RA_Kinect_Standoff_Assy.3ds,68-04556-RA_Kinect_Standoff_Assy.dae,plate_0_logo.dae,plate_0_logo.tga,plate_1_logo.dae,plate_1_logo.tga,plate_2_logo.dae,plate_2_logo.tga,plate_bottom.stl,plate_middle.stl,plate_top.stl,pole_bottom.stl,pole_kinect.stl,pole_middle.stl,pole_top.stl,create_circles_kinect.urdf.xacro,turtlebot.urdf.xacro,turtlebot2_kinect.urdf.xacro,turtlebot2_xtion.urdf.xacro,turtlebot_xtion_pro.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro,asus_xtion_pro.urdf.xacro,turtlebot.urdf.xacro,turtlebot_body.urdf.xacro,turtlebot_calibration.xacro,turtlebot_hardware.urdf.xacro,turtlebot_kinect.urdf.xacro,xtion_turtlebot2.urdf.xacro,kinect_turtlebot2.urdf.xacro,sensor_kinect.urdf.xacro,stack_hexagons.urdf.xacro,turtlebot_properties.urdf.xacro']"
+Daniel Stonier,2012-10-18,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-10-18,simplify by combining the kinect breaker with the create base.,"['_kinect_extras.launch,_mobile_base.launch,kinect.launch,_kinect_extras.launch']"
+Daniel Stonier,2012-10-18,"don't need kinect_frames anymore, turtlebot xacro will supply, closes #12.",['android_map_nav.launch']
+Daniel Stonier,2012-10-19,trying the idea of a xacro library for turtlebot to simplify the xacro collection.,"['kinect.urdf.xacro,hexagons.urdf.xacro,turtlebot_library.urdf.xacro']"
+Daniel Stonier,2012-10-19,second half of the turtlebot library description changes.,"['turtlebot.vcg,create_circles_kinect.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro']"
+Daniel Stonier,2012-10-19,"getting ready to test asus descriptions, but our asus isn't working yet.","['kobuki_hexagons_asus_xtion_pro.urdf.xacro,kinect.urdf.xacro']"
+Jorge Santos,2012-10-19,Parameter bumper_pc_radius value increased to 0.20,['base.yaml']
+Daniel Stonier,2012-10-19,kobuki chirp no longer exists.,['turtlebot_apps.installed']
+Daniel Stonier,2012-10-19,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-10-19,asus xtion pro description updated for turtlebot 2,['asus_xtion_pro.urdf.xacro']
+Jihoon,2012-10-19,renaming kinect to 3dsensor,"['3dsensor.launch,_kinect_extras.launch,view_robot.launch']"
+Jihoon,2012-10-19,merging,['']
+Jihoon,2012-10-19,renaming kinect to 3dsensor,"['android_make_a_map.launch,android_map_nav.launch,android_teleop.launch']"
+Jihoon,2012-10-19,minimal_3dsensor.launch added #10,['minimal_3dsensor.launch']
+Jihoon,2012-10-19,commenting out 3dsensor.launch in app #10,"['android_make_a_map.launch,android_map_nav.launch,android_teleop.launch']"
+Jorge Santos,2012-10-22,"Issue #152 implementation: don't use hard-coded joint names
+Also odom_frame_id and base_frame_id removed",['base.yaml']
+Jihoon,2012-10-22,rename minimal_3dsensor to roboworld,['roboworld.launch']
+Daniel Stonier,2012-10-22,rviz viewer for just the robot model.,['model.vcg']
+Daniel Stonier,2012-10-22,standalone launcher for quickly inspecting the robot model.,['view_model.launch']
+Daniel Stonier,2012-10-22,need the joint state publisher to publish wheel joints if there is no kobuki/create node.,['view_model.launch']
+Daniel Stonier,2012-10-22,finally making progress on a good asus/kinect xacro formalisation.,"['model.vcg,kobuki_hexagons_kinect.urdf.xacro,asus_xtion_pro.urdf.xacro,kinect.urdf.xacro,turtlebot_library.urdf.xacro,turtlebot_properties.urdf.xacro']"
+Daniel Stonier,2012-10-23,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Jorge Santos,2012-10-23,Added dependency on zeroconf_avahi,['manifest.xml']
+Jorge Santos,2012-10-23,Merge branch 'master' of https://github.com/turtlebot/turtlebot.git,['']
+Jorge Santos,2012-10-23,"Added dependency on kobuki_node and kobuki_description
+Removed dependency on turtlebot_driver (already required by
+turtlebot_node)",['']
+Jorge Santos,2012-10-23,Merge branch 'master' of https://github.com/turtlebot/turtlebot.git,['']
+Jihoon,2012-10-23,Added dependency on mjpeg_server,['manifest.xml']
+Jorge Santos,2012-10-23,Added dependency on rosbridge_launch,['']
+Jorge Santos,2012-10-23,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Jihoon,2012-10-24,rename mjpegserver,['roboworld.launch']
+Jihoon,2012-10-24,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-10-24,"found a bug, xacro globals get confused when pulling asus and kinect into turtlebot_library.xacro. fixed.","['asus_xtion_pro.urdf.xacro,kinect.urdf.xacro']"
+Jorge Santos,2012-10-25,Added app turtlebot_wanderer,['turtlebot_apps.installed']
+Jihoon,2012-10-29,adding turtlebot2 rosinstall,['turtlebot2_unstable.rosinstall']
+Jihoon,2012-10-29,updated rosinstall,['turtlebot_unstable.rosinstall']
+Jihoon,2012-10-29,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Jihoon,2012-10-29,removing 2,['turtlebot2_unstable.rosinstall']
+Daniel Stonier,2012-10-30,move kobuki and hexagon references to updated base_link at the bottom of the base to match the create convention.,"['model.vcg,hexagons.urdf.xacro,turtlebot_properties.urdf.xacro']"
+Daniel Stonier,2012-10-30,"original create urdf's for circle stacks, kinect and xtion pro.","['create_circles_asus_xtion_pro.urdf.xacro,create.urdf.xacro,circles.urdf.xacro,hexagons.urdf.xacro,turtlebot_library.urdf.xacro']"
+Jihoon,2012-10-31,uncommenting 3dsensor.launch,"['android_make_a_map.launch,android_map_nav.launch,android_teleop.launch']"
+Jihoon,2012-10-31,adding gitignore,['.gitignore']
+Jihoon,2012-10-31,removing 3dsensor from launch file,['minimal_web.launch']
+Jihoon,2012-10-31,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-11-02,bring in the new visualisation stacks.,['turtlebot_unstable.rosinstall']
+Daniel Stonier,2012-11-02,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-11-02,apt-get instructions for mjpeg-server,['turtlebot_unstable.rosinstall']
+Jihoon,2012-11-02,extract out create from turtlebot_library.urdf.xacro. Now there is create_description package,"['create.urdf.xacro,turtlebot_library.urdf.xacro']"
+Jihoon,2012-11-02,add simple script to set env,"['create.sh,kobuki.sh']"
+Jihoon,2012-11-02,uses deb version of mapstore. create stack is added,['turtlebot_unstable.rosinstall']
+Daniel Stonier,2012-11-02,"remove rqt, nothing in turtlebot directly using it yet.",['turtlebot_unstable.rosinstall']
+Daniel Stonier,2012-11-03,added comments for the REP base link rgb frame specification.,['turtlebot_properties.urdf.xacro']
+Daniel Stonier,2012-11-03,more aptly named export scripts.,"['setup_t1.sh,setup_t2.sh']"
+Daniel Stonier,2012-11-03,tagged rosinstaller for last development point on fuerte.,['turtlebot_fuerte.rosinstall']
+Daniel Stonier,2012-11-03,"first groovy rosinstaller - passes rosinstall, no idea about compilation.",['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,calling the split zeroconf stacks.,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add xacro,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,adding more deps,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,adding nodelet,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add visualization-common,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add bullet,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,dynamic reconfigure,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add gazebo source,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add gazebo dependency,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,add the old stacks folder to the rosinstall.,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add navigation stack,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,updates,['']
+Jorge Santos,2012-11-04,Add PCL,['CMakeLists.txt']
+Daniel Stonier,2012-11-04,added dynamixel apt-get and sources for rqt.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-11-04,comment about rqt,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,updates,"['_robot.launch,turtlebot_groovy.rosinstall']"
+Jihoon,2012-11-04,updateS,['turtlebot_groovy.rosinstall']
+Jorge Santos,2012-11-04,Additional stacks/packages required for turtlebot apps,['turtlebot_groovy.rosinstall']
+Jorge Santos,2012-11-04,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Jihoon,2012-11-04,migrate turtlebot_driver to create,"['.cproject,.gitignore,.project,.pydevproject,CMakeLists.txt,Makefile,manifest.xml,rosdoc.yaml,turtlebot_driver.py']"
+Jorge Santos,2012-11-04,Additional stacks/packages required for turtlebot apps,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,new url for rosbirdge_suite,['turtlebot_groovy.rosinstall']
+Jihoon,2012-11-04,add openni,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,"cleaned up sudo apt-gets a bit, added rviz.",['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,merged modifications.,['']
+Daniel Stonier,2012-11-04,view_model updated.,"['view_model.launch,model.rviz,model.vcg']"
+Daniel Stonier,2012-11-04,added robot-model-visualization.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,moved view_model launcher and configuration to turtlebot_description,"['view_model.launch,model.rviz']"
+Daniel Stonier,2012-11-04,updated sudo apt-get requirements.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-04,correct driver requirement for openni nodelets.,['3dsensor.launch']
+Daniel Stonier,2012-11-04,"don't have explicit kdl package anymore, so removing it from turtlebot_node, #25.",['manifest.xml']
+Daniel Stonier,2012-11-04,rviz viewer for the robot.,"['view_robot.launch,robot.rviz,turtlebot.vcg']"
+Daniel Stonier,2012-11-05,kobuki simulator has moved to kobuki_desktop.,"['turtlebot_fuerte.rosinstall,turtlebot_groovy.rosinstall,turtlebot_unstable.rosinstall']"
+Daniel Stonier,2012-11-05,ecl sources removed (debs exist).,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-05,"ecl is back, one or two bugs with the debs.",['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-07,moved ecl out of the source install.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-08,fuerte zeroconf and ecl to debs.,['turtlebot_fuerte.rosinstall']
+Daniel Stonier,2012-11-08,unstable no longer makes sense.,['turtlebot_unstable.rosinstall']
+Daniel Stonier,2012-11-08,fuerte unstable rosinstaller.,"['turtlebot_fuerte_unstable.rosinstall,turtlebot_groovy.rosinstall']"
+Younghun Ju,2012-11-08,Updated unstable rosinstaller to checkout exact version.,['turtlebot_unstable.rosinstall']
+Younghun Ju,2012-11-08,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-11-09,remove greedy eclipse project files.,"['.cproject,.project,_robot.launch']"
+Daniel Stonier,2012-11-12,"handle script name change in robot_state_publisher from fuerte to
+groovy.","['_robot.launch,minimal.launch']"
+Daniel Stonier,2012-11-12,pulling back old fuerte rviz files.,"['view_robot_fuerte.launch,readme.txt,robot.vcg']"
+Daniel Stonier,2012-11-12,reintroducing 3d sensor compatibility for fuerte,['3dsensor.launch']
+Jihoon,2012-11-12,changes in interface,"['android_teleop.interface,ps3_teleop.interface']"
+Daniel Stonier,2012-11-12,"If we're targeting groovy, distro environment variable setting for
+fuerte should be false.","['3dsensor.launch,minimal.launch']"
+Daniel Stonier,2012-11-12,Name change to create stack.,['turtlebot_fuerte_unstable.rosinstall']
+Daniel Stonier,2012-11-12,"updated rosinstaller for groovy, mel's new create and no zeroconf sources.",['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-12,launchers for rviz moved to turtlebot_viz.,"['view_navigation.launch,view_robot.launch,view_robot_fuerte.launch,navigation.vcg,readme.txt,robot.rviz,robot.vcg']"
+Daniel Stonier,2012-11-12,moved rviz launchers to turtlebot_viz.,"['view_model.launch,model.rviz']"
+Daniel Stonier,2012-11-13,removing wanderer for now.,['turtlebot_apps.installed']
+Jihoon,2012-11-14,adding msgs stack,"['turtlebot_fuerte_unstable.rosinstall,turtlebot_groovy.rosinstall']"
+Younghun Ju,2012-11-15,Fixed unmatched branch problem in rosinstallers.,"['turtlebot_fuerte_unstable.rosinstall,turtlebot_groovy.rosinstall']"
+Kobuki Brain No. 3,2012-11-15,"no more rqt, use debs.",['turtlebot_fuerte_unstable.rosinstall']
+Daniel Stonier,2012-11-15,need those rqt stacks at a particular version for current development.,['turtlebot_fuerte_unstable.rosinstall']
+Jihoon,2012-11-19,3dsensor with processing.launch,['3dsensor.launch']
+Jihoon,2012-11-20,reverting changes,"['android_teleop.interface,ps3_teleop.interface']"
+Marcus Liebhardt,2012-11-20,changes cam_py to REP value,['turtlebot_properties.urdf.xacro']
+Marcus Liebhardt,2012-11-20,"brings in a base_bottom_link, which aligns with Create's base_link, for
+fulfilling the REP",['kobuki_hexagons_kinect.urdf.xacro']
+Marcus Liebhardt,2012-11-21,"removes stl and adds new collada meshes for the hexagon stack; also
+modifies the urdf accordingly","['.cproject,1f_pole.jpg,1f_stack.jpg,2f_pole.jpg,2f_stack.jpg,3f_pole.jpg,3f_stack.jpg,kinect_pole.jpg,plate_bottom.dae,plate_bottom.stl,plate_middle.dae,plate_middle.stl,plate_top.dae,plate_top.stl,pole_bottom.dae,pole_bottom.stl,pole_kinect.dae,pole_kinect.stl,pole_middle.dae,pole_middle.stl,pole_top.dae,pole_top.stl,hexagons.urdf.xacro']"
+Jihoon,2012-11-21,3dsensor use openni for now..,['3dsensor.launch']
+Jihoon,2012-11-21,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Marcus Liebhardt,2012-11-22,"Update turtlebot_groovy.rosinstall
+
+minor changes",['turtlebot_groovy.rosinstall']
+Marcus Liebhardt,2012-11-22,"Update turtlebot_groovy.rosinstall
+
+removing more fuerte stuff",['turtlebot_groovy.rosinstall']
+Younghun Ju,2012-11-22,Update turtlebot_groovy.rosinstall,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-24,groovy dependency on ros-groovy-cv-bridge.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-11-24,"cv_bridge not needed, its a dep of openni-launch.",['turtlebot_groovy.rosinstall']
+Marcus Liebhardt,2012-11-28,adds nodelet launch to kobuki mobile base (#166),['_mobile_base.launch']
+Marcus Liebhardt,2012-11-28,adds turtlebot logo to collada mesh for top plate (#20),['3f_stack.jpg']
+Marcus Liebhardt,2012-11-28,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Marcus Liebhardt,2012-11-29,"Update stack.xml
+
+adds missing zerconf_avahi dependencies",['stack.xml']
+Younghun Ju,2012-11-30,Update rosinstallers.,"['turtlebot_fuerte_unstable.rosinstall,turtlebot_groovy.rosinstall']"
+Marcus Liebhardt,2012-12-01,"Update turtlebot_groovy.rosinstall
+
+adds yujin's open control library needed by kobuki_controllers",['turtlebot_groovy.rosinstall']
+Jorge Santos,2012-12-01,Include command velocity multiplexer as a nodelet,['_mobile_base.launch']
+Marcus Liebhardt,2012-12-01,moves kobuki's base.yaml to kobuki_node (#34),"['.cproject,_mobile_base.launch,manifest.xml,base.yaml']"
+Marcus Liebhardt,2012-12-01,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Marcus Liebhardt,2012-12-01,minor changes for #34,"['_mobile_base.launch,minimal.launch']"
+Marcus Liebhardt,2012-12-01,changes yujin ocl repo name and url,['turtlebot_groovy.rosinstall']
+Marcus Liebhardt,2012-12-01,adds yujin_ocl,['stack.xml']
+Younghun Ju,2012-12-01,Removed some mismatched stack related to Yujin OCL in rosinstallers.,"['turtlebot_fuerte_unstable.rosinstall,turtlebot_groovy.rosinstall']"
+Marcus Liebhardt,2012-12-01,moves kobuki_node launch to kobuki_node,['_mobile_base.launch']
+Marcus Liebhardt,2012-12-01,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Marcus Liebhardt,2012-12-01,"removes yujin_ocl, dependecy has been moved to kobuki",['stack.xml']
+Daniel Stonier,2012-12-01,fix sudo apt-get comments.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-12-01,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-12-01,using deb'd rqt now.,['turtlebot_groovy.rosinstall']
+Daniel Stonier,2012-12-01,"update rosinstallers, only groovy now. Also rename turtlebot_create back to create.","['turtlebot.rosinstall,turtlebot_fuerte.rosinstall,turtlebot_fuerte_unstable.rosinstall']"
+Daniel Stonier,2012-12-02,"moved turtlebot_node out to create, laptop stuff to turtlebot_netbook.","['turtlebot.rosinstall,_mobile_base.launch,_mobile_base.launch,_robot.launch,_mobile_base.launch,minimal.launch,CMakeLists.txt,Makefile,ROS_NOBUILD,mainpage.dox,manifest.xml,LaptopChargeStatus.msg,laptop_battery.py,.cproject,.gitignore,.project,.pydevproject,CMakeLists.txt,.gitignore,TurtleBot.cfg,manifest.xml,BatteryState.msg,Drive.msg,RawTurtlebotSensorState.msg,RoombaSensorState.msg,Turtle.msg,TurtlebotSensorState.msg,minimal_launcher.py,turtlebot_node.py,rosdoc.yaml,kinect_breaker_enabler.py,covariances.py,create_sensor_handler.py,diagnostics.py,gyro.py,robot_types.py,roomba_sensor_handler.py,songs.py,SetDigitalOutputs.srv,SetTurtlebotMode.srv']"
+Daniel Stonier,2012-12-02,launcher for netbook bugfixed.,"['_netbook.launch,.cproject,.project']"
+Daniel Stonier,2012-12-02,bugfixes for laptop_battery python imports.,"['.project,laptop_battery.py']"
+Marcus Liebhardt,2012-12-02,"Update turtlebot.rosinstall
+
+removes kobuki_controllers (now inside kobuki)
+renames yujin's open control library -> system",['turtlebot.rosinstall']
+Marcus Liebhardt,2012-12-02,"Update turtlebot.rosinstall
+
+corrects misspelling",['turtlebot.rosinstall']
+Marcus Liebhardt,2012-12-02,"Update stack.xml
+
+adds kobuki stack",['stack.xml']
+Daniel Stonier,2012-12-02,mobile base configuration for create.,['_mobile_base.launch']
+Daniel Stonier,2012-12-02,mobile base configuration for kobuki.,['_mobile_base.launch']
+Daniel Stonier,2012-12-02,remove old robotworld launcher.,['roboworld.launch']
+Daniel Stonier,2012-12-02,base configuration for kobuki.,['base.yaml']
+Daniel Stonier,2012-12-02,gitignores and project file.,"['.gitignore,.pydevproject']"
+Daniel Stonier,2012-12-02,"remove web dependencies to turtlebot_web, closes #28.","['minimal_web.launch,manifest.xml']"
+Daniel Stonier,2012-12-02,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-12-02,"added turtlebot_web to the rosinstall, removeed duplicate turtlebot_apps, #28.",['turtlebot.rosinstall']
+Jorge Santos,2012-12-02,Added two missing dependencies,['manifest.xml']
+Jorge Santos,2012-12-02,Two deps renamed from turtlebot to create,['manifest.xml']
+Daniel Stonier,2012-12-02,"app reorganisation, closes #29","['android_make_a_map.app,android_make_a_map.launch,android_map_nav.app,android_map_nav.launch,android_teleop.app,android_teleop.interface,android_teleop.launch,logitech_teleop.app,ps3_teleop.app,ps3_teleop.interface,ps3_teleop_app.launch,keyboard-arrows.png,turtlebot_teleop.html']"
+Daniel Stonier,2012-12-02,"pointcloud_to_laserscan moved to turtlebot_apps, #35.","['.gitignore,CMakeLists.txt,Makefile,.gitignore,CloudScan.cfg,mainpage.dox,manifest.xml,nodelets.xml,cloud_throttle.cpp,cloud_to_scan.cpp,manifest.xml']"
+Daniel Stonier,2012-12-02,add broken jenkins ecl to the rosinstaller for now.,['turtlebot.rosinstall']
+Jorge Santos,2012-12-02,Merge branch 'master' of https://github.com/turtlebot/turtlebot.git,['']
+Daniel Stonier,2012-12-02,redirect apps to the core apps location.,['turtlebot_apps.installed']
+Daniel Stonier,2012-12-02,modularise fake laser.,"['3dsensor.launch,_fake_laser.launch']"
+Daniel Stonier,2012-12-02,"build it, we need messages.",['ROS_NOBUILD']
+Daniel Stonier,2012-12-02,retarget pointcloud to laserscan.,"['.gitignore,android-lightning-turtlebot.png,map.jpg']"
+Daniel Stonier,2012-12-02,moved out kobuki base params to kobuki_node.,"['_mobile_base.launch,base.yaml']"
+Daniel Stonier,2012-12-02,"patched app manager brought in (temporary app manager only), closes #8","['.cproject,.gitignore,.project,.pydevproject,CMakeLists.txt,Makefile,manifest.xml,App.msg,AppInstallationState.msg,AppList.msg,AppStatus.msg,ClientApp.msg,ExchangeApp.msg,Icon.msg,KeyValue.msg,StatusCodes.msg,app_manager,appmaster,rosget,test_app.py,.gitignore,app.py,app_list.py,app_manager.py,exceptions.py,exchange.py,master_sync.py,GetAppDetails.srv,GetInstallationState.srv,InstallApp.srv,ListApps.srv,StartApp.srv,StopApp.srv,UninstallApp.srv,appA.app,apps1.installed,bad.installed,bad2.installed,empty.interface,test1.interface,test_app.py,test_app_list.py,_app_manager.launch,minimal.launch']"
+Daniel Stonier,2012-12-03,"remove dependency on app manager, #8.","['stack.xml,manifest.xml']"
+Daniel Stonier,2012-12-03,"remove dependency on pointcloud to laser scan in launchers - all now in turtlebot_apps, #35.","['3dsensor.launch,_fake_laser.launch']"
+Jorge Santos,2012-12-04,add turtlebot_app_manager as a dependancy.,['manifest.xml']
+Daniel Stonier,2012-12-05,"turtlebot app manager was broken - hash id's for the messages no longer conformed with the android apps...so now hacking, depend on android msgs, but patch app manager here.","['manifest.xml,app_manager,app_list.py,exchange.py,turtlebot_app_manager.py,_robot.launch']"
+Jorge Santos,2012-12-05,"Change nodelet manager name to kobuki, so it gets compatible with
+kobuki_node minimal.launch",['_mobile_base.launch']
+Jorge Santos,2012-12-05,Added package to install in the header,['turtlebot.rosinstall']
+Daniel Stonier,2012-12-05,remove ecl.,['turtlebot.rosinstall']
+Jorge Santos,2012-12-05,Remove desapeared package from header,['turtlebot.rosinstall']
+Jorge Santos,2012-12-05,Added missing package on header: ros-groovy-python_orocos_kdl,['turtlebot.rosinstall']
+Daniel Stonier,2012-12-05,version bump and stack dependency check.,"['CMakeLists.txt,stack.xml']"
+Marcus Liebhardt,2012-12-06,respawn=true in launch files is EVIL!,['3dsensor.launch']
+Jorge Santos,2012-12-06,Bring back ros-groovy-image-transport-plugins; it has reapeared on repo,['turtlebot.rosinstall']
+Marcus Liebhardt,2012-12-06,now uses default values for camera and use_openni_launch,['3dsensor.launch']
+IHeartRobotics,2012-12-06,Fixed _ to -,['turtlebot.rosinstall']
+Jihoon,2012-12-08,adding ecl apt,['turtlebot.rosinstall']
+Jihoon,2012-12-08,updates,['']
+Jihoon,2012-12-08,adding ros-groovy-ros,['turtlebot.rosinstall']
+Marcus Liebhardt,2012-12-08,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Jihoon,2012-12-08,ecl dep,['turtlebot_old.rosinstall']
+Jihoon,2012-12-08,updates,"['turtlebot.rosinstall,turtlebot_old.rosinstall']"
+yujin,2012-12-08,remapping topic,['keyboard_teleop.launch']
+yujin,2012-12-08,rename turtlebot_netbook to linux_hardware,"['CMakeLists.txt,Makefile,mainpage.dox,manifest.xml,LaptopChargeStatus.msg,LaptopChargeStatus.h,generated,laptop_battery.py,_LaptopChargeStatus.py,_netbook.launch,manifest.xml,.cproject,.gitignore,.project,.pydevproject,mainpage.dox,manifest.xml']"
+Marcus Liebhardt,2012-12-08,Create README.md,['README.md']
+Marcus Liebhardt,2012-12-09,adds turtlebot logo,['README.md']
+Daniel Stonier,2012-12-10,Update turtlebot.rosinstall,['turtlebot.rosinstall']
+Marcus Liebhardt,2012-12-11,adds safe teleop launchers and parameters (refs #24),"['.cproject,joystick_safe_teleop.launch,safe_teleop.launch,manifest.xml,teleop_mux.yaml,teleop_smoother.yaml']"
+Marcus Liebhardt,2012-12-11,Merge branch 'master' of https://github.com/turtlebot/turtlebot_apps,['']
+Daniel Stonier,2012-12-11,shifted old deps from teleop to core apps.,['manifest.xml']
+Daniel Stonier,2012-12-11,merging conflicts,['']
+Chad Rockey,2012-12-10,Added lazy depthimage_to_laserscan to 3dsensor.launch,['3dsensor.launch']
+Daniel Stonier,2012-12-11,merged chad's change for lazy depth scanning.,['']
+yujin,2012-12-12,adds minor corrections,"['joystick_teleop.launch,safe_teleop.launch,teleop_smoother.yaml']"
+yujin,2012-12-12,Merge branch 'master' of https://github.com/turtlebot/turtlebot_apps,['']
+Marcus Liebhardt,2012-12-12,testing depthimage to laserscan,['3dsensor.launch']
+Marcus Liebhardt,2012-12-12,trying to merge,['']
+Marcus Liebhardt,2012-12-12,"restores accidentally removed 3dsensor.launch, also updates it",['3dsensor.launch']
+Marcus Liebhardt,2012-12-12,cleaning,"['LaptopChargeStatus.h,generated,_LaptopChargeStatus.py']"
+Jorge Santos,2012-12-13,Added auto_docking app,['turtlebot_apps.installed']
+Jorge Santos,2012-12-13,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Marcus Liebhardt,2012-12-14,adds velocity limit parameters to velocity smoother config,['teleop_smoother.yaml']
+Jorge Santos,2012-12-14,"Changed parameters names to reflect that velocity smoother is now diff
+drive exclusive",['teleop_smoother.yaml']
+Marcus Liebhardt,2012-12-14,updates stack.xml (to get it through the prerelease,['stack.xml']
+Marcus Liebhardt,2012-12-14,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Marcus Liebhardt,2012-12-14,removes obsolete joy dependency,['manifest.xml']
+Daniel Stonier,2012-12-15,"clean up manifest, put in correct dependencies.","['manifest.xml,laptop_battery.py']"
+Daniel Stonier,2012-12-15,diagnostics launcher moved to turtlebot_viz/turtlebot_diagnostics.,['diagnostics.launch']
+Daniel Stonier,2012-12-15,eclipse project files.,"['.cproject,.project,.pydevproject']"
+Daniel Stonier,2012-12-15,cleanup of dependencies.,"['stack.xml,turtlebot.rosinstall,manifest.xml,manifest.xml']"
+Daniel Stonier,2012-12-15,version bump.,['CMakeLists.txt']
+Daniel Stonier,2012-12-15,"hook the asus into the bottom_base_link, just like the kinect.","['mainpage.dox,readme.txt,kobuki_hexagons_asus_xtion_pro.urdf.xacro']"
+Daniel Stonier,2012-12-15,"moved view_model instructions to the launcher, less redundancy.",['readme.txt']
+yujin,2012-12-17,minimal launch for new app framework,['experimental_minimal.launch']
+yujin,2012-12-17,updae,['experimental_minimal.launch']
+Daniel Stonier,2012-12-21,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Daniel Stonier,2012-12-21,"moving base link back in sync with create convention, closes #44","['kobuki_hexagons_asus_xtion_pro.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro,hexagons.urdf.xacro']"
+Daniel Stonier,2012-12-22,big update of stack.xml dependencies.,['manifest.xml']
+Daniel Stonier,2012-12-22,dependency for depthimage_to_laserscan in the package manifest.,['manifest.xml']
+Daniel Stonier,2012-12-22,1.9.1,['CMakeLists.txt']
+corot,2012-12-23,Added ros-groovy-map-store to header,['turtlebot.rosinstall']
+Daniel Stonier,2012-12-26,updates for dynamic cmd_vel_mux.,"['CMakeLists.txt,safe_teleop.launch']"
+Daniel Stonier,2012-12-27,"create/kobuki teleops - keep things simple, just one teleop, default is
+safe teleop.","['.project,_safe_teleop.launch,joystick_safe_teleop.launch,joystick_teleop.launch,keyboard_teleop.launch,_safe_teleop.launch,ps3_teleop.launch,no_safety_controller,turtlebot_teleop_key']"
+Daniel Stonier,2012-12-27,eclipse pydev project file.,['.pydevproject']
+Daniel Stonier,2012-12-27,"disabling the safety controller for now, not as practical as I envisioned.",['_safe_teleop.launch']
+Daniel Stonier,2012-12-27,minor comments.,['turtlebot_app_manager.py']
+Daniel Stonier,2012-12-27,"rewind the multiple apps commit for app manager, it breaks stop app, fixes #47","['app_manager,app.py,turtlebot_app_manager.py']"
+IHeartRobotics,2012-12-28,"Update turtlebot.rosinstall
+
+Couldn't find yocs_controllers",['turtlebot.rosinstall']
+IHeartRobotics,2012-12-28,"Update turtlebot.rosinstall
+
+Missing ftdi.h, found in libftdi-dev",['turtlebot.rosinstall']
+Daniel Stonier,2012-12-28,now housing mjpeg_server in turtlebot_apps until a separate deb is rolled.,"['turtlebot.rosinstall,3dsensor.launch']"
+Daniel Stonier,2012-12-28,remaps fixed for keyboard_teleop.,"['keyboard_teleop.launch,_safe_teleop.launch,teleop_mux.yaml']"
+Daniel Stonier,2012-12-28,"created xbox360 teleop launcher, deleted generic joystick launcher - better to define them joystick by joystick I think, #32.","['joystick_teleop.launch,keyboard_teleop.launch,_safe_teleop.launch,xbox360_teleop.launch']"
+Daniel Stonier,2012-12-29,ps3/xbox360 teleop apps added.,['turtlebot_apps.installed']
+Daniel Stonier,2012-12-29,remove option screen from all minimal launchers (use --screen instead),"['_mobile_base.launch,_app_manager.launch,_robot.launch,_zeroconf.launch']"
+Daniel Stonier,2012-12-29,more meaningful node names for the nodelet loaders.,['3dsensor.launch']
+Daniel Stonier,2012-12-29,hide the kobuki and create launchers inside the includes foloder,"['_mobile_base.launch,_mobile_base.launch,_mobile_base.launch']"
+Daniel Stonier,2012-12-29,"added image processing to the 3d launcher, #32.",['3dsensor.launch']
+Daniel Stonier,2012-12-29,"remove optional full openni_launch now I know how to add processing units, #32",['3dsensor.launch']
+Daniel Stonier,2012-12-30,remove the kobuki prefix to diagnostics for android (was changed from mobile_base).,['diagnostics.yaml']
+Daniel Stonier,2012-12-30,saner acceleration.,['teleop_smoother.yaml']
+Daniel Stonier,2012-12-30,more sane timeout for teleop.,['teleop_mux.yaml']
+Daniel Stonier,2012-12-30,updated 3dsensor parameters (removed unused ones).,"['3dsensor.launch,3dsensor.yaml']"
+Daniel Stonier,2012-12-30,default params for the velocity smoother.,['smoother.yaml']
+Daniel Stonier,2012-12-30,centralised smoother parameters.,"['_safe_teleop.launch,mux.yaml,teleop_smoother.yaml']"
+Daniel Stonier,2012-12-30,Optionally loadable rgb processing module.,['3dsensor.launch']
+Daniel Stonier,2012-12-30,"allow apps to configure optional depth registration and depth
+processing.","['3dsensor.launch,3dsensor.yaml']"
+Daniel Stonier,2012-12-30,"slightly easier naming, added some comments and fixed ns for depthimage_to_laserscan.",['3dsensor.launch']
+Daniel Stonier,2012-12-30,eradicate unused argument locations.,['3dsensor.launch']
+Daniel Stonier,2012-12-30,centralised mux.,"['_mobile_base.launch,_mobile_base.launch,mux.yaml']"
+Daniel Stonier,2012-12-30,making use of a centralised mux.,"['_safe_teleop.launch,_velocity_smoother.launch,joystick_teleop.launch,keyboard_teleop.launch,_safe_teleop.launch,ps3_teleop.launch,turtlebot_teleop_key,turtlebot_joy.cpp']"
+Daniel Stonier,2012-12-31,"groovy navigation working, both on pc and on android.","['_velocity_smoother.launch,rumblepad2_teleop.launch']"
+Daniel Stonier,2012-12-31,minor fix to do odom_combined more conventionally.,['_mobile_base.launch']
+Daniel Stonier,2012-12-31,"removed all base specificity from turtlebot apps, #32.","['_velocity_smoother.launch,ps3_teleop.launch,rumblepad2_teleop.launch']"
+Daniel Stonier,2012-12-31,removed all base specificity from turtlebot app dependencies (common mobile base nodelet manager).,"['_mobile_base.launch,_mobile_base.launch,diagnostics.yaml']"
+Daniel Stonier,2013-01-01,namespace zeroconf.,['_zeroconf.launch']
+Daniel Stonier,2013-01-01,scan processing option.,['3dsensor.launch']
+Daniel Stonier,2013-01-01,bugfix last commit - missed a group closure tag.,['3dsensor.launch']
+Jorge Santos,2013-01-02,1.9.2,['CMakeLists.txt']
+Ze'ev Klapow,2013-01-03,Fix cmd_vel_mux settings.,"['_mobile_base.launch,mux.yaml']"
+Jihoon Lee,2013-01-04,update rosinstall file,['turtlebot.rosinstall']
+Daniel Stonier,2013-01-05,Remove mjpeg server (unused) and dynamixel (deb),['turtlebot.rosinstall']
+Daniel Stonier,2013-01-05,Update with yujin_ocs,['turtlebot.rosinstall']
+Daniel Stonier,2013-01-05,1.9.3,['CMakeLists.txt']
+Younghun Ju,2013-01-07,Updated missing system dependencies.,['turtlebot.rosinstall']
+Alex Bencz,2013-01-09,"Updated launch file used by upstart.
+
+Removed obsolete argument and fixed path for minimal.launch.",['turtlebot.launch']
+Daniel Stonier,2013-01-09,"Merge pull request #48 from abencz/master
+
+Fixed turtlebot.launch file used by upstart scripts",['']
+Luka Čehovin,2013-01-10,Created missing roomba files,"['_mobile_base.launch,diagnostics.yaml,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro']"
+Younghun Ju,2013-01-11,Update turtlebot.rosinstall,['turtlebot.rosinstall']
+Daniel Stonier,2013-01-13,comment/delete rosinstall sources we're not developing for right now (avoid confusion).,"['turtlebot.rosinstall,turtlebot_old.rosinstall']"
+Younghun Ju,2013-01-13,Added missing dependencies.,['turtlebot.rosinstall']
+Jorge Santos,2013-01-16,1.9.4,['CMakeLists.txt']
+Daniel Stonier,2013-01-16,"Merge pull request #50 from lukacu/master
+
+Roomba support",['']
+Jorge Santos,2013-01-18,"Related with Issue #20.
+Set scan_height to 10, to make is less noisy.
+I have also reduced range_min to 0.45 (the default)",['3dsensor.launch']
+Jorge Santos,2013-01-21,"Kobuki specific packages moved here from turtlebot_apps to keepthat
+stack base agnostic.","['_bumper2pc.launch,_safety_controller.launch,manifest.xml']"
+Jorge Santos,2013-01-21,Include bumper/cliff to pointcloud nodelet,['_mobile_base.launch']
+Marcus Liebhardt,2013-01-23,adds turtlebot_create_desktop to rosinstaller,['turtlebot.rosinstall']
+Marcus Liebhardt,2013-01-23,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+Younghun Ju,2013-01-24,Updated turtlebot.rosinstall.,['turtlebot.rosinstall']
+Younghun Ju,2013-01-24,Merge branch 'master' of https://github.com/turtlebot/turtlebot,['']
+corot,2013-01-31,yujin_ocs version changed to groovy_devel,['turtlebot.rosinstall']
+corot,2013-02-01,"Added missing package on header instructions
+
+ros-groovy-ecl-command-line",['turtlebot.rosinstall']
+corot,2013-02-01,"Default yujin_ocs version is groovy-devel
+
+not groovy_devel",['turtlebot.rosinstall']
+Jorge Santos,2013-02-01,Splitting rosinstall between catkinized and still rosinstall packages,['turtlebot_catkin.rosinstall']
+corot,2013-02-04,Progresively moving repositories to turtlebot_catkin.rosinstall,['turtlebot.rosinstall']
+corot,2013-02-04,Progresively moving repositories from turtlebot.rosinstall,['turtlebot_catkin.rosinstall']
+Marcus Liebhardt,2013-02-05,adds motor state to the diagnostics_agg topic,['diagnostics.yaml']
+Daniel Stonier,2013-02-06,some comments and renamed setup scripts to help the user.,"['setup_create.sh,setup_kobuki.sh,setup_t1.sh,setup_t2.sh']"
+Daniel Stonier,2013-02-06,this is no longer used.,['no_safety_controller']
+Daniel Stonier,2013-02-06,symlinking identical create/roomba diagnostics.,"['diagnostics.yaml,diagnostics.yaml']"
+Daniel Stonier,2013-02-06,"symbolic links for roomba to create xacros, #50","['roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,roomba_circles_kinect.urdf.xacro']"
+Younghun Ju,2013-02-07,turtlebot_bringup : Updated create's mobile base launcher for identical topics remappings with kobuki.,['_mobile_base.launch']
+Younghun Ju,2013-02-07,turtlebot_bringup : Udpated create's launcher to restore node name of create_node.,['_mobile_base.launch']
+Younghun Ju,2013-02-07,turtlebot_teleop : Updated xbox360 launcher.,['xbox360_teleop.launch']
+Daniel Stonier,2013-02-08,kobuki_description has its own stack now (catkin issues with xacro). Added stack dep.,['stack.xml']
+Daniel Stonier,2013-02-08,kobuki description added to the rosinstaller.,['turtlebot.rosinstall']
+Daniel Stonier,2013-02-08,Dependencies for the catkin install.,['turtlebot_catkin.rosinstall']
+Daniel Stonier,2013-02-08,Update turtlebot.rosinstall,['turtlebot.rosinstall']
+Daniel Stonier,2013-02-08,Updated comments pointing to the wiki.,['turtlebot.rosinstall']
+Daniel Stonier,2013-02-08,Using source paths with init instead,['turtlebot.rosinstall']
+Daniel Stonier,2013-02-08,Remove misleading comments,['turtlebot.rosinstall']
+Daniel Stonier,2013-02-08,Pointer to the installation instructions.,['turtlebot_catkin.rosinstall']
+Daniel Stonier,2013-02-13,bill recommends a generic logitech launcher.,['logitech.launch']
+Jihoon Lee,2013-02-13,now depth_registered/points provides xyzrgb pointcloud2,['3dsensor.launch']
+Daniel Stonier,2013-02-14,"Commenting the launcher for clarity, #55.",['3dsensor.launch']
+Daniel Stonier,2013-02-16,2.0.0,['CMakeLists.txt']
+Jihoon Lee,2013-03-04,preparation for hydro development,['Changelog']
+Jihoon Lee,2013-03-04,catkin linux_hardware,"['Makefile,CMakeLists.txt,manifest.xml,laptop_battery.py,turtlebot_catkin.rosinstall']"
+Jihoon Lee,2013-03-04,package.xml and setup.py,"['package.xml,setup.py']"
+Jihoon Lee,2013-03-04,turtlebot_description cakinization,"['CMakeLists.txt,Makefile,manifest.xml,package.xml']"
+Jihoon Lee,2013-03-04,turtlebot_description cakinization,['CMakeLists.txt']
+Jihoon Lee,2013-03-04,error fixes,['setup.py']
+Jihoon Lee,2013-03-04,adding message_runtime dependency,['package.xml']
+Jihoon Lee,2013-03-05,catkinize turtlebot_app_manger,"['CMakeLists.txt,manifest.xml,package.xml,setup.py']"
+Jihoon Lee,2013-03-05,catkinze turtlebot_bringup,"['CMakeLists.txt,Makefile,manifest.xml,package.xml,setup.py']"
+Jihoon Lee,2013-03-05,turtlebot meta package,['package.xml']
+Jihoon Lee,2013-03-05,removing stack.xml. warn that rosinstall file is invalid,"['stack.xml,turtlebot.rosinstall']"
+Jihoon Lee,2013-03-05,removing cmakelists,['CMakeLists.txt']
+Jihoon Lee,2013-03-05,update xacro location,['_robot.launch']
+Jihoon Lee,2013-03-05,removing global python module setting,"['setup.py,setup.py,setup.py,CMakeLists.txt']"
+Jihoon Lee,2013-03-05,linux_hardware script in lib,['CMakeLists.txt']
+Jihoon Lee,2013-03-05,cleanup linux_hardware,"['CMakeLists.txt,Makefile,setup.py']"
+Jihoon Lee,2013-03-05,updating rosinstall file,['turtlebot.rosinstall']
+Jihoon Lee,2013-03-05,Update turtlebot.rosinstall,['turtlebot.rosinstall']
+Jihoon Lee,2013-03-05,putting new app manager,"['_new_app_manager.launch,minimal.launch']"
+Jihoon Lee,2013-03-06,adding ros wiki link,['README.md']
+turtlebot,2013-03-15,Use more agresive acceleration limits,['smoother.yaml']
+Luka Čehovin,2013-03-18,Making laptop battery script work with the new /sys filesystem organization.,['laptop_battery.py']
+Luka Čehovin,2013-03-18,Fixing roomba mobile base launch file,['_mobile_base.launch']
+Jihoon Lee,2013-03-29,adding cmakelist for meta package,['CMakeLists.txt']
+Jihoon Lee,2013-03-29,updating place of xacro,['_robot.launch']
+Jihoon Lee,2013-03-29,updating mesh and urdf from master branch,"['kinect.dae,kinect.jpg,3f_stack.jpg,3f_stack1.jpg,kinect_pole_old.jpg,plate_bottom.dae,plate_middle.dae,plate_top.dae,pole_bottom.dae,pole_kinect.dae,pole_middle.dae,pole_top.dae,asus_xtion_pro.urdf.xacro,kinect.urdf.xacro,hexagons.urdf.xacro,turtlebot_gazebo.urdf.xacro,turtlebot_library.urdf.xacro,turtlebot_properties.urdf.xacro']"
+Marcus Liebhardt,2013-04-02,"fixes broken turtlebot 1 visualisation
+* removes scaling
+* corrects unit in collada mesh
+* adds eclipse project files","['.cproject,68-02403-125_Spacer.dae,68-02421-8000-RA_Turtlebot_F-F_Standoff.dae,68-04552-1000-RA_Turtlebot_M-F_Standoff.dae,68-04552-2000-RA_Turtlebot_M-F_Standoff.dae,68-04556-RA_Kinect_Standoff_Assy.dae,plate_0_logo.dae,plate_1_logo.dae,plate_2_logo.dae,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,roomba_circles_kinect.urdf.xacro,circles.urdf.xacro']"
+Jihoon Lee,2013-04-04,soft turtlebot is added,"['_mobile_base_soft.launch,minimal_soft.launch']"
+Jihoon Lee,2013-04-04,Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot into hydro-devel,['']
+Jorge Santos,2013-04-04,Bumper2pc on hydro reads sensors/core instead of events,['_bumper2pc.launch']
+Jihoon Lee,2013-04-10,adding buildtool depend for meta pkg,['package.xml']
+Jihoon Lee,2013-04-10,Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot into hydro-devel,['']
+Jihoon Lee,2013-04-10,typo,['package.xml']
+Jihoon,2013-04-28,paried app manager ready,"['_new_app_manager.launch,minimal.launch,start.concert,turtlebot-start-new']"
+Jihoon,2013-04-28,"now appmanager takes env setup for robot name type and app list
+Still need to figure out how to setup default app list tho.","['setup_create.sh,setup_kobuki.sh,_app_manager.launch,_new_app_manager.launch,minimal.launch']"
+Jihoon,2013-04-28,bash file for appmanager setting,"['appmanager.sh,setup_create.sh,setup_kobuki.sh,_app_manager.launch']"
+Jihoon Lee,2013-04-29,appmanager receives args from minimal,"['appmanager.sh,_app_manager.launch,minimal.launch']"
+Jihoon Lee,2013-04-29,app list to rapp list,"['_app_manager.launch,minimal.launch']"
+Jihoon Lee,2013-04-30,preparation for catkinization,"['.cproject,.gitignore,.project,.pydevproject,CMakeLists.txt,Makefile,_velocity_smoother.launch,keyboard_teleop.launch,logitech.launch,ps3_teleop.launch,xbox360_teleop.launch,mainpage.dox,manifest.xml,mux.yaml,turtlebot_teleop_key,turtlebot_joy.cpp,turtlebot_key.cpp']"
+Jihoon Lee,2013-04-30,turtlebot_teleop ready,"['.cproject,.gitignore,.project,.pydevproject,CMakeLists.txt,CMakeLists.txt.old,Makefile,_velocity_smoother.launch,keyboard_teleop.launch,logitech.launch,ps3_teleop.launch,xbox360_teleop.launch,mainpage.dox,manifest.xml.old,package.xml,mux.yaml,turtlebot_teleop_key,turtlebot_joy.cpp,turtlebot_key.cpp']"
+turtlebot,2013-05-01,typo,"['_app_manager.launch,minimal.launch']"
+turtlebot,2013-05-01,typoo,['minimal.launch']
+turtlebot,2013-05-02,3dsensor,['3dsensor.launch']
+Jorge Santos,2013-05-20,"Issue #67: On hydro, xacro.py script is not under script directory anymore",['_robot.launch']
+Marcus Liebhardt,2013-06-24,turtlebot_description: adds updates to xacros and urdfs for Gazebo simulation,"['create_circles_asus_xtion_pro.urdf.xacro,create_circles_kinect.urdf.xacro,kobuki_hexagons_asus_xtion_pro.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,roomba_circles_kinect.urdf.xacro,gazebo.urdf.xacro,asus_xtion_pro.urdf.xacro,kinect.urdf.xacro,hexagons.urdf.xacro,turtlebot_gazebo.urdf.xacro,turtlebot_library.urdf.xacro']"
+Marcus Liebhardt,2013-06-24,turtlebot_description: fixes readme,['README.md']
+Marcus Liebhardt,2013-06-24,turtlebot_description: removes old readme,['readme.txt']
+Marcus Liebhardt,2013-06-24,"turtlebot_description: adds roomba xacros (same as create, since now
+roomba mesh is available)","['roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,roomba_circles_kinect.urdf.xacro']"
+Jihoon Lee,2013-06-28,arg should use default,['3dsensor.launch']
+Jorge Santos,2013-06-28,Change rapp_list to contain a simple relative path. Also add _private to paired.launch,"['_app_manager.launch,minimal.launch']"
+Daniel Stonier,2013-06-27,"Merge pull request #72 from turtlebot/launch_correcting
+
+arg should use default",['']
+Jorge Santos,2013-07-11,"Removed obsolet turtlebot_app_manager, as on Hydro we use rocon_app_manager","['package.xml,.cproject,.gitignore,.project,.pydevproject,CMakeLists.txt,Makefile,App.msg,AppInstallationState.msg,AppList.msg,AppStatus.msg,ClientApp.msg,ExchangeApp.msg,Icon.msg,KeyValue.msg,StatusCodes.msg,package.xml,app_manager,appmaster,rosget,test_app.py,setup.py,.gitignore,app.py,app_list.py,exceptions.py,exchange.py,master_sync.py,turtlebot_app_manager.py,GetAppDetails.srv,GetInstallationState.srv,InstallApp.srv,ListApps.srv,StartApp.srv,StopApp.srv,UninstallApp.srv,appA.app,apps1.installed,bad.installed,bad2.installed,empty.interface,test1.interface,test_app.py,test_app_list.py,package.xml,diagnostics.yaml,diagnostics.yaml']"
+Jorge Santos,2013-07-11,Remove pre-catkin fossils,"['mainpage.dox,mainpage.dox']"
+Jorge Santos,2013-07-11,Remove Jihoon softness,['minimal_soft.launch']
+Jorge Santos,2013-07-11,Add rocon_app_manager dependency (replacing turtlebot_app_manager one),['package.xml']
+Jorge Santos,2013-07-12,2.1.0,"['package.xml,package.xml,package.xml,package.xml']"
+Jorge Santos,2013-07-12,Unexsistent include dir removed from package description,['CMakeLists.txt']
+Jorge Santos,2013-07-12,Added missing python configuration,"['CMakeLists.txt,setup.py']"
+Jorge Santos,2013-07-12,generate_messages() must be called after catkin_python_setup(),['CMakeLists.txt']
+Jorge Santos,2013-07-12,Catikinized (but not tested),['CMakeLists.txt']
+Jorge Santos,2013-07-12,Added missing puthon configuration scripts,['setup.py']
+Jorge Santos,2013-07-12,Irrelevant,"['Makefile,mainpage.dox,manifest.xml.old,package.xml']"
+Jorge Santos,2013-07-12,"As its not a pythond module, I don't need all this","['CMakeLists.txt,setup.py']"
+Jorge Santos,2013-07-15,"As its not a pythond module, I don't need all this","['CMakeLists.txt,setup.py']"
+Jorge Santos,2013-07-16,Install fixes,['CMakeLists.txt']
+corot,2013-07-17,Updated for hydro-devel; no anymore divided between catkin/rosinstall,['turtlebot.rosinstall']
+Jorge Santos,2013-07-17,"Not a python module.
+Additional cleanup","['CMakeLists.txt,package.xml,setup.py']"
+Jorge Santos,2013-07-18,Issue #73: Migrate changelog from ros wiki to this repo,['CHANGELOG.rst']
+corot,2013-07-18,Why he doesn't like markup links????,['CHANGELOG.rst']
+Jihoon Lee,2013-07-19,adding missing run dependency,['package.xml']
+corot,2013-07-19,"Merge pull request #74 from turtlebot/new_appmanager
+
+adding missing run dependency",['']
+Jihoon Lee,2013-07-19,migration,['app_manager.launch']
+Jihoon Lee,2013-07-19,app manager sort of ready,"['app_manager.launch,_app_manager.launch,minimal.launch,minimal_with_appmanager.launch,start.concert,bringup.concert']"
+Jihoon Lee,2013-07-19,relocate bringup,['bringup.concert']
+Jihoon Lee,2013-07-19,new appmanager is ready,"['CMakeLists.txt,minimal_with_appmanager.launch,bringup.concert']"
+Jihoon Lee,2013-07-19,adding turtlebot icons,"['CMakeLists.txt,turtlebot2.png,minimal_with_appmanager.launch']"
+Jihoon Lee,2013-07-19,minimal_with_appmanager includes minimal.launch,['minimal_with_appmanager.launch']
+corot,2013-07-19,"Merge pull request #75 from turtlebot/new_appmanager
+
+New appmanager infrastructure",['']
+Marcus Liebhardt,2013-07-22,adds missing run dependency on create_description,['package.xml']
+Marcus Liebhardt,2013-07-22,removes forgotten create meshes (now in create_description),"['create_body.dae,create_body.tga']"
+Marcus Liebhardt,2013-07-22,removes graveyard folders (fixes #76),"['turtlebot.urdf.xacro,turtlebot2_kinect.urdf.xacro,turtlebot2_xtion.urdf.xacro,turtlebot_xtion_pro.urdf.xacro,asus_xtion_pro.urdf.xacro,turtlebot.urdf.xacro,turtlebot_body.urdf.xacro,turtlebot_calibration.xacro,turtlebot_hardware.urdf.xacro,turtlebot_kinect.urdf.xacro,xtion_turtlebot2.urdf.xacro']"
+corot,2013-07-21,"Merge pull request #77 from bit-pirate/hydro-devel
+
+cleans up turtlebot_description and adds a missing dependency",['']
+Jorge Santos,2013-07-22,Add robot_feedback parameter with default value (just informative),['smoother.yaml']
+Jihoon Lee,2013-07-22,replacing turtlebot2 icon,['turtlebot2.png']
+Marcus Liebhardt,2013-07-21,"Merge pull request #78 from turtlebot/new_appmanager
+
+replacing turtlebot2 icon",['']
+Jorge Santos,2013-07-22,Set robot_feedback as 2: end robot commands,['smoother.yaml']
+Jorge Santos,2013-07-22,2.1.1,"['package.xml,package.xml,package.xml,package.xml']"
+Jorge Santos,2013-07-22,Add missing dependency: depth_image_proc. It's required when 3dsensor is launched with depth_processing set to true,['package.xml']
+Jorge Santos,2013-07-22,Add missing dependency: depth_image_proc. It's required when 3dsensor is launched with depth_processing set to true,['package.xml']
+Jorge Santos,2013-07-22,"Add safety controller to navigation demos.
+Rationalize the use of velocity smoother: remap properly robot_cmd_vel, add comments, and avoid meaningless topic names""","['_velocity_smoother.launch,logitech.launch,ps3_teleop.launch,xbox360_teleop.launch']"
+Jorge Santos,2013-07-22,Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot into hydro-devel,['']
+Jorge Santos,2013-07-22,2.1.1,['package.xml']
+Jihoon Lee,2013-07-23,now private master is 11312,['bringup.concert']
+Jihoon Lee,2013-07-23,public master for android app,['paired_public.launch']
+Marcus Liebhardt,2013-07-22,"Merge pull request #79 from turtlebot/updates
+
+swap the port of public and private masters.",['']
+Jorge Santos,2013-07-23,Fix on rapp_lists construction; missplaced bracket,['minimal_with_appmanager.launch']
+Jorge Santos,2013-07-23,"Use the new app manager app list format. Remove turtlebot_sounds, as it's already included on rocon apps","['turtlebot.rapps,turtlebot_apps.installed']"
+Jihoon Lee,2013-07-26,maximize use of openni_launch,['3dsensor.launch']
+yujin,2013-07-26,correcting errors,"['3dsensor.launch,minimal_with_appmanager.launch']"
+Jihoon Lee,2013-08-01,"Merge pull request #83 from turtlebot/3dsensor_test
+
+maximize use of openni_launch",['']
+Marcus Liebhardt,2013-08-05,turtlebot_teleop: adds absolute namespaces (#47) and renames include launcher,"['_velocity_smoother.launch,velocity_smoother.launch.xml,logitech.launch,ps3_teleop.launch,xbox360_teleop.launch']"
+Marcus Liebhardt,2013-08-06,"turtlebot_bringup: adds map manager rapp and some rapp-related namespace
+changes to 3dsensor.launch","['turtlebot.rapps,3dsensor.launch,_mobile_base.launch']"
+Marcus Liebhardt,2013-08-06,turtlebot_bringup: fixes TurtleBot name,['minimal_with_appmanager.launch']
+Marcus Liebhardt,2013-08-05,"Merge pull request #86 from bit-pirate/hydro-devel
+
+(R)App-related and minor changes",['']
+Marcus Liebhardt,2013-08-07,turtlebot_description: updates Kinect Gazebo simulation parameters,['turtlebot_gazebo.urdf.xacro']
+Marcus Liebhardt,2013-08-06,"Merge pull request #87 from bit-pirate/hydro-devel
+
+turtlebot_description: updates Kinect Gazebo simulation parameters",['']
+Daniel Stonier,2013-08-08,add missing include_directories to the teleop build.,['CMakeLists.txt']
+Daniel Stonier,2013-08-12,update dependency to openni_launch and remove component dependencies.,['package.xml']
+Daniel Stonier,2013-08-12,Temporarily adding map_store till it's fixed.,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-13,"properly depend on the abstraction, turtlebot_description rather than the specific instances kobuki, create.",['package.xml']
+Daniel Stonier,2013-08-13,Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot into hydro-devel,['']
+corot,2013-08-13,Add our navigation fork to the temporary hack,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-13,Use our updated fork for map_store,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-14,Don't need our navigation and map_store forks any longer.,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-14,"Issue #88: put depthimage_to_laserscan on camera ns.
+This doesn't fix the problem, really, but makes it explicit.
+To fix (temporally, until we really understand the problem) we must get
+an absolute topic name for scan","['turtlebot.rosinstall,3dsensor.launch']"
+Jorge Santos,2013-08-14,"Issue #82: resolve namespace conflict. Now it can resolve multiple
+robots environment problem","['_mobile_base.launch,mux.yaml']"
+Jorge Santos,2013-08-14,Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot into hydro-devel,['']
+Jorge Santos,2013-08-14,Add missing eclipse project,"['.cproject,.project']"
+Jorge Santos,2013-08-16,"Issue #88: after a fix on app manager, we cannot use the $(arg camera)
+ns. We replace it with a second remap:
+
+* remap from scan works when started with app manager (has app ns)
+* remap from $(arg camera)/scan works when started with roslaunch (no
+ns)",['3dsensor.launch']
+Jorge Santos,2013-08-16,"Issue #88: private topic image also goes below $(arg camera) ns, and so
+needs its own soddy fix.",['3dsensor.launch']
+Jorge Santos,2013-08-16,"Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot.git into hydro-devel
+
+Conflicts:
+	turtlebot_bringup/launch/3dsensor.launch",['']
+Daniel Stonier,2013-08-20,Fixed map store released.,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-20,Adding turtlebot_msgs,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-20,bugfix bad char in the rosinstall.,['turtlebot.rosinstall']
+Daniel Stonier,2013-08-20,bugfix turtlebot_msgs location.,['turtlebot.rosinstall']
+Jorge Santos,2013-08-21,"Do not use robot_pose_ekf for kobuki base: https://github.com/yujinrobot/yujin_ocs/issues/7. Instead, use imu for heading and encoders por x and y. However, kobuki_node parameter use_imu_heading makes trivial to switch back to the previous system.",['_mobile_base.launch']
+Jorge Santos,2013-08-21,Issue #92: _mobile_base_soft.launch is a legacy of kobuki_softnode experiments,['_mobile_base_soft.launch']
+Jorge Santos,2013-08-21,Issue #91: Changelogs at package level,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jorge Santos,2013-08-21,Outdated and useless,['CMakeLists.txt.old']
+Jorge Santos,2013-08-21,https://github.com/turtlebot/turtlebot/issues/91: Changelogs at package level,['CHANGELOG.rst']
+Jorge Santos,2013-08-21,Issue #93: copied on wiki changelog,['Changelog']
+Jorge Santos,2013-08-21,Fix URL to the previous changelog wiki,['CHANGELOG.rst']
+Marcus Liebhardt,2013-08-22,renames include launchers to *.launch.xml (refs #84),"['mobile_base.launch.xml,bumper2pc.launch.xml,mobile_base.launch.xml,safety_controller.launch.xml,mobile_base.launch.xml,netbook.launch.xml,robot.launch.xml,mobile_base.launch.xml,zeroconf.launch.xml']"
+Marcus Liebhardt,2013-08-22,adds fixes for include launcher renamings (refs #84),"['mobile_base.launch.xml,mobile_base.launch.xml,minimal.launch']"
+Marcus Liebhardt,2013-08-22,"Merge pull request #95 from bit-pirate/hydro-devel
+
+Rename roslauncher includes to .launch.xml",['']
+Jorge Santos,2013-08-24,"Required by issue #14: CLip camera view farer, more closely replicating
+real kinect.",['turtlebot_gazebo.urdf.xacro']
+Jorge Santos,2013-08-24,Issue #60: Add bugtracker and repo info to package.xml,['package.xml']
+Jorge Santos,2013-08-24,Add bugtracker and repo info to package.xml,['package.xml']
+Marcus Liebhardt,2013-08-26,turtlebot_bringup: removes outdated upstart directory (closes #94),"['52-turtlebot.rules,README,install.bash,ps3joy.conf,turtlebot-boot.conf,turtlebot-start,turtlebot-start-new,turtlebot-stop,turtlebot.conf,turtlebot.launch']"
+Daniel Stonier,2013-08-26,modularising robot description to use with paired masters.,"['description.launch.xml,robot.launch.xml']"
+Daniel Stonier,2013-08-26,robot description in paired master.,['paired_public.launch']
+Marcus Liebhardt,2013-08-29,"turtlebot_description: changes hexagon stack plates collision models to
+cylinders",['hexagons.urdf.xacro']
+Marcus Liebhardt,2013-08-29,turtlebot_description: fixes kinect's collision model misplacement,['kinect.urdf.xacro']
+Daniel Stonier,2013-08-29,Merge branch 'hydro-devel' of https://github.com/turtlebot/turtlebot into hydro-devel,['']
+Daniel Stonier,2013-08-29,"convenient paired launchers (no uuids, autoinvitations), refs #96","['minimal_with_appmanager.launch,paired_public.launch']"
+Jorge Santos,2013-08-29,Updated for 2.2.0,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Daniel Stonier,2013-08-29,Adding kobuki_core,['turtlebot.rosinstall']
+Jorge Santos,2013-08-30,2.2.0,"['package.xml,package.xml,package.xml,package.xml']"
+Jorge Santos,2013-08-30,Changelogs updated for release 2.2.0,['CHANGELOG.rst']
+Jorge Santos,2013-08-30,2.2.0,['package.xml']
+corot,2013-08-30,Don't need navigation sources anymore,['turtlebot.rosinstall']
+Jorge Santos,2013-08-31,Issue #97: Remove install rule for non-existing directory upstart,['CMakeLists.txt']
+Dirk Thomas,2013-09-13,prefix test target to not collide with other targets,['CMakeLists.txt']
+Tully Foote,2013-09-13,"Merge pull request #99 from dirk-thomas/hydro-devel
+
+prefix test target to not collide with other targets",['']
+Daniel Stonier,2013-09-14,changelog update,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Daniel Stonier,2013-09-14,2.2.1,"['package.xml,package.xml,package.xml,package.xml']"
+Jorge Santos,2013-09-23,2.2.1,"['CHANGELOG.rst,package.xml']"
+Jorge Santos,2013-09-26,2.2.2,"['CHANGELOG.rst,package.xml']"
+Jorge Santos,2013-09-27,2.2.3,"['CHANGELOG.rst,package.xml']"
+Jorge Santos,2013-10-11,Remove unnecesary dependency on cmd_vel_mux package,['package.xml']
+Daniel Stonier,2013-10-11,"temporary fix for hub whitelists so pairing doesn't get distracted by concerts.
+
+Temporary fix for hub whitelists so pairing doesn't get distracted by concerts",['minimal_with_appmanager.launch']
+Jorge Santos,2013-10-11,Issue https://github.com/yujinrobot/yujin_ocs/issues/19: rename cmd_vel_mux as yocs_cmd_vel_mux.,"['mobile_base.launch.xml,mobile_base.launch.xml,mobile_base.launch.xml']"
+Jihoon Lee,2013-10-14,fixing typo. single quotes caused error,['minimal_with_appmanager.launch']
+Jorge Santos,2013-10-14,2.2.2,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jorge Santos,2013-10-14,2.2.4,"['CHANGELOG.rst,package.xml']"
+Erkan,2013-10-22,fix renamed files for Ubuntu 12.04.3 LTS - Kernel 3.8,['laptop_battery.py']
+corot,2013-10-28,"Merge pull request #104 from rk4an/patch-1
+
+fix renamed files for battery info on Ubuntu 12.04.3 LTS - Kernel 3.8",['']
+Jorge Santos,2013-11-02,"Issue #102: Battery info fixed for new laptops. Also I have changed the default path where to look for the BAT0 files, as the current one was deprecated long time ago","['laptop_battery.py,minimal.launch,minimal_with_appmanager.launch']"
+corot,2013-11-05,"Add yocs_msgs repository, stripped from yujin_ocs",['turtlebot.rosinstall']
+wheeled_robin,2013-11-06,"Added serial port as parameter to launch files
+	modified:   create/mobile_base.launch.xml
+	modified:   kobuki/mobile_base.launch.xml
+	modified:   mobile_base.launch.xml
+	modified:   roomba/mobile_base.launch.xml
+	modified:   ../minimal.launch
+
+Committer: mayrjohannes <joh.mayr@jku.at>
+Author: mayrjohannes <joh.mayr@jku.at>","['mobile_base.launch.xml,mobile_base.launch.xml,mobile_base.launch.xml,mobile_base.launch.xml,minimal.launch']"
+corot,2013-11-06,Issue #113: add missing dependency on yocs_cmd_vel_mux,['package.xml']
+Yujin,2013-11-10,adding name for rapp list,['turtlebot.rapps']
+Marcus Liebhardt,2013-11-10,turtlebot_bringup: adds capabilities (server + default provider configs),"['app_manager_with_capabilities.launch,capabilities.launch.xml,capability_providers.yaml,capability_providers.yaml,capability_providers.yaml,capability_providers.yaml,capability_providers.yaml,capability_providers.yaml']"
+Marcus Liebhardt,2013-11-11,adds rosinstaller for experimental capabilities integration,['turtlebot_capabilities.rosinstall']
+Marcus Liebhardt,2013-11-11,adds updates for turtlebot_capabilities rosinstaller,['turtlebot_capabilities.rosinstall']
+MartinPeris,2013-11-11,"Initialize deadman_pressed_ to false
+
+Initalize deadman_pressed_ to false in order to avoid the effect described in https://github.com/turtlebot/turtlebot_apps/issues/71",['turtlebot_joy.cpp']
+Daniel Stonier,2013-11-13,"Merge pull request #116 from turtlebot/rapplist_fix
+
+adding name for rapp list",['']
+Daniel Stonier,2013-11-24,Trivial comment spelling fix rhoomba -> roomba,['minimal.launch']
+Marcus Liebhardt,2013-12-03,Merge branch 'hydro-devel' into capabilities_integration,['']
+Marcus Liebhardt,2013-12-10,adds turtlebot_capabilities package and related changes,"['package.xml,capabilities.launch.xml,capability_providers.yaml,capability_providers.yaml,capability_providers.yaml,.cproject,.project,CMakeLists.txt,TurtleBotBringup.yaml,package.xml,depthimage_to_laserscan.yaml,diagnostics.yaml,kinect_rgbd_sensor.yaml,depthimage_to_laserscan.launch,diagnostics.launch,kinect_rgbd_sensor.launch,placeholder.py,robot_state_publisher.launch,tb_bringup.launch,xtion_rgbd_sensor.launch,robot_state_publisher.yaml,tb_bringup.yaml,xtion_rgbd_sensor.yaml']"
+Marcus Liebhardt,2013-12-10,updates capabilities-specific rosinstaller,"['capabilities.launch.xml,turtlebot_capabilities.rosinstall']"
+Daniel Stonier,2013-12-09,"Merge pull request #121 from turtlebot/capabilities_integration
+
+Adds capabilities support",['']
+Martí Morta,2014-01-20,cmd_vel to 0 when deadman button is released,['turtlebot_joy.cpp']
+Martí Morta,2014-01-23,When deadman is not pressed publish once a zero twist to make the robot stop. Publisher is now latched as commented in https://github.com/turtlebot/turtlebot_apps/pull/75#issuecomment-33087125,['turtlebot_joy.cpp']
+Luka Čehovin,2014-03-03,"Fixing ""Error with diagnostics.yaml for roomba #110""",['diagnostics.yaml']
+Jihoon Lee,2014-03-03,"Merge pull request #114 from mayrjohannes/hydro-devel
+
+Added serial port as parameter to launch files (Issue https://github.com/turtlebot/turtlebot/issues/111)",['']
+Jihoon Lee,2014-03-03,patches to keep the consistency of arguments #114,"['mobile_base.launch.xml,minimal.launch']"
+Jihoon Lee,2014-03-18,rapp exporting for new rocon_app_manager,['minimal_with_appmanager.launch']
+Jihoon Lee,2014-03-18,compatible with new app manager,"['turtlebot.rapps,app_manager_with_capabilities.launch,minimal_with_appmanager.launch']"
+Jihoon Lee,2014-03-18,update rosinstall,['turtlebot.rosinstall']
+Jihoon Lee,2014-03-19,use rocon app platform rosinstall instead of full installation of rocon,['turtlebot.rosinstall']
+Marcus Liebhardt,2014-03-19,Update turtlebot.rosinstall,['turtlebot.rosinstall']
+Marcus Liebhardt,2014-03-19,"Merge pull request #127 from turtlebot/rapp_fix
+
+Rapp fix",['']
+Jihoon Lee,2014-03-26,add blacklist argument,['minimal_with_appmanager.launch']
+Marcus Liebhardt,2014-04-01,"Merge pull request #129 from turtlebot/blacklist_arg
+
+add blacklist argument",['']
+Jihoon Lee,2014-04-03,add depth argument to configure scan_processing. With this configuration scan works for both depth_regratation false and true,['3dsensor.launch']
+Adam Lee,2014-04-18,"Check if unit-testing is enabled
+
+CATKIN_ENABLE_TESTING is a late addtion to catkin. This updates the
+package to comply with the strict checking rule.",['CMakeLists.txt']
+Kenneth Bogert,2014-04-22,Load calibration on turtlebot bringup,['mobile_base.launch.xml']
+Kenneth Bogert,2014-04-22,"Remap cmd_vel for the calibration script
+
+It needs to match the turtlebot node in order to monitor for changes",['mobile_base.launch.xml']
+Jihoon Lee,2014-05-22,removing unsed source turtlebot_key.cpp,['turtlebot_key.cpp']
+Daniel Stonier,2014-06-01,refactor turtlebot_core_apps -> turtlebot_rapps,"['3dsensor.launch,app_manager_with_capabilities.launch,minimal_with_appmanager.launch']"
+Daniel Stonier,2014-06-01,update publisher queue_size to avoid warning in indigo,['laptop_battery.py']
+Daniel Stonier,2014-06-01,"move messages to turtlebot_mgs, #122","['CMakeLists.txt,LaptopChargeStatus.msg,package.xml,laptop_battery.py']"
+Daniel Stonier,2014-06-01,update publisher queue_size to avoid warning in indigo,['turtlebot_teleop_key']
+Daniel Stonier,2014-06-10,"better exception handling and logging messages when battery info not
+found.",['laptop_battery.py']
+Daniel Stonier,2014-06-10,better acceleration defaults after experimental observations.,['smoother.yaml']
+kentsommer,2014-06-19,"Added interactions to Turtlebot on indigo, collapsed minimal_with_appmanager into just minimal","['admin.interactions,documentation.interactions,pairing.interactions,minimal.launch,minimal_with_appmanager.launch']"
+kentsommer,2014-06-20,Added more interactions,"['admin.interactions,documentation.interactions,pairing.interactions']"
+kentsommer,2014-06-24,Bugfix changes - small,"['pairing.interactions,minimal.launch']"
+kentsommer,2014-06-24,Fix mapping for Qt teleop,['pairing.interactions']
+kentsommer,2014-06-25,Enable capabilities server for turtlebot on indigo,"['pairing.interactions,minimal.launch,defaults_tb2.yaml,.project,.pydevproject,package.xml,differential_mobile_base.yaml,rgbd_sensor.launch,turtlebot2_bringup.launch,turtlebot_bringup.launch,xtion_rgbd_sensor.launch,rgbd_sensor.yaml,turtlebot2_bringup.yaml,turtlebot_bringup.yaml,xtion_rgbd_sensor.yaml']"
+kentsommer,2014-06-25,Remove unncessary launchers as app manager and capabilities are rolled into minimal now,"['app_manager_with_capabilities.launch,minimal_with_appmanager.launch,paired_public.launch']"
+kentsommer,2014-06-25,Rolled android and qt make_a_map and map_nav into one,['pairing.interactions']
+Jihoon Lee,2014-06-26,"Merge pull request #144 from turtlebot/irdevel
+
+Update for pre-configured interactions with turtlebot on indigo",['']
+Jihoon Lee,2014-06-27,cleanup legacy install rule. and remove concert directory which is not valid anymore,"['CMakeLists.txt,bringup.concert']"
+Daniel Stonier,2014-06-30,"Merge pull request #145 from turtlebot/fix_install_rule
+
+cleanup legacy installs and rocon launcher",['']
+kentsommer,2014-06-30,Update to account for turtlebot_rapps/teleop change to implement rocon_apps/teleop,['pairing.interactions']
+Daniel Stonier,2014-06-30,"Merge pull request #147 from turtlebot/irdevel
+
+Teleop implementation change update",['']
+kentsommer,2014-07-02,Initial Android fixes,['pairing.interactions']
+kentsommer,2014-07-03,Update to use env-hooks for Turtlebot,"['CMakeLists.txt,25.turtlebot.sh.em,minimal.launch']"
+kentsommer,2014-07-03,Split Android and PC Pairing into seperate roles,['pairing.interactions']
+kentsommer,2014-07-04,Fix compatibility uri's to filter out PC interactions on Android,['pairing.interactions']
+kentsommer,2014-07-04,Move robot name and type to environment variable as mentioned in #134,"['25.turtlebot.sh.em,minimal.launch']"
+Daniel Stonier,2014-07-06,"Merge pull request #148 from turtlebot/irdevel
+
+Update to use environment hooks for turtlebot_bringup / Android pairing updates",['']
+Jihoon Lee,2014-07-16,proper remappings and use video_teleop virtual rapp,['pairing.interactions']
+Jihoon Lee,2014-07-17,concert version turtlebot,['concert_client.launch']
+Daniel Stonier,2014-07-17,"Merge pull request #150 from turtlebot/teleop_sync
+
+proper remappings and use video_teleop virtual rapp",['']
+Jihoon Lee,2014-07-17,"Merge pull request #132 from kbogert/hydro-devel
+
+Load any calibration files during create bringup",['']
+Jihoon Lee,2014-07-17,Merge branch 'hydro-devel' into indigo,['']
+kentsommer,2014-07-23,Change env-vars to not overwrite already set vars,['25.turtlebot.sh.em']
+Daniel Stonier,2014-07-23,"Merge pull request #154 from turtlebot/envupdates
+
+Change env-vars to not overwrite already set vars",['']
+DongWook Lee,2014-07-28,add the rosbridge setting for using rosbridge on pairing mode,['minimal.launch']
+DongWook Lee,2014-07-28,align the arg,['minimal.launch']
+Jihoon Lee,2014-07-28,"Merge pull request #155 from dwlee/indigo
+
+Adding the rosbridge setting for using rosbridge on pairing mode",['']
+Jihoon Lee,2014-07-29,"Revert ""Adding the rosbridge setting for using rosbridge on pairing mode""",['minimal.launch']
+Jihoon Lee,2014-08-05,"Merge pull request #157 from turtlebot/revert-155-indigo
+
+Revert ""Adding the rosbridge setting for using rosbridge on pairing mode...",['']
+Jihoon Lee,2014-08-13,migrate linux_hardware as linux_peripheral_interfaces repo,"['.cproject,.gitignore,.project,.pydevproject,CHANGELOG.rst,CMakeLists.txt,package.xml,laptop_battery.py,package.xml,netbook.launch.xml,package.xml']"
+Jihoon Lee,2014-08-16,update turtlebot.rosinstall to point indigo branches,['turtlebot.rosinstall']
+Daniel Stonier,2014-08-18,"Merge pull request #159 from turtlebot/migrate_linux_hardware
+
+migrate linux_hardware as linux_peripheral_interfaces repo",['']
+Daniel Stonier,2014-08-18,"Merge pull request #161 from turtlebot/update_rosinstall
+
+update turtlebot.rosinstall to point indigo branches",['']
+Jihoon Lee,2014-08-26,add interaction icons to fix #162,['pairing.interactions']
+Jihoon Lee,2014-09-03,fixing typo in concert_client.launch,['concert_client.launch']
+Jihoon Lee,2014-09-03,Merge branch 'indigo' of https://github.com/turtlebot/turtlebot into indigo,['']
+Daniel Stonier,2014-09-16,"move out turtlebot map file environment variable to turtlebot_navigation, refs #163.",['25.turtlebot.sh.em']
+Jihoon Lee,2014-09-26,removing unused args,['concert_client.launch']
+Jihoon Lee,2014-11-30,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2014-11-30,update turtlebot_capabilities package version,['package.xml']
+Jihoon Lee,2014-11-30,2.3.0,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+corot,2014-12-06,"Issue #172: Provide mass and inertia real values for 3D camera, stacks and poles","['calc_inertia.m,asus_xtion_pro.urdf.xacro,kinect.urdf.xacro,hexagons.urdf.xacro']"
+Jihoon Lee,2014-12-29,install interactions directory closes #176,['CMakeLists.txt']
+Daniel Stonier,2014-12-29,"Merge pull request #173 from turtlebot/inertial_real_values
+
+Issue #172: Provide mass and inertia real values for 3D camera/stacks/poles",['']
+Jihoon Lee,2014-12-29,use turtlebot as envinroment variable prefixes,"['25.turtlebot.sh.em,concert_client.launch,minimal.launch']"
+Jihoon Lee,2014-12-29,Merge branch 'indigo' of https://github.com/turtlebot/turtlebot into indigo,['']
+Jihoon Lee,2014-12-29,use env for rapp parsing,"['25.turtlebot.sh.em,concert_client.launch,minimal.launch']"
+Jihoon Lee,2014-12-29,turtlebot_teleop to be migrated to new base,"['CHANGELOG.rst,CMakeLists.txt,velocity_smoother.launch.xml,keyboard_teleop.launch,logitech.launch,ps3_teleop.launch,xbox360_teleop.launch,package.xml,mux.yaml,turtlebot_teleop_key,turtlebot_joy.cpp']"
+Jihoon Lee,2014-12-29,remove gitignore,['.gitignore']
+Jihoon Lee,2014-12-29,Merge branch 'teleop' into turtlebot_teleop_migration,['']
+Jihoon Lee,2014-12-29,sync package version with others packages,['package.xml']
+Daniel Stonier,2014-12-29,"Merge pull request #178 from turtlebot/use_env
+
+use env for rapp parsing",['']
+Daniel Stonier,2014-12-29,"Merge pull request #179 from turtlebot/turtlebot_teleop_migration
+
+Turtlebot teleop migration",['']
+Jihoon Lee,2014-12-30,add README on turtlebot_teleop to explain why it is here now fixes #182,['README.md']
+Jihoon Lee,2014-12-30,replace viz with interactions #183,['turtlebot.rosinstall']
+Jihoon Lee,2014-12-30,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2014-12-30,2.3.1,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2014-12-30,cleanup metapackage. add teleop and remove laptop battery_monitor,['package.xml']
+Jihoon Lee,2014-12-30,update chnagelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2014-12-30,2.3.2,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-01-05,add kobuki_capabilities and turtlebot_capabilities as run_depend in turtlebot_bring fixes #184,['package.xml']
+Jihoon Lee,2015-01-05,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-01-05,2.3.3,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-01-07,remove turtlebot_capabilities from run_depend closes #185,['package.xml']
+Jihoon Lee,2015-01-07,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-01-07,2.3.4,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-01-08,update turtlebot_teleop url closes #188,['package.xml']
+Jihoon Lee,2015-01-09,separate launchers for kinect and asus,"['3dsensor.launch,asus_xtion_pro.launch,kinect.launch,package.xml']"
+Jihoon Lee,2015-01-09,bringup depend on capabilities. capabilities should not depend on bringup #185,"['package.xml,package.xml']"
+Jihoon Lee,2015-01-09,Merge branch 'indigo' into 3dsensor_config,['']
+Jihoon Lee,2015-01-09,updates,"['3dsensor.launch,asus_xtion_pro.launch.xml,kinect.launch.xml']"
+Jihoon Lee,2015-01-12,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-01-12,2.3.5,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-01-19,Merge branch '3dsensor_config' of https://github.com/turtlebot/turtlebot into 3dsensor_config,['']
+Tully Foote,2015-01-28,remove old rosbuild imports no longer necessary,['turtlebot_teleop_key']
+Daniel Stonier,2015-01-29,"Merge pull request #189 from turtlebot/tfoote-patch-1
+
+remove old rosbuild imports no longer necessary",['']
+Jihoon Lee,2015-02-12,remove turtlebot_teleop library from catkin_package call closes #192,['CMakeLists.txt']
+Jihoon Lee,2015-02-13,asus is now default,['25.turtlebot.sh.em']
+Jihoon Lee,2015-02-13,add urdf for asus center located version,"['kobuki_hexagons_asus_xtion_pro_center.urdf.xacro,asus_xtion_pro.urdf.xacro,asus_xtion_pro_center.urdf.xacro,kinect.urdf.xacro,turtlebot_library.urdf.xacro,turtlebot_properties.urdf.xacro']"
+Jihoon Lee,2015-02-13,add 3dsensor aluncher,['asus_xtion_pro_center.launch.xml']
+Jihoon Lee,2015-02-13,update env hook to  to use centered asus,"['25.turtlebot.sh.em,smoother.yaml']"
+Jihoon Lee,2015-02-17,"add asus, mount, and new pole","['0_xtion_pro.jpg,sensor_pole.dae,xtion_pro.jpg,xtion_pro_camera.dae,xtion_pro_camera.jpg,xtion_pro_stack.dae,asus_xtion_pro_center.urdf.xacro,hexagons.urdf.xacro']"
+Jihoon Lee,2015-02-26,update urdf. now new position uses asus_xtion_pro. Old position is asus_xtion_pro_offset,"['25.turtlebot.sh.em,asus_xtion_pro_offset.launch.xml,xtion_pro_camera.dae,kobuki_hexagons_asus_xtion_pro.urdf.xacro,kobuki_hexagons_asus_xtion_pro_offset.urdf.xacro,asus_xtion_pro.urdf.xacro,asus_xtion_pro_offset.urdf.xacro,turtlebot_library.urdf.xacro']"
+Daniel Stonier,2015-02-27,"Merge pull request #194 from turtlebot/asus_center
+
+Configurable 3d sensor",['']
+Jihoon Lee,2015-02-27,add reasons for comment #194,['turtlebot_properties.urdf.xacro']
+Jihoon Lee,2015-02-27,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-02-27,2.3.6,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-03-02,switch openni driver to openni2 for asus xtion pro,"['asus_xtion_pro.launch.xml,asus_xtion_pro_offset.launch.xml,package.xml']"
+Daniel Stonier,2015-03-02,"Merge pull request #195 from turtlebot/switch_openni
+
+switch openni driver to openni2 for asus xtion pro",['']
+Jihoon Lee,2015-03-02,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-03-02,2.3.7,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-03-11,add ps3 joystick interactions closes #196,['pairing.interactions']
+Daniel Stonier,2015-03-13,visualisation interactions,"['documentation.interactions,visualisation.interactions,minimal.launch,package.xml']"
+Daniel Stonier,2015-03-13,Merge branch 'indigo' of https://github.com/turtlebot/turtlebot into indigo,['']
+Jihoon Lee,2015-03-16,replace fbx model to open collada model closes #198,"['sensor_pole.dae,xtion_pro_stack.dae,asus_xtion_pro.urdf.xacro,hexagons.urdf.xacro']"
+Daniel Stonier,2015-03-17,"bugfixes incorrect concert_whitelist arg default, fixes #199.",['concert_client.launch']
+Daniel Stonier,2015-03-17,Merge branch 'indigo' of https://github.com/turtlebot/turtlebot into indigo,['']
+Daniel Stonier,2015-03-17,doc'ified some url args.,['concert_client.launch']
+Daniel Stonier,2015-03-17,expose the interactions list in a way that conforms to the rest of the turtlebot environment settings.,"['25.turtlebot.sh.em,concert_client.launch,minimal.launch']"
+Jihoon Lee,2015-03-17,add rapp preferred configuration,"['concert_client.launch,minimal.launch,preferred_rapp.yaml']"
+dwlee,2015-03-17,update android teleop remapping rule and add kitkat in compatibility,['pairing.interactions']
+Daniel Stonier,2015-03-17,[turtlebot_bringup] doc strings for roslaunch args.,"['concert_client.launch,minimal.launch']"
+Daniel Stonier,2015-03-17,[turtlebot_bringup] fix conflicts in the turtlebot base launchers,['']
+Daniel Stonier,2015-03-17,Merge branch 'cleanup' into indigo,['']
+Daniel Stonier,2015-03-17,"Merge pull request #201 from dwlee/indigo_teleop
+
+Update interaction",['']
+dwlee,2015-03-23,update compatibility for upgrade turtlebot android apps,['pairing.interactions']
+Jihoon Lee,2015-03-23,"Merge pull request #202 from dwlee/update_rapps_setting
+
+Update compatibility as turtlebot android apps updating",['']
+Jihoon Lee,2015-03-23,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-03-23,Merge branch 'indigo' of https://github.com/turtlebot/turtlebot into indigo,['']
+Jihoon Lee,2015-03-23,update changelog,['CHANGELOG.rst']
+Jihoon Lee,2015-03-23,2.3.8,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-03-30,add chirp in android pairing closes #205,['pairing.interactions']
+Jihoon Lee,2015-03-30,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-03-30,2.3.9,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+dwlee,2015-04-02,update interaction name regarding android pairing as change of android apps name,['pairing.interactions']
+Jihoon Lee,2015-04-02,"Merge pull request #207 from dwlee/indigo
+
+Update android interactions's name",['']
+Jihoon Lee,2015-04-02,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-04-02,2.3.10,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Jihoon Lee,2015-04-15,interaction fix closes #208,['visualisation.interactions']
+Jihoon Lee,2015-04-15,update changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Jihoon Lee,2015-04-15,2.3.11,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+commaster90,2015-05-18,Fix icon for interactions.,['pairing.interactions']
+Patrick Chin,2015-05-24,Fix typo.,['differential_mobile_base.yaml']
+Jihoon Lee,2015-05-24,"Merge pull request #209 from commaster90/indigo
+
+Fix some mistakes.",['']
+Jihoon Lee,2015-05-27,use rocon_apps/make_a_map for make a map interaction closes #210,['pairing.interactions']
+Jihoon Lee,2015-05-27,Merge branch 'indigo' of https://github.com/turtlebot/turtlebot into indigo,['']
+Scott Livingston,2015-09-08,Update URL of TurtleBot logo in README,['README.md']
+Jihoon Lee,2015-09-09,"Merge pull request #213 from slivingston/indigo
+
+Update URL of TurtleBot logo in README",['']
+Tully Foote,2016-03-10,add the teleop switch script as a default input to support joystick interactive follower,['mux.yaml']
+Daniel Stonier,2016-03-14,"Merge pull request #215 from turtlebot/joystick_follower
+
+add the follower switch mux to the default mux options",['']
+Daniel Stonier,2016-06-01,remove unused eclipse files from the root of the repository,"['.cproject,.project,.pydevproject']"
+Tully Foote,2016-06-24,adding initial astra launch file,['astra.launch.xml']
+Marcus Liebhardt,2016-06-24,[turtlebot_description] adds orbbec astra urdfs and mesh,"['astra.dae,astra.jpg,kobuki_hexagons_astra.urdf.xacro,astra.urdf.xacro,turtlebot_library.urdf.xacro']"
+Tully Foote,2016-06-24,add astra_launch run dependency,['package.xml']
+Tully Foote,2016-06-27,"update xacro usage for jade deprecations
+
+comment out unused arguments generating errors","['minimal.launch,turtlebot_properties.urdf.xacro']"
+Tully Foote,2016-06-27,"Merge pull request #223 from turtlebot/kinetic-testing
+
+tested running in Kinetic",['']
+Tully Foote,2016-06-27,updating changelogs,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Tully Foote,2016-06-27,2.3.12,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Tully Foote,2016-06-28,"disable the battery node if TURTLEBOT_BATTERY is set to None
+
+Fixes #224",['minimal.launch']
+Tully Foote,2016-06-27,propagate netbook battery to other similar launch file,['concert_client.launch']
+Tully Foote,2016-06-27,"refactor concert content out of minimal and create separate concert_minimal.launch
+The concert_minimal.launch includes minmal.launch","['concert_minimal.launch,minimal.launch']"
+Daniel Stonier,2016-06-28,"Merge pull request #225 from turtlebot/no_laptop_battery
+
+disable the battery node if TURTLEBOT_BATTERY is set to None",['']
+Daniel Stonier,2016-07-16,[bringup] remove outdated broken comment,['pairing.interactions']
+Kevin C. Wells,2016-08-18,"Add support for Intel R200 camera
+
+Added necessary launch, urdf, etc. files to
+add support for the R200 camera in Turtlebot.
+
+Updated r200 URDF to inclue proper mounting.
+
+Added runtime dependency on realsense_camera package.","['r200.launch.xml,package.xml,r200.dae,r200.jpg,r200_bracket.stl,r200_bracket_end.stl,kobuki_hexagons_r200.urdf.xacro,r200.urdf.xacro,turtlebot_library.urdf.xacro']"
+Tully Foote,2016-08-19,"Merge pull request #226 from turtlebot/simplify_launch
+
+Simplify launch",['']
+Tully Foote,2016-08-19,"Merge pull request #230 from kevincwells/kinetic
+
+Add support for Intel R200 camera",['']
+Kentaro Wada,2016-10-06,"Fix image format on Gazebo using B8G8R8
+
+Related to https://github.com/ros-simulation/gazebo_ros_pkgs/issues/484",['turtlebot_gazebo.urdf.xacro']
+Tully Foote,2016-11-01,updating changelogs,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Tully Foote,2016-11-01,2.4.0,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Kevin C. Wells,2016-11-09,"Refactor urdf.xacro files to stop loading unnecessary content.
+
+Currently, every robot configuration (e.g.,
+turtlebot_description/robots/kobuki_hexagons_kinect.urdf.xacro)
+simply includes a catch-all turtlebot_library.urdf.xacro file.
+This file includes EVERY base, stacks, and sensor combination,
+and thus a lot of unnecessary data is loaded into memory.
+
+Refactored the turtlebot_library.urdf.xacro to include only
+the data common to all turtlebot configurations, and modified
+each robot configuration file to include only the additional base,
+stacks, and sensor urdf files that apply.","['create_circles_asus_xtion_pro.urdf.xacro,create_circles_kinect.urdf.xacro,kobuki_hexagons_astra.urdf.xacro,kobuki_hexagons_asus_xtion_pro.urdf.xacro,kobuki_hexagons_asus_xtion_pro_offset.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro,kobuki_hexagons_r200.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,turtlebot_common_library.urdf.xacro,turtlebot_library.urdf.xacro']"
+Kevin C. Wells,2016-11-09,"Remove unnecessary mobile_base.launch.xml layer
+
+mobile_base.launch.xml currently is just a pass-through to
+include the TURTLEBOT_BASE-specific launch file.  Simply
+removed this unnecessary layer.","['concert_client.launch,mobile_base.launch.xml,minimal.launch']"
+Tully Foote,2016-11-09,"Merge pull request #238 from kevincwells/urdf_xacro_cleanup_kinetic
+
+Refactor urdf.xacro files (kinetic)",['']
+Tully Foote,2016-11-09,"Merge pull request #240 from kevincwells/mobile_base_cleanup_kinetic
+
+Remove unnecessary mobile_base.launch.xml layer (kinetic)",['']
+Kevin C. Wells,2016-11-30,"Refactor cmd_vel_mux.
+
+Moved mobile_base_nodelet_manager and cmd_vel_mux to a
+common, higher-level launch file.
+
+Currently each base-specific mobile_base.launch.xml
+loaded the same cmd_vel_mux node with the same configuration.
+To reduce this redundancy, launching this nodelet has been
+moved to the common, higher-level mobile_base.launch.xml.
+
+The mobile_base_nodelet_manager has been moved up to facilitate
+this change.","['concert_client.launch,mobile_base.launch.xml,mobile_base.launch.xml,mobile_base.launch.xml,mobile_base.launch.xml,minimal.launch']"
+Kevin C. Wells,2016-12-05,"Update R200 URDF
+
+The name of the camera link has been changed to
+conform to the common standard.",['r200.urdf.xacro']
+Kevin C. Wells,2016-12-05,"Modify R200 launch file.
+
+Modified the R200 3D sensor launch file
+to conform more closely to the other
+open_ni2-style sensor launch files. This
+allows the data processing arguments passed
+in to correctly pass through and control
+image processing.
+
+This allows the turtlebot_follower package,
+for example, to set ""depth_processing"" to
+true to enable the /camera/depth/depth_rect/
+topic with the R200 as it can with other
+cameras.",['r200.launch.xml']
+Tully Foote,2016-12-19,"Merge pull request #245 from kevincwells/r200_urdf_cleanup_kinetic
+
+Update R200 (kinetic)",['']
+Tully Foote,2016-12-19,"Merge pull request #243 from kevincwells/vel_mux_refactor_kinetic
+
+Refactor cmd_vel_mux (kinetic)",['']
+Tully Foote,2016-12-22,updating changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Tully Foote,2016-12-22,2.4.1,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Luca Cristoforetti,2016-12-22,"Update velocity_smoother.launch.xml to handle namespaces
+
+Changed topic remapping and nodelet manager to avoid absolute paths. In this way the velocity smoother will work even inside a namespace created with the tag <group ns="""">.",['velocity_smoother.launch.xml']
+hcjung,2016-12-22,"update astra urdf by Turtlebot REP (#248)
+
+* update astra urdf by Turtlebot REP
+
+* update astra urdf
+
+* Update astra.urdf.xacro",['astra.urdf.xacro']
+Tully Foote,2016-12-22,updating changelog,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']"
+Tully Foote,2016-12-22,2.4.2,"['CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml,CHANGELOG.rst,package.xml']"
+Ahmet Sezgin Duran,2017-05-15,Fix xacro warnings and remove whitespaces,"['description.launch.xml,test.launch,test_urdf.cpp']"
+Joseph,2017-11-16,"Fix bug, components: turtlebot_teleop file: turtlebot_teleop_key line: 159, except shoud be: except Exception as e",['turtlebot_teleop_key']
+Jorge Santos Simón,2017-11-22,"Merge pull request #256 from cuchen/kinetic
+
+  Fix bug, components: turtlebot_teleop file: turtlebot_teleop_key li…",['']
+Jorge Santos Simón,2017-11-22,"Merge pull request #254 from marjinal1st/kinetic
+
+Fix xacro warnings and remove whitespaces",['']
+Jorge Santos Simón,2017-12-11,"Switch from xacro.py to xacro --inorder to remove some of the warnings (#257)
+
+And also git-ignore .settings folders","['.gitignore,description.launch.xml,test.launch,test_urdf.cpp']"
+Nils Berg,2017-12-12,"remove up_axis tag from DAE meshes
+
+RViz doesn't respect it anyway ( https://github.com/ros-visualization/rviz/issues/1045 ), but current versions of three.js' ColladaLoader (used in the RobotWebTools, see https://github.com/RobotWebTools/ros3djs/pull/202 ) do!
+
+(Since RViz doesn't respect the tag, this does not break the model)","['kinect.dae,r200.dae,sensor_pole.dae,xtion_pro_camera.dae,xtion_pro_stack.dae,plate_0_logo.dae,plate_1_logo.dae,plate_2_logo.dae,plate_bottom.dae,plate_middle.dae,plate_top.dae,pole_bottom.dae,pole_kinect.dae,pole_middle.dae,pole_top.dae']"
+Jihoon Lee,2017-12-12,"Merge pull request #262 from T045T/kinetic
+
+remove up_axis tag from DAE meshes",['']
+Kent Sommer,2017-12-19,"Patch teleop_key with Python 3 Support
+
+This patch adds the necessary (small) changes to enable Python 3 support.",['turtlebot_teleop_key']
+Daniel Stonier,2018-01-01,"Merge pull request #263 from kentsommer/patch-1
+
+Patch teleop_key with Python 3 Support",['']
+Tully Foote,2018-07-08,Add a license (#269),['LICENSE']
+corot,2019-03-27,Remove --inorder option from all xacro calls to avoid the noisy WARN,"['description.launch.xml,test.launch,test_urdf.cpp']"
+corot,2019-03-27,Use scale on Xtion Pro visual (appears like a threatening flying monster otherwise),['asus_xtion_pro.urdf.xacro']
+corot,2019-03-27,Drop wrong sensor_pole.dae mesh and use instead hexagons/pole_kinect.dae,"['sensor_pole.dae,hexagons.urdf.xacro']"
+corot,2019-03-27,Use openni_launch instead of freenect_launch (missing in melodic),"['kinect.launch.xml,package.xml']"
+corot,2020-02-11,"Remove '/' from /camera_depth_frame, as tf2 frame_ids cannot start with a '/'",['3dsensor.launch']
+Jorge Santos Simón,2020-02-14,Add xacro xml namespace prefix to macro usages (#278),"['create_circles_asus_xtion_pro.urdf.xacro,create_circles_kinect.urdf.xacro,kobuki_hexagons_astra.urdf.xacro,kobuki_hexagons_asus_xtion_pro.urdf.xacro,kobuki_hexagons_asus_xtion_pro_offset.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro,kobuki_hexagons_r200.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,astra.urdf.xacro,asus_xtion_pro.urdf.xacro,asus_xtion_pro_offset.urdf.xacro,kinect.urdf.xacro,r200.urdf.xacro,circles.urdf.xacro,hexagons.urdf.xacro']"
+Jorge Santos Simón,2020-02-14,"Fix xtion visual (#279)
+
+* Revert mesh scaling (50e71a08c9cf00bc3d3a94ae6ebd804b6809f747)
+* Use same mesh (cooler) on offset xtion and add missing mount","['asus_xtion_pro.urdf.xacro,asus_xtion_pro_offset.urdf.xacro']"
+Jorge Santos Simón,2020-02-15,"Drop asus_xtion_pro_offset.urdf.xacro and use instead a parameterised asus_xtion_pro.urdf.xacro (#280)
+
+Also drop asus_ from camera name, to match the other cameras that don't include the manufacturer","['create_circles_asus_xtion_pro.urdf.xacro,create_circles_kinect.urdf.xacro,kobuki_hexagons_astra.urdf.xacro,kobuki_hexagons_asus_xtion_pro.urdf.xacro,kobuki_hexagons_asus_xtion_pro_offset.urdf.xacro,kobuki_hexagons_kinect.urdf.xacro,kobuki_hexagons_r200.urdf.xacro,roomba_circles_asus_xtion_pro.urdf.xacro,roomba_circles_kinect.urdf.xacro,asus_xtion_pro_offset.urdf.xacro,xtion_pro.urdf.xacro']"
+corot,2020-02-15,Add Jetbrains IDEs .idea to .gitignore,['.gitignore']

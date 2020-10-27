@@ -1,0 +1,2246 @@
+Contributor,Date,Message,Files
+deadprogram,2013-10-17,Initial commit,"['.gitignore,.jshintrc,.travis.yml,Gruntfile.js,README.md,package.json,cylon.coffee,cylon.spec.coffee,globals.js,runner.js']"
+deadprogram,2013-10-18,Canonical missing semicolon,['Gruntfile.js']
+deadprogram,2013-10-18,Adding a test robot method,"['LICENSE,README.md,cylon.coffee,cylon.spec.coffee']"
+Andrew Stewart,2013-10-18,"Correct Travis build img in README.md
+
+Was pointing to deadprogram/cylon, now points to hybridgroup/cylon.",['README.md']
+Andrew Stewart,2013-10-18,Replace additional occurances of deadprogram/cylon,['package.json']
+Andrew Stewart,2013-10-18,Add missing commas to setTimeouts in spec,['cylon.spec.coffee']
+deadprogram,2013-10-19,Add placeholder for Robot,"['robot.coffee,robot.spec.coffee']"
+deadprogram,2013-10-19,Remove commented lines,"['package.json,robot.spec.coffee']"
+deadprogram,2013-10-19,Placeholders for core classes,"['adaptor.coffee,connection.coffee,device.coffee,driver.coffee,adaptor.spec.coffee,connection.spec.coffee,device.spec.coffee,driver.spec.coffee']"
+deadprogram,2013-10-19,Remove not needed exports,"['adaptor.coffee,connection.coffee,device.coffee,driver.coffee,robot.coffee']"
+deadprogram,2013-10-19,Fixing the example,['README.md']
+deadprogram,2013-10-19,Fixing the example,['README.md']
+deadprogram,2013-10-19,Fixing the example,['README.md']
+deadprogram,2013-10-19,Fixing the example,['README.md']
+deadprogram,2013-10-19,Name is just an option,"['adaptor.coffee,connection.coffee,device.coffee,driver.coffee,robot.coffee,adaptor.spec.coffee,connection.spec.coffee,device.spec.coffee,driver.spec.coffee,robot.spec.coffee']"
+deadprogram,2013-10-19,Work and create new robot,"['README.md,connection.coffee,cylon.coffee,device.coffee,robot.coffee,connection.spec.coffee,cylon.spec.coffee,device.spec.coffee,robot.spec.coffee']"
+deadprogram,2013-10-19,Remove anything not needed for test,['cylon.spec.coffee']
+deadprogram,2013-10-19,WIP on init/start connections and devices,"['robot.coffee,cylon.spec.coffee']"
+deadprogram,2013-10-19,Start to connect,['robot.coffee']
+deadprogram,2013-10-20,Init the connections and devices hashes,['robot.coffee']
+deadprogram,2013-10-20,All robots have a name,"['robot.coffee,robot.spec.coffee']"
+deadprogram,2013-10-20,Remove space,['robot.coffee']
+deadprogram,2013-10-20,Better naming for connection and device types,['robot.coffee']
+deadprogram,2013-10-20,Revise README order,['README.md']
+deadprogram,2013-10-20,Need to be able to start,"['robot.coffee,robot.spec.coffee']"
+deadprogram,2013-10-20,Now we're doing the work,['robot.coffee']
+deadprogram,2013-10-20,"Add port, and some test output cleanup","['connection.coffee,device.coffee,port.coffee,adaptor.spec.coffee,connection.spec.coffee,cylon.spec.coffee,device.spec.coffee,driver.spec.coffee,port.spec.coffee,robot.spec.coffee']"
+deadprogram,2013-10-20,Add some pending tests,"['connection.coffee,driver.coffee,port.coffee,robot.coffee,adaptor.spec.coffee,connection.spec.coffee,device.spec.coffee']"
+Andrew Stewart,2013-10-21,Can move default arguments into signature,['robot.coffee']
+Andrew Stewart,2013-10-21,Minor restructoring,['robot.coffee']
+Ron Evans,2013-10-21,"Merge pull request #1 from hybridgroup/robot-reorganization
+
+Robot.coffee - minor reorganization",['']
+Andrew Stewart,2013-10-21,Run tests with Grunt,['.travis.yml']
+Andrew Stewart,2013-10-21,Install grunt-cli before running Travis script,['.travis.yml']
+Andrew Stewart,2013-10-21,Add Port class functionality and tests from Artoo,"['port.coffee,port.spec.coffee']"
+Andrew Stewart,2013-10-22,Add utility functions and monkey-patches,"['cylon.coffee,utils.coffee,utils.spec.coffee']"
+deadprogram,2013-10-22,Correct syntax outside of tests,"['package.json,connection.coffee,cylon.coffee,robot.coffee']"
+deadprogram,2013-10-22,Resolve merge conflicts,['']
+deadprogram,2013-10-22,hello?,['test.js']
+deadprogram,2013-10-22,WIP on device,"['device.coffee,device.spec.coffee']"
+deadprogram,2013-10-22,Starting to build the object chain,"['cylon.coffee,device.coffee,robot.coffee']"
+Andrew Stewart,2013-10-22,Fix example and globally namespace utility functions,"['test.js,cylon.coffee,utils.coffee']"
+Andrew Stewart,2013-10-22,Additions/cleanup to README.md,['README.md']
+Andrew Stewart,2013-10-22,Properly init/start connections and devices,"['connection.coffee,robot.coffee']"
+Andrew Stewart,2013-10-22,"Correct and consistent context for work functions
+
+Also corrects context(this) issues for every() and after()","['test.js,robot.coffee']"
+deadprogram,2013-10-22,Connections and Devices should belong to a robot,"['connection.coffee,device.coffee,robot.coffee,connection.spec.coffee,device.spec.coffee']"
+deadprogram,2013-10-22,Resolve merge conflicts,['']
+deadprogram,2013-10-22,Knowledge of self when working,"['test.js,robot.coffee']"
+Andrew Stewart,2013-10-22,Fix 'CoffeeScrip' in README.md,['README.md']
+deadprogram,2013-10-22,Removing commentted line,['robot.coffee']
+deadprogram,2013-10-22,Simplify robot init even further,"['device.coffee,robot.coffee']"
+Andrew Stewart,2013-10-22,Simplify starting work,['robot.coffee']
+deadprogram,2013-10-22,Specify more pending tests for Device,['device.spec.coffee']
+deadprogram,2013-10-22,Correct reference to parent robot,['device.coffee']
+Andrew Stewart,2013-10-22,Add global Logger object,"['connection.coffee,cylon.coffee,device.coffee,driver.coffee,logger.coffee,robot.coffee,logger.spec.coffee,robot.spec.coffee']"
+deadprogram,2013-10-22,Proper initialization of device,"['device.coffee,robot.coffee,device.spec.coffee']"
+deadprogram,2013-10-22,Resolve merge conflicts with master,['']
+Ron Evans,2013-10-22,"Merge pull request #3 from hybridgroup/logger
+
+Add global Logger object",['']
+deadprogram,2013-10-22,A little test output reformat,"['adaptor.spec.coffee,connection.spec.coffee,cylon.spec.coffee,device.spec.coffee,driver.spec.coffee,logger.spec.coffee,robot.spec.coffee,utils.spec.coffee']"
+deadprogram,2013-10-22,Much along the way to adaptor/driver registration and loading,"['hello.js,robot.coffee,device.spec.coffee']"
+deadprogram,2013-10-22,Hello in both javascript and coffeescript,"['hello.coffee,hello.js']"
+deadprogram,2013-10-22,Both every and after,"['hello.coffee,hello.js']"
+deadprogram,2013-10-22,I like this capitalization,"['hello.coffee,hello.js,test.js']"
+deadprogram,2013-10-23,WIP on dynamic loading of adaptor and driver modules,"['hello.js,connection.coffee,loopback.coffee,robot.coffee,connection.spec.coffee']"
+deadprogram,2013-10-23,More progress now just need correct export,"['loopback.coffee,robot.coffee']"
+deadprogram,2013-10-23,"Code runs, tests fail","['connection.coffee,device.coffee,driver.coffee,loopback.coffee,port.coffee']"
+deadprogram,2013-10-23,Adding back comments line,['connection.coffee']
+Andrew Stewart,2013-10-23,Correctly set up loopback adaptor,"['loopback.coffee,robot.coffee']"
+Andrew Stewart,2013-10-23,Proper initialization of adaptors,"['connection.coffee,loopback.coffee,robot.coffee']"
+Andrew Stewart,2013-10-23,Use fat arrows (=>) to simplify scope management,['robot.coffee']
+Andrew Stewart,2013-10-23,Fix connection test failure,['connection.spec.coffee']
+deadprogram,2013-10-23,"Making test pending, for now",['cylon.spec.coffee']
+Andrew Stewart,2013-10-23,Add addProxy() method to Adaptor class,"['adaptor.coffee,adaptor.spec.coffee']"
+Andrew Stewart,2013-10-23,Revise Logger to accept multiple arguments,"['logger.coffee,logger.spec.coffee']"
+Andrew Stewart,2013-10-23,Example of using cylon-sphero adaptor,"['sphero.coffee,package.json,connection.coffee,robot.coffee']"
+Andrew Stewart,2013-10-23,Fix test fails,"['loopback.coffee,robot.coffee,connection.spec.coffee']"
+Andrew Stewart,2013-10-23,Remove unnecessary dependency,['package.json']
+Andrew Stewart,2013-10-23,Fix issues with registerAdaptor,['robot.coffee']
+Andrew Stewart,2013-10-23,Pass connection when requiring adaptors,['robot.coffee']
+Andrew Stewart,2013-10-23,Allow for similar hooking into drivers,['robot.coffee']
+Edgar O Silva,2013-10-23,Fixes issue with connection port not being found in adaptor.,"['sphero.coffee,connection.coffee']"
+Andrew Stewart,2013-10-23,Switch to singleton robot Master,"['hello.coffee,hello.js,master.coffee,sphero.coffee,test.js,cylon.coffee']"
+Edgar O Silva,2013-10-23,Move self = this into instance scope.,['connection.coffee']
+Ron Evans,2013-10-23,"Merge pull request #4 from hybridgroup/connection-port-bug
+
+Fixes issue with connection port not being found in adaptor.",['']
+deadprogram,2013-10-23,Remove cylon-sphero dependency should be the other way around,['package.json']
+Andrew Stewart,2013-10-23,Easier singleton generation,"['master.coffee,cylon.coffee']"
+deadprogram,2013-10-23,Small correction to examples,"['hello.coffee,sphero.coffee,test.js']"
+Ron Evans,2013-10-23,"Merge pull request #5 from hybridgroup/singleton
+
+Master singleton class",['']
+deadprogram,2013-10-23,Update readme,['README.md']
+deadprogram,2013-10-23,Update readme,['README.md']
+Andrew Stewart,2013-10-23,Fix driver-related issues,['robot.coffee']
+deadprogram,2013-10-23,Proxy commands into device from associated driver,"['device.coffee,driver.coffee,device.spec.coffee']"
+deadprogram,2013-10-23,Can proxy commands from connection to associated adaptor,"['sphero.coffee,adaptor.coffee,connection.coffee,adaptor.spec.coffee,connection.spec.coffee']"
+deadprogram,2013-10-24,Calling into the driver,['device.coffee']
+deadprogram,2013-10-24,Remove commented line,['sphero.coffee']
+deadprogram,2013-10-24,Remove the extra messages,['device.coffee']
+deadprogram,2013-10-24,A bit more cleanup of self,"['device.coffee,driver.coffee,loopback.coffee,port.coffee,driver.spec.coffee']"
+deadprogram,2013-10-24,Add the new code climate for JS,['README.md']
+Andrew Stewart,2013-10-24,Rewritten 'Master' example,['master.coffee']
+Andrew Stewart,2013-10-24,Fix scope for performing work,['robot.coffee']
+Ron Evans,2013-10-24,"Merge pull request #6 from hybridgroup/fix-work-scope
+
+Fix scope for work()",['']
+Edgar O Silva,2013-10-24,WIP on event emitter for device and connection.,"['sphero.coffee,connection.coffee,device.coffee']"
+Edgar O Silva,2013-10-24,Trigger event on device connection example.,['sphero.coffee']
+Edgar O Silva,2013-10-24,WIP on collision detection and event emitter.,"['sphero.coffee,connection.coffee,device.coffee']"
+Edgar O Silva,2013-10-24,Added roll back to the example.,['sphero.coffee']
+Edgar O Silva,2013-10-24,Added colors to example.,"['adaptor.js,connection.js,cylon.js,device.js,driver.js,logger.js,loopback.js,port.js,robot.js,utils.js,no_such_method.coffee,sphero.coffee,adaptor.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,driver.spec.js,logger.spec.js,port.spec.js,robot.spec.js,utils.spec.js']"
+Ron Evans,2013-10-24,"Merge pull request #7 from hybridgroup/add-event-emitter
+
+Add event emitter to device and connection.",['']
+Andrew Stewart,2013-10-24,"Connections don't need direct binding, just Devices","['robot.js,robot.coffee']"
+Andrew Stewart,2013-10-24,Add Travis-CI build status check example,['travis.coffee']
+deadprogram,2013-10-24,More examples please,"['sphero_messages.coffee,sphero_multiple.coffee']"
+deadprogram,2013-10-24,Color sphero example,['sphero_color.coffee']
+deadprogram,2013-10-24,How you like me now?,['travis.coffee']
+Andrew Stewart,2013-10-24,Clear up scope,"['robot.js,robot.coffee']"
+deadprogram,2013-10-25,The examples shown at js.la,"['hello.js,sphero.coffee,sphero_color.coffee,sphero_multiple.coffee']"
+deadprogram,2013-10-25,"Correct code examples, and link to Artoo",['README.md']
+deadprogram,2013-10-25,Include reference to artoo,['README.md']
+deadprogram,2013-10-25,Better multiple,['multiple.coffee']
+deadprogram,2013-10-25,Correct missing command in loopback test adaptor,"['loopback.js,multiple.coffee,loopback.coffee']"
+deadprogram,2013-10-25,Namespace all the adaptors,"['loopback.js,multiple.coffee,loopback.coffee']"
+deadprogram,2013-10-25,Added ping driver for testing,"['ping.js,robot.js,multiple.coffee,ping.coffee,robot.coffee']"
+deadprogram,2013-10-25,Added section placeholder for hardware support,['README.md']
+Edgar O Silva,2013-10-25,Fixes issue with events not being triggered in drivers because .start was not being called to setup.,"['device.js,robot.js,pure_spheron.coffee,sphero_messages.coffee,device.coffee,robot.coffee']"
+Ron Evans,2013-10-25,"Merge pull request #8 from hybridgroup/event-triggering-fix
+
+Fixes issue with events not being triggered in drivers because .start wa...",['']
+deadprogram,2013-10-25,Devices need pin,"['device.js,device.coffee']"
+deadprogram,2013-10-25,"Works for arduino blink, with new async hotness","['connection.js,device.js,loopback.js,robot.js,blink.coffee,package.json,connection.coffee,device.coffee,loopback.coffee,robot.coffee,robot.spec.js,robot.spec.coffee']"
+deadprogram,2013-10-25,All green,['robot.spec.js']
+deadprogram,2013-10-26,Some logging for debug mode only,"['connection.js,device.js,robot.js,connection.coffee,device.coffee,robot.coffee']"
+deadprogram,2013-10-26,Add links to readme to adaptor modules,['README.md']
+deadprogram,2013-10-26,README and example synced up,"['README.md,blink.coffee']"
+deadprogram,2013-10-26,"Pass requested driver name to driver module, for those that contain multiple drivers","['robot.js,robot.coffee']"
+deadprogram,2013-10-28,Almost the button example,['button.coffee']
+Andrew Stewart,2013-10-28,Add method to proxy functions between objects,"['utils.js,utils.coffee']"
+Andrew Stewart,2013-10-28,Use proxyFunctionsToObject for Connection and Device,"['connection.js,device.js,connection.coffee,device.coffee']"
+Andrew Stewart,2013-10-28,Remove irrelevant tests,"['connection.spec.js,device.spec.js,connection.spec.coffee,device.spec.coffee']"
+deadprogram,2013-10-28,Tweak to button example,['button.coffee']
+Andrew Stewart,2013-10-28,Add tests for proxyFunctionsToObject,"['utils.spec.js,utils.spec.coffee']"
+Ron Evans,2013-10-28,"Merge pull request #9 from hybridgroup/proxy-functions
+
+Proxy Functions From Object To Target",['']
+deadprogram,2013-10-28,Merged better startup routine,"['device.js,robot.js,button.coffee,device.coffee,robot.coffee']"
+deadprogram,2013-10-28,Use the right event,['button.coffee']
+Andrew Stewart,2013-10-28,Correctly proxy methods for classes,"['connection.js,device.js,utils.js,connection.coffee,device.coffee,utils.coffee']"
+Andrew Stewart,2013-10-28,Fix test fails,"['utils.spec.js,utils.spec.coffee']"
+deadprogram,2013-10-28,Working button/LED,['button.coffee']
+Edgar O Silva,2013-10-28,Sphero Collision event example.,['sphero_collision.coffee']
+deadprogram,2013-10-28,Cleanup startConnections and startDevices to ensure proper async startup,"['connection.js,robot.js,connection.coffee,robot.coffee']"
+Edgar O Silva,2013-10-28,Added collision event to the messages example and updated collision example.,"['sphero_collision.coffee,sphero_messages.coffee']"
+Ron Evans,2013-10-28,"Merge pull request #11 from hybridgroup/12-add-collision-event
+
+Sphero Collision event example.",['']
+Edgar O Silva,2013-10-28,Updated collision example to perform better and start running when you drop the sphero.,['sphero_collision.coffee']
+Ron Evans,2013-10-28,"Merge pull request #12 from hybridgroup/12-upd-collision-example
+
+Updated collision example to perform better and start running when you d...",['']
+deadprogram,2013-10-28,Update to version 0.1.0,"['README.md,package.json']"
+deadprogram,2013-10-28,Some pure JS examples for the purists,"['blink.js,button.js,travis.js']"
+deadprogram,2013-10-28,Add ARDRone to README,['README.md']
+deadprogram,2013-10-28,Can now attach users own functions to robot at will,"['ping.js,robot.js,multiple.coffee,ping.coffee,robot.coffee,robot.spec.js,robot.spec.coffee']"
+Andrew Stewart,2013-10-29,Add Basestar class for use in external modules,"['basestar.js,robot.js,basestar.coffee,robot.coffee']"
+Andrew Stewart,2013-10-29,Add node-namespace to package.json,['package.json']
+Andrew Stewart,2013-10-29,Basestar extends EventEmitter,"['basestar.js,basestar.coffee']"
+Ron Evans,2013-10-29,"Merge pull request #13 from hybridgroup/basestar
+
+Add Basestar class for use in external modules",['']
+Andrew Stewart,2013-10-29,Add node-restify and socket.io to package.json,['package.json']
+Andrew Stewart,2013-10-29,Start for Cylon API Server,['api.coffee']
+Edgar O Silva,2013-10-29,Adding analog sensor support to cylon GPIO.,"['device.js,robot.js,analog_sensor.coffee,device.coffee,robot.coffee']"
+Edgar O Silva,2013-10-29,"Removing DriverName param in favor of opts, which already contains it.","['device.js,device.coffee']"
+Ron Evans,2013-10-29,"Merge pull request #14 from hybridgroup/8-analog-sensor
+
+Adding analog sensor support to cylon GPIO.",['']
+deadprogram,2013-10-30,Updates for version 0.2.0,"['README.md,package.json']"
+deadprogram,2013-10-30,Need a line break,['README.md']
+Andrew Stewart,2013-10-30,"Merge branch 'master' into api
+
+* master:
+  Need a line break
+  Updates for version 0.2.0
+  Removing DriverName param in favor of opts, which already contains it.
+  Adding analog sensor support to cylon GPIO.",['']
+Edgar O Silva,2013-10-30,Added examples for motor speed and led brightness.,"['led_brightness.coffee,motor.coffee']"
+Edgar O Silva,2013-10-30,Added speed output to the example.,['motor.coffee']
+Andrew Stewart,2013-10-30,Add methods to export data from Robot/Device/Connection,"['connection.js,device.js,robot.js,connection.coffee,device.coffee,robot.coffee']"
+Andrew Stewart,2013-10-30,Start to API and fetching of all Robots,"['api.js,cylon.js,api.coffee,cylon.coffee']"
+Andrew Stewart,2013-10-30,Add /robots/:robotid and /robots/:robotid/devices,"['api.js,cylon.js,api.coffee,cylon.coffee']"
+Edgar O Silva,2013-10-30,Fix issue with currentSpeed having to go through driver.,['motor.coffee']
+Edgar O Silva,2013-10-30,Adding servo driver example.,['servo.coffee']
+Ron Evans,2013-10-30,"Merge pull request #15 from hybridgroup/9-motor-driver
+
+Adds motor driver example and led brightness.",['']
+Ron Evans,2013-10-30,"Merge pull request #16 from hybridgroup/10-servo-driver
+
+Adding servo driver example.",['']
+deadprogram,2013-10-31,Correct README typo,['README.md']
+deadprogram,2013-10-31,Adding some more examples,"['conway_sphero.coffee,drone.coffee,drone_nav.coffee']"
+deadprogram,2013-10-31,Better class oriented code,['conway_sphero.coffee']
+Andrew Stewart,2013-10-31,Add method for fetching a specific device belonging to a Robot,"['api.js,api.coffee']"
+Andrew Stewart,2013-10-31,Callbacks are cool,"['api.js,cylon.js,api.coffee,cylon.coffee']"
+deadprogram,2013-10-31,Pure JS drone example,['drone.js']
+Andrew Stewart,2013-10-31,Small method rename,"['api.js,api.coffee']"
+Andrew Stewart,2013-10-31,Add API method for fetching device commands,"['api.js,api.coffee']"
+Edgar O Silva,2013-10-31,Updated Basestar to include some proxy event functions and updated sphero messages example.,"['basestar.js,sphero_messages.coffee,basestar.coffee']"
+Andrew Stewart,2013-10-31,"Merge pull request #17 from hybridgroup/26-event-proxy
+
+Updated Basestar to include some proxy event functions and updated spher...",['']
+Andrew Stewart,2013-10-31,WIP on runDeviceCommand,['api.coffee']
+Andrew Stewart,2013-11-01,Add method to run a command for a particular device,"['api.js,api.coffee']"
+Andrew Stewart,2013-11-01,"Add commands to handle fetching connections
+
+- Adds method for fetching all connections belonging to a Robot
+- Adds method for fetching a specific connection belonging to a Robot","['api.js,cylon.js,api.coffee,cylon.coffee']"
+Andrew Stewart,2013-11-01,Switch to express.io and add websocket route,"['api.js,package.json,api.coffee']"
+Andrew Stewart,2013-11-01,"Merge branch 'master' into api
+
+* master:
+  Updated Basestar to include some proxy event functions and updated sphero messages example.
+  Pure JS drone example
+  Better class oriented code
+  Adding some more examples
+  Correct README typo
+  Adding servo driver example.
+  Fix issue with currentSpeed having to go through driver.
+  Added speed output to the example.
+  Added examples for motor speed and led brightness.",['']
+Andrew Stewart,2013-11-01,Server now correctly identifies the URL it's listening on,"['api.js,api.coffee']"
+deadprogram,2013-11-01,Refactor Basestar event proxy functions,"['basestar.js,basestar.coffee']"
+Edgar O Silva,2013-11-01,"Merge pull request #19 from hybridgroup/cleanup-proxy
+
+Refactor Basestar event proxy functions, Looks good :+1:",['']
+Ron Evans,2013-11-01,"Merge pull request #18 from hybridgroup/api
+
+Add API backend",['']
+deadprogram,2013-11-01,Add contributors list,['CONTRIBUTORS.md']
+deadprogram,2013-11-01,Add contributors to package,['package.json']
+deadprogram,2013-11-01,Update version to 0.3.0,['package.json']
+deadprogram,2013-11-01,Add release info to README,['README.md']
+Andrew Stewart,2013-11-02,TomDoc Number monkeypatches,['utils.coffee']
+Andrew Stewart,2013-11-03,Comment new methods in Basestar,['basestar.coffee']
+Andrew Stewart,2013-11-03,Add TomDoc to Cylon,['cylon.coffee']
+Andrew Stewart,2013-11-03,Add TomDoc to Connection,['connection.coffee']
+Andrew Stewart,2013-11-03,Add TomDoc for Device,['device.coffee']
+Andrew Stewart,2013-11-03,Commenting for Logger classes,['logger.coffee']
+deadprogram,2013-11-03,Add reference to i2c drivers to readme,"['README.md,blinkm.coffee']"
+deadprogram,2013-11-03,Example retrieve version from BlinkM,['blinkm.coffee']
+Andrew Stewart,2013-11-04,Add TomDoc to Port class,['port.coffee']
+Andrew Stewart,2013-11-04,Add TomDoc to Robot,['robot.coffee']
+Andrew Stewart,2013-11-04,Compiled changes from previous commits,"['basestar.js,connection.js,device.js,logger.js,robot.js']"
+Andrew Stewart,2013-11-04,Namespace Robot class,"['robot.js,robot.coffee,robot.spec.js,robot.spec.coffee']"
+Andrew Stewart,2013-11-04,Namespace Connection class,"['connection.js,connection.coffee,connection.spec.js,connection.spec.coffee']"
+Andrew Stewart,2013-11-04,Namespace Device class,"['device.js,device.coffee,device.spec.js,device.spec.coffee']"
+Andrew Stewart,2013-11-04,Namespace Port class,"['port.js,port.coffee']"
+Ron Evans,2013-11-04,"Merge pull request #20 from hybridgroup/namespace
+
+Namespace modules",['']
+Andrew Stewart,2013-11-04,Remove pointless namespacing of API,"['api.js,cylon.js,api.coffee,cylon.coffee']"
+Andrew Stewart,2013-11-04,Refactor API routes to be more like Artoo API,"['api.js,api.coffee']"
+Andrew Stewart,2013-11-05,Correct bug with defineEvent(),"['basestar.js,basestar.coffee']"
+Andrew Stewart,2013-11-05,API now functions correctly,"['api.js,api.coffee']"
+Andrew Stewart,2013-11-05,Properly set up websockets,"['api.js,api.coffee']"
+Ron Evans,2013-11-05,"Merge pull request #21 from hybridgroup/refactor-api
+
+Refactor API",['']
+Andrew Stewart,2013-11-05,WIP on Literate Coffeescript version of api.coffee,['api.litcoffee']
+Andrew Stewart,2013-11-05,Compile literate coffeescript,['Gruntfile.js']
+Andrew Stewart,2013-11-05,Document API with Literate Coffeescript,"['api.js,api.coffee,api.litcoffee']"
+Andrew Stewart,2013-11-05,Literate version of examples/travis.coffee,['travis.litcoffee']
+deadprogram,2013-11-05,Revise proxy to use objects instead of prototypes,"['basestar.js,connection.js,device.js,utils.js,basestar.coffee,connection.coffee,device.coffee,utils.coffee,utils.spec.js,utils.spec.coffee']"
+Edgar O Silva,2013-11-05,"Merge pull request #22 from hybridgroup/proxy-objects
+
+Revise proxy to use objects instead of prototypes",['']
+deadprogram,2013-11-05,"Handle exit event, by stopping devices and disconnecting connections","['cylon.js,device.js,robot.js,cylon.coffee,device.coffee,robot.coffee']"
+Andrew Stewart,2013-11-06,Remove duplicate word,['api.litcoffee']
+Andrew Stewart,2013-11-06,"Merge branch 'master' into literate-coffeescript
+
+* master:
+  Revise proxy to use objects instead of prototypes",['']
+Edgar O Silva,2013-11-06,"Merge pull request #23 from hybridgroup/exit-event
+
+Handle exit event, by stopping devices and disconnecting connections",['']
+Edgar O Silva,2013-11-06,Added new LinuxIO DigitalPin library.,"['digital-pin.coffee,io.coffee']"
+Edgar O Silva,2013-11-06,Adde pure GPIO example and updated digital pin lib,"['digital-pin.js,io.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Fix bug in GPIO example.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Updated IO and digital pin to use events.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Removed self and changed example.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Change event triggers in callbacks to fat arrows to keep obj scope.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Added close for GPIO and updated negative ifs,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Change events and update example in digital pin.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Remove logging and update example.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Fixed missing mode variable in digital pin.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Updated digital pin lib and example.,"['digital-pin.js,pure_gpio.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Added new example for raspi adaptor.,['raspi_blink.coffee']
+Edgar O Silva,2013-11-06,Added new DigitalPin to Cylon core to use in adaptors.,"['robot.js,robot.coffee']"
+Edgar O Silva,2013-11-06,"Added new DigitalPin to Cylon core to use in adaptors, for real.","['robot.js,robot.coffee']"
+Edgar O Silva,2013-11-06,Refactored DigitalRead and setup mode to only emit connection event on connect.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,"Added new Digital read example for raspi, updated digitalRead in lib.","['digital-pin.js,raspi_digitalread.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Adding interval reads to digitalRead.,"['digital-pin.js,raspi_digitalread.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Updated DigitalPin and raspi_button example.,"['digital-pin.js,raspi_button.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-06,Fixes raspi button example typo.,['raspi_button.coffee']
+Andrew Stewart,2013-11-06,Replace sphero_multiple with literate version,"['sphero_multiple.coffee,sphero_multiple.litcoffee']"
+Ron Evans,2013-11-06,"Update sphero_multiple.litcoffee
+
+Use the nicer class based syntax",['sphero_multiple.litcoffee']
+Edgar O Silva,2013-11-06,Removes unnecessary IO class.,"['io.js,io.coffee']"
+Ron Evans,2013-11-06,"Merge pull request #24 from hybridgroup/20-raspi-adaptor
+
+20 raspi adaptor",['']
+Edgar O Silva,2013-11-06,Added debugging log to unexport pins command.,"['digital-pin.js,digital-pin.coffee']"
+Andrew Stewart,2013-11-06,"Merge branch 'master' into literate-coffeescript
+
+* master: (21 commits)
+  Removes unnecessary IO class.
+  Fixes raspi button example typo.
+  Updated DigitalPin and raspi_button example.
+  Adding interval reads to digitalRead.
+  Added new Digital read example for raspi, updated digitalRead in lib.
+  Refactored DigitalRead and setup mode to only emit connection event on connect.
+  Added new DigitalPin to Cylon core to use in adaptors, for real.
+  Added new DigitalPin to Cylon core to use in adaptors.
+  Added new example for raspi adaptor.
+  Updated digital pin lib and example.
+  Fixed missing mode variable in digital pin.
+  Remove logging and update example.
+  Change events and update example in digital pin.
+  Added close for GPIO and updated negative ifs
+  Change event triggers in callbacks to fat arrows to keep obj scope.
+  Removed self and changed example.
+  Updated IO and digital pin to use events.
+  Fix bug in GPIO example.
+  Adde pure GPIO example and updated digital pin lib
+  Added new LinuxIO DigitalPin library.
+  ...",['']
+Andrew Stewart,2013-11-06,Clearer and more representative testing of method proxying,"['utils.spec.js,utils.spec.coffee']"
+Andrew Stewart,2013-11-06,Allow configuration of API options,"['cylon.js,api.coffee,cylon.coffee']"
+Ron Evans,2013-11-06,"Merge pull request #25 from hybridgroup/api-configuration
+
+Allow configuration of API options",['']
+deadprogram,2013-11-07,Update to version 0.4.0,"['README.md,package.json']"
+deadprogram,2013-11-07,Use class-based syntax,['sphero_multiple.coffee']
+Andrew Stewart,2013-11-08,Remove unnecessary tests,"['cylon.spec.js,cylon.spec.coffee']"
+Andrew Stewart,2013-11-08,"The Future's So Bright, I Gotta Wear Shades
+
+I apologize for this commit message but cylon-specs + this was just too perfect.
+
+Anyways, have gotten Cylon robot specs working now. For some reason by the time
+the spec runner gets around to running cylon.spec, inside cylon.js Robot has
+been redefined to an empty object '{}'.
+
+This resulted in a ""TypeError: object is not a function on constructor"" error.
+
+So to solve this I moved the require() for 'robot' inside the Cylon.robot()
+method. This shouldn't reload code thanks to Node's require cache, but will
+properly assign Robot when instantiating a new one.","['cylon.js,cylon.coffee,cylon.spec.js,cylon.spec.coffee']"
+Andrew Stewart,2013-11-08,Tests for Cylon#api,"['cylon.js,cylon.coffee,cylon.spec.js,cylon.spec.coffee']"
+Justin Smith,2013-11-08,Updated the readme to include information on uploading Firmata to your Arduino,['README.md']
+Justin Smith,2013-11-08,Added note in Readme reminding users to change the port to their arduino port,['README.md']
+Justin Smith,2013-11-08,Changed arrows on Readme,['README.md']
+Andrew Stewart,2013-11-08,Test for Cylon#robots,"['cylon.spec.js,cylon.spec.coffee']"
+Andrew Stewart,2013-11-08,Add specs for sync and async versions of findRobot(),"['cylon.spec.js,cylon.spec.coffee']"
+Andrew Stewart,2013-11-08,Add tests for Cylon#findRobotDevice(),"['cylon.js,cylon.coffee,cylon.spec.js,cylon.spec.coffee']"
+Andrew Stewart,2013-11-08,Add tests for Cylon#findRobotConnection,"['cylon.js,robot.js,cylon.coffee,robot.coffee,cylon.spec.js,cylon.spec.coffee']"
+Andrew Stewart,2013-11-11,"Merge pull request #28 from hybridgroup/cylon-specs
+
+More Cylon Specs",['']
+Andrew Stewart,2013-11-11,Simplify readline setup for Windows users,"['cylon.js,cylon.coffee']"
+Andrew Stewart,2013-11-11,Properly organize supporting classes for tests,"['adaptor.js,driver.js,adaptor.coffee,driver.coffee,adaptor.spec.js,connection.spec.js,device.spec.js,driver.spec.js,adaptor.spec.coffee,connection.spec.coffee,device.spec.coffee,driver.spec.coffee']"
+Andrew Stewart,2013-11-11,Clean up tests,"['adaptor.js,driver.js,adaptor.coffee,driver.coffee,adaptor.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,driver.spec.js,port.spec.js,utils.spec.js,adaptor.spec.coffee,connection.spec.coffee,cylon.spec.coffee,device.spec.coffee,driver.spec.coffee,logger.spec.coffee,port.spec.coffee,robot.spec.coffee,utils.spec.coffee']"
+Andrew Stewart,2013-11-11,More consistent internal representation of components,"['connection.js,robot.js,api.coffee,connection.coffee,cylon.coffee,robot.coffee']"
+Edgar O Silva,2013-11-11,"Refactor GPIO file paths, added validation to check for existance of GPIO pins (they have already been setup), added new sync disconnect.",['digital-pin.coffee']
+Edgar O Silva,2013-11-11,Fox indenting error.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-11,Added pin number to emit close event.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-11,Fixes issue with undefined path in digital pin.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-11,Fixes disconnect pins by making last IO calls sync and validates for existance of pin files.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-11,Make sure the pin mode is setup even if the file already exists.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-12,Updating unexport path to use function call.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-12,Refactor digital pin.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-12,Fx missing param in setModeCallback.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-12,Add missing param emitConnect.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-12,Remove @self references in favor of just @ and fix set mode to udpate the obj attr when actually changing the mode.,"['digital-pin.js,digital-pin.coffee']"
+Ron Evans,2013-11-12,"Merge pull request #29 from hybridgroup/20-raspi-adaptor
+
+20 raspi adaptor with GPIO support.",['']
+Edgar O Silva,2013-11-12,Fix typo in path call.,"['digital-pin.js,digital-pin.coffee']"
+Ron Evans,2013-11-12,"Merge pull request #30 from hybridgroup/digital-pin-refactor
+
+Digital pin refactor",['']
+Andrew Stewart,2013-11-14,Pass event payloads correctly in Basestar,"['basestar.js,basestar.coffee']"
+Ron Evans,2013-11-14,"Merge pull request #31 from hybridgroup/event-payload-fix
+
+Pass event payloads correctly in Basestar",['']
+deadprogram,2013-11-15,Allow for any HTTP verb on device command,"['api.js,api.coffee']"
+deadprogram,2013-11-15,Do not run travisci on site code,['.travis.yml']
+Andrew Stewart,2013-11-15,"Merge branch 'master' into literate-coffeescript
+
+* master: (31 commits)
+  Do not run travisci on site code
+  Allow for any HTTP verb on device command
+  Pass event payloads correctly in Basestar
+  Fix typo in path call.
+  Remove @self references in favor of just @ and fix set mode to udpate the obj attr when actually changing the mode.
+  Add missing param emitConnect.
+  Fx missing param in setModeCallback.
+  Refactor digital pin.
+  Updating unexport path to use function call.
+  Make sure the pin mode is setup even if the file already exists.
+  Fixes disconnect pins by making last IO calls sync and validates for existance of pin files.
+  Fixes issue with undefined path in digital pin.
+  Added pin number to emit close event.
+  Fox indenting error.
+  Refactor GPIO file paths, added validation to check for existance of GPIO pins (they have already been setup), added new sync disconnect.
+  More consistent internal representation of components
+  Clean up tests
+  Properly organize supporting classes for tests
+  Simplify readline setup for Windows users
+  Add tests for Cylon#findRobotConnection
+  ...
+
+Conflicts:
+	dist/api.js
+	examples/sphero_multiple.coffee
+	src/api.coffee",['']
+Andrew Stewart,2013-11-15,Fix variable naming error,"['api.js,api.litcoffee']"
+Ron Evans,2013-11-15,"Merge pull request #32 from hybridgroup/literate-coffeescript
+
+Literate CoffeeScript",['']
+Edgar O Silva,2013-11-15,Sf Client and S Example.,"['sf-client.js,sf-test.coffee,sf-client.coffee']"
+Edgar O Silva,2013-11-15,WIP on SF-Cylon connection,['sf-sphero.coffee']
+Edgar O Silva,2013-11-15,WIP on Sphero SF,"['sf-client.js,sf-client.coffee,sf-sphero.coffee,sf-test.coffee']"
+deadprogram,2013-11-15,Happy references,"['sf-sphero.coffee,sf-test.coffee']"
+Edgar O Silva,2013-11-15,Latest cylon example updates,"['sf-client.coffee,sf-sphero.coffee']"
+Edgar O Silva,2013-11-15,Added example using salesforce driver and adaptor.,"['salesforce.coffee,sf-client.coffee,sf-sphero.coffee']"
+Edgar O Silva,2013-11-15,Added adaptor extra params and updated salesforce example.,"['connection.js,robot.js,salesforce.coffee,connection.coffee,robot.coffee']"
+Edgar O Silva,2013-11-15,Sphero-pebble-salesforce example working.,"['multiple_devices.coffee,sf-sphero.coffee,sphero-pebble-sf.coffee']"
+Adrian Zankich,2013-11-16,Update example,['sphero-pebble-sf.coffee']
+deadprogram,2013-11-16,Updates to README for new platforms,['README.md']
+Adrian Zankich,2013-11-16,Update example,['sphero-pebble-sf.coffee']
+Edgar O Silva,2013-11-16,Updated examples to include ENV vars.,"['salesforce.coffee,sf-sphero.coffee,sf-test.coffee,sphero-pebble-sf.coffee']"
+Ron Evans,2013-11-16,"Merge pull request #35 from hybridgroup/salesforce
+
+Salesforce examples and changes for Dreamforce demos.",['']
+deadprogram,2013-11-16,Update version to 0.5.0,['package.json']
+deadprogram,2013-11-16,Merge branch 'salesforce',['']
+Edgar O Silva,2013-11-17,Updated sphero to use bucks and charge bucks for power.,['sphero-pebble-sf.coffee']
+Edgar O Silva,2013-11-17,Updated examles for salesforce.,"['salesforce.coffee,sf-sphero.coffee,sphero-pebble-sf.coffee']"
+Edgar O Silva,2013-11-17,Updated examples for Dreamforce 2013,"['salesforce.coffee,sf-sphero.coffee']"
+Edgar O Silva,2013-11-17,Updated sphero salesforce example with bankruptcy and changeDirection.,['sphero-pebble-sf.coffee']
+Edgar O Silva,2013-11-17,Fixed typo in change direction method.,['sphero-pebble-sf.coffee']
+Edgar O Silva,2013-11-17,Update sphero-sf example.,['sf-sphero.coffee']
+Adrian Zankich,2013-11-17,"Merge pull request #37 from hybridgroup/sf-example-upd
+
+Sf examples update.",['']
+Adrian Zankich,2013-11-18,Update examples,"['sf-sphero.coffee,sphero-pebble-sf.coffee']"
+Andrew Stewart,2013-11-18,Small cleanup to utils,['utils.coffee']
+Andrew Stewart,2013-11-19,Clean up digital-pin,['digital-pin.coffee']
+Andrew Stewart,2013-11-20,Readme updates,['README.md']
+Andrew Stewart,2013-11-22,"Remove (actually, this time) unnecessary semicolons","['api.litcoffee,basestar.coffee,connection.coffee,cylon.coffee,device.coffee,digital-pin.coffee,loopback.coffee,ping.coffee,port.coffee,robot.coffee,adaptor.coffee,driver.coffee']"
+Andrew Stewart,2013-11-22,Small cleanup,"['connection.coffee,cylon.coffee,robot.coffee']"
+Andrew Stewart,2013-11-22,Remove unnecessary specs,"['adaptor.spec.js,driver.spec.js,adaptor.spec.coffee,driver.spec.coffee']"
+Andrew Stewart,2013-11-22,WIP on tests for Basestar class,"['basestar.spec.js,basestar.spec.coffee']"
+deadprogram,2013-11-23,"Refactoring adaptor and driver initialization to simplify, and fix init overwrite error","['connection.js,device.js,robot.js,connection.coffee,device.coffee,robot.coffee,connection.spec.js,device.spec.js,connection.spec.coffee,device.spec.coffee']"
+deadprogram,2013-11-23,Docs corrections,"['connection.coffee,robot.coffee']"
+deadprogram,2013-11-23,Add NPM badge,['README.md']
+deadprogram,2013-11-23,Add NPM badge,['README.md']
+deadprogram,2013-11-23,Add NPM badge,['README.md']
+deadprogram,2013-11-23,Add NPM badge,['README.md']
+deadprogram,2013-11-24,Showing CoffeeScript in markdown via javascript renderer,['README.md']
+deadprogram,2013-11-24,Showing CoffeeScript in markdown via generic code renderer,['README.md']
+deadprogram,2013-11-24,Improve readme again,['README.md']
+deadprogram,2013-11-24,Improved explanation for the example,['README.md']
+Ron Evans,2013-11-24,"Merge pull request #27 from justintsmith/master
+
+Pull request to update README.md",['']
+deadprogram,2013-11-24,Include Firmata instructions,['README.md']
+Andrew Stewart,2013-11-25,Switch back to regular CoffeeScript for API,"['api.js,api.coffee,api.litcoffee']"
+Edgar O Silva,2013-11-25,"Merge pull request #39 from hybridgroup/correct-driver-arch
+
+Correct driver and adaptor require and init",['']
+Adrian Zankich,2013-11-25,Replace api.litcoffee with api.coffee,"['api.coffee,api.litcoffee']"
+Adrian Zankich,2013-11-25,Replace api.litcoffee with api.coffee,"['api.coffee,api.litcoffee']"
+Adrian Zankich,2013-11-25,Execute robot commands from api,"['api.js,robot.js,robot_commands.coffee,api.coffee,robot.coffee']"
+deadprogram,2013-11-25,Resolve merge conflicts,['']
+Ron Evans,2013-11-25,"Merge pull request #42 from hybridgroup/robot_methods_in_api
+
+Robot methods in api",['']
+deadprogram,2013-11-25,Update to version 0.6.0,"['README.md,package.json']"
+Andrew Stewart,2013-11-25,WIP on organizing examples and making sure there are JS and CS versions of both,"['analog_sensor.coffee,analog_sensor.coffee,analog_sensor.js,api.coffee,api.js,blink.coffee,blink.coffee,blink.js,blinkm.coffee,blinkm.js,button.coffee,button.js,button.coffee,button.js,conway_sphero.coffee,conway_sphero.js,drone.coffee,drone.js,drone.coffee,drone.js,drone_nav.coffee,drone_nav.coffee,drone_nav.js,hello.js,hello.coffee,hello.js,led_brightness.coffee,led_brightness.js,master.coffee,master.js,motor.coffee,motor.coffee,motor.js,multiple.coffee,multiple.js,multiple_devices.coffee,no_such_method.coffee,pure_gpio.coffee,pure_gpio.coffee,pure_gpio.js,pure_spheron.coffee,pure_spheron.coffee,pure_spheron.js,raspi_blink.coffee,raspi_blink.coffee,raspi_blink.js,raspi_button.coffee,raspi_button.coffee,raspi_button.js,salesforce.coffee,salesforce.coffee,salesforce.js,servo.coffee,servo.coffee,servo.js,sf-client.coffee,sf-client.coffee,sf-client.js,sf-sphero.coffee,sf-sphero.coffee,sf-sphero.js,sf-test.coffee,sf-test.coffee,sf-test.js']"
+Andrew Stewart,2013-11-26,Move Travis examples into subdir,"['travis.coffee,travis.js,travis.litcoffee']"
+Andrew Stewart,2013-11-26,"Merge branch 'master' into literate
+
+* master:
+  Update to version 0.6.0
+  Execute robot commands from api
+  Replace api.litcoffee with api.coffee
+  Replace api.litcoffee with api.coffee
+  Docs corrections
+  Refactoring adaptor and driver initialization to simplify, and fix init overwrite error
+
+Conflicts:
+	src/api.coffee",['']
+Edgar O Silva,2013-11-26,Updated digital pin and added pwm raspi example.,"['raspi_led_brightness.coffee,digital-pin.coffee']"
+Edgar O Silva,2013-11-26,Fixes err param not being passed.,"['digital-pin.js,digital-pin.coffee']"
+Andrew Stewart,2013-11-26,Finish reorganizing existing examples,"['robot_commands.coffee,robot_commands.js,sphero-pebble-sf.coffee,sphero-pebble-sf.coffee,sphero-pebble-sf.js,sphero.coffee,sphero.coffee,sphero.js,sphero_collision.coffee,sphero_collision.coffee,sphero_collision.js,sphero_color.coffee,sphero_color.coffee,sphero_color.js,sphero_messages.coffee,sphero_messages.coffee,sphero_messages.js,sphero_multiple.coffee,sphero_multiple.js,sphero_multiple.litcoffee,test.js,travis.coffee,travis.js,travis.litcoffee']"
+Edgar O Silva,2013-11-26,Update digital pin close callback param.,['digital-pin.coffee']
+Andrew Stewart,2013-11-26,Literate Coffeescript example for Analog Sensor,"['analog_sensor.coffee,analog_sensor.litcoffee']"
+Andrew Stewart,2013-11-26,Literate version of API example,"['api.coffee,api.js,api.litcoffee']"
+Andrew Stewart,2013-11-26,Literate coffeescript version of Blink example,['blink.litcoffee']
+Andrew Stewart,2013-11-26,Literate coffeescript version of BlinkM example,['blinkm.litcoffee']
+Andrew Stewart,2013-11-26,Literate coffeescript version of Button example,['button.litcoffee']
+Ron Evans,2013-11-26,"Merge pull request #43 from hybridgroup/20-raspi-adaptor
+
+Example for PWM support for the cylon-raspi.",['']
+deadprogram,2013-11-26,Update to 0.6.1,['package.json']
+deadprogram,2013-11-26,Add more supported devices to README,['README.md']
+Edgar O Silva,2013-11-27,Added servo example for Raspi.,['raspi_servo.coffee']
+Andrew Stewart,2013-11-27,Add Literate version of Conway example and fix bug,"['conway_sphero.coffee,conway_sphero.js,conway_sphero.litcoffee']"
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of drone example,['drone.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of drone_nav example,['drone_nav.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of hello example and path fix,"['hello.coffee,hello.litcoffee']"
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of led_brightness example,['led_brightness.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of master example,['master.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of motor example,['motor.litcoffee']
+Andrew Stewart,2013-11-27,Merge master and multiple examples,"['master.coffee,master.js,master.litcoffee,multiple.coffee,multiple.js']"
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of pure_gpio example,['pure_gpio.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of pure_spheron example,['pure_spheron.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of raspi_blink example,['raspi_blink.litcoffee']
+Edgar O Silva,2013-11-27,Debugging digitalPin read.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-27,DigitalRead buffer data converted to string now.,"['digital-pin.js,digital-pin.coffee']"
+Edgar O Silva,2013-11-27,Update digital read to parseInt buffer response.,"['digital-pin.js,digital-pin.coffee']"
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of raspi_button example,['raspi_button.litcoffee']
+Edgar O Silva,2013-11-27,Updated servo examples to use a limit range of motion instead of full 180.,"['raspi_servo.coffee,servo.coffee']"
+Andrew Stewart,2013-11-27,Add back accidentally-removed API functionality,['api.coffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of robot_commands example,['robot_commands.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of servo example,['servo.litcoffee']
+Andrew Stewart,2013-11-27,Literate CoffeeScript version of sphero example,['sphero.litcoffee']
+Ron Evans,2013-11-27,"Merge pull request #44 from hybridgroup/20-raspi-adaptor
+
+Added servo example for Raspi.",['']
+deadprogram,2013-11-27,Crazyflies,['crazyflie.coffee']
+Andrew Stewart,2013-11-28,Literate CoffeeScript version of sphero_collision example,['sphero_collision.litcoffee']
+Andrew Stewart,2013-11-28,Literate CoffeeScript version of sphero_color example,['sphero_color.litcoffee']
+Andrew Stewart,2013-11-28,Literate CoffeeScript version of sphero_messages example,['sphero_messages.litcoffee']
+Andrew Stewart,2013-11-28,"Merge branch 'master' into literate
+
+* master:
+  Crazyflies
+  Updated servo examples to use a limit range of motion instead of full 180.
+  Update digital read to parseInt buffer response.
+  DigitalRead buffer data converted to string now.
+  Debugging digitalPin read.
+  Added servo example for Raspi.
+  Add more supported devices to README
+  Update to 0.6.1
+  Update digital pin close callback param.
+  Fixes err param not being passed.
+  Updated digital pin and added pwm raspi example.
+
+Conflicts:
+	examples/servo.coffee",['']
+Andrew Stewart,2013-11-28,Organization of new examples and literate/js versions of each,"['crazyflie.coffee,crazyflie.js,crazyflie.litcoffee,raspi_led_brightness.coffee,raspi_led_brightness.js,raspi_led_brightness.litcoffee,raspi_servo.coffee,raspi_servo.coffee,raspi_servo.js,raspi_servo.litcoffee']"
+Edgar O Silva,2013-11-28,"Merge pull request #45 from hybridgroup/literate
+
+Literate CoffeeScript Examples",['']
+xixebombilla,2013-12-02,70-README-doc-master,['README.md']
+Ron Evans,2013-12-02,"Merge pull request #49 from hybridgroup/cylonjs-README-doc-master
+
+70-README-doc-master",['']
+Andrew Stewart,2013-12-02,"Basic adaptor generation
+
+Adds a `cylon` script, build with Commander.js. Only functionality right now is
+to generate adaptors, still need to determine what files are necessary for new
+adaptors and to add templating.","['cylon,package.json,adaptor.js,package.json']"
+Andrew Stewart,2013-12-03,Templating for generating adaptors in place,"['cylon,package.json,adaptor.js,package.json,package.json.tpl']"
+Andrew Stewart,2013-12-03,Additional files to be generated for new modules,"['.gitignore,.jshintrc,Gruntfile.js,LICENSE,README.md.tpl,adaptorName.js.tpl,package.json.tpl,adaptorName.coffee.tpl,adaptorName.spec.js.tpl,adaptorName.spec.coffee.tpl,globals.js,runner.js']"
+Andrew Stewart,2013-12-03,Remove incorrect duplication of 'cylon-',['README.md.tpl']
+Andrew Stewart,2013-12-03,Correct name/license details in source files,"['adaptorName.js.tpl,adaptorName.coffee.tpl']"
+Edgar O Silva,2013-12-03,Update GPIO_DIRECTION constants.,['digital-pin.coffee']
+Ron Evans,2013-12-03,"Merge pull request #51 from hybridgroup/generator
+
+Generator and Cylon binary",['']
+Edgar O Silva,2013-12-03,Added new beaglebone blink example.,['bbb_blink.coffee']
+Andrew Stewart,2013-12-03,README notes on generator/CLI,['README.md']
+Andrew Stewart,2013-12-03,Fix indentation of cli output,['README.md']
+Edgar O Silva,2013-12-03,added new push button example for beaglebone.,"['digital-pin.js,bbb_button.coffee']"
+Ron Evans,2013-12-03,"Merge pull request #52 from hybridgroup/21-beaglebone-adaptor
+
+Added GPIO examples for beaglebone.",['']
+deadprogram,2013-12-03,Add Beaglebone and Spark to README,['README.md']
+deadprogram,2013-12-03,Update to 0.7.0,['package.json']
+deadprogram,2013-12-03,Update README,['README.md']
+xixebombilla,2013-12-05,74-cylon-readme-improvements,['README.md']
+xixebombilla,2013-12-05,74-cylon-readme-fix-url,['README.md']
+Andrew Stewart,2013-12-06,Add example for Spark Core - blinking,"['spark_blink.coffee,spark_blink.js,spark_blink.litcoffee']"
+Edgar O Silva,2013-12-06,Added example for PWM in beaglebone.,['bbb_led_brightness.coffee']
+Andrew Stewart,2013-12-07,Add Robot#toString() method,"['robot.js,robot.coffee,robot.spec.js,robot.spec.coffee']"
+Ron Evans,2013-12-08,"Merge pull request #55 from hybridgroup/master-README-review
+
+Markdown fix Master README",['']
+Ron Evans,2013-12-08,"Merge pull request #54 from hybridgroup/21-beaglebone-adaptor
+
+Added example for PWM in beaglebone.",['']
+deadprogram,2013-12-09,Remove parens and add pending tests to digital-pin,"['digital-pin.js,digital-pin.coffee,digital-pin.spec.js,digital-pin.spec.coffee']"
+Edgar O Silva,2013-12-11,Added example for beaglebone servo.,['bbb_servo.coffee']
+Edgar O Silva,2013-12-11,Update the pin for the correct bbb header.,['bbb_led_brightness.coffee']
+Edgar O Silva,2013-12-11,Fix incorrect require.,['bbb_servo.coffee']
+deadprogram,2013-12-14,Refactoring Adaptor and Driver into proper base classes,"['adaptor.js,connection.js,device.js,driver.js,loopback.js,ping.js,adaptor.coffee,connection.coffee,device.coffee,driver.coffee,loopback.coffee,ping.coffee,adaptor.coffee,connection.spec.js,cylon.spec.js,device.spec.js,connection.spec.coffee,cylon.spec.coffee,device.spec.coffee']"
+deadprogram,2013-12-14,Remaining moves and refactoring for Adaptor/Driver base classes,"['adaptor.js,driver.js,robot.js,loopback.js,ping.js,adaptor.coffee,driver.coffee,robot.coffee,loopback.coffee,ping.coffee,connection.spec.js,device.spec.js,connection.spec.coffee,device.spec.coffee']"
+deadprogram,2013-12-14,Adaptors and Drivers derive from Basestar,"['adaptor.js,driver.js,adaptor.coffee,driver.coffee']"
+deadprogram,2013-12-15,WIP on refactoring adaptor/driver base classes,"['adaptor.js,cylon.js,driver.js,loopback.js,ping.js,package.json,adaptor.coffee,cylon.coffee,driver.coffee,loopback.coffee,ping.coffee']"
+deadprogram,2013-12-15,Working refactor of Adaptor/Driver base classes,"['robot.js,adaptor.coffee,driver.coffee,robot.coffee,adaptor.spec.js,driver.spec.js,adaptor.spec.coffee,driver.spec.coffee']"
+deadprogram,2013-12-15,Default opts is an empty hash,"['adaptor.js,driver.js,adaptor.coffee,driver.coffee']"
+deadprogram,2013-12-15,Removing extraneous things from Adaptor/Driver,"['driver.js,loopback.js,ping.js,driver.coffee,loopback.coffee,ping.coffee,device.spec.js,device.spec.coffee']"
+deadprogram,2013-12-15,Make even shorter syntax by removing redundant Adaptors and Drivers,"['adaptor.js,driver.js,loopback.js,ping.js,adaptor.coffee,driver.coffee,loopback.coffee,ping.coffee,adaptor.spec.js,driver.spec.js,adaptor.spec.coffee,driver.spec.coffee']"
+Andrew Stewart,2013-12-16,"Merge pull request #60 from hybridgroup/derived-adaptors-and-drivers
+
+Derived adaptors and drivers",['']
+Andrew Stewart,2013-12-16,Remove unnecessary generator components,"['adaptorName.spec.js.tpl,adaptorName.spec.coffee.tpl']"
+deadprogram,2013-12-16,Match the new adaptor name in generated files,"['adaptorName.coffee.tpl,adaptorName.spec.coffee.tpl']"
+deadprogram,2013-12-16,Add info for release 0.8.0,['README.md']
+Edgar O Silva,2013-12-17,Added example for i2c using blinkm.,['bbb_i2c_blinkm.coffee']
+Andrew Stewart,2013-12-18,Add tests for Adaptor class,"['adaptor.spec.js,adaptor.spec.coffee']"
+Andrew Stewart,2013-12-18,Add tests for Driver class,"['driver.spec.js,driver.spec.coffee']"
+Edgar O Silva,2013-12-18,Added new beaglebone folder for examples. Updated blinkm example.,"['bbb_blink.coffee,bbb_button.coffee,bbb_i2c_blinkm.coffee,bbb_led_brightness.coffee']"
+Edgar O Silva,2013-12-19,Remove all examples and updated blink m example.,"['bbb_blink.coffee,bbb_button.coffee,bbb_i2c_blinkm.coffee,bbb_led_brightness.coffee,bbb_i2c_blinkm.coffee']"
+Edgar O Silva,2013-12-19,Fixed indentation.,['bbb_i2c_blinkm.coffee']
+Edgar O Silva,2013-12-19,Added comments and safety instructions to servo example.,['bbb_servo.coffee']
+Adrian Zankich,2013-12-20,"Merge pull request #64 from hybridgroup/21-beaglebone-adaptor-servo
+
+beaglebone servo support.",['']
+Adrian Zankich,2013-12-20,Merge branch 'master' into 72-i2c-support,['']
+Adrian Zankich,2013-12-20,"Merge pull request #63 from hybridgroup/72-i2c-support
+
+Added examples for i2c support.",['']
+Edgar O Silva,2013-12-27,Added example for blinkm in raspi.,['raspi_i2c_blinkm.coffee']
+Mario Ricalde,2013-12-27,update contributing section of the README,['README.md']
+deadprogram,2013-12-28,A few tweaks to contribution section,['README.md']
+deadprogram,2013-12-28,Correct typos and errors in README,['README.md']
+deadprogram,2013-12-28,"Add Twitter info to README
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['README.md']
+Edgar O Silva,2013-12-29,Fixed incorrect driver in example for raspi blinkm.,['raspi_i2c_blinkm.coffee']
+Edgar O Silva,2013-12-30,Updated raspi_i2c_blink m example and moved to new folder.,"['bbb_servo.coffee,raspi_i2c_blinkm.coffee']"
+Edgar O Silva,2013-12-30,Fixes require isse for new example location.,['raspi_i2c_blinkm.coffee']
+Edgar O Silva,2013-12-30,Remove pin from example.,['raspi_i2c_blinkm.coffee']
+Adrian Zankich,2013-12-30,Update example,['raspi_i2c_blinkm.coffee']
+Adrian Zankich,2013-12-30,"Merge pull request #65 from hybridgroup/89-i2c-support
+
+Adds blinkm example for raspberry pi using i2c.",['']
+Andrew Stewart,2014-01-02,Start on some DigitalPin tests,"['digital-pin.coffee,digital-pin.spec.js,digital-pin.spec.coffee']"
+Andrew Stewart,2014-01-03,Finish with DigitalPin specs,"['digital-pin.js,digital-pin.coffee,digital-pin.spec.js,digital-pin.spec.coffee']"
+Andrew Stewart,2014-01-03,Cleaning up API,"['api.js,api.coffee']"
+Andrew Stewart,2014-01-03,Serve static files from API dir,"['.keep,api.js,api.coffee']"
+Andrew Stewart,2014-01-03,Add jQuery,['']
+Andrew Stewart,2014-01-03,Add Bootstrap,['']
+Andrew Stewart,2014-01-03,Add Angular,['']
+Andrew Stewart,2014-01-03,Add basic index.html page,['']
+Andrew Stewart,2014-01-03,Compile a missing previous API change,['api.js']
+Andrew Stewart,2014-01-03,Print timestamp and log level when using Logger,"['logger.js,logger.coffee']"
+Andrew Stewart,2014-01-03,Examples should use console.log instead of Logger,"['analog_sensor.coffee,analog_sensor.js,analog_sensor.litcoffee,api.coffee,api.js,api.litcoffee,bbb_servo.coffee,blinkm.coffee,blinkm.js,blinkm.litcoffee,conway_sphero.coffee,conway_sphero.js,conway_sphero.litcoffee,drone_nav.coffee,drone_nav.js,drone_nav.litcoffee,hello.coffee,hello.js,hello.litcoffee,master.coffee,master.js,master.litcoffee,motor.coffee,motor.js,motor.litcoffee,raspi_servo.coffee,raspi_servo.js,raspi_servo.litcoffee,robot_commands.coffee,robot_commands.js,robot_commands.litcoffee,salesforce.coffee,salesforce.js,servo.coffee,servo.js,servo.litcoffee,sf-sphero.coffee,sf-sphero.js,sphero-pebble-sf.coffee,sphero-pebble-sf.js,sphero_collision.coffee,sphero_collision.js,sphero_collision.litcoffee,sphero_messages.coffee,sphero_messages.js,sphero_messages.litcoffee,sphero_multiple.coffee,sphero_multiple.js,sphero_multiple.litcoffee,travis.coffee,travis.js,travis.litcoffee']"
+Andrew Stewart,2014-01-06,Require Bootstrap JS,['']
+Andrew Stewart,2014-01-06,Add font-awesome for Bootstrap,"['FontAwesome.otf,fontawesome-webfont.eot,fontawesome-webfont.svg,fontawesome-webfont.ttf,fontawesome-webfont.woff']"
+Andrew Stewart,2014-01-06,Add ngRoute for Angular routing,['']
+Andrew Stewart,2014-01-06,Correct URLs for Font-Awesome,['']
+Andrew Stewart,2014-01-06,Add Angular app logic,['']
+Andrew Stewart,2014-01-06,Add <link> tag for Font-Awesome,['']
+Andrew Stewart,2014-01-06,Add navigation bar,['']
+Andrew Stewart,2014-01-06,Bootstrap updates and styles for robots,['']
+Andrew Stewart,2014-01-06,Additional changes and CSS for device pages,['']
+Andrew Stewart,2014-01-07,Small CSS updates,['']
+deadprogram,2014-01-07,Update copyright year in readme,['README.md']
+Andrew Stewart,2014-01-09,"Switch from process.exit() to process.kill()
+
+Moves to use the kill() method to make sure Cylon shuts down, by sending
+a SIGTERM signal to the running process.","['cylon.js,cylon.coffee']"
+Ron Evans,2014-01-09,"Merge pull request #66 from hybridgroup/sigterm
+
+Switch from process.exit() to process.kill()",['']
+deadprogram,2014-01-10,Class name clash was messing with the API Server,"['api.js,cylon.js,api.coffee,cylon.coffee']"
+deadprogram,2014-01-10,"Remove warning from deprecated parser, and correct server title display in logger","['api.js,api.coffee']"
+Andrew Stewart,2014-01-10,"Fix passing params to API server
+
+Also now prints result from server to in-page console.",['']
+Andrew Stewart,2014-01-10,"Merge branch 'master' into api-interface
+
+* master:
+  Switch from process.exit() to process.kill()
+  Update copyright year in readme
+  Examples should use console.log instead of Logger
+  Print timestamp and log level when using Logger
+  Compile a missing previous API change",['']
+Andrew Stewart,2014-01-10,CSS updates for dropdown command menu,['']
+Andrew Stewart,2014-01-10,Rename server to Cylon.ApiServer,"['api.js,cylon.js,api.coffee,cylon.coffee']"
+Ron Evans,2014-01-10,"Merge pull request #67 from hybridgroup/api-interface
+
+Api interface",['']
+deadprogram,2014-01-12,Add helpful range conversion functions,"['utils.js,utils.coffee,utils.spec.js,utils.spec.coffee']"
+deadprogram,2014-01-12,Update copyright year,['LICENSE']
+Andrew Stewart,2014-01-13,Add base adaptor and driver classes,"['adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,adaptor.coffee.tpl,adaptorName.coffee.tpl,driver.coffee.tpl,adaptorName.spec.js.tpl']"
+Andrew Stewart,2014-01-13,Properly namespace module tests,"['adaptorName.spec.js.tpl,adaptorName.spec.coffee.tpl']"
+xixebombilla,2014-01-13,98-keyboard-README,['README.md']
+xixebombilla,2014-01-13,98-keyboard-examples,"['keyboard.coffee,keyboard.js']"
+Andrew Stewart,2014-01-13,Add new base specs for adaptor and driver classes,"['adaptor.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.coffee.tpl,driver.spec.coffee.tpl']"
+Andrew Stewart,2014-01-13,Add more generated README content,"['adaptor.js,README.md.tpl']"
+Andrew Stewart,2014-01-13,Correctly template everything out,"['adaptor.js.tpl,driver.js.tpl']"
+Andrew Stewart,2014-01-13,Correct templating in dist file,['adaptorName.js.tpl']
+Andrew Stewart,2014-01-13,Slight restructuring of coffeescript example in README,['README.md.tpl']
+Ron Evans,2014-01-13,"Merge pull request #69 from hybridgroup/generator-update
+
+Generator updates",['']
+Andrew Stewart,2014-01-13,"Load commands from cylon modules, if they're present",['cylon']
+Ron Evans,2014-01-13,"Merge pull request #71 from hybridgroup/subcommands
+
+Cylon Subcommands",['']
+Andrew Stewart,2014-01-14,Allow for passing arguments to subcommands,['cylon']
+Edgar O Silva,2014-01-14,Added examples for opencv adaptor and drivers.,"['display-camera-feed.coffee,display-camera-video.coffee,display-image-from-camera.coffee,face-detection.coffee,haarcascade_frontalface_alt.xml']"
+Edgar O Silva,2014-01-14,Remove duplicated example.,['display-camera-video.coffee']
+Ron Evans,2014-01-14,"Merge pull request #74 from hybridgroup/opencv-examples
+
+Added Opencv examples.",['']
+deadprogram,2014-01-14,Updates for version 0.9.0,"['README.md,package.json']"
+deadprogram,2014-01-14,Update logo image location to match new site structure,['README.md']
+deadprogram,2014-01-14,Update to 0.9.1,['package.json']
+deadprogram,2014-01-14,Update README with new platforms,['README.md']
+deadprogram,2014-01-15,Remove node 0.8 from travis build,['.travis.yml']
+deadprogram,2014-01-15,Update 0.9.2,['package.json']
+Andrew Stewart,2014-01-16,Small cleanups and additional comments,"['driver.js,adaptor.coffee,connection.coffee,driver.coffee']"
+Andrew Stewart,2014-01-16,Add function to parse command params,"['api.js,api.coffee']"
+Andrew Stewart,2014-01-17,Correct API and NG app for issuing commands,['']
+Andrew Stewart,2014-01-17,General cleanup to ng app,['']
+Andrew Stewart,2014-01-17,Clean up HTML,['']
+Andrew Stewart,2014-01-17,Remove focus outline on param text inputs,['']
+Andrew Stewart,2014-01-17,Remove unnecessary directive,['']
+Andrew Stewart,2014-01-18,Trim down long lines,['']
+Ron Evans,2014-01-18,"Merge pull request #77 from hybridgroup/api-command-fixes
+
+Correct API and Angular app for issuing device commands",['']
+Andrew Stewart,2014-01-19,Clear up param type naming,['']
+Edgar O Silva,2014-01-19,Updated servo examples to include the new optional range param.,"['servo.coffee,servo.js,servo.litcoffee']"
+Edgar O Silva,2014-01-19,Updated litcoffee example with correct range params.,['servo.litcoffee']
+Ron Evans,2014-01-20,"Merge pull request #78 from hybridgroup/servo-angle-safety
+
+Servo angle safety updates, now with optional range parameter.",['']
+Edgar O Silva,2014-01-20,Updated bbb examples.,"['bbb_blink.coffee,bbb_button.coffee,bbb_i2c_blinkm.coffee,bbb_led_brightness.coffee,bbb_servo.coffee']"
+Ron Evans,2014-01-20,"Merge pull request #79 from hybridgroup/update-bbb-examples
+
+Updated bbb examples.",['']
+Edgar O Silva,2014-01-20,Remove duplicated example for blinkm in raspi.,"['raspi_i2c_blinkm.coffee,raspi_i2c_blinkm.coffee']"
+Edgar O Silva,2014-01-20,Added updated example for blinkm driver using firmata on arduino.,['blinkm.coffee']
+Edgar O Silva,2014-01-20,Updated blinkm examples.,"['blinkm.coffee,blinkm.js,blinkm.litcoffee']"
+Ron Evans,2014-01-20,"Merge pull request #80 from hybridgroup/90-i2c-firmata
+
+Updated blink m examples for firmata.",['']
+Adrian Zankich,2014-01-21,Fix cylon command issue if no node_modules directory is present,['cylon']
+Andrew Stewart,2014-01-21,Add example using Xbox 360 Controller,"['joystick_xbox_360.coffee,joystick_xbox_360.js,joystick_xbox_360.litcoffee']"
+Andrew Stewart,2014-01-21,Add example using DualShock 3 Controller,"['joystick_dualshock_3.coffee,joystick_dualshock_3.js,joystick_dualshock_3.litcoffee']"
+Andrew Stewart,2014-01-21,Remove interpolation,['blinkm.js']
+Andrew Stewart,2014-01-24,Remove existing Angular app,"['.keep,FontAwesome.otf,fontawesome-webfont.eot,fontawesome-webfont.svg,fontawesome-webfont.ttf,fontawesome-webfont.woff']"
+Andrew Stewart,2014-01-24,"Add roboux to dependencies, and direct API to it","['api.js,package.json,api.coffee']"
+Ron Evans,2014-01-24,"Merge pull request #83 from hybridgroup/roboux
+
+Roboux",['']
+Edgar O Silva,2014-01-24,WIP on scan command.,['cylon']
+Edgar O Silva,2014-01-24,Fix bugs and updated feedback messages.,['cylon']
+deadprogram,2014-01-25,Update robeaux reference,['package.json']
+deadprogram,2014-01-25,Add digispark to readme,['README.md']
+deadprogram,2014-01-26,Add digispark blink example in coffeescript,['blink.coffee']
+Andrew Stewart,2014-01-27,Correct TomDoc in utils.coffee,['utils.coffee']
+Andrew Stewart,2014-01-27,Finish correcting TomDoc for utils,['utils.coffee']
+Edgar O Silva,2014-01-28,WIP on commands changes.,"['cylon,linux_commands.coffee,commands.js']"
+Edgar O Silva,2014-01-28,Removed tmp linux commands example file.,['linux_commands.coffee']
+Edgar O Silva,2014-01-28,Removed scan command from commands list.,"['commands.js,scan.js']"
+Edgar O Silva,2014-01-29,"Added new pari, unpair, connect-to-serial commands and updated standard IO pipes when executing interacting commands.","['cylon,bluetooth.js,child_process.js,cli_commands.js,connect_to_serial.js,scan.js,commands.js,scan.js']"
+deadprogram,2014-01-29,Copy sleep method from johnny-five cause sometimes you just need a break,"['utils.js,utils.coffee']"
+deadprogram,2014-01-29,Github has eliminated nodei.co badges as part of their own analytics tracking,['README.md']
+Edgar O Silva,2014-01-29,Updated scan serial commands and connect-to-serial description.,"['cylon,scan.js']"
+Edgar O Silva,2014-01-29,Updated commands to connect serial and bluetooth pair|unpair. Also updated connect serial child process to inherit stdio pipes.,"['cylon,connect_to_serial.js']"
+Edgar O Silva,2014-01-29,"Change all connect, pair and unpair as bluetooth subcommands.",['cylon']
+Ron Evans,2014-01-29,"Merge pull request #85 from hybridgroup/120-scan-cmd
+
+Added scan command to cylon.",['']
+Edgar O Silva,2014-01-30,WIP on adding upload firmata command to cylon.,"['cylon,cli_commands.js,firmata.js,StandardFirmata.cpp.hex']"
+Edgar O Silva,2014-01-30,Fixed mac serial port address issue.,['firmata.js']
+Edgar O Silva,2014-01-30,Removed firmata commands from cylon and update command list.,"['cylon,cli_commands.js,firmata.js,StandardFirmata.cpp.hex']"
+Ron Evans,2014-01-31,"Merge pull request #86 from hybridgroup/112-firmata-command
+
+Added upload firmata command to cylon.",['']
+Andrew Stewart,2014-01-31,Serve Robeaux correctly,"['api.js,api.coffee']"
+Edgar O Silva,2014-01-31,Fixes registration of external commands.,['cylon']
+Edgar O Silva,2014-01-31,Remove debug comments.,['cylon']
+Andrew Stewart,2014-01-31,Remove unnecessary lines and correct variable scope,['cylon']
+Andrew Stewart,2014-01-31,"Merge pull request #88 from hybridgroup/134-fix-ext-cmds-reg
+
+Fixes registration of external commands.",['']
+Edgar O Silva,2014-01-31,Changes sys.print for console.log,"['cylon,bluetooth.js,child_process.js,connect_to_serial.js,scan.js']"
+Ron Evans,2014-01-31,"Merge pull request #90 from hybridgroup/change-sys-print
+
+Changes sys.print for console.log",['']
+Edgar O Silva,2014-02-01,Changed commands to use coffee by default and added new cylon-process class.,"['cylon,bluetooth.js,child_process.js,cli-commands.js,cli_commands.js,connect-to-serial.js,connect_to_serial.js,cylon-process.js,scan.js,bluetooth.coffee,bluetooth.js,child_process.js,cli-commands.coffee,cli_commands.js,connect-to-serial.coffee,connect_to_serial.js,cylon-process.coffee,scan.coffee,scan.js']"
+Edgar O Silva,2014-02-01,Removed all js files and updated CylonProcess to just Cylon.Process.,"['bluetooth.js,child_process.js,cli_commands.js,connect-to-serial.js,connect_to_serial.js,process.js,scan.js,bluetooth.coffee,connect-to-serial.coffee,process.coffee,scan.coffee']"
+deadprogram,2014-02-02,Add examples for MPL115A2,"['mpl115a2.coffee,mpl115a2.js']"
+deadprogram,2014-02-03,Add example of Leap Motion combined with Arduino,"['leap_arduino.coffee,leap_arduino.js']"
+Ron Evans,2014-02-04,"Merge pull request #92 from hybridgroup/caffeinated-cli-cmds
+
+Caffeinated cli cmds",['']
+Andrew Stewart,2014-02-04,Refer to new name for Cylon.Process,"['connect-to-serial.js,connect-to-serial.coffee']"
+Andrew Stewart,2014-02-04,Tidy up CLI classes/modules,"['bluetooth.js,connect-to-serial.js,process.js,scan.js,bluetooth.coffee,connect-to-serial.coffee,process.coffee,scan.coffee']"
+Andrew Stewart,2014-02-06,Bump Robeaux version to 0.0.3,['package.json']
+deadprogram,2014-02-06,Update to version 0.10.0,"['README.md,package.json']"
+Andrew Stewart,2014-02-12,Bump Robeaux dependency to 0.0.4,['package.json']
+Adrian Zankich,2014-02-13,Add tessel hardware property to package.json,['package.json']
+edgarsilva,2014-02-13,Fixes mispelling of establishes.,"['.rvmrc,cylon']"
+edgarsilva,2014-02-14,Added new 'cylon bluetooth scan' command.,"['cylon,bluetooth.js,cli-commands.js,bluetooth.coffee,cli-commands.coffee']"
+Adrian Zankich,2014-02-14,"Merge pull request #103 from hybridgroup/bluetooth-scan-cmd
+
+Added new 'cylon bluetooth scan' command.",['']
+deadprogram,2014-02-17,Add CYLON_TEST mode for TDR,"['robot.js,robot.coffee']"
+deadprogram,2014-02-18,WIP on TDR test stubs,"['robot.js,test-adaptor.js,robot.coffee,test-adaptor.coffee']"
+deadprogram,2014-02-18,Working adaptor and driver stubs for test driven robotics,"['robot.js,test-adaptor.js,test-driver.js,robot.coffee,test-adaptor.coffee,test-driver.coffee']"
+deadprogram,2014-02-18,Fix tabs spaces... editor gone mad,"['test-adaptor.coffee,test-driver.coffee']"
+deadprogram,2014-02-18,Add working event and status to robot,"['robot.js,robot.coffee']"
+deadprogram,2014-02-18,DRY up TestAdaptor and TestDriver classes,"['adaptor.js,driver.js,robot.js,test-adaptor.js,test-driver.js,utils.js,adaptor.coffee,driver.coffee,robot.coffee,test-adaptor.coffee,test-driver.coffee,utils.coffee']"
+Andrew Stewart,2014-02-18,"Merge pull request #106 from hybridgroup/tdr
+
+Test-driven robotics support",['']
+deadprogram,2014-02-18,Add cattoy example,"['cattoy.coffee,cattoy.js']"
+deadprogram,2014-02-18,Update to 0.10.1,['package.json']
+Andrew Stewart,2014-02-19,"Add Config module to load config from env
+
+Better to keep configuration loading in one place than spread throughout Cylon.","['config.js,cylon.js,robot.js,config.coffee,cylon.coffee,robot.coffee']"
+Andrew Stewart,2014-02-19,"Remove unnecessary requires from cylon.coffee
+
+They're loaded later (in robot.coffee), and their namespace
+(Cylon.{Adaptor,Driver}) is overridden immediately when we define the Cylon
+class anyways.","['cylon.js,cylon.coffee']"
+Andrew Stewart,2014-02-19,Config -> CylonConfig,"['config.js,robot.js,config.coffee,robot.coffee']"
+deadprogram,2014-02-19,Add constantly alias for repeated async loops,"['utils.js,utils.coffee']"
+Ron Evans,2014-02-19,"Merge pull request #109 from hybridgroup/config-module
+
+Add Config module to load config from env",['']
+Andrew Stewart,2014-02-19,New tests for #proxyTestStubs global function,"['utils.spec.js,utils.spec.coffee']"
+deadprogram,2014-02-19,Add named robot object vars for connections as well as devices,"['robot.js,robot.coffee']"
+deadprogram,2014-02-19,Add skynet examples,"['skynet-blink.coffee,skynet-blink.js']"
+deadprogram,2014-02-20,Update to 0.10.2,"['README.md,package.json']"
+xixebombilla,2014-02-20,cattoy,['cattoy.litcoffee']
+Andrew Stewart,2014-02-20,Remove commented-out method,['adaptor.coffee']
+Andrew Stewart,2014-02-20,"Revert ""Remove unnecessary requires from cylon.coffee""
+
+This reverts commit e74bc148d9e3c691f9ff004deaba00f4575189e1.","['cylon.js,cylon.coffee']"
+Andrew Stewart,2014-02-20,Bump version to 0.10.3,"['README.md,package.json']"
+xixebombilla,2014-02-20,keyboard lit,['keyboard.litcoffee']
+xixebombilla,2014-02-20,178 add litcoffee and js,"['.DS_Store,.DS_Store,bbb_blink.coffee,bbb_blink.js,bbb_blink.litcoffee,.DS_Store,bbb_i2c_blinkm.coffee,bbb_i2c_blinkm.js,bbb_i2c_blinkm.litcoffee,.DS_Store,bbb_button.coffee,bbb_button.js,bbb_button.litcoffee,.DS_Store,bbb_led_brightness.coffee,bbb_led_brightness.js,bbb_led_brightness.litcoffee,.DS_Store,bbb_servo.coffee,bbb_servo.js,bbb_servo.litcoffee,blink.coffee,blink.js,blink.litcoffee,leap_arduino.litcoffee,mpl115a2.litcoffee,.DS_Store,display-camera-feed.coffee,display-camera-feed.js,display-camera-feed.litcoffee,haarcascade_frontalface_alt.xml,.DS_Store,display-image-from-camera.coffee,display-image-from-camera.js,display-image-from-camera.litcoffee,haarcascade_frontalface_alt.xml,.DS_Store,face-detection.coffee,face-detection.js,face-detection.litcoffee,haarcascade_frontalface_alt.xml,raspi_i2c_blinkm.js,raspi_i2c_blinkm.litcoffee,salesforce.litcoffee,sf-client.litcoffee,sf-sphero.litcoffee,sf-test.litcoffee,skynet-blink.litcoffee,sphero-pebble-sf.litcoffee']"
+xixebombilla,2014-02-20,Merge branch 'master' of github.com:hybridgroup/cylon into add-litcoffee,['']
+Ron Evans,2014-02-20,"Merge pull request #115 from hybridgroup/add-litcoffee
+
+Add litcoffee",['']
+deadprogram,2014-02-21,Add example(s) for Leap Motion controlled LED via Skynet,"['leap_skynet.coffee,skynet-blink.coffee']"
+deadprogram,2014-02-21,DRY up example a little,['leap_skynet.coffee']
+deadprogram,2014-02-21,Last cleanup of example,['leap_skynet.coffee']
+Andrew Stewart,2014-02-24,Switch to built-ins for testing booleans,"['digital-pin.spec.js,digital-pin.spec.coffee']"
+Andrew Stewart,2014-02-25,"Add CoffeeScript convenience methods
+
+Adds a number of convenience methods from CoffeeScript to aid in converting
+modules to plain Javascript.","['utils.js,utils.coffee']"
+Ron Evans,2014-02-25,"Merge pull request #116 from hybridgroup/coffeescript-utils
+
+Add CoffeeScript convenience methods",['']
+Andrew Stewart,2014-02-25,Fix bug with subclass helper,"['utils.js,utils.coffee']"
+deadprogram,2014-02-25,Update to 0.10.4,"['README.md,package.json']"
+Andrew Stewart,2014-02-25,"Remove unnecessary utility functions
+
+The instantiate() function was only ever used for creating new adaptors/drivers
+in cylon-* modules, and it's not necessary because we never pass more than one
+param to those constructors","['utils.js,utils.coffee']"
+edgarsilva,2014-02-26,Fixed typos and updated examples comments and instructions.,"['display-camera-feed.coffee,display-camera-feed.js,display-camera-feed.litcoffee,display-image-from-camera.coffee,display-image-from-camera.js,display-image-from-camera.litcoffee,face-detection.coffee,face-detection.litcoffee']"
+Ron Evans,2014-02-26,"Merge pull request #118 from hybridgroup/upd-opencv-examples
+
+Fixed typos and updated examples comments and instructions.",['']
+deadprogram,2014-02-27,Remove grunt coffee reference from README,['README.md']
+deadprogram,2014-02-27,WIP on pure JS revamp,"['Makefile,loopback.js,ping.js,test-adaptor.js,adaptor.js,api.js,basestar.js,bluetooth.js,cli-commands.js,connect-to-serial.js,process.js,scan.js,config.js,connection.js,cylon.js,device.js,digital-pin.js,driver.js,logger.js,port.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,utils.js,adaptor.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,logger.spec.js,port.spec.js,robot.spec.js,utils.spec.js']"
+deadprogram,2014-02-27,"Make tests all green, now the real work begins","['loopback.js,ping.js,test-driver.js,package.json,globals.js']"
+deadprogram,2014-02-27,Use make for building pure-js,['.travis.yml']
+deadprogram,2014-02-27,Refactor adaptor & driver to pure JS style,"['adaptor.js,driver.js']"
+Andrew Stewart,2014-02-27,Remove Gruntfile,['Gruntfile.js']
+Andrew Stewart,2014-02-27,"Add back matchdep, will use for loading subcommands",['package.json']
+Andrew Stewart,2014-02-27,Modify test harness to show we're in cylon-core,"['Makefile,globals.js']"
+deadprogram,2014-02-27,Merge branch 'pure-js' into pure-js-core,['']
+Andrew Stewart,2014-02-27,Move generators from src to lib,"['adaptor.js,.gitignore,.jshintrc,Gruntfile.js,LICENSE,README.md.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,package.json.tpl,adaptor.coffee.tpl,adaptorName.coffee.tpl,driver.coffee.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.coffee.tpl,adaptorName.spec.coffee.tpl,driver.spec.coffee.tpl,globals.js,runner.js']"
+deadprogram,2014-02-27,Refactor connection & device to pure JS style,"['connection.js,device.js']"
+Andrew Stewart,2014-02-27,Update generator to create pure-JS adaptors,"['Gruntfile.js,Makefile,README.md.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,package.json.tpl,adaptor.coffee.tpl,adaptorName.coffee.tpl,driver.coffee.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.coffee.tpl,adaptorName.spec.coffee.tpl,driver.spec.coffee.tpl,globals.js,runner.js']"
+Ron Evans,2014-02-27,"Merge pull request #119 from hybridgroup/pure-js-generator
+
+Pure Javascript Adaptor Generator",['']
+deadprogram,2014-02-27,"Refactor api, basestar & config to pure JS style","['api.js,basestar.js,config.js']"
+Andrew Stewart,2014-02-27,Move generators from src to lib,"['adaptor.js,.gitignore,.jshintrc,Gruntfile.js,LICENSE,README.md.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,package.json.tpl,adaptor.coffee.tpl,adaptorName.coffee.tpl,driver.coffee.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.coffee.tpl,adaptorName.spec.coffee.tpl,driver.spec.coffee.tpl,globals.js,runner.js']"
+Andrew Stewart,2014-02-27,Update generator to create pure-JS adaptors,"['Gruntfile.js,Makefile,README.md.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,package.json.tpl,adaptor.coffee.tpl,adaptorName.coffee.tpl,driver.coffee.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,adaptor.spec.coffee.tpl,adaptorName.spec.coffee.tpl,driver.spec.coffee.tpl,globals.js,runner.js']"
+deadprogram,2014-02-27,Refactor port & robot to pure JS style,"['port.js,robot.js']"
+deadprogram,2014-02-27,Refactor dogotal pin to pure JS style,['digital-pin.js']
+deadprogram,2014-02-27,Add comments to adaptor functions,['adaptor.js']
+deadprogram,2014-02-27,Refactor adaptor & basestar tests to cleaner pure JS style,"['adaptor.spec.js,basestar.spec.js']"
+Andrew Stewart,2014-02-27,"Merge pull request #120 from hybridgroup/pure-js-core
+
+Refactoring core intro pure JS",['']
+edgarsilva,2014-02-27,WIP on migrating cylon-cli to pure js.,"['cylon,bluetooth.js,cli-commands.js,connect-to-serial.js,process.js,scan.js']"
+edgarsilva,2014-02-27,Removed git cli-commands folder.,"['bluetooth.coffee,cli-commands.coffee,connect-to-serial.coffee,process.coffee,scan.coffee']"
+edgarsilva,2014-02-27,Updated adaptors route to point to lib instead of src.,['cylon']
+Andrew Stewart,2014-02-27,"Merge pull request #121 from hybridgroup/pure-js-cli
+
+Migrate cylon-cli to pure JS.",['']
+Andrew Stewart,2014-02-27,Refactor logger.js,['logger.js']
+Andrew Stewart,2014-02-27,Refactor utils.js,['utils.js']
+Andrew Stewart,2014-02-27,Refactor cylon.js,['cylon.js']
+deadprogram,2014-02-27,Refactor tests for connection & cylon,"['connection.spec.js,cylon.spec.js']"
+Andrew Stewart,2014-02-27,Remove trailing whitespace,"['adaptor.js,api.js']"
+deadprogram,2014-02-27,Why this file here?,['.rvmrc']
+xixebombilla,2014-02-27,210 comments JS,"['api.js,basestar.js,config.js,connection.js,cylon.js,device.js,digital-pin.js,driver.js,logger.js,port.js,robot.js,utils.js']"
+xixebombilla,2014-02-27,210 need fix merge,['']
+deadprogram,2014-02-27,Refactor remaining tests,"['device.spec.js,digital-pin.spec.js,driver.spec.js,logger.spec.js,port.spec.js,robot.spec.js,utils.spec.js']"
+deadprogram,2014-02-27,Remove vestigal CoffeeScript tests,"['adaptor.spec.coffee,basestar.spec.coffee,connection.spec.coffee,cylon.spec.coffee,device.spec.coffee,digital-pin.spec.coffee,driver.spec.coffee,logger.spec.coffee,port.spec.coffee,robot.spec.coffee,utils.spec.coffee']"
+xixebombilla,2014-02-27,210 fix merge files,"['cylon.js,logger.js,utils.js']"
+xixebombilla,2014-02-27,Merge branch 'pure-js' of github.com:hybridgroup/cylon into pure-js-comments,['']
+xixebombilla,2014-02-27,210 fix merge files andrew :),"['cylon.js,logger.js,utils.js']"
+Ron Evans,2014-02-27,"Merge pull request #122 from hybridgroup/pure-js-comments
+
+Pure js comments",['']
+deadprogram,2014-02-27,Remove the last of the CoffeeScript source,"['adaptor.coffee,api.coffee,basestar.coffee,config.coffee,connection.coffee,cylon.coffee,device.coffee,digital-pin.coffee,driver.coffee,logger.coffee,port.coffee,robot.coffee,loopback.coffee,ping.coffee,test-adaptor.coffee,test-driver.coffee,utils.coffee']"
+Andrew Stewart,2014-02-27,Remove trailing whitespace,"['device.js,robot.js,basestar.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,port.spec.js,robot.spec.js,utils.spec.js']"
+Andrew Stewart,2014-02-27,Clean up Basestar specs,['basestar.spec.js']
+Andrew Stewart,2014-02-27,Add specs for event proxying,"['basestar.js,basestar.spec.js']"
+Andrew Stewart,2014-02-27,Refactor Basestar#defineEvent,['basestar.js']
+edgarsilva,2014-02-27,WIP on updating register commands to use globule.,['cylon']
+edgarsilva,2014-02-27,Remove old registering process.,['cylon']
+edgarsilva,2014-02-27,"Adding globule dependency, used in cylon CLI commands.",['package.json']
+Ron Evans,2014-02-27,"Merge pull request #123 from hybridgroup/globule-register-cmds
+
+Globule register cmds",['']
+Andrew Stewart,2014-02-27,"Remove 'source loading:' log messages from tests
+
+Not really necessary now that we have actual tracebacks.","['globals.js,globals.js']"
+Andrew Stewart,2014-02-27,Add shortcut for defining adaptor/driver events,"['basestar.js,basestar.spec.js']"
+Ron Evans,2014-02-27,"Merge pull request #124 from hybridgroup/event-definition-shortcut
+
+Add shortcut for defining adaptor/driver events",['']
+Andrew Stewart,2014-02-27,Minor cleanups in basestar.js,['basestar.js']
+Andrew Stewart,2014-02-27,Add jslint to devDependencies,['package.json']
+Andrew Stewart,2014-02-27,Remove matchdep from package.json,['package.json']
+Andrew Stewart,2014-02-27,Add some globals to .jshintrc,['.jshintrc']
+Andrew Stewart,2014-02-28,Add global.bind method and tests,"['cylon.js,utils.js,utils.spec.js']"
+deadprogram,2014-02-28,Use Ruby formatter for CoffeeScript examples,['README.md']
+Andrew Stewart,2014-02-28,Clean up constructor,['robot.js']
+Andrew Stewart,2014-02-28,Refactor #data method,['robot.js']
+edgarsilva,2014-02-28,Fixes issue with only the last external command being registered.,['cylon']
+edgarsilva,2014-02-28,Remove unnecessary requrie 'fs'.,['cylon']
+Ron Evans,2014-02-28,"Merge pull request #125 from hybridgroup/cli-commands-hotfix
+
+Fixes issue with only the last external command being registered.",['']
+Andrew Stewart,2014-02-28,Add specs for #data method,['robot.spec.js']
+Andrew Stewart,2014-02-28,Refactor device/connection initialization methods,['robot.js']
+Andrew Stewart,2014-02-28,Clean up starter and #stop functions,['robot.js']
+Andrew Stewart,2014-02-28,Clean up initialization methods for adaptors/drivers,['robot.js']
+Andrew Stewart,2014-02-28,"Merge branch 'master' into robot-refactors
+
+* master:
+  Remove unnecessary requrie 'fs'.
+  Fixes issue with only the last external command being registered.
+  Use Ruby formatter for CoffeeScript examples",['']
+Ron Evans,2014-02-28,"Merge pull request #126 from hybridgroup/robot-refactors
+
+Refactors and Tests for Robot class",['']
+deadprogram,2014-03-01,Make sure connection's port valid before adaptor init,['connection.js']
+Chris Matthieu,2014-03-03,skynet examples updated to reflect change in skynet.im messaging format,"['skynet-blink.coffee,skynet-blink.js,skynet-blink.litcoffee']"
+Ron Evans,2014-03-03,"Merge pull request #127 from skynetim/master
+
+skynet examples updated to reflect change in skynet.im messaging format",['']
+Andrew Stewart,2014-03-03,Add tests for Connection#data,['connection.spec.js']
+Andrew Stewart,2014-03-03,Clean up Connection and Device classes,"['connection.js,device.js']"
+Andrew Stewart,2014-03-03,Improve Device specs,"['device.js,device.spec.js']"
+Andrew Stewart,2014-03-03,Clarify license year in generated adaptors,"['adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl']"
+Andrew Stewart,2014-03-03,Clean up var declarations in robot.js,['robot.js']
+Andrew Stewart,2014-03-03,Clean up Windows readline-SIGINT support,['cylon.js']
+Andrew Stewart,2014-03-03,Add Cylon-provided globals to generated .jshintrc files,['.jshintrc']
+edgarsilva,2014-03-04,Add a stop function to the base connection class.,['connection.js']
+Ron Evans,2014-03-04,"Merge pull request #128 from hybridgroup/add-stop-to-connection
+
+Add a stop function to the base connection class.",['']
+deadprogram,2014-03-04,Add Rapiro example,['rapiro_servo.js']
+deadprogram,2014-03-04,Update to 0.11.0,"['README.md,package.json']"
+Andrew Stewart,2014-03-04,Add and improve Robot tests,['robot.spec.js']
+Andrew Stewart,2014-03-04,Provide backing variables instead of functions,"['cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-03-04,Refactor API configuration method,['cylon.js']
+edgarsilva,2014-03-05,WIP on multipoe arduino controlled by skynet.,"['multi_arduinos_with_one_skynet_connection_each.js,one_skynet_connection_controlling_multiple_arduinos.js,multiple_arduinos.js,pure-skynet.js,skynet-blink.js,basestar.js']"
+Andrew Stewart,2014-03-05,"Remove sphero-specific examples
+
+They now live in hybridgroup/cylon-sphero","['sphero.coffee,sphero.js,sphero.litcoffee,sphero_collision.coffee,sphero_collision.js,sphero_collision.litcoffee,sphero_color.coffee,sphero_color.js,sphero_color.litcoffee,sphero_messages.coffee,sphero_messages.js,sphero_messages.litcoffee,sphero_multiple.coffee,sphero_multiple.js,sphero_multiple.litcoffee']"
+Andrew Stewart,2014-03-05,"Remove Beaglebone-specific examples
+
+They live in hybridgroup/cylon-beaglebone","['.DS_Store,bbb_blink.coffee,bbb_blink.js,bbb_blink.litcoffee,.DS_Store,bbb_i2c_blinkm.coffee,bbb_i2c_blinkm.js,bbb_i2c_blinkm.litcoffee,.DS_Store,bbb_button.coffee,bbb_button.js,bbb_button.litcoffee,.DS_Store,bbb_led_brightness.coffee,bbb_led_brightness.js,bbb_led_brightness.litcoffee,.DS_Store,bbb_servo.coffee,bbb_servo.js,bbb_servo.litcoffee']"
+Andrew Stewart,2014-03-05,"Remove raspi examples
+
+They live in hybridgroup/cylon-raspi.","['raspi_blink.coffee,raspi_blink.js,raspi_blink.litcoffee,raspi_button.coffee,raspi_button.js,raspi_button.litcoffee,raspi_i2c_blinkm.coffee,raspi_i2c_blinkm.js,raspi_i2c_blinkm.litcoffee,raspi_led_brightness.coffee,raspi_led_brightness.js,raspi_led_brightness.litcoffee,raspi_servo.coffee,raspi_servo.js,raspi_servo.litcoffee']"
+Andrew Stewart,2014-03-05,"Remove joystick-specific examples
+
+They now live in hybridgroup/cylon-joystick","['joystick_dualshock_3.coffee,joystick_dualshock_3.js,joystick_dualshock_3.litcoffee,joystick_xbox_360.coffee,joystick_xbox_360.js,joystick_xbox_360.litcoffee']"
+edgarsilva,2014-03-06,WIP on multi skynet connections.,['multi_arduinos_with_one_skynet_connection_each.js']
+Andrew Stewart,2014-03-06,"Remove OpenCV examples
+
+They live in hybridgroup/cylon-opencv now.","['.DS_Store,display-camera-feed.coffee,display-camera-feed.js,display-camera-feed.litcoffee,haarcascade_frontalface_alt.xml,.DS_Store,display-image-from-camera.coffee,display-image-from-camera.js,display-image-from-camera.litcoffee,haarcascade_frontalface_alt.xml,.DS_Store,face-detection.coffee,face-detection.js,face-detection.litcoffee,haarcascade_frontalface_alt.xml']"
+Andrew Stewart,2014-03-06,"Remove Firmata examples
+
+They live in hybridgroup/cylon-firmata now.","['analog_sensor.coffee,analog_sensor.js,analog_sensor.litcoffee,blink.coffee,blink.js,blink.litcoffee,blinkm.coffee,blinkm.js,blinkm.litcoffee,button.coffee,button.js,button.litcoffee,led_brightness.coffee,led_brightness.js,led_brightness.litcoffee,motor.coffee,motor.js,motor.litcoffee,mpl115a2.coffee,mpl115a2.js,mpl115a2.litcoffee,servo.coffee,servo.js,servo.litcoffee']"
+Andrew Stewart,2014-03-06,"Remove ARDrone examples
+
+They live in cylon-ardrone now","['drone.coffee,drone.js,drone.litcoffee,drone_nav.coffee,drone_nav.js,drone_nav.litcoffee']"
+Edgar O Silva,2014-03-06,Add examples for multiple arduinos and multiple skynet connections.,"['multi_arduinos_with_one_skynet_connection_each.js,multiple_arduinos.js']"
+Edgar O Silva,2014-03-06,Remove unnecessary example for pure-skynet and remove log messages from basestar.,"['pure-skynet.js,basestar.js']"
+Edgar O Silva,2014-03-06,Rename arduinos and skynet connections examples.,"['multiple_arduinos_multiple_skynet_connections.js,multiple_arduinos_one_skynet_connection.js']"
+Ron Evans,2014-03-06,"Merge pull request #129 from hybridgroup/multi-arduino-skynet
+
+Examples with multiple arduinos and skynet connections.",['']
+Edgar O Silva,2014-03-07,Refactoring cli commands to make them more friendly and pretty.,"['cylon,arduino.js,bluetooth.js,cli-commands.js,process.js,scan.js']"
+Edgar O Silva,2014-03-07,Remove logging,"['cli-commands.js,process.js']"
+Edgar O Silva,2014-03-07,Remove logging.,['arduino.js']
+Edgar O Silva,2014-03-07,Prettyfy.,['bluetooth.js']
+Andrew Stewart,2014-03-07,Start on improved Cylon specs,['cylon.spec.js']
+Andrew Stewart,2014-03-07,"Merge pull request #131 from hybridgroup/cli-commands-refactor
+
+Cli commands refactor",['']
+Andrew Stewart,2014-03-07,Small changes to appease JSHint,"['.jshintrc,basestar.js,bluetooth.js,scan.js,cylon.js,adaptor.js,runner.js,logger.js,robot.js,utils.js']"
+Andrew Stewart,2014-03-07,"Merge branch 'master' into cylon-specs
+
+* master:
+  Small changes to appease JSHint
+  Prettyfy.
+  Remove logging.
+  Remove logging
+  Refactoring cli commands to make them more friendly and pretty.",['']
+Andrew Stewart,2014-03-09,Add specs for Cylon#findRobotDevice,"['cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-03-09,Added specs for Cylon#findRobotConnection,"['cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-03-09,Add specs for Cylon#start,['cylon.spec.js']
+Andrew Stewart,2014-03-09,Add specs for Cylon#stop,['cylon.spec.js']
+Ron Evans,2014-03-10,"Merge pull request #132 from hybridgroup/cylon-specs
+
+Refactors and better specs for Cylon class",['']
+Andrew Stewart,2014-03-10,Add/improve specs for Connection class,"['connection.js,connection.spec.js']"
+Andrew Stewart,2014-03-10,Reorganize Utils for easier testing,['utils.js']
+Andrew Stewart,2014-03-10,"Remove Math.ceil from #toScale, JS has no integers/floats anyways",['utils.js']
+Andrew Stewart,2014-03-10,Improve/expand test coverage for utils,['utils.spec.js']
+Ron Evans,2014-03-10,"Merge pull request #133 from hybridgroup/utils-tests
+
+Utils Improvements and Tests",['']
+Andrew Stewart,2014-03-11,Rename #stop to #halt to avoid potential conflicts,"['connection.js,cylon.js,device.js,driver.js,robot.js,connection.spec.js,cylon.spec.js,device.spec.js,driver.spec.js,robot.spec.js']"
+Ron Evans,2014-03-11,"Merge pull request #134 from hybridgroup/halt
+
+Rename #stop to #halt to avoid potential conflicts",['']
+Adrian Zankich,2014-03-11,Ensure toScale stays within defined range,['utils.js']
+Adrian Zankich,2014-03-12,Prep for release,"['README.md,package.json']"
+Andrew Stewart,2014-03-12,"Remove spark_blink example, it lives in cylon-spark","['spark_blink.coffee,spark_blink.js,spark_blink.litcoffee']"
+Andrew Stewart,2014-03-14,Refactor and improve tests for Cylon.IO.DigitalPin,['digital-pin.spec.js']
+Andrew Stewart,2014-03-14,Refactor and clean up Cylon.IO.DigitalPin class,['digital-pin.js']
+Andrew Stewart,2014-03-18,"Remove Port class
+
+Ultimately unnecessary with Cylon, as opposed to Artoo where we do some
+interesting/tricky stuff with Socket-To-Serial to make everything work.","['connection.js,port.js,port.spec.js']"
+Edgar O Silva,2014-03-18,"Merge pull request #139 from hybridgroup/remove-port
+
+Remove Port class",['']
+Andrew Stewart,2014-03-21,Bump test dependency versions,['package.json']
+Andrew Stewart,2014-03-21,Improve specs for Cylon.Adaptor class,['adaptor.spec.js']
+Andrew Stewart,2014-03-21,Improve specs for Driver class,['driver.spec.js']
+Andrew Stewart,2014-03-21,Improve specs for Logger,['logger.spec.js']
+Edgar O Silva,2014-03-24,"Remove examples for pure GPIO and spheron, also remove testing examples for Salesforce connection and object.","['pure_gpio.coffee,pure_gpio.js,pure_gpio.litcoffee,pure_spheron.coffee,pure_spheron.js,pure_spheron.litcoffee,sf-client.coffee,sf-client.js,sf-client.litcoffee,sf-test.coffee,sf-test.js,sf-test.litcoffee']"
+Ron Evans,2014-03-24,"Merge pull request #145 from hybridgroup/remove-unecessary-examples
+
+Remove examples for pure GPIO and spheron, also remove testing examples ...",['']
+Andrew Stewart,2014-03-25,Fix error with /robots route in API,['api.js']
+Andrew Stewart,2014-03-26,Add friendlier errors when no adaptor/driver found,['robot.js']
+Ron Evans,2014-03-26,"Merge pull request #146 from hybridgroup/notify-of-missing-modules
+
+Add friendlier errors when no adaptor/driver found",['']
+Andrew Stewart,2014-03-26,Remove .coffee examples and WIP on converting .litcoffee to .markdown + js,"['api.coffee,api.markdown,cattoy.coffee,cattoy.markdown,conway_sphero.coffee,conway_sphero.js,conway_sphero.markdown,crazyflie.coffee,crazyflie.markdown,blink.coffee,blink.markdown,hello.coffee,hello.markdown,keyboard.coffee,keyboard.markdown,leap_arduino.coffee,leap_arduino.markdown,leap_skynet.coffee,master.coffee,master.markdown,robot_commands.coffee,robot_commands.markdown,salesforce.coffee,salesforce.markdown,sf-sphero.coffee,sf-sphero.markdown,skynet-blink.coffee,skynet-blink.markdown,sphero-pebble-sf.coffee,sphero-pebble-sf.litcoffee,sphero-pebble-sf.markdown,travis.coffee,travis.js,travis.markdown']"
+Andrew Stewart,2014-03-26,Additional WIP on converting literate coffeescript examples to markdown+js,"['crazyflie.markdown,blink.markdown,hello.markdown,keyboard.markdown,leap_arduino.markdown,master.js,master.markdown']"
+Andrew Stewart,2014-03-27,Convert remaining .litcoffee examples,"['robot_commands.markdown,salesforce.markdown,sf-sphero.markdown,skynet-blink.markdown']"
+Ron Evans,2014-03-27,"Merge pull request #147 from hybridgroup/markdown-examples
+
+Convert Literate CoffeeScript examples to Markdown + JS",['']
+Andrew Stewart,2014-03-27,"Remove CLI tooling from Cylon
+
+It now lives in hybridgroup/cylon-cli.","['cylon,arduino.js,bluetooth.js,cli-commands.js,process.js,scan.js,adaptor.js,.gitignore,.jshintrc,LICENSE,Makefile,README.md.tpl,adaptor.js.tpl,adaptorName.js.tpl,driver.js.tpl,package.json.tpl,adaptor.spec.js.tpl,adaptorName.spec.js.tpl,driver.spec.js.tpl,globals.js,runner.js,package.json']"
+Andrew Stewart,2014-03-27,Remove comma breaking package.json,['package.json']
+Ron Evans,2014-03-27,"Merge pull request #148 from hybridgroup/remove-commands
+
+Remove CLI tooling from Cylon",['']
+Andrew Stewart,2014-03-28,Missing 'var' keyword in annotated example,['api.markdown']
+Andrew Stewart,2014-03-28,Add make task for releasing new versions,['Makefile']
+Andrew Stewart,2014-03-28,Bump version to 0.12.0,"['README.md,package.json']"
+Andrew Stewart,2014-04-01,"Catch MODULE_NOT_FOUND errors, throw others",['robot.js']
+Andrew Stewart,2014-04-01,"Add Utils to global.Cylon namespace, add bootstrap
+
+This commit moves Utils to live in the global Cylon namespace, so they can be
+accessed in test suites. This is necessary because Mocha, when setting up for
+tests, will override our #after method, making TDR not work if any robots
+contain a #after call in their work block.
+
+To fix this, in test setup you can call global.Cylon.Utils.bootstrap();
+which will re-setup our globals.",['utils.js']
+Ron Evans,2014-04-01,"Merge pull request #154 from hybridgroup/global-utils
+
+Add Utils to global.Cylon namespace, add bootstrap",['']
+edgarsilva,2014-04-01,"Add error handler for devices that fail to initialize.
+
+Do not start work if devices fail to initialize and throw err insted.",['robot.js']
+Ron Evans,2014-04-01,"Merge pull request #156 from hybridgroup/init-devices-err-failover
+
+Add error handler for devices that fail to initialize.",['']
+Andrew Stewart,2014-04-02,Lock Node versions to those newer than 0.10.20,['package.json']
+Adrian Zankich,2014-04-02,Prep for release,"['README.md,package.json']"
+Andrew Stewart,2014-04-03,Clean up API logic,['api.js']
+Andrew Stewart,2014-04-03,"Implement HTTPS API with self-signed cert
+
+Switches API to serve all requests over HTTPS, using a self-signed SSL
+certificate.","['api.js,server.crt,server.csr,server.key']"
+Andrew Stewart,2014-04-03,Add support for manually specifying cert/key files,"['api.js,cylon.js,cylon.spec.js']"
+Ron Evans,2014-04-03,"Merge pull request #160 from hybridgroup/api-https
+
+Implement HTTPS API with self-signed cert",['']
+Andrew Stewart,2014-04-03,Support passing auth hash to API server,"['cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-04-03,Add basic auth support to API,['api.js']
+Ron Evans,2014-04-03,"Merge pull request #161 from hybridgroup/api-basic-auth
+
+Add HTTP Basic Auth support to API",['']
+xixebombilla,2014-04-03,update README april,['README.md']
+Ron Evans,2014-04-03,"Merge pull request #162 from hybridgroup/cylon-april-README
+
+update README april",['']
+deadprogram,2014-04-06,Update to 0.13.1,"['README.md,package.json']"
+Andrew Stewart,2014-04-08,Add CORS param for API config,"['api.js,cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-04-08,Switch from Express-IO to plain Express,"['api.js,package.json']"
+Andrew Stewart,2014-04-08,Implement Server-Sent-Events for device events,['api.js']
+Ron Evans,2014-04-09,"Merge pull request #163 from hybridgroup/replace-socket-io-with-server-sent-events
+
+Replace Express.IO/Socket.IO with Express/SSEs",['']
+Andrew Stewart,2014-04-11,Add basic tests for API server and routes,"['api.js,cylon.js,api.spec.js']"
+Andrew Stewart,2014-04-11,Allow Content-Type header to be set for CORS,['api.js']
+Andrew Stewart,2014-04-14,Provide more indication where API is listening,['api.js']
+Andrew Stewart,2014-04-14,Correctly kill process,['cylon.js']
+edgarsilva,2014-04-17,Bumped version to 0.13.2,"['README.md,package.json']"
+Andrew Stewart,2014-04-21,"Clean up package.json
+
+Reformats and cleans up package.json per these docs:
+
+- https://www.npmjs.org/doc/json.html
+- http://package.json.nodejitsu.com/#",['package.json']
+Ron Evans,2014-04-21,"Merge pull request #169 from hybridgroup/clean-up-package-json
+
+Clean up package.json",['']
+Andrew Stewart,2014-04-21,Bump 'async' dependency to 0.7.0,['package.json']
+Andrew Stewart,2014-04-21,Pull in latest Robeaux,['package.json']
+edgarsilva,2014-04-21,"Fixes bug with robot not halting, which caused connections, adaptors and devices to not disconnect.",['cylon.js']
+edgarsilva,2014-04-21,Remove circular reference test for master.,['cylon.spec.js']
+Andrew Stewart,2014-04-21,"Merge pull request #170 from hybridgroup/bugfix-disconnect-not-working
+
+Fixes bug with robot not halting, which caused connections, adaptors and...",['']
+edgarsilva,2014-04-21,Bumped version to 0.13.3,"['README.md,digital-pin.js,package.json']"
+edgarsilva,2014-04-21,"Fixed tests, change incorrect 4 for '4'",['digital-pin.spec.js']
+Andrew Stewart,2014-04-21,Simplify Master#api,['cylon.js']
+Javier Cervantes,2014-04-23,"Adding optional ssl param in API
+
+By default http is used for api, but you can pass a param to use ssl.
+
+This is the same behaviour that we have currently in robot.","['api.js,cylon.js,api.spec.js']"
+Javier Cervantes,2014-04-23,Renaming https to generic node,['api.js']
+Javier Cervantes,2014-04-23,"Changing how ssl is configured
+
+Expected configuration:
+
+{
+  ssl: {
+    key: ""/path/to/key"",
+    cert: ""/path/to/cert""
+  }
+}
+
+If ssl is false, use plain HTTP. If it's an empty object (the default)
+use our self-signed certs. If it's set up like above, use the provided
+certs.","['api.js,cylon.js']"
+Andrew Stewart,2014-04-23,"Use the 'official' Markdown file extension
+
+http://daringfireball.net/linked/2014/01/08/markdown-extension",['README.markdown']
+Javier Cervantes,2014-04-24,Making tests green,['api.spec.js']
+Javier Cervantes,2014-04-24,Updating ssl configuration keys and tests,"['cylon.js,cylon.spec.js']"
+Javier Cervantes,2014-04-24,Adding test for ssl disabled,['api.spec.js']
+Andrew Stewart,2014-04-24,README content updates,['README.markdown']
+Javier Cervantes,2014-04-24,Refactoring api optional ssl logic,"['api.js,cylon.js']"
+Javier Cervantes,2014-04-24,Removing wrong conditional in api,"['api.js,api.spec.js']"
+Javier Cervantes,2014-04-24,Removing unused requires,['api.js']
+Andrew Stewart,2014-04-24,"Merge pull request #173 from hybridgroup/295-optional-ssl
+
+Adding optional ssl param in API",['']
+Andrew Stewart,2014-04-24,Clean up spec,['cylon.spec.js']
+Andrew Stewart,2014-04-24,Remove class cruft and namespace from Basestar,['basestar.js']
+Andrew Stewart,2014-04-24,Remove Basestar from global scope,"['adaptor.js,basestar.js,driver.js,basestar.spec.js']"
+Andrew Stewart,2014-04-24,Update CONTRIBUTORS,['CONTRIBUTORS.markdown']
+Ron Evans,2014-04-26,"Merge pull request #174 from hybridgroup/readme-updates
+
+README updates",['']
+Andrew Stewart,2014-04-27,Simplify testing harness,"['Makefile,support.js,runner.js']"
+Ron Evans,2014-05-04,"Merge pull request #176 from hybridgroup/remove-class-cruft-and-namespace
+
+Remove class cruft and namespace from Basestar",['']
+Andrew Stewart,2014-05-06,Remove node-namespace from Adaptor,"['adaptor.js,loopback.js,test-adaptor.js,adaptor.spec.js']"
+Andrew Stewart,2014-05-06,Remove node-namespace from Driver,"['driver.js,ping.js,test-driver.js,driver.spec.js']"
+Andrew Stewart,2014-05-06,Remove node-namespace from Test Drivers/Adaptors,"['loopback.js,ping.js,test-adaptor.js,test-driver.js,device.spec.js']"
+Andrew Stewart,2014-05-06,Remove node-namespace from Device,"['device.js,robot.js,device.spec.js,robot.spec.js']"
+Andrew Stewart,2014-05-07,Remove node-namespace from Connection,"['connection.js,robot.js,robot.spec.js']"
+Andrew Stewart,2014-05-07,Remove node-namespace from API,"['api.js,cylon.js']"
+Andrew Stewart,2014-05-08,Remove node-namespace from Robot,"['robot.js,connection.spec.js,device.spec.js,robot.spec.js']"
+Andrew Stewart,2014-05-13,Remove node-namespace from Config,"['config.js,robot.js']"
+Andrew Stewart,2014-05-13,Remove node-namespace from Utils,['utils.js']
+Andrew Stewart,2014-05-13,Remove node-namespace from DigitalPin,"['digital-pin.js,digital-pin.js,robot.js,digital-pin.spec.js']"
+Andrew Stewart,2014-05-13,Remove node-namespace from package.json,['package.json']
+Andrew Stewart,2014-05-13,Refactor Logger,"['logger.js,basic_logger.js,null_logger.js']"
+Andrew Stewart,2014-05-13,Remove Logger usage from examples,"['multiple_arduinos_multiple_skynet_connections.js,multiple_arduinos_one_skynet_connection.js,hello.js,skynet-blink.js,skynet-blink.markdown']"
+Andrew Stewart,2014-05-13,"Merge branch 'master' into remove-node-namespace
+
+* master:
+  Remove Logger usage from examples",['']
+Andrew Stewart,2014-05-13,"Convert Cylon.Master to a plain JS object
+
+Acts exactly the same with much, much less code complexity.
+
+This also introduces a pattern for providing core modules to external libraries.
+
+Whereas previously Cylon modules were able to rely on Cylon.Adaptor or
+Cylon.Driver being present in the namespace (due to being required in
+./lib/cylon), they will now need to require Cylon first, like this:
+
+    var Cylon = require('cylon');
+
+    var Driver = Cylon.Driver,
+        Adaptor = Cylon.Adaptor,
+        DigitalPin = Cylon.IO.DigitalPin;",['cylon.js']
+Andrew Stewart,2014-05-13,Remove Logger from global namespace,"['adaptor.js,api.js,connection.js,cylon.js,device.js,driver.js,logger.js,robot.js,support.js']"
+Andrew Stewart,2014-05-13,"Tidy up Cylon specs, add specs for exports",['cylon.spec.js']
+Adrian Zankich,2014-05-21,Add CodeClimate coverage,"['.gitignore,.travis.yml,Makefile,package.json']"
+Adrian Zankich,2014-05-21,Fix travis.yml,['.travis.yml']
+Adrian Zankich,2014-05-21,Add coverage badge,['README.markdown']
+deadprogram,2014-05-23,Ability to pass the name of module to use for an adaptor. Specifically for case where a module contains multiple adaptors,['robot.js']
+deadprogram,2014-05-24,Resolve merge conflicts,['']
+deadprogram,2014-05-24,Add istanbul back for code coverage reporting,['package.json']
+Ron Evans,2014-05-24,"Merge pull request #179 from hybridgroup/remove-node-namespace
+
+Remove node-namespace and class cruft",['']
+Andrew Stewart,2014-05-24,"Make 'test' default task, remove comments",['Makefile']
+Andrew Stewart,2014-05-24,Move test support file into test/support dir,"['Makefile,support.js,env.js']"
+Andrew Stewart,2014-05-24,Correct references to Logger in tests,"['adaptor.spec.js,connection.spec.js,device.spec.js,driver.spec.js,logger.spec.js']"
+Andrew Stewart,2014-05-26,Bump version to 0.14.0,"['README.markdown,package.json']"
+fabito,2014-05-28,Sample robot integrating leap motion and Parrot ARDrone 2.0 through cylon,"['leap_ardrone.js,leap_ardrone.markdown']"
+Fábio Franco Uechi,2014-05-28,Update leap_ardrone.markdown,['leap_ardrone.markdown']
+fabito,2014-06-01,cleaning up code,['leap_ardrone.js']
+fabito,2014-06-01,Merge branch 'master' of https://github.com/ciandt-dev/cylon,['']
+fabito,2014-06-01,started code explanation in markdown,['leap_ardrone.markdown']
+fabito,2014-06-01,finished markdown documentation,['leap_ardrone.markdown']
+fabito,2014-06-01,finished markdown documentation,['leap_ardrone.markdown']
+fabito,2014-06-01,finished markdown documentation,['leap_ardrone.markdown']
+Ron Evans,2014-06-02,"Merge pull request #185 from ciandt-dev/master
+
+Robot example integrating leap motion and ARDrone",['']
+Javier Cervantes,2014-06-02,Updating annotated code in example to show properly on website,['leap_ardrone.markdown']
+Edgar Silva,2014-06-02,WIP on sero utils,"['cylon.js,utils.js']"
+edgarsilva,2014-06-02,Fix typos in new sero IO util.,"['cylon.js,utils.js']"
+Andrew Stewart,2014-06-04,Bump Express version to 4.4.1,"['api.js,package.json']"
+Andrew Stewart,2014-06-04,Move configuration to API class,"['api.js,cylon.js,api.spec.js,cylon.spec.js']"
+Andrew Stewart,2014-06-04,Move SSL certs to live under api dir,"['api.js,server.crt,server.csr,server.key']"
+Andrew Stewart,2014-06-04,Add mock request/response classes for testing,"['mock_request.js,mock_response.js']"
+Andrew Stewart,2014-06-04,Add mock request/response classes for testing,"['basic.js,basic.spec.js']"
+Andrew Stewart,2014-06-04,Improve authentication middleware mounting,['api.js']
+Andrew Stewart,2014-06-04,Organize server creation into new function,['api.js']
+Andrew Stewart,2014-06-04,Move API routes to their own file,"['api.js,routes.js']"
+Andrew Stewart,2014-06-04,Remove unnecessary/broken tests,['api.spec.js']
+Ron Evans,2014-06-04,"Merge pull request #190 from hybridgroup/refactor/api
+
+Bump Express version, refactor API",['']
+Andrew Stewart,2014-06-04,Move API command param parsing to middleware,"['api.js,routes.js']"
+Andrew Stewart,2014-06-04,"Remove JSHint/Istanbul from package.json
+
+JSHint is very rarely used, and Istanbul only on Travis to generate coverage
+reports for CodeClimate.
+
+So instead of bundling it with Cylon at all times, it will now be installed
+globally by Travis prior to running tests.
+
+The Make tasks for JSHint/Istanbul now also assume both packages are installed
+globally, rather than in the local node_modules directory.","['.travis.yml,Makefile,package.json']"
+Andrew Stewart,2014-06-04,"All work and no play makes Jack a dull boy
+
+Robots can now take a break and have #play functions instead of #work.
+Internally they're treated the same, but it's a fun easter egg!
+
+Example:
+
+Cylon.robot({
+  name: 'Jack',
+
+  connections: [],
+  devices: [],
+
+  play: function play(my) {
+    every((5).seconds(), function() {
+      console.log(""All work and no play makes %s a dull boy."", my.name);
+    });
+  }
+});
+
+I sincerely apologize for the repeated reference to The Shining, blame
+@deadprogram.
+
+Closes #189.","['robot.js,robot.spec.js']"
+Andrew Stewart,2014-06-05,Improve inline docs for Utils functions,['utils.js']
+Andrew Stewart,2014-06-05,"Refactor Utils (mostly) out of global namespace
+
+This commit reframes the Utils module to be more self-contained, and now only
+the Number prototype methods and the every/after/constantly methods are exposed
+globally.
+
+I'm unsure about whether these methods can be more scoped such that people can
+turn them off if they want, but that's potentially something to look into in the
+future.
+
+This commit also updates most of the other source files in Cylon, requiring the
+Utils module rather than assuming the methods are in the global namespace.
+
+A similar batch of commits will need to be made for all other Cylon modules to
+make sure they don't explode when they can't find #subclass or something like
+that.
+
+To make the previously-global methods available, both in submodules and for
+people looking for them, all the utility functions are exported in Cylon.Utils.","['adaptor.js,basestar.js,connection.js,cylon.js,device.js,driver.js,digital-pin.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,utils.js,adaptor.spec.js,api.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,logger.spec.js,robot.spec.js,utils.spec.js']"
+Edgar Silva,2014-06-05,Fix typo in utils param name.,['utils.js']
+Andrew Stewart,2014-06-05,Clean up some of the utility functions,['utils.js']
+Andrew Stewart,2014-06-06,"Store robots in an dict, rather than array
+
+Also removes the find{Robot,RobotConnection,RobotDevice} methods. Additionally,
+stops passing the Master through to the Robot constructor, we can just
+require('./cylon') if we need to access anything in there.","['cylon.js,robot.js,cylon.spec.js']"
+Andrew Stewart,2014-06-06,Update examples that previously used findRobot,"['multiple_arduinos_one_skynet_connection.js,sf-sphero.js,sf-sphero.markdown,sphero-pebble-sf.js,sphero-pebble-sf.markdown']"
+Andrew Stewart,2014-06-06,Clean up API implementation using middleware,['routes.js']
+Andrew Stewart,2014-06-06,"Use implicit object conversion with #toJSON
+
+JSON.stringify, if told to convert an object with a #toJSON method, will instead
+stringify the result of the #toJSON method.","['routes.js,connection.js,device.js,robot.js,connection.spec.js,device.spec.js,robot.spec.js']"
+Ron Evans,2014-06-06,"Merge pull request #191 from hybridgroup/refactor/utils
+
+Refactor Utils (mostly) out of global namespace",['']
+Chris Boette,2014-06-06,"Update keyboard.markdown
+
+Minor fixes from CoffeeScript to JavaScript.",['keyboard.markdown']
+Ron Evans,2014-06-06,"Merge pull request #196 from chrisbodhi/patch-1
+
+Update keyboard.markdown",['']
+Ron Evans,2014-06-06,"Merge pull request #195 from hybridgroup/refactor/robots-collection
+
+Refactor Robots collection",['']
+Adrian Zankich,2014-06-06,Update README.markdown,['README.markdown']
+Andrew Stewart,2014-06-06,"Generate BasicLogger methods, rather than duplicating code",['basic_logger.js']
+edgarsilva,2014-06-09,Fix typo in IO utils.,['utils.js']
+Andrew Stewart,2014-06-09,Remove circular reference from Robot,"['robot.js,robot.spec.js']"
+Andrew Stewart,2014-06-09,Slightly refactor constructor,['robot.js']
+Andrew Stewart,2014-06-09,Clean up #start to use Async.series,['robot.js']
+Andrew Stewart,2014-06-09,General cleanup of single-line statements,['robot.js']
+Andrew Stewart,2014-06-10,"Remove the 'connect' and 'start' events
+
+These events are being removed, as they're essentially useless in most cases, as
+the events will already have been emitted before the work block is run to set up
+handlers for them.","['adaptor.js,driver.js,adaptor.spec.js,driver.spec.js']"
+Ron Evans,2014-06-10,"Merge pull request #199 from hybridgroup/remove/events
+
+Remove the 'connect' and 'start' events from Adaptors/Drivers",['']
+Ron Evans,2014-06-10,"Merge pull request #198 from hybridgroup/refactor/robot
+
+Robot Refactors",['']
+Andrew Stewart,2014-06-10,Use same formatting for all log strings,"['adaptor.js,connection.js,device.js,driver.js,adaptor.spec.js,connection.spec.js,device.spec.js,driver.spec.js']"
+Andrew Stewart,2014-06-10,"Expose commands as array, instead of function
+
+For appropriate classes, #commands is now an array, instead of a function that
+returns the same array.","['adaptor.js,connection.js,device.js,driver.js,robot.js,loopback.js,ping.js,utils.js,adaptor.spec.js,device.spec.js,driver.spec.js,utils.spec.js']"
+Ron Evans,2014-06-10,"Merge pull request #200 from hybridgroup/refactor/commands
+
+Expose commands as array, instead of function",['']
+Andrew Stewart,2014-06-10,Allow easier extension in subclasses w/ prototypes,"['adaptor.js,driver.js']"
+Andrew Stewart,2014-06-10,Small cleanups in Device,"['device.js,device.spec.js']"
+Andrew Stewart,2014-06-10,Declare missingModuleError before it's used,['robot.js']
+Andrew Stewart,2014-06-10,Remove unused param for #start callback,['robot.js']
+Andrew Stewart,2014-06-10,Clean up declaration of default work block,['robot.js']
+Andrew Stewart,2014-06-10,Misc. cleanup in Basestar,"['basestar.js,basestar.spec.js']"
+Andrew Stewart,2014-06-10,Add missing semicolon to appease JSHint,['routes.js']
+Andrew Stewart,2014-06-10,Misc. JSHint-suggested cleanups in BasicLogger,['basic_logger.js']
+Andrew Stewart,2014-06-10,Add more tests for BasicLogger class,"['basic_logger.js,basic_logger.spec.js']"
+edgarsilva,2014-06-11,"Updated fromScale util to return top or bottom of scale, updated specs to reflect new fromScale behavior.","['utils.js,utils.spec.js']"
+Ron Evans,2014-06-11,"Merge pull request #201 from hybridgroup/upd-from-scale-util
+
+Updated fromScale util to return top or bottom of scale, updated specs t...",['']
+Andrew Nesbitt,2014-06-12,Fixed logo,['README.markdown']
+Ron Evans,2014-06-12,"Merge pull request #202 from andrew/patch-1
+
+Fixed logo in readme",['']
+Andrew Stewart,2014-06-12,Change README image source to cylon-site repo,['README.markdown']
+Andrew Stewart,2014-06-12,"Make halting on SIGINT async
+
+This change gives adaptors/drivers more flexibility in halting. Additionally,
+now, by default, all Adaptors/Drivers will remove all their event listeners
+before halting, which should prevent some additional commands from being sent to
+the adaptor during shutdown.","['adaptor.js,connection.js,cylon.js,device.js,driver.js,robot.js']"
+Andrew Stewart,2014-06-12,Fix broken specs,"['adaptor.spec.js,driver.spec.js']"
+Ron Evans,2014-06-12,"Merge pull request #203 from hybridgroup/refactor/halt
+
+Make halting on SIGINT async",['']
+deadprogram,2014-06-12,Correct links to new docs site repo,['README.markdown']
+deadprogram,2014-06-12,Update list of contributors,['CONTRIBUTORS.markdown']
+Andrew Stewart,2014-06-13,Bump version to 0.15.0,"['README.markdown,package.json']"
+Andrew Stewart,2014-06-13,Remove site config from travis-ci,['.travis.yml']
+Andrew Stewart,2014-06-16,"Rename API variables for less confusion
+
+api.express => the Express instance
+api.server  => the actual server (@express or a https.Server instance)","['api.js,api.spec.js']"
+Andrew Stewart,2014-06-16,Fix an edge case and improve tests for API,"['api.js,api.spec.js']"
+Andrew Stewart,2014-06-16,Fix JSHint errors,"['api.js,connection.js,cylon.js,driver.js,digital-pin.js,null_logger.js']"
+Andrew Stewart,2014-06-17,"Add #fetch Utility function
+
+The #fetch utility acts in (roughly) the same way as Ruby's Hash#fetch function.
+This addition should hopefully make constructors more rigorous and help to
+prevent a few classes of errors.","['utils.js,utils.spec.js']"
+Ron Evans,2014-06-17,"Merge pull request #204 from hybridgroup/add/utils-fetch
+
+Add #fetch Utility function",['']
+Andrew Stewart,2014-06-17,Experiment with Utils.fetch in Driver class,"['driver.js,driver.spec.js']"
+Andrew Stewart,2014-06-17,Consolidate logstring generation into private fn,['connection.js']
+Andrew Stewart,2014-06-17,"Remove Utils#bind in preference of built-in fn
+
+We were re-implementing Function.prototype.bind, so let's just use that.","['connection.js,device.js,robot.js,utils.js,utils.spec.js']"
+Ron Evans,2014-06-17,"Merge pull request #205 from hybridgroup/remove/utils-bind
+
+Remove Utils#bind in preference of built-in function",['']
+Andrew Stewart,2014-06-18,"Only require the API/Express when using it
+
+Fixes an issue with the Tessel, which cannot load Express.",['cylon.js']
+Ron Evans,2014-06-18,"Merge pull request #206 from hybridgroup/hotfix/tessel-express
+
+Only require the API/Express when using it.",['']
+Andrew Stewart,2014-06-18,Bump version to 0.15.1,"['README.markdown,package.json']"
+Andrew Stewart,2014-06-18,"Merge branch 'master' into dev
+
+* master:
+  Bump version to 0.15.1
+  Only require the API/Express when using it",['']
+Andrew Stewart,2014-06-18,Just use arguments directly instead of array,['utils.js']
+Andrew Stewart,2014-06-24,"Stop using #fetch here for now, it just breaks tests",['driver.js']
+Edgar Silva,2014-07-02,Merge branch 'master' into servo-level-up,['']
+Edgar Silva,2014-07-02,Adds noop function to base adaptor.,['adaptor.js']
+Edgar Silva,2014-07-02,Chance Adaptor#noop for Adaptor#_noop.,['adaptor.js']
+Andrew Stewart,2014-07-03,Remove `self` references in favor of #bind,"['adaptor.js,api.js,connection.js,robot.js,adaptor.spec.js,connection.spec.js,utils.spec.js']"
+Edgar Silva,2014-07-03,WIP: Change noop to use anonymous function and added tests.,"['adaptor.js,adaptor.spec.js']"
+Andrew Stewart,2014-07-03,Working tests for Adaptor#_noop,['adaptor.spec.js']
+Andrew Stewart,2014-07-03,"Merge branch 'dev' into servo-level-up
+
+* dev:
+  Remove `self` references in favor of #bind
+  Stop using #fetch here for now, it just breaks tests
+  Just use arguments directly instead of array
+  Remove Utils#bind in preference of built-in fn
+  Consolidate logstring generation into private fn
+  Experiment with Utils.fetch in Driver class
+  Add #fetch Utility function
+  Fix JSHint errors
+  Fix an edge case and improve tests for API",['']
+Andrew Stewart,2014-07-03,Fix test preparation,['adaptor.spec.js']
+Andrew Stewart,2014-07-04,"Prefer {before,after}Each","['adaptor.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,logger.spec.js,robot.spec.js,utils.spec.js']"
+Andrew Stewart,2014-07-08,"Bump version to ""0.16.0""","['README.markdown,package.json']"
+Andrew Stewart,2014-07-10,Misc. small refactors,"['adaptor.js,driver.js,utils.js']"
+Andrew Stewart,2014-07-11,Require a connection if a robot has any devices,"['robot.js,robot.spec.js']"
+Andrew Stewart,2014-07-12,Clean up robot initialization,['robot.js']
+Andrew Stewart,2014-07-12,Slightly clean up Connection,"['connection.js,connection.spec.js']"
+Andrew Stewart,2014-07-12,Defer to Utils#fetch for getting ENV state,['config.js']
+Adrian Zankich,2014-07-14,"Merge pull request #211 from hybridgroup/fix/require-connection
+
+Require a connection if a robot has any devices",['']
+Andrew Stewart,2014-07-15,Remove connection_id from Connection class,"['connection.js,connection.spec.js']"
+Andrew Stewart,2014-07-15,Refer to device connections by name in JSON format,"['device.js,device.spec.js']"
+Andrew Stewart,2014-07-15,Fix typo,['robot.js']
+Andrew Stewart,2014-07-15,WIP on commands + JSON serialization,"['cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-07-15,Namespace API routes under '/api',['api.js']
+Andrew Stewart,2014-07-15,WIP on Threepio changes,['routes.js']
+Andrew Stewart,2014-07-17,Only look for command params in POST bodies,['api.js']
+Andrew Stewart,2014-07-17,"Add MCP commands route, fix /robots route",['routes.js']
+Andrew Stewart,2014-07-18,"Emit 'ping' when Ping is told to #ping
+
+sorry",['ping.js']
+Ron Evans,2014-07-19,"Merge pull request #213 from hybridgroup/refactor/threepio
+
+Threepio Support",['']
+deadprogram,2014-07-19,Update readme to include all current platforms,['README.markdown']
+deadprogram,2014-07-19,Update readme to include correct link to Gort,['README.markdown']
+deadprogram,2014-07-19,Correct link to Cylon CLI repo,['README.markdown']
+deadprogram,2014-07-19,Add freenode confirmation file,['freenode.txt']
+edgarsilva,2014-07-25,Added arduino YUN to the list of supported hardware.,['README.markdown']
+Andrew Stewart,2014-07-25,Add 'details' subsection to Device/Connection,"['connection.js,device.js,connection.spec.js,device.spec.js']"
+Andrew Stewart,2014-07-28,Correctly respond w/ 404 error,['routes.js']
+Andrew Stewart,2014-07-29,Simplify coercion of Robot to JSON,"['robot.js,robot.spec.js']"
+Andrew Stewart,2014-07-30,"Merge remote-tracking branch 'origin/master' into dev
+
+* origin/master:
+  Added arduino YUN to the list of supported hardware.
+  Add freenode confirmation file
+  Correct link to Cylon CLI repo
+  Update readme to include correct link to Gort
+  Update readme to include all current platforms",['']
+Rafael Magana,2014-07-31,fix hello example,"['hello.js,hello.markdown']"
+=,2014-07-31,get rid of api line,['hello.js']
+Ron Evans,2014-08-01,"Merge pull request #215 from hybridgroup/402-fix-hello-example
+
+fix hello example",['']
+Andrew Stewart,2014-08-01,Add basic error handling,['api.js']
+Andrew Stewart,2014-08-04,Update and lock Robeaux version,['package.json']
+Andrew Stewart,2014-08-04,"Bump version to ""0.17.0""","['README.markdown,package.json']"
+Andrew Stewart,2014-08-04,"Merge branch 'dev'
+
+* dev:
+  Bump version to ""0.17.0""
+  Update and lock Robeaux version
+  Add basic error handling
+  Simplify coercion of Robot to JSON
+  Correctly respond w/ 404 error
+  Add 'details' subsection to Device/Connection
+  Emit 'ping' when Ping is told to #ping
+  Add MCP commands route, fix /robots route
+  Only look for command params in POST bodies
+  WIP on Threepio changes
+  Namespace API routes under '/api'
+  WIP on commands + JSON serialization
+  Fix typo
+  Refer to device connections by name in JSON format
+  Remove connection_id from Connection class
+  Defer to Utils#fetch for getting ENV state
+  Slightly clean up Connection
+  Clean up robot initialization
+  Require a connection if a robot has any devices
+  Misc. small refactors",['']
+Andrew Stewart,2014-08-07,Add new command structure,"['robot_commands.js,robot_commands.markdown,routes.js,driver.js,robot.js,ping.js,driver.spec.js,robot.spec.js']"
+Andrew Stewart,2014-08-07,Correctly execute device commands,"['hello.js,routes.js,device.js,ping.js,device.spec.js']"
+Andrew Stewart,2014-08-07,Correctly avoid labelling 'work' as a command,['robot.js']
+Ron Evans,2014-08-10,"Merge pull request #221 from hybridgroup/add/commands
+
+Add New Command Structure",['']
+Andrew Stewart,2014-08-11,Add Driver#setupCommands method,"['driver.js,driver.spec.js']"
+Andrew Stewart,2014-08-11,Fixes to driver commands,"['routes.js,driver.js,ping.js']"
+Andrew Stewart,2014-08-11,Simplify test,['driver.spec.js']
+Andrew Stewart,2014-08-12,Add ability to pass proxy,['driver.js']
+Andrew Stewart,2014-08-12,Test API routes to ensure they can resolve,['routes.spec.js']
+Andrew Stewart,2014-08-12,Correctly proxy functions from driver to device,"['device.js,device.spec.js']"
+Andrew Stewart,2014-08-13,Remove #proxyTestStubs in favor of inline solution,"['robot.js,utils.js,utils.spec.js']"
+Andrew Stewart,2014-08-19,"Bump version to ""0.18.0""","['README.markdown,package.json']"
+Andrew Stewart,2014-08-29,Update README examples,['README.markdown']
+Andrew Stewart,2014-08-29,Improve description wording in package.json,['package.json']
+Andrew Stewart,2014-08-29,Clean up DigitalPin class,['digital-pin.js']
+Andrew Stewart,2014-09-02,Remove extraneous Connection#halt method,"['connection.js,robot.js,connection.spec.js,robot.spec.js']"
+Andrew Stewart,2014-09-03,Add user configuration for Cylon internals,"['config.js,cylon.js,robot.js,cylon.spec.js']"
+Ron Evans,2014-09-03,"Merge pull request #224 from hybridgroup/add/user-configuration
+
+Add user configuration for Cylon internals",['']
+Andrew Stewart,2014-09-03,"Default #halt timeout is 3s, now user configurable",['cylon.js']
+Andrew Stewart,2014-09-04,"Attempt to stop drivers, then adaptors","['robot.js,robot.spec.js']"
+Andrew Stewart,2014-09-04,Default to no-op callbacks for #halt methods,"['cylon.js,robot.js']"
+Andrew Stewart,2014-09-04,Add example demoing Cylon#halt,['halt.js']
+Andrew Stewart,2014-09-04,"Address namespace collisions for robots, devices, and connections","['cylon.js,robot.js,utils.js,cylon.spec.js,robot.spec.js,utils.spec.js']"
+Ron Evans,2014-09-04,"Merge pull request #225 from hybridgroup/fix/name-collisions
+
+Address namespace collisions for robots, devices, and connections",['']
+Andrew Stewart,2014-09-05,"Restructure Halt/Disconnect Structure
+
+Moves disconnecting event handlers up a level so adaptors/drivers don't have to
+worry about it.
+
+Now, Adaptor/Driver subclasses should simply execute the provided callback to
+dindicate they're done disconnecting, rather than calling the superclass method
+as before.","['adaptor.js,connection.js,device.js,driver.js,robot.js,adaptor.spec.js,connection.spec.js,device.spec.js,driver.spec.js']"
+Andrew Stewart,2014-09-05,"Remove base Adaptor#disconnect and Driver#halt fns
+
+Would be more useful to module developers to loudly error rather than silently
+not work.","['adaptor.js,driver.js,adaptor.spec.js,driver.spec.js']"
+Andrew Stewart,2014-09-05,Fix broken tests,['connection.spec.js']
+Adrian Zankich,2014-09-05,"Merge pull request #226 from hybridgroup/fix/halt-and-disconnect
+
+Restructure Halt/Disconnect Structure",['']
+Andrew Stewart,2014-09-08,"Remove default Adaptor#connect and Driver#start methods
+
+Child classes should always implement these themselves.","['adaptor.js,connection.js,device.js,driver.js,adaptor.spec.js,connection.spec.js,device.spec.js,driver.spec.js']"
+Andrew Stewart,2014-09-08,Add no-op #connect and #start methods to built-ins,"['loopback.js,ping.js']"
+Adrian Zankich,2014-09-08,"Merge pull request #227 from hybridgroup/fix/connect-and-start
+
+Remove default Adaptor#connect and Device#start methods",['']
+Andrew Stewart,2014-09-08,Add support for work to be triggered via an event,"['cylon.js,robot.js,robot.spec.js']"
+Adrian Zankich,2014-09-08,Auto start by default,"['imperative_hello.js,robot.js']"
+Adrian Zankich,2014-09-08,Fix typo,['robot.js']
+Andrew Stewart,2014-09-08,"Correct tests for auto-start, allow for non-truthy values","['robot.js,cylon.spec.js,env.js']"
+Andrew Stewart,2014-09-08,"Switch to Logger.debug for default work, add test for #start return val","['robot.js,robot.spec.js']"
+Adrian Zankich,2014-09-08,async the auto start,['robot.js']
+Andrew Stewart,2014-09-08,Explain auto_start better,['robot.js']
+Andrew Stewart,2014-09-08,"Auto start by default, implement start of modes",['robot.js']
+Andrew Stewart,2014-09-15,Switch to single Cylon#config function,"['cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-09-16,Add default interval in Driver class,"['driver.js,driver.spec.js']"
+deadprogram,2014-09-17,Add all new platforms to README,['README.markdown']
+deadprogram,2014-09-17,Merge branch 'edison-readme' into dev,['']
+Andrew Stewart,2014-09-18,Fixup interval in driver,"['driver.js,driver.spec.js']"
+Andrew Stewart,2014-09-19,Move Cylon API config to the Cylon.configure block,"['api.js,api.markdown,sphero-pebble-sf.js,sphero-pebble-sf.markdown,cylon.js,cylon.spec.js']"
+Andrew Stewart,2014-09-22,Remove Adaptor#_noop function,"['adaptor.js,adaptor.spec.js']"
+Andrew Stewart,2014-09-22,"Merge branch 'dev' into add/imperative-work
+
+* dev:
+  Remove Adaptor#_noop function
+  Move Cylon API config to the Cylon.configure block
+  Fixup interval in driver
+  Add all new platforms to README
+  Add default interval in Driver class
+  Switch to single Cylon#config function
+
+Conflicts:
+	test/specs/cylon.spec.js",['']
+Andrew Stewart,2014-09-22,Rename auto_start to 'auto',"['robot.js,env.js']"
+Ron Evans,2014-09-22,"Merge pull request #228 from hybridgroup/add/imperative-work
+
+Add support for work to be triggered via an event",['']
+Andrew Stewart,2014-09-22,"Trigger test mode by checking NODE_ENV
+
+Adds CYLON_TEST var for tests to make sure tests run properly","['robot.js,env.js']"
+Andrew Stewart,2014-09-23,Add direct Adaptor access inside Drivers,"['driver.js,driver.spec.js']"
+Ron Evans,2014-09-23,"Merge pull request #230 from hybridgroup/change/pass-adaptor-to-driver-instances
+
+Add direct Adaptor access inside Drivers",['']
+Andrew Stewart,2014-09-29,Update Conway Sphero example,"['conway_sphero.js,conway_sphero.markdown']"
+Andrew Stewart,2014-09-29,Add imperative example of Conway's game,['conway_sphero_imperative.js']
+Andrew Stewart,2014-09-29,"Emit 'ready' event, not 'work', when working",['robot.js']
+Andrew Stewart,2014-09-29,Fixup test,['robot.spec.js']
+Andrew Stewart,2014-09-29,Updates to imperative example,['conway_sphero_imperative.js']
+Andrew Stewart,2014-09-29,Update API example,"['api.js,api.markdown']"
+Andrew Stewart,2014-09-29,Automatically proxy methods from Adaptors to Connections,"['connection.js,connection.spec.js']"
+Ron Evans,2014-09-29,"Merge pull request #231 from hybridgroup/add/auto-adaptor-proxying
+
+Automatically proxy methods from Adaptors to Connections",['']
+Andrew Stewart,2014-09-29,Remove commands array from Adaptor base class,"['adaptor.js,loopback.js,adaptor.spec.js']"
+Andrew Stewart,2014-09-30,"Remove #Robot export, config option is now",['cylon.js']
+Andrew Stewart,2014-09-30,"Default to manual mode, prevent multiple #starts
+
+Additionally adds #halt/#disconnect to built-in loopback/ping","['robot.js,loopback.js,ping.js']"
+Andrew Stewart,2014-09-30,Fixup specs,"['robot.js,robot.spec.js']"
+Andrew Stewart,2014-09-30,Add error triggering,['robot.js']
+Andrew Stewart,2014-10-01,"Bump version to ""0.19.0""","['README.markdown,package.json']"
+Andrew Stewart,2014-10-01,'make release' should update release branch,['Makefile']
+Andrew Stewart,2014-10-01,Proxy methods after #connect/#start,"['connection.js,device.js,connection.spec.js,device.spec.js']"
+Andrew Stewart,2014-10-01,Bump version to 0.19.1,"['README.markdown,package.json']"
+nathan,2014-10-01,update readme,['README.markdown']
+Andrew Stewart,2014-10-02,Add new function proxying as utility function,"['connection.js,device.js,utils.js']"
+Andrew Stewart,2014-10-02,Reduce duplication in Basestar event proxying code,['basestar.js']
+Andrew Stewart,2014-10-02,Small fixes to robot.js,['robot.js']
+nathan,2014-10-03,increment platforms number,['README.markdown']
+Ron Evans,2014-10-03,"Merge pull request #232 from hybridgroup/readme
+
+Update readme",['']
+Javier Cervantes,2014-10-03,Adding sphero shake-o-meter example,['sphero_shakeometer.js']
+Adrian Zankich,2014-10-03,enable async or sync work modes,"['cylon.js,robot.js']"
+Adrian Zankich,2014-10-04,start the robots in parallel,"['cylon.js,robot.js']"
+Andrew Stewart,2014-10-14,"Avoid creating functions inside loop, properly terminates now",['robot.js']
+Andrew Stewart,2014-10-15,Add fluent syntax example to README,['README.markdown']
+Andrew Stewart,2014-10-15,Add tests for IOUtils,['utils.js']
+Andrew Stewart,2014-10-20,Clean up and update Leap ARDrone example,['leap_ardrone.js']
+Andrew Stewart,2014-10-20,Update dependencies,"['Makefile,api.js,package.json']"
+Andrew Stewart,2014-10-20,"Reorganize tests, under 'spec' directory now","['Makefile,helper.js,adaptor.spec.js,api.spec.js,basic.spec.js,routes.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,utils.js,logger.spec.js,basic_logger.spec.js,robot.spec.js,utils.spec.js,mock_request.js,mock_response.js']"
+Andrew Stewart,2014-10-21,"Fixup some Browserify errors, indicate support in README","['README.markdown,robot.js']"
+Adrian Zankich,2014-10-22,Update README.markdown,['README.markdown']
+Adrian Zankich,2014-10-22,Update README.markdown,['README.markdown']
+Adrian Zankich,2014-10-22,Update README.markdown,['README.markdown']
+Andrew Stewart,2014-10-24,Not sure why these were classes to begin with,"['logger.js,basic_logger.js,null_logger.js,basic_logger.spec.js']"
+Andrew Stewart,2014-10-24,Generate code! It's what the cool kids are doing!,['logger.js']
+Andrew Stewart,2014-10-27,Basic log level implementation,"['logger.js,logger.spec.js']"
+Andrew Stewart,2014-10-27,Proxy all opts that aren't already used internally,"['robot.js,robot.spec.js']"
+Ron Evans,2014-10-28,"Merge pull request #234 from hybridgroup/workMode
+
+Work mode configuration",['']
+Ron Evans,2014-10-28,"Merge pull request #235 from hybridgroup/add/log-levels
+
+Add log levels",['']
+Andrew Stewart,2014-10-28,Move Logger configuration into Cylon#config,"['config.js,cylon.js,logger.js,helper.js,cylon.spec.js,logger.spec.js']"
+Ron Evans,2014-10-28,"Merge pull request #236 from hybridgroup/fix/move-logger-config
+
+Move Logger configuration into Cylon#config",['']
+Andrew Stewart,2014-10-29,"Repository module added, not integrated yet","['repository.js,repository.spec.js,mock_module.js']"
+Andrew Stewart,2014-10-30,"Hook Repository class up, change-up module loading
+
+Cylon modules were previously styled something like this:
+
+    module.exports = {
+      adaptor: function(args) {
+        return new Adaptor(args);
+      },
+
+      register: function(robot) {
+        Cylon.Logger.debug(""Registering Firmata adaptor for "" + robot.name);
+        robot.registerAdaptor('cylon-firmata', 'firmata');
+
+        GPIO.register(robot);
+        I2C.register(robot);
+      }
+    };
+
+Now, they should be something more like this:
+
+    module.exports = {
+      adaptors: ['firmata'],
+      dependencies: ['cylon-gpio', 'cylon-i2c'],
+
+      adaptor: function(args) {
+        return new Adaptor(args);
+      },
+    };","['connection.js,device.js,repository.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,device.spec.js,repository.spec.js,robot.spec.js']"
+Andrew Stewart,2014-10-31,Address bugs w/ connections,"['device.js,driver.js,robot.js,device.spec.js,driver.spec.js,robot.spec.js']"
+Andrew Stewart,2014-10-31,Stop using extraParams,"['driver.js,driver.spec.js']"
+Andrew Stewart,2014-10-31,s/Repository/Registry/g,"['connection.js,device.js,registry.js,registry.spec.js']"
+Ron Evans,2014-11-04,"Merge pull request #237 from hybridgroup/add/repository
+
+Add Repository class, restructure external module loading",['']
+Andrew Stewart,2014-11-05,"If  key supplied in hash, use it to find module in Registry","['connection.js,device.js,registry.js']"
+Javier Cervantes,2014-11-05,Improving README information about browser support,['README.markdown']
+Andrew Stewart,2014-11-05,Add logging for module registration,"['cylon.js,logger.js,registry.js,registry.spec.js']"
+Andrew Stewart,2014-11-05,Move requires around to make Browserify cooperate,"['registry.js,robot.js']"
+Andrew Stewart,2014-11-05,"Bump version to ""0.20.0""","['README.markdown,package.json']"
+Andrew Stewart,2014-11-05,"Bump version to ""0.20.1""","['README.markdown,driver.js,package.json']"
+deadprogram,2014-11-06,Add API and browser support to README,['README.markdown']
+Andrew Stewart,2014-11-06,Correct API errors,"['api.js,routes.js,connection.js,device.js']"
+Andrew Stewart,2014-11-06,Better configuration for TDR test mode,"['config.js,connection.js,device.js,helper.js']"
+Andrew Stewart,2014-11-06,"Bump version to ""0.20.2""","['README.markdown,package.json']"
+deadprogram,2014-11-07,Add missing devices to README,['README.markdown']
+deadprogram,2014-11-07,"Almost forgot MQTT, the list is getting long",['README.markdown']
+Andrew Stewart,2014-11-07,Remove extraneous Leap Motion config hash argument,"['README.markdown,cattoy.js,cattoy.markdown,leap_ardrone.js,leap_ardrone.markdown,leap_arduino.js,leap_arduino.markdown']"
+deadprogram,2014-11-07,Correct link to Robeaux,['README.markdown']
+Andrew Stewart,2014-11-10,"Support providing connections/devices as an object
+
+Before:
+
+  connections: [
+    { name: 'loopback', adaptor: 'loopback', port: 13 }
+  ],
+
+Now:
+
+  connections: {
+    loopback: { adaptor: 'loopback', port: 13 }
+  }
+
+Array syntax still works, but has been marked as deprecated.","['robot.js,robot.spec.js']"
+Andrew Stewart,2014-11-10,Update examples for new Connection/Device syntax,"['README.markdown,multiple_arduinos_one_skynet_connection.js,cattoy.js,cattoy.markdown,leap_ardrone.js,leap_ardrone.markdown,leap_arduino.js,leap_arduino.markdown,rapiro_servo.js,skynet-blink.js,skynet-blink.markdown']"
+Edgar O Silva,2014-11-10,"Merge pull request #238 from hybridgroup/change/specifying-multiple-connections-or-devices
+
+Support providing connections/devices as an object",['']
+Andrew Stewart,2014-11-10,"Remove Connection and Device classes
+
+They are now functions that return instances of Adaptors and Drivers
+respectively.","['adaptor.js,routes.js,basestar.js,connection.js,cylon.js,device.js,driver.js,robot.js,ping.js']"
+Andrew Stewart,2014-11-11,"Modifications, fix test suite","['connection.js,device.js,robot.js,adaptor.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,driver.spec.js,robot.spec.js']"
+Andrew Stewart,2014-11-11,Fix up API errors,"['connection.js,device.js']"
+Edgar O Silva,2014-11-12,"Merge pull request #239 from hybridgroup/remove/connection-and-device-classes
+
+Remove Connection and Device classes. :shipit: :rocket:",['']
+Andrew Stewart,2014-11-14,Refer to Adaptor instances as 'Connection',"['basestar.js,driver.js,robot.js,basestar.spec.js,driver.spec.js']"
+Andrew Stewart,2014-11-14,Fix broken test,['basestar.spec.js']
+Andrew Stewart,2014-11-14,Correct API inconsistency,['driver.js']
+Andrew Stewart,2014-11-14,Refer to correct element for proxying,['driver.js']
+Andrew Stewart,2014-11-14,Add support for specifying API configuration to Cylon#api,['cylon.js']
+Andrew Stewart,2014-11-20,"Extract out Connection/Device initialization
+
+Simple extraction out of Connection/Device initialization code inside
+Robot.
+
+This yields an interesting boon, however - this is now a valid Cylon
+program:
+
+    var Cylon = require('cylon');
+
+    Cylon
+      .robot()
+      .connection({ name: 'loopback', adaptor: 'loopback' })
+      .device({ name: 'ping', driver: 'ping' })
+      .on('ready', function(bot) {
+        console.log(""Bot working!"");
+
+        every(1000, function() {
+          console.log(bot.ping.ping());
+        })
+      });
+
+    Cylon.start();
+
+For those that prefer imperative programs with Cylon, this is a nice
+syntax addition.","['cylon.js,robot.js,robot.spec.js']"
+Ron Evans,2014-11-20,"Merge pull request #242 from hybridgroup/add/imperative-connection-and-device
+
+Extract out Connection/Device initialization",['']
+Andrew Stewart,2014-11-25,Update examples,"['api.js,api.markdown,multiple_arduinos_multiple_skynet_connections.js,multiple_arduinos_one_skynet_connection.js,cattoy.js,cattoy.markdown,fluent-conway_sphero.js']"
+Andrew Stewart,2014-11-25,Example updates,"['crazyflie.js,blink.js,blink.markdown,hello.js,hello.markdown,keyboard.js,keyboard.markdown,leap_arduino.js,leap_arduino.markdown,master.js,salesforce.js,salesforce.markdown,sf-sphero.js,sf-sphero.markdown,skynet-blink.js,skynet-blink.markdown,sphero-pebble-sf.js,sphero-pebble-sf.markdown']"
+Andrew Stewart,2014-11-25,Deprecate 'connection' and 'device' Robot opts,['robot.js']
+Andrew Stewart,2014-11-25,Update examples for new syntax,"['api.js,api.markdown,multiple_arduinos_multiple_skynet_connections.js,multiple_arduinos_one_skynet_connection.js,conway_sphero.js,conway_sphero.markdown,fluent-conway_sphero.js,crazyflie.js,crazyflie.markdown,blink.js,blink.markdown,halt.js,fluent-hello.js,hello.js,hello.markdown,imperative_hello.js,keyboard.js,keyboard.markdown,leap_arduino.js,leap_arduino.markdown,rapiro_servo.js,salesforce.js,salesforce.markdown,sf-sphero.js,sf-sphero.markdown,skynet-blink.js,skynet-blink.markdown,sphero-pebble-sf.js,sphero-pebble-sf.markdown,sphero_shakeometer.js,travis.js,travis.markdown']"
+Andrew Stewart,2014-11-26,"Fluent #device/#connection update
+
+Now pass name, then object of details
+
+    #device({ name: 'ping', driver: 'ping' });
+    // vs
+    #device('ping', { driver: 'ping' });","['robot.js,robot.spec.js']"
+Andrew Stewart,2014-11-26,Remove deprecated syntax from robot spec,['robot.spec.js']
+Andrew Stewart,2014-11-28,Support passing config to Logger#setup again,"['logger.js,logger.spec.js']"
+Andrew Stewart,2014-11-28,"Bump version to ""0.21.0""","['README.markdown,package.json']"
+Andrew Stewart,2014-11-28,Add back debug logging for device/connection start,['robot.js']
+Andrew Stewart,2014-11-28,"Bump version to ""0.21.1""","['README.markdown,package.json']"
+deadprogram,2014-11-28,Add Ollie to README,['README.markdown']
+Andrew Stewart,2014-11-28,Update syntax in README,['README.markdown']
+Andrew Stewart,2014-11-28,Test using tables in README,['README.markdown']
+Ron Evans,2014-11-28,"Merge pull request #243 from hybridgroup/add/readme-tables
+
+Use Tables in README",['']
+Andrew Stewart,2014-11-28,"Readme updates, new logo",['README.markdown']
+Andrew Stewart,2014-11-30,Simplify halt code in Robot slightly,['robot.js']
+Andrew Stewart,2014-11-30,Make use of `thisArg` instead of #bind,['robot.js']
+Andrew Stewart,2014-12-05,Update Robeaux version,['package.json']
+Andrew Stewart,2014-12-05,Bump version,"['README.markdown,package.json']"
+Andrew Stewart,2014-12-12,Update dependency versions,['package.json']
+Andrew Stewart,2014-12-12,"Use ""globals"" JSHint option over ""predef""",['.jshintrc']
+Andrew Stewart,2014-12-13,First crack at updating JSHint rules,"['.jshintrc,Makefile']"
+Andrew Stewart,2014-12-13,Fix JSHint violations in examples,"['api.js,multiple_arduinos_multiple_skynet_connections.js,multiple_arduinos_one_skynet_connection.js,cattoy.js,conway_sphero.js,fluent-conway_sphero.js,crazyflie.js,crazyflie.markdown,blink.js,halt.js,fluent-hello.js,hello.js,keyboard.js,leap_ardrone.js,leap_arduino.js,master.js,rapiro_servo.js,robot_commands.js,salesforce.js,salesforce.markdown,sf-sphero.js,skynet-blink.js,sphero-pebble-sf.js,sphero_shakeometer.js,travis.js']"
+Andrew Stewart,2014-12-14,Updates for specs,['.jshintrc']
+Andrew Stewart,2014-12-14,WIP on cleaning up specs,"['adaptor.spec.js,api.spec.js,basic.spec.js,routes.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,utils.js,logger.spec.js,basic_logger.spec.js,registry.spec.js,robot.spec.js,utils.spec.js']"
+Andrew Stewart,2014-12-15,Clean up specs for JSHint,"['adaptor.spec.js,api.spec.js,basic.spec.js,basestar.spec.js,connection.spec.js,cylon.spec.js,device.spec.js,digital-pin.spec.js,driver.spec.js,utils.js,logger.spec.js,registry.spec.js,robot.spec.js,utils.spec.js']"
+Andrew Stewart,2014-12-15,Clean up lib for JSHint,"['adaptor.js,api.js,basic.js,routes.js,basestar.js,config.js,connection.js,cylon.js,device.js,driver.js,digital-pin.js,utils.js,logger.js,basic_logger.js,null_logger.js,registry.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,utils.js']"
+Andrew Stewart,2014-12-15,Add CI task to Makefile to run lint + specs,"['.travis.yml,Makefile']"
+Andrew Stewart,2014-12-15,Remember to install JSHint,['.travis.yml']
+Ron Evans,2014-12-15,"Merge pull request #245 from hybridgroup/add/strict-jshint
+
+Linting",['']
+Andrew Stewart,2014-12-15,Add specs for new #connections/#devices behaviour,['robot.spec.js']
+Andrew Stewart,2014-12-15,Run linter before tests,['Makefile']
+Andrew Stewart,2014-12-15,Block 'make release' unless JSHint/tests are happy,['Makefile']
+Andrew Stewart,2014-12-17,Add Lo-Dash + loader,"['lodash.js,package.json']"
+Andrew Stewart,2014-12-17,Lodashify,"['adaptor.js,connection.js,cylon.js,device.js,driver.js,robot.js,utils.js']"
+Andrew Stewart,2014-12-17,Use _.result to get commands from options.,"['robot.js,robot.spec.js']"
+Ron Evans,2014-12-17,"Merge pull request #246 from hybridgroup/add/lodash
+
+Add Lo-Dash",['']
+Andrew Stewart,2014-12-17,Use forIn to ensure Object iteration is performed,"['connection.js,device.js']"
+Andrew Stewart,2014-12-17,Correct iteration key issue,"['adaptor.js,driver.js']"
+Andrew Stewart,2014-12-17,"Fix API errors, add slight simplifications",['api.js']
+Andrew Stewart,2014-12-18,"Revert change to direct method binding, breaks stuff
+
+This is Probably Bad and should be revisited in the future.",['utils.js']
+Andrew Stewart,2014-12-18,Simplify path for method proxying in drivers,"['basestar.js,driver.js']"
+Andrew Stewart,2014-12-19,Update for Travis-CI's new container system,['.travis.yml']
+Loren West,2014-12-29,API command discovery and execution tests,['routes.spec.js']
+nathan,2014-12-30,update robeaux screenshot,['README.markdown']
+nathan,2014-12-30,update # of platforms,['README.markdown']
+Ron Evans,2014-12-30,"Merge pull request #251 from hybridgroup/readme-update
+
+Update Number of platforms in readme",['']
+Ron Evans,2014-12-31,"Merge pull request #249 from lorenwest/api-command-tests
+
+API command discovery and execution tests",['']
+Loren West,2014-12-31,"Merge pull request #1 from hybridgroup/master
+
+Refresh master from hybridgroup",['']
+Loren West,2014-12-31,Support asynchronous commands,['routes.js']
+Loren West,2014-12-31,Fixed lint issues,['routes.js']
+Loren West,2014-12-31,Added async command tests,['routes.spec.js']
+Ron Evans,2014-12-31,"Merge pull request #247 from lorenwest/async-support
+
+Support asynchronous robot commands",['']
+Andrew Stewart,2015-01-01,Less strict for local development,['Makefile']
+Andrew Stewart,2015-01-05,"Add API event publication
+
+This update gives Cylon support for the latest changes to the CPPP-IO
+spec.","['adaptor.js,routes.js,cylon.js,driver.js,robot.js,ping.js,cylon.spec.js,driver.spec.js,robot.spec.js']"
+Ron Evans,2015-01-06,"Merge pull request #253 from hybridgroup/feature/cppp-io-updates
+
+Add event listings to API",['']
+Andrew Stewart,2015-01-07,"Add support for nested device details inside conn
+
+e.g.
+    connections: {
+      loopback: {
+        adaptor: ""loopback"",
+        devices: {
+          ping: { driver: ""ping"", pin: 1 }
+        }
+      }
+    }
+
+In the event of a name collision between the `devices` hash and a nested
+device, the nested device will 'win'.","['robot.js,robot.spec.js']"
+Ron Evans,2015-01-07,"Merge pull request #254 from hybridgroup/feature/nested-devices
+
+Add support for nested device details inside connection",['']
+Andrew Stewart,2015-01-07,Clean up .travis.yml,['.travis.yml']
+Andrew Stewart,2015-01-07,Update copyright years,"['LICENSE,README.markdown,adaptor.js,api.js,basic.js,routes.js,basestar.js,config.js,connection.js,cylon.js,device.js,driver.js,digital-pin.js,logger.js,registry.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,utils.js']"
+Andrew Stewart,2015-01-08,Extract API from core,"['api.js,basic.js,routes.js,server.crt,server.csr,server.key,cylon.js,package.json,api.spec.js,basic.spec.js,routes.spec.js,cylon.spec.js,mock_request.js,mock_response.js']"
+Ron Evans,2015-01-08,"Merge pull request #255 from hybridgroup/feature/extract-out-api
+
+Extract API from core",['']
+Andrew Stewart,2015-01-08,"Add custom Lo-Dash build, remove from dependencies","['Makefile,lodash.js,package.json']"
+Andrew Stewart,2015-01-12,README updates for API extraction,['README.markdown']
+Andrew Stewart,2015-01-12,Add note to examples about installing API plugin,"['api.js,api.markdown,fluent-hello.js,hello.js,robot_commands.js,robot_commands.markdown,sphero-pebble-sf.js,sphero-pebble-sf.markdown']"
+Andrew Stewart,2015-01-13,More specific log message for missing HTTP API,['cylon.js']
+Andrew Stewart,2015-01-13,Streamline Logger a bit,['logger.js']
+Andrew Stewart,2015-01-14,"Bump version to ""0.22.0""","['README.markdown,package.json']"
+Andrew Stewart,2015-01-14,Correct NPM bug on Travis,['.travis.yml']
+Andrew Stewart,2015-01-15,Generate lodash script for only methods we use,['lodash.js']
+nathan,2015-01-15,add intel analytics to readme,['README.markdown']
+Ron Evans,2015-01-15,"Merge pull request #257 from hybridgroup/readme-update
+
+Add intel analytics platform to readme",['']
+deadprogram,2015-01-17,Extract robot var init into separate function,['robot.js']
+deadprogram,2015-01-17,Extract function to DRY up code,['robot.js']
+deadprogram,2015-01-17,Extract even more of function to DRY up code,['robot.js']
+Andrew Stewart,2015-01-17,"Merge pull request #258 from hybridgroup/climate-improvements
+
+Code Climate improvements",['']
+deadprogram,2015-01-18,Update list of contributors,['CONTRIBUTORS.markdown']
+Andrew Stewart,2015-01-20,"If bad start detected, shut down the Robot",['robot.js']
+Andrew Stewart,2015-01-20,Robot log messages should contain the bot name,['robot.js']
+Andrew Stewart,2015-01-20,Add test for Robot#log,['robot.spec.js']
+Andrew Stewart,2015-01-21,Add better error checking for Robot#halt,"['robot.js,robot.spec.js']"
+Andrew Stewart,2015-01-22,First crack at removing seperate Device/Connection initialization,"['connection.js,device.js,initializer.js,registry.js,robot.js,connection.spec.js,device.spec.js,registry.spec.js']"
+Ron Evans,2015-01-22,"Merge pull request #261 from hybridgroup/refactor/device-and-connection
+
+Replace initDevice(), initConnection() with initializer()",['']
+deadprogram,2015-01-22,Extract deprecation warning into separate function,['robot.js']
+Andrew Stewart,2015-01-26,"Add .npmignore
+
+This file acts like a .gitignore, but for NPM. Will avoid bundling along
+things we don't necessarily want to install alongside the lib directory.
+
+On my system, this decreases install size of Cylon by over 100kb, from
+301kb to 189kb.",['.npmignore']
+Ron Evans,2015-01-27,"Merge pull request #262 from hybridgroup/feature/npmignore
+
+Add .npmignore",['']
+edgarsilva,2015-01-29,"Fixes validation issue in initializer constructor, `!module` should be `mod`",['initializer.js']
+edgarsilva,2015-01-30,Updated README with cylon-api-socketio plugin reference.,"['README.markdown,cylon.js']"
+edgarsilva,2015-01-30,User API#start instead of API#listen in cylon#api,['cylon.js']
+edgarsilva,2015-01-30,Fix broken test.,['cylon.spec.js']
+Andrew Stewart,2015-02-12,Correct Travis-CI directory creation error,['.travis.yml']
+Andrew Stewart,2015-02-19,Correct edge case with 'module' key,['initializer.js']
+Andrew Stewart,2015-02-19,Add coverage to .npmignore,['.npmignore']
+Andrew Stewart,2015-02-20,Extract monkey-patches,"['utils.js,monkey-patches.js']"
+Andrew Stewart,2015-02-20,Remove lodash,"['adaptor.js,cylon.js,driver.js,initializer.js,lodash.js,logger.js,robot.js,utils.js,utils.spec.js']"
+Daniel Lamb,2015-02-20,The register method should return existing modules,"['.editorconfig,.gitignore,registry.js,registry.spec.js']"
+Daniel Lamb,2015-02-20,Update .gitignore,['.gitignore']
+Daniel Lamb,2015-02-20,Delete .editorconfig,['.editorconfig']
+Andrew Stewart,2015-02-20,"Merge pull request #269 from daniellmb/master
+
+The register method should return existing modules",['']
+Andrew Stewart,2015-02-23,"Add helpers to replace some lodash functionality
+
+Not a 1:1, and probably much slower than Lodash's ultra-optimised
+implementations, but we do enough I/O that it's not really relevant,
+is it?","['adaptor.js,basestar.js,cylon.js,driver.js,initializer.js,logger.js,robot.js,utils.js,helpers.js,utils.spec.js,helpers.spec.js']"
+Andrew Stewart,2015-02-23,"Fully iterate over objects, rather than just props",['helpers.js']
+Andrew Stewart,2015-02-23,Add helpers for partial application,"['helpers.js,helpers.spec.js']"
+Andrew Stewart,2015-02-23,Add a basic reduce implementation,"['helpers.js,helpers.spec.js']"
+Adrian Zankich,2015-02-24,"Merge pull request #271 from hybridgroup/feature/replace-lodash
+
+Replace Lodash",['']
+Andrew Stewart,2015-02-24,Bump version to v0.22.1,"['README.markdown,package.json']"
+Andrew Stewart,2015-03-04,"Remove deprecated Connection / Device syntaxes
+
+Removes deprecation warnings + support for single-object + array
+syntaxes.
+
+The array syntax will likely continue to work due to the `_.each`
+abstraction, but since we don't use it anywhere, the requisite specs
+have been removed.","['robot.js,robot.spec.js']"
+Edgar O Silva,2015-03-06,"Merge pull request #275 from hybridgroup/remove/deprecation-warnings
+
+Remove deprecated Connection / Device syntaxes",['']
+Andrew Stewart,2015-03-09,"Correct bug in Registry#findBy, add spec","['registry.js,registry.spec.js']"
+Andrew Stewart,2015-03-11,Add basic #includes helper for arrays,"['adaptor.js,driver.js,registry.js,helpers.js,helpers.spec.js']"
+Andrew Stewart,2015-03-17,Bind passed function to Robot by default,"['robot.js,robot.spec.js']"
+Andrew Stewart,2015-03-19,Add #respond method to work with events/callbacks,"['basestar.js,adaptor.spec.js,basestar.spec.js']"
+Ron Evans,2015-03-19,"Merge pull request #278 from hybridgroup/add/respond
+
+Add Basestar#respond method to work with events/callbacks",['']
+Andrew Stewart,2015-03-19,"Add exploding interface functions for Driver/Adaptor
+
+Explicit is better than implicit, and this causes errors to be more
+specific","['adaptor.js,driver.js,adaptor.spec.js,driver.spec.js']"
+Ron Evans,2015-03-19,"Merge pull request #279 from hybridgroup/add/interface-functions
+
+Add exploding interface functions for Driver/Adaptor",['']
+nathan,2015-03-20,add user contributed platforms,['README.markdown']
+Ron Evans,2015-03-20,"Merge pull request #280 from hybridgroup/readme-update
+
+Add user contributed platforms to readme",['']
+Andrew Stewart,2015-03-22,Add CLI flag for enabling debug logging,['logger.js']
+Ron Evans,2015-03-22,"Merge pull request #281 from hybridgroup/add/debug-flag
+
+Add CLI flag for enabling debug logging",['']
+Andrew Stewart,2015-03-23,Expand Travis build matrix,['.travis.yml']
+Andrew Stewart,2015-03-24,We don't care about lodash,['Makefile']
+Edgar Silva,2015-03-27,Adds error handling to basetar#respond.,"['.basestar.js.swp,basestar.js,basestar.spec.js']"
+Edgar Silva,2015-03-27,Offering to the lint godsgit add .!,"['.basestar.js.swp,basestar.js,basestar.spec.js']"
+Ron Evans,2015-03-28,"Merge pull request #282 from hybridgroup/update/add-err-respond
+
+Update/add err respond",['']
+Andrew Stewart,2015-03-31,Remove accidentally committed swap file,['.basestar.js.swp']
+Andrew Stewart,2015-04-02,Add basic DSL error checks,['robot.js']
+Adrian Zankich,2015-04-02,"Merge pull request #283 from hybridgroup/add/syntax-checks
+
+Add basic DSL error checks",['']
+Andrew Stewart,2015-04-02,Throw error instead of continuing when #api fails,['cylon.js']
+Andrew Stewart,2015-04-03,"Correct bug in Registry#findBy, add spec","['registry.js,registry.spec.js']"
+Andrew Stewart,2015-04-03,Add basic #includes helper for arrays,"['adaptor.js,driver.js,registry.js,helpers.js,helpers.spec.js']"
+Andrew Stewart,2015-04-03,"Bump version to ""0.22.2""","['README.markdown,package.json']"
+Andrew Stewart,2015-04-03,"Merge branch 'release'
+
+* release:
+  Bump version to ""0.22.2""
+  Add basic #includes helper for arrays
+  Correct bug in Registry#findBy, add spec",['']
+Andrew Stewart,2015-04-03,Update devDependencies,['package.json']
+deadprogram,2015-04-04,Remove unneeded extra file,['freenode.txt']
+Andrew Stewart,2015-04-07,Update install statements,['README.markdown']
+Andrew Stewart,2015-04-07,Small README updates,['README.markdown']
+Adrian Zankich,2015-04-08,Bump version to 1.0.0,"['README.markdown,package.json']"
+Andrew Stewart,2015-04-08,Amend version note,['README.markdown']
+Andrew Stewart,2015-04-08,Update last outdated dependency,['package.json']
+deadprogram,2015-04-09,Update list of GPIO and i2c drivers,['README.markdown']
+deadprogram,2015-04-11,Add links to README for api plugins,['README.markdown']
+Andrew Stewart,2015-04-15,Consistent top-of-file doc blocks,"['adaptor.js,basestar.js,config.js,cylon.js,driver.js,initializer.js,digital-pin.js,utils.js,logger.js,basic_logger.js,null_logger.js,registry.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,helpers.js,monkey-patches.js']"
+Andrew Stewart,2015-04-15,Switch to ESLint for linting,"['.eslintrc,.jshintrc,.travis.yml,Makefile,.eslintrc,api.js,conway_sphero.js,fluent-conway_sphero.js,hello.js,leap_ardrone.js,sf-sphero.js,sphero-pebble-sf.js,sphero_shakeometer.js,travis.js,basestar.js,cylon.js,driver.js,digital-pin.js,utils.js,logger.js,registry.js,robot.js,utils.js,helpers.js,monkey-patches.js,package.json,.eslintrc,helper.js,adaptor.spec.js,basestar.spec.js,cylon.spec.js,digital-pin.spec.js,driver.spec.js,utils.js,logger.spec.js,basic_logger.spec.js,registry.spec.js,robot.spec.js,utils.spec.js,helpers.spec.js,mock_module.js']"
+Ron Evans,2015-04-15,"Merge pull request #287 from hybridgroup/feature/eslint
+
+Add ESLint for A Better Clean™",['']
+Andrew Stewart,2015-04-15,Move spec globals to spec eslintrc,"['.eslintrc,.eslintrc']"
+Andrew Stewart,2015-04-18,Remove lint warnings,"['cylon.js,driver.js']"
+nathan,2015-04-24,add relay to supported GPIO drivers,['README.markdown']
+deadprogram,2015-04-27,Add WeMo to list of user-contributed platforms,['README.markdown']
+deadprogram,2015-05-07,Add Parrot Bebop to README,['README.markdown']
+deadprogram,2015-05-09,Remove user contributed driver,['README.markdown']
+Andrew Stewart,2015-05-12,Add util to verify constructor calls use 'new',"['adaptor.js,basestar.js,driver.js,robot.js,utils.js,utils.spec.js']"
+Peter deHaan,2015-05-20,"Update license property to valid SPDX license
+
+specifying the type and URL is deprecated:
+
+https://docs.npmjs.com/files/package.json#license
+http://npm1k.org/",['package.json']
+Ron Evans,2015-05-21,"Merge pull request #293 from pdehaan/patch-1
+
+Update license property to valid SPDX license",['']
+deadprogram,2015-06-05,WIP on possible new format for README,"['CONTRIBUTING.md,README.markdown,RELEASES.md,package.json']"
+deadprogram,2015-06-05,Based on io.js contribution guidelines,['CONTRIBUTING.md']
+deadprogram,2015-06-05,Correct errors in JSON,['package.json']
+nathan,2015-06-05,add relay back to readme,['README.markdown']
+deadprogram,2015-06-05,Merge branch 'docs/contributing',['']
+Andrew Stewart,2015-06-08,Begin JSDoc-ing core,['robot.js']
+Andrew Stewart,2015-06-09,Remove leftover comment,['robot.js']
+Andrew Stewart,2015-06-09,s/source/lib for loading files for specs,"['.eslintrc,helper.js,adaptor.spec.js,basestar.spec.js,cylon.spec.js,digital-pin.spec.js,driver.spec.js,utils.js,logger.spec.js,basic_logger.spec.js,registry.spec.js,robot.spec.js,utils.spec.js,helpers.spec.js']"
+Andrew Stewart,2015-06-09,Add specs for initializer,"['initializer.js,initializer.spec.js']"
+Andrew Stewart,2015-06-09,"Stop giving robots random names, use inc. counter","['robot.js,robot.spec.js']"
+Andrew Stewart,2015-06-11,Add method for removing monkey-patched methods,"['monkey-patches.js,utils.spec.js,monkey-patches.spec.js']"
+Ron Evans,2015-06-11,"Merge pull request #285 from hybridgroup/add/monkey-patch-removal
+
+Add method for removing monkey-patched methods",['']
+Andrew Stewart,2015-06-11,"Update ESLint, use local for make tasks","['Makefile,loopback.js,test-adaptor.js,test-driver.js,package.json,utils.spec.js']"
+Andrew Stewart,2015-06-17,Extract out Robot param validation into new file,"['robot.js,validator.js']"
+Andrew Stewart,2015-06-17,Add additional validations,['validator.js']
+Ron Evans,2015-06-17,"Merge pull request #295 from hybridgroup/refactor/validations
+
+Extract out Robot option validation",['']
+Andrew Stewart,2015-06-18,Correct issue with Robot halting,"['robot.js,robot.spec.js']"
+Andrew Stewart,2015-06-18,"Remove dependency on 'async'
+
+This commit removes the last current dependency of Cylon, 'async'.
+
+In it's place, simplified versions of the methods used have been added
+so lib/utils/helpers.js.","['cylon.js,robot.js,helpers.js,package.json,helpers.spec.js']"
+Andrew Stewart,2015-06-22,Remove unnecessary comments at start of files,"['adaptor.js,basestar.js,config.js,cylon.js,driver.js,initializer.js,digital-pin.js,utils.js,logger.js,basic_logger.js,null_logger.js,registry.js,robot.js,loopback.js,ping.js,test-adaptor.js,test-driver.js,utils.js,helpers.js,monkey-patches.js']"
+Edgar O Silva,2015-06-22,"Merge pull request #298 from hybridgroup/remove/license-preamble
+
+Remove unnecessary comments at start of files",['']
+Andrew Stewart,2015-06-22,Update config to act as subscribable data store,"['config.js,config.spec.js']"
+Andrew Stewart,2015-06-22,"Logger should subscribe to updates, not be told what to do","['cylon.js,logger.js,cylon.spec.js,logger.spec.js']"
+Ron Evans,2015-06-22,"Merge pull request #299 from hybridgroup/refactor/config
+
+Refactor Config",['']
+Edgar O Silva,2015-06-24,"Merge pull request #296 from hybridgroup/remove/async
+
+Remove dependency on 'async'",['']
+Andrew Stewart,2015-06-25,Automate auto-binding of prototype methods,['robot.js']
+Andrew Stewart,2015-06-26,Remove vestigial attributes on Robot,['robot.js']
+Andrew Stewart,2015-06-26,"Consolidate Robot initialization to a single fn
+
+Additionally, extracts validation of connections being present out to
+the validator logic.","['robot.js,validator.js,robot.spec.js']"
+Ron Evans,2015-06-29,"Merge pull request #303 from hybridgroup/refactor/robot-initialization
+
+Consolidate Robot initialization",['']
+Andrew Stewart,2015-06-29,"Split apart MCP, API manager, exports","['index.js,api.js,config.js,cylon.js,mcp.js,helpers.js,package.json,helper.js,api.spec.js,cylon.spec.js,mcp.spec.js']"
+Ron Evans,2015-06-29,"Merge pull request #301 from hybridgroup/refactor/mcp
+
+Refactor MCP",['']
+Andrew Stewart,2015-06-29,Replace tomdoc with jsdoc,"['adaptor.js,basestar.js,driver.js,digital-pin.js,utils.js,utils.js,monkey-patches.js']"
+Andrew Stewart,2015-06-30,Correct CI script for codeclimate binary name change,['.travis.yml']
+Andrew Stewart,2015-07-01,"Bump version to ""1.1.0""","['RELEASES.md,package.json']"
+Andrew Stewart,2015-07-03,"Add addional edge case handling for snake_casing
+
+Closes https://github.com/hybridgroup/robeaux/issues/19.","['driver.js,driver.spec.js']"
+Andrew Stewart,2015-07-13,"Simplify logger
+
+This commit adds a simplified logging system, with two primary methods:
+
+- `Logger#log(String) :: void` (for normal logging)
+- `Logger#debug(String) :: void` (for debug logging)
+
+This helps dramatically simplify logging infrastructure, as well as
+enabling simpler toggling of log modes.
+
+The configuration values for the Logger have also been updated:
+
+- `logger :: Function` - function to log output to (both normal + debug)
+- `silent :: Boolean` - whether to log default normal messages or not (`--silent` flag)
+- `debug  :: Boolean` - whether or not to log debug output (`--debug` flag)
+
+Additionally, the following CLI flags are supported re: logging:
+
+- `--silent` disables normal logging (will override all other settings)
+- `--debug` enables debug logging
+
+Deprecation notices have been added for old log methods, with first-run
+messages to this effect.
+
+This change should have negligible impact on end-users, with minor
+inconvenience for library developers, as they need to switch their
+logging function calls over.
+
+Logging configuration is still possible via both
+`Cylon.Config.update(Object)`, and directly calling
+`Cylon.Logger.setup(Object)`.","['api.js,config.js,logger.js,basic_logger.js,null_logger.js,mcp.js,robot.js,validator.js,logger.spec.js,basic_logger.spec.js,robot.spec.js']"
+Andrew Stewart,2015-07-13,_.arity call no longer necessary,['api.js']
+Andrew Stewart,2015-07-14,Remove accidentally-left-behind comments,"['basestar.js,utils.js']"
+Andrew Stewart,2015-07-14,"Stop using `lib` fn, breaks browserify",['index.js']
+Andrew Stewart,2015-07-15,streamline index file,['index.js']
+Andrew Stewart,2015-07-15,small readme updates,['README.markdown']
+Andrew Stewart,2015-07-21,prevent callback(err) from messing with shutdown,"['robot.js,robot.spec.js']"
+Ron Evans,2015-08-31,"Merge pull request #305 from hybridgroup/refactor/logger
+
+Simplify logger",['']
+deadprogram,2015-08-31,Convenience functions for milliseconds and microseconds,"['monkey-patches.js,monkey-patches.spec.js']"
+deadprogram,2015-09-01,"Add minutes time functions, for a complete range","['monkey-patches.js,monkey-patches.spec.js']"
+deadprogram,2015-09-01,Fix #311 by setting default for tests to 'silent',"['helper.js,config.spec.js,logger.spec.js']"
+deadprogram,2015-09-01,Add 'finish' to time-based helpers,"['utils.js,utils.spec.js']"
+deadprogram,2015-09-01,Correct JSDocs for 'finish',['utils.js']
+deadprogram,2015-09-01,"Devices will only be started up once, and can be added dynamically","['robot.js,robot.spec.js']"
+deadprogram,2015-09-07,Add function to dynamically start devices,['robot.js']
+deadprogram,2015-09-07,Simple example of how to use dynamic devices,['start-device.js']
+deadprogram,2015-09-07,Making connections dynamic as well,['robot.js']
+deadprogram,2015-09-08,Update to version 1.2.0,['package.json']
+deadprogram,2015-09-08,Update RELEASES,['RELEASES.md']
+deadprogram,2015-11-04,Add user created platforms from @afoninsky to README thank you!,['README.markdown']
+deadprogram,2015-11-17,Build core for Travis using most recent versions of Node,['.travis.yml']
+deadprogram,2015-12-04,Add cylon-myo to list of user contributed platforms,['README.markdown']
+deadprogram,2016-02-03,Update README to include PCA9544A i2c device,"['LICENSE,README.markdown']"
+deadprogram,2016-02-06,Corrected name of Sphero BLE module in README,['README.markdown']
+Yogi,2016-02-24,Adding alternate keyword for adaptor as adapter,['robot.js']
+Yogi,2016-02-25,Fixed lint errors,['robot.js']
+Ron Evans,2016-02-25,"Merge pull request #331 from iyogeshjoshi/master
+
+Adds alternate keyword for 'adaptor' as 'adapter'",['']
+deadprogram,2016-03-14,Autoload module from current directory when under development,['registry.js']
+deadprogram,2016-03-27,"Adds back robot-scoped connections by name, and the tests to prove it.
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>","['robot.js,robot.spec.js']"
+deadprogram,2016-03-27,"Use dot notation for tests
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['robot.spec.js']
+deadprogram,2016-04-22,"Move CoC into separate file and update source
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>","['CODE_OF_CONDUCT.md,CONTRIBUTING.md']"
+deadprogram,2016-04-22,"A long overdue update of the sizable list of contributors. Thank you all!
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['CONTRIBUTORS.markdown']
+deadprogram,2016-04-22,"Updates for v1.3.0 release
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>","['README.markdown,RELEASES.md,package.json']"
+Daniel Klein,2016-04-24,Fixed broken link to browser documentation,['README.markdown']
+Ron Evans,2016-04-24,"Merge pull request #339 from danhklein/master
+
+Fixed broken link to browser support documentation",['']
+deadprogram,2016-04-25,"Update README for most current devices/platforms
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['README.markdown']
+deadprogram,2016-04-25,"Update README for most current devices/platforms
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['README.markdown']
+deadprogram,2016-04-27,"Update list of GPIO drivers
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['README.markdown']
+deadprogram,2016-05-07,"Add Node.js v6.x to Travis build
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['.travis.yml']
+deadprogram,2016-05-07,"Run Travis builds for major Node.js versions only
+
+Signed-off-by: deadprogram <ron@hybridgroup.com>",['.travis.yml']
+Morten H. Frederiksen,2016-05-21,"Fix missing log output for pin 0 re issue #338
+
+Signed-off-by: Morten H. Frederiksen <morten@mfd-consult.dk>",['robot.js']
+Ron Evans,2016-05-21,"Merge pull request #342 from mortenf/master
+
+Fix missing log output for pin 0 re issue #338",['']
+André Cordeiro,2016-07-26,"test-adaptor.js - Adding superclass methods
+
+Adding the connect and disconnect methods for the TestAdaptor can be used for tests otherwise an exception will be thrown.
+Exception: Adaptor#connect method must be overwritten by descendant classes.",['test-adaptor.js']
+André Cordeiro,2016-07-26,"test-driver.js - Adding superclass methods
+
+Adding the start and halt methods for the TestDriver can be used for tests otherwise an exception will be thrown.
+Exception: Driver#start method must be overwritten by descendant classes.",['test-driver.js']
+Ron Evans,2016-08-26,"Merge pull request #349 from ahdncordeiro/master
+
+Correcting the test Adaptor and Driver",['']

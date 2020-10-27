@@ -1,0 +1,500 @@
+Contributor,Date,Message,Files
+Felix Geisendörfer,2012-07-21,Readme,['Readme.md']
+Felix Geisendörfer,2012-07-21,Gitignore,['.gitignore']
+Felix Geisendörfer,2012-07-22,"Some initial stuff, some of it works","['index.js,BitNumber.js,Client.js,ClientConfig.js,MessageParser.js,Navdata.js,package.json,common.js,test-BitNumber.js,test-NavdataParser.js']"
+Felix Geisendörfer,2012-07-23,Some more working stuff & repl love,"['Readme.md,Client.js']"
+Felix Geisendörfer,2012-07-25,"Check in latest stuff
+
+Good enough to have lots of fun with the repl!","['Readme.md,Client.js,Navdata.js,Repl.js,test-Client.js']"
+Felix Geisendörfer,2012-07-27,New png video streaming and other things,"['Client.js,PngSplitter.js,Repl.js,VideoStream.js']"
+Felix Geisendörfer,2012-07-27,"Implement client.sequence() feature
+
+Makes it easy to script hardcoded flight sequences.","['Client.js,Sequence.js']"
+Felix Geisendörfer,2012-07-27,WIP: More Navdata parsing,"['Client.js,MessageParser.js,Navdata.js']"
+Felix Geisendörfer,2012-07-27,"Add PngSplitter#end
+
+Just needs to be there so Stream#pipe() does not freak out when the
+source is done and it is trying to close the destination.",['PngSplitter.js']
+Felix Geisendörfer,2012-07-27,New readme,['Readme.md']
+Felix Geisendörfer,2012-07-27,Fix markdown rendering,['Readme.md']
+Felix Geisendörfer,2012-07-27,Trying markdown fix,['Readme.md']
+Felix Geisendörfer,2012-07-27,"Weird, is this it?",['Readme.md']
+Felix Geisendörfer,2012-07-29,"Some tracking stuff
+
+Also better abstractions for handling the drone video feed (videoStream,
+imageStream, webCam);","['Readme.md,Client.js,ImageStream.js,Tracker.js,VideoStream.js,WebCam.js,constants.js']"
+Felix Geisendörfer,2012-08-01,More navdata parsing,"['Client.js,Navdata.js,NavdataParser.js,Sequence.js,constants.js,test-NavdataParser.js']"
+Felix Geisendörfer,2012-08-16,New stuff,"['Client.js,DroneInfo.js,NavdataParser.js']"
+Felix Geisendörfer,2012-08-21,"Add link to AR Drone 2.0
+
+Fixes #1",['Readme.md']
+Felix Geisendörfer,2012-09-05,Add research doc,['Research.md']
+Felix Geisendörfer,2012-09-06,Add fixtures path,['common.js']
+Felix Geisendörfer,2012-09-06,"Add PaVEParser parser and tests
+
+This allows extracting h264 frames from the video feed. The next
+challenge is to embedd them into a browser streamable format (like mp4)","['PaVEParser.js,pave.bin,test-PaVEParser.js']"
+Felix Geisendörfer,2012-09-06,Include buffy,['package.json']
+Felix Geisendörfer,2012-09-06,Add test command,"['Makefile,package.json,run.js']"
+Felix Geisendörfer,2012-09-07,Disable failing test for now,['test-NavdataParser.js']
+Felix Geisendörfer,2012-09-07,Start new AtCommandWriter implementation,"['AtCommand.js,AtCommandWriter.js,test-AtCommand.js,test-AtCommandWriter.js']"
+Felix Geisendörfer,2012-09-07,Remove some stuff,['AtCommandWriter.js']
+Felix Geisendörfer,2012-09-07,Rename to AtCommandCreator,"['AtCommandCreator.js,test-AtCommandCreator.js,test-UdpControl.js']"
+Felix Geisendörfer,2012-09-07,"Implement partial pcmd
+
+Enough to hover","['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-08,Implement UdpControl,"['constants.js,UdpControl.js,meta.js,package.json,common.js,test-udp-control.js,test-AtCommandCreator.js,test-UdpControl.js,test-meta.js']"
+Felix Geisendörfer,2012-09-08,Add UdpControl example,['udp-control.js']
+Felix Geisendörfer,2012-09-08,Initial TcpVideoStream implementation + tests,"['TcpVideoStream.js,common.js,test-normal-connection.js,test-TcpVideoStream.js']"
+Felix Geisendörfer,2012-09-08,Move stuff around,"['test-message-flushing.js,test-normal-connection.js']"
+Felix Geisendörfer,2012-09-08,TcpVideoStream timeout handling,"['TcpVideoStream.js,test-connection-timeout.js,test-TcpVideoStream.js']"
+Felix Geisendörfer,2012-09-08,Default values and TcpVideoStream example,"['tcp-video-stream.js,TcpVideoStream.js']"
+Felix Geisendörfer,2012-09-08,Fix tests,"['test-connection-timeout.js,test-normal-connection.js']"
+Felix Geisendörfer,2012-09-08,Fix package.json,['package.json']
+Felix Geisendörfer,2012-09-08,Add PngStream and expose it along with UdpControl,"['png-stream.js,index.js,PngStream.js,common.js']"
+Felix Geisendörfer,2012-09-08,Test main api,['test-main-api.js']
+Felix Geisendörfer,2012-09-08,Implement at module,"['at.js,test-at.js']"
+Felix Geisendörfer,2012-09-08,Add comment,['AtCommandCreator.js']
+Felix Geisendörfer,2012-09-08,Add comment,['at.js']
+Felix Geisendörfer,2012-09-08,Implement PCMD options,"['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-08,Moar comments,['AtCommandCreator.js']
+Felix Geisendörfer,2012-09-08,Implement PngEncoder,"['PngEncoder.js,test-PngEncoder.js']"
+Felix Geisendörfer,2012-09-08,"Better / working PngEncoder ! yeah
+
+And a nice integration test","['PngSplitter.js,PngEncoder.js,PngStream.js,test-sample-encode.js,test-PngEncoder.js']"
+Felix Geisendörfer,2012-09-08,Improve PngStream example,['png-stream.js']
+Felix Geisendörfer,2012-09-11,Simplify code,['PngEncoder.js']
+Felix Geisendörfer,2012-09-11,Groundwork for new PngStream,"['png-stream.js,index.js,PngStream.js,test-main-api.js,test-PngStream.js']"
+Felix Geisendörfer,2012-09-18,Implement raw() method,"['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-18,Rename,['test-AtCommandCreator.js']
+Felix Geisendörfer,2012-09-18,New interface,"['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-18,Flags and refactorings,"['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-18,Slightly nicer,['AtCommandCreator.js']
+Felix Geisendörfer,2012-09-18,Whitespace,['AtCommandCreator.js']
+Felix Geisendörfer,2012-09-18,Add License,['LICENSE']
+Felix Geisendörfer,2012-09-18,New Readme,['README.NEW.md']
+Felix Geisendörfer,2012-09-18,Add CONTRIBUTING guidelines,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-09-18,Allow explicit flag setting again,"['README.NEW.md,AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-20,Update examples,"['png-stream.js,tcp-video-stream.js,udp-control.js']"
+Felix Geisendörfer,2012-09-20,Start working on UdpNavdataStream,"['UdpNavdataStream.js,test-basics.js,test-UdpNavdataStream.js']"
+Felix Geisendörfer,2012-09-20,"Finish UdpNavdataStream
+
+Next: parser","['UdpNavdataStream.js,test-basics.js,test-UdpNavdataStream.js']"
+Felix Geisendörfer,2012-09-20,Expose UdpNavdataStream and add #destroy(),"['index.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-index.js']"
+Felix Geisendörfer,2012-09-20,Check in navdata fixture,['navdata.bin']
+Felix Geisendörfer,2012-09-20,Upgrade buffy,['package.json']
+Felix Geisendörfer,2012-09-20,Handle navdata re-requesting after timeout,"['UdpNavdataStream.js,test-UdpNavdataStream.js']"
+Felix Geisendörfer,2012-09-20,Some navdata parsing,"['NavdataReader.js,parseNavdata.js,test-parseNavdata.js']"
+Felix Geisendörfer,2012-09-20,Fix whitespace,['parseNavdata.js']
+Felix Geisendörfer,2012-09-23,New docs,['README.NEW.md']
+Felix Geisendörfer,2012-09-23,Remove unfinished test,['test-basics.js']
+Felix Geisendörfer,2012-09-23,Add travis config,['.travis.yml']
+Felix Geisendörfer,2012-09-23,Handle ffmpeg not existing better,"['PngEncoder.js,test-PngEncoder.js']"
+Felix Geisendörfer,2012-09-23,Comment,['PngEncoder.js']
+Felix Geisendörfer,2012-09-23,Try ffmpeg install for travis,['.travis.yml']
+Felix Geisendörfer,2012-09-23,Contributing,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-09-23,Skip broken travis test,"['.travis.yml,common.js,test-sample-encode.js']"
+Felix Geisendörfer,2012-09-23,"Don't build in node 0.6 for now
+
+test-index is hanging for some reason",['.travis.yml']
+Felix Geisendörfer,2012-09-23,More Contributing info,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-09-23,Build badge,['README.NEW.md']
+Felix Geisendörfer,2012-09-23,Add note about missing docs,['README.NEW.md']
+Felix Geisendörfer,2012-09-23,Remove old readme,"['README.md,Readme.md']"
+Felix Geisendörfer,2012-09-23,"Remove old client code
+
+There is still work left to be done on the new code, but it should be
+very usable now.","['index.js,BitNumber.js,Client.js,ClientConfig.js,DroneInfo.js,ImageStream.js,MessageParser.js,Navdata.js,NavdataParser.js,Repl.js,Sequence.js,Tracker.js,VideoStream.js,WebCam.js,test-BitNumber.js,test-Client.js']"
+Felix Geisendörfer,2012-09-23,Will find a better place to track this,['Research.md']
+Felix Geisendörfer,2012-09-23,Typo,['README.md']
+Felix Geisendörfer,2012-09-23,Ideas for high level API,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-09-27,"Use methods, not properties",['CONTRIBUTING.md']
+Felix Geisendörfer,2012-09-28,0.0.1,['package.json']
+Felix Geisendörfer,2012-09-28,Fix mistakes,['README.md']
+Felix Geisendörfer,2012-09-28,Delete old test,['test-NavdataParser.js']
+Felix Geisendörfer,2012-09-28,New Client and bug fixes,"['README.md,index.js,Client.js,Repl.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js,test-index.js']"
+Felix Geisendörfer,2012-09-28,Implement config,"['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-28,Work on API,"['index.js,Client.js,test-Client.js,test-index.js']"
+Felix Geisendörfer,2012-09-28,Implement AtCommandCreator#animateLeds,"['AtCommandCreator.js,test-AtCommandCreator.js']"
+Felix Geisendörfer,2012-09-28,LED animations for client!,"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js']"
+Felix Geisendörfer,2012-09-28,Expose client to REPL,['Repl.js']
+Felix Geisendörfer,2012-09-28,Implement flight animation (still untested),"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js']"
+Felix Geisendörfer,2012-09-28,Simplify repl,['Repl.js']
+Felix Geisendörfer,2012-09-29,Rename method,"['index.js,PngStream.js,test-index.js']"
+Felix Geisendörfer,2012-09-29,Move file around,"['PngEncoder.js,PngSplitter.js,PngStream.js']"
+Felix Geisendörfer,2012-10-03,Allow catching navdata errors,"['Client.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-Client.js']"
+Felix Geisendörfer,2012-10-03,Delegate navdata error events if needed,"['Client.js,test-Client.js']"
+Felix Geisendörfer,2012-10-04,"Check signature in PaVEParser
+
+Seems like the drone is sending another unexpected 4 bytes of payload
+right now ... fuck. Will just send the raw data stream to ffmpeg for
+now.","['PaVEParser.js,test-PaVEParser.js']"
+Felix Geisendörfer,2012-10-04,Somewhat working pngStream stuff,"['png-stream.js,tcp-video-stream.js,PngEncoder.js,PngStream.js,test-PngEncoder.js,test-PngStream.js']"
+Felix Geisendörfer,2012-10-04,Hook PngStream into Client,"['Client.js,PngEncoder.js,test-Client.js']"
+Felix Geisendörfer,2012-10-04,Work on Readme,['README.md']
+Felix Geisendörfer,2012-10-04,Fix link,['README.md']
+Felix Geisendörfer,2012-10-04,Implement Client#after API,"['Client.js,test-Client.js']"
+Felix Geisendörfer,2012-10-04,Moar docs!,['README.md']
+Felix Geisendörfer,2012-10-04,Update todo,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-10-04,Client#disableEmergencyt,"['README.md,Client.js,test-Client.js']"
+Felix Geisendörfer,2012-10-04,0.0.2,['package.json']
+Felix Geisendörfer,2012-10-04,"Instructions to install from Github
+
+Makes a lot of sense for this lib which is changing fast",['README.md']
+Domenic Denicola,2012-10-05,"Use npm test as primary test runner.
+
+Makefiles are not cross-platform, but if you want one, it can delegate to npm (which *is* cross-platform).
+
+See https://gist.github.com/2790533 for more tips on writing portable Node.js code.","['Makefile,package.json']"
+Domenic Denicola,2012-10-05,client#disableEmergency is implemented,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-10-05,Add and document config command,"['README.md,Client.js,test-Client.js']"
+Felix Geisendörfer,2012-10-05,"Merge pull request #5 from domenic/update-contributing
+
+client#disableEmergency is implemented",['']
+Felix Geisendörfer,2012-10-05,"Merge pull request #4 from domenic/fix-test
+
+Use npm test as primary test runner.",['']
+Bernhard K. Weisshuhn,2012-10-11,reenable ffmpeg back pressure (works for me),"['PngEncoder.js,test-PngEncoder.js']"
+Bernhard K. Weisshuhn,2012-10-11,add workaround for 68 byte PaVE headers,['PaVEParser.js']
+Bernhard K. Weisshuhn,2012-10-11,fix last-minute typo,['PaVEParser.js']
+Bernhard K. Weisshuhn,2012-10-11,only advance when buffer size allows,['PaVEParser.js']
+Bernhard K. Weisshuhn,2012-10-11,add test for 68 byte size PaVE frames,"['pave-68.bin,test-PaVEParser.js']"
+Felix Geisendörfer,2012-10-12,"Merge pull request #8 from bkw/ffmegDrain
+
+reenable ffmpeg back pressure (works for me)",['']
+Bernhard K. Weisshuhn,2012-10-12,"make 68 byte frames the default, compensate during paring","['PaVEParser.js,test-PaVEParser.js']"
+Felix Geisendörfer,2012-10-12,"Merge pull request #9 from bkw/PaVE-headersize68
+
+support (new?) 68 byte PaVE headers",['']
+Felix Geisendörfer,2012-10-13,Add note about 1.0 drones,['README.md']
+Felix Geisendörfer,2012-10-13,Link to more info,['README.md']
+Felix Geisendörfer,2012-10-13,Update 1.0 info,['CONTRIBUTING.md']
+Felix Geisendörfer,2012-10-19,Ignore *.un~ files so they don't end up in npm,['.gitignore']
+Felix Geisendörfer,2012-10-19,0.0.3,['package.json']
+Christian Sanz,2012-10-20,"Update lib/constants.js
+
+Let me override the IP, so I can take over with my simulator",['constants.js']
+Felix Geisendörfer,2012-10-20,"Merge pull request #12 from csanz/master
+
+small update to override IP for simulator",['']
+Christian Sanz,2012-10-21,"Update README.md
+
+Environment variables section.  First entry is for overriding the drone IP address to be used inside the drone simulator
+
+If your variable makes it into master make sure this section gets updated. 
+
+See [pull request](https://github.com/felixge/node-ar-drone/pull/12#issuecomment-9632230) for more info",['README.md']
+Martin Schuhfuss,2012-10-25,changed altitude conversion,['parseNavdata.js']
+Felix Geisendörfer,2012-10-25,"Merge pull request #16 from usefulthink/fix-altitude-millimeters
+
+changed altitude conversion",['']
+Contra,2012-10-29,custom events,"['Client.js,test-Client.js']"
+Contra,2012-10-29,fix lastState typo,['Client.js']
+Contra,2012-10-30,split out + split hovering and flying events,"['Client.js,test-Client.js']"
+Chris Bumgardner,2012-10-31,Fixed typo in SDK url,['README.md']
+Felix Geisendörfer,2012-11-01,"Merge pull request #19 from cbumgard/master
+
+Fixed typo in README for SDK url",['']
+Eric Schoffstall,2012-11-01,remove explicit port bind,['UdpNavdataStream.js']
+Contra,2012-11-01,remove unneeded test,['test-UdpNavdataStream.js']
+Felix Geisendörfer,2012-11-04,"Merge pull request #18 from Contra/master
+
+Add custom events",['']
+Felix Geisendörfer,2012-11-04,0.0.4,['package.json']
+Contra,2012-11-04,event docs,['README.md']
+Contra,2012-11-04,more docs,['README.md']
+Jan Lehnardt,2012-11-10,"Implement `Client.battery();`
+
+Returns `Client._lastBattery`.",['Client.js']
+Felix Geisendörfer,2012-11-11,"Merge pull request #22 from Contra/master
+
+Event docs",['']
+John Schulz,2012-11-11,Make JSHint happy.,"['constants.js,parseNavdata.js']"
+John Schulz,2012-11-11,Add lookup for detection types.,['constants.js']
+John Schulz,2012-11-11,Add flying modes,['constants.js']
+John Schulz,2012-11-11,Add new types based on structs from C SDK.,['NavdataReader.js']
+John Schulz,2012-11-11,Add two utility functions.,['parseNavdata.js']
+John Schulz,2012-11-11,Alter `demo` navdata block.,['parseNavdata.js']
+John Schulz,2012-11-11,Use `droneTimeToMilliseconds` utility function.,['parseNavdata.js']
+John Schulz,2012-11-11,Be consistent with `gyrometers`,['parseNavdata.js']
+John Schulz,2012-11-11,Alter `demo` navdata block.,['parseNavdata.js']
+John Schulz,2012-11-11,"Add all missing navdata blocks (`magneto`, `windSpeed`, `games`, etc).",['parseNavdata.js']
+John Schulz,2012-11-11,Add functions required for dealing with navdata masks.,['maskingFunctions.js']
+John Schulz,2012-11-11,Addressing spacing and syntax errors from a borked commit.,['parseNavdata.js']
+John Schulz,2012-11-11,Need to supply context b/c NavdataReader methods use `this`.,['parseNavdata.js']
+John Schulz,2012-11-11,Remove detritus which is causing errors.,['maskingFunctions.js']
+John Schulz,2012-11-11,"Adding items which, somehow, were omitted from 7ca3214.",['parseNavdata.js']
+John Schulz,2012-11-12,"Not entirely sure this is correct, but going with it.",['parseNavdata.js']
+John Schulz,2012-11-19,s/gyrometers/gyroscopes/g,['parseNavdata.js']
+John Schulz,2012-11-19,Whitespace change,['parseNavdata.js']
+John Schulz,2012-11-19,Display wifi signal strength as a percentage,['parseNavdata.js']
+John Schulz,2012-11-19,"Reverting to approach that allows test to pass.
+
+Unsure `ARDrone_SDK_2_0/ARDroneLib/Soft/Common/navdata_common.h:753` has `uint32_t link_quality` but using that:
+
+ * Breaks a test
+ * Produces a value from 0 - 500
+ * Causes strange behavior[^1]
+
+[^1]: (Values were observed to start at 500 and gradually decline to 0 in about 10 seconds. Sometime later the value would incrementally increase back to 500 and, again, slide back down to 0.)",['parseNavdata.js']
+John Schulz,2012-11-19,Fix two typos in the `navdata` keys.,['parseNavdata.js']
+John Schulz,2012-11-19,Add two properties for navdata option masks.,['maskingFunctions.js']
+John Schulz,2012-11-19,Missed one in ff9be5c.,['parseNavdata.js']
+John Schulz,2012-11-19,"Some guesses about units for various navdata properties.
+
+Based on (guessing, after reading) ARDrone_SDK_2_0/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.c:51",['parseNavdata.js']
+John Schulz,2012-11-19,Use new structure for `demo` & `rawMeasures` in `navdata` but keep BC.,['parseNavdata.js']
+John Schulz,2012-11-19,Add tests for data structure introduced in 5319cfc.,['test-parseNavdata.js']
+John Schulz,2012-11-19,WIP commit. Adding tests for 9(?) of the 22(?) new `navdata` objects.,['test-parseNavdata.js']
+John Schulz,2012-11-19,"Add tests for `vision`, `visionPerf`, `trackersSend`, `visionDetect` keys.",['test-parseNavdata.js']
+John Schulz,2012-11-19,Add tests for the 9 `navdata` keys without them.,['test-parseNavdata.js']
+John Schulz,2012-11-21,"Merge pull request #30 from jfsiii/feature-new-navdata
+
+Add remaining navdata options",['']
+Eric Schoffstall,2012-11-22,"Merge pull request #21 from Contra/patch-1
+
+Remove explicit port bind #20",['']
+Eric Schoffstall,2012-11-29,"Merge pull request #14 from csanz/patch-1
+
+Update README.md - Added Environment Variables Section",['']
+Bernhard K. Weisshuhn,2012-12-16,update to latest buffy (performance),['package.json']
+Bernhard K. Weisshuhn,2012-12-16,version 0.0.5,['package.json']
+Marcus Eagan,2013-03-10,"Update README.md
+
+The duration parameter for client.animate('flipleft') is now   milliseconds exceeding .015.",['README.md']
+Eric Schoffstall,2013-03-10,"Merge pull request #39 from MarcusSorealheis/patch-1
+
+Update README.md",['']
+Robin Mehner,2013-03-24,"Document how to access the bottom camera, fixes #35
+
+Thanks @seken for that hint",['README.md']
+Felix Geisendörfer,2013-04-23,Request navdata by default,['Client.js']
+Felix Geisendörfer,2013-04-23,"Add takeoff/land callbacks
+
+Closes #13","['README.md,Client.js']"
+Felix Geisendörfer,2013-05-16,0.0.6,['package.json']
+Laurent Eschenauer,2013-05-22,"Fix uncatched errors when failing to spawn ffmpeg
+
+Fixes issue #44","['PngEncoder.js,PngStream.js,test-PngEncoder.js,test-PngStream.js']"
+Laurent Eschenauer,2013-05-23,"Merge pull request #45 from eschnou/fix_44
+
+Fix uncatched errors when failing to spawn ffmpeg",['']
+Laurent Eschenauer,2013-05-27,"Skip broken test
+
+See discussion on issue #47",['test-Client.js']
+Laurent Eschenauer,2013-05-27,"Merge pull request #48 from eschnou/fix_tests
+
+Skip broken test 'sends config command 10 times'",['']
+Laurent Eschenauer,2013-05-27,"Maintain a single png and tcp stream in client
+
+Introducing two new API calls: getPngStream() and getVideoStream().
+Multiple calls to these methods return the same objects. The underlying
+TcpVideoStream is the same and its lifecylce (connect/reconnect) is
+managed by the client.","['README.md,png-stream.js,tcp-video-stream.js,Client.js,PngStream.js,TcpVideoStream.js,test-Client.js']"
+Laurent Eschenauer,2013-05-28,"Merge pull request #46 from eschnou/refactor_client_getstream
+
+Maintain a single png or tcp stream in client. 
+Closes #43",['']
+Laurent Eschenauer,2013-05-28,Added an example on saving the video-stream,['save-video-stream.js']
+John Wiseman,2013-05-28,"Added calibrate command to UdpControl and Client, which according to
+the SDK docs ""asks the drone to calibrate the magnetometer (must be
+flying).""","['Client.js,AtCommandCreator.js,test-AtCommandCreator.js']"
+Eric Schoffstall,2013-05-28,"Merge pull request #26 from janl/battery-levels
+
+Implement `Client.battery()`",['']
+Eric Schoffstall,2013-05-28,"Merge pull request #51 from wiseman/add_calibrate
+
+Added calibrate command to UdpControl and Client",['']
+John Wiseman,2013-05-28,Added documentation of client.calibrate to the README.,['README.md']
+Felix Geisendörfer,2013-05-29,0.1.0,['package.json']
+Felix Geisendörfer,2013-05-29,"Merge pull request #52 from wiseman/master
+
+Added documentation of client.calibrate to the README.",['']
+Felix Geisendörfer,2013-05-29,"Merge pull request #50 from eschnou/save_video_example
+
+Added an example on saving the video-stream",['']
+adrianparsons,2013-06-05,'cb' -> 'callback',['README.md']
+Robin Mehner,2013-06-06,"Merge pull request #56 from adrianparsons/master
+
+call a callback a callback",['']
+Laurent Eschenauer,2013-06-07,"Added ftrim() command to the client
+
+This command sets a reference of the horizontal plane
+for the drone internal control system.
+
+Relates to #27","['Client.js,AtCommandCreator.js,test-AtCommandCreator.js']"
+Laurent Eschenauer,2013-06-07,vidionDetect -> oriantationAngle is a float32,['parseNavdata.js']
+Laurent Eschenauer,2013-06-07,"Merge pull request #57 from eschnou/fix_vidiondetect
+
+vidionDetect -> oriantationAngle is a float32",['']
+Laurent Eschenauer,2013-06-07,"Merge pull request #54 from eschnou/feature_ftrim
+
+Added ftrim() command to the client.",['']
+Jan Pieper,2013-06-21,fixed path to CONTRIBUTING.md,['README.md']
+Jan Pieper,2013-06-21,seems like we only need the filename,['README.md']
+Robin Mehner,2013-06-21,"Merge pull request #61 from janpieper/fix-heavy-development-link
+
+Fix ""heavy development"" link",['']
+Contra,2013-06-28,ignore pcmd methods with no arguments,"['Client.js,test-Client.js']"
+Contra,2013-06-28,test comments. closes #62,['test-Client.js']
+Laurent Eschenauer,2013-08-28,0.2.0,['package.json']
+Laurent Eschenauer,2013-08-29,Added a Changelog file,['Changes.md']
+Blaine Bublitz,2013-09-03,"add image size option to png encoder, also add frameRate and imageSize options to readme","['README.md,PngEncoder.js']"
+Bernhard Weisshuhn (a.k.a. bernhorst),2013-09-04,"Merge pull request #64 from phated/master
+
+add image size option to png encoder",['']
+Andrew Nesbitt,2013-09-23,Preliminary GPS support,"['NavdataReader.js,parseNavdata.js']"
+Andrew Nesbitt,2013-09-23,"Reduce time suggested for animating flip in readme
+
+Avoid unexpected double flips",['README.md']
+Andrew Nesbitt,2013-09-23,Missing comma,['parseNavdata.js']
+Robin Mehner,2013-09-24,"Merge pull request #67 from andrew/readme-tweak
+
+Reduce time suggested for animating flip in readme",['']
+Andrew Nesbitt,2013-09-24,"Merge pull request #68 from andrew/gps
+
+Preliminary GPS support",['']
+John Wiseman,2013-10-02,"Fixed errors in GPS data definitions.
+
+* Fixed incorrect order of unk0 & data_available fields.
+* Fixed misspellings.
+* Many fields are actually arrays (this was causing a lot of fields to
+have nonsense values).
+
+Based on https://github.com/paparazzi/paparazzi/blob/55e3d9d79119f81ed0b11a59487280becf13cf40/sw/airborne/boards/ardrone/at_com.h","['NavdataReader.js,parseNavdata.js']"
+Andrew Nesbitt,2013-10-02,"Merge pull request #71 from wiseman/fix_num_sats
+
+Fixed errors in GPS data definitions.",['']
+John Wiseman,2013-10-02,"Fixed test-parseNavdata tests (issue #72).
+
+* Removed the failing zimmu3000 option test--I think it's been obsoleted
+by GPS.
+
+* Fixed up test/fixtures/navdata.bin by replacing what looked like a bogus GPS
+option with a real one, recorded from firmware 2.4.7 (and updated the checksum
+of the entire data packet).","['navdata.bin,test-parseNavdata.js']"
+John Wiseman,2013-10-02,"Added unit tests for gps option.
+
+Not all values look legit to me--longitude, hdop and vdop look suspicious.
+
+I changed droneTimeToMilliseconds so it won't return negative times and
+fixed gps.last_frame_timestamp to be in milliseconds.","['parseNavdata.js,test-parseNavdata.js']"
+Andrew Nesbitt,2013-10-03,"Merge pull request #73 from wiseman/fix_tests
+
+Fixed parse-Navdata tests and added tests for gps.",['']
+Andrew Nesbitt,2013-10-03,0.2.1,['package.json']
+John Wiseman,2013-10-14,"Added handling of ACK for config commands.
+
+We now have two classes of commands: blocking and non-blocking.
+`CONFIG` is blocking, all others are non-blocking.  When a blocking
+command is sent, no other blocking commands will be sent until an ACK
+is received (and cleared) from the AR.Drone.","['Client.js,AtCommand.js,AtCommandCreator.js,UdpControl.js,parseNavdata.js,package.json,test-message-flushing.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js,test-parseNavdata.js,test-Client.js']"
+John Wiseman,2013-10-14,Fixed missing var.,['UdpControl.js']
+John Wiseman,2013-10-15,Added unit tests for CONFIG ACKs.,"['Client.js,AtCommand.js,AtCommandCreator.js,UdpControl.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js']"
+Jan Pieper,2013-10-18,fixed typo,['README.md']
+Andrew Nesbitt,2013-10-18,"Merge pull request #77 from janpieper/fix-small-typo-in-readme
+
+Typo in README",['']
+John Wiseman,2013-10-18,"Changed signature of config.
+
+config can now be called as config(key, value, callback) or config(options).
+
+Added more info on config to README.","['README.md,Client.js,AtCommandCreator.js,UdpControl.js,test-AtCommandCreator.js,test-Client.js']"
+John Wiseman,2013-10-21,Fixed config signature to bring callback out of options.,"['README.md,AtCommand.js,AtCommandCreator.js,UdpControl.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js']"
+John Wiseman,2013-10-21,"Increased default timeout to 500 ms.
+
+Also removed vestigal retries references.",['UdpControl.js']
+John Wiseman,2013-10-21,Increased delay in test to trigger timeout.,['test-UdpControl.js']
+John Wiseman,2013-10-22,"Merge pull request #76 from wiseman/config_acks
+
+Added handling of ACK for config commands.",['']
+John Wiseman,2013-10-22,0.3.0. Backwards-compatible new features for Client.config.,['package.json']
+Jan Pieper,2013-10-22,drop unused variables,"['Repl.js,AtCommandCreator.js']"
+Robin Mehner,2013-10-22,"Merge pull request #80 from janpieper/drop-unused-variables
+
+Drop unused variables",['']
+Jan Pieper,2013-10-23,drop duplicate test,['test-Client.js']
+Jan Pieper,2013-10-23,"Merge pull request #81 from janpieper/drop-duplicate-test
+
+Drop duplicate test",['']
+Jan Pieper,2013-10-23,make code jshint compliant,"['.jshintrc,Client.js,AtCommandCreator.js,UdpControl.js,UdpNavdataStream.js,maskingFunctions.js,PngSplitter.js,TcpVideoStream.js,package.json,test-AtCommandCreator.js,test-UdpControl.js,test-parseNavdata.js,test-Client.js']"
+Jan Pieper,2013-10-23,mark single eval as not evil via inline jshint config,['Repl.js']
+Jan Pieper,2013-10-23,use 2 spaces for indention,"['.jshintrc,Client.js,AtCommandCreator.js,PngSplitter.js,test-parseNavdata.js,test-PngEncoder.js']"
+Jan Pieper,2013-10-23,force use of curly braces,"['.jshintrc,parseNavdata.js,test-connection-timeout.js,test-normal-connection.js']"
+Jan Pieper,2013-10-23,disallow trailing whitespace,['.jshintrc']
+Jan Pieper,2013-10-23,tell jshint we're using node.js,['.jshintrc']
+Jan Pieper,2013-10-23,check files in examples directory to be jshint compliant,"['save-video-stream.js,package.json']"
+Robin Mehner,2013-10-24,"Merge pull request #82 from janpieper/jshint
+
+Use jshint to check code for problems and errors",['']
+Robin Mehner,2013-10-24,"Set undef option for jshint, fix code to comply to this rule","['.jshintrc,test-UdpControl.js,test-Client.js']"
+Robin Mehner,2013-10-24,"Set unused option for jshint, removed unused variables in code","['.jshintrc,UdpControl.js,test-connection-timeout.js,test-UdpControl.js,test-Client.js']"
+Robin Mehner,2013-10-25,"Merge pull request #83 from felixge/stricter_jshint
+
+Stricter jshint",['']
+bmcquee,2013-11-09,some demo programs for tweet driven drone and testing tweet stream,"['simple_flight.js,tweet_repl.js,tweets.js']"
+Felix Geisendörfer,2013-11-09,"Merge pull request #84 from mcqueenorama/master
+
+some demo programs for tweet driven drone and testing tweet stream",['']
+John Wiseman,2013-11-11,Style fixes for sample code.,"['simple_flight.js,tweet_repl.js,tweets.js']"
+John Wiseman,2013-11-11,"Removed examples/tweets.js; It just prints tweets to the console & doesn't use
+the node-ar-drone API.",['tweets.js']
+Ryan Schmukler,2013-12-08,Fixed TCPVideoStream trying to reconnect 2x,"['Client.js,TcpVideoStream.js']"
+Ryan Schmukler,2013-12-08,Updated so tests pass,"['TcpVideoStream.js,test-normal-connection.js']"
+Ryan Schmukler,2013-12-09,"Updated to remove listener from socket, forward errors from socket to client",['TcpVideoStream.js']
+Ryan Schmukler,2013-12-10,"Merge pull request #86 from rschmukler/reconnect-fix
+
+Fixed TCPVideoStream trying to reconnect 2x",['']
+Ryan Schmukler,2013-12-10,Release 0.3.1,"['Changes.md,package.json']"
+PatrickJS,2014-02-05,ignore .DS_Store for osx users,['.gitignore']
+Felix Geisendörfer,2014-02-06,"Merge pull request #88 from gdi2290/patch-1
+
+ignore .DS_Store for osx users",['']
+John Wiseman,2014-03-06,"Changed NavdataReader.char to call buffy Reader.char.
+
+This fixes the bug where char wasn't advancing the buffer pointer,
+causing bad parses of the magneto and kalmanPressure navdata options
+(issue #90).","['NavdataReader.js,test-parseNavdata.js']"
+Felix Geisendörfer,2014-05-03,0.3.2,['package.json']
+John Wiseman,2014-05-08,"Updated GPS navdata definition for firmware version 2.4.8.
+
+I also took this opportunity to rename GPS data fields to be
+consistent with existing nomenclature (that is, degreeMag instead of
+degree_mag).
+
+The new data definitions come from
+https://github.com/AutonomyLab/ardrone_autonomy/pull/95 which
+supposedly came via backchannels from Parrot.
+
+I spliced a GPS navdata option collected from a drone running 2.4.8
+into test/fixtures/navdata.bin and updated the unit tests.","['parseNavdata.js,navdata.bin,test-parseNavdata.js']"
+Michael Smith,2014-11-25,Fixes a typo,['test-Client.js']
+Michael Smith,2014-11-25,"Fixes client up/down, left/right, front/back, clockwise/counterclockwise functions to accept 0 speed. Adds test. Resolves #106
+
+Previous implementation would not allow one to supply 0 for speed to stop moving along that axis. The only way to stop would be to issue a client.stop(). But that would also cancel any other movement going on at the time.
+For example, centering a joystick should stop pitch, but should not stop yaw being controlled by a dpad on the same controller.","['Client.js,test-Client.js']"
+Michael Smith,2014-11-25,Merge branch 'refs/heads/allow-zero-speed-fix-106',['']
+Felix Geisendörfer,2014-11-25,"Merge pull request #107 from michaelshmitty/master
+
+Allows client to specify 0 speed",['']
+Felix Geisendörfer,2014-11-25,0.3.3,['package.json']
+Sean Hussey,2014-12-04,Fixed typos.,['README.md']
+Robin Mehner,2014-12-04,"Merge pull request #110 from seanhussey/patch-1
+
+Fixed typos.",['']
+Paul Hayes,2017-10-08,"This should allow Travis builds to now pass. 
+
+There was possible a BOM character at the begining of the package.json. The best fix is to tell Travis to use a more up to date version of npm and node. As 0.6 is ancient!",['.travis.yml']
+Felix Geisendörfer,2017-10-10,"Merge pull request #154 from paulhayes/patch-1
+
+This should allow Travis builds to now pass.",['']
+Arno Bornman,2018-10-21,Initial API documentation for 'navdata' client event,['NavData.md']
+Arno Bornman,2018-10-21,Add link for created NavData doc,['README.md']
+Felix Geisendörfer,2018-10-21,"Merge pull request #158 from xxGizmoCodexx/gizmo/navdata-doc
+
+ Initial API documentation for 'navdata' client event",['']
+Skyguy92,2019-10-16,Moved FTRIM into Calibration function and included it in the readme.md.,"['Changes.md,README.md,Client.js']"
+Skyguy92,2019-10-17,fix build,['Client.js']
+Felix Geisendörfer,2019-11-02,"Merge pull request #164 from Skyguy92/calibrate
+
+Moved FTRIM into Calibration function and included it in the readme.md.",['']
