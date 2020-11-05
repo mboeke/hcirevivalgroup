@@ -1,2 +1,14 @@
 Name,URL
+node-ar-drone,https://github.com/felixge/node-ar-drone
+dronekit-python,https://github.com/dronekit/dronekit-python
+DroneSym,https://github.com/scorelab/DroneSym
+DronePilot,https://github.com/alduxvm/DronePilot
+cylon,https://github.com/hybridgroup/cylon
+pypilot,https://github.com/pypilot/pypilot
+gobot,https://github.com/hybridgroup/gobot
+johnny-five,https://github.com/rwaldron/johnny-five
+TurtleBot,https://github.com/ROBOTIS-GIT/turtlebot3
+Valetudo,https://github.com/Hypfer/Valetudo
+ardumower,https://github.com/Ardumower/ardumower
+grbl,https://github.com/gnea/grbl
 openpilot,https://github.com/commaai/openpilot

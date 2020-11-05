@@ -1,619 +1,345 @@
-Contributor,Date,Message,Files
-Charitha Madusanka,2017-03-21,Initial commit,"['.gitignore,LICENSE']"
-Hasanga Somaratne,2017-05-02,Initial skeleton of Flask API to handle Dronekit SITLs,"['.gitignore,main.py']"
-Charitha Madusanka,2017-05-03,"Merge pull request #1 from hasa93/master
-
-Initial skeleton of Flask API to handle Dronekit SITLs",['']
-Hasanga Somaratne,2017-05-08,Integrate firebase,"['.gitignore,config.ini,db.py']"
-Hasanga Somaratne,2017-05-10,Load drones from the db at startup,"['dronepool.py,main.py']"
-Hasanga Somaratne,2017-05-11,Initiate new SITL from the last location,['dronepool.py']
-Hasanga Somaratne,2017-05-11,Start drone at the specified home location,"['dronepool.py,main.py']"
-Hasanga Somaratne,2017-05-12,Implement uploading waypoints to vehicle,"['dronepool.py,main.py,mavparser.py']"
-Hasanga Somaratne,2017-05-22,Implement the basic Node API,"['droneCtrl.js,droneRouter.js,db.js,index.js,package.json']"
-Hasanga Somaratne,2017-05-22,Remove Flask interface for Firebase,['db.py']
-Hasanga Somaratne,2017-05-22,Implement python interface for Node API,['node.py']
-Hasanga Somaratne,2017-05-22,Remove unnecessary routes,['main.py']
-Hasanga Somaratne,2017-05-22,Use Node API integration for Firebase,['dronepool.py']
-Hasanga Somaratne,2017-05-22,Add timestamp to updates,['droneCtrl.js']
-Hasanga Somaratne,2017-05-26,Implement basic landing functionality,"['droneCtrl.js,droneRouter.js,db.js,dronepool.py,main.py,mavparser.py']"
-Raveen Harith Perera,2017-05-26,"Merge pull request #2 from hasa93/master
-
-Integrate firebase",['']
-Hasanga Somaratne,2017-06-06,Add README and python requirements,"['README.md,requirements.txt']"
-Hasanga Somaratne,2017-06-06,Bugfix on landing routine,"['dronepool.py,mavparser.py']"
-Charitha Madusanka,2017-06-06,"Merge pull request #3 from hasa93/master
-
-Add README and python requirements",['']
-Hasanga Somaratne,2017-06-16,Integrate angular2,"['.angular-cli.json,.editorconfig,.gitignore,README.md,app.e2e-spec.ts,app.po.ts,tsconfig.e2e.json,karma.conf.js,package-lock.json,package.json,protractor.conf.js,app.component.css,app.component.html,app.component.spec.ts,app.component.ts,app.module.ts,.gitkeep,environment.prod.ts,environment.ts,favicon.ico,index.html,main.ts,polyfills.ts,styles.css,test.ts,tsconfig.app.json,tsconfig.spec.json,typings.d.ts,tsconfig.json,tslint.json']"
-Hasanga Somaratne,2017-06-16,Add bower,['bower.json']
-Hasanga Somaratne,2017-06-17,Integrate google maps,"['package.json,app.component.css,app.component.html,app.component.ts,app.module.ts,styles.css']"
-Hasanga Somaratne,2017-06-17,Integrate firebase,['package.json']
-Hasanga Somaratne,2017-06-17,Move google maps configuration to environment,"['app.module.ts,environment.ts']"
-Hasanga Somaratne,2017-06-17,Include firebase configuration settings,['environment.ts']
-Hasanga Somaratne,2017-06-17,Implement service to handle drone data,"['app.component.ts,app.module.ts,drone-data.service.spec.ts,drone-data.service.ts']"
-Hasanga Somaratne,2017-06-17,Add materialize and google fonts,"['.angular-cli.json,bower.json,package.json,app.module.ts,index.html']"
-Hasanga Somaratne,2017-06-18,Add CORS and socket.io modules,"['index.js,package.json']"
-Hasanga Somaratne,2017-06-18,Remove firebase dependency from frontend,"['package.json,app.module.ts,drone-data.service.ts']"
-Hasanga Somaratne,2017-06-18,Initialize sims with altitude of 0,['dronepool.py']
-Hasanga Somaratne,2017-06-18,Integrate socket.io,"['droneCtrl.js,index.js,package.json,websocket.js']"
-Hasanga Somaratne,2017-06-20,Send drone data through socket,['droneCtrl.js']
-Hasanga Somaratne,2017-06-20,Update the environmental variables for angular app,['environment.ts']
-Raveen Harith Perera,2017-06-20,"Merge pull request #4 from hasa93/master
-
-Dronesym frontend integration",['']
-Hasanga Somaratne,2017-06-20,Implement dropping drones by mouse,"['app.component.css,app.component.html,app.component.ts,app.module.ts,confirm-dialog.component.css,confirm-dialog.component.html,confirm-dialog.component.spec.ts,confirm-dialog.component.ts,cursor-tooltip.component.css,cursor-tooltip.component.html,cursor-tooltip.component.spec.ts,cursor-tooltip.component.ts']"
-Hasanga Somaratne,2017-06-20,Update installation instructions,['README.md']
-Hasanga Somaratne,2017-06-20,Resolve a merge conflict in environment.ts,['.bowerrc']
-Raveen Harith Perera,2017-06-22,"Merge pull request #5 from hasa93/master
-
-Functionality to drop drones by clicking",['']
-Hasanga Somaratne,2017-06-22,Refactor mouse element creation functionality,['app.component.ts']
-Hasanga Somaratne,2017-06-22,Display drone options when a marker is clicked,"['app.component.html,app.component.ts,app.module.ts,drone-option-box.component.css,drone-option-box.component.html,drone-option-box.component.spec.ts,drone-option-box.component.ts']"
-Raveen Harith Perera,2017-06-24,"Merge pull request #6 from hasa93/master
-
-Display drone options when markers are clicked",['']
-rhperera,2017-06-25,"Rewrite main README
-
-Add the front end readme part to main file. Change the enviroment path of the front-end","['README.md,README.md']"
-rhperera,2017-06-25,refactor readme,['README.md']
-Raveen Harith Perera,2017-06-25,"Merge pull request #7 from rhperera/master
-
-Rewrote the readme with some additions",['']
-Hasanga Somaratne,2017-06-25,Create waypoints frontend functionality,"['app.component.css,app.component.html,app.component.ts,drone-option-box.component.ts,drone-data.service.ts']"
-Hasanga Somaratne,2017-06-25,Add create waypoints backend functionality,"['droneCtrl.js,droneRouter.js']"
-Raveen Harith Perera,2017-06-25,"Merge pull request #8 from hasa93/master
-
-Create waypoints frontend and backend functionality",['']
-Charitha Madusanka,2017-07-03,Create CODE_OF_CONDUCT.md,['CODE_OF_CONDUCT.md']
-Raveen Harith Perera,2017-07-11,#14 create .travis.yml file,['.travis.yml']
-Raveen Harith Perera,2017-07-11,#14 add python as language,['.travis.yml']
-rhperera,2017-07-12,#14 fix on travis file typo,['.travis.yml']
-Hasanga Somaratne,2017-07-18,Bugfix on coordinates label not showing up in create modes,['app.component.html']
-Hasanga Somaratne,2017-07-18,resolves #13,"['app.component.html,app.component.ts']"
-Hasanga Somaratne,2017-07-18,Include images,"['blue.png,red.png']"
-Hasanga Somaratne,2017-07-18,Bugfix on sending waypoints to backend,['drone-data.service.ts']
-Hasanga Somaratne,2017-07-18,Connect waypoints with polylines,['app.component.html']
-Hasanga Somaratne,2017-07-19,Delete waypoints by clicking,"['app.component.html,app.component.ts']"
-Hasanga Somaratne,2017-07-19,Reset waypoints based current location,['app.component.ts']
-Raveen Harith Perera,2017-07-19,fix travis script issue,['.travis.yml']
-Raveen Harith Perera,2017-07-19,"Fix #13 Merge pull request #18 from hasa93/develop
-
-Optimize drone visualization",['']
-Hasanga Somaratne,2017-07-20,Integrate passport jwt,"['userCtrl.js,user.js,userRouter.js,authenticator.js,jwtconfig.js,passportconfig.js,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json,index.js,package-lock.json,package.json']"
-Hasanga Somaratne,2017-07-20,Integrate angular router,['app.module.ts']
-Hasanga Somaratne,2017-07-20,Refactor app components for integration with router,"['app.component.css,app.component.html,app.component.ts,app.module.ts,dashboard.component.css,dashboard.component.html,dashboard.component.spec.ts,dashboard.component.ts,login.component.css,login.component.html,login.component.spec.ts,login.component.ts']"
-Raveen Harith Perera,2017-07-21,"[#12] Merge pull request #19 from hasa93/develop
-
-Integrate passport jwt",['']
-Hasanga Somaratne,2017-07-21,Refactor app routes to a seperate module,"['app-router.ts,app.module.ts']"
-Hasanga Somaratne,2017-07-21,Change the mounting url for user router,['index.js']
-Hasanga Somaratne,2017-07-21,Implement authentication services for frontend,"['app.module.ts,auth-http.service.spec.ts,auth-http.service.ts,user.service.spec.ts,user.service.ts']"
-Hasanga Somaratne,2017-07-21,Implement a rudimentary login screen,"['login.component.html,login.component.ts']"
-Hasanga Somaratne,2017-07-21,Authenticate tokens,['userRouter.js']
-Hasanga Somaratne,2017-07-21,Make base url private,['drone-data.service.ts']
-Hasanga Somaratne,2017-07-21,Implement route guard,"['app-router.ts,app.module.ts,route-guard.service.spec.ts,route-guard.service.ts,user.service.ts']"
-Hasanga Somaratne,2017-07-21,UI tweaks,"['cursor-tooltip.component.css,cursor-tooltip.component.ts,dashboard.component.css,dashboard.component.html,dashboard.component.ts']"
-Hasanga Somaratne,2017-07-21,Implement logout functionality,"['dashboard.component.html,dashboard.component.ts']"
-Hasanga Somaratne,2017-07-21,Authenticate for takeoff and updating waypoints,['droneRouter.js']
-Hasanga Somaratne,2017-07-21,Remove unnecessay authenticator,['authenticator.js']
-Hasanga Somaratne,2017-07-22,Use auth http service instead http service,['drone-data.service.ts']
-Hasanga Somaratne,2017-07-22,Authentication to create drones,['droneRouter.js']
-Hasanga Somaratne,2017-07-22,Enhance login interface,"['login.component.css,login.component.html,dronesym_logo.png']"
-Hasanga Somaratne,2017-07-22,Role based authorization for frontend routes,"['userCtrl.js,droneRouter.js,userRouter.js']"
-Hasanga Somaratne,2017-07-22,Send user role with response,['userCtrl.js']
-Hasanga Somaratne,2017-07-22,Store user role in user service,"['login.component.ts,user.service.ts']"
-Hasanga Somaratne,2017-07-22,UI tweaks,"['dashboard.component.css,dashboard.component.html']"
-Hasanga Somaratne,2017-07-22,Deselect current drone by clicking on map,"['dashboard.component.html,dashboard.component.ts']"
-Hasanga Somaratne,2017-07-22,Visualize paths between waypoints,"['dashboard.component.html,dashboard.component.ts']"
-Hasanga Somaratne,2017-07-23,Implement signup screen,"['app-router.ts,app.module.ts,user-signup.component.css,user-signup.component.html,user-signup.component.spec.ts,user-signup.component.ts']"
-Hasanga Somaratne,2017-07-23,Role based authorization on frontend,"['admin-authorize.service.spec.ts,admin-authorize.service.ts,app-router.ts,app.module.ts,dashboard.component.html,dashboard.component.ts,login.component.ts,user.service.ts,user-signup.component.ts,userCtrl.js,userRouter.js']"
-Raveen Harith Perera,2017-07-23,"Merge pull request #20 from hasa93/develop
-
-User authentication",['']
-Hasanga Somaratne,2017-07-23,Retry when connetion error,['node.py']
-Hasanga Somaratne,2017-07-24,Seperate monogdb uri to a mongoconfig file,"['mongoconfig.js,index.js']"
-Hasanga Somaratne,2017-07-24,Include environment example file,"['.gitignore,example.environment.ts']"
-Hasanga Somaratne,2017-07-24,Include example db.js,"['.gitignore,example.db.js']"
-Hasanga Somaratne,2017-07-24,Stop updating db when not in flight,['dronepool.py']
-Hasanga Somaratne,2017-07-25,Turn waypoint icons red in delete mode,"['dashboard.component.html,dashboard.component.ts']"
-Hasanga Somaratne,2017-07-25,Merge remote-tracking branch 'upstream/develop' into develop,['']
-Raveen Harith Perera,2017-07-25,"Merge pull request #21 from hasa93/develop
-
-Fix [#9] [#10]",['']
-Hasanga Somaratne,2017-07-25,Fix a typo in README,['README.md']
-Hasanga Somaratne,2017-07-25,Fix db.js gitignore issue,['db.js']
-Hasanga Somaratne,2017-07-25,Add docker instructions,['README.md']
-Raveen Harith Perera,2017-07-25,"Merge pull request #23 from hasa93/develop
-
-Cleanups and fixes",['']
-Hasanga Somaratne,2017-07-25,Add an example mongoconfig file,"['.gitignore,example.mongoconfig.js']"
-Hasanga Somaratne,2017-07-25,Merge remote-tracking branch 'upstream/develop' into develop,['']
-Hasanga Somaratne,2017-07-26,Add resume flight capability,['dronepool.py']
-Hasanga Somaratne,2017-07-26,Bug fixes,['dronepool.py']
-Hasanga Somaratne,2017-07-26,Delete example credential file,"['.gitignore,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']"
-Hasanga Somaratne,2017-07-26,Remove unnecessary takeoff command,['mavparser.py']
-Hasanga Somaratne,2017-07-26,Resume flight route,['main.py']
-Hasanga Somaratne,2017-07-26,Add express resume flight route,"['droneCtrl.js,droneRouter.js']"
-Hasanga Somaratne,2017-07-26,Show waypoint numbers,['dashboard.component.html']
-Hasanga Somaratne,2017-07-26,Bugfix on resume logic,['dronepool.py']
-Hasanga Somaratne,2017-07-26,Frontend functionality for drone control,"['dashboard.component.html,dashboard.component.ts,drone-option-box.component.css,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts']"
-Raveen Harith Perera,2017-07-27,"Merge pull request #25 from hasa93/develop
-
-Minor cleanups",['']
-Hasanga Somaratne,2017-07-27,Delete example credential file,"['.gitignore,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']"
-Hasanga Somaratne,2017-07-27,Merge remote-tracking branch 'upstream/develop' into develop,['']
-Hasanga Somaratne,2017-07-28,Reset waypoints to default icon when not in a create mode,['dashboard.component.ts']
-Hasanga Somaratne,2017-07-28,Bug fix on resuming flight,"['dronepool.py,mavparser.py']"
-Hasanga Somaratne,2017-07-28,Tentative fix for resume index off-by-one,['dronepool.py']
-Raveen Harith Perera,2017-07-28,"Merge pull request #26 from hasa93/develop
-
-MAV Commands",['']
-Hasanga Somaratne,2017-07-29,Fix resusme issue #27,['dronepool.py']
-Hasanga Somaratne,2017-07-30,Redirect to login when jwt has expired,['auth-http.service.ts']
-Raveen Harith Perera,2017-07-31,"Merge pull request #29 from hasa93/develop
-
-Fix resusme issue #27",['']
-Hasanga Somaratne,2017-08-06,Add user dashboard router link,"['app-router.ts,app.module.ts,dashboard.component.html,login.component.ts,user-dashboard.component.css,user-dashboard.component.html,user-dashboard.component.spec.ts,user-dashboard.component.ts,user-view.component.css,user-view.component.html,user-view.component.spec.ts,user-view.component.ts,favico.ico']"
-Hasanga Somaratne,2017-08-06,Add naming drone functionality,"['confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,dashboard.component.ts,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts,droneCtrl.js,droneRouter.js']"
-Hasanga Somaratne,2017-08-06,Bugfix on executing request twice,['auth-http.service.ts']
-Hasanga Somaratne,2017-08-06,Bugfix on deleting drones,['dashboard.component.ts']
-Hasanga Somaratne,2017-08-06,Authenticate socket communications,"['drone-data.service.ts,droneCtrl.js,droneRouter.js,package.json']"
-Hasanga Somaratne,2017-08-07,Add drone group model,['group.js']
-Hasanga Somaratne,2017-08-07,Add drone group handling routes,"['droneCtrl.js,droneRouter.js']"
-Hasanga Somaratne,2017-08-07,Remove unnecessary console log,['passportconfig.js']
-Hasanga Somaratne,2017-08-07,JWT authentication on sockets,['websocket.js']
-Hasanga Somaratne,2017-08-07,Drone group management frontend functionality,"['app-router.ts,app.module.ts,confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,drone-groups.component.css,drone-groups.component.html,drone-groups.component.spec.ts,drone-groups.component.ts,drone-list.component.css,drone-list.component.html,drone-list.component.spec.ts,drone-list.component.ts,drone-data.service.ts,drones-box.component.css,drones-box.component.html,drones-box.component.spec.ts,drones-box.component.ts,user-dashboard.component.css,user-dashboard.component.html,user-view.component.css,user-view.component.html,styles.css']"
-Hasanga Somaratne,2017-08-07,Cosmetic touches,"['drone-groups.component.html,drone-list.component.html']"
-Hasanga Somaratne,2017-08-07,Merge remote-tracking branch 'upstream/develop' into develop,['']
-Raveen Harith Perera,2017-08-08,"Merge pull request #33 from hasa93/develop
-
-Drone group management functionality",['']
-Raveen Harith Perera,2017-08-08,Change pytest command for trusty envs,['.travis.yml']
-rhperera,2017-08-08,Add pytest cache to gitignore,['.gitignore']
-rhperera,2017-08-08,Add initial dummy unit test,"['lastfailed,test_default.py']"
-rhperera,2017-08-08,Add travis build status to readme,['README.md']
-Hasanga Somaratne,2017-08-09,Store drone users in an array,['droneCtrl.js']
-Hasanga Somaratne,2017-08-09,Bugfix on selecting drones,"['drones-box.component.html,drones-box.component.ts']"
-Hasanga Somaratne,2017-08-09,Update python requests version to fix openssl v3 error,['requirements.txt']
-Raveen Harith Perera,2017-08-09,"Merge pull request #35 from hasa93/develop
-
-Minor bugfixes",['']
-Hasanga Somaratne,2017-08-09,Generalized input visibility,"['confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,drone-groups.component.html']"
-Hasanga Somaratne,2017-08-09,Remove drone backend functionality,"['droneCtrl.js,droneRouter.js,dronepool.py,main.py']"
-Hasanga Somaratne,2017-08-09,Add remove drone service,['drone-data.service.ts']
-Hasanga Somaratne,2017-08-09,Drone management frontend,"['dashboard.component.ts,drone-groups.component.ts,drone-list.component.html,drone-list.component.ts']"
-Raveen Harith Perera,2017-08-09,"Merge pull request #36 from hasa93/develop
-
-Drone deletion functionality",['']
-Hasanga Somaratne,2017-08-10,Add routes to change drone name,"['droneCtrl.js,droneRouter.js']"
-Hasanga Somaratne,2017-08-10,Minor cleanups,"['drone-list.component.ts,drone-data.service.ts']"
-Hasanga Somaratne,2017-08-10,Drone rename functionality,"['drone-list.component.html,drone-list.component.ts,drone-data.service.ts,favico.ico,favicon.ico,droneCtrl.js,droneRouter.js']"
-Hasanga Somaratne,2017-08-10,Show create groups only in admin view,['drone-groups.component.html']
-Hasanga Somaratne,2017-08-11,Merge remote-tracking branch 'upstream/develop' into develop,['']
-Hasanga Somaratne,2017-08-13,Initial unit tests,"['dronepool.py,mocks.py,test_dronepool.py']"
-Raveen Harith Perera,2017-08-14,"Merge pull request #39 from hasa93/develop
-
-Implement user dashboard",['']
-Hasanga Somaratne,2017-08-14,Travis integration test,['travis-test.txt']
-Hasanga Somaratne,2017-08-17,Specify path to test script,['.travis.yml']
-Hasanga Somaratne,2017-08-17,Remove unittest test runner,"['.travis.yml,test_dronepool.py']"
-Raveen Harith Perera,2017-08-17,"Merge pull request #40 from hasa93/develop
-
-Remove unittest test runner from test script",['']
-Hasanga Somaratne,2017-08-17,Add run mission tests,"['mocks.py,test_dronepool.py']"
-Hasanga Somaratne,2017-08-18,Remove dummy travis-test file,['travis-test.txt']
-Hasanga Somaratne,2017-08-23,Assign users to drone groups functionality,"['droneCtrl.js,userCtrl.js,userRouter.js']"
-Hasanga Somaratne,2017-08-23,Create user functionality,"['app-router.ts,app.module.ts,user-dashboard.component.css,user-dashboard.component.html,user-dashboard.component.ts,user-management.component.css,user-management.component.html,user-management.component.spec.ts,user-management.component.ts,user.service.ts,user-signup.component.css,user-signup.component.html,user-signup.component.ts,userCtrl.js,user.js,userRouter.js']"
-Hasanga Somaratne,2017-08-23,Add assigning users to groups functionality,"['dashboard.component.html,user-dashboard.component.html,user-management.component.html,user-management.component.ts,user.service.ts,user-view.component.html,user-view.component.ts,droneCtrl.js,userCtrl.js,group.js,user.js']"
-Hasanga Somaratne,2017-08-23,Minor bugfix,['user-view.component.html']
-Raveen Harith Perera,2017-08-23,"Merge pull request #41 from hasa93/develop
-
-Add run mission tests",['']
-Hasanga Somaratne,2017-08-25,Re-implement using python threading,"['dronepool.py,main.py,threadrunner.py']"
-Raveen Harith Perera,2017-08-25,"Merge pull request #44 from hasa93/develop
-
-Re-implement using python threading",['']
-Hasanga Somaratne,2017-08-27,Fix test cases,['test_dronepool.py']
-Hasanga Somaratne,2017-08-28,Include initial user creation instruction,['README.md']
-Raveen Harith Perera,2017-08-28,"Merge pull request #45 from hasa93/develop
-
-Fix test cases",['']
-Hasanga Somaratne,2017-08-30,Fix instance number not updating when creating new drones issue,['dronepool.py']
-Raveen Harith Perera,2017-10-25,"Merge pull request #47 from hasa93/develop
-
-Fix instance number not updating when creating new drones issue",['']
-Malith Senaweera,2017-11-26,Fix a minor typo in README,['README.md']
-Malith Senaweera,2017-11-26,Add a db dump,"['README.md,groups.bson,groups.metadata.json,users.bson,users.metadata.json']"
-Malith Senaweera,2017-12-21,Remove incorrect global declaration inside __main__ block,['main.py']
-shlokj,2018-01-03,Update .gitignore,['.gitignore']
-Moses Paul R,2018-01-13,"Update package.json
-
-performing changes requested by @malithsen",['package.json']
-Moses Paul R,2018-01-19,Create ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md']
-Moses Paul R,2018-03-26,Create CONTRIBUTING.md,['CONTRIBUTING.md']
-Moses Paul R,2018-03-26,Create PULL_REQUEST_TEMPLATE.md,['PULL_REQUEST_TEMPLATE.md']
-Oshan Mudannayake,2018-03-26,Fix package.json errors,"['package-lock.json,package.json,package-lock.json,package.json']"
-Oshan Mudannayake,2018-03-26,Merge branch 'develop' of https://github.com/scorelab/DroneSym into develop,['']
-Moses Paul R,2018-10-02,Update ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md']
-Oshan Mudannayake,2018-10-02,Update package-lock.json file,['package-lock.json']
-Oshan Mudannayake,2018-10-02,"Merge pull request #94 from OshanIvantha/develop
-
-Fix package.json validation issue",['']
-violentdelight,2018-10-02,Added editorconfig,['.editorconfig']
-Oshan Mudannayake,2018-10-12,"Merge pull request #98 from violentdelight/add-editorconfig
-
-Added editorconfig",['']
-Oshan Mudannayake,2018-10-12,"Merge pull request #89 from iammosespaulr/patch-3
-
-Create ISSUE_TEMPLATE.md",['']
-Gaurav Pandey,2018-10-24,Add Codacy Shield & DroneSym Logo,['README.md']
-Jakub Mularski,2018-10-29,Added tests for drone create,"['droneCtrl.js,userCtrl.js,example.db.js,index.js,package-lock.json,package.json,droneCtrl.js']"
-Jakub Mularski,2018-10-29,Forgot to reset example.db to defaults,['example.db.js']
-Jakub Mularski,2018-10-30,Made tests adhere to project code style,"['droneCtrl.js,droneCtrl.js']"
-Jakub Mularski,2018-10-30,Tests for remove drone in droneCtrl,"['droneCtrl.js,droneCtrl.js']"
-Jakub Mularski,2018-10-30,Added tests for getDroneIds and getDroneById,"['droneCtrl.js,droneCtrl.js']"
-Jakub Mularski,2018-10-30,"Renamed drone tests, added firebase test for create, and failing test for delete",['drone_functions.js']
-Jakub Mularski,2018-10-31,Fixed code quality,['drone_functions.js']
-Jakub Mularski,2018-10-31,Code quality: last missing semicolon,['drone_functions.js']
-Jakub Mularski,2018-10-31,Now it must be the last error in linter,['drone_functions.js']
-Oshan Mudannayake,2018-10-31,"Merge pull request #112 from jmularski/tests/drone-create
-
-Added tests for drone create, drone remove, list all drones, and list drone by id",['']
-Jakub Mularski,2018-11-03,"fix: callback on drone remove, fixed test for drone remove db check","['droneCtrl.js,drone_functions.js']"
-Jakub Mularski,2018-11-03,Code quality fix,['drone_functions.js']
-Gaurav Pandey,2018-11-03,Add Tests For Group Models,['group_models.js']
-Gaurav Pandey,2018-11-03,Add Tests For User Models GET/POST,['user_models.js']
-Gaurav Pandey,2018-11-03,Add Sinon & Sinon-mongoose for Model Tests,['package.json']
-Oshan Mudannayake,2018-11-04,"Merge pull request #118 from jmularski/fix/drone-remove
-
-Added callback on drone remove, fixed drone remove test.",['']
-Jakub Mularski,2018-11-05,"tests(user): added test for login, register, and listing users","['droneCtrl.js,userCtrl.js,user_functions.js']"
-Jakub Mularski,2018-11-06,Fixing code quality,['user_functions.js']
-Jakub Mularski,2018-11-06,docs(jsdoc): added basic JSDoc for every method of controller,"['droneCtrl.js,userCtrl.js']"
-GeethOnion,2018-11-14,Added unit test,['test.js']
-GeethOnion,2018-11-14,Update README.md,['README.md']
-GeethOnion,2018-11-14,Update README.md,['README.md']
-anuragparida,2018-11-15,Add unit test file,['drone_tests.js']
-tintinmovie,2018-11-17,Update README.md,['README.md']
-Łukasz Myśliwiec,2018-11-17,Add Some Login Tests,"['login.e2e-spec.ts,login.po.ts,app.e2e-spec.ts']"
-Oshan Mudannayake,2018-11-18,"Merge pull request #141 from TheLukaszNs/develop
-
-[GCI] Add Login e2e tests for Frontend",['']
-Oshan Mudannayake,2018-11-24,"Merge pull request #138 from anuragparida/develop
-
-Add unit test file in dronesym-node/tests/drone_tests.js",['']
-Oshan Mudannayake,2018-11-24,"Merge pull request #123 from jmularski/test/user-controller
-
-tests(user): added test for login, register, and listing users",['']
-Oshan Mudannayake,2018-11-24,"Merge pull request #139 from tintinmovie/patch-1
-
-Update README.md with instructions for running tests",['']
-Oshan Mudannayake,2018-11-24,"Merge pull request #100 from hcktheheaven/readme.md-Change-GCI
-
-Add Codacy Shield, Gitter Badge & DroneSym Logo",['']
-Łukasz Myśliwiec,2018-12-03,Sync changes with upstream,['']
-Łukasz Myśliwiec,2018-12-03,"Update README file to inform about env files
-
-Updated the README file to include the note about environment files.",['README.md']
-Oshan Mudannayake,2018-12-04,"Merge pull request #157 from TheLukaszNs/ux/update-readme
-
- Update README file to inform about env files",['']
-Daksh Miglani,2018-12-10,"Fixed import errors and updated to support python 3
-
-- Imported queue as queue to avoid import error
-
-- Enabled backward compatible flask server
-
-Updated main.py
-Removed useless import
-Made the npm build more clean
-
-Removed depricated use of open() + made port flexibleRemoved the warning to get a clean build:  DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0 by declaring the boolean value of Mongoclient as true.
-
-What I personally encountered... I was running another server on port 3000, Thus when I was setting up Dronesym, I got an error of port already being in use, So I made a global variable named port, and added string concatenation to console the running port into the terminal. If users already have port 3000 in use, then they could just change the value of variable in /dronesym-node/index.js.
-Added missing instruction of running mongod
-
-Most of the people including me forgot to run ```mongod``` in one terminal, and then execute ```mongorestore --db dronesym dronedb/dronesym```, So I've added an instruction step.
-Added latest and more supportive version of flask
-Added E2E tests for Login authorization 
-
-1. Checks URL redirection vulnerability (security purpose).
-2. Checks Server's availability.
-3. Checks Login authorization through admin's account.
-4. Checks the dashboard appearance on putting correct credentials.
-5. Logs out of admin's account 
-6. Checks Login authorization through admin's account.","['README.md,WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,test.ts,index.js,package-lock.json,dronepool.py,main.py,requirements.txt,package-lock.json']"
-Rohan Singh,2018-12-15,Added character encoding & meta for responsiveness,['login.component.html']
-Rohan Singh,2018-12-15,"Made the Login Page responsive
-
-This DroneSym Webapp can now work on small phones, mid-sized phones, large phones, laptops, large laptops, HD TV and even a 4K TV",['login.component.css']
-Rohan Singh,2018-12-15,Removed redundant comments,['login.component.html']
-Rohan Singh,2018-12-15,Update index.js,['index.js']
-Oshan Mudannayake,2018-12-18,"Merge pull request #125 from jmularski/docs/jsdoc-controller
-
-docs(jsdoc): added basic JSDoc for every method of controller",['']
-Rohan Singh,2018-12-19,"Deleted Unnecessary Cache files and improved code quality
-
-Delete WiredTiger.turtle
-Delete WiredTiger.lock
-Delete WiredTiger.wt
-Delete WiredTigerLAS.wt
-Delete _mdb_catalog.wt
-Delete collection-0--2321288784840600282.wt
-Delete storage.bson
-Deleted unecessary WiredTiger stuff
-deleted Redundant stuff
-Delete collection-2-7301280593392019203.wt
-Delete collection-4--2321288784840600282.wt
-Delete metrics.2018-11-04T20-24-09Z-00000
-Delete index-1--2321288784840600282.wt
-Delete sizeStorer.wt
-Delete mongod.lock
-Delete index-1-7301280593392019203.wt
-Delete index-3--2321288784840600282.wt
-Delete WiredTigerLog.0000000002
-Delete WiredTigerPreplog.0000000001
-Delete WiredTigerPreplog.0000000002
-Delete metrics.2018-11-04T20-24-37Z-00000
-Delete metrics.interim
-Delete index-3-7301280593392019203.wt
-Delete index-4-7301280593392019203.wt
-Delete index-5--2321288784840600282.wt
-Disabled no console warning for Codacy's nodeJS code compiling.
-Replaced single quotes with double quotes for Codacy's Code quality
-Update package-lock.json
-Removed package-lock.JSON","['WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,index.js,package-lock.json']"
-Oshan Mudannayake,2018-12-19,"Merge pull request #120 from rohancl/develop
-
-Fixed import errors and updated to support python 3",['']
-anuragparida,2018-12-26,Change README for beginner users,['README.md']
-anuragparida,2018-12-26,Remove ReadME Screenshots,['README.md']
-Oshan Mudannayake,2018-12-26,"Merge pull request #166 from anuragparida/develop
-
-Update README with firebase instructions",['']
-meetcric,2019-02-05,"Feat:Add breadcrumb to indicate the route of user
-Fix:#153","['package-lock.json,package.json,app-router.ts,app.component.html,app.module.ts,breadcrumb.component.css,breadcrumb.component.html,breadcrumb.component.spec.ts,breadcrumb.component.ts,breadcrumb.ts,drone-groups.component.html,drone-list.component.html,user-dashboard.component.html,user-management.component.html,styles.css']"
-meetcric,2019-02-13,Feat:Add signup option for user in login page,"['test.ts,admin-authorize.service.ts,app-router.ts,app.module.ts,auth-http.service.ts,confirm-dialog.component.ts,cursor-tooltip.component.ts,dashboard.component.ts,drone-groups.component.ts,drone-list.component.ts,drone-option-box.component.ts,drone-data.service.ts,drones-box.component.ts,login.component.css,login.component.html,login.component.ts,route-guard.service.ts,signup.component.css,signup.component.html,signup.component.spec.ts,signup.component.ts,user-dashboard.component.ts,user-management.component.ts,user.service.ts,user-signup.component.ts,user-view.component.ts,userCtrl.js,user.js,userRouter.js,user_functions.js']"
-Oshan Mudannayake,2019-02-15,"Merge pull request #167 from meetcric/153
-
-Feat:Add breadcrumb to indicate the route of user",['']
-Meet Patel,2019-02-15,Merge branch 'develop' into 148,['']
-Dilina Dehigama,2019-02-16,Python3 support,"['.gitignore,dronepool.py,dronepool.py.bak,mavparser.py,mavparser.py.bak,node.py,node.py.bak,threadrunner.py']"
-Dilina,2019-02-16,Delete .bak,['node.py.bak']
-Dilina,2019-02-16,Delete dronepool.py.bak,['dronepool.py.bak']
-Dilina,2019-02-16,Delete mavparser.py.bak,['mavparser.py.bak']
-Oshan Mudannayake,2019-02-16,"Merge pull request #169 from dilinade/python3
-
-Python3 support",['']
-Dilina,2019-02-17,Updated python version. (2.7 or higher),['README.md']
-Oshan Mudannayake,2019-02-17,"Merge pull request #168 from meetcric/148
-
-Feat:Add signup option for user in login page",['']
-Oshan Mudannayake,2019-02-17,"Merge pull request #171 from dilinade/patch-1
-
-Updated python version. (2.7 or higher)",['']
-Dilina Dehigama,2019-02-19,Github Repo Management-moved files to .github directory,"['CONTRIBUTING.md,ISSUE_TEMPLATE.md,PULL_REQUEST_TEMPLATE.md']"
-Oshan Mudannayake,2019-02-19,"Merge pull request #173 from dilinade/fileManage
-
-Github Repo Management - moved files to .github directory",['']
-meetcric,2019-02-19,[Refactoring] Create-user feature,"['app.module.ts,user.service.ts,user-signup.component.html,user-signup.component.ts,userCtrl.js,userRouter.js']"
-Dilina Dehigama,2019-02-21,"Added attributes : (Drone description,Flying time)","['package-lock.json,app.module.ts,confirm-dialog.component.css,confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,dashboard.component.ts,drone-list.component.html,drone-list.component.ts,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts,droneCtrl.js,droneRouter.js']"
-Oshan Mudannayake,2019-02-22,"Merge pull request #172 from meetcric/170
-
-Email field added in create-user form",['']
-Dilina,2019-02-22,Updated variable names,['droneCtrl.js']
-Dilina Dehigama,2019-02-22,Added drone name to marker in map,"['dashboard.component.css,dashboard.component.html']"
-meetcric,2019-02-23,[Feature]: Login via Email,"['login.component.html,userCtrl.js']"
-Oshan Mudannayake,2019-02-23,"Merge pull request #176 from dilinade/nameUnderMarkers
-
-Added Drone name to marker in dashboard",['']
-Oshan Mudannayake,2019-02-23,"Merge pull request #175 from dilinade/DroneName
-
-Added attributes : (Drone description,Flying time)",['']
-Oshan Mudannayake,2019-02-23,"Merge pull request #177 from meetcric/174
-
-[Feature]: Login via Email",['']
-meetcric,2019-03-02,bug of user-group,"['user-management.component.ts,user.service.ts']"
-meetcric,2019-03-02,bug of user-group,"['userCtrl.js,group.js,userRouter.js']"
-Oshan Mudannayake,2019-03-03,"Merge pull request #178 from meetcric/42
-
-Solve the bug on group's-user",['']
-GeethOnion,2019-03-03,Update test.js,['test.js']
-Oshan Mudannayake,2019-03-03,"Merge pull request #136 from GeethOnion/develop
-
-Added Unit Test",['']
-Dilina,2019-03-05,"Modified tests
-
-Added travis.yml
-
-Modified db file with travis
-
-Fixes codacy checks
-
-Update example.db.js
-Update example.db.js
-Update .travis.yml
-Update .travis.yml
-Update .travis.yml
-Update .travis.yml
-Update .travis.yml
-Update .travis.yml
-Update .travis.yml","['.travis.yml,example.db.js,package.json,drone_functions.js,drone_tests.js,user_functions.js']"
-Dilina,2019-03-05,Update .travis.yml,['.travis.yml']
-Oshan Mudannayake,2019-03-05,"Merge pull request #180 from dilinade/nodeTest
-
-Unit test fixes",['']
-Dilina,2019-03-05,Dependabot Config,['config.yml']
-Oshan Mudannayake,2019-03-05,"Merge pull request #182 from dilinade/dependabot
-
-Dependabot Config",['']
-Dilina,2019-03-07,Updated node package dependencies to latest,"['angular.json,karma.conf.js,package-lock.json,package.json,app.module.ts,auth-http.service.ts,drone-data.service.ts,login.component.ts,user.service.ts,polyfills.ts,tsconfig.spec.json,tsconfig.json,tslint.json,passportconfig.js,index.js,package-lock.json,package.json']"
-Oshan Mudannayake,2019-03-07,"Merge pull request #235 from dilinade/packageUpdates
-
-Updated node package dependencies to latest",['']
-Dilina,2019-03-08,"Migration to angular 6
-
-angular-cli.json file has been replaced with angular.json in version 6 of Angular.",['.angular-cli.json']
-Oshan Mudannayake,2019-03-08,"Merge pull request #240 from dilinade/patch-2
-
-Migration to angular 6",['']
-Dilina,2019-03-10,Startup Script (Bash) for Mac/Linux,"['instructions.md,start.sh']"
-Oshan Mudannayake,2019-03-11,"Merge pull request #244 from dilinade/startupScript
-
-Startup Script (Bash) for Mac/Linux",['']
-Dilina,2019-03-12,"Updated dependabot config
-
-As there was large number of PRs due to live updates, now the updated will be checked monthly.",['config.yml']
-Oshan Mudannayake,2019-03-13,"Merge pull request #247 from dilinade/patch-3
-
-Updated dependabot config",['']
-Dilina,2019-04-01,Bug on Logo,"['user-dashboard.component.html,user-view.component.html']"
-Oshan Mudannayake,2019-04-01,"Merge pull request #252 from dilinade/LogoBug
-
-Bug on Logo",['']
-Dilina,2019-04-09,Removing Duplicate files,"['CONTRIBUTING.md,ISSUE_TEMPLATE.md,PULL_REQUEST_TEMPLATE.md']"
-Oshan Mudannayake,2019-04-09,"Merge pull request #268 from dilinade/DuplicateFiles
-
-Removing Duplicate files",['']
-Dilina,2019-04-09,Checking out all community standards,['ISSUE_TEMPLATE.md']
-Oshan Mudannayake,2019-04-09,"Merge pull request #269 from dilinade/DuplicateFiles
-
-Checking out all community standards",['']
-Dilina,2019-05-10,Timeout extended,"['dronepool.py,main.py']"
-Dilina,2019-05-10,Travis - node version,['.travis.yml']
-Oshan Mudannayake,2019-05-11,"Merge pull request #295 from dilinade/DroneKitTimeOut
-
-Timeout extended",['']
-Dilina,2019-05-17,Linted frontend,"['test.ts,package-lock.json,package.json,admin-authorize.service.ts,app-router.ts,app.module.ts,auth-http.service.ts,breadcrumb.component.ts,breadcrumb.ts,confirm-dialog.component.ts,cursor-tooltip.component.spec.ts,cursor-tooltip.component.ts,dashboard.component.html,dashboard.component.ts,drone-groups.component.html,drone-groups.component.ts,drone-list.component.html,drone-list.component.ts,drone-option-box.component.ts,drone-data.service.ts,drones-box.component.ts,login.component.ts,route-guard.service.ts,signup.component.ts,user-dashboard.component.ts,user-management.component.html,user-management.component.ts,user.service.ts,user-signup.component.ts,user-view.component.ts,tsconfig.json,tslint.json']"
-Dilina,2019-05-17,Linted Backend - node,"['.eslintrc.json,droneCtrl.js,userCtrl.js,group.js,user.js,droneRouter.js,userRouter.js,example.mongoconfig.js,jwtconfig.js,passportconfig.js,package-lock.json,package.json,drone_functions.js,drone_tests.js,generateUserData.js,test.js,user_functions.js']"
-Dilina,2019-05-17,Backend Linter (python),"['dronepool.py,main.py,mavparser.py,node.py,threadrunner.py']"
-Dilina,2019-05-17,Update main.py,['main.py']
-Oshan Mudannayake,2019-05-17,"Merge pull request #297 from scorelab/Linting
-
-Linting",['']
-dependabot-preview[bot],2019-06-01,"[Security] Bump requests from 2.6.0 to 2.20.0 in /dronesym-python
-
-Bumps [requests](https://github.com/requests/requests) from 2.6.0 to 2.20.0. **This update includes security fixes.**
-- [Release notes](https://github.com/requests/requests/releases)
-- [Changelog](https://github.com/kennethreitz/requests/blob/master/HISTORY.md)
-- [Commits](https://github.com/requests/requests/compare/v2.6.0...v2.20.0)",['requirements.txt']
-Dilina,2019-06-02,"Merge pull request #305 from scorelab/dependabot/pip/dronesym-python/requests-2.20.0
-
-[Security] Bump requests from 2.6.0 to 2.20.0 in /dronesym-python",['']
-Dilina,2019-06-03,DB Migration Phase 01,"['drone-list.component.ts,droneCtrl.js,userCtrl.js,drone.js,droneRouter.js,dronesym-d5898-d1e47efbf5b5.json,index.js,package-lock.json,package.json,websocket.js']"
-Dilina,2019-06-03,DB Migration Phase 01,['.gitignore']
-Dilina,2019-06-03,DB Migration Phase 01,['dronesym-d5898-d1e47efbf5b5.json']
-Oshan Mudannayake,2019-06-05,"Merge pull request #316 from dilinade/DBMigration
-
-Db Migration - Phase 01",['']
-Dilina,2019-06-17,DBMigration Phase 02,"['.gitignore,login.component.html,droneCtrl.js,drone.js,dronepool.py']"
-Oshan Mudannayake,2019-06-17,"Merge pull request #317 from dilinade/DBMigration
-
-Db Migration Phase 02",['']
-Dilina,2019-06-20,Static Drone  & User functions migrated,"['dashboard.component.html,dashboard.component.ts,drone-groups.component.ts,drones-box.component.html,drones-box.component.ts,user-management.component.ts,droneCtrl.js,userCtrl.js,drone.js,main.py']"
-Oshan Mudannayake,2019-06-20,"Merge pull request #318 from dilinade/DBMigration
-
-Db Migration Phase 03",['']
-Dilina,2019-06-23,Added Tests after Migration,"['droneCtrl.js,drone_functions.js,test.js,user_functions.js,websocket.js,dronepool.py']"
-Dilina,2019-06-23,Update dronepool.py,['dronepool.py']
-Oshan Mudannayake,2019-06-23,"Merge pull request #319 from dilinade/DBMigration
-
-Db Migration - Final Phase",['']
-Dilina,2019-07-13,Initial - Forgot component,"['app-router.ts,app.module.ts,forgot-password.component.css,forgot-password.component.html,forgot-password.component.spec.ts,forgot-password.component.ts,login.component.html']"
-Dilina,2019-07-13,Python fix,['dronepool.py']
-Oshan Mudannayake,2019-07-13,"Merge pull request #341 from dilinade/forgotPassword
-
-Forgot password - Initial",['']
-Dilina,2019-07-19,Merge branch 'develop' into develop,['']
-Oshan Mudannayake,2019-07-19,"Merge pull request #119 from emgaurv/develop
-
-Add User/Group Tests For mongoDB(Mongoose) Models",['']
-Dilina,2019-07-20,Gatsby Init for Doc,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
-Dilina,2019-07-20,Renamed to Docs,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
-Dilina,2019-07-20,Renamed to Docs,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
-Oshan Mudannayake,2019-07-20,"Merge pull request #342 from dilinade/Documentation
-
-Gatsby Init for Doc",['']
-Dilina,2019-08-05,Documentation - DroneSym,"['gatsby-config.js,package-lock.json,package.json,header.js,image.js,layout.css,drone_logo.png,index.js,page-2.js']"
-Oshan Mudannayake,2019-08-05,"Merge pull request #361 from dilinade/Documentation
-
-Documentation - DroneSym",['']
-Dilina,2019-08-11,Fixed MongoDB realtime issue & Flight glitches,"['dashboard.component.ts,drone-data.service.ts,forgot-password.component.ts,droneCtrl.js,dronepool.py,test_dronepool.py']"
-Oshan Mudannayake,2019-08-12,"Merge pull request #362 from dilinade/FlightGlitch
-
-Flight glitch",['']
-Oshan Mudannayake,2019-08-17,"Merge pull request #363 from scorelab/db_migration
-
-DB migration merge",['']
-Dilina,2019-08-17,Cleared unwanted console logs & impl. second phase of forgot password,"['index.js,app.module.ts,drone-groups.component.ts,drone-list.component.ts,drones-box.component.ts,forgot-password.component.html,forgot-password.component.ts,new-password-dialog.component.css,new-password-dialog.component.html,new-password-dialog.component.spec.ts,new-password-dialog.component.ts,reset-code-dialog.component.css,reset-code-dialog.component.html,reset-code-dialog.component.spec.ts,reset-code-dialog.component.ts,signup.component.ts,user-management.component.ts,user.service.ts,user-signup.component.ts,droneCtrl.js,userCtrl.js,droneRouter.js,userRouter.js,package-lock.json,package.json']"
-Oshan Mudannayake,2019-08-17,"Merge pull request #364 from dilinade/forgotPassword2
-
-Cleared unwanted console logs & implementation -  second phase of forgot password",['']
-Dilina,2019-08-18,Forgot password done,"['forgot-password.component.html,forgot-password.component.ts,login.component.html,new-password-dialog.component.ts,reset-code-dialog.component.html,reset-code-dialog.component.ts,user.service.ts,userCtrl.js,userRouter.js']"
-Dilina,2019-08-19,Secured flask calls,['main.py']
-Oshan Mudannayake,2019-08-19,"Merge pull request #365 from dilinade/forgotPassword2
-
-Forgot password done",['']
-Oshan Mudannayake,2019-08-19,"Merge pull request #366 from dilinade/secureFlask
-
-Secure flask",['']
-Dilina,2019-08-20,Dockerized the app with 4 containers,"['.gitignore,docker-compose.yaml,.dockerignore,Dockerfile,package.json,.dockerignore,userCtrl.js,Dockerfile,user.js,example.mongoconfig.js,package-lock.json,package.json,Dockerfile,requirements.txt']"
-Dilina,2019-08-20,Added mongo env. variables,"['.gitignore,docker-compose.yaml,.env,example.mongoconfig.js,index.js,package-lock.json,package.json,drone_functions.js,user_functions.js']"
-Dilina,2019-08-20,Python dependancy modification for travis,"['.travis.yml,requirements.txt']"
-Dilina,2019-08-20,Update .travis.yml,['.travis.yml']
-Dilina,2019-08-20,Update .travis.yml,['.travis.yml']
-Oshan Mudannayake,2019-08-20,"Merge pull request #367 from dilinade/Dockerize
-
-Dockerize",['']
-Dilina,2019-08-20,Updated Readme with MongoDB config.,['README.md']
-Dilina,2019-08-20,Added service-workers and installability requirements,"['.travis.yml,angular.json,package-lock.json,package.json,app.module.ts,icon-128x128.png,icon-144x144.png,icon-152x152.png,icon-192x192.png,icon-384x384.png,icon-512x512.png,icon-72x72.png,icon-96x96.png,index.html,manifest.json,ngsw-config.json']"
-Oshan Mudannayake,2019-08-21,"Merge pull request #368 from dilinade/PWA_Phase01
-
-Added service-workers and installability requirements",['']
-Dilina,2019-08-29,Security Fixes,"['package-lock.json,package.json,package-lock.json,package.json']"
-Oshan Mudannayake,2019-08-29,"Merge pull request #372 from dilinade/securityFixes
-
-Security Fixes",['']
-Geethmaka,2019-09-11,"Update README.md
-Update README.md
-Update README.md",['README.md']
-Dilina,2019-09-11,"Merge pull request #388 from GeethOnion/develop
-
-Updated instructions for windows users",['']
-Dilina,2019-10-01,Removed Unwanted packages/files,"['apple-touch-192.png,index.html,droneCtrl.js,userCtrl.js,example.db.js,package-lock.json,package.json,main.py']"
-Dilina,2019-10-01,"Merge pull request #389 from dilinade/securityFixes
-
-Removed Unwanted packages/files",['']
-Joseph Semrai,2020-01-10,Responsive changes,"['login.component.css,login.component.html,signup.component.css,signup.component.html,user-management.component.html,user-signup.component.html']"
-Dilina,2020-01-10,"Merge pull request #442 from JosephSemrai/develop
-
-Responsive UI Changes",['']
-Sahan Dilshan,2020-01-26,Align Login and SignUp buttons,['login.component.html']
-dependabot-preview[bot],2020-02-01,"[Security] Bump handlebars from 4.1.0 to 4.7.2 in /dronesym-frontend
-
-Bumps [handlebars](https://github.com/wycats/handlebars.js) from 4.1.0 to 4.7.2. **This update includes a security fix.**
-- [Release notes](https://github.com/wycats/handlebars.js/releases)
-- [Changelog](https://github.com/wycats/handlebars.js/blob/master/release-notes.md)
-- [Commits](https://github.com/wycats/handlebars.js/compare/v4.1.0...v4.7.2)
-
-Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",['package-lock.json']
-atharvcd,2020-02-29,"Added Instructions to create data directory (#459)
-
-* Added instructions to create data directory",['README.md']
-Oshan Mudannayake,2020-02-29,"Merge pull request #446 from scorelab/dependabot/npm_and_yarn/dronesym-frontend/handlebars-4.7.2
-
-[Security] Bump handlebars from 4.1.0 to 4.7.2 in /dronesym-frontend",['']
-Oshan Mudannayake,2020-02-29,"Merge pull request #445 from sahandilshan/develop
-
-Align Login and SignUp buttons",['']
-dependabot-preview[bot],2020-08-01,"Bump nodemailer from 6.3.0 to 6.4.11 in /dronesym-node
-
-Bumps [nodemailer](https://github.com/nodemailer/nodemailer) from 6.3.0 to 6.4.11.
-- [Release notes](https://github.com/nodemailer/nodemailer/releases)
-- [Changelog](https://github.com/nodemailer/nodemailer/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/nodemailer/nodemailer/compare/v6.3.0...v6.4.11)
-
-Signed-off-by: dependabot-preview[bot] <support@dependabot.com>","['package-lock.json,package.json']"
-Charitha Madusanka,2020-08-01,"Merge pull request #534 from scorelab/dependabot/npm_and_yarn/dronesym-node/nodemailer-6.4.11
-
-Bump nodemailer from 6.3.0 to 6.4.11 in /dronesym-node",['']
+Commit_ID,Contributor,Date,Message,Files
+8716e99289504023db64b0b81e9f04526f6b57f9,Charitha Madusanka,2017-03-21,Initial commit,"['.gitignore,LICENSE']"
+3cb72bf6da76a995286d00c912a7c25a79f981c5,Hasanga Somaratne,2017-05-02,Initial skeleton of Flask API to handle Dronekit SITLs,"['.gitignore,main.py']"
+f44cf1a453e5cd812be15a3ced72934b0d448b04,Charitha Madusanka,2017-05-03,Merge pull request #1 from hasa93/masterInitial skeleton of Flask API to handle Dronekit SITLs,['']
+c44b3f16d641fb868109c00ea10701d29ac3d47c,Hasanga Somaratne,2017-05-08,Integrate firebase,"['.gitignore,config.ini,db.py']"
+2cb20561d7ee4e06b783c5afbf169eb50f78436a,Hasanga Somaratne,2017-05-10,Load drones from the db at startup,"['dronepool.py,main.py']"
+a45758b2ff39dafb25f3817b50bdb2e4ba4945ce,Hasanga Somaratne,2017-05-11,Initiate new SITL from the last location,['dronepool.py']
+e837b48ca5ca13a04f54daaec69e6543c038718a,Hasanga Somaratne,2017-05-11,Start drone at the specified home location,"['dronepool.py,main.py']"
+5e09553d8d8d59fd5594ab865bef980e72e3ca58,Hasanga Somaratne,2017-05-12,Implement uploading waypoints to vehicle,"['dronepool.py,main.py,mavparser.py']"
+588519cb20e935fcefc06eef5d6d377b03f7911f,Hasanga Somaratne,2017-05-22,Implement the basic Node API,"['droneCtrl.js,droneRouter.js,db.js,index.js,package.json']"
+42df38b89a9d30008c7c0bf02c8c8692e1a7b55c,Hasanga Somaratne,2017-05-22,Remove Flask interface for Firebase,['db.py']
+db15972cb8efc93e4725967415ca3327473d88bf,Hasanga Somaratne,2017-05-22,Implement python interface for Node API,['node.py']
+8478ddf381701894f5aa64cac89335a95044f028,Hasanga Somaratne,2017-05-22,Remove unnecessary routes,['main.py']
+a565642e642c4cd1919ef88f66c78543d0fd1ca5,Hasanga Somaratne,2017-05-22,Use Node API integration for Firebase,['dronepool.py']
+36261bf51099ac4c52916dc940ee76947074a104,Hasanga Somaratne,2017-05-22,Add timestamp to updates,['droneCtrl.js']
+df372b215722f696fd6440ca28925e8b93e3824d,Hasanga Somaratne,2017-05-26,Implement basic landing functionality,"['droneCtrl.js,droneRouter.js,db.js,dronepool.py,main.py,mavparser.py']"
+bd466184da328e5886cae82e0532c42c8ce0dd82,Raveen Harith Perera,2017-05-26,Merge pull request #2 from hasa93/masterIntegrate firebase,['']
+6336ca9b80b0445d9844bfbb665d4fd3fcc2d7ba,Hasanga Somaratne,2017-06-06,Add README and python requirements,"['README.md,requirements.txt']"
+0848f85cd95f54b4d2e46951ade5224b7d27516e,Hasanga Somaratne,2017-06-06,Bugfix on landing routine,"['dronepool.py,mavparser.py']"
+07715c428cec7ce4a5fd533d3c9c419d4d741654,Charitha Madusanka,2017-06-06,Merge pull request #3 from hasa93/masterAdd README and python requirements,['']
+ee9e14e9b8bebc70d286809106e5fe5389f5d54f,Hasanga Somaratne,2017-06-16,Integrate angular2,"['.angular-cli.json,.editorconfig,.gitignore,README.md,app.e2e-spec.ts,app.po.ts,tsconfig.e2e.json,karma.conf.js,package-lock.json,package.json,protractor.conf.js,app.component.css,app.component.html,app.component.spec.ts,app.component.ts,app.module.ts,.gitkeep,environment.prod.ts,environment.ts,favicon.ico,index.html,main.ts,polyfills.ts,styles.css,test.ts,tsconfig.app.json,tsconfig.spec.json,typings.d.ts,tsconfig.json,tslint.json']"
+f8463b6aa4ef47f58f8a7e062a086ac70ba370a8,Hasanga Somaratne,2017-06-16,Add bower,['bower.json']
+312f12348ef8e76a0fc9cf1994d35e5a604c5cb6,Hasanga Somaratne,2017-06-17,Integrate google maps,"['package.json,app.component.css,app.component.html,app.component.ts,app.module.ts,styles.css']"
+acd7354548087fb2d3f78ae68e44745d29507fa1,Hasanga Somaratne,2017-06-17,Integrate firebase,['package.json']
+6b7a1ee1c3d65aa5ccabe4f40423010f3b91d448,Hasanga Somaratne,2017-06-17,Move google maps configuration to environment,"['app.module.ts,environment.ts']"
+d2d1e65ab031e6ee613c5fe6ef6265566214fba0,Hasanga Somaratne,2017-06-17,Include firebase configuration settings,['environment.ts']
+baf02b3bd8b19ce39b80638462252acdd36f78c9,Hasanga Somaratne,2017-06-17,Implement service to handle drone data,"['app.component.ts,app.module.ts,drone-data.service.spec.ts,drone-data.service.ts']"
+1ed033701263ed9c55d3361d6a6f46fdbd318b6e,Hasanga Somaratne,2017-06-17,Add materialize and google fonts,"['.angular-cli.json,bower.json,package.json,app.module.ts,index.html']"
+6180964ad88c01b60c817f33e7609c16a8946e89,Hasanga Somaratne,2017-06-18,Add CORS and socket.io modules,"['index.js,package.json']"
+2cc10b2ea4a3baa7c81d9590ea7d3a5d149c42c9,Hasanga Somaratne,2017-06-18,Remove firebase dependency from frontend,"['package.json,app.module.ts,drone-data.service.ts']"
+d66e1dbd618963c02350c77c47d016b199e94c37,Hasanga Somaratne,2017-06-18,Initialize sims with altitude of 0,['dronepool.py']
+054be190e1b6b66eb24b37c7ef434a1a349fcde9,Hasanga Somaratne,2017-06-18,Integrate socket.io,"['droneCtrl.js,index.js,package.json,websocket.js']"
+c78fa9a2e8445b425964f350b711d7ebab20f951,Hasanga Somaratne,2017-06-20,Send drone data through socket,['droneCtrl.js']
+65685d1d6e6a8cf5a8dccca4d4710755f6ffae04,Hasanga Somaratne,2017-06-20,Update the environmental variables for angular app,['environment.ts']
+6ff9d80a3fd159bd437579a0b7271b47ae19c81e,Raveen Harith Perera,2017-06-20,Merge pull request #4 from hasa93/masterDronesym frontend integration,['']
+f91b3020899b81280b0306fc73d1b78cd5a63219,Hasanga Somaratne,2017-06-20,Implement dropping drones by mouse,"['app.component.css,app.component.html,app.component.ts,app.module.ts,confirm-dialog.component.css,confirm-dialog.component.html,confirm-dialog.component.spec.ts,confirm-dialog.component.ts,cursor-tooltip.component.css,cursor-tooltip.component.html,cursor-tooltip.component.spec.ts,cursor-tooltip.component.ts']"
+4856929f07fca4ada7a1d33e43bcd8e9546d6c9a,Hasanga Somaratne,2017-06-20,Update installation instructions,['README.md']
+a9cc8bbfbc8875f1febd1cb89cfcbfd1ab029163,Hasanga Somaratne,2017-06-20,Resolve a merge conflict in environment.ts,['.bowerrc']
+e7d1ec72f59ee645e2a1016a98d56bbcf8ffb75e,Raveen Harith Perera,2017-06-22,Merge pull request #5 from hasa93/masterFunctionality to drop drones by clicking,['']
+fe6b087fcd1f1aeb35712f81a791d023d2e4f55b,Hasanga Somaratne,2017-06-22,Refactor mouse element creation functionality,['app.component.ts']
+c90d03a8d98ae71fcc3bcad574d0080c977fbe24,Hasanga Somaratne,2017-06-22,Display drone options when a marker is clicked,"['app.component.html,app.component.ts,app.module.ts,drone-option-box.component.css,drone-option-box.component.html,drone-option-box.component.spec.ts,drone-option-box.component.ts']"
+aa70c5f9c4ad763ca96b4fd0af73e67be687dc1f,Raveen Harith Perera,2017-06-24,Merge pull request #6 from hasa93/masterDisplay drone options when markers are clicked,['']
+9d9d87cd8733ff2b08820864429807814d7ab1b9,rhperera,2017-06-25,Rewrite main READMEAdd the front end readme part to main file. Change the enviroment path of the front-end,"['README.md,README.md']"
+3522ef36e26fff948057948d8782344ad53aca3a,rhperera,2017-06-25,refactor readme,['README.md']
+54842114be781658dbab58893f43fe4bf38cc8d8,Raveen Harith Perera,2017-06-25,Merge pull request #7 from rhperera/masterRewrote the readme with some additions,['']
+bf85f05e873957e6251a4f898581a05d18e5b3fc,Hasanga Somaratne,2017-06-25,Create waypoints frontend functionality,"['app.component.css,app.component.html,app.component.ts,drone-option-box.component.ts,drone-data.service.ts']"
+0f03fbf98b22a05690c24a48cb5af4705a329678,Hasanga Somaratne,2017-06-25,Add create waypoints backend functionality,"['droneCtrl.js,droneRouter.js']"
+50e6d0fd2400ea9b1880415d56cf479809105062,Raveen Harith Perera,2017-06-25,Merge pull request #8 from hasa93/masterCreate waypoints frontend and backend functionality,['']
+bede8166a68aa46ab3642f1edef87b13abcea07a,Charitha Madusanka,2017-07-03,Create CODE_OF_CONDUCT.md,['CODE_OF_CONDUCT.md']
+57c1e68c878b815e1eb89c5a4611d74ae692aa5c,Raveen Harith Perera,2017-07-11,#14 create .travis.yml file,['.travis.yml']
+cff6f1e3bb880a67fb8dbb48c54433a6f55d4155,Raveen Harith Perera,2017-07-11,#14 add python as language,['.travis.yml']
+6315c464b26c6e5fc174d5ce4f95e1500b56307c,rhperera,2017-07-12,#14 fix on travis file typo,['.travis.yml']
+46d815b2bc8d8767c8790a1b9f40a683da293981,Hasanga Somaratne,2017-07-18,Bugfix on coordinates label not showing up in create modes,['app.component.html']
+befd7a09e22435a1d2b3d5e32f957a5c5c69f784,Hasanga Somaratne,2017-07-18,resolves #13,"['app.component.html,app.component.ts']"
+021d07e0f8c43409fe17e61ecac3fa91343f7dab,Hasanga Somaratne,2017-07-18,Include images,"['blue.png,red.png']"
+752ef570c7dbd9a43c987918810fcec058ca486b,Hasanga Somaratne,2017-07-18,Bugfix on sending waypoints to backend,['drone-data.service.ts']
+7cf2c7fca5e351c517123aca44e19abb44f5cfca,Hasanga Somaratne,2017-07-18,Connect waypoints with polylines,['app.component.html']
+eee5f90a3de65b166c1002ac72e35fb6913447b4,Hasanga Somaratne,2017-07-19,Delete waypoints by clicking,"['app.component.html,app.component.ts']"
+67585a192212dec7f168a26e9d62c87d49aa87f5,Hasanga Somaratne,2017-07-19,Reset waypoints based current location,['app.component.ts']
+213de86ef569135357a0983e311094d40ed53f3c,Raveen Harith Perera,2017-07-19,fix travis script issue,['.travis.yml']
+097ab5a3147a0508ce79dcc8b35603dbbfadfe62,Raveen Harith Perera,2017-07-19,Fix #13 Merge pull request #18 from hasa93/developOptimize drone visualization,['']
+25b4123cfd81cd8f325a159f618b72be12f520d7,Hasanga Somaratne,2017-07-20,Integrate passport jwt,"['userCtrl.js,user.js,userRouter.js,authenticator.js,jwtconfig.js,passportconfig.js,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json,index.js,package-lock.json,package.json']"
+35a817dbd0d050e2d2b5781cd8f650e9e06cd622,Hasanga Somaratne,2017-07-20,Integrate angular router,['app.module.ts']
+1089a028a3389587d9cc076a219df096c3d298f2,Hasanga Somaratne,2017-07-20,Refactor app components for integration with router,"['app.component.css,app.component.html,app.component.ts,app.module.ts,dashboard.component.css,dashboard.component.html,dashboard.component.spec.ts,dashboard.component.ts,login.component.css,login.component.html,login.component.spec.ts,login.component.ts']"
+1235163f66dfec26951bf9f48fb7b34221ee1a2f,Raveen Harith Perera,2017-07-21,[#12] Merge pull request #19 from hasa93/developIntegrate passport jwt,['']
+e8f02b14c355d91480595b99719081cc0e36448c,Hasanga Somaratne,2017-07-21,Refactor app routes to a seperate module,"['app-router.ts,app.module.ts']"
+41ea81e6ce33d9412370046d3a223a4c53cf8c26,Hasanga Somaratne,2017-07-21,Change the mounting url for user router,['index.js']
+e440be1e37a42d3f304b8ff77c2f09e7c7ccb880,Hasanga Somaratne,2017-07-21,Implement authentication services for frontend,"['app.module.ts,auth-http.service.spec.ts,auth-http.service.ts,user.service.spec.ts,user.service.ts']"
+11f35a332f7a2a2923b378e185ea7055badab7f3,Hasanga Somaratne,2017-07-21,Implement a rudimentary login screen,"['login.component.html,login.component.ts']"
+47583c857eea2223de3d0eb442e9fb6b206217ac,Hasanga Somaratne,2017-07-21,Authenticate tokens,['userRouter.js']
+68d5134d72f27035dac630174d354c56006c91b2,Hasanga Somaratne,2017-07-21,Make base url private,['drone-data.service.ts']
+9d0d71c1f7b5b1fcfefbd5db259299c6943acbc4,Hasanga Somaratne,2017-07-21,Implement route guard,"['app-router.ts,app.module.ts,route-guard.service.spec.ts,route-guard.service.ts,user.service.ts']"
+cde959fb49057e5c04091f6e562b7ac86cd2bd10,Hasanga Somaratne,2017-07-21,UI tweaks,"['cursor-tooltip.component.css,cursor-tooltip.component.ts,dashboard.component.css,dashboard.component.html,dashboard.component.ts']"
+2894c43ac652bef4a8c9ae3815dd6b8ffb08b77a,Hasanga Somaratne,2017-07-21,Implement logout functionality,"['dashboard.component.html,dashboard.component.ts']"
+d0269d591651b8f4e130e2d21033baf3082352b0,Hasanga Somaratne,2017-07-21,Authenticate for takeoff and updating waypoints,['droneRouter.js']
+75b4fc4306c4b23bb6950a1b5a7b29eeaaaf00a2,Hasanga Somaratne,2017-07-21,Remove unnecessay authenticator,['authenticator.js']
+ff4a3f235dfb1f2d53a8ad1243fde7a3139e1435,Hasanga Somaratne,2017-07-22,Use auth http service instead http service,['drone-data.service.ts']
+ee0ddfff51dee818d09e545f711392fa9dce2e95,Hasanga Somaratne,2017-07-22,Authentication to create drones,['droneRouter.js']
+ceea8a33a455e5ee2b6c020def9db04fa3d73101,Hasanga Somaratne,2017-07-22,Enhance login interface,"['login.component.css,login.component.html,dronesym_logo.png']"
+96bde7dd488dc081d3ebec13f691fa28b15c8416,Hasanga Somaratne,2017-07-22,Role based authorization for frontend routes,"['userCtrl.js,droneRouter.js,userRouter.js']"
+e350d347468885a90529de6967a27d85ead48e37,Hasanga Somaratne,2017-07-22,Send user role with response,['userCtrl.js']
+c6962191e85d1f2ff136127943b415ef1ddc1cd8,Hasanga Somaratne,2017-07-22,Store user role in user service,"['login.component.ts,user.service.ts']"
+04646892f984511d2b42d0669cc87473a941e3a7,Hasanga Somaratne,2017-07-22,UI tweaks,"['dashboard.component.css,dashboard.component.html']"
+ec5c23f0eb44749d3474d2b4edcbd2825dbed491,Hasanga Somaratne,2017-07-22,Deselect current drone by clicking on map,"['dashboard.component.html,dashboard.component.ts']"
+8e29176bbf4d68ffbf7a8d1119ff0097ff9bad78,Hasanga Somaratne,2017-07-22,Visualize paths between waypoints,"['dashboard.component.html,dashboard.component.ts']"
+8617b3ea15b8e8c3059cdcd9fe281f4f0b7e938a,Hasanga Somaratne,2017-07-23,Implement signup screen,"['app-router.ts,app.module.ts,user-signup.component.css,user-signup.component.html,user-signup.component.spec.ts,user-signup.component.ts']"
+df7229ac2a224c46b3eaa9ba8cd0af2a878b63af,Hasanga Somaratne,2017-07-23,Role based authorization on frontend,"['admin-authorize.service.spec.ts,admin-authorize.service.ts,app-router.ts,app.module.ts,dashboard.component.html,dashboard.component.ts,login.component.ts,user.service.ts,user-signup.component.ts,userCtrl.js,userRouter.js']"
+acbd7c732bb2c741ff1c993d99b9a197b1bd2615,Raveen Harith Perera,2017-07-23,Merge pull request #20 from hasa93/developUser authentication,['']
+e9f135c733bc025315dcfea60316c4d9562fbd78,Hasanga Somaratne,2017-07-23,Retry when connetion error,['node.py']
+4d92474af2d5aece19c39cba45a4e6ceb5acea5f,Hasanga Somaratne,2017-07-24,Seperate monogdb uri to a mongoconfig file,"['mongoconfig.js,index.js']"
+063ff468adfa9cdd92715b955fdf2fc20245b36b,Hasanga Somaratne,2017-07-24,Include environment example file,"['.gitignore,example.environment.ts']"
+58855c204c73ce4291c23217022e5765dca9447c,Hasanga Somaratne,2017-07-24,Include example db.js,"['.gitignore,example.db.js']"
+fccb90fd8780379e8da12c63e5d54681b325cbc8,Hasanga Somaratne,2017-07-24,Stop updating db when not in flight,['dronepool.py']
+b0121b3fc7bb86e33dc13f09efddfbaf539d0356,Hasanga Somaratne,2017-07-25,Turn waypoint icons red in delete mode,"['dashboard.component.html,dashboard.component.ts']"
+a8fafd2dc6a5fd9d6554b33d490a42795d2e7774,Hasanga Somaratne,2017-07-25,Merge remote-tracking branch 'upstream/develop' into develop,['']
+a060fbeba270a926843e134063e673547e080bb5,Raveen Harith Perera,2017-07-25,Merge pull request #21 from hasa93/developFix [#9] [#10],['']
+113c82c0691477ef5aa7e3ea4746fb9bd9f50dfb,Hasanga Somaratne,2017-07-25,Fix a typo in README,['README.md']
+96d860d2d9196cbc45a13cd1c5b8ff2234f0b76a,Hasanga Somaratne,2017-07-25,Fix db.js gitignore issue,['db.js']
+3b9da493f760ce44f71dcb5bc97394b832426f61,Hasanga Somaratne,2017-07-25,Add docker instructions,['README.md']
+786fb2de618518dfe83598959084043fe0c2d063,Raveen Harith Perera,2017-07-25,Merge pull request #23 from hasa93/developCleanups and fixes,['']
+292a06e9aa38ba14af294211cff1939a0ee91d06,Hasanga Somaratne,2017-07-25,Add an example mongoconfig file,"['.gitignore,example.mongoconfig.js']"
+2c5a200abc9940a5cef6ccb7bc93aaa058dbfabf,Hasanga Somaratne,2017-07-25,Merge remote-tracking branch 'upstream/develop' into develop,['']
+810bae24b7d3fc61f9a50384baa94078c5603c2f,Hasanga Somaratne,2017-07-26,Add resume flight capability,['dronepool.py']
+e5538c43ffc32281147d93e08beba5a1b1bf6926,Hasanga Somaratne,2017-07-26,Bug fixes,['dronepool.py']
+f60aa422b6e824c4954e160778fa1d761806a205,Hasanga Somaratne,2017-07-26,Delete example credential file,"['.gitignore,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']"
+d49bc9a42d9bdc9e44f6f656c0daf3245c31e853,Hasanga Somaratne,2017-07-26,Remove unnecessary takeoff command,['mavparser.py']
+2b2e8d2a1e4706dc0826579e5394d0322040dba5,Hasanga Somaratne,2017-07-26,Resume flight route,['main.py']
+1b83f30f9c0915e0d307afed10fe30be48fcedd3,Hasanga Somaratne,2017-07-26,Add express resume flight route,"['droneCtrl.js,droneRouter.js']"
+79f44e01827ebbbce4be4bf3cb123443fe4d200d,Hasanga Somaratne,2017-07-26,Show waypoint numbers,['dashboard.component.html']
+bd4424bfdf07c1af76cf77e4df4ab3525c1939fe,Hasanga Somaratne,2017-07-26,Bugfix on resume logic,['dronepool.py']
+c3150a0023101f954fd7fe5e4414d8eddab02037,Hasanga Somaratne,2017-07-26,Frontend functionality for drone control,"['dashboard.component.html,dashboard.component.ts,drone-option-box.component.css,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts']"
+62055a1f6bcc1d16a6b2a5f3928bb29f6fd98cb8,Raveen Harith Perera,2017-07-27,Merge pull request #25 from hasa93/developMinor cleanups,['']
+9f8b044f32b951f027023d875864614183ed087b,Hasanga Somaratne,2017-07-27,Delete example credential file,"['.gitignore,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']"
+ffeccf6575de15249c8d070615bf8ed6ac44837c,Hasanga Somaratne,2017-07-27,Merge remote-tracking branch 'upstream/develop' into develop,['']
+efa7f6ecd155dc8390e0f86753f67a6185ef90c0,Hasanga Somaratne,2017-07-28,Reset waypoints to default icon when not in a create mode,['dashboard.component.ts']
+9a5a44110ffd879345f53ee301b0948590e528d9,Hasanga Somaratne,2017-07-28,Bug fix on resuming flight,"['dronepool.py,mavparser.py']"
+52bc1481c5cd66908091cc6587be6dbaeb82768d,Hasanga Somaratne,2017-07-28,Tentative fix for resume index off-by-one,['dronepool.py']
+6c029250401d93fe6ae40004fda1ce4554f27beb,Raveen Harith Perera,2017-07-28,Merge pull request #26 from hasa93/developMAV Commands,['']
+8e7bebf9592051161727544efaf42f5ae72f6980,Hasanga Somaratne,2017-07-29,Fix resusme issue #27,['dronepool.py']
+ed0b004547d93d44ff1ce820bd29688374a61314,Hasanga Somaratne,2017-07-30,Redirect to login when jwt has expired,['auth-http.service.ts']
+90923304e04f8d99af7bfa8334e9175610479474,Raveen Harith Perera,2017-07-31,Merge pull request #29 from hasa93/developFix resusme issue #27,['']
+7890d4c54b50d733a0abee20b1c7f2b6adb2a9a5,Hasanga Somaratne,2017-08-06,Add user dashboard router link,"['app-router.ts,app.module.ts,dashboard.component.html,login.component.ts,user-dashboard.component.css,user-dashboard.component.html,user-dashboard.component.spec.ts,user-dashboard.component.ts,user-view.component.css,user-view.component.html,user-view.component.spec.ts,user-view.component.ts,favico.ico']"
+3d1588327e218f3765011ea553ed27e6cab23c3c,Hasanga Somaratne,2017-08-06,Add naming drone functionality,"['confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,dashboard.component.ts,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts,droneCtrl.js,droneRouter.js']"
+e373b87910c8ba37cdf2dd304cd7c2646f24bf19,Hasanga Somaratne,2017-08-06,Bugfix on executing request twice,['auth-http.service.ts']
+955364867a76b71e6198bd18f941ed7f0ea8bfa4,Hasanga Somaratne,2017-08-06,Bugfix on deleting drones,['dashboard.component.ts']
+945bc8d08fece7e1d7380c1074a62b2830888db8,Hasanga Somaratne,2017-08-06,Authenticate socket communications,"['drone-data.service.ts,droneCtrl.js,droneRouter.js,package.json']"
+bb56631692f50913bd386d6dfd46eaacf853cd74,Hasanga Somaratne,2017-08-07,Add drone group model,['group.js']
+fae09a580eac00040b33fbdbbfb654e3f1488c96,Hasanga Somaratne,2017-08-07,Add drone group handling routes,"['droneCtrl.js,droneRouter.js']"
+2093439f268f9dac252cc44c0651f3cb451484a8,Hasanga Somaratne,2017-08-07,Remove unnecessary console log,['passportconfig.js']
+0b6eb3b53a026024ff015476fa3c9e6f207503f1,Hasanga Somaratne,2017-08-07,JWT authentication on sockets,['websocket.js']
+6edc647e3df44473ce8737560cdaec554d9d6a14,Hasanga Somaratne,2017-08-07,Drone group management frontend functionality,"['app-router.ts,app.module.ts,confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,drone-groups.component.css,drone-groups.component.html,drone-groups.component.spec.ts,drone-groups.component.ts,drone-list.component.css,drone-list.component.html,drone-list.component.spec.ts,drone-list.component.ts,drone-data.service.ts,drones-box.component.css,drones-box.component.html,drones-box.component.spec.ts,drones-box.component.ts,user-dashboard.component.css,user-dashboard.component.html,user-view.component.css,user-view.component.html,styles.css']"
+88575fc87b751850151fbd7740dd123457d76ef7,Hasanga Somaratne,2017-08-07,Cosmetic touches,"['drone-groups.component.html,drone-list.component.html']"
+b7e7928796b4fa94705d98718577cbfded521574,Hasanga Somaratne,2017-08-07,Merge remote-tracking branch 'upstream/develop' into develop,['']
+172d1718a5f15f115ab85c4fafef5ea78f4e0f5f,Raveen Harith Perera,2017-08-08,Merge pull request #33 from hasa93/developDrone group management functionality,['']
+3a5d305d46857e42f8e696b0d2af4efba882ca18,Raveen Harith Perera,2017-08-08,Change pytest command for trusty envs,['.travis.yml']
+078bdaa574d0516162bd5a60dc9d6a7be0595ff5,rhperera,2017-08-08,Add pytest cache to gitignore,['.gitignore']
+b9b75dca655bfafe87328944c02569cca3eda47d,rhperera,2017-08-08,Add initial dummy unit test,"['lastfailed,test_default.py']"
+f942e45cb740295e458c5910d8f1deb78a22aa06,rhperera,2017-08-08,Add travis build status to readme,['README.md']
+497607b703ef144c0abeee89fccf5ed54e13c8a4,Hasanga Somaratne,2017-08-09,Store drone users in an array,['droneCtrl.js']
+e7ba997cb14f9acdcb8df661eed78aa0b1879c54,Hasanga Somaratne,2017-08-09,Bugfix on selecting drones,"['drones-box.component.html,drones-box.component.ts']"
+22b175a5885da3681b233371d216f27bf3afea72,Hasanga Somaratne,2017-08-09,Update python requests version to fix openssl v3 error,['requirements.txt']
+51e60650cb7926ba0c81d5a341774babf9368adc,Raveen Harith Perera,2017-08-09,Merge pull request #35 from hasa93/developMinor bugfixes,['']
+db20a56409aad9dc82701ad467beead119c5b9f5,Hasanga Somaratne,2017-08-09,Generalized input visibility,"['confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,drone-groups.component.html']"
+f0524c5767d7baeee52551ffed0f314b7cfb4139,Hasanga Somaratne,2017-08-09,Remove drone backend functionality,"['droneCtrl.js,droneRouter.js,dronepool.py,main.py']"
+9dd57cf2766405770d899d25f696c77e10e8f695,Hasanga Somaratne,2017-08-09,Add remove drone service,['drone-data.service.ts']
+6a566940b82e2937b57a3880bfef809f7982d0b3,Hasanga Somaratne,2017-08-09,Drone management frontend,"['dashboard.component.ts,drone-groups.component.ts,drone-list.component.html,drone-list.component.ts']"
+42d1df13b4eda508ffafd00d6676c645e036d3b6,Raveen Harith Perera,2017-08-09,Merge pull request #36 from hasa93/developDrone deletion functionality,['']
+2867e5254c6b3a70aff6f2026fafe8c1aa4de046,Hasanga Somaratne,2017-08-10,Add routes to change drone name,"['droneCtrl.js,droneRouter.js']"
+d7aac8d3b7f8cef92de335295af2e734bee1fecb,Hasanga Somaratne,2017-08-10,Minor cleanups,"['drone-list.component.ts,drone-data.service.ts']"
+051389e3db87640df54ed3979863e0e8ee2e993b,Hasanga Somaratne,2017-08-10,Drone rename functionality,"['drone-list.component.html,drone-list.component.ts,drone-data.service.ts,favico.ico,favicon.ico,droneCtrl.js,droneRouter.js']"
+520d5ff04861c8efa737a27a03100a19773c6769,Hasanga Somaratne,2017-08-10,Show create groups only in admin view,['drone-groups.component.html']
+ff8512455039d03a0e49fd04300f368cd5622e57,Hasanga Somaratne,2017-08-11,Merge remote-tracking branch 'upstream/develop' into develop,['']
+b8b5ebc2fca5ad50fa0a68971b5fbc0b5db7dff3,Hasanga Somaratne,2017-08-13,Initial unit tests,"['dronepool.py,mocks.py,test_dronepool.py']"
+3cd617d6002423bf95910cdc366c653e7b7bdd55,Raveen Harith Perera,2017-08-14,Merge pull request #39 from hasa93/developImplement user dashboard,['']
+2dc7bcd756d1e0149a474edf3fa9a72661694061,Hasanga Somaratne,2017-08-14,Travis integration test,['travis-test.txt']
+f65daaafa38c05b5d5e5f886191dc9893f48ed31,Hasanga Somaratne,2017-08-17,Specify path to test script,['.travis.yml']
+13490444bc1ef6a00188994869320008350a998f,Hasanga Somaratne,2017-08-17,Remove unittest test runner,"['.travis.yml,test_dronepool.py']"
+55b9b8b7891e9a6ca554fcdf9afde6645411a995,Raveen Harith Perera,2017-08-17,Merge pull request #40 from hasa93/developRemove unittest test runner from test script,['']
+eb43e4c259cacb0f4291870effcc10e7a99ac15b,Hasanga Somaratne,2017-08-17,Add run mission tests,"['mocks.py,test_dronepool.py']"
+08e4a4e69cb03d4248b3dd8a3b8cbc9bfc82f085,Hasanga Somaratne,2017-08-18,Remove dummy travis-test file,['travis-test.txt']
+f4115e2ade5163e27f7533c7ee0880b41c24193f,Hasanga Somaratne,2017-08-23,Assign users to drone groups functionality,"['droneCtrl.js,userCtrl.js,userRouter.js']"
+a1271c74a0cbb9e3e38c131fb56bfcef2718c458,Hasanga Somaratne,2017-08-23,Create user functionality,"['app-router.ts,app.module.ts,user-dashboard.component.css,user-dashboard.component.html,user-dashboard.component.ts,user-management.component.css,user-management.component.html,user-management.component.spec.ts,user-management.component.ts,user.service.ts,user-signup.component.css,user-signup.component.html,user-signup.component.ts,userCtrl.js,user.js,userRouter.js']"
+89347bdbf7aa57cfd1e759e848ffd6184fd0bdb3,Hasanga Somaratne,2017-08-23,Add assigning users to groups functionality,"['dashboard.component.html,user-dashboard.component.html,user-management.component.html,user-management.component.ts,user.service.ts,user-view.component.html,user-view.component.ts,droneCtrl.js,userCtrl.js,group.js,user.js']"
+9d70c695ec54a519cbc5b686e22dc1cab284798b,Hasanga Somaratne,2017-08-23,Minor bugfix,['user-view.component.html']
+8d24fca517d1fb4a39e0cd5bb153f00dd2764d9b,Raveen Harith Perera,2017-08-23,Merge pull request #41 from hasa93/developAdd run mission tests,['']
+91a83a0fc53c0ba37242ed59d596b5b56fd68403,Hasanga Somaratne,2017-08-25,Re-implement using python threading,"['dronepool.py,main.py,threadrunner.py']"
+4d229db31bd454920564fabdbfb0c64470b7165e,Raveen Harith Perera,2017-08-25,Merge pull request #44 from hasa93/developRe-implement using python threading,['']
+69b323b534fe90b0f109efdb6fe331ef5921433e,Hasanga Somaratne,2017-08-27,Fix test cases,['test_dronepool.py']
+4a6ccf2cbd96285d961f818d0bfcd7f7838d4227,Hasanga Somaratne,2017-08-28,Include initial user creation instruction,['README.md']
+919b07dbd58a291599bf571d6852bf1662e6d451,Raveen Harith Perera,2017-08-28,Merge pull request #45 from hasa93/developFix test cases,['']
+fde4820d7a50249b8b010dcdfa8da42737d3cf54,Hasanga Somaratne,2017-08-30,Fix instance number not updating when creating new drones issue,['dronepool.py']
+c60f1a72b354043a75795e17a276a6e9579336ff,Raveen Harith Perera,2017-10-25,Merge pull request #47 from hasa93/developFix instance number not updating when creating new drones issue,['']
+ea9040ce858a43ffdb33a324fb7d4cc9479830e3,Malith Senaweera,2017-11-26,Fix a minor typo in README,['README.md']
+5a8fa98ce59b8bfbe2062c98748a1a7304643b0f,Malith Senaweera,2017-11-26,Add a db dump,"['README.md,groups.bson,groups.metadata.json,users.bson,users.metadata.json']"
+209c71ee0092c13fa15ab998e02cfc7aa2c3f177,Malith Senaweera,2017-12-21,Remove incorrect global declaration inside __main__ block,['main.py']
+f1620ce33e18e9df7373a28ab2f2e98ffd7cae6e,shlokj,2018-01-03,Update .gitignore,['.gitignore']
+9a2c76d48750ed54471a642d275b251151eef21b,Moses Paul R,2018-01-13,Update package.jsonperforming changes requested by @malithsen,['package.json']
+3bdae544542610cea7137abf8d1db0eb78ccc3a7,Moses Paul R,2018-01-19,Create ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md']
+646323b0e3bc2428df4b88677344603626a01995,Moses Paul R,2018-03-26,Create CONTRIBUTING.md,['CONTRIBUTING.md']
+b0d3e2d85dfe3857369abdbd70213f29a2fed77a,Moses Paul R,2018-03-26,Create PULL_REQUEST_TEMPLATE.md,['PULL_REQUEST_TEMPLATE.md']
+d95be3154113b7191b15f63a8e430e16792e58a7,Oshan Mudannayake,2018-03-26,Fix package.json errors,"['package-lock.json,package.json,package-lock.json,package.json']"
+44924b6025cf75967028e97f0838ec24f43217ee,Oshan Mudannayake,2018-03-26,Merge branch 'develop' of https://github.com/scorelab/DroneSym into develop,['']
+21ebca4b7141dbc71aa30dbe8d3988a1508e05c4,Moses Paul R,2018-10-02,Update ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md']
+839a03d5b0b40953014904d4652101ad84a962e1,Oshan Mudannayake,2018-10-02,Update package-lock.json file,['package-lock.json']
+7a267f6b63ea9f7e74bbbc46c868ce8b4ec9ca88,Oshan Mudannayake,2018-10-02,Merge pull request #94 from OshanIvantha/developFix package.json validation issue,['']
+7094358d8e27488436101f8bc623efb33ba8bc50,violentdelight,2018-10-02,Added editorconfig,['.editorconfig']
+469bdfac0a15bcfe44c26718c8d8c127f9ffe120,Oshan Mudannayake,2018-10-12,Merge pull request #98 from violentdelight/add-editorconfigAdded editorconfig,['']
+dbda109bc2bf71eda9bf77aaadd3373a4ed08b16,Oshan Mudannayake,2018-10-12,Merge pull request #89 from iammosespaulr/patch-3Create ISSUE_TEMPLATE.md,['']
+1e4fc601bf3b0c483831e4fa9a5fe816e527b4e3,Gaurav Pandey,2018-10-24,Add Codacy Shield & DroneSym Logo,['README.md']
+3cbb8967aab4943fe07f0646241fff0f1484b058,Jakub Mularski,2018-10-29,Added tests for drone create,"['droneCtrl.js,userCtrl.js,example.db.js,index.js,package-lock.json,package.json,droneCtrl.js']"
+cab1976d652492283882036e38f6f4e6dd623d2a,Jakub Mularski,2018-10-29,Forgot to reset example.db to defaults,['example.db.js']
+4a82621b84c72d7eebd5d7c8282ddf5ab888e182,Jakub Mularski,2018-10-30,Made tests adhere to project code style,"['droneCtrl.js,droneCtrl.js']"
+0eb76674582de771b065c142fd75ae0de4c76940,Jakub Mularski,2018-10-30,Tests for remove drone in droneCtrl,"['droneCtrl.js,droneCtrl.js']"
+a678412f3630371b8869e7737f500506ad054bd8,Jakub Mularski,2018-10-30,Added tests for getDroneIds and getDroneById,"['droneCtrl.js,droneCtrl.js']"
+50811bf0bd15f8d7b60b239375f3f510d8a1a333,Jakub Mularski,2018-10-30,"Renamed drone tests, added firebase test for create, and failing test for delete",['drone_functions.js']
+0378fbf2c88939b31dde385a1bc6ef99a7886ff8,Jakub Mularski,2018-10-31,Fixed code quality,['drone_functions.js']
+888d9a0041be887f996739278af500e910ab61e6,Jakub Mularski,2018-10-31,Code quality: last missing semicolon,['drone_functions.js']
+f99d3c65dbcd02450680d0c817aadb9d90bf1c48,Jakub Mularski,2018-10-31,Now it must be the last error in linter,['drone_functions.js']
+b358d115b51a271678929bbc1e95a53ba308f610,Oshan Mudannayake,2018-10-31,"Merge pull request #112 from jmularski/tests/drone-createAdded tests for drone create, drone remove, list all drones, and list drone by id",['']
+23e5e4ca7706752fb96f5b2f741af47fc22e8efb,Jakub Mularski,2018-11-03,"fix: callback on drone remove, fixed test for drone remove db check","['droneCtrl.js,drone_functions.js']"
+39dfd184be00875b011fd67990f89261966fb542,Jakub Mularski,2018-11-03,Code quality fix,['drone_functions.js']
+42687ccea38c9a4ebead4dbc2bde3c58af961b61,Gaurav Pandey,2018-11-03,Add Tests For Group Models,['group_models.js']
+27b8c1befd50a62e06e766fd43b29e9c0aab52b9,Gaurav Pandey,2018-11-03,Add Tests For User Models GET/POST,['user_models.js']
+1a019c4eed7c1b2a02daa983746eb51ba686f7ae,Gaurav Pandey,2018-11-03,Add Sinon & Sinon-mongoose for Model Tests,['package.json']
+55359486ea389b679ecf526d54b6f07b9dafcc88,Oshan Mudannayake,2018-11-04,"Merge pull request #118 from jmularski/fix/drone-removeAdded callback on drone remove, fixed drone remove test.",['']
+2416c087e9197deed9e1b70e1b652c03ec898ac6,Jakub Mularski,2018-11-05,"tests(user): added test for login, register, and listing users","['droneCtrl.js,userCtrl.js,user_functions.js']"
+f08d3371513d7253422bfd998f1810f05b427d76,Jakub Mularski,2018-11-06,Fixing code quality,['user_functions.js']
+dfa6a0cb7e4188256c8f8654faf9b63244b02973,Jakub Mularski,2018-11-06,docs(jsdoc): added basic JSDoc for every method of controller,"['droneCtrl.js,userCtrl.js']"
+8d215296bf3fc849601d849873466c5c06db9806,GeethOnion,2018-11-14,Added unit test,['test.js']
+96a9015423dd617fad151cee6a2a0f84f2a07442,GeethOnion,2018-11-14,Update README.md,['README.md']
+15240840c454f45a88c0457b37a5bcb4c30dab4b,GeethOnion,2018-11-14,Update README.md,['README.md']
+97690fd04208011026999f90395c180e403087dd,anuragparida,2018-11-15,Add unit test file,['drone_tests.js']
+af5edee7b6bc9c9115b88da58f42e95a30df5e9c,tintinmovie,2018-11-17,Update README.md,['README.md']
+0d630abff4c26335c7ee044aa4a4573c9990a33f,Łukasz Myśliwiec,2018-11-17,Add Some Login Tests,"['login.e2e-spec.ts,login.po.ts,app.e2e-spec.ts']"
+bafa3f4b129299eaa61a9344d354b10d1692e5c5,Oshan Mudannayake,2018-11-18,Merge pull request #141 from TheLukaszNs/develop[GCI] Add Login e2e tests for Frontend,['']
+a76eb224b70ef872696fc1719346806e8f335c4a,Oshan Mudannayake,2018-11-24,Merge pull request #138 from anuragparida/developAdd unit test file in dronesym-node/tests/drone_tests.js,['']
+8208b32397f595504543cdcfdc0a0d04d033a522,Oshan Mudannayake,2018-11-24,"Merge pull request #123 from jmularski/test/user-controllertests(user): added test for login, register, and listing users",['']
+b57d31ba7e5cd5db7af57a8b55edc29384bfcf1c,Oshan Mudannayake,2018-11-24,Merge pull request #139 from tintinmovie/patch-1Update README.md with instructions for running tests,['']
+3ffa2311f41b3ac7d93c332c3f8ac6e03367f43d,Oshan Mudannayake,2018-11-24,"Merge pull request #100 from hcktheheaven/readme.md-Change-GCIAdd Codacy Shield, Gitter Badge & DroneSym Logo",['']
+3a7f37d1e09c179cd44e0ea2dcc7234d0cb077ee,Łukasz Myśliwiec,2018-12-03,Sync changes with upstream,['']
+a5ef95f419e64b6d3fc58ae0954741a65534b0d7,Łukasz Myśliwiec,2018-12-03,Update README file to inform about env filesUpdated the README file to include the note about environment files.,['README.md']
+e33e65970d0ec3f771815f30f3961fb0b60efc3e,Oshan Mudannayake,2018-12-04,Merge pull request #157 from TheLukaszNs/ux/update-readme Update README file to inform about env files,['']
+765667437a63d2825e4df1e78c8b966c91ec278c,Daksh Miglani,2018-12-10,"Fixed import errors and updated to support python 3- Imported queue as queue to avoid import error- Enabled backward compatible flask serverUpdated main.pyRemoved useless importMade the npm build more cleanRemoved depricated use of open() + made port flexibleRemoved the warning to get a clean build:  DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0 by declaring the boolean value of Mongoclient as true.What I personally encountered... I was running another server on port 3000, Thus when I was setting up Dronesym, I got an error of port already being in use, So I made a global variable named port, and added string concatenation to console the running port into the terminal. If users already have port 3000 in use, then they could just change the value of variable in /dronesym-node/index.js.Added missing instruction of running mongodMost of the people including me forgot to run ```mongod``` in one terminal, and then execute ```mongorestore --db dronesym dronedb/dronesym```, So I've added an instruction step.Added latest and more supportive version of flaskAdded E2E tests for Login authorization 1. Checks URL redirection vulnerability (security purpose).2. Checks Server's availability.3. Checks Login authorization through admin's account.4. Checks the dashboard appearance on putting correct credentials.5. Logs out of admin's account 6. Checks Login authorization through admin's account.","['README.md,WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,test.ts,index.js,package-lock.json,dronepool.py,main.py,requirements.txt,package-lock.json']"
+311cf608e44f117807910252632d6f196f84c76c,Rohan Singh,2018-12-15,Added character encoding & meta for responsiveness,['login.component.html']
+c0451a25fb5c6d664f43ec109a0ac0b38e296897,Rohan Singh,2018-12-15,"Made the Login Page responsiveThis DroneSym Webapp can now work on small phones, mid-sized phones, large phones, laptops, large laptops, HD TV and even a 4K TV",['login.component.css']
+cfee725b62bb11ee65dbdba84328c3c7ff9fdd64,Rohan Singh,2018-12-15,Removed redundant comments,['login.component.html']
+1087df03fed34189fda2839e93873daa238cde68,Rohan Singh,2018-12-15,Update index.js,['index.js']
+8041fc62346efd285cdc4bc8fc02a769859c4cee,Oshan Mudannayake,2018-12-18,Merge pull request #125 from jmularski/docs/jsdoc-controllerdocs(jsdoc): added basic JSDoc for every method of controller,['']
+8b1e2060367d1ab3dac7f15eb791c06bd51f5b4e,Rohan Singh,2018-12-19,Deleted Unnecessary Cache files and improved code qualityDelete WiredTiger.turtleDelete WiredTiger.lockDelete WiredTiger.wtDelete WiredTigerLAS.wtDelete _mdb_catalog.wtDelete collection-0--2321288784840600282.wtDelete storage.bsonDeleted unecessary WiredTiger stuffdeleted Redundant stuffDelete collection-2-7301280593392019203.wtDelete collection-4--2321288784840600282.wtDelete metrics.2018-11-04T20-24-09Z-00000Delete index-1--2321288784840600282.wtDelete sizeStorer.wtDelete mongod.lockDelete index-1-7301280593392019203.wtDelete index-3--2321288784840600282.wtDelete WiredTigerLog.0000000002Delete WiredTigerPreplog.0000000001Delete WiredTigerPreplog.0000000002Delete metrics.2018-11-04T20-24-37Z-00000Delete metrics.interimDelete index-3-7301280593392019203.wtDelete index-4-7301280593392019203.wtDelete index-5--2321288784840600282.wtDisabled no console warning for Codacy's nodeJS code compiling.Replaced single quotes with double quotes for Codacy's Code qualityUpdate package-lock.jsonRemoved package-lock.JSON,"['WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,index.js,package-lock.json']"
+1a9967459552688495c9d893762d0fd0878be692,Oshan Mudannayake,2018-12-19,Merge pull request #120 from rohancl/developFixed import errors and updated to support python 3,['']
+00b9b6d594dda2737dd13f33b0e1d354bceb0ba7,anuragparida,2018-12-26,Change README for beginner users,['README.md']
+4c2d0a2542beb49dbe3bc30eb8a44a1dff1d13ae,anuragparida,2018-12-26,Remove ReadME Screenshots,['README.md']
+357cbb94e79d5e9e42eeb5237871e8034fc163ca,Oshan Mudannayake,2018-12-26,Merge pull request #166 from anuragparida/developUpdate README with firebase instructions,['']
+be72fbb17552c6186a49abd5545374c84dfec4d5,meetcric,2019-02-05,Feat:Add breadcrumb to indicate the route of userFix:#153,"['package-lock.json,package.json,app-router.ts,app.component.html,app.module.ts,breadcrumb.component.css,breadcrumb.component.html,breadcrumb.component.spec.ts,breadcrumb.component.ts,breadcrumb.ts,drone-groups.component.html,drone-list.component.html,user-dashboard.component.html,user-management.component.html,styles.css']"
+7e995b132bb1ec2012609bc7e1f172016e6d19bb,meetcric,2019-02-13,Feat:Add signup option for user in login page,"['test.ts,admin-authorize.service.ts,app-router.ts,app.module.ts,auth-http.service.ts,confirm-dialog.component.ts,cursor-tooltip.component.ts,dashboard.component.ts,drone-groups.component.ts,drone-list.component.ts,drone-option-box.component.ts,drone-data.service.ts,drones-box.component.ts,login.component.css,login.component.html,login.component.ts,route-guard.service.ts,signup.component.css,signup.component.html,signup.component.spec.ts,signup.component.ts,user-dashboard.component.ts,user-management.component.ts,user.service.ts,user-signup.component.ts,user-view.component.ts,userCtrl.js,user.js,userRouter.js,user_functions.js']"
+339dc15395f0244deed55f8546be20dcea5616a2,Oshan Mudannayake,2019-02-15,Merge pull request #167 from meetcric/153Feat:Add breadcrumb to indicate the route of user,['']
+4fb13691f604e05643fbb5e1c9c4e33bb95877d7,Meet Patel,2019-02-15,Merge branch 'develop' into 148,['']
+326d7f05c613266e60388aa88c7d97d11bd07c22,Dilina Dehigama,2019-02-16,Python3 support,"['.gitignore,dronepool.py,dronepool.py.bak,mavparser.py,mavparser.py.bak,node.py,node.py.bak,threadrunner.py']"
+4154c0cb5318dbd8564e377bd3be9d9df9f854bd,Dilina,2019-02-16,Delete .bak,['node.py.bak']
+e7ae6504908666a0ba38b3bb6e303cccfad1a958,Dilina,2019-02-16,Delete dronepool.py.bak,['dronepool.py.bak']
+ab1a2b8f2491c435bfe350b7d99cf0c5dfee4f6e,Dilina,2019-02-16,Delete mavparser.py.bak,['mavparser.py.bak']
+604bb2e9ba0108ccc2e6b3bf093ed1079e729172,Oshan Mudannayake,2019-02-16,Merge pull request #169 from dilinade/python3Python3 support,['']
+a02532bb0e90437085d0250cbab72f62d9e4c0cb,Dilina,2019-02-17,Updated python version. (2.7 or higher),['README.md']
+76d9fdfcb63dc6d9d7591a59005978cf04d325f6,Oshan Mudannayake,2019-02-17,Merge pull request #168 from meetcric/148Feat:Add signup option for user in login page,['']
+9396c62e4231b9d2a2127d8e04bed2bee963bfee,Oshan Mudannayake,2019-02-17,Merge pull request #171 from dilinade/patch-1Updated python version. (2.7 or higher),['']
+674f022af03477814389b7d66b419e02472cf0fd,Dilina Dehigama,2019-02-19,Github Repo Management-moved files to .github directory,"['CONTRIBUTING.md,ISSUE_TEMPLATE.md,PULL_REQUEST_TEMPLATE.md']"
+86d0db898472be0336fb3de5e6e8c7ebd51b8ec6,Oshan Mudannayake,2019-02-19,Merge pull request #173 from dilinade/fileManageGithub Repo Management - moved files to .github directory,['']
+222b0489a81f2c2563a6c082a05c2b4603a88a39,meetcric,2019-02-19,[Refactoring] Create-user feature,"['app.module.ts,user.service.ts,user-signup.component.html,user-signup.component.ts,userCtrl.js,userRouter.js']"
+2865b0cdd68e46e8826b56d62955d6af6b81ca26,Dilina Dehigama,2019-02-21,"Added attributes : (Drone description,Flying time)","['package-lock.json,app.module.ts,confirm-dialog.component.css,confirm-dialog.component.html,confirm-dialog.component.ts,dashboard.component.html,dashboard.component.ts,drone-list.component.html,drone-list.component.ts,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts,droneCtrl.js,droneRouter.js']"
+55e3970399277f0cad260037f4786607cede21f8,Oshan Mudannayake,2019-02-22,Merge pull request #172 from meetcric/170Email field added in create-user form,['']
+810a578928bca1c1bf47284890e6b5e0b83688a8,Dilina,2019-02-22,Updated variable names,['droneCtrl.js']
+9b436f810afe16b116f3ac207b270f17c1f70b87,Dilina Dehigama,2019-02-22,Added drone name to marker in map,"['dashboard.component.css,dashboard.component.html']"
+bbf18f7c775f0baa1b0dc08a2a233324baeb7915,meetcric,2019-02-23,[Feature]: Login via Email,"['login.component.html,userCtrl.js']"
+5728c31f63f45af6c65688ab60863e61876a2d8c,Oshan Mudannayake,2019-02-23,Merge pull request #176 from dilinade/nameUnderMarkersAdded Drone name to marker in dashboard,['']
+579a94b8ec96feb9d66cfdb989569d37f629ce49,Oshan Mudannayake,2019-02-23,"Merge pull request #175 from dilinade/DroneNameAdded attributes : (Drone description,Flying time)",['']
+14e9629775177affd97c8cca257920c5729c2731,Oshan Mudannayake,2019-02-23,Merge pull request #177 from meetcric/174[Feature]: Login via Email,['']
+32fa901484480e796124200099f1c7590a96ad52,meetcric,2019-03-02,bug of user-group,"['user-management.component.ts,user.service.ts']"
+065b6493db0881cf282b42e6cd6e5c3b969ed431,meetcric,2019-03-02,bug of user-group,"['userCtrl.js,group.js,userRouter.js']"
+5480b0772e78c0e2fa5b372f80d07dd717ff4e7f,Oshan Mudannayake,2019-03-03,Merge pull request #178 from meetcric/42Solve the bug on group's-user,['']
+5de616ed7d2007171404b0f922a89c3964934d50,GeethOnion,2019-03-03,Update test.js,['test.js']
+93b86620f494def5fe91637b6fc17769f6d1b5b9,Oshan Mudannayake,2019-03-03,Merge pull request #136 from GeethOnion/developAdded Unit Test,['']
+b679951fa408a6c49552c680bb36dee60c44a7dd,Dilina,2019-03-05,Modified testsAdded travis.ymlModified db file with travisFixes codacy checksUpdate example.db.jsUpdate example.db.jsUpdate .travis.ymlUpdate .travis.ymlUpdate .travis.ymlUpdate .travis.ymlUpdate .travis.ymlUpdate .travis.ymlUpdate .travis.yml,"['.travis.yml,example.db.js,package.json,drone_functions.js,drone_tests.js,user_functions.js']"
+da032a5433426f2019b51f3998473fccc0f1f568,Dilina,2019-03-05,Update .travis.yml,['.travis.yml']
+73e570eea9055f1814cb56e72a79cccf93b25fe0,Oshan Mudannayake,2019-03-05,Merge pull request #180 from dilinade/nodeTestUnit test fixes,['']
+a506b51529806bcee0138769aed1a7d293d80f8e,Dilina,2019-03-05,Dependabot Config,['config.yml']
+5d6028f8f312a7102b342c17a50bc98a7ea96d3f,Oshan Mudannayake,2019-03-05,Merge pull request #182 from dilinade/dependabotDependabot Config,['']
+9c716e3cb408ed501b6dced0030ae7a521d78df4,Dilina,2019-03-07,Updated node package dependencies to latest,"['angular.json,karma.conf.js,package-lock.json,package.json,app.module.ts,auth-http.service.ts,drone-data.service.ts,login.component.ts,user.service.ts,polyfills.ts,tsconfig.spec.json,tsconfig.json,tslint.json,passportconfig.js,index.js,package-lock.json,package.json']"
+2879eb80df93dc38c7daf5f4d8c6361436725e81,Oshan Mudannayake,2019-03-07,Merge pull request #235 from dilinade/packageUpdatesUpdated node package dependencies to latest,['']
+71f173cd425cb1493b99d11a6db19e4d8c44f12b,Dilina,2019-03-08,Migration to angular 6angular-cli.json file has been replaced with angular.json in version 6 of Angular.,['.angular-cli.json']
+46a4e19f0751f042346923e306f66ced7eed9b9d,Oshan Mudannayake,2019-03-08,Merge pull request #240 from dilinade/patch-2Migration to angular 6,['']
+cc85dc23467a4bb94c44e4ac4c03f1c32680b5df,Dilina,2019-03-10,Startup Script (Bash) for Mac/Linux,"['instructions.md,start.sh']"
+2067816d42d8d35b35ab27167215cf631d838ab8,Oshan Mudannayake,2019-03-11,Merge pull request #244 from dilinade/startupScriptStartup Script (Bash) for Mac/Linux,['']
+0b676db1540fde1c0b880df90d8d478be15046d8,Dilina,2019-03-12,"Updated dependabot configAs there was large number of PRs due to live updates, now the updated will be checked monthly.",['config.yml']
+30073bd31343bc27c6b8d72e48b4e06ced0c5fe6,Oshan Mudannayake,2019-03-13,Merge pull request #247 from dilinade/patch-3Updated dependabot config,['']
+55196efc53d5d922b1d5cef663d5516c49d6960d,Dilina,2019-04-01,Bug on Logo,"['user-dashboard.component.html,user-view.component.html']"
+42ec6a27937d35723ad875cf390b1d083516ef74,Oshan Mudannayake,2019-04-01,Merge pull request #252 from dilinade/LogoBugBug on Logo,['']
+4614b3a44538930877a16dc2263ce4632ffdb0fd,Dilina,2019-04-09,Removing Duplicate files,"['CONTRIBUTING.md,ISSUE_TEMPLATE.md,PULL_REQUEST_TEMPLATE.md']"
+28d7aaee5f3b4b06796ccb7959fdb1550298fa31,Oshan Mudannayake,2019-04-09,Merge pull request #268 from dilinade/DuplicateFilesRemoving Duplicate files,['']
+e6f59d6dcc0d600452d3ce46164df56142c2cedf,Dilina,2019-04-09,Checking out all community standards,['ISSUE_TEMPLATE.md']
+e7aaeb568c826e7cbfbac28250fbc4989c3c1c3b,Oshan Mudannayake,2019-04-09,Merge pull request #269 from dilinade/DuplicateFilesChecking out all community standards,['']
+e7fd0a7271f36f657bb6cf807eddd5b8603eb456,Dilina,2019-05-10,Timeout extended,"['dronepool.py,main.py']"
+3d40940201891dce42eaea5461bca117a7916ee7,Dilina,2019-05-10,Travis - node version,['.travis.yml']
+e72f032ca059aaf7d84c7afd9024b76f1441c13f,Oshan Mudannayake,2019-05-11,Merge pull request #295 from dilinade/DroneKitTimeOutTimeout extended,['']
+32bf15a229c2941e3eea11f476f02cbf98fb081f,Dilina,2019-05-17,Linted frontend,"['test.ts,package-lock.json,package.json,admin-authorize.service.ts,app-router.ts,app.module.ts,auth-http.service.ts,breadcrumb.component.ts,breadcrumb.ts,confirm-dialog.component.ts,cursor-tooltip.component.spec.ts,cursor-tooltip.component.ts,dashboard.component.html,dashboard.component.ts,drone-groups.component.html,drone-groups.component.ts,drone-list.component.html,drone-list.component.ts,drone-option-box.component.ts,drone-data.service.ts,drones-box.component.ts,login.component.ts,route-guard.service.ts,signup.component.ts,user-dashboard.component.ts,user-management.component.html,user-management.component.ts,user.service.ts,user-signup.component.ts,user-view.component.ts,tsconfig.json,tslint.json']"
+ef5847a563f6efb0db643f476e6ce548fe559e06,Dilina,2019-05-17,Linted Backend - node,"['.eslintrc.json,droneCtrl.js,userCtrl.js,group.js,user.js,droneRouter.js,userRouter.js,example.mongoconfig.js,jwtconfig.js,passportconfig.js,package-lock.json,package.json,drone_functions.js,drone_tests.js,generateUserData.js,test.js,user_functions.js']"
+35f500f0f62fb15b34bd755773fd4afba2972f93,Dilina,2019-05-17,Backend Linter (python),"['dronepool.py,main.py,mavparser.py,node.py,threadrunner.py']"
+e7fe7921853daa6e0d45ca532307841989d21238,Dilina,2019-05-17,Update main.py,['main.py']
+15fa8ac0ba46d5ab4346e6527708e23227b783f0,Oshan Mudannayake,2019-05-17,Merge pull request #297 from scorelab/LintingLinting,['']
+347d19cce6f480f0b67600458ca15978c312805b,dependabot-preview[bot],2019-06-01,[Security] Bump requests from 2.6.0 to 2.20.0 in /dronesym-pythonBumps [requests](https://github.com/requests/requests) from 2.6.0 to 2.20.0. **This update includes security fixes.**- [Release notes](https://github.com/requests/requests/releases)- [Changelog](https://github.com/kennethreitz/requests/blob/master/HISTORY.md)- [Commits](https://github.com/requests/requests/compare/v2.6.0...v2.20.0),['requirements.txt']
+da264f13acdc8b2c5e3bbc09731688de9be2be0d,Dilina,2019-06-02,Merge pull request #305 from scorelab/dependabot/pip/dronesym-python/requests-2.20.0[Security] Bump requests from 2.6.0 to 2.20.0 in /dronesym-python,['']
+176fa77df6619cc411a851bad5851fc0065eee1c,Dilina,2019-06-03,DB Migration Phase 01,"['drone-list.component.ts,droneCtrl.js,userCtrl.js,drone.js,droneRouter.js,dronesym-d5898-d1e47efbf5b5.json,index.js,package-lock.json,package.json,websocket.js']"
+5c95bbfd092f371d54aaf3a5dfe4b49b6767de88,Dilina,2019-06-03,DB Migration Phase 01,['.gitignore']
+df6ba7e9514d89d020fc46967875d47863d8b89f,Dilina,2019-06-03,DB Migration Phase 01,['dronesym-d5898-d1e47efbf5b5.json']
+965e03c910bd1ed8ebb8cb50f2dd18c4c352d856,Oshan Mudannayake,2019-06-05,Merge pull request #316 from dilinade/DBMigrationDb Migration - Phase 01,['']
+f0d58d9493805082158f96dc5fba9a467b899560,Dilina,2019-06-17,DBMigration Phase 02,"['.gitignore,login.component.html,droneCtrl.js,drone.js,dronepool.py']"
+16f96f03e9d914a59cfac642382243b8f7e0d9e4,Oshan Mudannayake,2019-06-17,Merge pull request #317 from dilinade/DBMigrationDb Migration Phase 02,['']
+804e783fde453c6a0c30255bbdc01e2ef16a374c,Dilina,2019-06-20,Static Drone  & User functions migrated,"['dashboard.component.html,dashboard.component.ts,drone-groups.component.ts,drones-box.component.html,drones-box.component.ts,user-management.component.ts,droneCtrl.js,userCtrl.js,drone.js,main.py']"
+e501df17893e974dd69d1d282e0926e2a3de918a,Oshan Mudannayake,2019-06-20,Merge pull request #318 from dilinade/DBMigrationDb Migration Phase 03,['']
+6ce99fe076b90431fca354c2111bee780ad96ce9,Dilina,2019-06-23,Added Tests after Migration,"['droneCtrl.js,drone_functions.js,test.js,user_functions.js,websocket.js,dronepool.py']"
+1310984144f7f1c1c004470f8ab5d0b25e0095c5,Dilina,2019-06-23,Update dronepool.py,['dronepool.py']
+8293a5619aa60dcfe58b05b46d84699df0bf3ebc,Oshan Mudannayake,2019-06-23,Merge pull request #319 from dilinade/DBMigrationDb Migration - Final Phase,['']
+a09ca6d0f5e086b755420a3c58db2fe180f93ab8,Dilina,2019-07-13,Initial - Forgot component,"['app-router.ts,app.module.ts,forgot-password.component.css,forgot-password.component.html,forgot-password.component.spec.ts,forgot-password.component.ts,login.component.html']"
+caaa8d9c786686092d3ab4872a63bc7d5428b775,Dilina,2019-07-13,Python fix,['dronepool.py']
+695939351c0e627c5a30ab56e0b2d4a5a1a3bc44,Oshan Mudannayake,2019-07-13,Merge pull request #341 from dilinade/forgotPasswordForgot password - Initial,['']
+66500149f494cb1117111777ab729254e0679bed,Dilina,2019-07-19,Merge branch 'develop' into develop,['']
+fea88b72804917f35682437e092690a91b57644f,Oshan Mudannayake,2019-07-19,Merge pull request #119 from emgaurv/developAdd User/Group Tests For mongoDB(Mongoose) Models,['']
+64f84cea2bd96358c3d3dcaf3165a2eadedc259f,Dilina,2019-07-20,Gatsby Init for Doc,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
+cc7b6b396b1533e64d906b0b7929f819bf774c1e,Dilina,2019-07-20,Renamed to Docs,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
+b27d38e5eb8056e1f512255c9acf0726068fa2aa,Dilina,2019-07-20,Renamed to Docs,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
+7d273a1648bf5709d533b73ea889a8915d9d132c,Oshan Mudannayake,2019-07-20,Merge pull request #342 from dilinade/DocumentationGatsby Init for Doc,['']
+e9c035698e872dda1734c04c650bc3079352e486,Dilina,2019-08-05,Documentation - DroneSym,"['gatsby-config.js,package-lock.json,package.json,header.js,image.js,layout.css,drone_logo.png,index.js,page-2.js']"
+7c2c5f841f7fb8ddd0e341987e2b96c22422365a,Oshan Mudannayake,2019-08-05,Merge pull request #361 from dilinade/DocumentationDocumentation - DroneSym,['']
+f5b040e23eadf275e2b63be0611ed85f45d9bc45,Dilina,2019-08-11,Fixed MongoDB realtime issue & Flight glitches,"['dashboard.component.ts,drone-data.service.ts,forgot-password.component.ts,droneCtrl.js,dronepool.py,test_dronepool.py']"
+22e38f18820cb2d3edde7b42fb6dbf1929961bb6,Oshan Mudannayake,2019-08-12,Merge pull request #362 from dilinade/FlightGlitchFlight glitch,['']
+2af8494e90f17e6cc10b38496673daadbc24d1f4,Oshan Mudannayake,2019-08-17,Merge pull request #363 from scorelab/db_migrationDB migration merge,['']
+2a42f23122742846217edc42efc49e20fd6f57d1,Dilina,2019-08-17,Cleared unwanted console logs & impl. second phase of forgot password,"['index.js,app.module.ts,drone-groups.component.ts,drone-list.component.ts,drones-box.component.ts,forgot-password.component.html,forgot-password.component.ts,new-password-dialog.component.css,new-password-dialog.component.html,new-password-dialog.component.spec.ts,new-password-dialog.component.ts,reset-code-dialog.component.css,reset-code-dialog.component.html,reset-code-dialog.component.spec.ts,reset-code-dialog.component.ts,signup.component.ts,user-management.component.ts,user.service.ts,user-signup.component.ts,droneCtrl.js,userCtrl.js,droneRouter.js,userRouter.js,package-lock.json,package.json']"
+84459a2872a881fffbb0ce9dd9c2cf7ecfda4540,Oshan Mudannayake,2019-08-17,Merge pull request #364 from dilinade/forgotPassword2Cleared unwanted console logs & implementation -  second phase of forgot password,['']
+f21c5ebc0ca956f2dc5e6f0dca3cb0458510ec14,Dilina,2019-08-18,Forgot password done,"['forgot-password.component.html,forgot-password.component.ts,login.component.html,new-password-dialog.component.ts,reset-code-dialog.component.html,reset-code-dialog.component.ts,user.service.ts,userCtrl.js,userRouter.js']"
+0c6c042c244818be47a132735f7f55faa5160108,Dilina,2019-08-19,Secured flask calls,['main.py']
+97d1bfe98a08a03d132691b1eca43828d67c4fb0,Oshan Mudannayake,2019-08-19,Merge pull request #365 from dilinade/forgotPassword2Forgot password done,['']
+8e52081dd939a522f164ee73449522a022d45661,Oshan Mudannayake,2019-08-19,Merge pull request #366 from dilinade/secureFlaskSecure flask,['']
+b6d16123a2c8502cbf585551469f4088e7d5bc61,Dilina,2019-08-20,Dockerized the app with 4 containers,"['.gitignore,docker-compose.yaml,.dockerignore,Dockerfile,package.json,.dockerignore,userCtrl.js,Dockerfile,user.js,example.mongoconfig.js,package-lock.json,package.json,Dockerfile,requirements.txt']"
+2238bb32c0cf0d182e0a6a58d4cbe11e4946864e,Dilina,2019-08-20,Added mongo env. variables,"['.gitignore,docker-compose.yaml,.env,example.mongoconfig.js,index.js,package-lock.json,package.json,drone_functions.js,user_functions.js']"
+225e2f68ca66a427f6d7faf1c43a13c81b426555,Dilina,2019-08-20,Python dependancy modification for travis,"['.travis.yml,requirements.txt']"
+cc1bffeb2c52b821afa073a00dcebb03d9ba7579,Dilina,2019-08-20,Update .travis.yml,['.travis.yml']
+553c2731760a585b22fc19990f4d44526bda97c8,Dilina,2019-08-20,Update .travis.yml,['.travis.yml']
+41d35ee8b3933294cabcc439739144ebaa86ccea,Oshan Mudannayake,2019-08-20,Merge pull request #367 from dilinade/DockerizeDockerize,['']
+100a334ed058f9f63776120685459f11e0603855,Dilina,2019-08-20,Updated Readme with MongoDB config.,['README.md']
+f7892d62cf087720b3afb665990edaae34bb76c8,Dilina,2019-08-20,Added service-workers and installability requirements,"['.travis.yml,angular.json,package-lock.json,package.json,app.module.ts,icon-128x128.png,icon-144x144.png,icon-152x152.png,icon-192x192.png,icon-384x384.png,icon-512x512.png,icon-72x72.png,icon-96x96.png,index.html,manifest.json,ngsw-config.json']"
+e55cc5df7e3b5630798ac1b6ffdcd01224391607,Oshan Mudannayake,2019-08-21,Merge pull request #368 from dilinade/PWA_Phase01Added service-workers and installability requirements,['']
+3efb6cccfa4e37dd914f9b91a1387ffa60202468,Dilina,2019-08-29,Security Fixes,"['package-lock.json,package.json,package-lock.json,package.json']"
+9f721f4afd9e0e57c812f8556e59e4c6cf3283ce,Oshan Mudannayake,2019-08-29,Merge pull request #372 from dilinade/securityFixesSecurity Fixes,['']
+27f7647fec9f2c408061c8a21efd8a99995b0a16,Geethmaka,2019-09-11,Update README.mdUpdate README.mdUpdate README.md,['README.md']
+0b58dea69fcd8f6a0bdf831e912c6e0035a20b5a,Dilina,2019-09-11,Merge pull request #388 from GeethOnion/developUpdated instructions for windows users,['']
+8b28b1f91812f278e1b01092bface3ad45fe374e,Dilina,2019-10-01,Removed Unwanted packages/files,"['apple-touch-192.png,index.html,droneCtrl.js,userCtrl.js,example.db.js,package-lock.json,package.json,main.py']"
+ae9ab772fb723b8e4c3298c86bfa690e3c281f79,Dilina,2019-10-01,Merge pull request #389 from dilinade/securityFixesRemoved Unwanted packages/files,['']
+1a77a8c214f8668b445c3fbe95ca23822221382a,Joseph Semrai,2020-01-10,Responsive changes,"['login.component.css,login.component.html,signup.component.css,signup.component.html,user-management.component.html,user-signup.component.html']"
+be8d7019b0a7367e3f7eef21118e12a4239c2a4a,Dilina,2020-01-10,Merge pull request #442 from JosephSemrai/developResponsive UI Changes,['']
+cbadf07403f89f7f278720b51fec0656441e3f2d,Sahan Dilshan,2020-01-26,Align Login and SignUp buttons,['login.component.html']
+ea303550e9c0c17385df707e3735f6887bc504c6,dependabot-preview[bot],2020-02-01,[Security] Bump handlebars from 4.1.0 to 4.7.2 in /dronesym-frontendBumps [handlebars](https://github.com/wycats/handlebars.js) from 4.1.0 to 4.7.2. **This update includes a security fix.**- [Release notes](https://github.com/wycats/handlebars.js/releases)- [Changelog](https://github.com/wycats/handlebars.js/blob/master/release-notes.md)- [Commits](https://github.com/wycats/handlebars.js/compare/v4.1.0...v4.7.2)Signed-off-by: dependabot-preview[bot] <support@dependabot.com>,['package-lock.json']
+1e28f19bfc74e4273dde6542f8eaa0aac14b4cc6,atharvcd,2020-02-29,Added Instructions to create data directory (#459)* Added instructions to create data directory,['README.md']
+891ee651918f45c84596e733e0ca93c1965fda28,Oshan Mudannayake,2020-02-29,Merge pull request #446 from scorelab/dependabot/npm_and_yarn/dronesym-frontend/handlebars-4.7.2[Security] Bump handlebars from 4.1.0 to 4.7.2 in /dronesym-frontend,['']
+de0d70546a638237663803e22d7d85ddd4325fd8,Oshan Mudannayake,2020-02-29,Merge pull request #445 from sahandilshan/developAlign Login and SignUp buttons,['']
+3f296588780c1b3c329d467416a75601a7903c42,dependabot-preview[bot],2020-08-01,Bump nodemailer from 6.3.0 to 6.4.11 in /dronesym-nodeBumps [nodemailer](https://github.com/nodemailer/nodemailer) from 6.3.0 to 6.4.11.- [Release notes](https://github.com/nodemailer/nodemailer/releases)- [Changelog](https://github.com/nodemailer/nodemailer/blob/master/CHANGELOG.md)- [Commits](https://github.com/nodemailer/nodemailer/compare/v6.3.0...v6.4.11)Signed-off-by: dependabot-preview[bot] <support@dependabot.com>,"['package-lock.json,package.json']"
+15a61731a99eb89ba9dc525560c8b8d3afd79fa8,Charitha Madusanka,2020-08-01,Merge pull request #534 from scorelab/dependabot/npm_and_yarn/dronesym-node/nodemailer-6.4.11Bump nodemailer from 6.3.0 to 6.4.11 in /dronesym-node,['']
