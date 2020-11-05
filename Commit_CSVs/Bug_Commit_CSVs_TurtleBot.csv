@@ -1,0 +1,14 @@
+Commit_ID,Contributor,Date,Message,Files
+68e67bbd72a97a82fdecdfa5a6551892de075e7d,pyo,2016-08-25,modified DXL comm_result bug,['turtlebot3_diff_driver_node.cpp']
+1cc53121413478e2699dea02b48f44c0b318eb1f,Darby Lim,2017-03-14,navigation bug fixed,"['amcl.launch.xml,map.pgm,package.xml,base_local_planner_params.yaml,costmap_common_params.yaml,dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml']"
+88a239085093d13a106fa8d5bc948e192868a937,Pyo,2017-03-14,fixed the bug that return the origin point,"['turtlebot3_fake.h,turtlebot3_fake.cpp']"
+00df091dd35b933c06994591d88b6d1e3d0d3332,Darby Lim,2017-04-07,bug fixed,['turtlebot3_robot.launch']
+98857b6f5dfb3a929f068d424ff9a321dadb5ff5,Taehoon Lim,2017-04-07,Merge pull request #45 from ROBOTIS-GIT/developbug fixed,['']
+23dc9ba42ccdaa7396a2ba1ea7c1df66a19d9e47,Taehoon Lim,2017-04-16,gazebo tf bug fixed,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro']"
+64b1cca5ae665885f4b205bf69905a1cf1809157,Darby Lim,2018-03-26,bug fixed,['turtlebot3_teleop_key']
+4decba26327a1b6f1c8bb8a85a8c96dbdf234911,Darby Lim,2018-04-18,modifiy camera position and fixed slip bug,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']"
+d0fc0a8ffab445cd2482072595c7a3d448b194c7,Darby Lim,2018-04-18,modify slip bug,['turtlebot3_burger.gazebo.xacro']
+b468e8c88be0ea83ac152e43b10b52ccd5b49c56,Darby Lim,2018-07-23,add debug code,['turtlebot3_diagnostics.cpp']
+adbe83c323a6c7c7ad4a896344d526da0e07c244,Darby Lim,2018-07-23,delete debug code,['turtlebot3_diagnostics.cpp']
+67193fe05a5908d5e7a07cdbdb35470da94157c3,kijongGil,2019-01-17,fixed TypeError integers,['turtlebot3_obstacle']
+c1180ebc2576850c64f1bc74917ea0993baf200e,Kayman,2019-05-09,"fixed a bug for release version - flat_world_imu_node.cpp - In case of release version, ROS_ASSERT is not called.(when macro NDEBUG is set.)",['flat_world_imu_node.cpp']

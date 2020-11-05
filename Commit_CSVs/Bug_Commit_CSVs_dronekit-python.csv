@@ -1,0 +1,59 @@
+Commit_ID,Contributor,Date,Message,Files
+241bacd3ec4d1ac720e0c45c5e562a0c08f3afa4,Kevin Hester,2014-12-05,Wait on reading params until after they have been fetched from vehicle.Fixes a bug reported by D Hugues.,['api.py']
+ee6b04b788a7021375ea16491de12cfcbaa45c68,Kevin Hester,2014-12-15,remove debugging output,['api.py']
+e8eda62c217ae36a3db03261c3f2cee7843e504e,Kevin Hester,2015-02-11,observers: print error msg for malformed observer callbacks,['']
+4e9ec24a91fb172e2176b3d6398f1c38111c7caf,Kevin Hester,2015-02-11,relase: 1.0.2 with minor error msg fixes,['setup.py']
+62333a50b4c10f022cb2bd9e730fb3a6c6612867,Ramón Roche,2015-02-22,"test throwing an error outside scope of testdisabling for now, we have to fix test.tlogError: HTTP Error 406: Invalid location data was found in that log, ignoring",['test-upload.py']
+1c3ca65d262c7e3e8fb6cd9f1bb9a67616e36d5c,Phu Nguyen,2015-03-19,- fixed formatting errors on the fourth example,['example_4.rst']
+040c78381d740184f58c91a37fb80b7fa7b675ff,Ramon Roche,2015-03-24,Merge pull request #27 from diydrones/bug/doc-errorsBug/doc updates,['']
+d6ff566983e02a079f7dd8b809a71afb891710d3,Hamish Willee,2015-03-30,Minor fixes to remove all build errors and fix linking/highlighting,"['.gitignore,automodule.rst,example_1.rst,example_2.rst,example_3.rst,example_4.rst,getting_started.rst,index.rst']"
+dad9223464db983f9306ef14c2143948ecb28a58,Kevin Hester,2015-03-31,Merge pull request #34 from hamishwillee/masterMinor fixes to remove all build errors and fix linking/highlighting,['']
+3ba0c965c52ed9f44ce17f5152136f6f8de6fefb,hamishwillee,2015-04-07,Tidy heading levels and fix doc build warnings caused by errors in __init__.py,"['automodule.rst,example_1.rst,example_2.rst,example_3.rst,example_4.rst,first_app.rst,getting_started.rst,index.rst']"
+4b1aeb21a08ff3d81d7c5f2b681dc2604bcbe7c4,Ramón Roche,2015-04-07,bump sphinx theme version to a stablepreviously the builds failed due to a package problem on the theme whereit didnt include required files for the theme.,['requirements.txt']
+414172706b3ce989a3906eee4d4305bcfc601e9f,Fabio Kru,2015-04-08,"Fixed the error ""AttributeError: 'MPStatus' object has no attribute'target_system'"" when trying to send a mavlink message.",['api.py']
+8b96d3f73d7b0e7ced8fe9418059a976b4a12866,Ramon Roche,2015-04-10,"Merge pull request #53 from jmacgithu/FixMPStatusAttributeErrorfixed the error ""AttributeError: 'MPStatus' object has no attribute",['']
+24de6aed51571b8e9c70ece431288db600f43fc4,hamishwillee,2015-05-11,Fix build errors in docs,"['license.rst,overview.rst,follow_me.rst']"
+d2995427a52dcf64de428b48a3211fee99be9876,hamishwillee,2015-05-15,"Add debugging topic. Add anchor in contributing.rst so can link to it. Note, not yet connected in index","['contributing.rst,debugging.rst']"
+b17b5eb6564bcfd244b64f3298baee6be32e63f3,hamishwillee,2015-05-15,Add debugging topic to the index,['index.rst']
+fc111f9185fb9408e8e3d8fa0f307924b884eb68,hamishwillee,2015-05-15,Add note about issue where we are tracking debugging improvements (#118) and highlight pdb site,['debugging.rst']
+764a5cd5f4d6e8860ae2bfe444f400e356ab07ce,Ramon Roche,2015-05-18,Merge pull request #117 from hamishwillee/tmp_debuggingAdds a debugging topic.,['']
+6d8a739c20d133d0f817068336a3c23882519ba7,hamishwillee,2015-06-25,Fix bug in the example calling wrong goto command in each section,"['guided-set-speed-yaw-demo.rst,guided_set_speed_yaw.py']"
+5c692fed43c7cc430de2d77361d800425f7ecc1c,Daniel Nugent,2015-07-07,Fixed import error for takeoff checks,['api.py']
+0b9e337f2cdfa08114acf90f1867c3542d8b8598,Tim Ryan,2015-07-07,Merge pull request #182 from djnugent/takeoff_fixFixed import error for takeoff checks,['']
+b2a4099b17bef4fe2df29ef281c4dcc00d5b1034,Tim Ryan,2015-08-12,Enables moddebug for VERBOSE outputs.,['__main__.py']
+618712f8716697d96e803f0a4471b3a6afbb4582,Tim Ryan,2015-10-13,Fixes raise error hiding stack trace.,['']
+b030927c4c9818f4b83f16dd6bdb5892e5895753,Hamish Willee,2015-10-22,Improvements to wording around connection defaults. Add warnings to mission examples because bugs not yet fixed,"['create_attribute.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,mission_import_export.rst,simple_goto.rst']"
+79e08cd553e69125604a9dc3df8ba10229ed5ef3,Hamish Willee,2015-10-22,"Fix up flight_replay.py doc/example to DKPY2. Note, still has bug #355","['flight_replay.rst,flight_replay.py']"
+98cdbbbef315047a6d9a3d1765068564101e3763,Tim Ryan,2015-10-22,"Merge pull request #360 from dronekit/hgw_flight_replay_example_docsFix up flight_replay.py doc/example to DKPY2. Note, still has bug #355",['']
+44b1c80ee4bdfefbeec6aab7898b0548503b8100,Tim Ryan,2015-11-02,Allows clear() on empty commands array. Fixes len < 0 bug.,['test_waypoints.py']
+3497ac1d884707774b127d2199a4a3adb4cf0e5e,Hamish Willee,2015-11-02,Add note about rounding errors in returned values,['mission_import_export.rst']
+ef53e5fd793246836e0b434ba300f6618cc4909f,Hamish Willee,2015-11-04,Fix errors in API ref generation due to file structure,['']
+0e01e7a80518880f6689dc56bcf32a2741a58785,Hamish Willee,2015-11-04,"Add docs on new connect baud parameter - #393. Fix up the debugging doc - #118, Fix auto-mode doc use of slice. Remove excluded methods from automodule generation as these are not longer present in init","['automodule.rst,auto_mode.rst,debugging.rst,getting_started.rst,migrating.rst']"
+57861b031d128d41532ae92df92c0547e87e365c,Tim Ryan,2015-11-05,"Merge pull request #410 from dronekit/hgw_baud_debuggingAdd/fix docs on baud parameter, debugg -",['']
+c0ddb13acaad23e30990b7c80bf0001c45b1892a,Tim Ryan,2015-11-11,Adds smarter error notification when errors occur.,['']
+75b572cd670f6c7e4164d4b2e74d53859cb710e9,Tim Ryan,2015-11-11,Merge pull request #447 from dronekit/tcr-432Adds smarter error notification when errors occur.,['']
+d1919d5eda68f4e7977fae2e98483de24e8f9e45,Tim Ryan,2015-11-11,Prevents division error in battery instantiation.,['test_298.py']
+10e76ce81be071d72d79f7554d15f5173189c8ad,Tim Ryan,2015-11-11,"Fixes battery test, fixes battery bug!",['test_earlyattrs.py']
+e9e40352c4b27e19e57b903d984401cc28c216ae,Tim Ryan,2015-11-11,Merge pull request #431 from dronekit/tcr-batteryracePrevents division error in battery instantiation.,['']
+0bcb94afd99673296032e24f55301b72aab7a075,Tim Ryan,2015-11-17,Adds error exception in message listener.,['mavlink.py']
+c7082062f2b2b9362ecff2806d18c00c4ce62861,Tim Ryan,2015-11-17,Populates frames with None values. Fixes float bug in alt.,['test_locations.py']
+ceacc12914d441b38c6480aceb76859f6538dfa9,Hamish Willee,2015-11-23,Fix error due to incorrect access of location in callback in drone_delivery,"['drone_delivery.rst,drone_delivery.py']"
+af46c1b03b6df04e0f62c753a810040d5a764beb,GOPI,2015-12-01,"drone_delivery fails when try to execute go to command, this is due to a bug executing simple_gotochanged line 113 and 120 from self.simple_goto to self.vehicle.simple_goto",['drone_delivery.py']
+01fce1f931b24a915d108d9b0d21ed238d24a793,mgrennan,2016-02-04,Updates for debuging and connections via TCP,"['connecting_vehicle.rst,debugging.rst']"
+ad726914ab9d0279d7a8d4f338ba995f9a48146b,Hamish Willee,2016-02-04,Additions to debugging and connecting_vehicle,"['connecting_vehicle.rst,debugging.rst']"
+6c4fe4c16274cbfc5c68ca4d2cd087a27618d7c9,Tim Ryan,2016-03-01,Swallow message errors and continue.,['']
+2235c943c395116fa9c552be2303b476db1d08ac,Tim Ryan,2016-03-01,Swallow attribute errors and continue.,['']
+b201c51172c9889a1c70a78263e56dea9191ccd9,Peter Barker,2016-03-01,"Merge pull request #587 from dronekit/tcr-pleaseCatch and display message and attribute errors, then continue.",['']
+c2c4745ef283025d9e4d17690b21ef921bd242a8,fnoop,2016-04-17,#610: Add test case that triggers the bug,['test_modeavailable.py']
+63943a363d9b8150c397757aaab47167bee1f329,peng,2016-08-22,"fix a bug where global_frame is used in case which global_relative_frame should be used instead, it causes the drone to take off using a very low sea-level altitude, so it won't leave the ground and its engine will be disarmed shortly after.",['test_goto.py']
+a51f51fdf420e32f2c1ce1210ec883aec721d36a,Hamish Willee,2016-08-23,Merge pull request #653 from tribbloid/fix-test_gotofix a global_frame altitude caused bug in sitl test,['']
+fb004baddbedc510e17726474e8c40af88ccb208,Ramon Roche,2016-09-19,"basic python 3 support (#655)* basic python 3 support* pyenv support* test python 2 and 3 on travis* test py 2.7 3.5 on circleci* debug travis nose tests* install to virtualenv","['.gitignore,.travis.yml,circle.yml,mavlink.py,requirements.txt,setup.py']"
+c633a5ca514ac6464a00814f578237e031fef486,cclauss,2017-04-21,"Python 3: define basestring, use bytes.decode() (#705)* Run flake8 tests against both Python 2 and 3* Python 3: from past.builtins import basestring* Python 3: from __future__ import print_function* Update simple_goto.py* flake8 --max-line-length=127* Python 3: from __future__ import print_function* Separate flak8 run just for syntax errors","['.travis.yml,drone_delivery.py,simple_goto.py']"
+5d2614f79092cc3ea03062a084579eb16577cd22,Jerry Lynch,2017-04-27,fix BaseException.message deprecated in 2.6 and now an error in 3.x,['mavlink.py']
+754ce6223dd26179045eaa394d5df0a5f787ebb2,cclauss,2017-09-07,"Define name `time_max` in sitl/test_110.pyWithout this change, a NameError is raised on line 50.",['test_110.py']
+f9991fde389d55ce1cb030a80b5dbbf02e13657d,Lars Kellogg-Stedman,2017-11-08,"raise ValueError if we are passed a bad valueGiven a bad value, we were sometimes raising a bare Exception,sometimes raising a ValueError, and sometimes raising an APIError.This commit attempts to make things consistent by raising ValueErrorwhen that's what we mean.There is also a drive-by correction to the spelling of ""Expecting"".",['']
+200fbaf50208e0d7a99dbd026d2324ff6b26a03b,Lars Kellogg-Stedman,2017-11-08,raise KeyError instead of a bare ExceptionThis removes the last instance of the code raising a bare Exception.Since this is a failure in a __setitem__ method it seems reasonable toraise a KeyError.,['']
+de31ac6a80c8edb82efbfde7b99e4a3de72fe2b0,Lars Kellogg-Stedman,2018-01-09,update connecting_vehicle with a serial exampleNew dronekit users will often encounter timeout errors when attemptingto open a serial connection (as in #704 andhttps://stackoverflow.com/q/48168953/147356).  This updates thedocumentation to include an example for a serial connection and a noteabout setting the baud rate.,['connecting_vehicle.rst']
+87abf28c4e5a08dabee35c36565e6cc6162b28d6,Pietro De Nicolao,2018-03-27,"circle.yml: fix the build- Install future beforehand as workaround to pymavlink bug: https://github.com/ArduPilot/pymavlink/issues/25- Install dependencies before dronekit, not after",['circle.yml']
+16d6a793e5132e24263754d4af68b3d81e58b014,pietrodn,2018-11-01,mavlink.py: specific exception handling for MAVError,['mavlink.py']
+fe6c62313831c7d4847ae8009af3f6400aea8c5e,Ross Higa,2019-11-13,Fixed error in code commentsThe serial example code said it was for a UDP endpoint,['connecting_vehicle.rst']
