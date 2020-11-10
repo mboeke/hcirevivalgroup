@@ -17,7 +17,7 @@ for key, repository in repositories.iterrows():
         writer.writeheader()
         bug_commits = []
         # print(RepositoryMining(repository['URL']).branches())
-        for commit in RepositoryMining('https://github.com/ROBOTIS-GIT/turtlebot3', only_in_branch='foxy-devel').traverse_commits():
+        for commit in RepositoryMining(repository['URL']).traverse_commits():
             curr = []
             for modified_file in commit.modifications:
                 # ignore certain files common on each git repo, but unnecessary
@@ -25,7 +25,7 @@ for key, repository in repositories.iterrows():
                     curr.append(modified_file.filename)
             commit_mess = commit.msg.replace('\n','')
             commit_mess.replace('\t', '')
-            if len(curr) > 0:
+            if len(curr) in range(1, 11):
                 writer.writerow({
                     'Commit_ID': commit.hash,
                     'Contributor': commit.author.name,
