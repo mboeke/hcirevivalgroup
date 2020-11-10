@@ -1,8 +1,8 @@
 Commit_ID,Contributor,Date,Message,Files
-8716e99289504023db64b0b81e9f04526f6b57f9,Charitha Madusanka,2017-03-21,Initial commit,"['.gitignore,LICENSE']"
-3cb72bf6da76a995286d00c912a7c25a79f981c5,Hasanga Somaratne,2017-05-02,Initial skeleton of Flask API to handle Dronekit SITLs,"['.gitignore,main.py']"
+8716e99289504023db64b0b81e9f04526f6b57f9,Charitha Madusanka,2017-03-21,Initial commit,['LICENSE']
+3cb72bf6da76a995286d00c912a7c25a79f981c5,Hasanga Somaratne,2017-05-02,Initial skeleton of Flask API to handle Dronekit SITLs,['main.py']
 f44cf1a453e5cd812be15a3ced72934b0d448b04,Charitha Madusanka,2017-05-03,Merge pull request #1 from hasa93/masterInitial skeleton of Flask API to handle Dronekit SITLs,['']
-c44b3f16d641fb868109c00ea10701d29ac3d47c,Hasanga Somaratne,2017-05-08,Integrate firebase,"['.gitignore,config.ini,db.py']"
+c44b3f16d641fb868109c00ea10701d29ac3d47c,Hasanga Somaratne,2017-05-08,Integrate firebase,"['config.ini,db.py']"
 2cb20561d7ee4e06b783c5afbf169eb50f78436a,Hasanga Somaratne,2017-05-10,Load drones from the db at startup,"['dronepool.py,main.py']"
 a45758b2ff39dafb25f3817b50bdb2e4ba4945ce,Hasanga Somaratne,2017-05-11,Initiate new SITL from the last location,['dronepool.py']
 e837b48ca5ca13a04f54daaec69e6543c038718a,Hasanga Somaratne,2017-05-11,Start drone at the specified home location,"['dronepool.py,main.py']"
@@ -15,10 +15,10 @@ a565642e642c4cd1919ef88f66c78543d0fd1ca5,Hasanga Somaratne,2017-05-22,Use Node A
 36261bf51099ac4c52916dc940ee76947074a104,Hasanga Somaratne,2017-05-22,Add timestamp to updates,['droneCtrl.js']
 df372b215722f696fd6440ca28925e8b93e3824d,Hasanga Somaratne,2017-05-26,Implement basic landing functionality,"['droneCtrl.js,droneRouter.js,db.js,dronepool.py,main.py,mavparser.py']"
 bd466184da328e5886cae82e0532c42c8ce0dd82,Raveen Harith Perera,2017-05-26,Merge pull request #2 from hasa93/masterIntegrate firebase,['']
-6336ca9b80b0445d9844bfbb665d4fd3fcc2d7ba,Hasanga Somaratne,2017-06-06,Add README and python requirements,"['README.md,requirements.txt']"
+6336ca9b80b0445d9844bfbb665d4fd3fcc2d7ba,Hasanga Somaratne,2017-06-06,Add README and python requirements,['requirements.txt']
 0848f85cd95f54b4d2e46951ade5224b7d27516e,Hasanga Somaratne,2017-06-06,Bugfix on landing routine,"['dronepool.py,mavparser.py']"
 07715c428cec7ce4a5fd533d3c9c419d4d741654,Charitha Madusanka,2017-06-06,Merge pull request #3 from hasa93/masterAdd README and python requirements,['']
-ee9e14e9b8bebc70d286809106e5fe5389f5d54f,Hasanga Somaratne,2017-06-16,Integrate angular2,"['.angular-cli.json,.editorconfig,.gitignore,README.md,app.e2e-spec.ts,app.po.ts,tsconfig.e2e.json,karma.conf.js,package-lock.json,package.json,protractor.conf.js,app.component.css,app.component.html,app.component.spec.ts,app.component.ts,app.module.ts,.gitkeep,environment.prod.ts,environment.ts,favicon.ico,index.html,main.ts,polyfills.ts,styles.css,test.ts,tsconfig.app.json,tsconfig.spec.json,typings.d.ts,tsconfig.json,tslint.json']"
+ee9e14e9b8bebc70d286809106e5fe5389f5d54f,Hasanga Somaratne,2017-06-16,Integrate angular2,"['.angular-cli.json,.editorconfig,app.e2e-spec.ts,app.po.ts,tsconfig.e2e.json,karma.conf.js,package-lock.json,package.json,protractor.conf.js,app.component.css,app.component.html,app.component.spec.ts,app.component.ts,app.module.ts,.gitkeep,environment.prod.ts,environment.ts,favicon.ico,index.html,main.ts,polyfills.ts,styles.css,test.ts,tsconfig.app.json,tsconfig.spec.json,typings.d.ts,tsconfig.json,tslint.json']"
 f8463b6aa4ef47f58f8a7e062a086ac70ba370a8,Hasanga Somaratne,2017-06-16,Add bower,['bower.json']
 312f12348ef8e76a0fc9cf1994d35e5a604c5cb6,Hasanga Somaratne,2017-06-17,Integrate google maps,"['package.json,app.component.css,app.component.html,app.component.ts,app.module.ts,styles.css']"
 acd7354548087fb2d3f78ae68e44745d29507fa1,Hasanga Somaratne,2017-06-17,Integrate firebase,['package.json']
@@ -34,14 +34,14 @@ c78fa9a2e8445b425964f350b711d7ebab20f951,Hasanga Somaratne,2017-06-20,Send drone
 65685d1d6e6a8cf5a8dccca4d4710755f6ffae04,Hasanga Somaratne,2017-06-20,Update the environmental variables for angular app,['environment.ts']
 6ff9d80a3fd159bd437579a0b7271b47ae19c81e,Raveen Harith Perera,2017-06-20,Merge pull request #4 from hasa93/masterDronesym frontend integration,['']
 f91b3020899b81280b0306fc73d1b78cd5a63219,Hasanga Somaratne,2017-06-20,Implement dropping drones by mouse,"['app.component.css,app.component.html,app.component.ts,app.module.ts,confirm-dialog.component.css,confirm-dialog.component.html,confirm-dialog.component.spec.ts,confirm-dialog.component.ts,cursor-tooltip.component.css,cursor-tooltip.component.html,cursor-tooltip.component.spec.ts,cursor-tooltip.component.ts']"
-4856929f07fca4ada7a1d33e43bcd8e9546d6c9a,Hasanga Somaratne,2017-06-20,Update installation instructions,['README.md']
+4856929f07fca4ada7a1d33e43bcd8e9546d6c9a,Hasanga Somaratne,2017-06-20,Update installation instructions,['']
 a9cc8bbfbc8875f1febd1cb89cfcbfd1ab029163,Hasanga Somaratne,2017-06-20,Resolve a merge conflict in environment.ts,['.bowerrc']
 e7d1ec72f59ee645e2a1016a98d56bbcf8ffb75e,Raveen Harith Perera,2017-06-22,Merge pull request #5 from hasa93/masterFunctionality to drop drones by clicking,['']
 fe6b087fcd1f1aeb35712f81a791d023d2e4f55b,Hasanga Somaratne,2017-06-22,Refactor mouse element creation functionality,['app.component.ts']
 c90d03a8d98ae71fcc3bcad574d0080c977fbe24,Hasanga Somaratne,2017-06-22,Display drone options when a marker is clicked,"['app.component.html,app.component.ts,app.module.ts,drone-option-box.component.css,drone-option-box.component.html,drone-option-box.component.spec.ts,drone-option-box.component.ts']"
 aa70c5f9c4ad763ca96b4fd0af73e67be687dc1f,Raveen Harith Perera,2017-06-24,Merge pull request #6 from hasa93/masterDisplay drone options when markers are clicked,['']
-9d9d87cd8733ff2b08820864429807814d7ab1b9,rhperera,2017-06-25,Rewrite main READMEAdd the front end readme part to main file. Change the enviroment path of the front-end,"['README.md,README.md']"
-3522ef36e26fff948057948d8782344ad53aca3a,rhperera,2017-06-25,refactor readme,['README.md']
+9d9d87cd8733ff2b08820864429807814d7ab1b9,rhperera,2017-06-25,Rewrite main READMEAdd the front end readme part to main file. Change the enviroment path of the front-end,['']
+3522ef36e26fff948057948d8782344ad53aca3a,rhperera,2017-06-25,refactor readme,['']
 54842114be781658dbab58893f43fe4bf38cc8d8,Raveen Harith Perera,2017-06-25,Merge pull request #7 from rhperera/masterRewrote the readme with some additions,['']
 bf85f05e873957e6251a4f898581a05d18e5b3fc,Hasanga Somaratne,2017-06-25,Create waypoints frontend functionality,"['app.component.css,app.component.html,app.component.ts,drone-option-box.component.ts,drone-data.service.ts']"
 0f03fbf98b22a05690c24a48cb5af4705a329678,Hasanga Somaratne,2017-06-25,Add create waypoints backend functionality,"['droneCtrl.js,droneRouter.js']"
@@ -88,21 +88,21 @@ df7229ac2a224c46b3eaa9ba8cd0af2a878b63af,Hasanga Somaratne,2017-07-23,Role based
 acbd7c732bb2c741ff1c993d99b9a197b1bd2615,Raveen Harith Perera,2017-07-23,Merge pull request #20 from hasa93/developUser authentication,['']
 e9f135c733bc025315dcfea60316c4d9562fbd78,Hasanga Somaratne,2017-07-23,Retry when connetion error,['node.py']
 4d92474af2d5aece19c39cba45a4e6ceb5acea5f,Hasanga Somaratne,2017-07-24,Seperate monogdb uri to a mongoconfig file,"['mongoconfig.js,index.js']"
-063ff468adfa9cdd92715b955fdf2fc20245b36b,Hasanga Somaratne,2017-07-24,Include environment example file,"['.gitignore,example.environment.ts']"
-58855c204c73ce4291c23217022e5765dca9447c,Hasanga Somaratne,2017-07-24,Include example db.js,"['.gitignore,example.db.js']"
+063ff468adfa9cdd92715b955fdf2fc20245b36b,Hasanga Somaratne,2017-07-24,Include environment example file,['example.environment.ts']
+58855c204c73ce4291c23217022e5765dca9447c,Hasanga Somaratne,2017-07-24,Include example db.js,['example.db.js']
 fccb90fd8780379e8da12c63e5d54681b325cbc8,Hasanga Somaratne,2017-07-24,Stop updating db when not in flight,['dronepool.py']
 b0121b3fc7bb86e33dc13f09efddfbaf539d0356,Hasanga Somaratne,2017-07-25,Turn waypoint icons red in delete mode,"['dashboard.component.html,dashboard.component.ts']"
 a8fafd2dc6a5fd9d6554b33d490a42795d2e7774,Hasanga Somaratne,2017-07-25,Merge remote-tracking branch 'upstream/develop' into develop,['']
 a060fbeba270a926843e134063e673547e080bb5,Raveen Harith Perera,2017-07-25,Merge pull request #21 from hasa93/developFix [#9] [#10],['']
-113c82c0691477ef5aa7e3ea4746fb9bd9f50dfb,Hasanga Somaratne,2017-07-25,Fix a typo in README,['README.md']
+113c82c0691477ef5aa7e3ea4746fb9bd9f50dfb,Hasanga Somaratne,2017-07-25,Fix a typo in README,['']
 96d860d2d9196cbc45a13cd1c5b8ff2234f0b76a,Hasanga Somaratne,2017-07-25,Fix db.js gitignore issue,['db.js']
-3b9da493f760ce44f71dcb5bc97394b832426f61,Hasanga Somaratne,2017-07-25,Add docker instructions,['README.md']
+3b9da493f760ce44f71dcb5bc97394b832426f61,Hasanga Somaratne,2017-07-25,Add docker instructions,['']
 786fb2de618518dfe83598959084043fe0c2d063,Raveen Harith Perera,2017-07-25,Merge pull request #23 from hasa93/developCleanups and fixes,['']
-292a06e9aa38ba14af294211cff1939a0ee91d06,Hasanga Somaratne,2017-07-25,Add an example mongoconfig file,"['.gitignore,example.mongoconfig.js']"
+292a06e9aa38ba14af294211cff1939a0ee91d06,Hasanga Somaratne,2017-07-25,Add an example mongoconfig file,['example.mongoconfig.js']
 2c5a200abc9940a5cef6ccb7bc93aaa058dbfabf,Hasanga Somaratne,2017-07-25,Merge remote-tracking branch 'upstream/develop' into develop,['']
 810bae24b7d3fc61f9a50384baa94078c5603c2f,Hasanga Somaratne,2017-07-26,Add resume flight capability,['dronepool.py']
 e5538c43ffc32281147d93e08beba5a1b1bf6926,Hasanga Somaratne,2017-07-26,Bug fixes,['dronepool.py']
-f60aa422b6e824c4954e160778fa1d761806a205,Hasanga Somaratne,2017-07-26,Delete example credential file,"['.gitignore,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']"
+f60aa422b6e824c4954e160778fa1d761806a205,Hasanga Somaratne,2017-07-26,Delete example credential file,['dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']
 d49bc9a42d9bdc9e44f6f656c0daf3245c31e853,Hasanga Somaratne,2017-07-26,Remove unnecessary takeoff command,['mavparser.py']
 2b2e8d2a1e4706dc0826579e5394d0322040dba5,Hasanga Somaratne,2017-07-26,Resume flight route,['main.py']
 1b83f30f9c0915e0d307afed10fe30be48fcedd3,Hasanga Somaratne,2017-07-26,Add express resume flight route,"['droneCtrl.js,droneRouter.js']"
@@ -110,7 +110,7 @@ d49bc9a42d9bdc9e44f6f656c0daf3245c31e853,Hasanga Somaratne,2017-07-26,Remove unn
 bd4424bfdf07c1af76cf77e4df4ab3525c1939fe,Hasanga Somaratne,2017-07-26,Bugfix on resume logic,['dronepool.py']
 c3150a0023101f954fd7fe5e4414d8eddab02037,Hasanga Somaratne,2017-07-26,Frontend functionality for drone control,"['dashboard.component.html,dashboard.component.ts,drone-option-box.component.css,drone-option-box.component.html,drone-option-box.component.ts,drone-data.service.ts']"
 62055a1f6bcc1d16a6b2a5f3928bb29f6fd98cb8,Raveen Harith Perera,2017-07-27,Merge pull request #25 from hasa93/developMinor cleanups,['']
-9f8b044f32b951f027023d875864614183ed087b,Hasanga Somaratne,2017-07-27,Delete example credential file,"['.gitignore,dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']"
+9f8b044f32b951f027023d875864614183ed087b,Hasanga Somaratne,2017-07-27,Delete example credential file,['dronedb-213c3-firebase-adminsdk-7u7ke-14febae0d1.json']
 ffeccf6575de15249c8d070615bf8ed6ac44837c,Hasanga Somaratne,2017-07-27,Merge remote-tracking branch 'upstream/develop' into develop,['']
 efa7f6ecd155dc8390e0f86753f67a6185ef90c0,Hasanga Somaratne,2017-07-28,Reset waypoints to default icon when not in a create mode,['dashboard.component.ts']
 9a5a44110ffd879345f53ee301b0948590e528d9,Hasanga Somaratne,2017-07-28,Bug fix on resuming flight,"['dronepool.py,mavparser.py']"
@@ -133,9 +133,9 @@ fae09a580eac00040b33fbdbbfb654e3f1488c96,Hasanga Somaratne,2017-08-07,Add drone 
 b7e7928796b4fa94705d98718577cbfded521574,Hasanga Somaratne,2017-08-07,Merge remote-tracking branch 'upstream/develop' into develop,['']
 172d1718a5f15f115ab85c4fafef5ea78f4e0f5f,Raveen Harith Perera,2017-08-08,Merge pull request #33 from hasa93/developDrone group management functionality,['']
 3a5d305d46857e42f8e696b0d2af4efba882ca18,Raveen Harith Perera,2017-08-08,Change pytest command for trusty envs,['.travis.yml']
-078bdaa574d0516162bd5a60dc9d6a7be0595ff5,rhperera,2017-08-08,Add pytest cache to gitignore,['.gitignore']
+078bdaa574d0516162bd5a60dc9d6a7be0595ff5,rhperera,2017-08-08,Add pytest cache to gitignore,['']
 b9b75dca655bfafe87328944c02569cca3eda47d,rhperera,2017-08-08,Add initial dummy unit test,"['lastfailed,test_default.py']"
-f942e45cb740295e458c5910d8f1deb78a22aa06,rhperera,2017-08-08,Add travis build status to readme,['README.md']
+f942e45cb740295e458c5910d8f1deb78a22aa06,rhperera,2017-08-08,Add travis build status to readme,['']
 497607b703ef144c0abeee89fccf5ed54e13c8a4,Hasanga Somaratne,2017-08-09,Store drone users in an array,['droneCtrl.js']
 e7ba997cb14f9acdcb8df661eed78aa0b1879c54,Hasanga Somaratne,2017-08-09,Bugfix on selecting drones,"['drones-box.component.html,drones-box.component.ts']"
 22b175a5885da3681b233371d216f27bf3afea72,Hasanga Somaratne,2017-08-09,Update python requests version to fix openssl v3 error,['requirements.txt']
@@ -166,14 +166,14 @@ a1271c74a0cbb9e3e38c131fb56bfcef2718c458,Hasanga Somaratne,2017-08-23,Create use
 91a83a0fc53c0ba37242ed59d596b5b56fd68403,Hasanga Somaratne,2017-08-25,Re-implement using python threading,"['dronepool.py,main.py,threadrunner.py']"
 4d229db31bd454920564fabdbfb0c64470b7165e,Raveen Harith Perera,2017-08-25,Merge pull request #44 from hasa93/developRe-implement using python threading,['']
 69b323b534fe90b0f109efdb6fe331ef5921433e,Hasanga Somaratne,2017-08-27,Fix test cases,['test_dronepool.py']
-4a6ccf2cbd96285d961f818d0bfcd7f7838d4227,Hasanga Somaratne,2017-08-28,Include initial user creation instruction,['README.md']
+4a6ccf2cbd96285d961f818d0bfcd7f7838d4227,Hasanga Somaratne,2017-08-28,Include initial user creation instruction,['']
 919b07dbd58a291599bf571d6852bf1662e6d451,Raveen Harith Perera,2017-08-28,Merge pull request #45 from hasa93/developFix test cases,['']
 fde4820d7a50249b8b010dcdfa8da42737d3cf54,Hasanga Somaratne,2017-08-30,Fix instance number not updating when creating new drones issue,['dronepool.py']
 c60f1a72b354043a75795e17a276a6e9579336ff,Raveen Harith Perera,2017-10-25,Merge pull request #47 from hasa93/developFix instance number not updating when creating new drones issue,['']
-ea9040ce858a43ffdb33a324fb7d4cc9479830e3,Malith Senaweera,2017-11-26,Fix a minor typo in README,['README.md']
-5a8fa98ce59b8bfbe2062c98748a1a7304643b0f,Malith Senaweera,2017-11-26,Add a db dump,"['README.md,groups.bson,groups.metadata.json,users.bson,users.metadata.json']"
+ea9040ce858a43ffdb33a324fb7d4cc9479830e3,Malith Senaweera,2017-11-26,Fix a minor typo in README,['']
+5a8fa98ce59b8bfbe2062c98748a1a7304643b0f,Malith Senaweera,2017-11-26,Add a db dump,"['groups.bson,groups.metadata.json,users.bson,users.metadata.json']"
 209c71ee0092c13fa15ab998e02cfc7aa2c3f177,Malith Senaweera,2017-12-21,Remove incorrect global declaration inside __main__ block,['main.py']
-f1620ce33e18e9df7373a28ab2f2e98ffd7cae6e,shlokj,2018-01-03,Update .gitignore,['.gitignore']
+f1620ce33e18e9df7373a28ab2f2e98ffd7cae6e,shlokj,2018-01-03,Update .gitignore,['']
 9a2c76d48750ed54471a642d275b251151eef21b,Moses Paul R,2018-01-13,Update package.jsonperforming changes requested by @malithsen,['package.json']
 3bdae544542610cea7137abf8d1db0eb78ccc3a7,Moses Paul R,2018-01-19,Create ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md']
 646323b0e3bc2428df4b88677344603626a01995,Moses Paul R,2018-03-26,Create CONTRIBUTING.md,['CONTRIBUTING.md']
@@ -186,7 +186,7 @@ d95be3154113b7191b15f63a8e430e16792e58a7,Oshan Mudannayake,2018-03-26,Fix packag
 7094358d8e27488436101f8bc623efb33ba8bc50,violentdelight,2018-10-02,Added editorconfig,['.editorconfig']
 469bdfac0a15bcfe44c26718c8d8c127f9ffe120,Oshan Mudannayake,2018-10-12,Merge pull request #98 from violentdelight/add-editorconfigAdded editorconfig,['']
 dbda109bc2bf71eda9bf77aaadd3373a4ed08b16,Oshan Mudannayake,2018-10-12,Merge pull request #89 from iammosespaulr/patch-3Create ISSUE_TEMPLATE.md,['']
-1e4fc601bf3b0c483831e4fa9a5fe816e527b4e3,Gaurav Pandey,2018-10-24,Add Codacy Shield & DroneSym Logo,['README.md']
+1e4fc601bf3b0c483831e4fa9a5fe816e527b4e3,Gaurav Pandey,2018-10-24,Add Codacy Shield & DroneSym Logo,['']
 3cbb8967aab4943fe07f0646241fff0f1484b058,Jakub Mularski,2018-10-29,Added tests for drone create,"['droneCtrl.js,userCtrl.js,example.db.js,index.js,package-lock.json,package.json,droneCtrl.js']"
 cab1976d652492283882036e38f6f4e6dd623d2a,Jakub Mularski,2018-10-29,Forgot to reset example.db to defaults,['example.db.js']
 4a82621b84c72d7eebd5d7c8282ddf5ab888e182,Jakub Mularski,2018-10-30,Made tests adhere to project code style,"['droneCtrl.js,droneCtrl.js']"
@@ -207,10 +207,10 @@ b358d115b51a271678929bbc1e95a53ba308f610,Oshan Mudannayake,2018-10-31,"Merge pul
 f08d3371513d7253422bfd998f1810f05b427d76,Jakub Mularski,2018-11-06,Fixing code quality,['user_functions.js']
 dfa6a0cb7e4188256c8f8654faf9b63244b02973,Jakub Mularski,2018-11-06,docs(jsdoc): added basic JSDoc for every method of controller,"['droneCtrl.js,userCtrl.js']"
 8d215296bf3fc849601d849873466c5c06db9806,GeethOnion,2018-11-14,Added unit test,['test.js']
-96a9015423dd617fad151cee6a2a0f84f2a07442,GeethOnion,2018-11-14,Update README.md,['README.md']
-15240840c454f45a88c0457b37a5bcb4c30dab4b,GeethOnion,2018-11-14,Update README.md,['README.md']
+96a9015423dd617fad151cee6a2a0f84f2a07442,GeethOnion,2018-11-14,Update README.md,['']
+15240840c454f45a88c0457b37a5bcb4c30dab4b,GeethOnion,2018-11-14,Update README.md,['']
 97690fd04208011026999f90395c180e403087dd,anuragparida,2018-11-15,Add unit test file,['drone_tests.js']
-af5edee7b6bc9c9115b88da58f42e95a30df5e9c,tintinmovie,2018-11-17,Update README.md,['README.md']
+af5edee7b6bc9c9115b88da58f42e95a30df5e9c,tintinmovie,2018-11-17,Update README.md,['']
 0d630abff4c26335c7ee044aa4a4573c9990a33f,Łukasz Myśliwiec,2018-11-17,Add Some Login Tests,"['login.e2e-spec.ts,login.po.ts,app.e2e-spec.ts']"
 bafa3f4b129299eaa61a9344d354b10d1692e5c5,Oshan Mudannayake,2018-11-18,Merge pull request #141 from TheLukaszNs/develop[GCI] Add Login e2e tests for Frontend,['']
 a76eb224b70ef872696fc1719346806e8f335c4a,Oshan Mudannayake,2018-11-24,Merge pull request #138 from anuragparida/developAdd unit test file in dronesym-node/tests/drone_tests.js,['']
@@ -218,9 +218,9 @@ a76eb224b70ef872696fc1719346806e8f335c4a,Oshan Mudannayake,2018-11-24,Merge pull
 b57d31ba7e5cd5db7af57a8b55edc29384bfcf1c,Oshan Mudannayake,2018-11-24,Merge pull request #139 from tintinmovie/patch-1Update README.md with instructions for running tests,['']
 3ffa2311f41b3ac7d93c332c3f8ac6e03367f43d,Oshan Mudannayake,2018-11-24,"Merge pull request #100 from hcktheheaven/readme.md-Change-GCIAdd Codacy Shield, Gitter Badge & DroneSym Logo",['']
 3a7f37d1e09c179cd44e0ea2dcc7234d0cb077ee,Łukasz Myśliwiec,2018-12-03,Sync changes with upstream,['']
-a5ef95f419e64b6d3fc58ae0954741a65534b0d7,Łukasz Myśliwiec,2018-12-03,Update README file to inform about env filesUpdated the README file to include the note about environment files.,['README.md']
+a5ef95f419e64b6d3fc58ae0954741a65534b0d7,Łukasz Myśliwiec,2018-12-03,Update README file to inform about env filesUpdated the README file to include the note about environment files.,['']
 e33e65970d0ec3f771815f30f3961fb0b60efc3e,Oshan Mudannayake,2018-12-04,Merge pull request #157 from TheLukaszNs/ux/update-readme Update README file to inform about env files,['']
-765667437a63d2825e4df1e78c8b966c91ec278c,Daksh Miglani,2018-12-10,"Fixed import errors and updated to support python 3- Imported queue as queue to avoid import error- Enabled backward compatible flask serverUpdated main.pyRemoved useless importMade the npm build more cleanRemoved depricated use of open() + made port flexibleRemoved the warning to get a clean build:  DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0 by declaring the boolean value of Mongoclient as true.What I personally encountered... I was running another server on port 3000, Thus when I was setting up Dronesym, I got an error of port already being in use, So I made a global variable named port, and added string concatenation to console the running port into the terminal. If users already have port 3000 in use, then they could just change the value of variable in /dronesym-node/index.js.Added missing instruction of running mongodMost of the people including me forgot to run ```mongod``` in one terminal, and then execute ```mongorestore --db dronesym dronedb/dronesym```, So I've added an instruction step.Added latest and more supportive version of flaskAdded E2E tests for Login authorization 1. Checks URL redirection vulnerability (security purpose).2. Checks Server's availability.3. Checks Login authorization through admin's account.4. Checks the dashboard appearance on putting correct credentials.5. Logs out of admin's account 6. Checks Login authorization through admin's account.","['README.md,WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,test.ts,index.js,package-lock.json,dronepool.py,main.py,requirements.txt,package-lock.json']"
+765667437a63d2825e4df1e78c8b966c91ec278c,Daksh Miglani,2018-12-10,"Fixed import errors and updated to support python 3- Imported queue as queue to avoid import error- Enabled backward compatible flask serverUpdated main.pyRemoved useless importMade the npm build more cleanRemoved depricated use of open() + made port flexibleRemoved the warning to get a clean build:  DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0 by declaring the boolean value of Mongoclient as true.What I personally encountered... I was running another server on port 3000, Thus when I was setting up Dronesym, I got an error of port already being in use, So I made a global variable named port, and added string concatenation to console the running port into the terminal. If users already have port 3000 in use, then they could just change the value of variable in /dronesym-node/index.js.Added missing instruction of running mongodMost of the people including me forgot to run ```mongod``` in one terminal, and then execute ```mongorestore --db dronesym dronedb/dronesym```, So I've added an instruction step.Added latest and more supportive version of flaskAdded E2E tests for Login authorization 1. Checks URL redirection vulnerability (security purpose).2. Checks Server's availability.3. Checks Login authorization through admin's account.4. Checks the dashboard appearance on putting correct credentials.5. Logs out of admin's account 6. Checks Login authorization through admin's account.","['WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,test.ts,index.js,package-lock.json,dronepool.py,main.py,requirements.txt,package-lock.json']"
 311cf608e44f117807910252632d6f196f84c76c,Rohan Singh,2018-12-15,Added character encoding & meta for responsiveness,['login.component.html']
 c0451a25fb5c6d664f43ec109a0ac0b38e296897,Rohan Singh,2018-12-15,"Made the Login Page responsiveThis DroneSym Webapp can now work on small phones, mid-sized phones, large phones, laptops, large laptops, HD TV and even a 4K TV",['login.component.css']
 cfee725b62bb11ee65dbdba84328c3c7ff9fdd64,Rohan Singh,2018-12-15,Removed redundant comments,['login.component.html']
@@ -228,19 +228,19 @@ cfee725b62bb11ee65dbdba84328c3c7ff9fdd64,Rohan Singh,2018-12-15,Removed redundan
 8041fc62346efd285cdc4bc8fc02a769859c4cee,Oshan Mudannayake,2018-12-18,Merge pull request #125 from jmularski/docs/jsdoc-controllerdocs(jsdoc): added basic JSDoc for every method of controller,['']
 8b1e2060367d1ab3dac7f15eb791c06bd51f5b4e,Rohan Singh,2018-12-19,Deleted Unnecessary Cache files and improved code qualityDelete WiredTiger.turtleDelete WiredTiger.lockDelete WiredTiger.wtDelete WiredTigerLAS.wtDelete _mdb_catalog.wtDelete collection-0--2321288784840600282.wtDelete storage.bsonDeleted unecessary WiredTiger stuffdeleted Redundant stuffDelete collection-2-7301280593392019203.wtDelete collection-4--2321288784840600282.wtDelete metrics.2018-11-04T20-24-09Z-00000Delete index-1--2321288784840600282.wtDelete sizeStorer.wtDelete mongod.lockDelete index-1-7301280593392019203.wtDelete index-3--2321288784840600282.wtDelete WiredTigerLog.0000000002Delete WiredTigerPreplog.0000000001Delete WiredTigerPreplog.0000000002Delete metrics.2018-11-04T20-24-37Z-00000Delete metrics.interimDelete index-3-7301280593392019203.wtDelete index-4-7301280593392019203.wtDelete index-5--2321288784840600282.wtDisabled no console warning for Codacy's nodeJS code compiling.Replaced single quotes with double quotes for Codacy's Code qualityUpdate package-lock.jsonRemoved package-lock.JSON,"['WiredTiger,WiredTiger.lock,WiredTiger.turtle,WiredTiger.wt,WiredTigerLAS.wt,_mdb_catalog.wt,collection-0--2321288784840600282.wt,collection-0-7301280593392019203.wt,collection-2--2321288784840600282.wt,collection-2-7301280593392019203.wt,collection-4--2321288784840600282.wt,metrics.2018-11-04T20-24-09Z-00000,metrics.2018-11-04T20-24-37Z-00000,metrics.interim,index-1--2321288784840600282.wt,index-1-7301280593392019203.wt,index-3--2321288784840600282.wt,index-3-7301280593392019203.wt,index-4-7301280593392019203.wt,index-5--2321288784840600282.wt,WiredTigerLog.0000000002,WiredTigerPreplog.0000000001,WiredTigerPreplog.0000000002,mongod.lock,sizeStorer.wt,storage.bson,conf.js,index.js,package-lock.json']"
 1a9967459552688495c9d893762d0fd0878be692,Oshan Mudannayake,2018-12-19,Merge pull request #120 from rohancl/developFixed import errors and updated to support python 3,['']
-00b9b6d594dda2737dd13f33b0e1d354bceb0ba7,anuragparida,2018-12-26,Change README for beginner users,['README.md']
-4c2d0a2542beb49dbe3bc30eb8a44a1dff1d13ae,anuragparida,2018-12-26,Remove ReadME Screenshots,['README.md']
+00b9b6d594dda2737dd13f33b0e1d354bceb0ba7,anuragparida,2018-12-26,Change README for beginner users,['']
+4c2d0a2542beb49dbe3bc30eb8a44a1dff1d13ae,anuragparida,2018-12-26,Remove ReadME Screenshots,['']
 357cbb94e79d5e9e42eeb5237871e8034fc163ca,Oshan Mudannayake,2018-12-26,Merge pull request #166 from anuragparida/developUpdate README with firebase instructions,['']
 be72fbb17552c6186a49abd5545374c84dfec4d5,meetcric,2019-02-05,Feat:Add breadcrumb to indicate the route of userFix:#153,"['package-lock.json,package.json,app-router.ts,app.component.html,app.module.ts,breadcrumb.component.css,breadcrumb.component.html,breadcrumb.component.spec.ts,breadcrumb.component.ts,breadcrumb.ts,drone-groups.component.html,drone-list.component.html,user-dashboard.component.html,user-management.component.html,styles.css']"
 7e995b132bb1ec2012609bc7e1f172016e6d19bb,meetcric,2019-02-13,Feat:Add signup option for user in login page,"['test.ts,admin-authorize.service.ts,app-router.ts,app.module.ts,auth-http.service.ts,confirm-dialog.component.ts,cursor-tooltip.component.ts,dashboard.component.ts,drone-groups.component.ts,drone-list.component.ts,drone-option-box.component.ts,drone-data.service.ts,drones-box.component.ts,login.component.css,login.component.html,login.component.ts,route-guard.service.ts,signup.component.css,signup.component.html,signup.component.spec.ts,signup.component.ts,user-dashboard.component.ts,user-management.component.ts,user.service.ts,user-signup.component.ts,user-view.component.ts,userCtrl.js,user.js,userRouter.js,user_functions.js']"
 339dc15395f0244deed55f8546be20dcea5616a2,Oshan Mudannayake,2019-02-15,Merge pull request #167 from meetcric/153Feat:Add breadcrumb to indicate the route of user,['']
 4fb13691f604e05643fbb5e1c9c4e33bb95877d7,Meet Patel,2019-02-15,Merge branch 'develop' into 148,['']
-326d7f05c613266e60388aa88c7d97d11bd07c22,Dilina Dehigama,2019-02-16,Python3 support,"['.gitignore,dronepool.py,dronepool.py.bak,mavparser.py,mavparser.py.bak,node.py,node.py.bak,threadrunner.py']"
+326d7f05c613266e60388aa88c7d97d11bd07c22,Dilina Dehigama,2019-02-16,Python3 support,"['dronepool.py,dronepool.py.bak,mavparser.py,mavparser.py.bak,node.py,node.py.bak,threadrunner.py']"
 4154c0cb5318dbd8564e377bd3be9d9df9f854bd,Dilina,2019-02-16,Delete .bak,['node.py.bak']
 e7ae6504908666a0ba38b3bb6e303cccfad1a958,Dilina,2019-02-16,Delete dronepool.py.bak,['dronepool.py.bak']
 ab1a2b8f2491c435bfe350b7d99cf0c5dfee4f6e,Dilina,2019-02-16,Delete mavparser.py.bak,['mavparser.py.bak']
 604bb2e9ba0108ccc2e6b3bf093ed1079e729172,Oshan Mudannayake,2019-02-16,Merge pull request #169 from dilinade/python3Python3 support,['']
-a02532bb0e90437085d0250cbab72f62d9e4c0cb,Dilina,2019-02-17,Updated python version. (2.7 or higher),['README.md']
+a02532bb0e90437085d0250cbab72f62d9e4c0cb,Dilina,2019-02-17,Updated python version. (2.7 or higher),['']
 76d9fdfcb63dc6d9d7591a59005978cf04d325f6,Oshan Mudannayake,2019-02-17,Merge pull request #168 from meetcric/148Feat:Add signup option for user in login page,['']
 9396c62e4231b9d2a2127d8e04bed2bee963bfee,Oshan Mudannayake,2019-02-17,Merge pull request #171 from dilinade/patch-1Updated python version. (2.7 or higher),['']
 674f022af03477814389b7d66b419e02472cf0fd,Dilina Dehigama,2019-02-19,Github Repo Management-moved files to .github directory,"['CONTRIBUTING.md,ISSUE_TEMPLATE.md,PULL_REQUEST_TEMPLATE.md']"
@@ -289,10 +289,10 @@ e7fe7921853daa6e0d45ca532307841989d21238,Dilina,2019-05-17,Update main.py,['main
 347d19cce6f480f0b67600458ca15978c312805b,dependabot-preview[bot],2019-06-01,[Security] Bump requests from 2.6.0 to 2.20.0 in /dronesym-pythonBumps [requests](https://github.com/requests/requests) from 2.6.0 to 2.20.0. **This update includes security fixes.**- [Release notes](https://github.com/requests/requests/releases)- [Changelog](https://github.com/kennethreitz/requests/blob/master/HISTORY.md)- [Commits](https://github.com/requests/requests/compare/v2.6.0...v2.20.0),['requirements.txt']
 da264f13acdc8b2c5e3bbc09731688de9be2be0d,Dilina,2019-06-02,Merge pull request #305 from scorelab/dependabot/pip/dronesym-python/requests-2.20.0[Security] Bump requests from 2.6.0 to 2.20.0 in /dronesym-python,['']
 176fa77df6619cc411a851bad5851fc0065eee1c,Dilina,2019-06-03,DB Migration Phase 01,"['drone-list.component.ts,droneCtrl.js,userCtrl.js,drone.js,droneRouter.js,dronesym-d5898-d1e47efbf5b5.json,index.js,package-lock.json,package.json,websocket.js']"
-5c95bbfd092f371d54aaf3a5dfe4b49b6767de88,Dilina,2019-06-03,DB Migration Phase 01,['.gitignore']
+5c95bbfd092f371d54aaf3a5dfe4b49b6767de88,Dilina,2019-06-03,DB Migration Phase 01,['']
 df6ba7e9514d89d020fc46967875d47863d8b89f,Dilina,2019-06-03,DB Migration Phase 01,['dronesym-d5898-d1e47efbf5b5.json']
 965e03c910bd1ed8ebb8cb50f2dd18c4c352d856,Oshan Mudannayake,2019-06-05,Merge pull request #316 from dilinade/DBMigrationDb Migration - Phase 01,['']
-f0d58d9493805082158f96dc5fba9a467b899560,Dilina,2019-06-17,DBMigration Phase 02,"['.gitignore,login.component.html,droneCtrl.js,drone.js,dronepool.py']"
+f0d58d9493805082158f96dc5fba9a467b899560,Dilina,2019-06-17,DBMigration Phase 02,"['login.component.html,droneCtrl.js,drone.js,dronepool.py']"
 16f96f03e9d914a59cfac642382243b8f7e0d9e4,Oshan Mudannayake,2019-06-17,Merge pull request #317 from dilinade/DBMigrationDb Migration Phase 02,['']
 804e783fde453c6a0c30255bbdc01e2ef16a374c,Dilina,2019-06-20,Static Drone  & User functions migrated,"['dashboard.component.html,dashboard.component.ts,drone-groups.component.ts,drones-box.component.html,drones-box.component.ts,user-management.component.ts,droneCtrl.js,userCtrl.js,drone.js,main.py']"
 e501df17893e974dd69d1d282e0926e2a3de918a,Oshan Mudannayake,2019-06-20,Merge pull request #318 from dilinade/DBMigrationDb Migration Phase 03,['']
@@ -304,9 +304,9 @@ caaa8d9c786686092d3ab4872a63bc7d5428b775,Dilina,2019-07-13,Python fix,['dronepoo
 695939351c0e627c5a30ab56e0b2d4a5a1a3bc44,Oshan Mudannayake,2019-07-13,Merge pull request #341 from dilinade/forgotPasswordForgot password - Initial,['']
 66500149f494cb1117111777ab729254e0679bed,Dilina,2019-07-19,Merge branch 'develop' into develop,['']
 fea88b72804917f35682437e092690a91b57644f,Oshan Mudannayake,2019-07-19,Merge pull request #119 from emgaurv/developAdd User/Group Tests For mongoDB(Mongoose) Models,['']
-64f84cea2bd96358c3d3dcaf3165a2eadedc259f,Dilina,2019-07-20,Gatsby Init for Doc,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
-cc7b6b396b1533e64d906b0b7929f819bf774c1e,Dilina,2019-07-20,Renamed to Docs,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
-b27d38e5eb8056e1f512255c9acf0726068fa2aa,Dilina,2019-07-20,Renamed to Docs,"['.gitignore,.prettierrc,LICENSE,README.md,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
+64f84cea2bd96358c3d3dcaf3165a2eadedc259f,Dilina,2019-07-20,Gatsby Init for Doc,"['.prettierrc,LICENSE,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
+cc7b6b396b1533e64d906b0b7929f819bf774c1e,Dilina,2019-07-20,Renamed to Docs,"['.prettierrc,LICENSE,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
+b27d38e5eb8056e1f512255c9acf0726068fa2aa,Dilina,2019-07-20,Renamed to Docs,"['.prettierrc,LICENSE,gatsby-browser.js,gatsby-config.js,gatsby-node.js,gatsby-ssr.js,package-lock.json,package.json,header.js,image.js,layout.css,layout.js,seo.js,gatsby-astronaut.png,gatsby-icon.png,404.js,index.js,page-2.js']"
 7d273a1648bf5709d533b73ea889a8915d9d132c,Oshan Mudannayake,2019-07-20,Merge pull request #342 from dilinade/DocumentationGatsby Init for Doc,['']
 e9c035698e872dda1734c04c650bc3079352e486,Dilina,2019-08-05,Documentation - DroneSym,"['gatsby-config.js,package-lock.json,package.json,header.js,image.js,layout.css,drone_logo.png,index.js,page-2.js']"
 7c2c5f841f7fb8ddd0e341987e2b96c22422365a,Oshan Mudannayake,2019-08-05,Merge pull request #361 from dilinade/DocumentationDocumentation - DroneSym,['']
@@ -319,18 +319,18 @@ f21c5ebc0ca956f2dc5e6f0dca3cb0458510ec14,Dilina,2019-08-18,Forgot password done,
 0c6c042c244818be47a132735f7f55faa5160108,Dilina,2019-08-19,Secured flask calls,['main.py']
 97d1bfe98a08a03d132691b1eca43828d67c4fb0,Oshan Mudannayake,2019-08-19,Merge pull request #365 from dilinade/forgotPassword2Forgot password done,['']
 8e52081dd939a522f164ee73449522a022d45661,Oshan Mudannayake,2019-08-19,Merge pull request #366 from dilinade/secureFlaskSecure flask,['']
-b6d16123a2c8502cbf585551469f4088e7d5bc61,Dilina,2019-08-20,Dockerized the app with 4 containers,"['.gitignore,docker-compose.yaml,.dockerignore,Dockerfile,package.json,.dockerignore,userCtrl.js,Dockerfile,user.js,example.mongoconfig.js,package-lock.json,package.json,Dockerfile,requirements.txt']"
-2238bb32c0cf0d182e0a6a58d4cbe11e4946864e,Dilina,2019-08-20,Added mongo env. variables,"['.gitignore,docker-compose.yaml,.env,example.mongoconfig.js,index.js,package-lock.json,package.json,drone_functions.js,user_functions.js']"
+b6d16123a2c8502cbf585551469f4088e7d5bc61,Dilina,2019-08-20,Dockerized the app with 4 containers,"['docker-compose.yaml,.dockerignore,Dockerfile,package.json,.dockerignore,userCtrl.js,Dockerfile,user.js,example.mongoconfig.js,package-lock.json,package.json,Dockerfile,requirements.txt']"
+2238bb32c0cf0d182e0a6a58d4cbe11e4946864e,Dilina,2019-08-20,Added mongo env. variables,"['docker-compose.yaml,.env,example.mongoconfig.js,index.js,package-lock.json,package.json,drone_functions.js,user_functions.js']"
 225e2f68ca66a427f6d7faf1c43a13c81b426555,Dilina,2019-08-20,Python dependancy modification for travis,"['.travis.yml,requirements.txt']"
 cc1bffeb2c52b821afa073a00dcebb03d9ba7579,Dilina,2019-08-20,Update .travis.yml,['.travis.yml']
 553c2731760a585b22fc19990f4d44526bda97c8,Dilina,2019-08-20,Update .travis.yml,['.travis.yml']
 41d35ee8b3933294cabcc439739144ebaa86ccea,Oshan Mudannayake,2019-08-20,Merge pull request #367 from dilinade/DockerizeDockerize,['']
-100a334ed058f9f63776120685459f11e0603855,Dilina,2019-08-20,Updated Readme with MongoDB config.,['README.md']
+100a334ed058f9f63776120685459f11e0603855,Dilina,2019-08-20,Updated Readme with MongoDB config.,['']
 f7892d62cf087720b3afb665990edaae34bb76c8,Dilina,2019-08-20,Added service-workers and installability requirements,"['.travis.yml,angular.json,package-lock.json,package.json,app.module.ts,icon-128x128.png,icon-144x144.png,icon-152x152.png,icon-192x192.png,icon-384x384.png,icon-512x512.png,icon-72x72.png,icon-96x96.png,index.html,manifest.json,ngsw-config.json']"
 e55cc5df7e3b5630798ac1b6ffdcd01224391607,Oshan Mudannayake,2019-08-21,Merge pull request #368 from dilinade/PWA_Phase01Added service-workers and installability requirements,['']
 3efb6cccfa4e37dd914f9b91a1387ffa60202468,Dilina,2019-08-29,Security Fixes,"['package-lock.json,package.json,package-lock.json,package.json']"
 9f721f4afd9e0e57c812f8556e59e4c6cf3283ce,Oshan Mudannayake,2019-08-29,Merge pull request #372 from dilinade/securityFixesSecurity Fixes,['']
-27f7647fec9f2c408061c8a21efd8a99995b0a16,Geethmaka,2019-09-11,Update README.mdUpdate README.mdUpdate README.md,['README.md']
+27f7647fec9f2c408061c8a21efd8a99995b0a16,Geethmaka,2019-09-11,Update README.mdUpdate README.mdUpdate README.md,['']
 0b58dea69fcd8f6a0bdf831e912c6e0035a20b5a,Dilina,2019-09-11,Merge pull request #388 from GeethOnion/developUpdated instructions for windows users,['']
 8b28b1f91812f278e1b01092bface3ad45fe374e,Dilina,2019-10-01,Removed Unwanted packages/files,"['apple-touch-192.png,index.html,droneCtrl.js,userCtrl.js,example.db.js,package-lock.json,package.json,main.py']"
 ae9ab772fb723b8e4c3298c86bfa690e3c281f79,Dilina,2019-10-01,Merge pull request #389 from dilinade/securityFixesRemoved Unwanted packages/files,['']
@@ -338,7 +338,7 @@ ae9ab772fb723b8e4c3298c86bfa690e3c281f79,Dilina,2019-10-01,Merge pull request #3
 be8d7019b0a7367e3f7eef21118e12a4239c2a4a,Dilina,2020-01-10,Merge pull request #442 from JosephSemrai/developResponsive UI Changes,['']
 cbadf07403f89f7f278720b51fec0656441e3f2d,Sahan Dilshan,2020-01-26,Align Login and SignUp buttons,['login.component.html']
 ea303550e9c0c17385df707e3735f6887bc504c6,dependabot-preview[bot],2020-02-01,[Security] Bump handlebars from 4.1.0 to 4.7.2 in /dronesym-frontendBumps [handlebars](https://github.com/wycats/handlebars.js) from 4.1.0 to 4.7.2. **This update includes a security fix.**- [Release notes](https://github.com/wycats/handlebars.js/releases)- [Changelog](https://github.com/wycats/handlebars.js/blob/master/release-notes.md)- [Commits](https://github.com/wycats/handlebars.js/compare/v4.1.0...v4.7.2)Signed-off-by: dependabot-preview[bot] <support@dependabot.com>,['package-lock.json']
-1e28f19bfc74e4273dde6542f8eaa0aac14b4cc6,atharvcd,2020-02-29,Added Instructions to create data directory (#459)* Added instructions to create data directory,['README.md']
+1e28f19bfc74e4273dde6542f8eaa0aac14b4cc6,atharvcd,2020-02-29,Added Instructions to create data directory (#459)* Added instructions to create data directory,['']
 891ee651918f45c84596e733e0ca93c1965fda28,Oshan Mudannayake,2020-02-29,Merge pull request #446 from scorelab/dependabot/npm_and_yarn/dronesym-frontend/handlebars-4.7.2[Security] Bump handlebars from 4.1.0 to 4.7.2 in /dronesym-frontend,['']
 de0d70546a638237663803e22d7d85ddd4325fd8,Oshan Mudannayake,2020-02-29,Merge pull request #445 from sahandilshan/developAlign Login and SignUp buttons,['']
 3f296588780c1b3c329d467416a75601a7903c42,dependabot-preview[bot],2020-08-01,Bump nodemailer from 6.3.0 to 6.4.11 in /dronesym-nodeBumps [nodemailer](https://github.com/nodemailer/nodemailer) from 6.3.0 to 6.4.11.- [Release notes](https://github.com/nodemailer/nodemailer/releases)- [Changelog](https://github.com/nodemailer/nodemailer/blob/master/CHANGELOG.md)- [Commits](https://github.com/nodemailer/nodemailer/compare/v6.3.0...v6.4.11)Signed-off-by: dependabot-preview[bot] <support@dependabot.com>,"['package-lock.json,package.json']"

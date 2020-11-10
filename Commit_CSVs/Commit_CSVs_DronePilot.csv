@@ -1,8 +1,8 @@
 Commit_ID,Contributor,Date,Message,Files
 2bdf20aebe7ad8be1d634b1fb0d98c7fd19ba6ac,Aldo Vargas,2015-04-01,Initial commit,['LICENSE']
-318cb1d7931ec443f3008a2ceecd808b0e16148e,Aldo Vargas,2015-04-02,First uploadEssential modules to communicate with multiwii and a small example thatwill drive the rest of the components.,"['LICENSE,README.md,first.py,pyMultiwii.py']"
-0c2064177742e8760f88cd4fc3f4205f2a990621,Aldo Vargas,2015-04-13,"Joystick using UDP scriptFirst control test, using a ground station sending UDP commands from ajoystick, using matlab (on the ground station)","['first.py,joystick-test.py,.gitignore,UDPserver.py,pyMultiwii.py']"
-016dc769b6e2e78efba3b8946ce5759b9c6837af,Aldo Vargas,2015-04-15,"Bug fixes, added securityBug fixes, added security and robustness.","['.gitignore,UDPserver.py,pyMultiwii.py,joystick-test.py']"
+318cb1d7931ec443f3008a2ceecd808b0e16148e,Aldo Vargas,2015-04-02,First uploadEssential modules to communicate with multiwii and a small example thatwill drive the rest of the components.,"['LICENSE,first.py,pyMultiwii.py']"
+0c2064177742e8760f88cd4fc3f4205f2a990621,Aldo Vargas,2015-04-13,"Joystick using UDP scriptFirst control test, using a ground station sending UDP commands from ajoystick, using matlab (on the ground station)","['first.py,joystick-test.py,UDPserver.py,pyMultiwii.py']"
+016dc769b6e2e78efba3b8946ce5759b9c6837af,Aldo Vargas,2015-04-15,"Bug fixes, added securityBug fixes, added security and robustness.","['UDPserver.py,pyMultiwii.py,joystick-test.py']"
 69740bb30f24e1a210a17fd006a257377ccf2a8f,Aldo Vargas,2015-04-15,"UDP bug fixesIf UDP lost connection, then don’t send commands… added robustness","['UDPserver.py,pyMultiwii.py,joystick-test.py']"
 1a3372f372753d24f02adeae277f5636d0d666f2,Aldo Vargas,2015-04-15,Position control addedFirst test of a position controller using PID’s,"['pid.py,pyMultiwii.py,joystick-test.py,position-control.py']"
 955088da56a2cf8c78b026a3bb7dcb40d3968c85,Aldo Vargas,2015-04-16,ImprovementsImprovements:- New pyMultiwii with arm/disarm- 2 PID libraries- updated equations to calculate desired roll / pitch- updated and corrected name- utils module added- map function- topwm function,"['UDPserver.py,pid.py,pid2.py,pyMultiwii.py,utils.py,hover-controller.py,position-control.py']"
@@ -15,11 +15,11 @@ b31d503d26ea9d523aa0a52aa1ad7745e7a369aa,Aldo Vargas,2015-04-28,PID one being us
 d073feabd5b91101939bd031b8a9e45a3a33b910,Aldo Vargas,2015-06-01,"XYZ errorsAfter several days trying to see what was the reason it wasn’t working,the error was that Y was being Z… U_U","['utils.py,hover-controller.py']"
 0cfbc97e69b9cac9c8094882e929002cc53f2b79,Aldo Vargas,2015-06-05,"Major changesNew pid library (untested, unused), major changes to hover-controller,added the logging function, everything to be tested.","['UDPserver.py,pid3.py,hover-controller.py']"
 9681d5dd5fd311827d2a4ca9556edaa755225bcd,Aldo Vargas,2015-06-05,"Logger testAdded the log to cvs test, to try on the RPI.","['hover-controller.py,06_05_17-01-22.csv']"
-000e376b12e676ddc357936e00fde0475ea4cf5a,Aldo Vargas,2015-06-18,"General updateModules moved, started a vision module and a pixhawk example.","['README.md,.gitignore,UDPserver.py,pid.py,pid2.py,pid3.py,pyMultiwii.py,utils.py,vision.py,mw-hover-controller.py,mw-joystick-test.py,pix-logdata.py']"
+000e376b12e676ddc357936e00fde0475ea4cf5a,Aldo Vargas,2015-06-18,"General updateModules moved, started a vision module and a pixhawk example.","['UDPserver.py,pid.py,pid2.py,pid3.py,pyMultiwii.py,utils.py,vision.py,mw-hover-controller.py,mw-joystick-test.py,pix-logdata.py']"
 fa5c7a773b268a15d26bdec1976b282ac0894aaf,Aldo Vargas,2015-06-18,Pixhawk + computer vision logTest script for handling comms between a pixhawk and a computer visionalgorithm to just save data while flying.,"['vision.py,pix-logdata.py']"
-2c35571ddd7bc5dc760e992f7842676cbeee60db,Aldo Vargas,2015-06-18,Takeoff example and modificationsTakeoff example and modifications to log data script.,"['README.md,pix-logdata.py,pix-takeoff.py']"
+2c35571ddd7bc5dc760e992f7842676cbeee60db,Aldo Vargas,2015-06-18,Takeoff example and modificationsTakeoff example and modifications to log data script.,"['pix-logdata.py,pix-takeoff.py']"
 cbfb965b99c33708860cc6ad86d8f7848e9757b7,Kyle Brown,2015-06-19,Bug correction to takeoffModified ordered of import modules. General debugging and now isworking in simulation. Land function added.,['pix-takeoff.py']
-e880fd0817ae21ed287e340a4ba62c4bc0b00730,Aldo Vargas,2015-06-19,Indentation issueSmall indentation issue and readme update,"['README.md,pix-takeoff.py']"
+e880fd0817ae21ed287e340a4ba62c4bc0b00730,Aldo Vargas,2015-06-19,Indentation issueSmall indentation issue and readme update,['pix-takeoff.py']
 3af3550488f3bf94644d8a9faed04d661358037b,Aldo Vargas,2015-06-19,nano copy-paste error....nano copy-paste error....,['pix-takeoff.py']
 59c092a5e370f8fbecf5b47bd329d04e403ffd91,Aldo Vargas,2015-06-19,Takeoff take 2Takeoff take 2,['pix-takeoff2.py']
 1a1e0dbbeda1756be490c99ff542dc90703eb055,Aldo Vargas,2015-06-20,"Name changeName changes, just one takeoff script.","['pix-takeoff.py,pix-takeoff2.py']"
@@ -35,26 +35,26 @@ ed440b30b760fed6762390a7e46bdf4c08cdc112,Aldo Vargas,2015-06-24,Change of WP,['p
 881c7165b80aab32a599c5899507dc92e652d050,Aldo Vargas,2015-06-24,WP fix,['pix-goto.py']
 088d4612d43b974c179b6cbf4b3aba5b6f853b3c,Aldo Vargas,2015-06-24,GOTO fixes,['pix-goto.py']
 eeac62c13ac5e148e0cbaec56768fface005f12a,Aldo Vargas,2015-06-25,Goto with reach to target functionGoto with reach to target function.New function that check if the vehicle reached its target location andprotect it with a timeout.,"['pix-goto.py,pix-takeoff.py']"
-572acd622d137ab19a3b23b6b0ee93de85a6f955,Aldo Vargas,2015-06-25,"Velocity vector test scriptVelocity vector test script added, total vehicle control functions:- arm and take off- go to waypoint- velocity vector- conditional yaw","['README.md,pix-goto.py,pix-takeoff.py,pix-velocity-vector.py']"
-391a80613472c9b1192895b424a641ca91686c3e,Aldo Vargas,2015-06-25,"Updated readmeUpdates on the readme file, with how tos and descriptions.",['README.md']
-b60a1693d955b6aecbba6d8bcc09ca97dbed08ad,Aldo Vargas,2015-06-25,ReadMe Update,['README.md']
-49f04df82e0267f3ae37ea6eb66d44bcde0b7a3f,Aldo Vargas,2015-06-26,Lists readme,['README.md']
+572acd622d137ab19a3b23b6b0ee93de85a6f955,Aldo Vargas,2015-06-25,"Velocity vector test scriptVelocity vector test script added, total vehicle control functions:- arm and take off- go to waypoint- velocity vector- conditional yaw","['pix-goto.py,pix-takeoff.py,pix-velocity-vector.py']"
+391a80613472c9b1192895b424a641ca91686c3e,Aldo Vargas,2015-06-25,"Updated readmeUpdates on the readme file, with how tos and descriptions.",['']
+b60a1693d955b6aecbba6d8bcc09ca97dbed08ad,Aldo Vargas,2015-06-25,ReadMe Update,['']
+49f04df82e0267f3ae37ea6eb66d44bcde0b7a3f,Aldo Vargas,2015-06-26,Lists readme,['']
 58c538d0312898d698e13a6a832e563e8f2c5976,Kyle Brown,2015-06-26,Added waypoint numberingPrinted the waypoint number to terminal.Changed the dTarget variable name to distance.,['pix-goto.py']
 966dda1f710bba69854ccd37b9670a45e1f5b6da,Aldo Vargas,2015-06-26,Drop packet scriptDrop packet script,['pix-drop-packet.py']
 1cd919c059c758a3ddd6498d180bb26225cd9140,Kyle Brown,2015-06-26,Test for payloadHardware test,['pix-drop-packet-test.py']
 82d08b89b6b476aac1d8fb629f8904b9e184a3ca,Kyle Brown,2015-06-26,Added variable servo port command,"['pix-drop-packet-test.py,pix-drop-packet.py']"
-d0a90ed7e8c0eac38a658a3331bb084a5fa2c327,Aldo Vargas,2015-06-26,Readme update,"['README.md,pix-drop-packet-test.py,pix-drop-packet.py']"
-2daa5b354da883e215df77793d96879a8819537c,Aldo Vargas,2015-06-28,GOTO fix and README updateGOTO fix and README update,"['README.md,pix-goto.py']"
+d0a90ed7e8c0eac38a658a3331bb084a5fa2c327,Aldo Vargas,2015-06-26,Readme update,"['pix-drop-packet-test.py,pix-drop-packet.py']"
+2daa5b354da883e215df77793d96879a8819537c,Aldo Vargas,2015-06-28,GOTO fix and README updateGOTO fix and README update,['pix-goto.py']
 3fdf19351e523026e095f125bbda6cd3047fb186,Aldo Vargas,2015-06-28,Grand challenge example missionAdded a grand challenge example mission.,['pix-grand-challenge.py']
 6fcbb4eba901683e489239a47c302286ee605e0a,Aldo Vargas,2015-06-28,Mission correctionCorrection on waypoints.,['pix-grand-challenge.py']
 14f2fcbc00154fd0acf596d00c9caf8cc27c2d7b,Kyle Brown,2015-06-28,Added payload delivery functionality,['pix-goto.py']
 4eda600ed4338b2d6059d87620988fd3438e69d1,Aldo Vargas,2015-07-01,Actual missionActual mission parameters,"['1-mission.py,2-mission.py,pix-grand-challenge.py']"
 1c95877c0a6b0ba4cf7c8932b4dd3044a445778e,Aldo Vargas,2015-07-01,Error on the runwayErrors on the runway,"['1-mission.py,2-mission.py']"
 d636c33b71af9673707e075cb707fc40ed8b127f,Aldo Vargas,2015-07-01,Sample automatic missionSample automatic mission,['sample-auto.py']
-6d15276ae56d151f0d29acd8e1ec79345f59066b,Aldo Vargas,2015-07-09,Tidy up repository after challengeJust a general tidy up of the examples used on the UAS Grand Challenge2015.,"['1-mission.py,2-mission.py,drop-packet-test.py,sample-auto.py,victoria-park.py,README.md']"
-69e5eff0e83f63fe1fa8e30078d1ee075258cc44,Aldo Vargas,2015-07-14,"New scripts and readme filesJoystick script for the pixhawk, and read files. Ready to test in theMAST Lab.","['README.md,README.md,pix-joystick.py,pix-logdata.py']"
+6d15276ae56d151f0d29acd8e1ec79345f59066b,Aldo Vargas,2015-07-09,Tidy up repository after challengeJust a general tidy up of the examples used on the UAS Grand Challenge2015.,"['1-mission.py,2-mission.py,drop-packet-test.py,sample-auto.py,victoria-park.py']"
+69e5eff0e83f63fe1fa8e30078d1ee075258cc44,Aldo Vargas,2015-07-14,"New scripts and readme filesJoystick script for the pixhawk, and read files. Ready to test in theMAST Lab.","['pix-joystick.py,pix-logdata.py']"
 37cfb6970c91f0b44b2fdf2d339ffda4f2eaa3f1,Aldo Vargas,2015-08-01,New PIDNew PID module to test on the hover controller. Test and gain tuningrequired.,"['pids.py,mw-hover-controller.py']"
-265f3d0619a0d2f7ece6042b2237577f21687b12,Aldo Vargas,2015-08-17,UDP correctionsAdded UDP corrections to make it work with dronekit.,"['README.md,mw-joystick.py,pix-joystick-all-included.py,pix-joystick.py']"
+265f3d0619a0d2f7ece6042b2237577f21687b12,Aldo Vargas,2015-08-17,UDP correctionsAdded UDP corrections to make it work with dronekit.,"['mw-joystick.py,pix-joystick-all-included.py,pix-joystick.py']"
 265741bb4879eec1c018dc828ea600a2b957a432,Aldo Vargas,2015-08-17,Added the MW all included testAdded the MW all included test,['mw-joystick-all-included.py']
 225a552c5c58fc68155c3a90d3967532c45c6587,Aldo Vargas,2015-08-18,Tests for new structureTests for new structure,"['2-threads.py,pix-joystick.py']"
 f40a9ace9f7d056bf52c7f878b6153ae84f06d88,Aldo Vargas,2015-08-18,Remove unnecessary items and added new ones,"['2-threads.py,mavinit.scr,mw-joystick-all-included.py,pix-joystick-all-included.py,pix-joystick.py,pix-logdata.py']"
@@ -66,8 +66,8 @@ b4c57e20bc92b2925ef94fbe9ada630b587b960f,Aldo Vargas,2015-08-21,Add the logit fu
 2cf9c8b86778de5a95f2ed1b9c599e1349f8bec5,Aldo Vargas,2015-08-21,"Saving proper variablesAfter checking the name of the variables, put the proper data in theprint and save function. Delete unnecessary stuff and less words byusing the “as” in the module import.","['pix-joystick.py,pix-logdata.py']"
 0d41d7e645b1b6285207ef15989de65941e62572,Aldo Vargas,2015-08-21,logit function inside threadsPutting the log function inside a thread to make work with the similarstructure as the rest of the scripts.,['pix-logdata.py']
 e06252dd4755537da19cb6f1935a3402904dcda0,Aldo Vargas,2015-08-21,Control mechanismsJust added a couple of control mechanisms to make it easier to startrecording…,['pix-logdata.py']
-928fb2977f152065c8ff534a56c06bea0d28f009,Aldo Vargas,2015-08-21,Utilities added,['README.md']
-53dab6d553a0387bdfff46b6b3200c68007f22b7,Aldo Vargas,2015-08-24,Added videos and small correctionsAdded videos and small corrections,"['drop-packet-test.py,README.md,utils.py,mw-joystick.py,pix-joystick.py,pix-logdata.py']"
+928fb2977f152065c8ff534a56c06bea0d28f009,Aldo Vargas,2015-08-21,Utilities added,['']
+53dab6d553a0387bdfff46b6b3200c68007f22b7,Aldo Vargas,2015-08-24,Added videos and small correctionsAdded videos and small corrections,"['drop-packet-test.py,utils.py,mw-joystick.py,pix-joystick.py,pix-logdata.py']"
 f3b2155fd28fbed9b2f2728f954927965d197031,Aldo Vargas,2015-08-24,Show data script addedJust a script to see the stream of requested data.,"['pix-logdata.py,pix-showdata.py']"
 ca69d9e82a85afadbec1eeb237489c5536322203,Aldo Vargas,2015-08-26,Data log with MW and corrections to allData log with MW and corrections to pix-logdata and mw-joystick.,"['mw-joystick.py,mw-logdata.py,pix-logdata.py']"
 e16612b30841d5c321b1b1d47afce6800f84b152,Aldo Vargas,2015-08-26,MultiWii adjusmentsChange time to boot multi (naze32 is way faster to boot) andcorrections in order to record,"['pyMultiwii.py,mw-logdata.py,pix-logdata.py']"
@@ -75,8 +75,8 @@ f33bfb8a680a4885d4907243835ca1fd20b8c060,Kyle Brown,2015-08-31,Script for loadin
 90bbfb9743ee5700c6824622ecce02a5d3b058f0,Kyle Brown,2015-08-31,Delete Pix-payload-loadMistakenly added,['pix-payload-load']
 2391238b16d7503d6871c271b5fbd1213e78627c,Kyle Brown,2015-08-31,Delete pix-payload-lockMistakenly added,['pix-payload-lock']
 8f6a9b5ec159fe634f9ae49f4197b2dc7536e47c,Kyle Brown,2015-08-31,Mistakenly addedTest file mistakenly added,['pix-payload-release']
-ed399b32a059aaf13c22278c89abdf0c45b44832,Aldo Vargas,2015-09-04,pyMultiwii bugFix the bug of pyMultiwii.,"['README.md,pyMultiwii.py,mw-logdata.py']"
-de1cd58c4ffdce2f1a3ed77fdb27292d272dcef9,Aldo Vargas,2015-09-15,Low latencyAdded help for more video stuff.,['README.md']
+ed399b32a059aaf13c22278c89abdf0c45b44832,Aldo Vargas,2015-09-04,pyMultiwii bugFix the bug of pyMultiwii.,"['pyMultiwii.py,mw-logdata.py']"
+de1cd58c4ffdce2f1a3ed77fdb27292d272dcef9,Aldo Vargas,2015-09-15,Low latencyAdded help for more video stuff.,['']
 a8629c5260b1b4fb733ffb320bce809c4ea705ef,Aldo Vargas,2015-09-28,Fixes to hover controllerNew fixes to hover controller in order to test on lab.,"['mw-hover-controller.py,mw-logdata.py']"
 1129af6785055b1e8c1799abcfca4f20c8fdf52f,Aldo Vargas,2015-09-28,New controllerJust a new controller script based on working log data script file.,['mw-hover-controller2.py']
 1dafb741a704e6c8abeedf36db16ce94081cc683,Aldo Vargas,2015-09-29,"Updated controllersNew controllers updated to test, hover_controller uses a newmethodology considering headfree mode (test the max and min correctionsto map values properly). Hover_controller2 is the working version withtwo different gains for pitch and roll.","['pid.py,utils.py,mw-hover-controller.py,mw-hover-controller2.py']"
@@ -126,14 +126,14 @@ ed462cccea7262a8b1ae7318f8f508daf5aa3fd1,Aldo Vargas,2016-01-06,First waypoint s
 3bc9c5d9a9da4afe53f027cc8138f1c84964069c,Aldo Vargas,2016-01-18,Added desired position to WP,['mw-waypoint.py']
 616fc14dce252a80efba512dbe633bb5c8df887e,Aldo Vargas,2016-01-25,ADSP yaw controllerTo be tested.,['mw-hover-controller.py']
 91643943d2f5b8449ddf182cb0fc076ac796f645,Aldo Vargas,2016-01-25,Yaw controller fixedWorking yaw controller!!,['mw-hover-controller.py']
-6b60fc03c9f2e54b245d8cf06bc4cad855754435,Aldo Vargas,2016-01-29,Moving to DK2.0Moving from dronkit 1.5 to 2.0,"['README.md,pixVehicle.py,pix-showdata.py,pix-takeoff.py']"
-41318e0f506b8f71bb288d58b63291020ce3d068,Aldo Vargas,2016-02-03,PID set point updates - DK2.0 updatesMaking the error calculation before calling the update PID function.Extra drone kit 2.0 changes to a couple of scripts.,"['README.md,utils.py,mw-hover-controller.py,pix-joystick.py,pix-showdata.py,pix-takeoff.py']"
+6b60fc03c9f2e54b245d8cf06bc4cad855754435,Aldo Vargas,2016-01-29,Moving to DK2.0Moving from dronkit 1.5 to 2.0,"['pixVehicle.py,pix-showdata.py,pix-takeoff.py']"
+41318e0f506b8f71bb288d58b63291020ce3d068,Aldo Vargas,2016-02-03,PID set point updates - DK2.0 updatesMaking the error calculation before calling the update PID function.Extra drone kit 2.0 changes to a couple of scripts.,"['utils.py,mw-hover-controller.py,pix-joystick.py,pix-showdata.py,pix-takeoff.py']"
 8770c7f13469ca1c4e14b0049796f0366ff75a1b,Aldo Vargas,2016-02-03,Fix heading bug and test new timing loop,['mw-hover-controller.py']
 a51651d3bbb03e77baebc5ef3f6836fddaef48c2,Aldo Vargas,2016-02-03,New loop countA new way (tested before and did not worked…) to make a perfectupdate_rate loop. working at 50hz and 100hz with no issues.,['mw-hover-controller.py']
-93b03772631a7ec989e4f6997b2c0a02c8bbe1a1,Aldo Vargas,2016-02-03,Ubuntu tutorial and updates to pix joystickI was able to run pix-joystick with SITL using a joystick from matlab.,"['README.md,pix-joystick.py,pix-takeoff.py']"
+93b03772631a7ec989e4f6997b2c0a02c8bbe1a1,Aldo Vargas,2016-02-03,Ubuntu tutorial and updates to pix joystickI was able to run pix-joystick with SITL using a joystick from matlab.,"['pix-joystick.py,pix-takeoff.py']"
 0fd063e52096e1d73794762f39b73a0cc0b66ae9,Aldo Vargas,2016-02-04,"Update desiredPos inside 100hz loopWaypoint not working, this is a test to see if it works better when theposition is being activated inside the high rate controller.",['mw-waypoint.py']
 58b082c4af5bedb01de0ba75715126c496ab6084,Aldo Vargas,2016-02-08,DK 2 updates,"['pix-02_08_09-41-48.csv,pixVehicle.py,mw-hover-controller.py,mw-waypoint.py,pix-goto.py,pix-hover-controller.py,pix-joystick.py,pix-logdata.py,pix-pan-tilt-camera.py,pix-showdata.py,pix-simulink-controller.py,pix-velocity-vector.py']"
-5b9f87f33376f2e58dd2a6f6cae6da3759f27402,Aldo Vargas,2016-02-08,NED speed added,"['README.md,pixVehicle.py,pix-velocity-vector.py']"
+5b9f87f33376f2e58dd2a6f6cae6da3759f27402,Aldo Vargas,2016-02-08,NED speed added,"['pixVehicle.py,pix-velocity-vector.py']"
 6d508a373dc101224b13aa11104eb55a8fda5a68,Aldo Vargas,2016-02-17,Neural Network ScriptReady to test,"['network.csv,pyrenn.py,mw-neural.py']"
 f8ca97a4e89479044bd6a2eeec282ad147d24ca3,Aldo Vargas,2016-02-23,"Added new examplesHeight controller, Joystick sender using python, sonar test script,corrections to mw-neural and corrections to UDP server.","['06_05_17-01-22.csv,pix-02_08_09-41-48.csv,UDPserver.py,sonar-test.py,mw-height-controller.py,mw-neural.py,send-joystick.py']"
 bb327b9a89fccc04ddd35acc28558123fd97094e,Aldo Vargas,2016-02-24,Bug sonar and integration thread,"['sonar-test.py,mw-height-controller.py']"
@@ -175,9 +175,9 @@ cf8fc73e7a96e13cbe60a43451f2614b27f87d17,Aldo Vargas,2016-04-27,Added security,[
 54917cf760bb1d4b09428c110cba02a554d4034f,Aldo Vargas,2016-08-11,Bug corrections,"['pixVehicle.py,pix-ground-control.py']"
 4304e20b4367d618adaa6fb65a4299b4b2b62f7b,Aldo Vargas,2016-08-12,Bug fix,"['pixVehicle.py,pix-ground-control.py']"
 494eaf622294e5140012e407a0f5fd308492af9a,Aldo Vargas,2016-08-16,Minor updates,"['mw-height-controller.py,mw-hover-controller.py,mw-hybrid-loiter.py,mw-joystick.py,mw-neural.py,mw-slung-load-trajectory.py,mw-slung-load.py,mw-trajectory.py,pix-goto.py,pix-ground-control.py,pix-hover-controller.py,pix-joystick.py,pix-logdata.py,pix-pan-tilt-camera.py,pix-showdata.py,pix-takeoff.py,pix-velocity-vector.py,send-joystick.py']"
-c4a40306f570d0bbc4927eabdb45216d07d15c29,Aldo Vargas,2016-09-13,General update,"['.gitignore,pyMultiwii.py,utils.py,vehicle.py,vision.py,pix-velocity-vector.py']"
+c4a40306f570d0bbc4927eabdb45216d07d15c29,Aldo Vargas,2016-09-13,General update,"['pyMultiwii.py,utils.py,vehicle.py,vision.py,pix-velocity-vector.py']"
 5eb7a68a2acaa60c2632c71134817e295bfe7002,Aldo Vargas,2016-10-27,Year update,"['mw-joystick.py,mw-neural.py,mw-waypoint.py,pix-goto.py,pix-ground-control.py,pix-hover-controller.py,pix-joystick.py,pix-logdata.py']"
-b661d862cec0a355868a71f45037826cf9e692e3,Aldo Vargas,2016-10-27,General update,"['1-mission.py,2-mission.py,README.md,drop-packet-test.py,gars-cube.py,sample-auto.py,victoria-park.py']"
+b661d862cec0a355868a71f45037826cf9e692e3,Aldo Vargas,2016-10-27,General update,"['1-mission.py,2-mission.py,drop-packet-test.py,gars-cube.py,sample-auto.py,victoria-park.py']"
 8c611d1d1fd8d528d8f16c9af22c778df39e96df,Aldo Vargas,2016-11-07,Pilot->Pose neural test,"['networkNOV.csv,mw-neural.py']"
 fe1db9acb43f76a6e1069235848f36b1d73376f1,Aldo Vargas,2016-11-09,Slung load altitude hold only mode,['mw-slung-load-no-control.py']
 f6bc80c384c47cc6a00a5fde8fe164f83049b193,Aldo Vargas,2016-11-18,Slung Load Prediction TestAdded script for making the SL prediction test.,"['sl_rtrl_best.csv,mw-neural.py,mw-slung-load-neural.py']"

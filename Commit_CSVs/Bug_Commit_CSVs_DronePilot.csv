@@ -1,5 +1,5 @@
 Commit_ID,Contributor,Date,Message,Files
-016dc769b6e2e78efba3b8946ce5759b9c6837af,Aldo Vargas,2015-04-15,"Bug fixes, added securityBug fixes, added security and robustness.","['.gitignore,UDPserver.py,pyMultiwii.py,joystick-test.py']"
+016dc769b6e2e78efba3b8946ce5759b9c6837af,Aldo Vargas,2015-04-15,"Bug fixes, added securityBug fixes, added security and robustness.","['UDPserver.py,pyMultiwii.py,joystick-test.py']"
 69740bb30f24e1a210a17fd006a257377ccf2a8f,Aldo Vargas,2015-04-15,"UDP bug fixesIf UDP lost connection, then don’t send commands… added robustness","['UDPserver.py,pyMultiwii.py,joystick-test.py']"
 8754e3c38ac753b590391801a15f038a5004e7e5,Aldo Vargas,2015-04-16,"Extra functionsCouple of extra functions on utils, and 2 pid tests, bugged out.","['utils.py,hover-controller.py']"
 eb6de12a545d69a6398fc7a0eb4a0ea227af5b28,Aldo Vargas,2015-04-28,3 issues fixed3 issues fixed:- desiredRoll & pitch are not global...- pitch and roll problem (with murray suggestion)- Positon print integer,"['utils.py,hover-controller.py']"
@@ -11,7 +11,7 @@ cbfb965b99c33708860cc6ad86d8f7848e9757b7,Kyle Brown,2015-06-19,Bug correction to
 40fb713f9ddfe506fa7100291aa4ef261a898b41,Aldo Vargas,2015-08-19,Error correction on joystick,['pix-joystick.py']
 f8c5273eb538d61fc0cdd017f624bf3c6f1e1e76,Aldo Vargas,2015-08-19,Bugs before testingSome bugs on the new modules.,"['pixVehicle.py,pix-joystick.py']"
 3271e403039a80ea0de3131928357a79486714ab,Aldo Vargas,2015-08-19,Bug corrections after successful flyingpix-joystick is flying great!!!,"['pixVehicle.py,pix-joystick.py']"
-ed399b32a059aaf13c22278c89abdf0c45b44832,Aldo Vargas,2015-09-04,pyMultiwii bugFix the bug of pyMultiwii.,"['README.md,pyMultiwii.py,mw-logdata.py']"
+ed399b32a059aaf13c22278c89abdf0c45b44832,Aldo Vargas,2015-09-04,pyMultiwii bugFix the bug of pyMultiwii.,"['pyMultiwii.py,mw-logdata.py']"
 d7268a5b7eb9193281e6935020394fa277a36f51,Aldo Vargas,2015-11-16,Class error,['pix-pan-tilt-camera.py']
 a22a6e84620a5fbb81b37bba9e68470c017d9b5d,Aldo Vargas,2015-11-16,Bug,['pix-pan-tilt-camera.py']
 409f661cd1cb0384bf3039e4cf71fbad99463cc6,Aldo Vargas,2015-12-08,Bugs HZ while loopBug in the loop when waiting for an specific time.,"['mw-simulink-controller.py,pix-pan-tilt-camera.py']"
@@ -23,7 +23,7 @@ c5e228c0eec089d555ae4d6f66073510a812ba58,Aldo Vargas,2015-12-22,Height controlle
 631898c139b77d13ac6d35dceda6c510f2a43db8,Aldo Vargas,2015-12-22,Height controller bugs 2,['mw-hover-controller.py']
 1ca0616672307a6482e2c195944c676c935db61c,Aldo Vargas,2016-01-05,Small error...,['mw-hover-controller.py']
 601a728955d218945e38b8aa958e9e2eb683970b,Aldo Vargas,2016-01-07,Bugs after first flightRate limiter needed.,"['UDPserver.py,mw-waypoint.py']"
-41318e0f506b8f71bb288d58b63291020ce3d068,Aldo Vargas,2016-02-03,PID set point updates - DK2.0 updatesMaking the error calculation before calling the update PID function.Extra drone kit 2.0 changes to a couple of scripts.,"['README.md,utils.py,mw-hover-controller.py,pix-joystick.py,pix-showdata.py,pix-takeoff.py']"
+41318e0f506b8f71bb288d58b63291020ce3d068,Aldo Vargas,2016-02-03,PID set point updates - DK2.0 updatesMaking the error calculation before calling the update PID function.Extra drone kit 2.0 changes to a couple of scripts.,"['utils.py,mw-hover-controller.py,pix-joystick.py,pix-showdata.py,pix-takeoff.py']"
 8770c7f13469ca1c4e14b0049796f0366ff75a1b,Aldo Vargas,2016-02-03,Fix heading bug and test new timing loop,['mw-hover-controller.py']
 bb327b9a89fccc04ddd35acc28558123fd97094e,Aldo Vargas,2016-02-24,Bug sonar and integration thread,"['sonar-test.py,mw-height-controller.py']"
 cf8a2cf919fea3265d3e06a359a4d56fa679ece5,Aldo Vargas,2016-02-24,bug2,['mw-height-controller.py']
