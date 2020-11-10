@@ -1,5 +1,5 @@
 Commit_ID,Contributor,Date,Message,Files
-59368e95d77fe9694a603b16a703ea1836b81f99,Felix Geisendörfer,2012-09-28,New Client and bug fixes,"['README.md,index.js,Client.js,Repl.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js,test-index.js']"
+59368e95d77fe9694a603b16a703ea1836b81f99,Felix Geisendörfer,2012-09-28,New Client and bug fixes,"['index.js,Client.js,Repl.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js,test-index.js']"
 9ead1ed41bb0af1582815c961204afbe4dea53a4,Felix Geisendörfer,2012-10-03,Allow catching navdata errors,"['Client.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-Client.js']"
 3a95b6bed1fdc6a16550f53ea586de5ce04a6726,Felix Geisendörfer,2012-10-03,Delegate navdata error events if needed,"['Client.js,test-Client.js']"
 c2c6615979cfd403ed44f0f760a626f855d4f34f,John Schulz,2012-11-11,Addressing spacing and syntax errors from a borked commit.,['parseNavdata.js']
