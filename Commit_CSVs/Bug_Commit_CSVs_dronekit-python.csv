@@ -20,7 +20,7 @@ fc111f9185fb9408e8e3d8fa0f307924b884eb68,hamishwillee,2015-05-15,Add note about 
 6d8a739c20d133d0f817068336a3c23882519ba7,hamishwillee,2015-06-25,Fix bug in the example calling wrong goto command in each section,"['guided-set-speed-yaw-demo.rst,guided_set_speed_yaw.py']"
 5c692fed43c7cc430de2d77361d800425f7ecc1c,Daniel Nugent,2015-07-07,Fixed import error for takeoff checks,['api.py']
 0b9e337f2cdfa08114acf90f1867c3542d8b8598,Tim Ryan,2015-07-07,Merge pull request #182 from djnugent/takeoff_fixFixed import error for takeoff checks,['']
-b2a4099b17bef4fe2df29ef281c4dcc00d5b1034,Tim Ryan,2015-08-12,Enables moddebug for VERBOSE outputs.,['__main__.py']
+b2a4099b17bef4fe2df29ef281c4dcc00d5b1034,Tim Ryan,2015-08-12,Enables moddebug for VERBOSE outputs.,['']
 618712f8716697d96e803f0a4471b3a6afbb4582,Tim Ryan,2015-10-13,Fixes raise error hiding stack trace.,['']
 b030927c4c9818f4b83f16dd6bdb5892e5895753,Hamish Willee,2015-10-22,Improvements to wording around connection defaults. Add warnings to mission examples because bugs not yet fixed,"['create_attribute.rst,guided-set-speed-yaw-demo.rst,mission_basic.rst,mission_import_export.rst,simple_goto.rst']"
 79e08cd553e69125604a9dc3df8ba10229ed5ef3,Hamish Willee,2015-10-22,"Fix up flight_replay.py doc/example to DKPY2. Note, still has bug #355","['flight_replay.rst,flight_replay.py']"

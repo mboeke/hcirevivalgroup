@@ -14,7 +14,7 @@ dbfa4f859e78bc16d65f08180b3cfbc00331bef5,Andrew Stewart,2013-11-26,"Merge branch
 1e2527ede9e61d3064d7a5bfa9afb3a7c7b0aa9a,Andrew Stewart,2013-11-27,Add Literate version of Conway example and fix bug,"['conway_sphero.coffee,conway_sphero.js,conway_sphero.litcoffee']"
 ad39fdaf8063f9776b02fc49c13d204595e9f930,Edgar O Silva,2013-11-27,Debugging digitalPin read.,"['digital-pin.js,digital-pin.coffee']"
 2c52db8086c084078fa35ff05ec9300502eb36b9,Andrew Stewart,2013-11-28,Merge branch 'master' into literate* master:  Crazyflies  Updated servo examples to use a limit range of motion instead of full 180.  Update digital read to parseInt buffer response.  DigitalRead buffer data converted to string now.  Debugging digitalPin read.  Added servo example for Raspi.  Add more supported devices to README  Update to 0.6.1  Update digital pin close callback param.  Fixes err param not being passed.  Updated digital pin and added pwm raspi example.Conflicts:	examples/servo.coffee,['']
-fa26ceb117cef8802dba99cf9dfcc86e7c0618bb,deadprogram,2013-12-28,Correct typos and errors in README,['README.md']
+fa26ceb117cef8802dba99cf9dfcc86e7c0618bb,deadprogram,2013-12-28,Correct typos and errors in README,['']
 3fde2c9a36edb41afcb771538cbf6844234c799d,Edgar O Silva,2014-01-24,Fix bugs and updated feedback messages.,['cylon']
 3dd0870ff67a26fa4130e4bd10282a12a1f02cc1,Edgar O Silva,2014-01-31,Remove debug comments.,['cylon']
 79b5e9947e2c6a7333537f83ee1b378dd34397e8,Andrew Stewart,2014-02-25,Fix bug with subclass helper,"['utils.js,utils.coffee']"
