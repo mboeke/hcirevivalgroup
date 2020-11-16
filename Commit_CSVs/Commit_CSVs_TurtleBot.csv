@@ -1,309 +1,309 @@
-Commit_ID,Contributor,Date,Message,Files,Branch
-2a1e8592c93f7b5a5f8199957cafdaccf33cb9e9,Yoonseok Pyo,2016-06-21,Initial commit,['LICENSE'],{'master'}
-22b98b0f39c7971e3c30c8b0adaf7fe7a0be6cb9,Yoonseok Pyo,2016-06-21,added init files,"['LICENSE,CMakeLists.txt,turtlebot3_node.h,package.xml,turtlebot3_node.cpp']",{'master'}
-76c4d0d49916191a2848f07f3de990769a152fa9,Yoonseok Pyo,2016-06-21,added a description package and launch file,"['CMakeLists.txt,package.xml,model.rviz,turtlebot3.urdf.xacro,slam.launch']",{'master'}
-1498de8d410ef49d5f2d6f7e5b61cc2a06dd08a2,Yoonseok Pyo,2016-06-22,added features for SLAM,"['turtlebot3_node.h,turtlebot3_node.cpp']",{'master'}
-a067a787cbb186dd15ac2597459cb254c915ad59,Yoonseok Pyo,2016-06-23,added SLAM package,"['turtlebot3.urdf.xacro,CMakeLists.txt,turtlebot3_slam.launch,package.xml,turtlebot3_slam.rviz,scan_data.bag']",{'master'}
-e213d453463429736064de1a0e83808cb77d6695,Yoonseok Pyo,2016-06-27,changed the rviz setting,['turtlebot3_slam.rviz'],{'master'}
-6997301ead26cfee37276b85265cf1dd5db40c38,Yoonseok Pyo,2016-06-28,modified the processing of upateOdomety,"['turtlebot3_node.h,turtlebot3_node.cpp']",{'master'}
-0999539c31de55b2f4bd1aa79233a60f8b8f9eaa,Yoonseok Pyo,2016-06-30,minor change,"['turtlebot3_node.h,turtlebot3_node.cpp']",{'master'}
-7ea732564699c5d506b32e8879751c01cb6d1df0,Yoonseok Pyo,2016-07-01,modified the wheel speed gain,"['base_local_planner_params.yaml,costmap_common_params.yaml,dwa_local_planner_params.yaml,local_costmap_params.yaml,turtlebot3_nav.rviz,turtlebot3_node.cpp,turtlebot3_slam.rviz']",{'master'}
-ea25acaaff149c47b29e1853ec992c56be4d4ade,Yoonseok Pyo,2016-07-05,modified the navigation parameters for navigation test,"['amcl.launch.xml,map.pgm,costmap_common_params.yaml,dwa_local_planner_params.yaml,local_costmap_params.yaml,turtlebot3_nav.rviz,turtlebot3_node.h,turtlebot3_node.launch,turtlebot3_node.cpp']",{'master'}
-aac95409088e35356920f3da40c438c5f03f5118,pyo,2016-08-22,modified the diff driver for DXL,"['CMakeLists.txt,turtlebot3_diff_driver.h,package.xml']",{'master'}
-68e67bbd72a97a82fdecdfa5a6551892de075e7d,pyo,2016-08-25,modified DXL comm_result bug,['turtlebot3_diff_driver_node.cpp'],{'master'}
-ee27fa9f80b14bd9d16de10102a1ccf3e84105f8,pyo,2016-08-26,deleted a depend pkg,"['CMakeLists.txt,package.xml']",{'master'}
-0c8fba295cb7ad9ce51265e4e92ce5dd43ab7968,pyo,2016-09-22,added launch file for keytele,['keyboard_teleop.launch'],{'master'}
-85af3876343c657df702012eb22ac0197f440f87,pyo,2016-09-23,add remap option for image,['turtlebot3_bringup.launch'],{'master'}
-8953129455075f43f00e590d219bf09f322f832b,Pyo,2016-11-17,added new msgs for TB3,"['LICENSE,turtlebot3_bringup.launch,CMakeLists.txt,MotorPower.msg,SensorState.msg,VersionInfo.msg']",{'master'}
-5eb4481134a33cc33110d12962289c9363181ca6,Pyo,2016-11-17,deleted diff_driver packages using USB2Dynamixel,"['CMakeLists.txt,turtlebot3_diff_driver.h,package.xml,turtlebot3_diff_driver_node.cpp']",{'master'}
-2255f871c7dabcaa2740ee1e0cf442c87e6f9983,Pyo,2016-11-17,modified the loop periods,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'}
-42426826ae171b647dc60b7b10e99b50a35955e7,Pyo,2016-11-18,modified the publisher for IMU,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'}
-152477f92edf31a6301bbe2a3dbf4c7d39a5a938,Pyo,2016-11-21,modified the remote control function using RC100 remocon,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'}
-8ed9b3d51a2809af4d2cbf5e2687be4182e8ede9,Pyo,2016-11-22,modified turtlebot3_node for core package,"['DynamixelFeedback.h,turtlebot3_core_config.h,turtlebot3_node.h,turtlebot3_node.cpp']",{'master'}
-85f9e9a37f76e7e2f290b1140b2a1f4574a8c929,Pyo,2016-11-23,deleted turtlebot3_node,"['package.xml,turtlebot3_bringup.launch,CMakeLists.txt,turtlebot3_node.h,keyboard_teleop.launch,turtlebot3_node.launch,package.xml,turtlebot3_node.cpp']",{'master'}
-f862f6b13ca4a5e7e8d8b3d1afc06a429987aaa7,Pyo,2016-11-23,modified pkg setting for turtlebot3_core,"['package.xml,CMakeLists.txt,package.xml,CMakeLists.txt,package.xml,package.xml,CMakeLists.txt,package.xml,CMakeLists.txt,package.xml']",{'master'}
-749f2d67da8c17010b3143775177daad7c66afb0,Pyo,2016-11-23,added a urdf file for rplidar,"['turtlebot3_bringup.launch,turtlebot3_core.ino,turtlebot3_core_config.h,turtlebot3_astra.urdf.xacro,turtlebot3_rplidar.urdf.xacro']",{'master'}
-74acb3755eb7289e634c673cc61828c1858dfd7d,Pyo,2016-11-24,added turtlebot STL file for RViz,"['turtlebot3_bringup.launch,turtlebot3_core.ino,turtlebot3.stl,turtlebot3_rplidar.urdf.xacro']",{'master'}
-163a2a0a86c872a80aed1e12279d7950282accb1,Pyo,2016-11-25,modified turtlebot3 model files,"['turtlebot3_bringup.launch,turtlebot3.stl,turtlebot3_rplidar.urdf.xacro']",{'master'}
-4d9b047fc0d825eb7cf094e8968e5cdb4d6287be,Pyo,2016-12-02,added lds sensor,"['turtlebot3_bringup.launch,turtlebot3_bringup_pc.launch,turtlebot3_bringup_sbc_lds.launch,turtlebot3_bringup_sbc_rplida.launch,turtlebot3_core.ino,turtlebot3_navigation.launch,map.pgm,turtlebot3_slam_compare.launch,turtlebot3_slam.rviz']",{'master'}
-a1b183677c9bc08c5f5aa952cbc62f1ec898efbb,Pyo,2016-12-08,added a launch file for r200,['turtlebot3_bringup_sbc_r200.launch'],{'master'}
-8992986b3e0166d9b3fb66ff0611f2c992d162f8,Pyo,2016-12-09,add sensor info for Intel RealSense R200,"['turtlebot3_bringup_pc_basic.launch,turtlebot3_bringup_pc_premium.launch,turtlebot3_core_config.h,r200.dae,r200.jpg,turtlebot3_astra.urdf.xacro,turtlebot3_lds.urdf.xacro,turtlebot3_r200.urdf.xacro,turtlebot3_slam.rviz']",{'master'}
-d7c22ae19c0acbc346d6a14dd92047e0f2c32b16,Pyo,2016-12-10,modified the camera_link info,['turtlebot3_r200.urdf.xacro'],{'master'}
-5d9f848b19b093db61947a76562fa43087b44542,Pyo,2016-12-13,added battery voltage msg and info,"['ArduinoHardware.h,ros.h,SensorState.h,DynamixelFeedback.msg,SensorState.msg']",{'master'}
-04dbbe2a0d6ee9dc0fe0eb708d414f10348a76c2,Pyo,2016-12-13,added battery voltage msg pub,['turtlebot3_core.ino'],{'master'}
-77696ea7a3ab1e7dc1ef6c8ed49b8859d26b8b47,Pyo,2016-12-22,added new model of turtlebot3,"['turtlebot3_basic.stl,turtlebot3_premium.stl,turtlebot3_lds.urdf.xacro,turtlebot3_r200.urdf.xacro']",{'master'}
-06e471943ff2d1e3a4873d8e3dfcf3aa7bef4769,Pyo,2017-02-01,modified the laser node name,['turtlebot3_bringup_sbc_lds.launch'],{'master'}
-c22096c00ea34fc69e9a059f3efea37d49ef006a,Pyo,2017-02-06,modified the define namings,"['turtlebot3_core.ino,turtlebot3_motor_driver.cpp,turtlebot3_motor_driver.h']",{'master'}
-7f0dee18250bc5badaa20657ebfe1a935aa32fa4,Pyo,2017-02-06,added the IMU quaternion values,['turtlebot3_core.ino'],{'master'}
-947089cf51e40e24b0006532e87905fb0b2aaab6,Pyo,2017-02-07,modified the navigation pkg,"['turtlebot3_navigation.launch,map.pgm,map.yaml']",{'master'}
-61898d3936ea299e2be0fcd006d3691c852edb66,Pyo,2017-02-07,modified the param,"['turtlebot3_teleop_key.launch,amcl.launch.xml,turtlebot3_slam_compare.launch']",{'master'}
-68363f186d60165b89b539a5c1799116b26f8208,Pyo,2017-02-07,modified the navigation pkg,"['amcl.launch.xml,turtlebot3_navigation.launch,base_local_planner_params.yaml,costmap_common_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml,turtlebot3_nav.rviz']",{'master'}
-b47a0a33acfb7a54fbb961b74927e216deb5dcc6,Pyo,2017-02-07,modified the slam  pkg,"['turtlebot3_slam.launch,turtlebot3_slam_compare.launch,turtlebot3_slam.rviz']",{'master'}
-9ad4069bb8a099163e4954c4853ec5c2aa8e75d8,Pyo,2017-02-08,used TURTLEBOT3_MODEL,"['description.launch.xml,turtlebot3_bringup.launch,turtlebot3_bringup_pc_basic.launch,turtlebot3_bringup_pc_premium.launch,turtlebot3_astra.urdf.xacro,turtlebot3_basic.urdf.xacro,turtlebot3_premium.urdf.xacro']",{'master'}
-193771eb32404aab6c3c8f700418298b0a55fcca,Pyo,2017-02-08,used TURTLEBOT3_MODEL,['turtlebot3_bringup.launch'],{'master'}
-6cfcc9e5cae58b98bbbcfabb761f1544221d7a08,Pyo,2017-02-08,used integrated bringup file,"['turtlebot3_navigation.launch,turtlebot3_slam.launch']",{'master'}
-145ebb484112571a691ed1505b233807eff63b37,Pyo,2017-02-09,modified the units,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'}
-d0d02fb713aa6d24fa5201dd73dfd5cdbe479790,Pyo,2017-02-22,modified the turtlebot bringup files,"['turtlebot3_bringup_sbc_r200.launch,turtlebot3_bringup_sbc_rplida.launch,turtlebot3_remote.launch,turtlebot3_robot.launch,turtlebot3_navigation.launch,turtlebot3_slam.launch']",{'master'}
-744de81d65027e99ebb77f5a024701299fa1552a,Darby Lim,2017-02-22,modified basic and premium urdf,"['pr30_isw_tire_l.stl,pr30_isw_tire_r.stl,pr30_tb3_basic.stl,pr30_tb3_premium.stl,lds.stl,turtlebot3_basic.urdf.xacro,turtlebot3_premium.urdf.xacro']",{'master'}
-8cf0e554f43bf7b29b03f202b201ac48dfe8fae9,Darby Lim,2017-02-22,modified file name,"['turtlebot3_remote.launch,basic_base.stl,left_tire.stl,premium_base.stl,right_tire.stl,turtlebot3_basic.urdf.xacro,turtlebot3_premium.urdf.xacro']",{'master'}
-07911c588ae1b5c3f626dcaa206f922edbeedda0,Darby Lim,2017-03-09,update navigation parameter,"['turtlebot3_remote.launch,amcl.launch.xml,costmap_common_params.yaml,dwa_local_planner_params.yaml,turtlebot3_nav.rviz']",{'master'}
-b0c03dbffb9e481e5f88ab17c37c10b1e86ec186,Pyo,2017-03-09,modified the name of bases and model names,"['burger_base.stl,waffle_base.stl,left_tire.stl,right_tire.stl,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,VersionInfo.msg']",{'master'}
-98315a5e0c73571bc1c329457c5504e4f156f4e4,Pyo,2017-03-09,modified the name of bases and model names,"['turtlebot3_remote.launch,burger_base.stl,waffle_base.stl']",{'master'}
-e0c4b7c01dea047d6d4ee2a9234b79a86f659dea,Pyo,2017-03-09,modified the materials,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-40a2646e6fb3366596b257a3f96d9323d25cbf40,Pyo,2017-03-09,added view mode,"['turtlebot3_model.launch,turtlebot3_remote.launch,model.rviz']",{'master'}
-631261ec18b8432785a6a744de83f24b3fff2b87,Pyo,2017-03-14,added turtlebot3 fake node and package,"['CMakeLists.txt,turtlebot3_fake.h,turtlebot3_fake.launch,package.xml,turtlebot3_fake.cpp']",{'master'}
-a9ad9a4959c2e869d298188200a8f3a132fb48a2,Pyo,2017-03-14,added a package in meta-pkg,['package.xml'],{'master'}
-1cc53121413478e2699dea02b48f44c0b318eb1f,Darby Lim,2017-03-14,navigation bug fixed,"['amcl.launch.xml,map.pgm,package.xml,base_local_planner_params.yaml,costmap_common_params.yaml,dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml']",{'master'}
-a783d4fad4720d894bac9ae967b143370fd64426,Chris177,2017-03-14,This is a update to run panorama demo on turtlebot3,"['CMakeLists.txt,PanoramaImg.msg,package.xml,SetFollowState.srv,TakePanorama.srv,turtlebot3_panorama']",{'master'}
-88a239085093d13a106fa8d5bc948e192868a937,Pyo,2017-03-14,fixed the bug that return the origin point,"['turtlebot3_fake.h,turtlebot3_fake.cpp']",{'master'}
-4e07cf13f5cabe64eb1011509634859ed549e99c,Pyo,2017-03-14,added rviz environment file,"['turtlebot3_fake.h,turtlebot3_fake.launch,turtlebot3_fake.rviz,turtlebot3_fake.cpp']",{'master'}
-9827492bd20c8ece486df40a512d919483306c6d,Pyo,2017-03-14,added rviz environment file,['turtlebot3_fake.rviz'],{'master'}
-8d311110e31e55d3bce2dac3d830a635dbe730a2,Pyo,2017-03-17,deleted applications pkgs,['turtlebot3_panorama'],{'master'}
-7eb88c68a33288d7cfa3fd854fc670646daab08b,ROBOTIS-Leon,2017-03-22,TurtleBot3 navigation - costmap_common_params.yaml divided into two files depended on TurtleBot3 model,"['turtlebot3_navigation.launch,costmap_common_params_burger.yaml']",{'master'}
-fe59f2725fa1eb80f6f52bbb3c94c594b3362683,ROBOTIS-Leon,2017-03-22,TurtleBot3 navigation - costmap_common_params.yaml divided into two files depended on TurtleBot3 model,['costmap_common_params_waffle.yaml'],{'master'}
-2f81351651587cbf5d15727f547ade8e4d5f8d65,Darby Lim,2017-03-22,add gazebo package,"['CMakeLists.txt,launch.launch,robot.launch.xml,turtlebot3_burger_gazebo_test.launch,turtlebot3_gazebo.launch,velocity_controller.launch,velocity_controller.yaml,package.xml,empty.world,tutorial.world']",{'master'}
-066d7a58a49a1ee55b5a128e01bae8736cc31293,Darby Lim,2017-03-27,update publish_frequency,"['turtlebot3_model.launch,turtlebot3_remote.launch,turtlebot3_robot.launch,turtlebot3_gazebo_rviz.launch,turtlebot3_escape.cpp,turtlebot3.world']",{'master'}
-d42741ced8a18ffcd84d7f2babef0dbd48c04ea6,Darby Lim,2017-03-27,update publish frequency,['turtlebot3_fake.launch'],{'master'}
-5f2253a00133199a582c9221fdf2a52a2fdde514,Darby Lim,2017-03-27,update stl and urdf,"['burger_base.stl,waffle_base.stl,turtlebot3_burger.gazebo,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo,turtlebot3_waffle.urdf.xacro']",{'master'}
-945047ecda7a9280a0260103c2723b3b7278569b,Darby Lim,2017-03-27,update gazebo launch file,"['turtlebot3_gazebo.launch,turtlebot3_gazebo_rviz.launch,turtlebot3_gazebo_model.rviz,turtlebot3_escape.cpp,turtlebot3.world']",{'master'}
-721a15bb302d540a92ab849ce02ae3f9149283ff,Darby Lim,2017-03-28,update stl and urdf,"['waffle_base.stl,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-8d55ad41de68f7e5e0c35fd233a68e6c1d2687de,Darby Lim,2017-03-28,modify gazebo launch file,['turtlebot3_gazebo.launch'],{'master'}
-a652db4cfc1f6319e95429a8145f01cf07a6b0e1,Darby Lim,2017-03-31,update gazebo file,"['turtlebot3_burger.gazebo,turtlebot3_waffle.gazebo,gazebo_ros_turtlebot3.h,turtlebot3_empty_world.launch,turtlebot3_simulation.launch,gazebo_ros_turtlebot3.cpp,simple_world_plugin.cpp,ros.world']",{'master'}
-56d214d6c68bf738ecb44b9d038e9d2c905433f5,Darby Lim,2017-03-31,add gazebo model,"['hexagon.dae,wall.dae,model.config,model.sdf']",{'master'}
-5f1e4c64b0d47126f56b322fb113419228e0ceda,Darby Lim,2017-04-05,update turtlebot3 gazebo,"['gazebo_ros_turtlebot3.h,turtlebot3_simulation.launch,turtlebot3_world.launch,gazebo_ros_turtlebot3.cpp,model.sdf']",{'master'}
-0000fca01d9505fee2bb1cc910eddd1e5ee621e1,Darby Lim,2017-04-06,modify footprint,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-d823df51cc4502874b39a791923f3faea700532e,Darby Lim,2017-04-06,modify variable,"['turtlebot3_fake.h,turtlebot3_fake.launch,turtlebot3_fake.cpp']",{'master'}
-90caa88df4a81cfce3f7b3ab3227f2e31869c668,Darby Lim,2017-04-06,modify inertia,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-ff92a64564b2695daf968e1b37919576dcdeeb47,Darby Lim,2017-04-06,modify variable,"['gazebo_ros_turtlebot3.h,gazebo_ros_turtlebot3.cpp']",{'master'}
-44511b1063585fac13d10f4760ee91c692f25196,Darby Lim,2017-04-07,modify launch file,['turtlebot3_robot.launch'],{'master'}
-00df091dd35b933c06994591d88b6d1e3d0d3332,Darby Lim,2017-04-07,bug fixed,['turtlebot3_robot.launch'],{'master'}
-043b84a8b66e64e45583a34cdb8a84f55113f032,Darby Lim,2017-04-14,update slam param,['turtlebot3_slam.launch'],{'master'}
-2912f6b7e5ae70b158bd2c46d89d8dae5b813b97,Darby Lim,2017-04-14,update navi param,"['amcl.launch.xml,turtlebot3_navigation.launch,base_local_planner_params.yaml,costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml,turtlebot3_nav.rviz']",{'master'}
-23dc9ba42ccdaa7396a2ba1ea7c1df66a19d9e47,Taehoon Lim,2017-04-16,gazebo tf bug fixed,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-e65753b2c1da728f74e9f11fa3e3c24c27d274e8,Darby Lim,2017-04-17,update amcl param,['amcl.launch.xml'],{'master'}
-f21100d196433c617b81759f7d41fddfc6a06ba5,Darby Lim,2017-04-18,update navigation param,"['turtlebot3_navigation.launch,base_local_planner_params.yaml,costmap_common_params_waffle.yaml,dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'}
-b649d567a4c0dd7b34e72551a9d554f2881d5ba7,Darby Lim,2017-04-18,update nav param,"['costmap_common_params_waffle.yaml,dwa_local_planner_params.yaml,move_base_params.yaml,turtlebot3_nav.rviz']",{'master'}
-ccb6c8b5c41ba957eddc3ef5c7c9183d78ce2439,Darby Lim,2017-04-19,update slam param,"['turtlebot3_slam.launch,turtlebot3_slam.rviz']",{'master'}
-c073bb98b97ddd977fe1dbda0070aa4cfe33249f,Darby Lim,2017-04-19,update nav param,"['turtlebot3_navigation.launch,costmap_common_params_burger.yaml,dwa_local_planner_params.yaml']",{'master'}
-40459b627bdc285a42ef3d46e7f8a95b9aaf8afc,Darby Lim,2017-04-19,update waffle nav param,"['costmap_common_params_waffle.yaml,dwa_local_planner_params.yaml']",{'master'}
-f778da92fe55cb831d4ca7faecd8d26c4b6085f4,Darby Lim,2017-04-20,update nav param,['dwa_local_planner_params.yaml'],{'master'}
-513fdec9725d8048b9c523ea074793321abd8f17,Pyo,2017-04-24,Detached turtlebot3_msgs package from turtlebot3 package for uploading to rosdistro,"['package.xml,CMakeLists.txt,MotorPower.msg,PanoramaImg.msg,SensorState.msg,VersionInfo.msg,package.xml,SetFollowState.srv,TakePanorama.srv']",{'master'}
-2b747a797d6a8ce04502105d87d8a20791fb7b77,Pyo,2017-04-24,Version Update (0.1.3),"['package.xml,package.xml,package.xml']",{'master'}
-0f21d8eb9774c520c436d1122757683d7812e4b9,Darby Lim,2017-04-27,modify bringup launch file,"['turtlebot3_motor.launch,turtlebot3_robot.launch,turtlebot3_sensor.launch,model.rviz']",{'master'}
-91400d42292ba899ab87265ef3dd1700e7b59687,Darby Lim,2017-04-27,modified launch file name,"['turtlebot3_core.launch,turtlebot3_lidar.launch,turtlebot3_model.launch,turtlebot3_robot.launch']",{'master'}
-4ee7f58d7000697774d8b00b47f62bf6079bd462,Darby Lim,2017-04-28,add teleop package,"['CMakeLists.txt,keyboard_teleop.launch,package.xml,turtlebot3_teleop_key']",{'master'}
-4e51b77a1d6fa7baf9b88a38e31b884c46a9cd7a,Darby Lim,2017-04-28,modified launch file name,"['turtlebot3_teleop_key.launch,turtlebot3_teleop_key.launch,turtlebot3_teleop_key']",{'master'}
-0e28c3b93a761c7a7183c1c1bddd7568abb21a7e,Pyo,2017-05-23,version update (0.1.4),"['package.xml,package.xml']",{'master'}
-6b8089827171569277a8790e691664458a508578,Darby Lim,2017-05-24,update URDF,"['common_properties.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-538bcc49660ed2a6df69b9a0cbc82a990dd18a46,Darby Lim,2017-05-24,update turtlebot3 waffle URDF,"['waffle_base.stl,waffle_base_naked.stl,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro']",{'master'}
-ced639688e6941eb0d909986d4d03399457b6ad3,Darby Lim,2017-05-24,add SLAM bag files,"['TB3_WAFFLE_SLAM_1.bag,TB3_WAFFLE_SLAM_2.bag']",{'master'}
-9053a346feafc981fb6d4aad541fadd67620a762,Yoonseok Pyo,2017-05-24,changed the node name from hlds_laser_publisher to turtlebot3_lds,['turtlebot3_lidar.launch'],{'master'}
-764a7755f4005ab16cff2e8fce18eae909b70549,Darby Lim,2017-05-25,modified bag and map files,"['map.pgm,map.yaml,TB3_WAFFLE_SLAM.bag,TB3_WAFFLE_SLAM_2.bag']",{'master'}
-6eb9ef497966c08c53281ab1be048c8666243ce7,Darby Lim,2017-05-25,update slam param,['turtlebot3_slam.launch'],{'master'}
-79ba48c8cfa75da042c5d4048546042f28f92bc3,Darby Lim,2017-05-25,update nav param,['local_costmap_params.yaml'],{'master'}
-1e56b883e653d8620fb96ebc3dd4c0806f6af476,Darby Lim,2017-06-07,update gazebo config,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'}
-839ede7a7190f802c9ff0fa193a67cdc62bedb30,Darby Lim,2017-06-07,update gazebo config,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'}
-f0ab39e0a29d3f5dc52a816b8d327af01d0101b6,Darby Lim,2017-06-08,modify file location,['turtlebot3_realsense.launch'],{'master'}
-93473a73a7f16e8f8d7039138b632723beeebc17,Darby Lim,2017-06-08,update imu link,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro']",{'master'}
-3b5a5110825aa5ea0e54b3bf8a4be40da08167bc,Hunter L. Allen,2017-07-25,Fix xacro.py deprecation.,"['description.launch.xml,turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'}
-9f9b80d9976b08d46c324e030be431381196a3fc,Hunter L. Allen,2017-08-07,Fixed typo,['package.xml'],{'master'}
-4792b1f499def5178af2b53c21622db8dc1233d4,Darby Lim,2017-08-08,update model.launch,['turtlebot3_model.launch'],{'master'}
-dcc7428365de83a53d286c592fcfab72f2c02cdc,Darby Lim,2017-08-08,modified model,"['burger_base.stl,waffle_base.stl,waffle_base_naked.stl']",{'master'}
-d7a59ccb04745b5a82a95c8c10943f90145687f0,Darby Lim,2017-08-22,modified gazebo imu link,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'}
-e153011b8208f7122aa08df47b804492b68a4fad,Darby Lim,2017-10-12,modified r200 tf tree,"['turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro']",{'master'}
-d743de3a275d51a08425280077868e73d0bb4953,Darby Lim,2017-12-19,update waffle_pi,"['waffle_pi_base.stl,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro']",{'master'}
-16b112320b0da1fdd7e8d4fd3993aa46a1c8c959,Darby Lim,2017-12-19,add waffle_pi urdf and gazebo,"['turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_navigation.launch,costmap_common_params_waffle_pi.yaml']",{'master'}
-85def5ee4343087fdd36d4a24888a63d2ce4ddab,Darby Lim,2017-12-21,add scripts for reload rules,"['99-turtlebot3-cdc.rules,CMakeLists.txt,create_udev_rules']",{'master'}
-16a3ba3ec088919fd6738c7a0ca1f6f28d6730d9,Darby Lim,2018-01-09,delete rules,['99-turtlebot3-cdc.rules'],{'master'}
-1096773ed42b6b8f593af4fc5dfc2e90916533c7,Darby Lim,2018-01-15,add diagnostics node,"['CMakeLists.txt,turtlebot3_robot.launch,package.xml,turtlebot3_diagnostics.cpp']",{'master'}
-cb8b1a95847304f6bd20cb30f05d9f93096da190,Darby Lim,2018-01-17,add verion check function,['turtlebot3_diagnostics.cpp'],{'master'}
-f6491068251eaa6ef810e08f64a3f8bb976bfb4a,Darby Lim,2018-01-18,add license,['turtlebot3_diagnostics.cpp'],{'master'}
-7a7cd2036eb8e8a7eafe55295a97ea84026880c6,Darby Lim,2018-01-19,modified version check,['turtlebot3_diagnostics.cpp'],{'master'}
-8b497084e8f2d9d65fc99920ce3a0d7d2c413beb,Darby Lim,2018-01-24,add waffle pi,"['turtlebot3_model.launch,turtlebot3_remote.launch']",{'master'}
-2aa43322af303cdf7fc2a264f2fe1a3c92cbdcb1,Taehoon Lim,2018-01-29,edit firmware version,['turtlebot3_diagnostics.cpp'],{'master'}
-24728bc10c25d4d198bb8fae8793c6b26a451dc3,Gilbert,2018-01-30,update,"['turtlebot3_model.launch,turtlebot3_remote.launch,turtlebot3_diagnostics.cpp']",{'master'}
-c8f9a4161563743a7394ae431c49d9149055b270,Leon Jung,2018-02-05,turtlebot3_rpicamera.launch added,['turtlebot3_rpicamera.launch'],{'master'}
-50afd40b4385b81f935e50a4b7811c7ba620a582,Darby Lim,2018-02-22,modified param config,['turtlebot3_rpicamera.launch'],{'master'}
-00ad0f53553d7e039df2ba87298b0d2aa281415d,Yoonseok Pyo,2018-03-02,Create .travis.yml,['.travis.yml'],{'master'}
-ad2bcbf64e3419524701385413d25e149407026c,Darby Lim,2018-03-07,update firmware version,['turtlebot3_diagnostics.cpp'],{'master'}
-2d41748c1ff3f74aac011bea05e4e29a3597f101,Darby Lim,2018-03-07,gazebo plugin topic amended,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-4b31e270f476e533be5eef83d32fae7714d6940c,Darby Lim,2018-03-07,update fw version,['turtlebot3_diagnostics.cpp'],{'master'}
-7146a3c17e191e9eff51d3eb1ed42558c92cba2b,kijongGil,2018-03-09,modified topic in server.py,['turtlebot3_server.py'],{'master'}
-411dfdaf6ec479a0755c6c0f0bd31c685449bc36,Pyo,2018-03-12,modified the travis setting for testing,['.travis.yml'],{'master'}
-afbaa3d0539a95a174f2b14a190d7fb6f0a19283,Pyo,2018-03-12,modified the travis setting for testing,['.travis.yml'],{'master'}
-bda72785bb244548ad7fc2296d07ce22bea6eeb5,Pyo,2018-03-12,remove the large bag file and added download command from other site,"['TB3_WAFFLE_SLAM.bag,bag_files.md']",{'master'}
-5b18ba5bd3025d88599ca0a6601534d4eb18ce8f,Pyo,2018-03-12,refactoring,"['package.xml,CMakeLists.txt,interactive_markers.launch,package.xml']",{'master'}
-4744f6dd3ec3200a6eb6b4c82e299a2671706cf1,Pyo,2018-03-12,refactoring,"['CMakeLists.txt,turtlebot3.action,package.xml,turtlebot3_client.py,turtlebot3_pointop_key.py,turtlebot3_server.py,turtlebot3_marker_server.cpp']",{'master'}
-7eed225d0af6bac6f5a70288b52c7bfe523d57af,Pyo,2018-03-12,updated the CHANGELOG and version to release binary packages,['CMakeLists.txt'],{'master'}
-eb64f182c3bab23c85237bf66388142d95380e03,Pyo,2018-03-12,updated the CHANGELOG and version to release binary packages,['CHANGELOG.rst'],{'master'}
-ae5f12bcd1426f26e6cabba8a11c5eb4ffbeecaf,Darby Lim,2018-03-13,update firmware version(1.1.1),['turtlebot3_diagnostics.cpp'],{'master'}
-d7fbb41492a0612880ad73b3493ff11437b2728f,Pyo,2018-03-14,refactoring for release,"['.travis.yml,CHANGELOG.rst,CMakeLists.txt,package.xml,CMakeLists.txt,CMakeLists.txt,turtlebot3_marker_server.cpp,CMakeLists.txt']",{'master'}
-3feab6056d2cc1855a9fc1b9d89a78e5139a5905,Pyo,2018-03-14,updated the CHANGELOG and version to release binary packages,['CHANGELOG.rst'],{'master'}
-588ff730f38b3c93ef9eeca25438ea0239bdb84b,Darby Lim,2018-03-15,change waffle_pi stl,['waffle_pi_base.stl'],{'master'}
-287912cc9e7679cef35e15f917ae50c250a7382c,Darby Lim,2018-03-15,update firmware version,['turtlebot3_diagnostics.cpp'],{'master'}
-e3c52ef6cdb0ed86a21072800607f84ff8220682,Leon Jung,2018-03-19,* changes: turtlebot3_rpicamera.yaml gets camera_info_url value from the initialized calibration file,"['turtlebot3_rpicamera.yaml,turtlebot3_rpicamera.launch']",{'master'}
-17a5aad4270a5605728b8f14eee47e0f71a56c7f,Darby Lim,2018-03-21,modified xacro param,['description.launch.xml'],{'master'}
-bc9d20d36490acad49d6927cf75a345248d8b4ba,Darby Lim,2018-03-21,delete base_scan tag and add imu tag,['turtlebot3_waffle_naked.urdf.xacro'],{'master'}
-687c714c707adf7131e37ef45c17d041c09c3a70,Darby Lim,2018-03-22,add waffe_pi_naked,"['waffle_pi_base_naked.stl,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-1d91f8ffcdddbdba04b0a8a2135023e0c8925137,Darby Lim,2018-03-23,update gazebo param,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-2ef2173e5bed460c9986ed1dce0edf7324afa896,Darby Lim,2018-03-23,add limit velocity msg,['turtlebot3_teleop_key'],{'master'}
-adb6edcf40c2f3f5202cc7d0b4031925b25bb66c,Darby Lim,2018-03-26,update stl file,['waffle_pi_base_naked.stl'],{'master'}
-64b1cca5ae665885f4b205bf69905a1cf1809157,Darby Lim,2018-03-26,bug fixed,['turtlebot3_teleop_key'],{'master'}
-8c6a01e16c329782e31f2bb511e30cc4fa8ccfbf,Darby Lim,2018-03-28,add naked gazebo,"['turtlebot3_waffle_pi_naked.gazebo.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-d447e7540c70d75e5ac30ff79d03dfde04ad688f,Pyo,2018-04-02,Update .travis.yml,['.travis.yml'],{'master'}
-8fa016660b2886e91375af3dab78fbac534e0033,Darby Lim,2018-04-02,delete warn msg,"['burger_base.stl,waffle_base.stl,waffle_base_naked.stl,waffle_pi_base.stl,lds.stl']",{'master'}
-6d8d4766a45ca40c49d0a4eeb9512c6ec8565d0b,Darby Lim,2018-04-02,delete focal lengh param,"['turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']",{'master'}
-412dd8a974abee89b91967a409756f07598f5241,Darby Lim,2018-04-02,edit updateRate,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-4fccdda7fe88c495bc56b8eeeb3f5e735f974497,Darby Lim,2018-04-03,modified camera setup,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-6cf72cf29167079e85abbb85d7e5c378cc8e1cfc,Darby Lim,2018-04-03,mu1 param amended,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-3d31ae8a613d4cc415e649321ca8d8f1807cf64e,Darby Lim,2018-04-03,modified camera param,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-76ab4240eac7ae4877f30d51e8dbe51c04387d77,Darby Lim,2018-04-06,delete property,['common_properties.xacro'],{'master'}
-4a458c08575ed50605d8fcf04a18d113eb394c51,Darby Lim,2018-04-06,add gazebo params,['turtlebot3_burger.gazebo.xacro'],{'master'}
-40f84341d7ca6861f3fdc7c794d1d62095877076,Darby Lim,2018-04-06,modified collision models,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-46273777af6e1d55bc4fde055b5d187951220b35,Darby Lim,2018-04-09,make profile function,['turtlebot3_teleop_key'],{'master'}
-49fdb4c48fa7a869b544c682d4703ccf901cd665,Darby Lim,2018-04-09,modified initial value,['turtlebot3_teleop_key'],{'master'}
-87c34b4c07cb6159ce7e4a813e3c4df4a5af9bcf,Darby Lim,2018-04-09,update param,"['common_properties.xacro,turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro']",{'master'}
-a8222d3a2c2702d44caf0b453fb924c387abf976,Darby Lim,2018-04-10,update param,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-ed9787d4333f79601c0e83600ca2138ccb92516c,Darby Lim,2018-04-10,add wheel inertia tensor,['turtlebot3_burger.urdf.xacro'],{'master'}
-efcaedaf6c3d6988776632b8319ed42e8ec954ff,Darby Lim,2018-04-10,add inertial param,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-5a7d0c32f81542e463f709a1e30661be636088cf,Darby Lim,2018-04-11,fixed  collision param,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-1d6bc4c62a774c0c34324c0e01f7371113b33b46,Darby Lim,2018-04-11,"fixed mu1, mu2 param","['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-a2f781b6adda78543f99c818455e80bce7be6b9b,Darby Lim,2018-04-11,edit collision,"['turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-bff00d77b06158db783cbadacd1c88cb8bbfe5ff,Darby Lim,2018-04-15,add lidar,['turtlebot3_waffle_pi_naked.urdf.xacro'],{'master'}
-34f95ab48e927782a2f5f52cc9dc01974c998de5,Darby Lim,2018-04-17,edit lidar collision param,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-a2e876b3f3b6c5034d62fb4017543cba939a4bbe,Darby Lim,2018-04-18,add constrain to limit velocity,['turtlebot3_teleop_key'],{'master'}
-d9d2d2c6126213d8a351d8eb5ae9201a8e672794,Darby Lim,2018-04-18,add model,['turtlebot3_teleop_key.launch'],{'master'}
-4decba26327a1b6f1c8bb8a85a8c96dbdf234911,Darby Lim,2018-04-18,modifiy camera position and fixed slip bug,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']",{'master'}
-d0fc0a8ffab445cd2482072595c7a3d448b194c7,Darby Lim,2018-04-18,modify slip bug,['turtlebot3_burger.gazebo.xacro'],{'master'}
-1e8fa2ef49856678d4cb30aee6f27256fe129b99,Darby Lim,2018-04-18,modifiy lidar position,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-25b682ba3e4c61c709837ed60b00732654dfffc6,Darby Lim,2018-04-19,Change color,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']",{'master'}
-bb929df71f2ace82275ea28d1e95e894a2186f13,Darby Lim,2018-04-19,add function to check angular velocity,['turtlebot3_teleop_key'],{'master'}
-a429e266e491418b118efd0efde62a660c1be9cb,Darby Lim,2018-04-19,add const value,['turtlebot3_teleop_key'],{'master'}
-3c7ffca48b93e06d7ea0eed9d9c9381d1a4d8517,Darby Lim,2018-04-20,control frequency and inflation radius amended,"['global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'}
-5fcdb33c709c56cab2580329d0debebb937e0569,Darby Lim,2018-04-20,edit footprint size,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml']",{'master'}
-b43b62ce2260caa01802d2f9e4358727ad9daed2,Darby Lim,2018-04-20,edit velocity and bias,['dwa_local_planner_params.yaml'],{'master'}
-8db5a484cf4f6224cd1a268d8325f62df065fd35,Darby Lim,2018-04-22,edit obstacle range and inflation radius,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml']",{'master'}
-01beb9347f8d5e0d91582608bc15027c3e376670,Darby Lim,2018-04-22,velocity and acc and frequency param amended,"['dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'}
-b7e491de24e6c9cfca9ae50b3cc5450ac823daaa,Darby Lim,2018-04-24,modified rosparam,['turtlebot3_navigation.launch'],{'master'}
-8f3ecbd62aa7f34c9fa7b9296c3e6d5b40e806fb,Darby Lim,2018-04-24,update param,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml,dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'}
-ff8e2ced6f67e25da2be2706efa8e16bbe829d40,Darby Lim,2018-04-24,change color,['turtlebot3_nav.rviz'],{'master'}
-3ce3a754438043dc221d5beb6178a7b29fa9b6f8,Darby Lim,2018-04-25,update param after experiments,"['costmap_common_params_burger.yaml,dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml,move_base_params.yaml']",{'master'}
-7039de4bdc6236d288ed46e54d9a1de6af4f5384,Darby Lim,2018-04-25,modified  plugin param,['turtlebot3_waffle_pi_naked.gazebo.xacro'],{'master'}
-fb1f6ede646a91fb61b2340b24e7700558399a74,Darby Lim,2018-05-03,update file,"['waffle_base_naked.stl,waffle_pi_base.stl,waffle_pi_base_naked.stl']",{'master'}
-d2e90f9e765da99808b000ce9868958205a491e9,Darby Lim,2018-05-03,delete,['turtlebot3_waffle_pi_naked.gazebo.xacro'],{'master'}
-514ad528e1834d4c50d46ba839ef9544dec409ee,Darby Lim,2018-05-03,update scan param,['turtlebot3_waffle_pi_naked.urdf.xacro'],{'master'}
-b592784de7b492cf2f08686cb29b6b9e0e20af9b,Darby Lim,2018-05-03,update scan param,"['turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'}
-0f2328cd8d1fcba6e97e17a2a23a8967da2cec7b,Darby Lim,2018-05-03,delete warning,"['waffle_base_naked.stl,waffle_pi_base.stl,waffle_pi_base_naked.stl']",{'master'}
-8620d60fb1914899310b3c0ca7ea9916100ecd7f,Taehun Lim,2018-05-09,Create ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md'],{'master'}
-b0492a461fba1289f21de48acf0adfcef191daa8,Pyo,2018-05-09,Update ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md'],{'master'}
-7e69ac3ae556b18b9a906c8428549d6cc6e3dd04,Pyo,2018-05-09,added cartographer,"['CMakeLists.txt,turtlebot3_lds_2d.lua,flat_world_imu_node.h,turtlebot3_cartographer.launch,turtlebot3_gmapping.launch,turtlebot3_slam.launch,package.xml,turtlebot3_cartographer.rviz,flat_world_imu_node.cpp']",{'master'}
-171270c979560f3210e0023dd3b1d5be7bc1953d,Pyo,2018-05-09,added frontier_exploration,"['frontier_exploration.yaml,turtlebot3_frontier_exploration.launch,turtlebot3_frontier_exploration.rviz']",{'master'}
-06c7aff21e0ff3950a6b4dc9ae66bcbe1c4db085,Pyo,2018-05-09,added hector mapping,['turtlebot3_hector.launch'],{'master'}
-966ef2d589c5a97c93ce086dbf2a0ebe62e8ea37,Pyo,2018-05-09,added karto slam,"['karto_mapper_params.yaml,turtlebot3_karto.launch']",{'master'}
-dfe29b5b681ccd03e568ec24d45c835199d7b2c2,Pyo,2018-05-10,update for cartographer,"['amcl.launch,move_base.launch,turtlebot3_navigation.launch,turtlebot3_navigation.rviz,turtlebot3_cartographer.launch,turtlebot3_cartographer.rviz,turtlebot3_gmapping.rviz,turtlebot3_slam.rviz']",{'master'}
-0f9844a9b2f77d8a2fadcaaf21d76f4ad9b03ca6,Pyo,2018-05-10,added selection options for SLAMs,['turtlebot3_slam.launch'],{'master'}
-ad528b1a339dcaeb017ba988b95f625c03a1c5c3,Pyo,2018-05-10,modified the launch files for slam methods,"['turtlebot3_cartographer.launch,turtlebot3_frontier_exploration.launch,turtlebot3_gmapping.launch,turtlebot3_hector.launch,turtlebot3_karto.launch,turtlebot3_slam.launch,turtlebot3_hector.rviz,turtlebot3_karto.rviz']",{'master'}
-05145d801f8fbf58e17d5fd1f238ad4a0e7214ac,Pyo,2018-05-11,modified the rviz and navigation launch files for sync with slam,"['amcl.launch,move_base.launch,turtlebot3_navigation.launch,map.pgm,map.yaml,turtlebot3_nav.rviz,turtlebot3_navigation.rviz']",{'master'}
-f14901db9f2880b4f3e10f12d0d5f612f1a2f640,Darby Lim,2018-05-14,add variable to check version only once,['turtlebot3_diagnostics.cpp'],{'master'}
-c4a97705cefb88864ef43c93b3cbfe9e266b0375,Darby Lim,2018-05-14,delete count version info msg,['turtlebot3_diagnostics.cpp'],{'master'}
-aff566b8f168b2868dec87c4987c7a947126b35b,Darby Lim,2018-05-14,change limit vel,['turtlebot3_teleop_key'],{'master'}
-742d24f73f85c49c9cde0880f8e8cf4b4fadf3ac,Darby Lim,2018-05-15,change name,"['waffle_base_for_open_manipulator.stl,waffle_pi_base_for_open_manipulator.stl,turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro']",{'master'}
-d1296cb43cc532679c29807d6056137751269f84,Darby Lim,2018-05-16,add check version variable,['turtlebot3_diagnostics.cpp'],{'master'}
-59dc5234bae8d927e430760dee564e187f55377f,Darby Lim,2018-05-16,add new file,"['turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_burger_for_autorace.urdf.xacro']",{'master'}
-8b9156cefcd092f5ccd25447cef9150cd30cc0ef,Pyo,2018-05-21,modified comment,['turtlebot3_cartographer.launch'],{'master'}
-287ceefeb2012869eae44bfca78bad6ee84ba0cc,Pyo,2018-05-21,"added frameName for imu on gazebo (however, there is no effect.)","['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-9480d25abb02228ebe500f00370ce4554f04e839,Pyo,2018-05-21,modified the size of laser scan,"['turtlebot3_navigation.rviz,turtlebot3_cartographer.rviz,turtlebot3_frontier_exploration.rviz,turtlebot3_gmapping.rviz,turtlebot3_hector.rviz,turtlebot3_karto.rviz']",{'master'}
-5f9335865fc0cfa3ecbe8c6ea91c45cb99ef256f,Pyo,2018-05-21,changed  tracking_frame to imu_link for real  and made fake for gazebo,"['turtlebot3_lds_2d.lua,turtlebot3_lds_2d_gazebo.lua']",{'master'}
-8a9e4a0c5fe376883c8bee8efa9637af8f7e9a1b,Pyo,2018-05-21,added burger model,"['turtlebot3_cartographer.launch,turtlebot3_frontier_exploration.launch,turtlebot3_slam.launch']",{'master'}
-00ab30025a9e993006b96a64a69bcdceebe9d10d,Darby Lim,2018-05-23,update range of lidar,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-cd3fb19745744ecb0d5bef0fdeb623740ac853bd,Darby Lim,2018-05-23,change robot name,"['turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro']",{'master'}
-fb46638818bed06eff0cfcb7f8153dac0d8173f2,Muhammad Furqan Habibi,2018-05-24,convert global name to relative name,['turtlebot3_diagnostics.cpp'],{'master'}
-6f84d9cf86f8a24c60ed920dd29b74a3658a6f63,Muhammad Furqan Habibi,2018-05-24,convert more global name to relative name,"['turtlebot3_obstacle.py,turtlebot3_marker_server.cpp,turtlebot3_navigation.launch,turtlebot3_teleop_key']",{'master'}
-b682e7b358a31bb3e675da2891dd4ed7839ed67e,Darby Lim,2018-05-24,update param,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml']",{'master'}
-c20d38c61ce7141449ce63bd50d3e44429808b4a,Darby Lim,2018-05-24,update,['turtlebot3_navigation.rviz'],{'master'}
-a666e4803508566379e4716936ababc3771db3f8,Darby Lim,2018-05-24,update param,['turtlebot3_gmapping.launch'],{'master'}
-7cfd8bf4c9b2c7ad1147d6a9b8c53565ccdef107,kijongGil,2018-05-25,modified sensor launch,"['turtlebot3_bumper,turtlebot3_illumination,turtlebot3_sonar']",{'master'}
-137d47c9e24657d875f99395bdf36159cf19279a,Darby Lim,2018-05-25,update firmware version,['turtlebot3_diagnostics.cpp'],{'master'}
-605ac352ab6ae11f18305508ed29516a34f4bdf0,kijongGil,2018-05-25,remove scripts,"['turtlebot3_client.py,turtlebot3_marker_server.py,turtlebot3_obstacle.py,turtlebot3_pointop_key.py,turtlebot3_server.py']",{'master'}
-958e8f1905b0c07acfb4d7e231fc53904b0a4810,Darby Lim,2018-05-25,add marker_server in catkin_install_python,['CMakeLists.txt'],{'master'}
-65abef4c6a2b3b6b3deff09104df8acd30292632,Darby Lim,2018-05-25,delete unused space,['interactive_markers.launch'],{'master'}
-9d5185563ef97e1e8443f8651a325bace2401f12,Darby Lim,2018-05-25,update,['turtlebot3_marker_server'],{'master'}
-c5854daa1e64b59365df8f39a881ce017e523406,kijongGil,2018-05-25,added scrpits,"['CMakeLists.txt,turtlebot3_patrol.launch,turtlebot3_client.py,turtlebot3_server.py']",{'master'}
-d71f611ee2ffbe23b659e12c131610c55222e378,kijongGil,2018-05-25,added nodes,"['CMakeLists.txt,turtlebot3_client.launch,turtlebot3_server.launch,turtlebot3_client,turtlebot3_server']",{'master'}
-153c57d5472838d103cf583a1e82d894ab5ecd13,kijongGil,2018-05-25,remove launch server,['turtlebot3_server.launch'],{'master'}
-c48dd332808174ea0d183b367a325dc3817dbb5b,Pyo,2018-05-28,fixed amcl.launch name,['turtlebot3_frontier_exploration.launch'],{'master'}
-8043c927f3bfae554d56808678971d521bf506ea,Pyo,2018-05-29,update the parameters of Hector mapping,['turtlebot3_hector.launch'],{'master'}
-a02be625b693aea958fd2127de7653b591554f7a,Pyo,2018-05-29,update the parameters of Hector mapping,['turtlebot3_hector.launch'],{'master'}
-fbe154f0c67c066c89d6268ed2d5d2f5d85a7ee9,Pyo,2018-05-29,updated the CHANGELOG and version to release binary packages,['turtlebot3_marker_server'],{'master'}
-9f6db49609345609e3ba9b553e4fb6f2a4ff19b8,Pyo,2018-05-29,updated the CHANGELOG and version to release binary packages,"['turtlebot3_client,turtlebot3_server']",{'master'}
-904647137338008a1215f86de1da80448c96c9d4,Eduardo Avelar,2018-06-03,delete unused get_scan function,['turtlebot3_obstacle'],{'master'}
-629cd81f2d4cef92f09d38f634567d10c17ffad9,Eduardo Avelar,2018-06-03,implement get_scan functionAnother change is implement the get_scan function,['turtlebot3_obstacle'],{'master'}
-02ebd947da1ea34790587acfc19c35fae28c9a89,Darby Lim,2018-06-11,amended origin of collision in waffle URDF,['turtlebot3_waffle.urdf.xacro'],{'master'}
-88d59c2dba1dfd864bdcc4a44fe3081bedf52201,Darby Lim,2018-06-15,add default value,['turtlebot3_teleop_key'],{'master'}
-7aeffdac6d934ef5eb1d8394d9841f97a7b585b9,Darby Lim,2018-06-22,add argument about namespace,"['turtlebot3_core.launch,turtlebot3_lidar.launch,turtlebot3_remote.launch,turtlebot3_robot.launch']",{'master'}
-18ccca7931cf4b08b8ff5c4aad95e9689e3cc5b6,Darby Lim,2018-06-22,update arg,"['turtlebot3_core.launch,turtlebot3_robot.launch']",{'master'}
-27f42b14443cc240edb97ea6a67b0b3afcfaf6ba,Darby Lim,2018-06-22,change arg name,['turtlebot3_core.launch'],{'master'}
-57456f33d15f9fb289791412282d831acb6500b7,Darby Lim,2018-06-22,delete ns,"['turtlebot3_lidar.launch,turtlebot3_robot.launch']",{'master'}
-7007e670c414ac3ed5c6d4c5047f5d4b572f89c1,Darby Lim,2018-06-22,change arg name,['turtlebot3_remote.launch'],{'master'}
-04d08bc51d9da560165f36d028b07d477b0607f5,kijongGil,2018-06-26,modified topic name,['turtlebot3_client'],{'master'}
-7ac6ad2011ee0b94191d12cfbca30d99cddfc820,kijongGil,2018-06-26,changed camera topic name,['turtlebot3_burger_for_autorace.gazebo.xacro'],{'master'}
-eaea4eb2190d22c0a019073f9d867b7ef6bd0ee3,Darby Lim,2018-06-28,add argument,['turtlebot3_lidar.launch'],{'master'}
-de98b27d3197a92fe4e199c011a377c30f9ffedd,Darby Lim,2018-07-11,modified arguments,['turtlebot3_lds_2d.lua'],{'master'}
-79560d9cb165222c9c40b72bfaeb59026d98a747,Darby Lim,2018-07-11,add arguments,['turtlebot3_gmapping.launch'],{'master'}
-324f826dd27f93727f54c80f70758004cfafc1d1,Darby Lim,2018-07-11,update firmware version from 1.2.0 to 1.2.1,['turtlebot3_diagnostics.cpp'],{'master'}
-fdad8efa9a2284f853871a766821cd78ee1ffb3e,Darby Lim,2018-07-11,add arguments,['turtlebot3_robot.launch'],{'master'}
-ce3205d8b6822cbeabd046d083048908f19cf063,Darby Lim,2018-07-11,change arg name,['turtlebot3_robot.launch'],{'master'}
-877ea055c17b315890ac0faff46762c2ad2fe13d,shtseng,2018-07-18,Corret the laser scanner update_rate in the gazebo xacro files,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-cf1b02779a3fa99d38b8d16c6e700cd5cb279e69,kijongGil,2018-07-18,added odometrySource,['turtlebot3_burger.gazebo.xacro'],{'master'}
-e78b8edce9702e292dec65a5ca549a774512bd67,Darby Lim,2018-07-18,amended base_scan update_rate and add param on diff_drive,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'}
-235253753fed77a59d056ed8f810d5ddedb2aafd,Pyo,2018-07-20,added melodic on ubuntu and debian,['.travis.yml'],{'master'}
-71bcfc83739b7cfc6aa2c8a5e996a83364c603a1,Pyo,2018-07-20,updated issue template,['ISSUE_TEMPLATE.md'],{'master'}
-f70f0cbcd8af3d518a53861aa61c05d28b6df2b7,Darby Lim,2018-07-23,modified version check function,['turtlebot3_diagnostics.cpp'],{'master'}
-351e91441fab27e62be8c80ed9bb6361967b1ed2,Darby Lim,2018-07-23,update version check func,['turtlebot3_diagnostics.cpp'],{'master'}
-e45443cbbaee8914bff2a2bea12acefb31966eb6,Darby Lim,2018-07-23,delete ros log warn,['turtlebot3_diagnostics.cpp'],{'master'}
-b468e8c88be0ea83ac152e43b10b52ccd5b49c56,Darby Lim,2018-07-23,add debug code,['turtlebot3_diagnostics.cpp'],{'master'}
-8f8c088ceb8e975d70338b2a61b4742306324492,Darby Lim,2018-07-23,update get firmware version,['turtlebot3_diagnostics.cpp'],{'master'}
-b548e0e5b73388cfa753ce22defa58066c95ffb4,Darby Lim,2018-07-23,add split func,['turtlebot3_diagnostics.cpp'],{'master'}
-9ffc924aff659fe9c9d896323216968d8dc3be83,Darby Lim,2018-07-23,update split func,['turtlebot3_diagnostics.cpp'],{'master'}
-adbe83c323a6c7c7ad4a896344d526da0e07c244,Darby Lim,2018-07-23,delete debug code,['turtlebot3_diagnostics.cpp'],{'master'}
-5257aa71582f10f4bf9f6023c9bc0e7fcbf7221a,Darby Lim,2018-07-23,update warn msg,['turtlebot3_diagnostics.cpp'],{'master'}
-33c55db9a080b899275dac1560918baff0c2d6fb,Pyo,2018-07-23,updated the CHANGELOG and version to release binary packages,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']",{'master'}
-9a79b9f1543844ae748d0e6a08dc149fef4e8925,oiz5201618,2018-07-31,"Fix typoThe correct parameter name in dwa_local_planner is ""vth_samples"".","['dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml']",{'master'}
-63e94ce64e7eff481b7dc48808724606835a52f0,Jonathan Hechtbauer,2018-10-30,Add test arg to turtlebot3_model.launch,['turtlebot3_model.launch'],{'master'}
-6746e80188f98fe8116d60131e207b715ff3e7ed,yoshimalucky,2018-10-30,Added an additional argument move_forward_only to prohibit backward locomotion in navigation.,"['move_base.launch,turtlebot3_navigation.launch']",{'master'}
-e3e0a5eb2e87b9961ec4595e5b0e794b80466b14,Steven Macenski,2018-10-31,rosdep key is incorrect,['package.xml'],{'master'}
-4d9bbd16fd51c33ed781bf5977ad85640dd46478,linzhibo,2018-11-13,Update map.yaml,['map.yaml'],{'master'}
-f09990f821c9c50665b1daf22c3645ce69c4a302,Sean Yen,2018-12-18,add windows port.,['turtlebot3_teleop_key'],{'master'}
-6ee169a14ce1aceb549554353cd9ab828084e63b,Eduardo Avelar,2019-01-15,fix read of scanned samples when there isn't 360I added some suggested changes,['turtlebot3_obstacle'],{'master'}
-67193fe05a5908d5e7a07cdbdb35470da94157c3,kijongGil,2019-01-17,fixed TypeError integers,['turtlebot3_obstacle'],{'master'}
-922d46b49eb7c790c42cb3a11de6cba6414bd861,Eduardo Avelar,2019-01-17,"change math.ceil() operation The math.ceil() output in some cases is different in python2 and python3, for this reason I change the operation by the standard floor operation",['turtlebot3_obstacle'],{'master'}
-41cc23e361cb7c556a91b2f157527f2a003ef469,Pyo,2019-01-22,updated travis setting for melodicSigned-off-by: Pyo <pyo@robotis.com>,['.travis.yml'],{'master'}
-cf7d872eb10d020c72c132139338cb8d66439649,kkjong,2019-02-11,modified turtlebot3_model launch,['turtlebot3_model.launch'],{'master'}
-69b4563d754ad539d2b2c71fe6f968b3419fb3fb,Darby Lim,2019-04-09,delete '/' to sync tf2,"['global_costmap_params.yaml,local_costmap_params.yaml']",{'master'}
-36166ef18615f23837362970059a11c664b97230,atinfinity,2019-05-05,fixed dwa_local_planner_params,"['dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml']",{'master'}
-c1180ebc2576850c64f1bc74917ea0993baf200e,Kayman,2019-05-09,"fixed a bug for release version - flat_world_imu_node.cpp - In case of release version, ROS_ASSERT is not called.(when macro NDEBUG is set.)",['flat_world_imu_node.cpp'],{'master'}
-2aec404db42b4cd52c9e1fadaefd43744863aa9e,Pallav1299,2019-06-07,Textual correction in comments,['turtlebot3_pointop_key'],{'master'}
-68def659ae37fe31e113a0a00fc39634fd8eb8c0,Pyo,2019-08-20,Deleted test codeSigned-off-by: Pyo <pyo@robotis.com>,['turtlebot3_model.launch'],{'master'}
-5818b3518ff1d9639ca3d22b50bd65fc90e38e36,Pyo,2019-08-20,Deleted unused lineSigned-off-by: Pyo <pyo@robotis.com>,['.travis.yml'],{'master'}
-695483d09a84b95cab0b51b9716e004faa467bf5,Pyo,2019-08-20,Added some questions for ROS 2Signed-off-by: Pyo <pyo@robotis.com>,['ISSUE_TEMPLATE.md'],{'master'}
-ddca617172a3549a3077682cd2cf7dc377616e01,acxz,2019-09-29,Add print compatibility with python 2 & 3,['turtlebot3_teleop_key'],{'master'}
-13e9d2ee5357c18173a5bbadf705254b96e87f30,Will Son,2020-01-08,hotfix for #524,"['waffle_pi_base.stl,waffle_pi_base_for_open_manipulator.stl']",{'master'}
-f81798beae513241084e27c42de582a6d88ff30f,Ryan Shim,2020-02-20,Updated tb3 for omx urdf files,"['turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro']",{'master'}
-40f11e4e7e71543096b3b52d964f2f4f42c831f0,Will Son,2020-02-28,python 2 & 3 compatibility update #542,['turtlebot3_teleop_key'],{'master'}
-b5c13c9579fd49374b6e5f0a7eaa95817c1ca707,Will Son,2020-03-03,slam for TurtleBot3 Manipulation,['turtlebot3_manipulation_slam.launch'],{'master'}
-937f0d09b5f6e4ea26b11550eba6810b41c92468,Will Son,2020-03-23,"Revert ""python 2 & 3 compatibility update #542""This reverts commit 40f11e4e7e71543096b3b52d964f2f4f42c831f0.",['turtlebot3_teleop_key'],{'master'}
-90e06ae89ce4c27b5ad3ddefc6896ea17ad86df5,Will Son,2020-03-23,update changelogs,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']",{'master'}
-1b283fccdc51d37fe4c65c586e09a6c8b41550a1,Will Son,2020-03-23,update changelogs,['CHANGELOG.rst'],{'master'}
-166fd24c387d86891f5dcc654a699b8462beb749,Will Son,2020-03-23,update changelogs,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']",{'master'}
-68538fb0a2c8a7a2c2ddec4eb5fba7640650157e,Ryan Shim,2020-03-23,added temporary inertia data in urdf file,['turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro'],{'master'}
-5f64ce2ddaa0c657c4c75a8682c41ee28d7f7ffc,Will Son,2020-03-23,version update,"['package.xml,package.xml,turtlebot3_diagnostics.cpp,package.xml,package.xml,package.xml,package.xml,package.xml']",{'master'}
-ee350b65181679a0a4ad817d202aa2862a639a67,Ryan Shim,2020-03-30,updated urdf files,"['turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.gazebo.xacro']",{'master'}
-07eec7d44026167b33beeee485ada7dbb2faa5e6,Ryan Shim,2020-03-30,updated urdf files,['turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro'],{'master'}
-35feb4f0f15496e9ac0ca02ab0c59702081c5cb6,Ashe Kim,2020-04-01,add file turtlebot3 burger for autorace 2020,"['turtlebot3_burger_for_autorace_2020.gazebo.xacro,turtlebot3_burger_for_autorace_2020.urdf.xacro']",{'master'}
-a8e7647d809497612ff82b564a55ba17c5b5e2a3,artivis,2020-04-24,rm useless paramSigned-off-by: artivis <jeremie.deray@canonical.com>,['turtlebot3_gmapping.launch'],{'master'}
-bafe362f40c42c1cefcaab183517d7343c40a909,artivis,2020-04-24,mv gmapping param to yaml fileSigned-off-by: artivis <jeremie.deray@canonical.com>,"['gmapping_params.yaml,turtlebot3_gmapping.launch']",{'master'}
-bb0258f7f0cb58d36f8bce8bc590b3ebd147cebc,Will Son,2020-05-11,simplified modeling files,"['burger_base.stl,waffle_base.stl,waffle_base_for_open_manipulator.stl,waffle_pi_base.stl,waffle_pi_base_for_open_manipulator.stl,lds.stl']",{'master'}
-607ee5b72e28fbfbcd3328370baf41ac9ea06682,Ryo KOYAMA,2020-05-13,fix link to bag fie,['bag_files.md'],{'master'}
-e521df9cff26f152814953fdf284c27fcc927336,Will Son,2020-05-13,apply #587,['turtlebot3_gmapping.launch'],{'master'}
-67e54e9992c75586eb5d33c264cd0389dc143b35,Will Son,2020-07-13,Create lint.yml,['lint.yml'],{'master'}
-da0dd361c7b455ba3dc8d7304c70ab06276b909a,Will Son,2020-09-29,update travis,['.travis.yml'],{'master'}
+Commit_ID,Contributor,Date,Message,Files,Branch,Repository
+2a1e8592c93f7b5a5f8199957cafdaccf33cb9e9,Yoonseok Pyo,2016-06-21,Initial commit,['LICENSE'],{'master'},TurtleBot
+22b98b0f39c7971e3c30c8b0adaf7fe7a0be6cb9,Yoonseok Pyo,2016-06-21,added init files,"['LICENSE,CMakeLists.txt,turtlebot3_node.h,package.xml,turtlebot3_node.cpp']",{'master'},TurtleBot
+76c4d0d49916191a2848f07f3de990769a152fa9,Yoonseok Pyo,2016-06-21,added a description package and launch file,"['CMakeLists.txt,package.xml,model.rviz,turtlebot3.urdf.xacro,slam.launch']",{'master'},TurtleBot
+1498de8d410ef49d5f2d6f7e5b61cc2a06dd08a2,Yoonseok Pyo,2016-06-22,added features for SLAM,"['turtlebot3_node.h,turtlebot3_node.cpp']",{'master'},TurtleBot
+a067a787cbb186dd15ac2597459cb254c915ad59,Yoonseok Pyo,2016-06-23,added SLAM package,"['turtlebot3.urdf.xacro,CMakeLists.txt,turtlebot3_slam.launch,package.xml,turtlebot3_slam.rviz,scan_data.bag']",{'master'},TurtleBot
+e213d453463429736064de1a0e83808cb77d6695,Yoonseok Pyo,2016-06-27,changed the rviz setting,['turtlebot3_slam.rviz'],{'master'},TurtleBot
+6997301ead26cfee37276b85265cf1dd5db40c38,Yoonseok Pyo,2016-06-28,modified the processing of upateOdomety,"['turtlebot3_node.h,turtlebot3_node.cpp']",{'master'},TurtleBot
+0999539c31de55b2f4bd1aa79233a60f8b8f9eaa,Yoonseok Pyo,2016-06-30,minor change,"['turtlebot3_node.h,turtlebot3_node.cpp']",{'master'},TurtleBot
+7ea732564699c5d506b32e8879751c01cb6d1df0,Yoonseok Pyo,2016-07-01,modified the wheel speed gain,"['base_local_planner_params.yaml,costmap_common_params.yaml,dwa_local_planner_params.yaml,local_costmap_params.yaml,turtlebot3_nav.rviz,turtlebot3_node.cpp,turtlebot3_slam.rviz']",{'master'},TurtleBot
+ea25acaaff149c47b29e1853ec992c56be4d4ade,Yoonseok Pyo,2016-07-05,modified the navigation parameters for navigation test,"['amcl.launch.xml,map.pgm,costmap_common_params.yaml,dwa_local_planner_params.yaml,local_costmap_params.yaml,turtlebot3_nav.rviz,turtlebot3_node.h,turtlebot3_node.launch,turtlebot3_node.cpp']",{'master'},TurtleBot
+aac95409088e35356920f3da40c438c5f03f5118,pyo,2016-08-22,modified the diff driver for DXL,"['CMakeLists.txt,turtlebot3_diff_driver.h,package.xml']",{'master'},TurtleBot
+68e67bbd72a97a82fdecdfa5a6551892de075e7d,pyo,2016-08-25,modified DXL comm_result bug,['turtlebot3_diff_driver_node.cpp'],{'master'},TurtleBot
+ee27fa9f80b14bd9d16de10102a1ccf3e84105f8,pyo,2016-08-26,deleted a depend pkg,"['CMakeLists.txt,package.xml']",{'master'},TurtleBot
+0c8fba295cb7ad9ce51265e4e92ce5dd43ab7968,pyo,2016-09-22,added launch file for keytele,['keyboard_teleop.launch'],{'master'},TurtleBot
+85af3876343c657df702012eb22ac0197f440f87,pyo,2016-09-23,add remap option for image,['turtlebot3_bringup.launch'],{'master'},TurtleBot
+8953129455075f43f00e590d219bf09f322f832b,Pyo,2016-11-17,added new msgs for TB3,"['LICENSE,turtlebot3_bringup.launch,CMakeLists.txt,MotorPower.msg,SensorState.msg,VersionInfo.msg']",{'master'},TurtleBot
+5eb4481134a33cc33110d12962289c9363181ca6,Pyo,2016-11-17,deleted diff_driver packages using USB2Dynamixel,"['CMakeLists.txt,turtlebot3_diff_driver.h,package.xml,turtlebot3_diff_driver_node.cpp']",{'master'},TurtleBot
+2255f871c7dabcaa2740ee1e0cf442c87e6f9983,Pyo,2016-11-17,modified the loop periods,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'},TurtleBot
+42426826ae171b647dc60b7b10e99b50a35955e7,Pyo,2016-11-18,modified the publisher for IMU,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'},TurtleBot
+152477f92edf31a6301bbe2a3dbf4c7d39a5a938,Pyo,2016-11-21,modified the remote control function using RC100 remocon,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'},TurtleBot
+8ed9b3d51a2809af4d2cbf5e2687be4182e8ede9,Pyo,2016-11-22,modified turtlebot3_node for core package,"['DynamixelFeedback.h,turtlebot3_core_config.h,turtlebot3_node.h,turtlebot3_node.cpp']",{'master'},TurtleBot
+85f9e9a37f76e7e2f290b1140b2a1f4574a8c929,Pyo,2016-11-23,deleted turtlebot3_node,"['package.xml,turtlebot3_bringup.launch,CMakeLists.txt,turtlebot3_node.h,keyboard_teleop.launch,turtlebot3_node.launch,package.xml,turtlebot3_node.cpp']",{'master'},TurtleBot
+f862f6b13ca4a5e7e8d8b3d1afc06a429987aaa7,Pyo,2016-11-23,modified pkg setting for turtlebot3_core,"['package.xml,CMakeLists.txt,package.xml,CMakeLists.txt,package.xml,package.xml,CMakeLists.txt,package.xml,CMakeLists.txt,package.xml']",{'master'},TurtleBot
+749f2d67da8c17010b3143775177daad7c66afb0,Pyo,2016-11-23,added a urdf file for rplidar,"['turtlebot3_bringup.launch,turtlebot3_core.ino,turtlebot3_core_config.h,turtlebot3_astra.urdf.xacro,turtlebot3_rplidar.urdf.xacro']",{'master'},TurtleBot
+74acb3755eb7289e634c673cc61828c1858dfd7d,Pyo,2016-11-24,added turtlebot STL file for RViz,"['turtlebot3_bringup.launch,turtlebot3_core.ino,turtlebot3.stl,turtlebot3_rplidar.urdf.xacro']",{'master'},TurtleBot
+163a2a0a86c872a80aed1e12279d7950282accb1,Pyo,2016-11-25,modified turtlebot3 model files,"['turtlebot3_bringup.launch,turtlebot3.stl,turtlebot3_rplidar.urdf.xacro']",{'master'},TurtleBot
+4d9b047fc0d825eb7cf094e8968e5cdb4d6287be,Pyo,2016-12-02,added lds sensor,"['turtlebot3_bringup.launch,turtlebot3_bringup_pc.launch,turtlebot3_bringup_sbc_lds.launch,turtlebot3_bringup_sbc_rplida.launch,turtlebot3_core.ino,turtlebot3_navigation.launch,map.pgm,turtlebot3_slam_compare.launch,turtlebot3_slam.rviz']",{'master'},TurtleBot
+a1b183677c9bc08c5f5aa952cbc62f1ec898efbb,Pyo,2016-12-08,added a launch file for r200,['turtlebot3_bringup_sbc_r200.launch'],{'master'},TurtleBot
+8992986b3e0166d9b3fb66ff0611f2c992d162f8,Pyo,2016-12-09,add sensor info for Intel RealSense R200,"['turtlebot3_bringup_pc_basic.launch,turtlebot3_bringup_pc_premium.launch,turtlebot3_core_config.h,r200.dae,r200.jpg,turtlebot3_astra.urdf.xacro,turtlebot3_lds.urdf.xacro,turtlebot3_r200.urdf.xacro,turtlebot3_slam.rviz']",{'master'},TurtleBot
+d7c22ae19c0acbc346d6a14dd92047e0f2c32b16,Pyo,2016-12-10,modified the camera_link info,['turtlebot3_r200.urdf.xacro'],{'master'},TurtleBot
+5d9f848b19b093db61947a76562fa43087b44542,Pyo,2016-12-13,added battery voltage msg and info,"['ArduinoHardware.h,ros.h,SensorState.h,DynamixelFeedback.msg,SensorState.msg']",{'master'},TurtleBot
+04dbbe2a0d6ee9dc0fe0eb708d414f10348a76c2,Pyo,2016-12-13,added battery voltage msg pub,['turtlebot3_core.ino'],{'master'},TurtleBot
+77696ea7a3ab1e7dc1ef6c8ed49b8859d26b8b47,Pyo,2016-12-22,added new model of turtlebot3,"['turtlebot3_basic.stl,turtlebot3_premium.stl,turtlebot3_lds.urdf.xacro,turtlebot3_r200.urdf.xacro']",{'master'},TurtleBot
+06e471943ff2d1e3a4873d8e3dfcf3aa7bef4769,Pyo,2017-02-01,modified the laser node name,['turtlebot3_bringup_sbc_lds.launch'],{'master'},TurtleBot
+c22096c00ea34fc69e9a059f3efea37d49ef006a,Pyo,2017-02-06,modified the define namings,"['turtlebot3_core.ino,turtlebot3_motor_driver.cpp,turtlebot3_motor_driver.h']",{'master'},TurtleBot
+7f0dee18250bc5badaa20657ebfe1a935aa32fa4,Pyo,2017-02-06,added the IMU quaternion values,['turtlebot3_core.ino'],{'master'},TurtleBot
+947089cf51e40e24b0006532e87905fb0b2aaab6,Pyo,2017-02-07,modified the navigation pkg,"['turtlebot3_navigation.launch,map.pgm,map.yaml']",{'master'},TurtleBot
+61898d3936ea299e2be0fcd006d3691c852edb66,Pyo,2017-02-07,modified the param,"['turtlebot3_teleop_key.launch,amcl.launch.xml,turtlebot3_slam_compare.launch']",{'master'},TurtleBot
+68363f186d60165b89b539a5c1799116b26f8208,Pyo,2017-02-07,modified the navigation pkg,"['amcl.launch.xml,turtlebot3_navigation.launch,base_local_planner_params.yaml,costmap_common_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml,turtlebot3_nav.rviz']",{'master'},TurtleBot
+b47a0a33acfb7a54fbb961b74927e216deb5dcc6,Pyo,2017-02-07,modified the slam  pkg,"['turtlebot3_slam.launch,turtlebot3_slam_compare.launch,turtlebot3_slam.rviz']",{'master'},TurtleBot
+9ad4069bb8a099163e4954c4853ec5c2aa8e75d8,Pyo,2017-02-08,used TURTLEBOT3_MODEL,"['description.launch.xml,turtlebot3_bringup.launch,turtlebot3_bringup_pc_basic.launch,turtlebot3_bringup_pc_premium.launch,turtlebot3_astra.urdf.xacro,turtlebot3_basic.urdf.xacro,turtlebot3_premium.urdf.xacro']",{'master'},TurtleBot
+193771eb32404aab6c3c8f700418298b0a55fcca,Pyo,2017-02-08,used TURTLEBOT3_MODEL,['turtlebot3_bringup.launch'],{'master'},TurtleBot
+6cfcc9e5cae58b98bbbcfabb761f1544221d7a08,Pyo,2017-02-08,used integrated bringup file,"['turtlebot3_navigation.launch,turtlebot3_slam.launch']",{'master'},TurtleBot
+145ebb484112571a691ed1505b233807eff63b37,Pyo,2017-02-09,modified the units,"['turtlebot3_core.ino,turtlebot3_core_config.h']",{'master'},TurtleBot
+d0d02fb713aa6d24fa5201dd73dfd5cdbe479790,Pyo,2017-02-22,modified the turtlebot bringup files,"['turtlebot3_bringup_sbc_r200.launch,turtlebot3_bringup_sbc_rplida.launch,turtlebot3_remote.launch,turtlebot3_robot.launch,turtlebot3_navigation.launch,turtlebot3_slam.launch']",{'master'},TurtleBot
+744de81d65027e99ebb77f5a024701299fa1552a,Darby Lim,2017-02-22,modified basic and premium urdf,"['pr30_isw_tire_l.stl,pr30_isw_tire_r.stl,pr30_tb3_basic.stl,pr30_tb3_premium.stl,lds.stl,turtlebot3_basic.urdf.xacro,turtlebot3_premium.urdf.xacro']",{'master'},TurtleBot
+8cf0e554f43bf7b29b03f202b201ac48dfe8fae9,Darby Lim,2017-02-22,modified file name,"['turtlebot3_remote.launch,basic_base.stl,left_tire.stl,premium_base.stl,right_tire.stl,turtlebot3_basic.urdf.xacro,turtlebot3_premium.urdf.xacro']",{'master'},TurtleBot
+07911c588ae1b5c3f626dcaa206f922edbeedda0,Darby Lim,2017-03-09,update navigation parameter,"['turtlebot3_remote.launch,amcl.launch.xml,costmap_common_params.yaml,dwa_local_planner_params.yaml,turtlebot3_nav.rviz']",{'master'},TurtleBot
+b0c03dbffb9e481e5f88ab17c37c10b1e86ec186,Pyo,2017-03-09,modified the name of bases and model names,"['burger_base.stl,waffle_base.stl,left_tire.stl,right_tire.stl,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,VersionInfo.msg']",{'master'},TurtleBot
+98315a5e0c73571bc1c329457c5504e4f156f4e4,Pyo,2017-03-09,modified the name of bases and model names,"['turtlebot3_remote.launch,burger_base.stl,waffle_base.stl']",{'master'},TurtleBot
+e0c4b7c01dea047d6d4ee2a9234b79a86f659dea,Pyo,2017-03-09,modified the materials,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+40a2646e6fb3366596b257a3f96d9323d25cbf40,Pyo,2017-03-09,added view mode,"['turtlebot3_model.launch,turtlebot3_remote.launch,model.rviz']",{'master'},TurtleBot
+631261ec18b8432785a6a744de83f24b3fff2b87,Pyo,2017-03-14,added turtlebot3 fake node and package,"['CMakeLists.txt,turtlebot3_fake.h,turtlebot3_fake.launch,package.xml,turtlebot3_fake.cpp']",{'master'},TurtleBot
+a9ad9a4959c2e869d298188200a8f3a132fb48a2,Pyo,2017-03-14,added a package in meta-pkg,['package.xml'],{'master'},TurtleBot
+1cc53121413478e2699dea02b48f44c0b318eb1f,Darby Lim,2017-03-14,navigation bug fixed,"['amcl.launch.xml,map.pgm,package.xml,base_local_planner_params.yaml,costmap_common_params.yaml,dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml']",{'master'},TurtleBot
+a783d4fad4720d894bac9ae967b143370fd64426,Chris177,2017-03-14,This is a update to run panorama demo on turtlebot3,"['CMakeLists.txt,PanoramaImg.msg,package.xml,SetFollowState.srv,TakePanorama.srv,turtlebot3_panorama']",{'master'},TurtleBot
+88a239085093d13a106fa8d5bc948e192868a937,Pyo,2017-03-14,fixed the bug that return the origin point,"['turtlebot3_fake.h,turtlebot3_fake.cpp']",{'master'},TurtleBot
+4e07cf13f5cabe64eb1011509634859ed549e99c,Pyo,2017-03-14,added rviz environment file,"['turtlebot3_fake.h,turtlebot3_fake.launch,turtlebot3_fake.rviz,turtlebot3_fake.cpp']",{'master'},TurtleBot
+9827492bd20c8ece486df40a512d919483306c6d,Pyo,2017-03-14,added rviz environment file,['turtlebot3_fake.rviz'],{'master'},TurtleBot
+8d311110e31e55d3bce2dac3d830a635dbe730a2,Pyo,2017-03-17,deleted applications pkgs,['turtlebot3_panorama'],{'master'},TurtleBot
+7eb88c68a33288d7cfa3fd854fc670646daab08b,ROBOTIS-Leon,2017-03-22,TurtleBot3 navigation - costmap_common_params.yaml divided into two files depended on TurtleBot3 model,"['turtlebot3_navigation.launch,costmap_common_params_burger.yaml']",{'master'},TurtleBot
+fe59f2725fa1eb80f6f52bbb3c94c594b3362683,ROBOTIS-Leon,2017-03-22,TurtleBot3 navigation - costmap_common_params.yaml divided into two files depended on TurtleBot3 model,['costmap_common_params_waffle.yaml'],{'master'},TurtleBot
+2f81351651587cbf5d15727f547ade8e4d5f8d65,Darby Lim,2017-03-22,add gazebo package,"['CMakeLists.txt,launch.launch,robot.launch.xml,turtlebot3_burger_gazebo_test.launch,turtlebot3_gazebo.launch,velocity_controller.launch,velocity_controller.yaml,package.xml,empty.world,tutorial.world']",{'master'},TurtleBot
+066d7a58a49a1ee55b5a128e01bae8736cc31293,Darby Lim,2017-03-27,update publish_frequency,"['turtlebot3_model.launch,turtlebot3_remote.launch,turtlebot3_robot.launch,turtlebot3_gazebo_rviz.launch,turtlebot3_escape.cpp,turtlebot3.world']",{'master'},TurtleBot
+d42741ced8a18ffcd84d7f2babef0dbd48c04ea6,Darby Lim,2017-03-27,update publish frequency,['turtlebot3_fake.launch'],{'master'},TurtleBot
+5f2253a00133199a582c9221fdf2a52a2fdde514,Darby Lim,2017-03-27,update stl and urdf,"['burger_base.stl,waffle_base.stl,turtlebot3_burger.gazebo,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+945047ecda7a9280a0260103c2723b3b7278569b,Darby Lim,2017-03-27,update gazebo launch file,"['turtlebot3_gazebo.launch,turtlebot3_gazebo_rviz.launch,turtlebot3_gazebo_model.rviz,turtlebot3_escape.cpp,turtlebot3.world']",{'master'},TurtleBot
+721a15bb302d540a92ab849ce02ae3f9149283ff,Darby Lim,2017-03-28,update stl and urdf,"['waffle_base.stl,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+8d55ad41de68f7e5e0c35fd233a68e6c1d2687de,Darby Lim,2017-03-28,modify gazebo launch file,['turtlebot3_gazebo.launch'],{'master'},TurtleBot
+a652db4cfc1f6319e95429a8145f01cf07a6b0e1,Darby Lim,2017-03-31,update gazebo file,"['turtlebot3_burger.gazebo,turtlebot3_waffle.gazebo,gazebo_ros_turtlebot3.h,turtlebot3_empty_world.launch,turtlebot3_simulation.launch,gazebo_ros_turtlebot3.cpp,simple_world_plugin.cpp,ros.world']",{'master'},TurtleBot
+56d214d6c68bf738ecb44b9d038e9d2c905433f5,Darby Lim,2017-03-31,add gazebo model,"['hexagon.dae,wall.dae,model.config,model.sdf']",{'master'},TurtleBot
+5f1e4c64b0d47126f56b322fb113419228e0ceda,Darby Lim,2017-04-05,update turtlebot3 gazebo,"['gazebo_ros_turtlebot3.h,turtlebot3_simulation.launch,turtlebot3_world.launch,gazebo_ros_turtlebot3.cpp,model.sdf']",{'master'},TurtleBot
+0000fca01d9505fee2bb1cc910eddd1e5ee621e1,Darby Lim,2017-04-06,modify footprint,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+d823df51cc4502874b39a791923f3faea700532e,Darby Lim,2017-04-06,modify variable,"['turtlebot3_fake.h,turtlebot3_fake.launch,turtlebot3_fake.cpp']",{'master'},TurtleBot
+90caa88df4a81cfce3f7b3ab3227f2e31869c668,Darby Lim,2017-04-06,modify inertia,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+ff92a64564b2695daf968e1b37919576dcdeeb47,Darby Lim,2017-04-06,modify variable,"['gazebo_ros_turtlebot3.h,gazebo_ros_turtlebot3.cpp']",{'master'},TurtleBot
+44511b1063585fac13d10f4760ee91c692f25196,Darby Lim,2017-04-07,modify launch file,['turtlebot3_robot.launch'],{'master'},TurtleBot
+00df091dd35b933c06994591d88b6d1e3d0d3332,Darby Lim,2017-04-07,bug fixed,['turtlebot3_robot.launch'],{'master'},TurtleBot
+043b84a8b66e64e45583a34cdb8a84f55113f032,Darby Lim,2017-04-14,update slam param,['turtlebot3_slam.launch'],{'master'},TurtleBot
+2912f6b7e5ae70b158bd2c46d89d8dae5b813b97,Darby Lim,2017-04-14,update navi param,"['amcl.launch.xml,turtlebot3_navigation.launch,base_local_planner_params.yaml,costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml,turtlebot3_nav.rviz']",{'master'},TurtleBot
+23dc9ba42ccdaa7396a2ba1ea7c1df66a19d9e47,Taehoon Lim,2017-04-16,gazebo tf bug fixed,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+e65753b2c1da728f74e9f11fa3e3c24c27d274e8,Darby Lim,2017-04-17,update amcl param,['amcl.launch.xml'],{'master'},TurtleBot
+f21100d196433c617b81759f7d41fddfc6a06ba5,Darby Lim,2017-04-18,update navigation param,"['turtlebot3_navigation.launch,base_local_planner_params.yaml,costmap_common_params_waffle.yaml,dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'},TurtleBot
+b649d567a4c0dd7b34e72551a9d554f2881d5ba7,Darby Lim,2017-04-18,update nav param,"['costmap_common_params_waffle.yaml,dwa_local_planner_params.yaml,move_base_params.yaml,turtlebot3_nav.rviz']",{'master'},TurtleBot
+ccb6c8b5c41ba957eddc3ef5c7c9183d78ce2439,Darby Lim,2017-04-19,update slam param,"['turtlebot3_slam.launch,turtlebot3_slam.rviz']",{'master'},TurtleBot
+c073bb98b97ddd977fe1dbda0070aa4cfe33249f,Darby Lim,2017-04-19,update nav param,"['turtlebot3_navigation.launch,costmap_common_params_burger.yaml,dwa_local_planner_params.yaml']",{'master'},TurtleBot
+40459b627bdc285a42ef3d46e7f8a95b9aaf8afc,Darby Lim,2017-04-19,update waffle nav param,"['costmap_common_params_waffle.yaml,dwa_local_planner_params.yaml']",{'master'},TurtleBot
+f778da92fe55cb831d4ca7faecd8d26c4b6085f4,Darby Lim,2017-04-20,update nav param,['dwa_local_planner_params.yaml'],{'master'},TurtleBot
+513fdec9725d8048b9c523ea074793321abd8f17,Pyo,2017-04-24,Detached turtlebot3_msgs package from turtlebot3 package for uploading to rosdistro,"['package.xml,CMakeLists.txt,MotorPower.msg,PanoramaImg.msg,SensorState.msg,VersionInfo.msg,package.xml,SetFollowState.srv,TakePanorama.srv']",{'master'},TurtleBot
+2b747a797d6a8ce04502105d87d8a20791fb7b77,Pyo,2017-04-24,Version Update (0.1.3),"['package.xml,package.xml,package.xml']",{'master'},TurtleBot
+0f21d8eb9774c520c436d1122757683d7812e4b9,Darby Lim,2017-04-27,modify bringup launch file,"['turtlebot3_motor.launch,turtlebot3_robot.launch,turtlebot3_sensor.launch,model.rviz']",{'master'},TurtleBot
+91400d42292ba899ab87265ef3dd1700e7b59687,Darby Lim,2017-04-27,modified launch file name,"['turtlebot3_core.launch,turtlebot3_lidar.launch,turtlebot3_model.launch,turtlebot3_robot.launch']",{'master'},TurtleBot
+4ee7f58d7000697774d8b00b47f62bf6079bd462,Darby Lim,2017-04-28,add teleop package,"['CMakeLists.txt,keyboard_teleop.launch,package.xml,turtlebot3_teleop_key']",{'master'},TurtleBot
+4e51b77a1d6fa7baf9b88a38e31b884c46a9cd7a,Darby Lim,2017-04-28,modified launch file name,"['turtlebot3_teleop_key.launch,turtlebot3_teleop_key.launch,turtlebot3_teleop_key']",{'master'},TurtleBot
+0e28c3b93a761c7a7183c1c1bddd7568abb21a7e,Pyo,2017-05-23,version update (0.1.4),"['package.xml,package.xml']",{'master'},TurtleBot
+6b8089827171569277a8790e691664458a508578,Darby Lim,2017-05-24,update URDF,"['common_properties.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+538bcc49660ed2a6df69b9a0cbc82a990dd18a46,Darby Lim,2017-05-24,update turtlebot3 waffle URDF,"['waffle_base.stl,waffle_base_naked.stl,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro']",{'master'},TurtleBot
+ced639688e6941eb0d909986d4d03399457b6ad3,Darby Lim,2017-05-24,add SLAM bag files,"['TB3_WAFFLE_SLAM_1.bag,TB3_WAFFLE_SLAM_2.bag']",{'master'},TurtleBot
+9053a346feafc981fb6d4aad541fadd67620a762,Yoonseok Pyo,2017-05-24,changed the node name from hlds_laser_publisher to turtlebot3_lds,['turtlebot3_lidar.launch'],{'master'},TurtleBot
+764a7755f4005ab16cff2e8fce18eae909b70549,Darby Lim,2017-05-25,modified bag and map files,"['map.pgm,map.yaml,TB3_WAFFLE_SLAM.bag,TB3_WAFFLE_SLAM_2.bag']",{'master'},TurtleBot
+6eb9ef497966c08c53281ab1be048c8666243ce7,Darby Lim,2017-05-25,update slam param,['turtlebot3_slam.launch'],{'master'},TurtleBot
+79ba48c8cfa75da042c5d4048546042f28f92bc3,Darby Lim,2017-05-25,update nav param,['local_costmap_params.yaml'],{'master'},TurtleBot
+1e56b883e653d8620fb96ebc3dd4c0806f6af476,Darby Lim,2017-06-07,update gazebo config,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'},TurtleBot
+839ede7a7190f802c9ff0fa193a67cdc62bedb30,Darby Lim,2017-06-07,update gazebo config,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'},TurtleBot
+f0ab39e0a29d3f5dc52a816b8d327af01d0101b6,Darby Lim,2017-06-08,modify file location,['turtlebot3_realsense.launch'],{'master'},TurtleBot
+93473a73a7f16e8f8d7039138b632723beeebc17,Darby Lim,2017-06-08,update imu link,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro']",{'master'},TurtleBot
+3b5a5110825aa5ea0e54b3bf8a4be40da08167bc,Hunter L. Allen,2017-07-25,Fix xacro.py deprecation.,"['description.launch.xml,turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'},TurtleBot
+9f9b80d9976b08d46c324e030be431381196a3fc,Hunter L. Allen,2017-08-07,Fixed typo,['package.xml'],{'master'},TurtleBot
+4792b1f499def5178af2b53c21622db8dc1233d4,Darby Lim,2017-08-08,update model.launch,['turtlebot3_model.launch'],{'master'},TurtleBot
+dcc7428365de83a53d286c592fcfab72f2c02cdc,Darby Lim,2017-08-08,modified model,"['burger_base.stl,waffle_base.stl,waffle_base_naked.stl']",{'master'},TurtleBot
+d7a59ccb04745b5a82a95c8c10943f90145687f0,Darby Lim,2017-08-22,modified gazebo imu link,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro']",{'master'},TurtleBot
+e153011b8208f7122aa08df47b804492b68a4fad,Darby Lim,2017-10-12,modified r200 tf tree,"['turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro']",{'master'},TurtleBot
+d743de3a275d51a08425280077868e73d0bb4953,Darby Lim,2017-12-19,update waffle_pi,"['waffle_pi_base.stl,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro']",{'master'},TurtleBot
+16b112320b0da1fdd7e8d4fd3993aa46a1c8c959,Darby Lim,2017-12-19,add waffle_pi urdf and gazebo,"['turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_navigation.launch,costmap_common_params_waffle_pi.yaml']",{'master'},TurtleBot
+85def5ee4343087fdd36d4a24888a63d2ce4ddab,Darby Lim,2017-12-21,add scripts for reload rules,"['99-turtlebot3-cdc.rules,CMakeLists.txt,create_udev_rules']",{'master'},TurtleBot
+16a3ba3ec088919fd6738c7a0ca1f6f28d6730d9,Darby Lim,2018-01-09,delete rules,['99-turtlebot3-cdc.rules'],{'master'},TurtleBot
+1096773ed42b6b8f593af4fc5dfc2e90916533c7,Darby Lim,2018-01-15,add diagnostics node,"['CMakeLists.txt,turtlebot3_robot.launch,package.xml,turtlebot3_diagnostics.cpp']",{'master'},TurtleBot
+cb8b1a95847304f6bd20cb30f05d9f93096da190,Darby Lim,2018-01-17,add verion check function,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+f6491068251eaa6ef810e08f64a3f8bb976bfb4a,Darby Lim,2018-01-18,add license,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+7a7cd2036eb8e8a7eafe55295a97ea84026880c6,Darby Lim,2018-01-19,modified version check,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+8b497084e8f2d9d65fc99920ce3a0d7d2c413beb,Darby Lim,2018-01-24,add waffle pi,"['turtlebot3_model.launch,turtlebot3_remote.launch']",{'master'},TurtleBot
+2aa43322af303cdf7fc2a264f2fe1a3c92cbdcb1,Taehoon Lim,2018-01-29,edit firmware version,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+24728bc10c25d4d198bb8fae8793c6b26a451dc3,Gilbert,2018-01-30,update,"['turtlebot3_model.launch,turtlebot3_remote.launch,turtlebot3_diagnostics.cpp']",{'master'},TurtleBot
+c8f9a4161563743a7394ae431c49d9149055b270,Leon Jung,2018-02-05,turtlebot3_rpicamera.launch added,['turtlebot3_rpicamera.launch'],{'master'},TurtleBot
+50afd40b4385b81f935e50a4b7811c7ba620a582,Darby Lim,2018-02-22,modified param config,['turtlebot3_rpicamera.launch'],{'master'},TurtleBot
+00ad0f53553d7e039df2ba87298b0d2aa281415d,Yoonseok Pyo,2018-03-02,Create .travis.yml,['.travis.yml'],{'master'},TurtleBot
+ad2bcbf64e3419524701385413d25e149407026c,Darby Lim,2018-03-07,update firmware version,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+2d41748c1ff3f74aac011bea05e4e29a3597f101,Darby Lim,2018-03-07,gazebo plugin topic amended,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+4b31e270f476e533be5eef83d32fae7714d6940c,Darby Lim,2018-03-07,update fw version,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+7146a3c17e191e9eff51d3eb1ed42558c92cba2b,kijongGil,2018-03-09,modified topic in server.py,['turtlebot3_server.py'],{'master'},TurtleBot
+411dfdaf6ec479a0755c6c0f0bd31c685449bc36,Pyo,2018-03-12,modified the travis setting for testing,['.travis.yml'],{'master'},TurtleBot
+afbaa3d0539a95a174f2b14a190d7fb6f0a19283,Pyo,2018-03-12,modified the travis setting for testing,['.travis.yml'],{'master'},TurtleBot
+bda72785bb244548ad7fc2296d07ce22bea6eeb5,Pyo,2018-03-12,remove the large bag file and added download command from other site,"['TB3_WAFFLE_SLAM.bag,bag_files.md']",{'master'},TurtleBot
+5b18ba5bd3025d88599ca0a6601534d4eb18ce8f,Pyo,2018-03-12,refactoring,"['package.xml,CMakeLists.txt,interactive_markers.launch,package.xml']",{'master'},TurtleBot
+4744f6dd3ec3200a6eb6b4c82e299a2671706cf1,Pyo,2018-03-12,refactoring,"['CMakeLists.txt,turtlebot3.action,package.xml,turtlebot3_client.py,turtlebot3_pointop_key.py,turtlebot3_server.py,turtlebot3_marker_server.cpp']",{'master'},TurtleBot
+7eed225d0af6bac6f5a70288b52c7bfe523d57af,Pyo,2018-03-12,updated the CHANGELOG and version to release binary packages,['CMakeLists.txt'],{'master'},TurtleBot
+eb64f182c3bab23c85237bf66388142d95380e03,Pyo,2018-03-12,updated the CHANGELOG and version to release binary packages,['CHANGELOG.rst'],{'master'},TurtleBot
+ae5f12bcd1426f26e6cabba8a11c5eb4ffbeecaf,Darby Lim,2018-03-13,update firmware version(1.1.1),['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+d7fbb41492a0612880ad73b3493ff11437b2728f,Pyo,2018-03-14,refactoring for release,"['.travis.yml,CHANGELOG.rst,CMakeLists.txt,package.xml,CMakeLists.txt,CMakeLists.txt,turtlebot3_marker_server.cpp,CMakeLists.txt']",{'master'},TurtleBot
+3feab6056d2cc1855a9fc1b9d89a78e5139a5905,Pyo,2018-03-14,updated the CHANGELOG and version to release binary packages,['CHANGELOG.rst'],{'master'},TurtleBot
+588ff730f38b3c93ef9eeca25438ea0239bdb84b,Darby Lim,2018-03-15,change waffle_pi stl,['waffle_pi_base.stl'],{'master'},TurtleBot
+287912cc9e7679cef35e15f917ae50c250a7382c,Darby Lim,2018-03-15,update firmware version,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+e3c52ef6cdb0ed86a21072800607f84ff8220682,Leon Jung,2018-03-19,* changes: turtlebot3_rpicamera.yaml gets camera_info_url value from the initialized calibration file,"['turtlebot3_rpicamera.yaml,turtlebot3_rpicamera.launch']",{'master'},TurtleBot
+17a5aad4270a5605728b8f14eee47e0f71a56c7f,Darby Lim,2018-03-21,modified xacro param,['description.launch.xml'],{'master'},TurtleBot
+bc9d20d36490acad49d6927cf75a345248d8b4ba,Darby Lim,2018-03-21,delete base_scan tag and add imu tag,['turtlebot3_waffle_naked.urdf.xacro'],{'master'},TurtleBot
+687c714c707adf7131e37ef45c17d041c09c3a70,Darby Lim,2018-03-22,add waffe_pi_naked,"['waffle_pi_base_naked.stl,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+1d91f8ffcdddbdba04b0a8a2135023e0c8925137,Darby Lim,2018-03-23,update gazebo param,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+2ef2173e5bed460c9986ed1dce0edf7324afa896,Darby Lim,2018-03-23,add limit velocity msg,['turtlebot3_teleop_key'],{'master'},TurtleBot
+adb6edcf40c2f3f5202cc7d0b4031925b25bb66c,Darby Lim,2018-03-26,update stl file,['waffle_pi_base_naked.stl'],{'master'},TurtleBot
+64b1cca5ae665885f4b205bf69905a1cf1809157,Darby Lim,2018-03-26,bug fixed,['turtlebot3_teleop_key'],{'master'},TurtleBot
+8c6a01e16c329782e31f2bb511e30cc4fa8ccfbf,Darby Lim,2018-03-28,add naked gazebo,"['turtlebot3_waffle_pi_naked.gazebo.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+d447e7540c70d75e5ac30ff79d03dfde04ad688f,Pyo,2018-04-02,Update .travis.yml,['.travis.yml'],{'master'},TurtleBot
+8fa016660b2886e91375af3dab78fbac534e0033,Darby Lim,2018-04-02,delete warn msg,"['burger_base.stl,waffle_base.stl,waffle_base_naked.stl,waffle_pi_base.stl,lds.stl']",{'master'},TurtleBot
+6d8d4766a45ca40c49d0a4eeb9512c6ec8565d0b,Darby Lim,2018-04-02,delete focal lengh param,"['turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']",{'master'},TurtleBot
+412dd8a974abee89b91967a409756f07598f5241,Darby Lim,2018-04-02,edit updateRate,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+4fccdda7fe88c495bc56b8eeeb3f5e735f974497,Darby Lim,2018-04-03,modified camera setup,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+6cf72cf29167079e85abbb85d7e5c378cc8e1cfc,Darby Lim,2018-04-03,mu1 param amended,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+3d31ae8a613d4cc415e649321ca8d8f1807cf64e,Darby Lim,2018-04-03,modified camera param,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+76ab4240eac7ae4877f30d51e8dbe51c04387d77,Darby Lim,2018-04-06,delete property,['common_properties.xacro'],{'master'},TurtleBot
+4a458c08575ed50605d8fcf04a18d113eb394c51,Darby Lim,2018-04-06,add gazebo params,['turtlebot3_burger.gazebo.xacro'],{'master'},TurtleBot
+40f84341d7ca6861f3fdc7c794d1d62095877076,Darby Lim,2018-04-06,modified collision models,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+46273777af6e1d55bc4fde055b5d187951220b35,Darby Lim,2018-04-09,make profile function,['turtlebot3_teleop_key'],{'master'},TurtleBot
+49fdb4c48fa7a869b544c682d4703ccf901cd665,Darby Lim,2018-04-09,modified initial value,['turtlebot3_teleop_key'],{'master'},TurtleBot
+87c34b4c07cb6159ce7e4a813e3c4df4a5af9bcf,Darby Lim,2018-04-09,update param,"['common_properties.xacro,turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro']",{'master'},TurtleBot
+a8222d3a2c2702d44caf0b453fb924c387abf976,Darby Lim,2018-04-10,update param,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger.urdf.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+ed9787d4333f79601c0e83600ca2138ccb92516c,Darby Lim,2018-04-10,add wheel inertia tensor,['turtlebot3_burger.urdf.xacro'],{'master'},TurtleBot
+efcaedaf6c3d6988776632b8319ed42e8ec954ff,Darby Lim,2018-04-10,add inertial param,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+5a7d0c32f81542e463f709a1e30661be636088cf,Darby Lim,2018-04-11,fixed  collision param,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+1d6bc4c62a774c0c34324c0e01f7371113b33b46,Darby Lim,2018-04-11,"fixed mu1, mu2 param","['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+a2f781b6adda78543f99c818455e80bce7be6b9b,Darby Lim,2018-04-11,edit collision,"['turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+bff00d77b06158db783cbadacd1c88cb8bbfe5ff,Darby Lim,2018-04-15,add lidar,['turtlebot3_waffle_pi_naked.urdf.xacro'],{'master'},TurtleBot
+34f95ab48e927782a2f5f52cc9dc01974c998de5,Darby Lim,2018-04-17,edit lidar collision param,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+a2e876b3f3b6c5034d62fb4017543cba939a4bbe,Darby Lim,2018-04-18,add constrain to limit velocity,['turtlebot3_teleop_key'],{'master'},TurtleBot
+d9d2d2c6126213d8a351d8eb5ae9201a8e672794,Darby Lim,2018-04-18,add model,['turtlebot3_teleop_key.launch'],{'master'},TurtleBot
+4decba26327a1b6f1c8bb8a85a8c96dbdf234911,Darby Lim,2018-04-18,modifiy camera position and fixed slip bug,"['turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']",{'master'},TurtleBot
+d0fc0a8ffab445cd2482072595c7a3d448b194c7,Darby Lim,2018-04-18,modify slip bug,['turtlebot3_burger.gazebo.xacro'],{'master'},TurtleBot
+1e8fa2ef49856678d4cb30aee6f27256fe129b99,Darby Lim,2018-04-18,modifiy lidar position,"['turtlebot3_burger.urdf.xacro,turtlebot3_waffle.urdf.xacro,turtlebot3_waffle_pi.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+25b682ba3e4c61c709837ed60b00732654dfffc6,Darby Lim,2018-04-19,Change color,"['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro,turtlebot3_waffle_pi_naked.gazebo.xacro']",{'master'},TurtleBot
+bb929df71f2ace82275ea28d1e95e894a2186f13,Darby Lim,2018-04-19,add function to check angular velocity,['turtlebot3_teleop_key'],{'master'},TurtleBot
+a429e266e491418b118efd0efde62a660c1be9cb,Darby Lim,2018-04-19,add const value,['turtlebot3_teleop_key'],{'master'},TurtleBot
+3c7ffca48b93e06d7ea0eed9d9c9381d1a4d8517,Darby Lim,2018-04-20,control frequency and inflation radius amended,"['global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'},TurtleBot
+5fcdb33c709c56cab2580329d0debebb937e0569,Darby Lim,2018-04-20,edit footprint size,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml']",{'master'},TurtleBot
+b43b62ce2260caa01802d2f9e4358727ad9daed2,Darby Lim,2018-04-20,edit velocity and bias,['dwa_local_planner_params.yaml'],{'master'},TurtleBot
+8db5a484cf4f6224cd1a268d8325f62df065fd35,Darby Lim,2018-04-22,edit obstacle range and inflation radius,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml']",{'master'},TurtleBot
+01beb9347f8d5e0d91582608bc15027c3e376670,Darby Lim,2018-04-22,velocity and acc and frequency param amended,"['dwa_local_planner_params.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'},TurtleBot
+b7e491de24e6c9cfca9ae50b3cc5450ac823daaa,Darby Lim,2018-04-24,modified rosparam,['turtlebot3_navigation.launch'],{'master'},TurtleBot
+8f3ecbd62aa7f34c9fa7b9296c3e6d5b40e806fb,Darby Lim,2018-04-24,update param,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml,dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml,global_costmap_params.yaml,local_costmap_params.yaml,move_base_params.yaml']",{'master'},TurtleBot
+ff8e2ced6f67e25da2be2706efa8e16bbe829d40,Darby Lim,2018-04-24,change color,['turtlebot3_nav.rviz'],{'master'},TurtleBot
+3ce3a754438043dc221d5beb6178a7b29fa9b6f8,Darby Lim,2018-04-25,update param after experiments,"['costmap_common_params_burger.yaml,dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml,move_base_params.yaml']",{'master'},TurtleBot
+7039de4bdc6236d288ed46e54d9a1de6af4f5384,Darby Lim,2018-04-25,modified  plugin param,['turtlebot3_waffle_pi_naked.gazebo.xacro'],{'master'},TurtleBot
+fb1f6ede646a91fb61b2340b24e7700558399a74,Darby Lim,2018-05-03,update file,"['waffle_base_naked.stl,waffle_pi_base.stl,waffle_pi_base_naked.stl']",{'master'},TurtleBot
+d2e90f9e765da99808b000ce9868958205a491e9,Darby Lim,2018-05-03,delete,['turtlebot3_waffle_pi_naked.gazebo.xacro'],{'master'},TurtleBot
+514ad528e1834d4c50d46ba839ef9544dec409ee,Darby Lim,2018-05-03,update scan param,['turtlebot3_waffle_pi_naked.urdf.xacro'],{'master'},TurtleBot
+b592784de7b492cf2f08686cb29b6b9e0e20af9b,Darby Lim,2018-05-03,update scan param,"['turtlebot3_waffle_naked.urdf.xacro,turtlebot3_waffle_pi_naked.urdf.xacro']",{'master'},TurtleBot
+0f2328cd8d1fcba6e97e17a2a23a8967da2cec7b,Darby Lim,2018-05-03,delete warning,"['waffle_base_naked.stl,waffle_pi_base.stl,waffle_pi_base_naked.stl']",{'master'},TurtleBot
+8620d60fb1914899310b3c0ca7ea9916100ecd7f,Taehun Lim,2018-05-09,Create ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md'],{'master'},TurtleBot
+b0492a461fba1289f21de48acf0adfcef191daa8,Pyo,2018-05-09,Update ISSUE_TEMPLATE.md,['ISSUE_TEMPLATE.md'],{'master'},TurtleBot
+7e69ac3ae556b18b9a906c8428549d6cc6e3dd04,Pyo,2018-05-09,added cartographer,"['CMakeLists.txt,turtlebot3_lds_2d.lua,flat_world_imu_node.h,turtlebot3_cartographer.launch,turtlebot3_gmapping.launch,turtlebot3_slam.launch,package.xml,turtlebot3_cartographer.rviz,flat_world_imu_node.cpp']",{'master'},TurtleBot
+171270c979560f3210e0023dd3b1d5be7bc1953d,Pyo,2018-05-09,added frontier_exploration,"['frontier_exploration.yaml,turtlebot3_frontier_exploration.launch,turtlebot3_frontier_exploration.rviz']",{'master'},TurtleBot
+06c7aff21e0ff3950a6b4dc9ae66bcbe1c4db085,Pyo,2018-05-09,added hector mapping,['turtlebot3_hector.launch'],{'master'},TurtleBot
+966ef2d589c5a97c93ce086dbf2a0ebe62e8ea37,Pyo,2018-05-09,added karto slam,"['karto_mapper_params.yaml,turtlebot3_karto.launch']",{'master'},TurtleBot
+dfe29b5b681ccd03e568ec24d45c835199d7b2c2,Pyo,2018-05-10,update for cartographer,"['amcl.launch,move_base.launch,turtlebot3_navigation.launch,turtlebot3_navigation.rviz,turtlebot3_cartographer.launch,turtlebot3_cartographer.rviz,turtlebot3_gmapping.rviz,turtlebot3_slam.rviz']",{'master'},TurtleBot
+0f9844a9b2f77d8a2fadcaaf21d76f4ad9b03ca6,Pyo,2018-05-10,added selection options for SLAMs,['turtlebot3_slam.launch'],{'master'},TurtleBot
+ad528b1a339dcaeb017ba988b95f625c03a1c5c3,Pyo,2018-05-10,modified the launch files for slam methods,"['turtlebot3_cartographer.launch,turtlebot3_frontier_exploration.launch,turtlebot3_gmapping.launch,turtlebot3_hector.launch,turtlebot3_karto.launch,turtlebot3_slam.launch,turtlebot3_hector.rviz,turtlebot3_karto.rviz']",{'master'},TurtleBot
+05145d801f8fbf58e17d5fd1f238ad4a0e7214ac,Pyo,2018-05-11,modified the rviz and navigation launch files for sync with slam,"['amcl.launch,move_base.launch,turtlebot3_navigation.launch,map.pgm,map.yaml,turtlebot3_nav.rviz,turtlebot3_navigation.rviz']",{'master'},TurtleBot
+f14901db9f2880b4f3e10f12d0d5f612f1a2f640,Darby Lim,2018-05-14,add variable to check version only once,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+c4a97705cefb88864ef43c93b3cbfe9e266b0375,Darby Lim,2018-05-14,delete count version info msg,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+aff566b8f168b2868dec87c4987c7a947126b35b,Darby Lim,2018-05-14,change limit vel,['turtlebot3_teleop_key'],{'master'},TurtleBot
+742d24f73f85c49c9cde0880f8e8cf4b4fadf3ac,Darby Lim,2018-05-15,change name,"['waffle_base_for_open_manipulator.stl,waffle_pi_base_for_open_manipulator.stl,turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro']",{'master'},TurtleBot
+d1296cb43cc532679c29807d6056137751269f84,Darby Lim,2018-05-16,add check version variable,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+59dc5234bae8d927e430760dee564e187f55377f,Darby Lim,2018-05-16,add new file,"['turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_burger_for_autorace.urdf.xacro']",{'master'},TurtleBot
+8b9156cefcd092f5ccd25447cef9150cd30cc0ef,Pyo,2018-05-21,modified comment,['turtlebot3_cartographer.launch'],{'master'},TurtleBot
+287ceefeb2012869eae44bfca78bad6ee84ba0cc,Pyo,2018-05-21,"added frameName for imu on gazebo (however, there is no effect.)","['turtlebot3_burger.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+9480d25abb02228ebe500f00370ce4554f04e839,Pyo,2018-05-21,modified the size of laser scan,"['turtlebot3_navigation.rviz,turtlebot3_cartographer.rviz,turtlebot3_frontier_exploration.rviz,turtlebot3_gmapping.rviz,turtlebot3_hector.rviz,turtlebot3_karto.rviz']",{'master'},TurtleBot
+5f9335865fc0cfa3ecbe8c6ea91c45cb99ef256f,Pyo,2018-05-21,changed  tracking_frame to imu_link for real  and made fake for gazebo,"['turtlebot3_lds_2d.lua,turtlebot3_lds_2d_gazebo.lua']",{'master'},TurtleBot
+8a9e4a0c5fe376883c8bee8efa9637af8f7e9a1b,Pyo,2018-05-21,added burger model,"['turtlebot3_cartographer.launch,turtlebot3_frontier_exploration.launch,turtlebot3_slam.launch']",{'master'},TurtleBot
+00ab30025a9e993006b96a64a69bcdceebe9d10d,Darby Lim,2018-05-23,update range of lidar,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+cd3fb19745744ecb0d5bef0fdeb623740ac853bd,Darby Lim,2018-05-23,change robot name,"['turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro']",{'master'},TurtleBot
+fb46638818bed06eff0cfcb7f8153dac0d8173f2,Muhammad Furqan Habibi,2018-05-24,convert global name to relative name,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+6f84d9cf86f8a24c60ed920dd29b74a3658a6f63,Muhammad Furqan Habibi,2018-05-24,convert more global name to relative name,"['turtlebot3_obstacle.py,turtlebot3_marker_server.cpp,turtlebot3_navigation.launch,turtlebot3_teleop_key']",{'master'},TurtleBot
+b682e7b358a31bb3e675da2891dd4ed7839ed67e,Darby Lim,2018-05-24,update param,"['costmap_common_params_burger.yaml,costmap_common_params_waffle.yaml,costmap_common_params_waffle_pi.yaml']",{'master'},TurtleBot
+c20d38c61ce7141449ce63bd50d3e44429808b4a,Darby Lim,2018-05-24,update,['turtlebot3_navigation.rviz'],{'master'},TurtleBot
+a666e4803508566379e4716936ababc3771db3f8,Darby Lim,2018-05-24,update param,['turtlebot3_gmapping.launch'],{'master'},TurtleBot
+7cfd8bf4c9b2c7ad1147d6a9b8c53565ccdef107,kijongGil,2018-05-25,modified sensor launch,"['turtlebot3_bumper,turtlebot3_illumination,turtlebot3_sonar']",{'master'},TurtleBot
+137d47c9e24657d875f99395bdf36159cf19279a,Darby Lim,2018-05-25,update firmware version,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+605ac352ab6ae11f18305508ed29516a34f4bdf0,kijongGil,2018-05-25,remove scripts,"['turtlebot3_client.py,turtlebot3_marker_server.py,turtlebot3_obstacle.py,turtlebot3_pointop_key.py,turtlebot3_server.py']",{'master'},TurtleBot
+958e8f1905b0c07acfb4d7e231fc53904b0a4810,Darby Lim,2018-05-25,add marker_server in catkin_install_python,['CMakeLists.txt'],{'master'},TurtleBot
+65abef4c6a2b3b6b3deff09104df8acd30292632,Darby Lim,2018-05-25,delete unused space,['interactive_markers.launch'],{'master'},TurtleBot
+9d5185563ef97e1e8443f8651a325bace2401f12,Darby Lim,2018-05-25,update,['turtlebot3_marker_server'],{'master'},TurtleBot
+c5854daa1e64b59365df8f39a881ce017e523406,kijongGil,2018-05-25,added scrpits,"['CMakeLists.txt,turtlebot3_patrol.launch,turtlebot3_client.py,turtlebot3_server.py']",{'master'},TurtleBot
+d71f611ee2ffbe23b659e12c131610c55222e378,kijongGil,2018-05-25,added nodes,"['CMakeLists.txt,turtlebot3_client.launch,turtlebot3_server.launch,turtlebot3_client,turtlebot3_server']",{'master'},TurtleBot
+153c57d5472838d103cf583a1e82d894ab5ecd13,kijongGil,2018-05-25,remove launch server,['turtlebot3_server.launch'],{'master'},TurtleBot
+c48dd332808174ea0d183b367a325dc3817dbb5b,Pyo,2018-05-28,fixed amcl.launch name,['turtlebot3_frontier_exploration.launch'],{'master'},TurtleBot
+8043c927f3bfae554d56808678971d521bf506ea,Pyo,2018-05-29,update the parameters of Hector mapping,['turtlebot3_hector.launch'],{'master'},TurtleBot
+a02be625b693aea958fd2127de7653b591554f7a,Pyo,2018-05-29,update the parameters of Hector mapping,['turtlebot3_hector.launch'],{'master'},TurtleBot
+fbe154f0c67c066c89d6268ed2d5d2f5d85a7ee9,Pyo,2018-05-29,updated the CHANGELOG and version to release binary packages,['turtlebot3_marker_server'],{'master'},TurtleBot
+9f6db49609345609e3ba9b553e4fb6f2a4ff19b8,Pyo,2018-05-29,updated the CHANGELOG and version to release binary packages,"['turtlebot3_client,turtlebot3_server']",{'master'},TurtleBot
+904647137338008a1215f86de1da80448c96c9d4,Eduardo Avelar,2018-06-03,delete unused get_scan function,['turtlebot3_obstacle'],{'master'},TurtleBot
+629cd81f2d4cef92f09d38f634567d10c17ffad9,Eduardo Avelar,2018-06-03,implement get_scan functionAnother change is implement the get_scan function,['turtlebot3_obstacle'],{'master'},TurtleBot
+02ebd947da1ea34790587acfc19c35fae28c9a89,Darby Lim,2018-06-11,amended origin of collision in waffle URDF,['turtlebot3_waffle.urdf.xacro'],{'master'},TurtleBot
+88d59c2dba1dfd864bdcc4a44fe3081bedf52201,Darby Lim,2018-06-15,add default value,['turtlebot3_teleop_key'],{'master'},TurtleBot
+7aeffdac6d934ef5eb1d8394d9841f97a7b585b9,Darby Lim,2018-06-22,add argument about namespace,"['turtlebot3_core.launch,turtlebot3_lidar.launch,turtlebot3_remote.launch,turtlebot3_robot.launch']",{'master'},TurtleBot
+18ccca7931cf4b08b8ff5c4aad95e9689e3cc5b6,Darby Lim,2018-06-22,update arg,"['turtlebot3_core.launch,turtlebot3_robot.launch']",{'master'},TurtleBot
+27f42b14443cc240edb97ea6a67b0b3afcfaf6ba,Darby Lim,2018-06-22,change arg name,['turtlebot3_core.launch'],{'master'},TurtleBot
+57456f33d15f9fb289791412282d831acb6500b7,Darby Lim,2018-06-22,delete ns,"['turtlebot3_lidar.launch,turtlebot3_robot.launch']",{'master'},TurtleBot
+7007e670c414ac3ed5c6d4c5047f5d4b572f89c1,Darby Lim,2018-06-22,change arg name,['turtlebot3_remote.launch'],{'master'},TurtleBot
+04d08bc51d9da560165f36d028b07d477b0607f5,kijongGil,2018-06-26,modified topic name,['turtlebot3_client'],{'master'},TurtleBot
+7ac6ad2011ee0b94191d12cfbca30d99cddfc820,kijongGil,2018-06-26,changed camera topic name,['turtlebot3_burger_for_autorace.gazebo.xacro'],{'master'},TurtleBot
+eaea4eb2190d22c0a019073f9d867b7ef6bd0ee3,Darby Lim,2018-06-28,add argument,['turtlebot3_lidar.launch'],{'master'},TurtleBot
+de98b27d3197a92fe4e199c011a377c30f9ffedd,Darby Lim,2018-07-11,modified arguments,['turtlebot3_lds_2d.lua'],{'master'},TurtleBot
+79560d9cb165222c9c40b72bfaeb59026d98a747,Darby Lim,2018-07-11,add arguments,['turtlebot3_gmapping.launch'],{'master'},TurtleBot
+324f826dd27f93727f54c80f70758004cfafc1d1,Darby Lim,2018-07-11,update firmware version from 1.2.0 to 1.2.1,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+fdad8efa9a2284f853871a766821cd78ee1ffb3e,Darby Lim,2018-07-11,add arguments,['turtlebot3_robot.launch'],{'master'},TurtleBot
+ce3205d8b6822cbeabd046d083048908f19cf063,Darby Lim,2018-07-11,change arg name,['turtlebot3_robot.launch'],{'master'},TurtleBot
+877ea055c17b315890ac0faff46762c2ad2fe13d,shtseng,2018-07-18,Corret the laser scanner update_rate in the gazebo xacro files,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+cf1b02779a3fa99d38b8d16c6e700cd5cb279e69,kijongGil,2018-07-18,added odometrySource,['turtlebot3_burger.gazebo.xacro'],{'master'},TurtleBot
+e78b8edce9702e292dec65a5ca549a774512bd67,Darby Lim,2018-07-18,amended base_scan update_rate and add param on diff_drive,"['turtlebot3_burger.gazebo.xacro,turtlebot3_burger_for_autorace.gazebo.xacro,turtlebot3_waffle.gazebo.xacro,turtlebot3_waffle_pi.gazebo.xacro']",{'master'},TurtleBot
+235253753fed77a59d056ed8f810d5ddedb2aafd,Pyo,2018-07-20,added melodic on ubuntu and debian,['.travis.yml'],{'master'},TurtleBot
+71bcfc83739b7cfc6aa2c8a5e996a83364c603a1,Pyo,2018-07-20,updated issue template,['ISSUE_TEMPLATE.md'],{'master'},TurtleBot
+f70f0cbcd8af3d518a53861aa61c05d28b6df2b7,Darby Lim,2018-07-23,modified version check function,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+351e91441fab27e62be8c80ed9bb6361967b1ed2,Darby Lim,2018-07-23,update version check func,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+e45443cbbaee8914bff2a2bea12acefb31966eb6,Darby Lim,2018-07-23,delete ros log warn,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+b468e8c88be0ea83ac152e43b10b52ccd5b49c56,Darby Lim,2018-07-23,add debug code,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+8f8c088ceb8e975d70338b2a61b4742306324492,Darby Lim,2018-07-23,update get firmware version,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+b548e0e5b73388cfa753ce22defa58066c95ffb4,Darby Lim,2018-07-23,add split func,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+9ffc924aff659fe9c9d896323216968d8dc3be83,Darby Lim,2018-07-23,update split func,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+adbe83c323a6c7c7ad4a896344d526da0e07c244,Darby Lim,2018-07-23,delete debug code,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+5257aa71582f10f4bf9f6023c9bc0e7fcbf7221a,Darby Lim,2018-07-23,update warn msg,['turtlebot3_diagnostics.cpp'],{'master'},TurtleBot
+33c55db9a080b899275dac1560918baff0c2d6fb,Pyo,2018-07-23,updated the CHANGELOG and version to release binary packages,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']",{'master'},TurtleBot
+9a79b9f1543844ae748d0e6a08dc149fef4e8925,oiz5201618,2018-07-31,"Fix typoThe correct parameter name in dwa_local_planner is ""vth_samples"".","['dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml']",{'master'},TurtleBot
+63e94ce64e7eff481b7dc48808724606835a52f0,Jonathan Hechtbauer,2018-10-30,Add test arg to turtlebot3_model.launch,['turtlebot3_model.launch'],{'master'},TurtleBot
+6746e80188f98fe8116d60131e207b715ff3e7ed,yoshimalucky,2018-10-30,Added an additional argument move_forward_only to prohibit backward locomotion in navigation.,"['move_base.launch,turtlebot3_navigation.launch']",{'master'},TurtleBot
+e3e0a5eb2e87b9961ec4595e5b0e794b80466b14,Steven Macenski,2018-10-31,rosdep key is incorrect,['package.xml'],{'master'},TurtleBot
+4d9bbd16fd51c33ed781bf5977ad85640dd46478,linzhibo,2018-11-13,Update map.yaml,['map.yaml'],{'master'},TurtleBot
+f09990f821c9c50665b1daf22c3645ce69c4a302,Sean Yen,2018-12-18,add windows port.,['turtlebot3_teleop_key'],{'master'},TurtleBot
+6ee169a14ce1aceb549554353cd9ab828084e63b,Eduardo Avelar,2019-01-15,fix read of scanned samples when there isn't 360I added some suggested changes,['turtlebot3_obstacle'],{'master'},TurtleBot
+67193fe05a5908d5e7a07cdbdb35470da94157c3,kijongGil,2019-01-17,fixed TypeError integers,['turtlebot3_obstacle'],{'master'},TurtleBot
+922d46b49eb7c790c42cb3a11de6cba6414bd861,Eduardo Avelar,2019-01-17,"change math.ceil() operation The math.ceil() output in some cases is different in python2 and python3, for this reason I change the operation by the standard floor operation",['turtlebot3_obstacle'],{'master'},TurtleBot
+41cc23e361cb7c556a91b2f157527f2a003ef469,Pyo,2019-01-22,updated travis setting for melodicSigned-off-by: Pyo <pyo@robotis.com>,['.travis.yml'],{'master'},TurtleBot
+cf7d872eb10d020c72c132139338cb8d66439649,kkjong,2019-02-11,modified turtlebot3_model launch,['turtlebot3_model.launch'],{'master'},TurtleBot
+69b4563d754ad539d2b2c71fe6f968b3419fb3fb,Darby Lim,2019-04-09,delete '/' to sync tf2,"['global_costmap_params.yaml,local_costmap_params.yaml']",{'master'},TurtleBot
+36166ef18615f23837362970059a11c664b97230,atinfinity,2019-05-05,fixed dwa_local_planner_params,"['dwa_local_planner_params_burger.yaml,dwa_local_planner_params_waffle.yaml,dwa_local_planner_params_waffle_pi.yaml']",{'master'},TurtleBot
+c1180ebc2576850c64f1bc74917ea0993baf200e,Kayman,2019-05-09,"fixed a bug for release version - flat_world_imu_node.cpp - In case of release version, ROS_ASSERT is not called.(when macro NDEBUG is set.)",['flat_world_imu_node.cpp'],{'master'},TurtleBot
+2aec404db42b4cd52c9e1fadaefd43744863aa9e,Pallav1299,2019-06-07,Textual correction in comments,['turtlebot3_pointop_key'],{'master'},TurtleBot
+68def659ae37fe31e113a0a00fc39634fd8eb8c0,Pyo,2019-08-20,Deleted test codeSigned-off-by: Pyo <pyo@robotis.com>,['turtlebot3_model.launch'],{'master'},TurtleBot
+5818b3518ff1d9639ca3d22b50bd65fc90e38e36,Pyo,2019-08-20,Deleted unused lineSigned-off-by: Pyo <pyo@robotis.com>,['.travis.yml'],{'master'},TurtleBot
+695483d09a84b95cab0b51b9716e004faa467bf5,Pyo,2019-08-20,Added some questions for ROS 2Signed-off-by: Pyo <pyo@robotis.com>,['ISSUE_TEMPLATE.md'],{'master'},TurtleBot
+ddca617172a3549a3077682cd2cf7dc377616e01,acxz,2019-09-29,Add print compatibility with python 2 & 3,['turtlebot3_teleop_key'],{'master'},TurtleBot
+13e9d2ee5357c18173a5bbadf705254b96e87f30,Will Son,2020-01-08,hotfix for #524,"['waffle_pi_base.stl,waffle_pi_base_for_open_manipulator.stl']",{'master'},TurtleBot
+f81798beae513241084e27c42de582a6d88ff30f,Ryan Shim,2020-02-20,Updated tb3 for omx urdf files,"['turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro']",{'master'},TurtleBot
+40f11e4e7e71543096b3b52d964f2f4f42c831f0,Will Son,2020-02-28,python 2 & 3 compatibility update #542,['turtlebot3_teleop_key'],{'master'},TurtleBot
+b5c13c9579fd49374b6e5f0a7eaa95817c1ca707,Will Son,2020-03-03,slam for TurtleBot3 Manipulation,['turtlebot3_manipulation_slam.launch'],{'master'},TurtleBot
+937f0d09b5f6e4ea26b11550eba6810b41c92468,Will Son,2020-03-23,"Revert ""python 2 & 3 compatibility update #542""This reverts commit 40f11e4e7e71543096b3b52d964f2f4f42c831f0.",['turtlebot3_teleop_key'],{'master'},TurtleBot
+90e06ae89ce4c27b5ad3ddefc6896ea17ad86df5,Will Son,2020-03-23,update changelogs,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']",{'master'},TurtleBot
+1b283fccdc51d37fe4c65c586e09a6c8b41550a1,Will Son,2020-03-23,update changelogs,['CHANGELOG.rst'],{'master'},TurtleBot
+166fd24c387d86891f5dcc654a699b8462beb749,Will Son,2020-03-23,update changelogs,"['CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst,CHANGELOG.rst']",{'master'},TurtleBot
+68538fb0a2c8a7a2c2ddec4eb5fba7640650157e,Ryan Shim,2020-03-23,added temporary inertia data in urdf file,['turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro'],{'master'},TurtleBot
+5f64ce2ddaa0c657c4c75a8682c41ee28d7f7ffc,Will Son,2020-03-23,version update,"['package.xml,package.xml,turtlebot3_diagnostics.cpp,package.xml,package.xml,package.xml,package.xml,package.xml']",{'master'},TurtleBot
+ee350b65181679a0a4ad817d202aa2862a639a67,Ryan Shim,2020-03-30,updated urdf files,"['turtlebot3_waffle_for_open_manipulator.urdf.xacro,turtlebot3_waffle_pi_for_open_manipulator.gazebo.xacro']",{'master'},TurtleBot
+07eec7d44026167b33beeee485ada7dbb2faa5e6,Ryan Shim,2020-03-30,updated urdf files,['turtlebot3_waffle_pi_for_open_manipulator.urdf.xacro'],{'master'},TurtleBot
+35feb4f0f15496e9ac0ca02ab0c59702081c5cb6,Ashe Kim,2020-04-01,add file turtlebot3 burger for autorace 2020,"['turtlebot3_burger_for_autorace_2020.gazebo.xacro,turtlebot3_burger_for_autorace_2020.urdf.xacro']",{'master'},TurtleBot
+a8e7647d809497612ff82b564a55ba17c5b5e2a3,artivis,2020-04-24,rm useless paramSigned-off-by: artivis <jeremie.deray@canonical.com>,['turtlebot3_gmapping.launch'],{'master'},TurtleBot
+bafe362f40c42c1cefcaab183517d7343c40a909,artivis,2020-04-24,mv gmapping param to yaml fileSigned-off-by: artivis <jeremie.deray@canonical.com>,"['gmapping_params.yaml,turtlebot3_gmapping.launch']",{'master'},TurtleBot
+bb0258f7f0cb58d36f8bce8bc590b3ebd147cebc,Will Son,2020-05-11,simplified modeling files,"['burger_base.stl,waffle_base.stl,waffle_base_for_open_manipulator.stl,waffle_pi_base.stl,waffle_pi_base_for_open_manipulator.stl,lds.stl']",{'master'},TurtleBot
+607ee5b72e28fbfbcd3328370baf41ac9ea06682,Ryo KOYAMA,2020-05-13,fix link to bag fie,['bag_files.md'],{'master'},TurtleBot
+e521df9cff26f152814953fdf284c27fcc927336,Will Son,2020-05-13,apply #587,['turtlebot3_gmapping.launch'],{'master'},TurtleBot
+67e54e9992c75586eb5d33c264cd0389dc143b35,Will Son,2020-07-13,Create lint.yml,['lint.yml'],{'master'},TurtleBot
+da0dd361c7b455ba3dc8d7304c70ab06276b909a,Will Son,2020-09-29,update travis,['.travis.yml'],{'master'},TurtleBot

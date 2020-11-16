@@ -1,0 +1,10 @@
+#!upstart
+description "Valetudo"
+
+start on net-device-up IFACE=wlan0
+stop on runlevel [06]
+
+oom score 1000
+exec /usr/local/bin/valetudo
+respawn
+respawn limit 10 90

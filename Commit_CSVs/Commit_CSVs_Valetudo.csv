@@ -1,534 +1,530 @@
-Commit_ID,Contributor,Date,Message,Files,Branch
-7c46437065aed773467f0f0f0ab8aeddeebf9579,Sören Beye,2018-07-12,Initial commit,['LICENSE'],{'master'}
-a97532b575a2265fcca6543aa9a834d2e4371a55,Sören Beye,2018-07-12,Deployment readme,['Readme.md'],{'master'}
-cc5d6079221d035bfc67eec9a49be8ffb6188be0,Sören Beye,2018-07-12,Client readme,['Readme.md'],{'master'}
-32159ff0371671e3d55784477022919fff68b5c8,Sören Beye,2018-07-12,Updated version,['package.json'],{'master'}
-43aa0a7aaecd531a2f2ab77d56f4d6313bdf3f9c,Sören Beye,2018-07-12,Npm is weird.,['package.json'],{'master'}
-081b2aa59b5567bae0cc871b1fd1cf73db9afc89,Hypfer,2018-07-20,Fallback to GridMap if there is no usable live ppm map,['WebServer.js'],{'master'}
-6a570503fd1931b60bee48f52e7d68c5fcc6cc11,Hypfer,2018-07-21,Fixed path rotation if GridMap is used,['WebServer.js'],{'master'}
-431df94b02db310b30d415a48f89ab0ae8a8ae42,MeisterTR,2018-07-21,0.0.2,"['index.html,WebServer.js']",{'master'}
-13152b9b11d658f2d0773b80f4eeb9fcbfc8e59a,Hypfer,2018-07-21,Removed /api/map/full which was just a duplicate of /api/map/latest,"['index.html,WebServer.js']",{'master'}
-9c712074464b8300198a17f80581cffaf7ad43e8,Hypfer,2018-07-21,Bumped version number,['package.json'],{'master'}
-b2ba41189cefdaf25075b3f2e6002687117a7ac4,Hypfer,2018-07-21,Handle 0 byte maps + Logs,['index.html'],{'master'}
-1a2472d87b986952571eccfd32596317ad9f3809,Sören Beye,2018-07-24,Added support for encrypted archive maps and fixed missing paths (#4),"['index.html,WebServer.js']",{'master'}
-b6b3257b644d64cced262cc20714c27b3e60cab0,Hypfer,2018-07-24,Added charger icon to map,"['index.html,WebServer.js']",{'master'}
-8c0208f2249c0f7b1c99b3e5d3039bbd4580b0d7,Hypfer,2018-07-30,Fixed /mnt/data/rrlog regex for Gen 1,"['Vacuum.js,WebServer.js']",{'master'}
-3aa52a38e52123135504cb1e5047306da2e9630c,Benedikt Krueger,2018-07-30,added initial support for manual control,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-d79d5180ac43a686e9ace1a7c446a49deaad7f4f,Benedikt Krueger,2018-07-30,- added left side menu entry for manual control- fixed touchscreen handling on manual control,['index.html'],{'master'}
-9564da8aa39ace5e92f197746d8cd54ff7f6f77b,Benedikt Krueger,2018-07-30,fixed touchscreen support for IOS devices,['index.html'],{'master'}
-e050387c850b75ead0920bd1e1ce21237153ab28,Hypfer,2018-07-30,Code cleanup,"['Todo.md,index.html,Readme.md']",{'master'}
-d0faddf37e0c85df06a705ae76e09a7452c7c12f,Sören Beye,2018-07-30,Bumped version number,['package.json'],{'master'}
-de276dd903e7ca12e2d878226e14503341d0828f,Flole998,2018-07-30,Add title,['index.html'],{'master'}
-3868ffd85c76795037e053fc173c1e5a7f2cdcec,Sören Beye,2018-08-11,Added oom score attribute,['valetudo.conf'],{'master'}
-7aa2b7076c04c7b329611de4ca600a24b365326a,Benedikt Krueger,2018-08-25,Added support for map generation as image (PNG) on the robot.,"['.keep,package.json,WebServer.js']",{'master'}
-29b7a5d40decf53a40b4febcfaa802f15a5bb62b,Benedikt Krueger,2018-08-25,Fixed directory handling on robot for temporary files,"['.keep,WebServer.js']",{'master'}
-ed4aa1e1090db14f0bbc561579e4b4450ef2a63f,Benedikt Krueger,2018-08-25,fixed client path for webserver,['WebServer.js'],{'master'}
-ddc1c5f74ec06d63d2438932220e369678998342,Benedikt Krueger,2018-08-25,applied some performance improvements,['WebServer.js'],{'master'}
-85e6c20cab25d9c0a0fd6cc0f1b80330eb49df4b,Benedikt Krueger,2018-08-25,"extended remote api for:- possibility to draw charger / robot / path- custom attributes (drawRobot, drawCharger, drawPath, scale, doCropping, border)","['charger.png,robot.png,WebServer.js']",{'master'}
-8235c4c4cd878d2397abd05b61a9da08d72660ad,Benedikt Krueger,2018-08-25,fixed path for asset images (robot and charger) for production package,['WebServer.js'],{'master'}
-ea65d2d2a558d5d57a41659c15c8df3345c39b6b,Benedikt Krueger,2018-08-25,fixed formatting,['WebServer.js'],{'master'}
-2bdc9c6d12897eb7b2a72c4ad4e31be7654c0479,Benedikt Krueger,2018-08-25,fixed timing issue (json response send before image is generated),['WebServer.js'],{'master'}
-712bcaefc3bfab4718f9fc4aae8181b7573c5394,maxpautsch,2018-08-26,added the following functionalities:- zoned cleanup- go to- spot clean- sound volume control,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-e48c5c90d6077105c7860bc473d783ff40a3a88b,maxpautsch,2018-08-26,"added multi zone clean, online configuration of zones and go to spots, new location of config file and automatic generation of config file if not present.","['Valetudo.js,index.html,WebServer.js']",{'master'}
-8bdb58a7bf2fc419ed519b89ad51015917a373fe,maxpautsch,2018-08-26,added comments and fixed multi zone cleanup,"['index.html,Vacuum.js']",{'master'}
-1f0450c1fe13aeb987395260af123824041ed875,maxpautsch,2018-08-26,last bugfixed after test on target,"['Valetudo.js,index.html,WebServer.js']",{'master'}
-2e49705c4c4c6732feed5b0b5bf3b6520f026653,Sören Beye,2018-08-26,Bumped version number,['package.json'],{'master'}
-702c4bce6790dce415a50a363ae07e72933c9596,Benedikt Krueger,2018-09-01,"fix for goto position == 0 resulting in ""coordinates missing""",['WebServer.js'],{'master'}
-60a6ea29cf0614bb97710eb3124a75616bd4c932,Thomas MAUGIN,2018-09-09,ui: add icon and home screen for chrome,"['icon.png,index.html,manifest.json']",{'master'}
-e483c6607a9aaad2d75824f3d0f8c33e69dd21f8,Dario Ernst,2018-09-23,"Build automatically using travis-ci.Add a .travis.yml which will build valetudo using the latest nodejsversion and package it using pkg. Then, it’ll upload the resultingbinary as a github release.To nicely get all dependencies installed, add pkg as a dev-dependency topackage.json.","['.travis.yml,Readme.md,package.json']",{'master'}
-14b61df81b88552ad30f247176a36804f569e60e,Hypfer,2018-09-23,Setup Travis CI,['.travis.yml'],{'master'}
-1f872ee549afebcd33166c4743948a54c081fe94,Hypfer,2018-09-23,Bumped version number,['package.json'],{'master'}
-33b2d844a5bd4746140cc56e54553508be9f2e4e,Tobias Schaffner,2018-10-03,"Add a general info section with firmware versionAdd a general info tab for general information like type, firmwareversion and build to the settings page.Add firmware and build version to that tab.","['index.html,WebServer.js']",{'master'}
-d6fbc5d6efaba46ebaab916eafc9cc0fba010cf5,Tobias Schaffner,2018-10-03,Use fs.readFile instead of a cat call,['WebServer.js'],{'master'}
-c1a837c97173ef0ea1c9b890c876a87889debf7c,Tobias Schaffner,2018-10-03,Set remaining hours of consumables to zero if negative,['index.html'],{'master'}
-ac6b7026165dcb3400e3b4fe4579cc0bd3e8ff60,Felix Uster,2018-10-03,Added option to directly respond with the requested map image,['WebServer.js'],{'master'}
-43aa01f7728e8083909f975ae5906b03d81dba0d,Sören Beye,2018-10-03,Update WebServer.js,['WebServer.js'],{'master'}
-195dabed662edc3a37bf16915b8b1df3b03f6150,Hypfer,2018-10-03,Bumped version number,['package.json'],{'master'}
-93961828911d53f68a957ac9c8cb7e96c219f96e,Hypfer,2018-11-16,Add apple touch icon because manifest.json icons are not yet supported on iOS,['apple-touch-icon.png'],{'master'}
-5dfcafad2da78460ff5307da815b28bbfbf0d905,fcktrmp,2018-11-20,Added development / building script and documentation,"['Testing.md,HOWTO.md,config.json.example,env.example,run']",{'master'}
-8f26b73d02c447c1cc449c9a3db33c7ae4186e1e,Tobias Schaffner,2018-11-24,Add Dummycloud approach to deployment docAs Dummycloud is now available to the public we can now add a link to the github project.It provides a binary as well as a detailed information about the setupprocess.,['Readme.md'],{'master'}
-2b38868bf5df113e6fe66788502c9822ef68b71c,fcktrmp,2018-11-24,fixes for GridMap handling,"['MapFunctions.js,WebServer.js']",{'master'}
-3ef2b6955d10e1e5cc4da8f2106fcef7a9d93e37,Hypfer,2018-12-09,Fix #50,['index.html'],{'master'}
-529070b2fe261c738c25f0b382a81961cd3df37c,Hypfer,2018-12-09,Bump version number to 0.0.8,['package.json'],{'master'}
-01a1ab3969d27419a80627063c9a7507d5b66efc,JohnRev,2018-12-19,Fix directory scanning,['WebServer.js'],{'master'}
-5fc8f401c180c14a70b5c95439544b5b2ee6cb83,Matthias Harrer,2018-12-20,Adds first version of zoom-/dragable map,"['geometry-polyfill.js,hammer.min.js,index.html,vacuum-map.js,WebServer.js']",{'master'}
-d74f081a047b0c6c6fbed42cf02785011500b1ec,JohnRev,2018-12-20,"Add a box that display the clicked coordinates  (#1)* Display tapped coordinates* Remove extra space","['index.html,vacuum-map.js']",{'master'}
-a6643a08bc9a87cf71bad3a348cdeb1a7d4f8f77,JohnRev,2018-12-21,Scan newest folder first,['WebServer.js'],{'master'}
-657dfa6f09b67b2e8733ef47c145fb73e4978787,JohnRev,2018-12-21,Update filename regex,['WebServer.js'],{'master'}
-0845ce1ba4d31eeaf723e21cae3744c638c0dc59,Andreas Schneider,2018-12-21,"Change config file location to /mnt/dataIf you flash a new firmware, the config in /etc/valetudo will be gone.We should use the persitant flash memory for that.","['Valetudo.js,WebServer.js']",{'master'}
-de34943a2b9a7c288a4810397f20c5745f92d212,Hypfer,2018-12-21,Valetudo 0.0.9* New zoomable/draggable map (see /zone)    * Including a box that displays the clicked coordinates* Fixes for missing maps (Error 500)* Initial support for Gen2 FW >1518 maps with patched rrlogd. No virtual Wall support yet### Breaking Changes* Config file location moved to /mnt/data/valetudo/config.json,['package.json'],{'master'}
-fc21a93bcfff0c69f84bb93cc02410ecadbfb74a,PBue,2018-12-23,Fixes problem while adding a zone to an existing area,['index.html'],{'master'}
-98a6288c9a5100c1bacac852ca2cb1120d4d3c89,Matthias Harrer,2019-01-06,replaces reading testdata for map / path with in-program testdata,['WebServer.js'],{'master'}
-1a57417c35465e637e34ea729224628bef8b30ae,Matthias Harrer,2019-01-06,refactor,['vacuum-map.js'],{'master'}
-fcd3dac936487aba47f026ae07bf8fdd8d28df83,Matthias Harrer,2019-01-06,improves zone drawing,['vacuum-map.js'],{'master'}
-967f891563803984c63d6ef161e9ff6ff7e98a90,Matthias Harrer,2019-01-06,converts app to es6modules,"['index.html,coordinate-transforms.js,map-drawer.js,path-drawer.js,tracked-canvas.js,vacuum-map.js,main.js']",{'master'}
-47db74c87c8752ab882e45fabb6ce99c939866c9,Matthias Harrer,2019-01-06,adds interactivity for zones,"['index.html,locations.js,tracked-canvas.js,vacuum-map.js,main.js']",{'master'}
-f860400e3fafcd6a33909578787908656851967a,Matthias Harrer,2019-01-06,adds npm build script,"['package-lock.json,package.json']",{'master'}
-e0cbbd45b456ae458d6e8f332bd2ccc2bf8c61d7,Matthias Harrer,2019-01-06,fixes panning inconsistencies,['vacuum-map.js'],{'master'}
-2b6835f562dc62e52fe7a08ef68140bf2773c19a,Matthias Harrer,2019-01-06,make map / path colors configurable via css variables,"['index.html,locations.js,map-drawer.js,path-drawer.js,WebServer.js']",{'master'}
-8ac910aed97813878fb3a4f955a576f38d3fb872,Matthias Harrer,2019-01-06,Adds some code documentation,"['locations.js,map-drawer.js,path-drawer.js,tracked-canvas.js,vacuum-map.js']",{'master'}
-e80a07f85fca50d1bd9bec1b999f1f773d80e346,Matthias Harrer,2019-01-06,displayed coordinates update when moving / resizing the zone,"['coordinate-transforms.js,vacuum-map.js']",{'master'}
-0bf5a4bccb2597f6b0aa9b70cf422e6813d339d1,Matthias Harrer,2019-01-06,uses valetudo map colors instead of xiaomi,['index.html'],{'master'}
-f082fa615f8026704dccfef3665e4852b488086e,Sören Beye,2019-01-06,Delete package-lock.json,['package-lock.json'],{'master'}
-09ab7c251bfab432b5c25ffcdaa40a3b624f8ca1,Matthias Harrer,2019-01-10,use relative path to api to allow hosting with subpaths,"['vacuum-map.js,main.js']",{'master'}
-39a79b98b3202b712c4853b87f7ec514c199ad53,Sören Beye,2019-01-13,Hopefully temporarily fix the build,['package.json'],{'master'}
-5455cace380833967695dedaf941ef4bbdb19de0,Sören Beye,2019-01-13,Lets try this againhttps://github.com/zeit/pkg/issues/603,['package.json'],{'master'}
-c1d2aba4f048ac64cf3f7f0eb1038e67df6e56d1,Benedikt Krueger,2019-02-10,Added Valetudo release number to Settings>Info,"['index.html,WebServer.js']",{'master'}
-4edeba5ae8d75e1437e17d5d171c48b540b0b16a,Benedikt Krueger,2019-02-10,"Fixed title of Settings>Info to ""Info"" instead of ""Wifi""",['index.html'],{'master'}
-05a66c20ddba66e2b8ce17143707e380e7d49265,Hypfer,2019-02-10,Fix #89 for Firefox,['index.html'],{'master'}
-a5794338e7daa37714707dd497e5e99c5744146e,Hypfer,2019-02-10,Valetudo 0.0.10,['package.json'],{'master'}
-be58ed5c7aaaa65eb756b122efdc01c884fa87a7,Benedikt Krueger,2019-02-16,made timer configuration intuitive- Added form for easy timer configuration- Added human readable timer interpretation,['index.html'],{'master'}
-a89c44f9fe8f3ac632c116a7a045e51c8fb33a75,Benedikt Krueger,2019-02-16,added timezone configurationadded dnd configuration,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-5f468b9e6d9f5ad0585e5232e87fad1c4f67cdb2,Benedikt Krueger,2019-02-18,added carpet mode,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-691659889411993daf9f50b07aa66931bb9b6ee0,Benedikt Krueger,2019-02-18,Added cleaning history to show up to 20 last cleaning runs of the vacuum,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-4cb7c72c78b63406cecde37e960347bd89b230bd,Benedikt Krueger,2019-02-18,added AppLocale to Settings>Info,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-52b2ee5c2f0a8c970ef03a2093134c2608285d18,Benedikt Krueger,2019-02-18,fixed typo,['index.html'],{'master'}
-50586c9361bcaeb85ffba425ceaa52022a73239f,Andreas Schneider,2019-02-18,client: Use max-with for carpet displayOtherwise you have to scroll on some mobile devices to read the test asit is wider that the screen.Signed-off-by: Andreas Schneider <asn@cryptomilk.org>,['index.html'],{'master'}
-ef2fb0e0534b7e50e88033f797471b29121cc73c,Andreas Schneider,2019-02-18,client: Add description for carpet modeSigned-off-by: Andreas Schneider <asn@cryptomilk.org>,['index.html'],{'master'}
-70d6aba9a9fd73bb21a17ad5b50e942d4d21090f,Matthias Harrer,2019-02-19,Integrate /zone map into OnsenUI- replace hammerjs by own implementation- removes zone/goto coordinates to eliminate dependency on html- allows to define multiple zones- allows to modify the zones,"['index.html,geometry-polyfill.js,hammer.min.js,index.html,locations.js,map-drawer.js,path-drawer.js,touch-handling.js,vacuum-map.js,main.js']",{'master'}
-7bd95f7c13cf3dd90787b85bfbd14ec02e6479a7,Hypfer,2019-02-19,#53 Add Support for Iphone X,['index.html'],{'master'}
-cbee8aeab692a281cf7072a77a90439efd2b1d29,Hypfer,2019-02-19,Bumped version Number to 0.2.0,['package.json'],{'master'}
-b40f62ab83d6358886615b63a2cc4337d749a477,Matthias Harrer,2019-02-20,handles window.resize event and appropriately resizes the map canvas,"['index.html,vacuum-map.js']",{'master'}
-bef7e390a25d03a3975e239246b957a80c8bf51d,Matthias Harrer,2019-02-24,Adds rudimentary display of zone coordinates to /zone again,"['index.html,main.js']",{'master'}
-ea8bab4910ee0b34797bccc4889a64c2895f2812,Matthias Harrer,2019-02-24,Adds drawing charger and robot again,['path-drawer.js'],{'master'}
-27e98c17b01fe76344a7e40cc5909dab92539185,Milan Pässler,2019-02-24,account for vertically flipped map when drawing robot,['path-drawer.js'],{'master'}
-4400ddd73c87d302d676d62af002db110b0097b4,Milan Pässler,2019-02-24,prevent crash when drawing robot with empty path,['path-drawer.js'],{'master'}
-8a36b11e06e52fbe2601d90d2ccdead2fabb7a9e,Milan Pässler,2019-02-24,fix robot angle calculation when map is not flipped,['path-drawer.js'],{'master'}
-4b18af9f7e14a53db36fc7821f8b0ced408df3cc,Hypfer,2019-03-22,#120 Fix broken device info,['WebServer.js'],{'master'}
-d17fe21bf0bac1e7456908d1420489f76a72a5f6,Hypfer,2019-03-23,#121 Fix broken remote API,['WebServer.js'],{'master'}
-19738af28490c04866cfd529d8d4f9339f1e778b,Hypfer,2019-03-23,Updated documentation,['Todo.md'],{'master'}
-9d44048c8d2fea6266537e387a27b26c0ec416b7,Hypfer,2019-03-23,Implemented non-interactive Map via MQTT,"['index.html,Configuration.js,MqttClient.js,Tools.js,Valetudo.js,WebServer.js,package.json']",{'master'}
-9f5279e67a38a737b61127e9ee89d2b04a2004d7,Hypfer,2019-03-23,Fixed broken Cleaning History,['Vacuum.js'],{'master'}
-053fa00fe60af4930d4c2ff6a36b1016376e9d24,Hypfer,2019-03-23,Avoid crashes due to strange crop values,['Tools.js'],{'master'}
-e13644311792eb47b337a835bab81aed65543363,Hypfer,2019-03-23,Avoid crashes due to broken map data,['Tools.js'],{'master'}
-9a847a42b8382288180c0b2335a8f3aba32d7bd0,Hypfer,2019-03-23,Downgrade Build to Node 8 since Node 10 seems to be leaking memory,"['.travis.yml,package.json']",{'master'}
-d197f2f821ff4a2ced62b30db62787d67deb9b46,Hypfer,2019-03-23,Don't crash the process if navmap gets rewritten,['Tools.js'],{'master'}
-5667c2a13f00d8c8092a5d3f8f6a5bdc80bac167,lwestenberg,2019-03-24,added attributes MQTT topic with HASS support,"['MqttClient.js,Vacuum.js']",{'master'}
-a6e822fb901c708cbd743e5adaf0747120bda079,lwestenberg,2019-03-24,added caching to prevent unnecessary mqtt messages,['MqttClient.js'],{'master'}
-1f32298956feffce6acca79ef6d1ec9fe65b49a4,lwestenberg,2019-03-24,added docker container for building on any OS,"['Dockerfile,HOWTO.md']",{'master'}
-4610be6d523e54cdce70f2816f30e54fc25ada80,lwestenberg,2019-03-24,version number,['package.json'],{'master'}
-276a8ef9a6afa2b449109bb40310016e2a26c220,Hypfer,2019-03-24,Implemented Dummycloud functionality,"['Configuration.js,Valetudo.js,Dummycloud.js,TimeSyncPacket.js']",{'master'}
-b01bd2528d824d0dfc1d68131140587a0b2826a6,reaper7,2019-03-24,config for topic prefix and autoconf prefix,"['Configuration.js,MqttClient.js']",{'master'}
-5e668035334fb2e0ed579e8242cf4aea3ff313c1,reaper7,2019-03-24,Update Configuration.js,['Configuration.js'],{'master'}
-4820c0b3dc93f400e30ab5cd6596742be8602233,reaper7,2019-03-24,Update Valetudo.js,['Valetudo.js'],{'master'}
-8f68ab2306fecdc9d83e18e6a786929c5cbc96fe,Hypfer,2019-03-30,Synchronously write configuration file,['Configuration.js'],{'master'}
-005b70f2beaf8120b838261a56516da98e09ceee,ThUnD3r|Gr33n,2019-03-31,"Update Readme.mdI removed the "" as it doesn't work with it. is that correct?",['Readme.md'],{'master'}
-3b96262fc1f849fc3f94d2d2cae07c06c28afda8,Anna Prosvetova,2019-04-03,Introduce resume zone cleaning feature,"['MqttClient.js,Vacuum.js,WebServer.js']",{'master'}
-2d2bc8595788a1354a2fc89fd2ae04a4aa82fc62,Hypfer,2019-04-04,Added logo from #136,"['valetudo_logo_small.svg,valetudo_logo_with_name.svg']",{'master'}
-74f1c38f377f0ebccf07590de8721ca71a667e01,Hypfer,2019-04-04,Use new logo for client assets,"['apple-touch-icon.png,icon.png']",{'master'}
-647984926e59dae67a2b6e60cfe258f0f44d9f71,eahlstrom,2019-04-05,bugfix hh:mm:ss calculations for cleaning history.Before this 4156 secs got display as 1:69:16 now it shows 1:09:16,['index.html'],{'master'}
-3a47747140a3275fc3d5ab4182596d9525fcfe9f,Andreas Schneider,2019-04-05,Update deployment readme,"['Readme.md,hosts,rc.local']",{'master'}
-7ce6d5ce06fd41dcd6d406361aae962c89ef2372,Anna Prosvetova,2019-04-06,Allow pause of zoned cleaning,['index.html'],{'master'}
-6f7146af091964e9a79b5f06df609ee9d7b465aa,Hypfer,2019-04-06,Logo Kerning,['valetudo_logo_with_name.svg'],{'master'}
-810e5eaa1933c5d2902a53a309deddcebdebac1c,Tim Brust,2019-04-06,"build(TravisCI): upgrade Node.js versionNode.js 9 is already EOL. The lts/* version always uses the latest LTS version (currently 10.15.3), the target version from the build command remains unchanged.",['.travis.yml'],{'master'}
-d8c38176120333f2fcc8ee193f83670ebf237b89,Hypfer,2019-04-07,HTTPS Support for Websockets + Limit Zoned Cleanup to 5 zones,"['vacuum-map.js,Vacuum.js']",{'master'}
-3a3a906d19dd358c0b844e4b48307bb616478795,Erik Ahlström,2019-04-07,Add stat for the latest clean in publish attributes (#151),['MqttClient.js'],{'master'}
-6b3bf388573d84334e76818c6460f548d95f3888,Andreas Schneider,2019-04-08,Add a Makefile (#159),['Makefile'],{'master'}
-505a638c06fd0c0bff99db9a404a0563aa3d0b69,Hypfer,2019-04-10,Wrap deployment files for easy removal #158,"['hosts,rc.local']",{'master'}
-3594a712eebc12be5d33d760d22f373269825b3b,Hypfer,2019-04-10,Rotated the map by 180° and added the remaining map data blocks,"['RRMapParser.js,Dummycloud.js,Vacuum.js']",{'master'}
-2e39ecd766bd2771c0dbd263f78e62b28c945a64,Hypfer,2019-04-12,Moved MQTT PNG Drawing to seperate project,"['Makefile,HOWTO.md,Configuration.js,MqttClient.js,Tools.js,Valetudo.js,WebServer.js,package.json']",{'master'}
-9a0cd56f9b3e3ad2b3cf78d203b8a02d1bd5783c,Hypfer,2019-04-12,Fix #169,['index.html'],{'master'}
-4a59ffe0d8e92359db846be3d58ee2edf007a8df,Milan Pässler,2019-04-20,add yarn.lock,['yarn.lock'],{'master'}
-0cc777542f4a83fda2eb2951440a8c1a2b847bfb,Hypfer,2019-04-21,Add possible fix for random rollbacks/loss of wifi connectivity,"['valetudo.conf,RRMapParser.js']",{'master'}
-936c3215f24401e3bde5db56cd737f9221c1d621,Hypfer,2019-04-21,Bumped version number,['package.json'],{'master'}
-3bcfb5c74f3439c93235db49d9ae2be62a737afc,Sören Beye,2019-04-23,Fix Valetudo for unprovisioned Robots,['valetudo.conf'],{'master'}
-63886f3d2be1a6a0193d23ad3b73e4f304510ab1,Tim Brust,2019-04-26,build(TravisCI): execute npm run build commandinstead of having another explicit build command,['.travis.yml'],{'master'}
-8b0abfbb41f43032c543b7405dc7c4f392dfea73,Tim Brust,2019-04-26,feat: add MQTT over TLS (mqtts) support,"['Configuration.js,MqttClient.js,Valetudo.js']",{'master'}
-7fc2b9bffb9a72374f134f7fa2164a3911d24163,Ondřej Nový,2019-04-27,Load manifest.json using CORS (really fix #169),['index.html'],{'master'}
-3773547701373613c8fcd6d3ff685a1d2188dc08,Ondřej Nový,2019-04-27,"Fix #187, /api/current_status returns human_error",['Vacuum.js'],{'master'}
-91f751e4aec27862acfe0b199f149259db933318,Ondřej Nový,2019-04-27,"Fix race condition in manual control start/stopSometimes, just after pressing ""Start Manual Control"", client sendsstop_manual_control API request. It looks like there is smallrace-condition. If you ask for vacuum state just after starting manualcontrol, robots reports state != 7 (!= manual). Some problem is withstopping. Robot reports state = 7 for few x00 ms after pressing stop.This patch changes two things:* don't send API request to start/stop vacuuming when buttons are notclicked (information about state is read from robot) - just update UI* postpone refreshing of vacuum internal state just after clickingbuttonsTested on firmware Gen2 1768.",['index.html'],{'master'}
-a571348ca844219b3c2c1a19e8000be4a4dbedef,Ondřej Nový,2019-04-28,"Fix buttons disable stateIn ""Going to target"" and ""Spot cleaning"" state robot is not inin_cleaning. Stop and home buttons are not working, so disable them butenable pause button, which works.In ""Zone cleaning"" state Home button doesn't work, so disable them.Tested on firmware Gen2 1768.",['index.html'],{'master'}
-fce79de1f687388897f1740b45b38660a3ca03a2,Ondřej Nový,2019-04-28,"Always show error if there is anyRobot can be in normal (for example Charging) state but there couldstill be some error. For example try remove dust bin and press ""Start"".Robot will be in Charging state, but error_code will be > 0.",['index.html'],{'master'}
-871b76bca4116e86936f97fe528a2272424e4440,balu,2019-04-28,"replaces ""Sensor"" with ""Sensor cleaning""in Replaceable Section of the Settings",['index.html'],{'master'}
-8f9ca7b3f8455aa90d2980b612c6ab0bf180ce6b,Matthias Harrer,2019-04-28,Add ability to edit saved zones on map,"['index.html,vacuum-map.js']",{'master'}
-c05427973f4d164d28414428225b99d912d3751d,Matthias Harrer,2019-04-28,rebuild zone configuration page to use map only,"['index.html,WebServer.js']",{'master'}
-da00c261e49f9a27660bd30a856d0badfab87adb,Matthias Harrer,2019-04-28,cosmetic improvements for zone definition,['index.html'],{'master'}
-969488bc0ba09f3b024c4019a4a63b4e1039dcd3,Matthias Harrer,2019-04-28,add possibility to configure gotopoints / spots,"['index.html,vacuum-map.js,WebServer.js']",{'master'}
-25e5b35257e4bb592b890aae894d5a749ddbcd1d,Sören Beye,2019-04-28,Update WebServer.js,['WebServer.js'],{'master'}
-3b1a9449af6c9fbcf684c63f144e6b137c27167b,Hypfer,2019-04-28,Zoned_cleanup + Go_to via MQTT,"['MqttClient.js,Valetudo.js']",{'master'}
-91088195f869d6d6f96bb612770e3bcc7a1d00b8,Ondřej Nový,2019-04-30,"Limit memory allocationProcess valetudo on robot can sometimes consume a lots of memory (memoryleak?). If this happens, kernel sometimes kill player (instead of valetudoeven with high oom score). So let's limit max memory allocation of valetudoprocess to 200 MB, which should be enough. Better is to kill valetudothan player itself.",['valetudo.conf'],{'master'}
-9a5e6a71c4c6a65a525f57b754cf2bd85384b45c,Christoph Oechslein,2019-04-30,* Added check if mqtt client is connected to a server in updateMapDataTopic* Added console output if mqtt client did successfully connect to server,['MqttClient.js'],{'master'}
-33a4f4502f2ede95a8486972091acf55acd38b7b,Hypfer,2019-04-30,RRMap Image Metadata actually consists of signed Ints,['RRMapParser.js'],{'master'}
-2b8e4e354a092cdb5e7aa0c5f68ce00a58c57e17,Hypfer,2019-04-30,Might fix memory leak,['Dummycloud.js'],{'master'}
-f4e164ed19b87b29f2452d31e3f0f7631e131067,Hypfer,2019-04-30,Prevent concurrent map uploads,['WebServer.js'],{'master'}
-6fd1be698a990e0746fa9eec460734fc8cdfd761,Benjamin Bennett,2019-05-01,Changed the upstart file to work when unprovisioned (AP mode)This change made my vacuum bring up Valetudo when unprovisioned(i.e. when it had not joined a host network and was running the AProborock-vacuum-s5_... one itself).,['valetudo.conf'],{'master'}
-a9fa64fcec23639b7367a0d3fa61b84cd07eaebe,Hypfer,2019-05-02,More attempts to prevent Valetudo from going out of memory,"['MqttClient.js,Valetudo.js,Dummycloud.js,WebServer.js,package.json']",{'master'}
-672a22ce58be58e5df51527e536704245de3e2d7,Sören Beye,2019-05-03,"Fixed lonely pixel at 0,-1",['RRMapParser.js'],{'master'}
-e0cd63e33b7a6c48cd3bcad2e7fcc1bf68f098ca,Matthias Harrer,2019-05-04,add map metadata like nogozones / virtual walls / predicted path etc.,"['locations.js,path-drawer.js,vacuum-map.js']",{'master'}
-2e54e9ce3e9d0311db60e7214fe4b3f86ef120a5,Anna Prosvetova,2019-05-04,Allow multiple zone ids for MQTT zoned_cleanup command,['MqttClient.js'],{'master'}
-b9691e394bcfb897eba4045cf16139b89c5d3c76,thepill,2019-05-04,Align consumable titles vertically,['index.html'],{'master'}
-c1e7f5140cb292c38429bf7462ac55cbe4ae661d,thepill,2019-05-04,Use 130px for consumable title width in settings,['index.html'],{'master'}
-6b74c66e5e6bc685fcdd6e24f22a94588a076b05,leonardpitzu,2019-05-07,Update index.html,['index.html'],{'master'}
-d14a22b9635003f640eafcb6c3d146de39cca1d5,Milan Pässler,2019-05-10,add ssh keys settings page,"['index.html,SSHManager.js,Valetudo.js,WebServer.js']",{'master'}
-7af87314cae16c69b70f1a8664e94984154eb55d,Milan Pässler,2019-05-10,"add ""permanently"" disable ssh key settings and basic http auth","['index.html,Configuration.js,WebServer.js,package.json,yarn.lock']",{'master'}
-0fce6d2a0273c3a543f45fa3956020aa87ebe126,Matthias Harrer,2019-05-13,reset the line dash when drawing predicted path,['path-drawer.js'],{'master'}
-92e8693884fd8b3ccbb859e2ff687367907ba4cc,Matthias Harrer,2019-05-13,read model from device.conf and provide it with /api/current_status,"['env.example,Valetudo.js,Vacuum.js,WebServer.js']",{'master'}
-bb2338ec9abee7366783946242ad8fd9f8c589ae,Pawel Szafer,2019-05-14,support for mqtt state component in future HA,['MqttClient.js'],{'master'}
-fa7bdb6215aa5792842cef0826043137ccc2c78d,Hypfer,2019-05-14,Reintroducing a nice looking default map,"['Valetudo.js,default_map.json']",{'master'}
-96a12dcd90547466c2fda2a69288bd0f0ea00142,Hypfer,2019-05-14,Added map text drawing script,"['default_map.json,super_hackish_map_text_drawing.js']",{'master'}
-df3ed0c459f4361a81f32dd2dfd4a0c92cc27721,Matthias Harrer,2019-05-16,display nogozone as quadrilateral instead of as rectangle,"['locations.js,vacuum-map.js']",{'master'}
-901ae066a06eddf5e26700a30b387f7bd66973aa,Daniel Lashua,2019-05-16,"corrected config for new mqtt vacuum componentadded schema: state, removed component",['MqttClient.js'],{'master'}
-6ed35ed0a37404437e15a36e2e7e72f4213743e4,Pawel Szafer,2019-05-16,add mop fan speed,['MqttClient.js'],{'master'}
-e7a233bdb38407c261376b206a511c0e3b4751ed,Pawel Szafer,2019-05-16,extra state info,['MqttClient.js'],{'master'}
-1286d06cc042ef84a82aa446079156b5d359f772,Simon,2019-05-28,Install voice packs through valetudo,"['index.html,Vacuum.js,WebServer.js,package.json']",{'master'}
-a9ac38a8343198e8eb2deb704d0a088d3d68bc36,r1sim,2019-05-28,Improved file upload & error handling,"['index.html,WebServer.js']",{'master'}
-c00207ad8fe2f5c29090e7bbf6cad6334dca6594,Hypfer,2019-05-28,Downgrade pkg version due to #232,['package.json'],{'master'}
-de0a28db98d577746ca7bcc185083035dafbdeb1,Hypfer,2019-05-28,Flipping the coordinates should not change saved zones,['Vacuum.js'],{'master'}
-ae6d291cdcd57b4876461a2508286876968476bd,Hypfer,2019-05-28,Code cleanup,['MqttClient.js'],{'master'}
-4565a5ec0288cf0bb362f127a96432657b8dfd30,Hypfer,2019-05-31,Minor cleanup,['MqttClient.js'],{'master'}
-a21c233ac6f0432e62400266a67b3288165ab6b1,Daniel Lashua,2019-05-31,"Make ""zone cleanup"" more appropriate for HASS.""zone cleanup"" is not recognized by HASS. Changing this to ""cleaning"" causes HASS state to change.",['MqttClient.js'],{'master'}
-50ef5bc6bbdb9eb6b0ad6657148011e2b3bf0b6f,Hypfer,2019-05-31,#245 Limit pending websocket responses to one per client,"['MqttClient.js,WebServer.js']",{'master'}
-0288179fe13c37825880fd7d24549ee3d71adaff,r1sim,2019-05-31,rename zones and goto locations,['index.html'],{'master'}
-6c08f4feb56a9d34ad73247960d72288a03362be,Hypfer,2019-05-31,Added more letters to text drawing utility,"['default_map.json,super_hackish_map_text_drawing.js']",{'master'}
-45cf3ce224e88de786d46230793a3bf7d3876a58,Hypfer,2019-05-31,Handle provideMapData option,['MqttClient.js'],{'master'}
-6b304f090b555d6a2cb5445e1a275654bf51e406,Hypfer,2019-05-31,Added more detailed non-HA state to mqtt interface,['MqttClient.js'],{'master'}
-32ff03f1e4fc926d606522b7848c0cd707cf78f9,Matthias Harrer,2019-06-01,add UI for enabling lab_status and map reset,"['index.html,Vacuum.js,WebServer.js']",{'master'}
-3ef3bc6fd8a1693f9f2bf3fbda5a053d3e4cd696,Matthias Harrer,2019-06-01,Improve model name S50 -> S5x,['index.html'],{'master'}
-7a9cdc42673af0cc6fc8a5cd03e27d651297751c,balu,2019-06-04,adds Ping/Pong to ws connectionsTries to find dead ws connections & terminates themSee https://www.npmjs.com/package/ws#how-to-detect-and-close-broken-connectionsPong messages are automatically sent in response to ping messages as required by the spec,['WebServer.js'],{'master'}
-c31a7ea1ecd7cce8169a920938a20a8f5834d6ad,Ondřej Nový,2019-06-06,Fix ReferenceError: err is not defined,['WebServer.js'],{'master'}
-1b9880b47c450b92deecdea0fb5e9d648c24c8ac,Ondřej Nový,2019-06-07,Fix wrong id settings-access-control-ssh-keys-input-permanently-disable-button,['index.html'],{'master'}
-97edab761173ef9f0fcc53c42a0ba173808fc4cf,Ondřej Nový,2019-06-07,Hide SSH keys settings if it's disabled,['index.html'],{'master'}
-83c89ad2e617b41e2d12e6d7048d8329e531379e,Ondřej Nový,2019-06-07,"Don't set password to empty string, keep old oneIf user doesn't provide new password, don't set password to emptystring, but keep old one.",['WebServer.js'],{'master'}
-40ac947a25b1362c547324911d701c68a8ea335f,zigster,2019-06-11,#255 fan power mapping and whisper mode   added matching of fan power to value label pairs,['index.html'],{'master'}
-fb94b7e747741251dad531ec9e3b0865c003945d,sklerotraficon,2019-06-11,#255 fan power mapping and whisper mode> added Custom Fan Power in percent if preset is matching exactly,['index.html'],{'master'}
-b6ff0f26c25b4b26b3e1b27aeb508e37ca052686,Skeletorjus,2019-06-24,"Dockerfile for building ValetudoAs requested is issue #266, here's a simple Dockerfile which will build Valetudo and drop a binary in the current directory by running the following command: docker run --rm -it -v $(pwd):/host valetudo-compiler bash -c ""cp /Valetudo/valetudo /host && chown $(id -u):$(id -g) /host/valetudo""",['Dockerfile'],{'master'}
-e91debac633ad59630961e4a0d03534f0f37f249,Ondřej Nový,2019-06-24,"Fix map with HTTP authDustcloud is uploading map using /api/miio/map_upload_handler. When HTTPauth is enabled, dustcloud can't upload that map. This patches disableHTTP auth for requests from localhost.",['WebServer.js'],{'master'}
-f0844244540dbe483cb15cfd1e31c483ed6c110e,rand256,2019-06-28,make basic auth dynamically switchable on/off,['WebServer.js'],{'master'}
-4194d171b7b79afe4dfd047113ea78287781a555,bruvv,2019-06-28,Made the image much smallerAlso made it much simpelere and do not clutter it.,['Dockerfile'],{'master'}
-ba172d24e8985ca747e4009bd6919ee2fbf410c4,bruvv,2019-06-28,chmod it :),['Dockerfile'],{'master'}
-abc26d9fbea70293f70423ad4950fbd7cf9bf1cd,bruvv,2019-06-28,speed up the build by using 1 run,['Dockerfile'],{'master'}
-0293e3fa7686bcb296fb271e10975e73da08ab1c,balu,2019-06-28,Adds a button to manually trigger a check for the newest valetudo version (on github).See #146,['settings-info.html'],{'master'}
-da191f4564bff5eafc0116f774e6e4f0a94257c5,rand256,2019-07-11,make virtual walls and forbidden zones user-configurablea bit stripped version of the same functionality from Valetudo RE mod,"['forbidden-markers-configuration-map.html,spot-configuration-map.html,locations.js,vacuum-map.js,zones-configuration-map.html,zones.html,Vacuum.js,WebServer.js']",{'master'}
-df761e043647b48cdea189bcc3665a633af49f5a,Hypfer,2019-07-11,Poll map on save_map,"['settings-persistent-data.html,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'}
-948d6eaeac7184591acb2cf9e766d1e95252041b,manutenfruits,2019-07-14,Make mqttConfig.provideMapdata not always true.,['MqttClient.js'],{'master'}
-33601ff403758d33333529c3c9dc0040f763d1c6,rand256,2019-07-14,fix copy-paste issues in forbidden markers,"['locations.js,vacuum-map.js']",{'master'}
-ca725ef38540d8d80561692259a9bcd3ae4fbc9d,dependabot[bot],2019-07-14,Bump lodash from 4.17.11 to 4.17.14Bumps [lodash](https://github.com/lodash/lodash) from 4.17.11 to 4.17.14.- [Release notes](https://github.com/lodash/lodash/releases)- [Commits](https://github.com/lodash/lodash/compare/4.17.11...4.17.14)Signed-off-by: dependabot[bot] <support@github.com>,['yarn.lock'],{'master'}
-b4ff3563be8e399cfd8ee2a31c855df2a8de74ae,Hypfer,2019-07-14,Bump to Valetudo 0.4.0,['package.json'],{'master'}
-a140eeaa3956dec7cf548e3d1938e2ccb43a1e91,Hypfer,2019-07-14,Fix mqttConfig.provideMapData,['MqttClient.js'],{'master'}
-28149f098fe13930c48611b74373210719027ba4,Hypfer,2019-07-15,Fix #134 crash on FHEM MQTT Broker,['MqttClient.js'],{'master'}
-95f7f6c7ddc952b382d4b7b0c304c43a079b3101,Sören Beye,2019-07-17,Update issue templates,['bug_report.md'],{'master'}
-bff1717be4d3d188e27f026c58bd89f274a8f7f2,beeguy1234,2019-07-28,Implement QoS optionUse QoS defined in config.json.  Else keep default zero level.,['MqttClient.js'],{'master'}
-3ff20c063d1e8300c2a0399c541d2bee10c35949,beeguy1234,2019-07-28,Implement QoS optionUse QoS defined in config.json. Else keep default zero level.,['MqttClient.js'],{'master'}
-22be426ac0f24b61ecbb8a099e5ba075781cfae3,Sören Beye,2019-07-28,Add qos setting to default config,['Configuration.js'],{'master'}
-ee509ca982ee6d556ef53471b9f6ceee806976af,Manuel Díez Frutos,2019-08-14,Fixed API URL to a relative path,['settings-timers.html'],{'master'}
-15433304f9e499339e2e43ff6759a45f5cf6389c,Sören Beye,2019-09-17,Fix map click handling,['locations.js'],{'master'}
-d41b5e733baabdec6dcb3c54b06eb4c27dabdcda,Algram,2019-10-02,feat(docker): switch to yarn and latest node lts,['Dockerfile'],{'master'}
-f21d4531b8fe06762d1af6e9fcecc7d1f696d371,Pawel,2019-10-02,"Support for status of zone cleanup (#322)* support for status of zone cleanup* delay turn off zone cleanup after returning to dock* add config to Vacuum.js* remove typo","['home.html,map.html,main.js,MqttClient.js,Valetudo.js,Vacuum.js,WebServer.js']",{'master'}
-92d7285b2a3bf76096ce86fb5a7f823f133960b8,TheRealMoeder,2019-10-05,"Fix MQTT autoconf features (#336)* Fix MQTT autoconf features* Add fan speed ""whisper"" to MQTT",['MqttClient.js'],{'master'}
-b95c25466b7ca1cceb00c875a0b8002f056b3bec,Maxim Lyubimov,2019-10-05,Send MQTT attributes only if they changed,['MqttClient.js'],{'master'}
-e5535ef763e3ee2fcc9f341c8039ad01adef67ee,Sören Beye,2019-10-26,"Revert ""Fix MQTT autoconf features (#336)""This reverts commit 92d7285b2a3bf76096ce86fb5a7f823f133960b8.",['MqttClient.js'],{'master'}
-5addc40a48377b3223255ab3b054c0a812979487,Christian Chavez,2019-11-05,"refactor: Convert issue template bolds to headersSo as to not break on `**Valetudo version: **` e.g.Also group `Vacuum Model`, `Version`, `Screenshots`, and `User-Agent`under `To reproduce`.",['bug_report.md'],{'master'}
-4ba4468f1c80a285e13101806a09f55ca3587d38,Sylvia van Os,2019-11-11,Make action sheets scrollable,"['dark-onsen-css-components.css,onsen-css-components.css']",{'master'}
-e6fa41ff78abe768572aabe2f115b55493fa2348,MitschiBoy,2019-11-21,"Ad unique_id for MQTT DiscoverySee https://www.home-assistant.io/docs/mqtt/discovery/ and https://github.com/home-assistant/home-assistant/pull/20503Without unique_id MQTT Discovery isn't working with actual versions of Home Assistant",['MqttClient.js'],{'master'}
-0f068cda7efb807f1e033c51a54395ee98e200dc,Matthias Aßhauer,2019-11-21,make action sheets scrollable in minified css,"['dark-onsen-css-components.min.css,onsen-css-components.min.css']",{'master'}
-7ff84ece27c2876a19821b088bd10a8b006b38a2,Matthias Aßhauer,2019-11-29,Add a rudimentary dark modeThis dark mode can be toggled from the side bar.,"['dark-valetudo-map.css,valetudo-map.css,index.html,map.html']",{'master'}
-cc69e673fedf303cbc5fb87f23577895a879c9ce,Matthias Aßhauer,2019-11-29,Update dark theme to look more like valetudo and less green and orange,"['dark-onsen-css-components.css,dark-onsen-css-components.min.css']",{'master'}
-99e8b79d1804e85e795135988aea08633d075f0c,Matthias Aßhauer,2019-11-29,theme: honor 'prefers-color-scheme' media queries,['index.html'],{'master'}
-1aece2e7e36d0c1b764fa7a5e2cdc60f83a47167,Matthias Aßhauer,2019-11-29,"theme: persist user choice into local storageThe value from local storage takes precedence over 'prefers-color-scheme'media queries, because it's an explicit choice about valetudo.",['index.html'],{'master'}
-fa74db60a52fe6af96090234bc7c95f41c8809d1,bbarbisch,2019-11-29,"adds proper shutdown on SIGTERM and SIGINTShutdown handler on unix signals:- SIGTERM- SIGINTcloses all open sockets, clients and shuts down the webserver","['index.js,MqttClient.js,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'}
-9fc8db27d757b196b3036028468ec5f905d216f8,bbarbisch,2019-11-29,refactors shutdown calls from sync to async,"['index.js,MqttClient.js,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'}
-d751a63e7a8e4733d78dfdbb5ca8d8ca583420f6,Sören Beye,2020-01-17,Create support_request.md,['support_request.md'],{'master'}
-7293f3d9135ce4b74c3d2f73ecf194557e034c99,Alexander Knöbel,2020-02-10,"refactor shutdown ""callback hell"" with async/await","['index.js,MqttClient.js,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'}
-04b5f113d81722835db0b9cd4e805be1a0997960,Hagen Fritsch,2020-02-10,Some more fixes and minor restructuring after testing.,"['Valetudo.js,MiioDevice.js,Roborock.js,Viomi.js,Codec.js,Dummycloud.js,MiioSocket.js,RetryWrapper.js,WebServer.js']",{'master'}
-f250b241827445a1abbf2719443d8aae7db83f50,Hagen Fritsch,2020-02-10,Move viomi README stuff out of README.md,['viomi_instructions.md'],{'master'}
-685b7b328b01b9bd8ca9ec5c85a2d11f6b1a78e9,Hagen Fritsch,2020-02-10,Fix token display. Also show both cloud & local token.,"['settings-token.html,MiioDevice.js,WebServer.js']",{'master'}
-5b2039331188a6915ca9e2f65e00385a0d553615,Hagen Fritsch,2020-02-10,Fix inverted map display.,['ViomiMapParser.js'],{'master'}
-f033a4c25157b3e67029aa1e75a6477671077180,Hagen Fritsch,2020-02-10,Map Viomi.goTo to point_clean. This allows to perform spot cleaning.,['Viomi.js'],{'master'}
-7dd6f2b164f53d0f74b35e94833c23c026439bff,Hagen Fritsch,2020-02-10,"Viomi maps: parse charger, robot and goto locationsAlso fix location in set_pointclean command.","['ViomiMapParser.js,Viomi.js']",{'master'}
-e1c6b7eb6df211f3830c3db66d4eefe6fb32560f,Hagen Fritsch,2020-02-10,Viomi: Ask for curpos after connect. Map upload always uses PUT method.,"['MiioDevice.js,Viomi.js']",{'master'}
-5c9f37eef081b28e266b8f3f54057129989f6091,Hagen Fritsch,2020-02-10,Viomi: add basic deployment instructions,['viomi_instructions.md'],{'master'}
-365ae386b67f7799a4640958020a214edb467ce5,Hagen Fritsch,2020-02-10,Support other paths and make develop/local environment similar to actual robot.,"['Testing.md,HOWTO.md,env.example,run,Configuration.js,Valetudo.js']",{'master'}
-296173c42c49aca42c185ab4a7c60d628f697511,Hagen Fritsch,2020-02-10,Allow to STOP / GO_HOME in more states.,['home.html'],{'master'}
-2d62ceca2d421aaeb39695e365ae77287960b881,Hagen Fritsch,2020-02-10,Viomi: Fix map history parsing. 2nd param seems to be authoritative.,['ViomiMapParser.js'],{'master'}
-f823a6935d41dec978992c9ac199c7528812d968,Hagen Fritsch,2020-02-10,set_charge is a command common to Roborock & Viomi,"['MiioDevice.js,Roborock.js']",{'master'}
-205df272f3709506902d49fea2c12dcf14122d76,Alexander Knöbel,2020-02-11,remove unnecessary nested loop,['WebServer.js'],{'master'}
-41836dbeb64467e08eb1cba2709c13b7ce4fea81,Hagen Fritsch,2020-02-11,Use explicit names to disambiguate logging messages rather than tokens.,"['Valetudo.js,MiioDevice.js,Dummycloud.js,MiioSocket.js']",{'master'}
-98a951d28988c30ac9b49f015ec3d62b87eebd54,Hagen Fritsch,2020-02-11,MiioSocket: Handle ping and pong commands 'correctly'.,['MiioSocket.js'],{'master'}
-e94b7912cf39db146c3439daeb28d03c8e7ac5f2,Hagen Fritsch,2020-02-11,Add 'fakerobot.js' a simple robot emulation tool. Usage: node -r esm fakerobot.js,"['fakerobot.js,package.json']",{'master'}
-24b874d8c7444884451c9ccceecf138fd034ce7c,Hagen Fritsch,2020-02-11,Fix bug mentioned in #420.,"['MiioDevice.js,Roborock.js']",{'master'}
-48b7612ddd38e347fbb96021f98955fe449fc752,Hagen Fritsch,2020-02-12,Rename MiioDevice to MiioVacuum #420,"['Valetudo.js,MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'}
-3f59588094e756c09ba740ff9c5d8ead98f1ddc4,Hagen Fritsch,2020-02-12,Fix Roborock map polling logic #420,"['Valetudo.js,MiioVacuum.js,Roborock.js']",{'master'}
-37bf22601bd9777e5a9813046316a9ea94b1d2de,Hagen Fritsch,2020-02-12,Use Promises for MiioSockets.,"['MiioVacuum.js,Roborock.js,Viomi.js,MiioSocket.js,RetryWrapper.js']",{'master'}
-58d350e9fc845257aec033f8b1c56a5f75d3ff57,Hagen Fritsch,2020-02-12,Fix driveHome (turns out the commands are not equivalent after all). #420,"['MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'}
-9c7894aac0fe38fece8a4ac1b41eeec14df0f8ce,Hagen Fritsch,2020-02-12,Introduce Capabilities as concept of Model. Fix persistent_data detection. #420,"['settings-persistent-data.html,Valetudo.js,Model.js,WebServer.js']",{'master'}
-94816e83e165e383ee163f69ae177bdb583bda24,Hagen Fritsch,2020-02-12,Only warn on unhandledRejections,['index.js'],{'master'}
-7d89bd873ffed5dae97988e8c0870270b80d5391,Hagen Fritsch,2020-02-12,Enable dummycloud connection from fakerobot.js.,"['fakerobot.js,MiioVacuum.js,MiioSocket.js,RetryWrapper.js']",{'master'}
-3905920f1a37f2b25e9e0521171cb27c762a334a,Hagen Fritsch,2020-02-12,Reintroduce most of the original map-polling logic. #420,"['MiioVacuum.js,Roborock.js']",{'master'}
-74c5cbe74355ab87814f6ba907aa5fb3cf3a07f3,Hagen Fritsch,2020-02-15,Extract the default port DummyCloud listens on into a constant.,"['fakerobot.js,Dummycloud.js,WebServer.js']",{'master'}
-c06c06ab05dce15a746dc8aa96c365f23a178cd9,Alexander Knöbel,2020-02-15,"Add logger (#430)* Add logger* Check for invalid log level","['index.js,Configuration.js,Logger.js,MqttClient.js,RRMapParser.js,Valetudo.js,Codec.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'}
-37affb0d20fd678e0c11453ae7f2e4711dc0347f,Hagen Fritsch,2020-02-15,Add instructions for using fakerobot.js,['Testing.md'],{'master'}
-03ccb5bbf297fce561123bc158730e1ade69a40f,Hagen Fritsch,2020-02-15,Convert MiioSocket to ES6,"['Valetudo.js,MiioSocket.js']",{'master'}
-60610e534ce5ca11e6568fad0ba3159a3ba8fbe1,Hagen Fritsch,2020-02-15,Prefer sending commands via cloud connection once it's available. #431,['MiioVacuum.js'],{'master'}
-8688b85f12ca4bbd5eba8484bbdfbdfa31bdb72d,Hagen Fritsch,2020-02-15,enforce eslint:no-trailing-spaces #427,"['.eslintrc.json,path-drawer.js,tracked-canvas.js,fakerobot.js,index.js,Roborock.js,Dummycloud.js,RetryWrapper.js,WebServer.js']",{'master'}
-f8c6e98dae96cf87b0f9657560645fae2a94b828,Alexander Knöbel,2020-02-15,Fix LogLevel handling (#432),"['Logger.js,Valetudo.js']",{'master'}
-cc4224250e36af506f7a2827792a5311c96c6e79,Alexander Knöbel,2020-02-15,refactor to ES6 classes (#433),"['Configuration.js,MqttClient.js,RRMapParser.js,SSHManager.js,Tools.js,default_settings.json']",{'master'}
-7a47cb84d7ec907fd4999e8738b70cd0caaffb79,Hagen Fritsch,2020-02-15,Don't warn for LogLevel['info'],['Logger.js'],{'master'}
-f885fc35b5a732a7135ce482eed43f3b050fa56f,Hagen Fritsch,2020-02-15,Adopt Logger for classes in viomi branch.,"['MiioVacuum.js,MiioSocket.js,RetryWrapper.js']",{'master'}
-8b8ef18e14b89f4e5b3856836972c503ecef1635,Hagen Fritsch,2020-02-16,Update viomi installation instructions.,"['valetudo,S97valetudo,package.json,viomi_instructions.md']",{'master'}
-bb68247e6c86425381b8ebb82acebcbe7b1ef5eb,Hagen Fritsch,2020-02-16,Add getCurrentStatus to the MiioVacuum interface and convert to Promise.,"['MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'}
-c8832526d8531b5098eb427b2b615a6377e9bbd1,Hagen Fritsch,2020-02-16,Viomi: add initial support for some error states. poll map regularly.,"['Viomi.js,MiioSocket.js']",{'master'}
-e0681fa103467aa925a38c06530aa75a2f583710,Hagen Fritsch,2020-02-16,Move Dummycloud construction from Valetudo to MiioVacuum. #420,"['Valetudo.js,MiioVacuum.js,Dummycloud.js']",{'master'}
-dbf5bd4356a338369a6dee575c35cfbcbd31e3c5,Hagen Fritsch,2020-02-16,Add device.{token|conf}.example files missed from a previous commit.,"['device.conf.example,device.token.example']",{'master'}
-90fcd656e4eaa8d927969b00d5b42543aff01b75,Hagen Fritsch,2020-02-16,Move createLocalSocket() from Valetudo to MiioVacuum.,"['Valetudo.js,MiioVacuum.js']",{'master'}
-652233099a90378b50599f3637cafa6bec7b0d43,Hagen Fritsch,2020-02-16,MiioSocket: keep the remote stamp. #420,"['MiioSocket.js,Stamp.js']",{'master'}
-6ba43529016d8f8c0c46bcc31210df3572f114c7,Hagen Fritsch,2020-02-16,Exceptions within promises are logged and don't exit the tool. Manually exit where desired.,['RetryWrapper.js'],{'master'}
-239b0421969d79dbccf3a7c0f70b465fa5c6dc58,Hypfer,2020-02-17,Convert all usages of MiioVacuum.getCurrentStatus to promise,"['MqttClient.js,WebServer.js']",{'master'}
-e8dec55975dd7b27158874be08e37ebaff84265d,Hypfer,2020-02-17,Disable timesync on local socket to fix local communication,"['MiioVacuum.js,Dummycloud.js,MiioSocket.js']",{'master'}
-9e907e59184e68798fbc331ed8fdd1bbfb3da00e,Hypfer,2020-02-17,Fix #436,['MiioVacuum.js'],{'master'}
-9a496f4b76e383912dd26f4117a197f64092bb30,Hypfer,2020-02-17,Fixed roborock live map,"['MiioVacuum.js,Roborock.js,Dummycloud.js,MiioSocket.js']",{'master'}
-0662aad90fbf06c7eb4ae057d9c804c2fbf6b7e6,Hypfer,2020-02-17,Lol linter,['Roborock.js'],{'master'}
-228e2767f2eb9b63581133b089e76a0ba9561f60,Hypfer,2020-02-17,Forcefully quit valetudo if graceful shutdown fails,['Valetudo.js'],{'master'}
-87caf23ba2c790cd5daf9a13793e2873b06880a0,Hypfer,2020-02-17,Use logger instead of console.log,"['Valetudo.js,WebServer.js']",{'master'}
-5d690d648097f9de08cf8227e5885da021441c2d,Hypfer,2020-02-17,Properly handle requests with error response,['MiioSocket.js'],{'master'}
-d8f4a260c350453b1ca55ff40887b6ddd4ffcc4a,Hypfer,2020-02-17,Fixed persistent data settings for roborock vacuums,"['settings-persistent-data.html,Roborock.js']",{'master'}
-ea4c339da633e26408c95bda34eda2977ab78897,Hypfer,2020-02-17,Properly handle cloud keep-alive packets,['MiioSocket.js'],{'master'}
-ec2f7db6785edb58dfb2de189c4a6c82c416095c,Hypfer,2020-02-17,Properly handle props message,['Roborock.js'],{'master'}
-d3237ee8298e2f01dbfe011451d7642160d024e4,Hypfer,2020-02-17,Add some startup info messages for easier debugging,['Valetudo.js'],{'master'}
-b6c67fcb67358fb0bb7ce698d4ca4fd9176ec448,Hypfer,2020-02-19,Reworked Rockrobo map parser,['RRMapParser.js'],{'master'}
-a1401e8a590e7bb377fc5521bea860509325ad06,Alexander Knöbel,2020-02-19,"[viomi branch] refactor to ES6 classes (#437)* refactor to ES6 classes* fix jsdoc* add comment for lab_status","['Configuration.js,MqttClient.js,MiioVacuum.js,Roborock.js,Viomi.js,Model.js,Status.js,WebServer.js']",{'master'}
-ea084ce5968ea387bbff1e5b60b11309d065d01e,Hagen Fritsch,2020-02-22,Fix Status.status type to string again. #437,"['Status.js,WebServer.js']",{'master'}
-96d8421f4c6fa403c468192b6e009da7854f07a3,Hagen Fritsch,2020-02-22,index.html: fix js errors when map page isn't loaded yet,['index.html'],{'master'}
-c58219d0eeafe80129554c8808f32cae2424e45a,Hagen Fritsch,2020-02-22,Make sure the onShow() function is also called when the element was shown already.,['home.js'],{'master'}
-fd23959422bfe92b6c4e520c0cd438acaa062cad,Hagen Fritsch,2020-02-22,Fix type errors in settings-persistent-data.js,"['settings-persistent-data.js,global.d.ts']",{'master'}
-c41d220aa68ac658c3bd42374e5d0d98b3c48aec,Hagen Fritsch,2020-02-22,Add jsconfig.json,['jsconfig.json'],{'master'}
-d90775c692e4a651829c8d5557b15f958389337d,Sören Beye,2020-02-23,Agressively re-handshake. Trying to fix #438. (#443)Co-authored-by: Hagen Fritsch <rumpeltux-github@irgendwo.org>,"['MiioSocket.js,RetryWrapper.js']",{'master'}
-a20d5d0ba1427d1c3e7f3b7b4841286e51c07f1f,Alexander Knöbel,2020-02-25,Fix typechecking errors (#445),"['jsconfig.json,Configuration.js,MqttClient.js,Valetudo.js,Roborock.js,WebServer.js']",{'master'}
-9714fa261bb8cd33006ee05b198449b39556890a,Hagen Fritsch,2020-02-26,Make 'timeout' proper Error instances.,"['MiioSocket.js,RetryWrapper.js']",{'master'}
-9f523eac1866d9664eb02eeaa31c64a389b6d87f,Hagen Fritsch,2020-02-26,Reintroduce extended timeout when polling for a new map.,"['MiioVacuum.js,Viomi.js']",{'master'}
-d103b0350e5ed49663af08097d38b22264ae6630,Alexander Knöbel,2020-03-01,promisify sendLocal,"['MiioVacuum.js,Roborock.js,RetryWrapper.js']",{'master'}
-34221f32a78d2e48f1302912b11ebdff68f24c34,Alexander Knöbel,2020-03-07,fix sendLocal in viomi class,['Viomi.js'],{'master'}
-73ce1a13e6db78f4eb85adfd03907d10f0fc5602,Alexander Knöbel,2020-03-07,promisify SSHManager,"['SSHManager.js,WebServer.js']",{'master'}
-64a4ca30eb1ab609a4cf890f5d4b2d6a2ba9de09,Alexander Knöbel,2020-03-07,fix JSDoc,['MiioSocket.js'],{'master'}
-4f8409c43f7778e7b7019fd6387e4eacac875145,Alexander Knöbel,2020-03-07,remove callback from pollStatusLoop,"['MiioVacuum.js,Roborock.js,Viomi.js']",{'master'}
-8dd36bd5bcd8968f9cc9ba2c8728109b9def6cd8,Alexander Knöbel,2020-03-07,promisify preprocessMap,"['MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'}
-6de5b853512d19cb346c3c9b5a79c21ed8657751,Alexander Knöbel,2020-03-07,promisify startCleaning,"['MqttClient.js,Roborock.js,WebServer.js']",{'master'}
-36c404cc8b7cf81971fdcbb909bee9fa236328f0,Alexander Knöbel,2020-03-07,refactor with async/await,"['MqttClient.js,Roborock.js,Viomi.js,WebServer.js']",{'master'}
-670f2d4384d58db53fb45633f58b6b66b5ac6c07,Alexander Knöbel,2020-03-07,simplyfy zlib callback handling,"['Roborock.js,Viomi.js']",{'master'}
-cfd82f8daa59e4794e76bf1e5e04b59f3c00636e,Hagen Fritsch,2020-03-08,Actually poll status in pollStatusLoop (broken by 4f8409c),['MiioVacuum.js'],{'master'}
-45e06112b657075407cc5d3ed5bdb6dc5927a787,Hagen Fritsch,2020-03-11,Fix Viomi map parsing.,['ViomiMapParser.js'],{'master'}
-2148d62c1de9fe68e65128a8989381839a913dcc,Hagen Fritsch,2020-03-11,Viomi: default language to english (boot default is chinese),['Viomi.js'],{'master'}
-64cde0fe76e9e10391fbbe6a8f3217b526112c7f,Hagen Fritsch,2020-03-11,Add more error descriptions and limit debug logging to less spammymessages.,"['ViomiMapParser.js,Viomi.js,MiioSocket.js']",{'master'}
-645398f8274a7f8f81de3c401721a4f576fb1c84,Hagen Fritsch,2020-03-11,Fix error descriptions.,['Viomi.js'],{'master'}
-3f20ba2caba0f4f6f4ea29d764fd3c94eab7723f,Hagen Fritsch,2020-03-11,Fix room parsing for multimaps (tested with viomi firmware version 0046).,['ViomiMapParser.js'],{'master'}
-4665e03f1989aa7c3995ddf8a771432fc95c7c29,Hagen Fritsch,2020-03-11,Save maps that failed to parse in /tmp/ and updateviomi_instructions.md.,"['Viomi.js,WebServer.js,viomi_instructions.md']",{'master'}
-ea9cdf41d754bb740a73668d9978f75d11889598,Hagen Fritsch,2020-03-11,Fixes per code-review suggestions.,"['ViomiMapParser.js,Viomi.js,MiioSocket.js']",{'master'}
-bcf44ccbdd653bc6e5b1b52ec1346169c0bcae08,Hagen Fritsch,2020-03-15,Fix handshake logic,['RetryWrapper.js'],{'master'}
-5dc6e438afc1361b1955230a854a8c677da01e45,Hagen Fritsch,2020-03-15,Fix packet header (broken in previous commit).,['RetryWrapper.js'],{'master'}
-7467ed8498cb6d7e351474afe4eb5f2b7de72368,Hagen Fritsch,2020-03-21,Viomi: support zone cleaning for manual specified zones,"['ViomiMapParser.js,Viomi.js']",{'master'}
-125386f4b9963204ae623279a96e2cb6f6d4a213,Hagen Fritsch,2020-03-21,Fix zones: save new zones,['WebServer.js'],{'master'}
-ac9d49b88867c083814f2ca418d49e7481df2d82,Hagen Fritsch,2020-03-21,Fix consecutive zone editing.,"['zones-configuration-map.html,zones-configuration-map.js']",{'master'}
-8acda9aedf0643a325155a8bf32ca24e40b261d5,Hagen Fritsch,2020-03-21,Fix Array.concat in startCleaningZonesById,['Roborock.js'],{'master'}
-d866da1f9340cca60a2c392a5a9625f8c4d2d15a,Hagen Fritsch,2020-03-21,MQTT interface can still use zone names.,['MqttClient.js'],{'master'}
-da559b4c07cbd2df578d2a9c5b1e7f139c987ae2,Hagen Fritsch,2020-03-21,Move adoptLegacyAreas into a separate function.,['Configuration.js'],{'master'}
-009efe474fe3f3f044d077f395f1d7355922e2a4,Alexander Knöbel,2020-03-21,add type checking,"['nodejs.yml,package.json']",{'master'}
-deb8bd087f3d085eca4433e340e2cf7c6dbcedd4,Alexander Knöbel,2020-03-21,replace prettycron with cronstruecause there are no valid type definitions for prettycron,"['Roborock.js,package.json,yarn.lock']",{'master'}
-330f4e30403f53b8c579dddffc43fa7c6f76f72f,Alexander Knöbel,2020-03-21,removed nonexistent parameter,['RetryWrapper.js'],{'master'}
-d563d2ccd43d50a8c19aa72c1ebd46381a9644c7,Alexander Knöbel,2020-03-21,fix jsdoc type,['MiioSocket.js'],{'master'}
-ee47913df6b8a043c0840235af25748c1670cc4e,Alexander Knöbel,2020-03-21,use abstract MiioVacuum outside of device implementations,"['MqttClient.js,MiioVacuum.js,NotImplementedError.js,WebServer.js']",{'master'}
-7dfcb43a7858f91edbd62a5bf70ef7f4db39e2c2,Alexander Knöbel,2020-03-21,remove prettycron from build script,['package.json'],{'master'}
-6d3497fd8d99aa1288c86e3bfb7fe678e8285c9b,Alexander Knöbel,2020-03-21,fix startCleaningZonesById interface,['MiioVacuum.js'],{'master'}
-ee97c3067de4f2a13984c43d766dfbae6080f88c,Hagen Fritsch,2020-03-21,Add typescript to dev dependencies (required for `tsc` command),['package.json'],{'master'}
-3405391e15ef27b1ee40b9c1d0db0e54b1f19123,Hagen Fritsch,2020-03-21,Remove unncessary dependencies.,['package.json'],{'master'}
-c769007d86d7469d57c8868c440438c26efe31b5,Hagen Fritsch,2020-03-21,Remove rollup dev deps.,['package.json'],{'master'}
-9238fe709c0da13d805ce3028cc4ad4f3d6a9d49,Hagen Fritsch,2020-03-22,Fix marker configuration js loading (fixes #461),"['forbidden-markers-configuration-map.html,forbidden-markers-configuration-map.js']",{'master'}
-4534a7874a6b6c59be499a25e193374f97a41f12,Hagen Fritsch,2020-03-29,Only debug-log trace messages.,['Logger.js'],{'master'}
-d9ba2c59114df1377506f23ab89c522acb572f8b,Hagen Fritsch,2020-03-29,Consolidate header production into a single file.,"['Codec.js,HandshakePacket.js,MiioHeader.js,MiioSocket.js,RetryWrapper.js,TimeSyncPacket.js']",{'master'}
-38bd6374f987412b7202b5d7714ee6ef665c89c4,Hagen Fritsch,2020-03-29,Enable 'Pause' button when in State.CLEANING,['home.js'],{'master'}
-037de58e18f624e7f40b593de33f3d9098c6261f,Hagen Fritsch,2020-03-29,Viomi: implement pause & continue controls.,"['Viomi.js,Status.js']",{'master'}
-480be73da57591dc0c2619ef62240c56ae11df30,Hagen Fritsch,2020-03-29,"Update viomi_instructions, now that more functionality is working.",['viomi_instructions.md'],{'master'}
-19ec1b334a99169835f41c3e92483091edc340d7,Alexander Knöbel,2020-03-29,move web api routes to api router,"['ApiRouter.js,WebServer.js']",{'master'}
-8480ac4c5c5c1f109b86069762f8d928a7acf914,Alexander Knöbel,2020-03-29,refactor WebServer to class,['WebServer.js'],{'master'}
-70841030895b57df194b9b9d43999c67dec819f8,Alexander Knöbel,2020-03-29,extract initWebSocketServer,['WebServer.js'],{'master'}
-3eef1a5057068dbe9cd830b4dd7b61d8d0f025b7,Alexander Knöbel,2020-03-29,extract createAuthMiddleware,['WebServer.js'],{'master'}
-09a5df042a00491ea35b33074e9623d34face9d5,Alexander Knöbel,2020-03-29,move routes to device router,"['DeviceRouter.js,WebServer.js']",{'master'}
-09b23cd760b5406b3deb69e8284ba0ae2925f591,Alexander Knöbel,2020-03-29,move upload handling completely to ApiRouter,"['ApiRouter.js,DeviceRouter.js,WebServer.js']",{'master'}
-732ebc3e6a3b2d1eed6d588a0f1ff1f3b144bbaa,Alexander Knöbel,2020-04-05,jsdoc fixes,"['Configuration.js,MqttClient.js,RRMapParser.js,MiioHeader.js,MiioSocket.js,Model.js,RetryWrapper.js']",{'master'}
-f0294ea0ad005fc8b184562d2f8624db83d28b9a,Alexander Knöbel,2020-04-05,refactor to classes,"['MapDTO.js,Codec.js,Dummycloud.js,Stamp.js,Status.js']",{'master'}
-30c3dafab3229e37640af68ca96550737252e797,Alexander Knöbel,2020-04-05,refactor to class,['Valetudo.js'],{'master'}
-4a1b1364d23f1ef79f273ebff16d049bdeee6253,Alexander Knöbel,2020-04-05,api clean up,"['index.js,settings-info.js,MqttClient.js,MiioVacuum.js,Roborock.js,ApiRouter.js,WebServer.js']",{'master'}
-9c9b0d135541d95cee75ec497b32715e51a58f00,Alexander Knöbel,2020-04-05,improve jsdoc,"['MiioVacuum.js,ApiRouter.js,DeviceRouter.js']",{'master'}
-2b98874ece33b679062b8081dc1c85c0b43fce44,Alexander Knöbel,2020-04-05,adjust implementation to changed interface,"['Roborock.js,Viomi.js']",{'master'}
-cc0ce41b8f9b431b9b81f2ae796ef0ed2b92567b,Alexander Knöbel,2020-04-10,fix websocket heartbeat,['WebServer.js'],{'master'}
-e338cf551d2751e3aa931a87a39cbdd2da832e73,Alexander Knöbel,2020-04-10,add mocha test framework and should assertion library,"['.eslintrc.json,nodejs.yml,package.json,yarn.lock']",{'master'}
-bd04b99364ca81e30cc5729d3b51ba6117126be5,Alexander Knöbel,2020-04-10,add test for RRMapParser,"['FW1886.bin,FW1886.json,RRMapParser_spec.js']",{'master'}
-23929468c8eec04f08d5f4b8093a2d39eea4ea94,Alexander Knöbel,2020-04-10,pretty-print expected map,['FW1886.json'],{'master'}
-3ed96e06d7a895caf0e216188136364bfa417dcb,Alexander Knöbel,2020-04-10,fix manual control state,['manualcontrol.js'],{'master'}
-8172570d8b5f90bab3e38ceb988b90dcea686a82,Hagen Fritsch,2020-04-10,Viomi: automatically select mopping mode based on installed box & mop.,"['Viomi.js,Status.js']",{'master'}
-d48962be3243bb53daf5c50f81cfab44b26a71ae,Hypfer,2020-04-12,Added device information to HA MQTT Autodiscovery,"['MqttClient.js,Valetudo.js,Model.js']",{'master'}
-02ec723d7acd7ecd2b134d2ca18b46c96a123522,Alexander Knöbel,2020-04-12,rename test to better match data,"['FW1886_without_extra_data.bin,FW1886_without_extra_data.json,RRMapParser_spec.js']",{'master'}
-298a266fc552cf4bda026935780a797100f1b93e,Alexander Knöbel,2020-04-12,fix parsing no_go_areas,"['RRMapParser.js,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.bin,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,RRMapParser_spec.js']",{'master'}
-093d58010c17bef1c5ff5e9932aa9dace69a687e,Alexander Knöbel,2020-04-12,add test for goto_target,"['FW1886_with_goto_target.bin,FW1886_with_goto_target.json,RRMapParser_spec.js']",{'master'}
-5d3ab1c9803d1deb956adf9026983993d9c3613b,Alexander Knöbel,2020-04-12,add support for firmware 2008 maps,"['RRMapParser.js,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.bin,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,RRMapParser_spec.js']",{'master'}
-e444a6021383e083c30aec9fd01be140d9d794fe,Hypfer,2020-04-12,Use views instead of offsets,"['RRMapParser.js,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,FW1886_with_goto_target.json,FW1886_without_extra_data.json,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json']",{'master'}
-f8d320c149db8b81ccf53cca07b432fca4fe7e02,Hypfer,2020-04-12,Add support for segment block type 11,['RRMapParser.js'],{'master'}
-569067864e5a7323e4d5cf73bb40afe17a36aa42,Hagen Fritsch,2020-04-13,Convert ViomiMapParser to a ES6-class. #426,['ViomiMapParser.js'],{'master'}
-c817a762ad7f074f7a762500f24274fee7aed603,Alexander Knöbel,2020-04-15,move fan speed presets to vacuum implementationand support for new firmware,"['home.js,MqttClient.js,Valetudo.js,MiioVacuum.js,Roborock.js,ApiRouter.js']",{'master'}
-96b2c9ab95e9025c53ca4c8e02fa1a2dfade2c41,Alexander Knöbel,2020-04-15,use quotes to access fanspeeds,['Roborock.js'],{'master'}
-ecd052f441793059cf91023a7cc7cd8d28758aa8,Alexander Knöbel,2020-04-15,define fan speed constants,"['MiioVacuum.js,Roborock.js']",{'master'}
-4c022735f45ad94889af37e9000cf1b4b7518644,Hypfer,2020-04-16,Strict comparison for provideMapData option,['MqttClient.js'],{'master'}
-edd5c575cdc18f305f753b190974e8a40e9e5630,Alexander Knöbel,2020-04-19,fix addTimer for firmware 2008,['Roborock.js'],{'master'}
-1fffc915f5c5d66fbd3711f725e4d090711d825f,Alexander Knöbel,2020-04-19,add comments and line wraps,['Roborock.js'],{'master'}
-04e1720f3c5e4d1061c61781451d9dcd0bfd6fd3,Alexander Knöbel,2020-04-19,fix maps with segments,"['RRMapParser.js,FW2008_with_segments.bin,FW2008_with_segments.json,RRMapParser_spec.js']",{'master'}
-277061d5a99d5316204b2bc8007c99b6e9c11d75,Alexander Knöbel,2020-04-19,Fix consecutive spot editing,"['spot-configuration-map.html,spot-configuration-map.js']",{'master'}
-3743a3d1e9cc0b3ed4e35cae605c37f5464179c4,Alexander Knöbel,2020-04-19,Fix consecutive persistant data editing,['settings-persistent-data.js'],{'master'}
-0180208a7cb14207a223533d71cfa8d0e8174f54,Hypfer,2020-04-25,Imported wiki to docs folder,"['faq.md,home-assistant-integration.md,important-files-and-folders.md,index.md,installation-instructions.md,new-vacuum-interface.md,troubleshooting.md']",{'master'}
-abf1c879c0efd9b3864973cc93c8ba3803334367,Sören Beye,2020-04-25,Set theme jekyll-theme-minimal,['_config.yml'],{'master'}
-160b1e5c8893ad8e63477b5abf745e2800d1ea25,Hypfer,2020-04-25,Updated installation instructions for latest firmwares,"['installation-instructions.md,roborock.md']",{'master'}
-d81041ec15dba6699bab1930aa3baa0f86b33283,Hypfer,2020-04-25,How does github pages work,['index.md'],{'master'}
-abcf1a5351360bc54e572b0cf7f83a44cc060696,Andrey Sobkanyuk,2020-04-26,Remove unnecessary note,['roborock.md'],{'master'}
-78b483893b7152bc15c3edd1abcd2a48b0580033,Alexander Knöbel,2020-04-26,move _config to docs,['_config.yml'],{'master'}
-a5c5206392aef8191b5626589b274ca255dfff6a,Alexander Knöbel,2020-04-26,add default layout,['default.html'],{'master'}
-a0aadae9e2a74d38ea9d5cab1123fdaaa8367441,Alexander Knöbel,2020-04-26,add navigation,"['_config.yml,default.html,faq.md,home-assistant-integration.md,important-files-and-folders.md,installation-instructions.md,roborock.md,troubleshooting.md,index.md']",{'master'}
-3a2fb5634bf5b264c70a413e6fb589c5c8b4532f,Alexander Knöbel,2020-04-26,update links,['index.md'],{'master'}
-dd7f3188f6a1d5190255bfc9b115dcc3c112d259,Alexander Knöbel,2020-04-26,add subfolders,"['installation-instructions.md,roborock.md,home-assistant-integration.md,index.md']",{'master'}
-cef5ee8f5b08c746abee762823cae9b40da73ec7,Hypfer,2020-04-29,Replaced donate link with something better,"['donate.html,index.html']",{'master'}
-1e3ba04ff61e086712c57e1597969aadf61b02ac,Hypfer,2020-04-29,Moved viomi instructions to docs and added home assistant device screenshot,"['viomi.md,home-assistant-integration.md,valetudo_device_homeassistant.png']",{'master'}
-1bf2b6e60bfafe0a189a5e947c120fb4959b4ba3,Hypfer,2020-04-29,Release 0.5.0,"['bug_report.md,Dockerfile,Makefile,package.json']",{'master'}
-691c00cb67b6651430cdfde67063c00a46e2dbfc,Sylvia van Os,2020-04-29,Slightly clearer Home Assistant instructions,['home-assistant-integration.md'],{'master'}
-e566d3df6d3c1a122bf6c621eb05002ee4709bd9,Sören Beye,2020-04-29,Add instructions for newer firmwares,['home-assistant-integration.md'],{'master'}
-e5b4959fda499153b01007a0234b27b7b2716c0c,Sylvia van Os,2020-04-29,Fix example config,['home-assistant-integration.md'],{'master'}
-6b6a54a48b860648b654221b1d94c5d11f7d972e,Hypfer,2020-04-30,Fix Gen1 Roborock Device Name #498,['Model.js'],{'master'}
-49872a9e16e1b472529aaf549c88f11f53ba4abf,Hypfer,2020-04-30,Fixed guide since latest firmwares do not support ed25519 keys,['roborock.md'],{'master'}
-8dea867733657946bf6dc9b641bf2e43ffe79c03,Hypfer,2020-05-01,Use os.tmpdir() for soundpack upload location to fix #494,['ApiRouter.js'],{'master'}
-59acb48babd555abd399e2fe6ac7ffe156714ffa,Hypfer,2020-05-01,Remove line-ending rule from eslintrc due to issues with developing on windows,['.eslintrc.json'],{'master'}
-e3ce09ce4f7479c1a21eec9e894c03be13005da7,Sylvia van Os,2020-05-01,Fix device.token location,['HOWTO.md'],{'master'}
-dd9876b82b1b824784165dbf286ea2edc8f4c738,Hypfer,2020-05-01,Removed Basic Auth user/pass length limitations according to RFC2617 to fix #435,['settings-access-control.html'],{'master'}
-f6d423a1692b02fac724042606545f72635dd750,Sören Beye,2020-05-02,Update bug_report.md,['bug_report.md'],{'master'}
-3ca66202c2bc859c015d2f0f84bb3340e4eb06fe,Alexander Knöbel,2020-05-02,fix: gen1 fanspeeds,['Roborock.js'],{'master'}
-60c224dc22a4075ba2528f9523c8b50ff09ba4b1,Sylvia van Os,2020-05-03,Support changing MQTT settings in web UI (#496)Support changing MQTT settings in web UI,"['settings-mqtt.html,settings-mqtt.js,settings.html,ApiRouter.js']",{'master'}
-d7ed4fb6783ff70cc7a4e29372ea63149cdc3658,Sören Beye,2020-05-03,Seperated Roborock.js into two different classes for Gen1 and Gen2 (#503)Seperated Roborock.js into two different classes for Gen1 and Gen2,"['Valetudo.js,Roborock.js,RoborockS5.js,RoborockV1.js,Model.js,ApiRouter.js']",{'master'}
-4c5777233b722af0ac99b7160e91dbfdb9a4d3cf,Alexander Knöbel,2020-05-04,refactor(mqtt): loadConfig,['MqttClient.js'],{'master'}
-c6d2bb9d222e366c7e1fc6e070c39c8704a0a474,Alexander Knöbel,2020-05-04,refactor(mqtt): updateAttributesTopic,['MqttClient.js'],{'master'}
-91d241a4a3a8c78083989acd726f70ac1b97bd10,Alexander Knöbel,2020-05-04,refactor(vacuum): getCleanRecord,"['settings-cleaning-history.js,MqttClient.js,MiioVacuum.js,Roborock.js,ApiRouter.js']",{'master'}
-c151007b7941c8d3ec4c81cfa5fb47e4129f9cab,Alexander Knöbel,2020-05-04,refactor: encapsulate events,"['Events.js,MqttClient.js,Valetudo.js,MiioVacuum.js,Roborock.js,Viomi.js,DeviceRouter.js,WebServer.js']",{'master'}
-8c3866ec3876a7d40ecfe45a764f9194da3a7f1e,Alexander Knöbel,2020-05-04,refactor(mqtt): add more error handling,['MqttClient.js'],{'master'}
-970bf2008524e7c948f0dee2828e4e0e331679cb,Alexander Knöbel,2020-05-04,feat(mqtt): restart mqtt client on changed config,"['settings-mqtt.js,Events.js,MqttClient.js,Valetudo.js,ApiRouter.js']",{'master'}
-29aad862fc5438c659b4b97d149d3e1248cdaf47,Alexander Knöbel,2020-05-04,docs: Configure MQTT via web interface,"['home-assistant-integration.md,mqtt.md']",{'master'}
-c46e57997d1e79740ed441cf0350cb7419711f46,Hypfer,2020-05-05,Dustbuilder supports 2008+ now,['roborock.md'],{'master'}
-48064afc1b6f7d9359567278327e3a09863c5693,Alexander Knöbel,2020-05-05,build: use github action to build release (#506),"['release.yml,.travis.yml']",{'master'}
-b2342ebd7429d7bfbddb9312bbd7574e25392a3a,Hypfer,2020-05-05,chore(release):0.5.1,['package.json'],{'master'}
-5acdc4466cb3a33087412e03763e185dfc36599c,pidator,2020-05-08,adding kernel route for dustcloud connection,['rc.local'],{'master'}
-2f4606a3e4f9c113f67ebd478195f26f68a30d74,Alexander Knöbel,2020-05-08,refactor(vacuum): getCleanSummary,"['settings-cleaning-history.js,settings-consumables.js,MqttClient.js,MiioVacuum.js,Roborock.js']",{'master'}
-a5b1ef49e6a223a1dfd4d1823d2c01cfb249f23b,Alexander Knöbel,2020-05-08,refactor(vacuum): getConsumableStatus,"['settings-consumables.js,MqttClient.js,MiioVacuum.js,Roborock.js']",{'master'}
-4152bcf3e7fabb62f6dbfae844f396e6ca0efca7,Alexander Knöbel,2020-05-08,refactor(mqtt): round to numbers,['MqttClient.js'],{'master'}
-8b736d7b09047a1f6f94ddcff5c234ac32cca32b,Alexander Knöbel,2020-05-08,refactor(vacuum): getZoneCleaningStatus,"['MiioVacuum.js,Roborock.js']",{'master'}
-9efa812982199603ea851cb9a651dc0a9f9e1600,Alexander Knöbel,2020-05-08,docs(mqtt): add description for precision,['MqttClient.js'],{'master'}
-dff2a78fd10fd9ee25b3285d8104ce5a15220369,Alexander Knöbel,2020-05-09,build: use yarn in CI,"['nodejs.yml,release.yml']",{'master'}
-d4845722a37677c9657eacfd77cf8acfd20e6bac,Ivan Bessarabov,2020-05-11,Fixing misspell,['important-files-and-folders.md'],{'master'}
-606377569cfa31eb968e69536baa07617332213b,Luke Channings,2020-05-13,feat: Upgrade MQTT to 4.0.0 (#518),"['package.json,yarn.lock']",{'master'}
-efb480918dec27ba43b82f9bb6e9476f57c10a39,Ivan Bessarabov,2020-05-15,"Update roborock install instractionsI'm spend a lot of time installing Valetudo on my Xiaomi Gen 1.At last I've managed to flash the new software to the robot,but it turned out that Valetudo is not starting.After some investigation I have found the source of the problem.The script builder_vacuum.sh parameter --valetudo-path=should get not only the binary, but also some filesvaletudo.conf, hosts and rc.localI've asked the author of  builder_vacuum.sh and he said that thebest way is just to pass the whole git repo. But the compiled fileis also needed.By the way, the script builder_vacuum.sh is already updated toshow errors:https://github.com/zvldz/vacuum/commit/b27d536448df4b3cff798a9c6ad36f6eb387ae79I",['roborock.md'],{'master'}
-0660785a94304339258c96c648c0be6b7a67a287,Ivan Bessarabov,2020-05-15,Improving doc,['roborock.md'],{'master'}
-1ab3247089dac4b3e9e0f03a3574dd5ef5e5be67,Ivan Bessarabov,2020-05-15,Chnaged Valetudo clone folder in the doc,['roborock.md'],{'master'}
-dea665ea11f8d0461a28cd4f44b4279a8eba68e9,Hagen Fritsch,2020-05-15,Change deviceId from string to number,"['Valetudo.js,MiioVacuum.js,Codec.js,Dummycloud.js,MiioSocket.js']",{'master'}
-0253cc2c92513066db9d8d80635f427f8f2ff255,Hagen Fritsch,2020-05-15,Try harder parsing broken packets.,['Codec.js'],{'master'}
-697feebf15475016dd8aceb226345b7c2689a757,Hagen Fritsch,2020-05-15,Implement sendPing command.,"['Codec.js,MiioSocket.js']",{'master'}
-f327db1260e3261cb126a8bb8e0ea9af6b8130e5,Hagen Fritsch,2020-05-15,Rename doTimesync to isServerSocket,"['MiioVacuum.js,Dummycloud.js,MiioSocket.js']",{'master'}
-c41f6da874373b36bc670507d24ee488e5252ee8,Alexander Knöbel,2020-05-15,feat(mqtt): split broker_url in multiple fieldsand hide password,"['settings-mqtt.html,settings-mqtt.js,mqtt.md,MqttClient.js,default_settings.json,ApiRouter.js']",{'master'}
-18261bb1680cc28a80526869c2c2a95974f9072c,Alexander Knöbel,2020-05-15,fix(api): remove passwords from /api/get_config,['ApiRouter.js'],{'master'}
-4f7ff43bf3ef211f5bf0ea6f41be369bd454c117,Alexander Knöbel,2020-05-15,style(mqtt): add line wraps,"['MqttClient.js,ApiRouter.js']",{'master'}
-536fe00b0e8606b6af08335f2e8c5f83fcd0a946,Hagen Fritsch,2020-05-15,Consistently log diffs on status changes.,"['MiioVacuum.js,Roborock.js,RoborockS5.js,Viomi.js']",{'master'}
-68d61f7f956a5e8aea1c26a1e4d89af19c63a3ae,Hagen Fritsch,2020-05-15,Viomi: reset current operation once finished.,['Viomi.js'],{'master'}
-f5ae248d46fb1cd59d420fdb05d1f4689f157d04,Hagen Fritsch,2020-05-15,Viomi: set correct mopping operation.,['Viomi.js'],{'master'}
-153269538cbaa3828aee737f7264f226144adc4a,Hagen Fritsch,2020-05-15,Viomi: support setting suction through UI.,"['viomi.md,Viomi.js,Status.js']",{'master'}
-efa8ec2b4a2c03ad9a165ffc8836a79547517141,Hagen Fritsch,2020-05-15,Viomi: Use Mode enum consistently (follow-up from #514).,['Viomi.js'],{'master'}
-3cdfbbb2d61c05bed5b99a0e8de114fd2c9dc3dc,Hypfer,2020-05-16,docs: Updated documentation to fix #505 and #512,"['building-and-modifying-valetudo.md,upgrading.md,index.md']",{'master'}
-13cfb33f655163cc673552ec65c88bb3145483c6,Hypfer,2020-05-16,docs: Hopefully fix github pages build,['upgrading.md'],{'master'}
-fdbb2b0c2bcafe4583fc33d3c10890030d3bbf27,Hypfer,2020-05-16,docs: fix valetudo logo,['index.md'],{'master'}
-67b9885b5a54c58d6e7e2375c0f5b80330db7136,Sören Beye,2020-05-16,Create CNAME,['CNAME'],{'master'}
-9ccbed7b46d5e60757918fa26b5c70218609ce18,Hypfer,2020-05-16,docs: use domain + seo plugin,"['_config.yml,default.html']",{'master'}
-84e284cd30edea09e6adc4ee2ae75bcc95fec66a,Hypfer,2020-05-16,docs: add release rss feed,['default.html'],{'master'}
-cd42a7ed50c5b29d586470461f1c1afd9555419f,Hypfer,2020-05-16,fix(vacuum): missing roborock onStatusChange implementation,"['MiioVacuum.js,Roborock.js']",{'master'}
-386c344160e5ad17e1d9503121d3ae87abb302b0,Hypfer,2020-05-19,feat: Parse and render segments,"['map-drawer.js,RRMapParser.js,FW2008_with_segments.json']",{'master'}
-964b935a21e5af62e87ec84e32a751e99106b90f,Hypfer,2020-05-19,feat: new robot + charger icon,"['charger.svg,robot.svg,path-drawer.js']",{'master'}
-9eaf848ef2f25d17ac8e19702abc24bf6ce19c90,Tomi Blinnikka,2020-05-20,feat(mqtt): added time and area information to mqtt attributes,['MqttClient.js'],{'master'}
-bff36388e9aacef0e3669c904a04dbf837710b35,Achilleas Pipinellis,2020-05-20,docs: Updated FAQ regarding persistent maps,['faq.md'],{'master'}
-b0f4262a89abf3ecd99717402b2e4a5bcc3c567b,Hypfer,2020-05-21,docs: Added reset fix to firmware building docs for roborock devices,['roborock.md'],{'master'}
-dd63d75cf2c15bbc7e65e459da7b865be2a3dffd,Hypfer,2020-05-21,fix(vacuum.roborock): getCurrentStatus should return a promise,['Roborock.js'],{'master'}
-0315be46b75bb83727f67bd1f65b5f310a3758c7,Hypfer,2020-05-21,fix(ui): Removed unnecessary console.log,['spot-configuration-map.js'],{'master'}
-85d38e1c89db4333588e3b96c76e07df7e2de95b,Hypfer,2020-05-21,fix: Make the linter happy,"['.eslintrc.json,Roborock.js']",{'master'}
-b9f42aa3ef6085a1586041229dd402f93c0e147c,Hypfer,2020-05-21,"fix: Today's lesson: ""async"" implicitly wraps a function inside a promise","['.eslintrc.json,MiioVacuum.js,Roborock.js,Viomi.js']",{'master'}
-afd7e5a95781c7429d0d5b4ee2240fc3e26dfd89,Hypfer,2020-05-21,feat: log process exit code + debug log process exit stacktrace,['index.js'],{'master'}
-3bbdd80f99339d8a8efb638f9ae1326399a0dd00,Hypfer,2020-05-21,feat(vacuum.roborock): added more events without handler,['Roborock.js'],{'master'}
-88f1149f7f3fd512e7eca6f919f4b60dac5096aa,Hypfer,2020-05-23,docs: Documented supported roborock devices,"['gen-1-front.jpg,gen-1-top.jpg,gen1-label.jpg,gen2-s55-front.jpg,gen2-s55-label.jpg,supported-roborock-devices.md']",{'master'}
-717d7315ffebbe2cccf04351189430d2bc66f1e7,Hypfer,2020-05-23,docs: Added flashing timeout to FAQ,['faq.md'],{'master'}
-7a529bbe9a41a058b72693cd7d4f64a09e137e08,Hypfer,2020-05-23,refactor(vacuum): Renamed sendLocal to sendCommand since the name was misleading,"['MiioVacuum.js,Roborock.js,RoborockS5.js,RoborockV1.js,Viomi.js']",{'master'}
-2b7696565b02615a2aaeb73b6bf4bd1bca7885d4,Hypfer,2020-05-23,feat(vacuum.roborock): Add backup map restore to vacuum class,"['MiioVacuum.js,RoborockS5.js']",{'master'}
-ac757b2ba126509c7c61eb7d3aa987b9ea17f95c,Hypfer,2020-05-24,fix(ui): Removed misleading firmware version which was actually the miio_client version,"['api.service.js,settings-info.html,settings-info.js,ApiRouter.js']",{'master'}
-8aa96dd5af795d20063582e1fe7d690825ee2f00,Hypfer,2020-05-24,docs: Added hardware specs + features to roborock docs,['supported-roborock-devices.md'],{'master'}
-67878263132d3138b2eeb3820ed9c69349d08aea,Hypfer,2020-05-24,fix(vacuum.roborock): Limit maximum amount of virtual walls according to firmware limits,['RoborockS5.js'],{'master'}
-e2a542c95a4abd147b3bb7f1c151247334347d1b,Hypfer,2020-05-24,feat: Always log Stacktrace on unclean exit code,['index.js'],{'master'}
-dbc92cc6ced084886a4d11410ca587243a4db646,Hypfer,2020-05-28,docs: Remove footer from theme to fix display on lower-res screens,['default.html'],{'master'}
-9ef95ebeebd1d6d45992c0ad47de97d16066861e,Hypfer,2020-05-28,docs: Added and customized css to fix navigation scrolling,['style.css'],{'master'}
-8db6ca271aa63eeded999a377bcd02c94fa6dc16,Hypfer,2020-05-28,feat(ui): Display Model information in Info Page,"['api.service.js,settings-info.html,settings-info.js,Valetudo.js,MiioVacuum.js,Model.js,ApiRouter.js']",{'master'}
-b196625ac73e4932324b2bd2cf487790d6758711,Markus Pöschl,2020-05-28,feat(mqtt): Add availability as last will,['MqttClient.js'],{'master'}
-6724e5556f3350c1c3cc6d4d5f09a9e08e8f2a6b,Hypfer,2020-05-28,fix(ui): Fixed virtual wall placement,"['locations.js,RoborockS5.js']",{'master'}
-d90913efc97297c4b491bddba2794a8f7cef9e60,Hypfer,2020-05-28,chore(release):0.5.2,['package.json'],{'master'}
-15e0e0290fa5633ac16f10c4c8e27c54fc26e6ff,Hypfer,2020-05-29,docs: Added roborock firmware filenames,['roborock.md'],{'master'}
-105557eb3ad39bad0f51a64cf2262f60a88e444f,Hypfer,2020-05-29,refactor(webserver): Reformatted code and removed hackish duplicate upload check,['DeviceRouter.js'],{'master'}
-e51ece9f34e5934b12b764a5731d6e8cedbc03e0,Hypfer,2020-05-29,docs: Added dustbin capacity to roborock vacuum knowledge base,['supported-roborock-devices.md'],{'master'}
-e2ea1ce212c4f85bba492dc273c6b7e75f4768b8,Hypfer,2020-05-29,fix(ui): Fix #527 not working close and cancel buttons in timer settings,"['dark-onsen-css-components.css,dark-onsen-css-components.min.css,settings-timers.js']",{'master'}
-1a723a469e35e996dcca754301329046c4c5a7cf,Hypfer,2020-06-01,refactor: Changed segment pixel parsing and reformatted client map code,"['locations.js,map-drawer.js,vacuum-map.js,RRMapParser.js']",{'master'}
-3b8172ddd9bca19644bfef6156538335ec3b8a69,Hypfer,2020-06-01,chore: Fixed test for new segment structure,['FW2008_with_segments.json'],{'master'}
-cca96ac829d100df4bce31352908865605eb74b6,Hypfer,2020-06-03,build: Use a statically-linked stripped nodev14 base binary,"['built-v12.16.1-linux-armv7,built-v14.0.0-linux-armv7,readme.md,Valetudo.js,package.json']",{'master'}
-3f80b30af544d4734859cf57f2b3a156a31706cd,Hypfer,2020-06-03,chore: Updated yarn.lock,['yarn.lock'],{'master'}
-706ddda3235b2e2a244d9153e87d568f731578df,Hypfer,2020-06-04,refactor: Use named capture groups for regexes,"['Model.js,ApiRouter.js']",{'master'}
-074fe95855e056feaa3814042a3cb6e9a0c1a84d,Hypfer,2020-06-04,build: Upgrade to latest node v14.4.0,"['built-v14.0.0-linux-armv7,built-v14.0.0-linux-armv7_old,readme.md']",{'master'}
-3a5d2df01ed17e7fa915fe164823909b2add5b79,Hypfer,2020-06-04,chore(build): Removed old nodejs versions,"['built-v12.16.1-linux-armv7,built-v14.0.0-linux-armv7_old']",{'master'}
-ea6dc9e60ab277ea63765bafe1efe58f89220e1a,Alexander Knöbel,2020-06-04,ci: use node 14,['nodejs.yml'],{'master'}
-d96eb15c8f299ff49d98f9d6661c6f44225bc633,Hypfer,2020-06-06,feat: Added debug config option to continuously log memory usage,"['Valetudo.js,default_settings.json']",{'master'}
-af696739d3119fbd84b1e9ba20b50b3fedce7a12,Hypfer,2020-06-06,fix(mqtt): Update availability topic on each attribute topic update to fix false offline status,['MqttClient.js'],{'master'}
-f417b4de3f27b0664552471c05adb220592f5c51,Hypfer,2020-06-06,feat: Initial support for S6 T6 and S5 Max,"['Valetudo.js,RoborockGen3.js,RoborockS5.js,Model.js']",{'master'}
-98eda41e3c9e4112cbe3efc72b0e75b160cdb7de,Hypfer,2020-06-06,refactor(mqtt): Moved mqtt availability publishing to own method,['MqttClient.js'],{'master'}
-ffc06d65ba788cfbc3aee33b8e3d9d9e3fe647f9,Hypfer,2020-06-06,fix: Removed useless app_get_locale functionality to fix #532,"['api.service.js,settings-info.html,settings-info.js,MiioVacuum.js,Roborock.js,ApiRouter.js']",{'master'}
-32e94168fb3141fb49721be6019e0611690f3292,ne0phyte,2020-06-08,fix(ui): Hide forbidden zones editor menu item on gen 1 (#382),"['zones.html,zones.js']",{'master'}
-1a29155094cdd76e02c5cbea28739d4637d90c00,Felix,2020-06-09,feat(ui): Allow select of multiple zones for zone clean (#535),"['home.html,home.js']",{'master'}
-e7384917354efa7e1d1b730b746966d4e46d87f2,Hagen Fritsch,2020-06-09,feat: Try to write a backup in case we're overwriting an invalid configuration file. (#537),['Configuration.js'],{'master'}
-7585f86e9fb1ec196b4b710454e1414673482081,Hypfer,2020-06-09,fix: Always assume embedded operation unless specified otherwise (#536),"['Model.js,default_settings.json']",{'master'}
-b9097a6f128aa947e4bb4a05fb3d79453f0f9e71,Hagen Fritsch,2020-06-09,fix: Simplify embedded logic now that 'auto' is gone. #536,['Model.js'],{'master'}
-b76ce144b4a3eb920a1dbab1991c83cf87ee7967,Hypfer,2020-06-10,fix(mqtt): Removed unnecessary availability topic mitigation,['MqttClient.js'],{'master'}
-24579f7acd98e276f4a85344919c4e8a8d356381,Hypfer,2020-06-14,feat: Initial Support for Roborock T/S4 and M1S,"['Valetudo.js,Model.js']",{'master'}
-f2b6968736b851f0fdc1b999c94ec52c22935401,Hypfer,2020-06-14,chore(release):0.5.3,['package.json'],{'master'}
-a025b4724d826f6e5ca08713444bfc572cdfcfd6,David Duarte,2020-06-23,docs: update information about supported roborock devices,['supported-roborock-devices.md'],{'master'}
-88de212274872eca0ca97c3b0dfadb70d2a4baa5,Hypfer,2020-06-25,feat: Experimental support(?) for S6 MaxV,"['Valetudo.js,Model.js']",{'master'}
-17bb01efe088a494563f6037076ade6e13c8c553,Hagen Fritsch,2020-06-28,"feat(vacuum.viomi): add support for viomi.vacuum.v8 + mop enhancements (#543)* Viomi: more mop-mode selection fixes* Move 'New Status' diff log message from trace to debug verbosity* Viomi: don't reset this.mode from vacuum status (which is unrelated). This requires to handle the case when initial status is default.* Update Viomi installation instructions (fixes: #541)* Viomi: Add a very basic knowledge base article (#538)* Viomi: Only select mop-moves if mopping is enabled.* Viomi: more debug logging for mopping state, fixes for startup mopping state detection.* Add support for viomi.vacuum.v8 per #547 (fixes #548).* Update supported-xiaomi-devices.mdCo-authored-by: Sören Beye <github@hypfer.de>","['viomi.md,supported-xiaomi-devices.md,Valetudo.js,MiioVacuum.js,Viomi.js,Model.js']",{'master'}
-33f94ec6614d15876b5e1f77446500001185b317,mqtt-fan,2020-06-30,"feat(mqtt): add support for client certificate (#549)* add support for client certificate* improved support for client certificate* fixed lint issue","['settings-mqtt.html,settings-mqtt.js,mqtt.md,MqttClient.js,default_settings.json']",{'master'}
-2450ceb3f5cb2653ee32dd3d5ef0fbf2c7e69645,Hypfer,2020-07-06,feat(roborock): Experimental support for even more roborock vacuums,"['Valetudo.js,Model.js']",{'master'}
-243be0c65e76b14d66c2633032869b192c829c05,Hypfer,2020-07-11,docs: Updated documentation on viomi models,"['CRL-200S-viomi-v2-top.jpg,supported-3irobotix-devices.md,supported-roborock-devices.md,supported-xiaomi-devices.md,Valetudo.js,Model.js']",{'master'}
-d462f65e8fe57de43daf098f295d987a11990f9d,Aaron Korte,2020-07-17,feat(ui): Use math (four color theorem) to properly color segments,"['map-color-finder.js,map-drawer.js']",{'master'}
-e1565d073642c87c084d93c56e031ebbec1160bd,Hypfer,2020-07-17,fix(ui): Default to colorIndex 0 if solver can't find the segment in its graph,['map-color-finder.js'],{'master'}
-ffbb8e75ffc4ce06bab6baa6f7328877cf66659b,Hypfer,2020-07-17,fix(vacuum.viomi): Hackishly fixed map parsing for viomi v6 + fan speed settings for all viomi,"['ViomiMapParser.js,MiioVacuum.js,Viomi.js']",{'master'}
-fdd80d24c577a66ecb358f838e675126abd0c084,Hypfer,2020-07-17,fix(vacuum.viomi): Hackishly fixed path + angle,['ViomiMapParser.js'],{'master'}
-51a3564c8a1321eab400031a219b74df3394f2ae,Sylvia van Os,2020-07-19,docs: Explain that Mi Home really won't work (#564),['faq.md'],{'master'}
-38a0af82db66428b8a6e7340dfaac394bbfcb2ac,Hypfer,2020-07-20,fix(mqtt): Check DNS resolution before connecting to mqtt broker to fix #563,"['MqttClient.js,Tools.js']",{'master'}
-ac86c84c8fa75408b52067306f7e0c4a201e9725,Hypfer,2020-07-22,fix(entities.map): Fixed MapLayer area calculation,"['ValetudoMap.js,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,FW1886_with_goto_target.json,FW1886_without_extra_data.json,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,FW2008_with_segments.json,FW2020_with_segments.json']",{'master'}
-ef4e010c53a289df9e1561ebfff738ae2f9e0962,Sören Beye,2020-07-25,Update bug_report.md,['bug_report.md'],{'master'}
-f1879064b15ea978df32a12f8a23b346ba2e3e39,Hypfer,2020-07-25,fix(vacuum.roborock): Fix map parsing failing for maps with no image data,['RRMapParser.js'],{'master'}
-97b5cdfd93bc4f562752a0a890f1b972b620119c,Hypfer,2020-07-25,feat(entities.state): Added Charging/Charged/Discharging status to BatteryStateAttribute,"['Roborock.js,BatteryStateAttribute.js']",{'master'}
-f73c7c61dfe786131704fa90fd93e632263b982d,Hypfer,2020-07-25,feat(vacuum.dreame): Initial basic support for the dreame.vacuum.mc1808,"['map.js,1c-front.jpg,supported-dreame-devices.md,Configuration.js,Valetudo.js,Dreame.js,MiioVacuum.js,Dummycloud.js,MiioSocket.js,Model.js']",{'master'}
-7133a50de24d12b99271ff9e3947ee5799e2d3bb,Hypfer,2020-07-25,chore: Updated eslint rules,['.eslintrc.json'],{'master'}
-19e141efc0b6e9f4798a9bff2482feaa10f3772f,Hypfer,2020-07-25,fix(vacuum.roborock): Changed set_lab_status payload for S6 to fix #540,"['Valetudo.js,RoborockS6.js']",{'master'}
-6b61ca816f377c07c784cb9075be43e838ecb405,Hypfer,2020-07-25,"feat(ui): Added zone size display, proper icon/text scaling and limited scaling","['locations.js,path-drawer.js,vacuum-map.js']",{'master'}
-0ca13e328d6e4943a444f750eb35365748dd5523,Hypfer,2020-07-25,fix(ui): Fixed zone dimensions,['locations.js'],{'master'}
-890120c76930bb8941459a7e0d1baa0af8577d83,Aaron Korte,2020-07-26,"fix(ui): Fix map coloring (#567)* Fix map coloringUse segment ID from metadata instead of generated range.Rename some methods and variables.Colors are now assigned correctly, but we now apparently need five colors for some maps.* Incorporate fifth color into default color array.* Improve coloring algorithmSort vertices by number of edges in descending order before coloring.* Empty map handlingReturn default value instead of Error when given an empty map.Update jsdoc to match the changed parameter.* Increase layer scan accuracyChange the resolution used to scan the given layer data.The previous value leads to invalid coloring with some maps.* Fix map iterationIterate the full map instead of just half of it.* Decrease accuracySet resolution back to 6 as it was not the problem after all.","['map-color-finder.js,map-drawer.js']",{'master'}
-a5e086e913198c87226d417dc6ff30f58b7e7a0b,Hypfer,2020-07-26,chore(release):0.6.0,['package.json'],{'master'}
-b2410ff5eda5a67f02ff5fcad7ef7c30e498674c,Hypfer,2020-07-28,fix(mqtt): Fix segfault on mqtt hostname resolution,['MqttClient.js'],{'master'}
-41f3e981a590e76261e7d57ccff8d97b3d4b94ad,Hypfer,2020-07-28,fix: override dns.lookup to mitigate static nodejs segfaults,"['DnsHack.js,MqttClient.js,Tools.js']",{'master'}
-039b7411325b74c2b4abbe58a91134fd1d1b9982,Hypfer,2020-07-28,fix(ui): Fix mqtt settings checkboxes,['settings-mqtt.js'],{'master'}
-8b06203de22871c47be97bc8e353118796636853,Hypfer,2020-07-30,fix(mqtt): Fixed #571 mqtt pause status,['MqttClient.js'],{'master'}
-f3cc9354d6da3149a69ef5476c922d97df0eb8a3,Hypfer,2020-07-30,fix(vacuum.roborock): Don't multiply iterations by 10 to fix #573,['Roborock.js'],{'master'}
-4f7ec2c44e8da163bf30c097df26a3df37380f04,Hypfer,2020-07-30,fix(ui): Restore context after drawing active zone,['locations.js'],{'master'}
-a23d5af95b7986c21e3487eb5e2d4f93c16c8ba3,Hypfer,2020-07-30,feat(mqtt): Added sw_version to mqtt autodiscovery to fix #568,"['MqttClient.js,Model.js,ApiRouter.js']",{'master'}
-6db8b76bddfea636303d1169fa7441ac21a5deca,Hypfer,2020-07-30,chore(release):0.6.1,['package.json'],{'master'}
-5335a0d71fe925eed2ff01335af5657872900647,Hypfer,2020-07-31,chore: Updated pkg to 4.4.9,"['built-v14.4.0-linux-armv7,Valetudo.js,package.json,yarn.lock']",{'master'}
-8d14c0a0991a57fa81a2c628e72a5b24c0c6e704,Hypfer,2020-08-03,docs: Added dev faq,"['dev_faq.md,car_radio.jpg,valetudo-ui.png,important-files-and-folders.md,troubleshooting.md']",{'master'}
-c059b9baf69e52959f39081e439a583c4132e1a8,fperezm,2020-08-04,docs: Home Assistant Automation for Valetudo version upgrade (#578),['home-assistant-integration.md'],{'master'}
-118705d4a98a3e41f29e5965a4bd757513926126,Hypfer,2020-08-04,feat(mqtt)!: Deflate and base64-encode map data before publishing it to mqtt topic,['MqttClient.js'],{'master'}
-164266ac984171c362adfdb5032854cdd67ee28d,Hypfer,2020-08-05,docs: Added some lines regarding expectation management,['index.md'],{'master'}
-8609612e03bc756194982d35b4389d27557842ac,Hypfer,2020-08-13,fix: Improved dnshack to catch all problematic dns.lookup requests,['DnsHack.js'],{'master'}
-ae799a8f4a001120ba2cc34690e1fdef37c07b6d,Alexander Knöbel,2020-08-13,ci: add eslint-jsdoc,"['.eslintrc.json,package.json,yarn.lock']",{'master'}
-20d86c3c005ac78d36bab29a78946e17f163f2c3,PaskoMoto,2020-08-15,"fix(vacuum.viomi): Added model names for viomi.v8Added Viomi vacuum v8 to the list of viomi models, so that it correctly appears in the WEB UI.",['Model.js'],{'master'}
-8a151ba7d7c523395f19bb8296c51813000f96a9,Alexander Knöbel,2020-08-16,ci: reactivate eslint for tests,"['.eslintignore,RRMapParser_spec.js']",{'master'}
-89a5485f17e7ac68e7b8d97ae9a8381d2f0a7767,Hagen Fritsch,2020-09-19,"fix(vacuum.viomi): Segments + Docs (#600)* Provide viomi installation instructions.* Log status delta for better debugging.* Fix error display for ApiService.startCleaningSegments* Render segment names when we know them.* Viomi: Implement startCleaningSegments* Viomi: re-add named rooms into the zone cleaning menu.","['map.js,locations.js,map-color-finder.js,vacuum-map.js,viomi.md,ViomiMapParser.js,MiioVacuum.js,Viomi.js,viomi_manual_map_parser.js']",{'master'}
-5cbf50696802f6bfaa1b8945e9400bedf47e5729,linuxlurak,2020-10-04,docs: Update faq.md (#613)Corrected outdated links to sound packages.,['faq.md'],{'master'}
-057e1d2b288ae8110b2a13a8af770bd010ebe88e,schannall,2020-10-05,"docs: Update troubleshooting.md (#614)Some more Troubleshooting for Viomi Map GenerationInformation mostly from https://github.com/Hypfer/Valetudo/issues/550 and some small things I ""found out"" during my Problems with the maps.",['troubleshooting.md'],{'master'}
-8e8d88acb617bafc1351d34b595d83a8ff5abdf6,i-need-to-tell-you-something,2020-11-02,docs: Update supported-dreame-devices.md (#621)Title was incorrectly same as supported Roborock devices.,['supported-dreame-devices.md'],{'master'}
+Commit_ID,Contributor,Date,Message,Files,Branch,Repository
+7c46437065aed773467f0f0f0ab8aeddeebf9579,Sören Beye,2018-07-12,Initial commit,['LICENSE'],{'master'},Valetudo
+32159ff0371671e3d55784477022919fff68b5c8,Sören Beye,2018-07-12,Updated version,['package.json'],{'master'},Valetudo
+43aa0a7aaecd531a2f2ab77d56f4d6313bdf3f9c,Sören Beye,2018-07-12,Npm is weird.,['package.json'],{'master'},Valetudo
+081b2aa59b5567bae0cc871b1fd1cf73db9afc89,Hypfer,2018-07-20,Fallback to GridMap if there is no usable live ppm map,['WebServer.js'],{'master'},Valetudo
+6a570503fd1931b60bee48f52e7d68c5fcc6cc11,Hypfer,2018-07-21,Fixed path rotation if GridMap is used,['WebServer.js'],{'master'},Valetudo
+431df94b02db310b30d415a48f89ab0ae8a8ae42,MeisterTR,2018-07-21,0.0.2,"['index.html,WebServer.js']",{'master'},Valetudo
+13152b9b11d658f2d0773b80f4eeb9fcbfc8e59a,Hypfer,2018-07-21,Removed /api/map/full which was just a duplicate of /api/map/latest,"['index.html,WebServer.js']",{'master'},Valetudo
+9c712074464b8300198a17f80581cffaf7ad43e8,Hypfer,2018-07-21,Bumped version number,['package.json'],{'master'},Valetudo
+b2ba41189cefdaf25075b3f2e6002687117a7ac4,Hypfer,2018-07-21,Handle 0 byte maps + Logs,['index.html'],{'master'},Valetudo
+1a2472d87b986952571eccfd32596317ad9f3809,Sören Beye,2018-07-24,Added support for encrypted archive maps and fixed missing paths (#4),"['index.html,WebServer.js']",{'master'},Valetudo
+b6b3257b644d64cced262cc20714c27b3e60cab0,Hypfer,2018-07-24,Added charger icon to map,"['index.html,WebServer.js']",{'master'},Valetudo
+8c0208f2249c0f7b1c99b3e5d3039bbd4580b0d7,Hypfer,2018-07-30,Fixed /mnt/data/rrlog regex for Gen 1,"['Vacuum.js,WebServer.js']",{'master'},Valetudo
+3aa52a38e52123135504cb1e5047306da2e9630c,Benedikt Krueger,2018-07-30,added initial support for manual control,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+d79d5180ac43a686e9ace1a7c446a49deaad7f4f,Benedikt Krueger,2018-07-30,- added left side menu entry for manual control- fixed touchscreen handling on manual control,['index.html'],{'master'},Valetudo
+9564da8aa39ace5e92f197746d8cd54ff7f6f77b,Benedikt Krueger,2018-07-30,fixed touchscreen support for IOS devices,['index.html'],{'master'},Valetudo
+e050387c850b75ead0920bd1e1ce21237153ab28,Hypfer,2018-07-30,Code cleanup,"['Todo.md,index.html']",{'master'},Valetudo
+d0faddf37e0c85df06a705ae76e09a7452c7c12f,Sören Beye,2018-07-30,Bumped version number,['package.json'],{'master'},Valetudo
+de276dd903e7ca12e2d878226e14503341d0828f,Flole998,2018-07-30,Add title,['index.html'],{'master'},Valetudo
+3868ffd85c76795037e053fc173c1e5a7f2cdcec,Sören Beye,2018-08-11,Added oom score attribute,['valetudo.conf'],{'master'},Valetudo
+7aa2b7076c04c7b329611de4ca600a24b365326a,Benedikt Krueger,2018-08-25,Added support for map generation as image (PNG) on the robot.,"['.keep,package.json,WebServer.js']",{'master'},Valetudo
+29b7a5d40decf53a40b4febcfaa802f15a5bb62b,Benedikt Krueger,2018-08-25,Fixed directory handling on robot for temporary files,"['.keep,WebServer.js']",{'master'},Valetudo
+ed4aa1e1090db14f0bbc561579e4b4450ef2a63f,Benedikt Krueger,2018-08-25,fixed client path for webserver,['WebServer.js'],{'master'},Valetudo
+ddc1c5f74ec06d63d2438932220e369678998342,Benedikt Krueger,2018-08-25,applied some performance improvements,['WebServer.js'],{'master'},Valetudo
+85e6c20cab25d9c0a0fd6cc0f1b80330eb49df4b,Benedikt Krueger,2018-08-25,"extended remote api for:- possibility to draw charger / robot / path- custom attributes (drawRobot, drawCharger, drawPath, scale, doCropping, border)","['charger.png,robot.png,WebServer.js']",{'master'},Valetudo
+8235c4c4cd878d2397abd05b61a9da08d72660ad,Benedikt Krueger,2018-08-25,fixed path for asset images (robot and charger) for production package,['WebServer.js'],{'master'},Valetudo
+ea65d2d2a558d5d57a41659c15c8df3345c39b6b,Benedikt Krueger,2018-08-25,fixed formatting,['WebServer.js'],{'master'},Valetudo
+2bdc9c6d12897eb7b2a72c4ad4e31be7654c0479,Benedikt Krueger,2018-08-25,fixed timing issue (json response send before image is generated),['WebServer.js'],{'master'},Valetudo
+712bcaefc3bfab4718f9fc4aae8181b7573c5394,maxpautsch,2018-08-26,added the following functionalities:- zoned cleanup- go to- spot clean- sound volume control,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+e48c5c90d6077105c7860bc473d783ff40a3a88b,maxpautsch,2018-08-26,"added multi zone clean, online configuration of zones and go to spots, new location of config file and automatic generation of config file if not present.","['Valetudo.js,index.html,WebServer.js']",{'master'},Valetudo
+8bdb58a7bf2fc419ed519b89ad51015917a373fe,maxpautsch,2018-08-26,added comments and fixed multi zone cleanup,"['index.html,Vacuum.js']",{'master'},Valetudo
+1f0450c1fe13aeb987395260af123824041ed875,maxpautsch,2018-08-26,last bugfixed after test on target,"['Valetudo.js,index.html,WebServer.js']",{'master'},Valetudo
+2e49705c4c4c6732feed5b0b5bf3b6520f026653,Sören Beye,2018-08-26,Bumped version number,['package.json'],{'master'},Valetudo
+702c4bce6790dce415a50a363ae07e72933c9596,Benedikt Krueger,2018-09-01,"fix for goto position == 0 resulting in ""coordinates missing""",['WebServer.js'],{'master'},Valetudo
+60a6ea29cf0614bb97710eb3124a75616bd4c932,Thomas MAUGIN,2018-09-09,ui: add icon and home screen for chrome,"['icon.png,index.html,manifest.json']",{'master'},Valetudo
+e483c6607a9aaad2d75824f3d0f8c33e69dd21f8,Dario Ernst,2018-09-23,"Build automatically using travis-ci.Add a .travis.yml which will build valetudo using the latest nodejsversion and package it using pkg. Then, it’ll upload the resultingbinary as a github release.To nicely get all dependencies installed, add pkg as a dev-dependency topackage.json.","['.travis.yml,package.json']",{'master'},Valetudo
+14b61df81b88552ad30f247176a36804f569e60e,Hypfer,2018-09-23,Setup Travis CI,['.travis.yml'],{'master'},Valetudo
+1f872ee549afebcd33166c4743948a54c081fe94,Hypfer,2018-09-23,Bumped version number,['package.json'],{'master'},Valetudo
+33b2d844a5bd4746140cc56e54553508be9f2e4e,Tobias Schaffner,2018-10-03,"Add a general info section with firmware versionAdd a general info tab for general information like type, firmwareversion and build to the settings page.Add firmware and build version to that tab.","['index.html,WebServer.js']",{'master'},Valetudo
+d6fbc5d6efaba46ebaab916eafc9cc0fba010cf5,Tobias Schaffner,2018-10-03,Use fs.readFile instead of a cat call,['WebServer.js'],{'master'},Valetudo
+c1a837c97173ef0ea1c9b890c876a87889debf7c,Tobias Schaffner,2018-10-03,Set remaining hours of consumables to zero if negative,['index.html'],{'master'},Valetudo
+ac6b7026165dcb3400e3b4fe4579cc0bd3e8ff60,Felix Uster,2018-10-03,Added option to directly respond with the requested map image,['WebServer.js'],{'master'},Valetudo
+43aa01f7728e8083909f975ae5906b03d81dba0d,Sören Beye,2018-10-03,Update WebServer.js,['WebServer.js'],{'master'},Valetudo
+195dabed662edc3a37bf16915b8b1df3b03f6150,Hypfer,2018-10-03,Bumped version number,['package.json'],{'master'},Valetudo
+93961828911d53f68a957ac9c8cb7e96c219f96e,Hypfer,2018-11-16,Add apple touch icon because manifest.json icons are not yet supported on iOS,['apple-touch-icon.png'],{'master'},Valetudo
+5dfcafad2da78460ff5307da815b28bbfbf0d905,fcktrmp,2018-11-20,Added development / building script and documentation,"['Testing.md,HOWTO.md,config.json.example,env.example,run']",{'master'},Valetudo
+2b38868bf5df113e6fe66788502c9822ef68b71c,fcktrmp,2018-11-24,fixes for GridMap handling,"['MapFunctions.js,WebServer.js']",{'master'},Valetudo
+3ef2b6955d10e1e5cc4da8f2106fcef7a9d93e37,Hypfer,2018-12-09,Fix #50,['index.html'],{'master'},Valetudo
+529070b2fe261c738c25f0b382a81961cd3df37c,Hypfer,2018-12-09,Bump version number to 0.0.8,['package.json'],{'master'},Valetudo
+01a1ab3969d27419a80627063c9a7507d5b66efc,JohnRev,2018-12-19,Fix directory scanning,['WebServer.js'],{'master'},Valetudo
+5fc8f401c180c14a70b5c95439544b5b2ee6cb83,Matthias Harrer,2018-12-20,Adds first version of zoom-/dragable map,"['geometry-polyfill.js,hammer.min.js,index.html,vacuum-map.js,WebServer.js']",{'master'},Valetudo
+d74f081a047b0c6c6fbed42cf02785011500b1ec,JohnRev,2018-12-20,"Add a box that display the clicked coordinates  (#1)* Display tapped coordinates* Remove extra space","['index.html,vacuum-map.js']",{'master'},Valetudo
+a6643a08bc9a87cf71bad3a348cdeb1a7d4f8f77,JohnRev,2018-12-21,Scan newest folder first,['WebServer.js'],{'master'},Valetudo
+657dfa6f09b67b2e8733ef47c145fb73e4978787,JohnRev,2018-12-21,Update filename regex,['WebServer.js'],{'master'},Valetudo
+0845ce1ba4d31eeaf723e21cae3744c638c0dc59,Andreas Schneider,2018-12-21,"Change config file location to /mnt/dataIf you flash a new firmware, the config in /etc/valetudo will be gone.We should use the persitant flash memory for that.","['Valetudo.js,WebServer.js']",{'master'},Valetudo
+de34943a2b9a7c288a4810397f20c5745f92d212,Hypfer,2018-12-21,Valetudo 0.0.9* New zoomable/draggable map (see /zone)    * Including a box that displays the clicked coordinates* Fixes for missing maps (Error 500)* Initial support for Gen2 FW >1518 maps with patched rrlogd. No virtual Wall support yet### Breaking Changes* Config file location moved to /mnt/data/valetudo/config.json,['package.json'],{'master'},Valetudo
+fc21a93bcfff0c69f84bb93cc02410ecadbfb74a,PBue,2018-12-23,Fixes problem while adding a zone to an existing area,['index.html'],{'master'},Valetudo
+98a6288c9a5100c1bacac852ca2cb1120d4d3c89,Matthias Harrer,2019-01-06,replaces reading testdata for map / path with in-program testdata,['WebServer.js'],{'master'},Valetudo
+1a57417c35465e637e34ea729224628bef8b30ae,Matthias Harrer,2019-01-06,refactor,['vacuum-map.js'],{'master'},Valetudo
+fcd3dac936487aba47f026ae07bf8fdd8d28df83,Matthias Harrer,2019-01-06,improves zone drawing,['vacuum-map.js'],{'master'},Valetudo
+967f891563803984c63d6ef161e9ff6ff7e98a90,Matthias Harrer,2019-01-06,converts app to es6modules,"['index.html,coordinate-transforms.js,map-drawer.js,path-drawer.js,tracked-canvas.js,vacuum-map.js,main.js']",{'master'},Valetudo
+47db74c87c8752ab882e45fabb6ce99c939866c9,Matthias Harrer,2019-01-06,adds interactivity for zones,"['index.html,locations.js,tracked-canvas.js,vacuum-map.js,main.js']",{'master'},Valetudo
+f860400e3fafcd6a33909578787908656851967a,Matthias Harrer,2019-01-06,adds npm build script,"['package-lock.json,package.json']",{'master'},Valetudo
+e0cbbd45b456ae458d6e8f332bd2ccc2bf8c61d7,Matthias Harrer,2019-01-06,fixes panning inconsistencies,['vacuum-map.js'],{'master'},Valetudo
+2b6835f562dc62e52fe7a08ef68140bf2773c19a,Matthias Harrer,2019-01-06,make map / path colors configurable via css variables,"['index.html,locations.js,map-drawer.js,path-drawer.js,WebServer.js']",{'master'},Valetudo
+8ac910aed97813878fb3a4f955a576f38d3fb872,Matthias Harrer,2019-01-06,Adds some code documentation,"['locations.js,map-drawer.js,path-drawer.js,tracked-canvas.js,vacuum-map.js']",{'master'},Valetudo
+e80a07f85fca50d1bd9bec1b999f1f773d80e346,Matthias Harrer,2019-01-06,displayed coordinates update when moving / resizing the zone,"['coordinate-transforms.js,vacuum-map.js']",{'master'},Valetudo
+0bf5a4bccb2597f6b0aa9b70cf422e6813d339d1,Matthias Harrer,2019-01-06,uses valetudo map colors instead of xiaomi,['index.html'],{'master'},Valetudo
+f082fa615f8026704dccfef3665e4852b488086e,Sören Beye,2019-01-06,Delete package-lock.json,['package-lock.json'],{'master'},Valetudo
+09ab7c251bfab432b5c25ffcdaa40a3b624f8ca1,Matthias Harrer,2019-01-10,use relative path to api to allow hosting with subpaths,"['vacuum-map.js,main.js']",{'master'},Valetudo
+39a79b98b3202b712c4853b87f7ec514c199ad53,Sören Beye,2019-01-13,Hopefully temporarily fix the build,['package.json'],{'master'},Valetudo
+5455cace380833967695dedaf941ef4bbdb19de0,Sören Beye,2019-01-13,Lets try this againhttps://github.com/zeit/pkg/issues/603,['package.json'],{'master'},Valetudo
+c1d2aba4f048ac64cf3f7f0eb1038e67df6e56d1,Benedikt Krueger,2019-02-10,Added Valetudo release number to Settings>Info,"['index.html,WebServer.js']",{'master'},Valetudo
+4edeba5ae8d75e1437e17d5d171c48b540b0b16a,Benedikt Krueger,2019-02-10,"Fixed title of Settings>Info to ""Info"" instead of ""Wifi""",['index.html'],{'master'},Valetudo
+05a66c20ddba66e2b8ce17143707e380e7d49265,Hypfer,2019-02-10,Fix #89 for Firefox,['index.html'],{'master'},Valetudo
+a5794338e7daa37714707dd497e5e99c5744146e,Hypfer,2019-02-10,Valetudo 0.0.10,['package.json'],{'master'},Valetudo
+be58ed5c7aaaa65eb756b122efdc01c884fa87a7,Benedikt Krueger,2019-02-16,made timer configuration intuitive- Added form for easy timer configuration- Added human readable timer interpretation,['index.html'],{'master'},Valetudo
+a89c44f9fe8f3ac632c116a7a045e51c8fb33a75,Benedikt Krueger,2019-02-16,added timezone configurationadded dnd configuration,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+5f468b9e6d9f5ad0585e5232e87fad1c4f67cdb2,Benedikt Krueger,2019-02-18,added carpet mode,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+691659889411993daf9f50b07aa66931bb9b6ee0,Benedikt Krueger,2019-02-18,Added cleaning history to show up to 20 last cleaning runs of the vacuum,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+4cb7c72c78b63406cecde37e960347bd89b230bd,Benedikt Krueger,2019-02-18,added AppLocale to Settings>Info,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+52b2ee5c2f0a8c970ef03a2093134c2608285d18,Benedikt Krueger,2019-02-18,fixed typo,['index.html'],{'master'},Valetudo
+50586c9361bcaeb85ffba425ceaa52022a73239f,Andreas Schneider,2019-02-18,client: Use max-with for carpet displayOtherwise you have to scroll on some mobile devices to read the test asit is wider that the screen.Signed-off-by: Andreas Schneider <asn@cryptomilk.org>,['index.html'],{'master'},Valetudo
+ef2fb0e0534b7e50e88033f797471b29121cc73c,Andreas Schneider,2019-02-18,client: Add description for carpet modeSigned-off-by: Andreas Schneider <asn@cryptomilk.org>,['index.html'],{'master'},Valetudo
+70d6aba9a9fd73bb21a17ad5b50e942d4d21090f,Matthias Harrer,2019-02-19,Integrate /zone map into OnsenUI- replace hammerjs by own implementation- removes zone/goto coordinates to eliminate dependency on html- allows to define multiple zones- allows to modify the zones,"['index.html,geometry-polyfill.js,hammer.min.js,index.html,locations.js,map-drawer.js,path-drawer.js,touch-handling.js,vacuum-map.js,main.js']",{'master'},Valetudo
+7bd95f7c13cf3dd90787b85bfbd14ec02e6479a7,Hypfer,2019-02-19,#53 Add Support for Iphone X,['index.html'],{'master'},Valetudo
+cbee8aeab692a281cf7072a77a90439efd2b1d29,Hypfer,2019-02-19,Bumped version Number to 0.2.0,['package.json'],{'master'},Valetudo
+b40f62ab83d6358886615b63a2cc4337d749a477,Matthias Harrer,2019-02-20,handles window.resize event and appropriately resizes the map canvas,"['index.html,vacuum-map.js']",{'master'},Valetudo
+bef7e390a25d03a3975e239246b957a80c8bf51d,Matthias Harrer,2019-02-24,Adds rudimentary display of zone coordinates to /zone again,"['index.html,main.js']",{'master'},Valetudo
+ea8bab4910ee0b34797bccc4889a64c2895f2812,Matthias Harrer,2019-02-24,Adds drawing charger and robot again,['path-drawer.js'],{'master'},Valetudo
+27e98c17b01fe76344a7e40cc5909dab92539185,Milan Pässler,2019-02-24,account for vertically flipped map when drawing robot,['path-drawer.js'],{'master'},Valetudo
+4400ddd73c87d302d676d62af002db110b0097b4,Milan Pässler,2019-02-24,prevent crash when drawing robot with empty path,['path-drawer.js'],{'master'},Valetudo
+8a36b11e06e52fbe2601d90d2ccdead2fabb7a9e,Milan Pässler,2019-02-24,fix robot angle calculation when map is not flipped,['path-drawer.js'],{'master'},Valetudo
+4b18af9f7e14a53db36fc7821f8b0ced408df3cc,Hypfer,2019-03-22,#120 Fix broken device info,['WebServer.js'],{'master'},Valetudo
+d17fe21bf0bac1e7456908d1420489f76a72a5f6,Hypfer,2019-03-23,#121 Fix broken remote API,['WebServer.js'],{'master'},Valetudo
+19738af28490c04866cfd529d8d4f9339f1e778b,Hypfer,2019-03-23,Updated documentation,['Todo.md'],{'master'},Valetudo
+9d44048c8d2fea6266537e387a27b26c0ec416b7,Hypfer,2019-03-23,Implemented non-interactive Map via MQTT,"['index.html,Configuration.js,MqttClient.js,Tools.js,Valetudo.js,WebServer.js,package.json']",{'master'},Valetudo
+9f5279e67a38a737b61127e9ee89d2b04a2004d7,Hypfer,2019-03-23,Fixed broken Cleaning History,['Vacuum.js'],{'master'},Valetudo
+053fa00fe60af4930d4c2ff6a36b1016376e9d24,Hypfer,2019-03-23,Avoid crashes due to strange crop values,['Tools.js'],{'master'},Valetudo
+e13644311792eb47b337a835bab81aed65543363,Hypfer,2019-03-23,Avoid crashes due to broken map data,['Tools.js'],{'master'},Valetudo
+9a847a42b8382288180c0b2335a8f3aba32d7bd0,Hypfer,2019-03-23,Downgrade Build to Node 8 since Node 10 seems to be leaking memory,"['.travis.yml,package.json']",{'master'},Valetudo
+d197f2f821ff4a2ced62b30db62787d67deb9b46,Hypfer,2019-03-23,Don't crash the process if navmap gets rewritten,['Tools.js'],{'master'},Valetudo
+5667c2a13f00d8c8092a5d3f8f6a5bdc80bac167,lwestenberg,2019-03-24,added attributes MQTT topic with HASS support,"['MqttClient.js,Vacuum.js']",{'master'},Valetudo
+a6e822fb901c708cbd743e5adaf0747120bda079,lwestenberg,2019-03-24,added caching to prevent unnecessary mqtt messages,['MqttClient.js'],{'master'},Valetudo
+1f32298956feffce6acca79ef6d1ec9fe65b49a4,lwestenberg,2019-03-24,added docker container for building on any OS,"['Dockerfile,HOWTO.md']",{'master'},Valetudo
+4610be6d523e54cdce70f2816f30e54fc25ada80,lwestenberg,2019-03-24,version number,['package.json'],{'master'},Valetudo
+276a8ef9a6afa2b449109bb40310016e2a26c220,Hypfer,2019-03-24,Implemented Dummycloud functionality,"['Configuration.js,Valetudo.js,Dummycloud.js,TimeSyncPacket.js']",{'master'},Valetudo
+b01bd2528d824d0dfc1d68131140587a0b2826a6,reaper7,2019-03-24,config for topic prefix and autoconf prefix,"['Configuration.js,MqttClient.js']",{'master'},Valetudo
+5e668035334fb2e0ed579e8242cf4aea3ff313c1,reaper7,2019-03-24,Update Configuration.js,['Configuration.js'],{'master'},Valetudo
+4820c0b3dc93f400e30ab5cd6596742be8602233,reaper7,2019-03-24,Update Valetudo.js,['Valetudo.js'],{'master'},Valetudo
+8f68ab2306fecdc9d83e18e6a786929c5cbc96fe,Hypfer,2019-03-30,Synchronously write configuration file,['Configuration.js'],{'master'},Valetudo
+3b96262fc1f849fc3f94d2d2cae07c06c28afda8,Anna Prosvetova,2019-04-03,Introduce resume zone cleaning feature,"['MqttClient.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+2d2bc8595788a1354a2fc89fd2ae04a4aa82fc62,Hypfer,2019-04-04,Added logo from #136,"['valetudo_logo_small.svg,valetudo_logo_with_name.svg']",{'master'},Valetudo
+74f1c38f377f0ebccf07590de8721ca71a667e01,Hypfer,2019-04-04,Use new logo for client assets,"['apple-touch-icon.png,icon.png']",{'master'},Valetudo
+647984926e59dae67a2b6e60cfe258f0f44d9f71,eahlstrom,2019-04-05,bugfix hh:mm:ss calculations for cleaning history.Before this 4156 secs got display as 1:69:16 now it shows 1:09:16,['index.html'],{'master'},Valetudo
+3a47747140a3275fc3d5ab4182596d9525fcfe9f,Andreas Schneider,2019-04-05,Update deployment readme,"['hosts,rc.local']",{'master'},Valetudo
+7ce6d5ce06fd41dcd6d406361aae962c89ef2372,Anna Prosvetova,2019-04-06,Allow pause of zoned cleaning,['index.html'],{'master'},Valetudo
+6f7146af091964e9a79b5f06df609ee9d7b465aa,Hypfer,2019-04-06,Logo Kerning,['valetudo_logo_with_name.svg'],{'master'},Valetudo
+810e5eaa1933c5d2902a53a309deddcebdebac1c,Tim Brust,2019-04-06,"build(TravisCI): upgrade Node.js versionNode.js 9 is already EOL. The lts/* version always uses the latest LTS version (currently 10.15.3), the target version from the build command remains unchanged.",['.travis.yml'],{'master'},Valetudo
+d8c38176120333f2fcc8ee193f83670ebf237b89,Hypfer,2019-04-07,HTTPS Support for Websockets + Limit Zoned Cleanup to 5 zones,"['vacuum-map.js,Vacuum.js']",{'master'},Valetudo
+3a3a906d19dd358c0b844e4b48307bb616478795,Erik Ahlström,2019-04-07,Add stat for the latest clean in publish attributes (#151),['MqttClient.js'],{'master'},Valetudo
+6b3bf388573d84334e76818c6460f548d95f3888,Andreas Schneider,2019-04-08,Add a Makefile (#159),['Makefile'],{'master'},Valetudo
+505a638c06fd0c0bff99db9a404a0563aa3d0b69,Hypfer,2019-04-10,Wrap deployment files for easy removal #158,"['hosts,rc.local']",{'master'},Valetudo
+3594a712eebc12be5d33d760d22f373269825b3b,Hypfer,2019-04-10,Rotated the map by 180° and added the remaining map data blocks,"['RRMapParser.js,Dummycloud.js,Vacuum.js']",{'master'},Valetudo
+2e39ecd766bd2771c0dbd263f78e62b28c945a64,Hypfer,2019-04-12,Moved MQTT PNG Drawing to seperate project,"['Makefile,HOWTO.md,Configuration.js,MqttClient.js,Tools.js,Valetudo.js,WebServer.js,package.json']",{'master'},Valetudo
+9a0cd56f9b3e3ad2b3cf78d203b8a02d1bd5783c,Hypfer,2019-04-12,Fix #169,['index.html'],{'master'},Valetudo
+4a59ffe0d8e92359db846be3d58ee2edf007a8df,Milan Pässler,2019-04-20,add yarn.lock,['yarn.lock'],{'master'},Valetudo
+0cc777542f4a83fda2eb2951440a8c1a2b847bfb,Hypfer,2019-04-21,Add possible fix for random rollbacks/loss of wifi connectivity,"['valetudo.conf,RRMapParser.js']",{'master'},Valetudo
+936c3215f24401e3bde5db56cd737f9221c1d621,Hypfer,2019-04-21,Bumped version number,['package.json'],{'master'},Valetudo
+3bcfb5c74f3439c93235db49d9ae2be62a737afc,Sören Beye,2019-04-23,Fix Valetudo for unprovisioned Robots,['valetudo.conf'],{'master'},Valetudo
+63886f3d2be1a6a0193d23ad3b73e4f304510ab1,Tim Brust,2019-04-26,build(TravisCI): execute npm run build commandinstead of having another explicit build command,['.travis.yml'],{'master'},Valetudo
+8b0abfbb41f43032c543b7405dc7c4f392dfea73,Tim Brust,2019-04-26,feat: add MQTT over TLS (mqtts) support,"['Configuration.js,MqttClient.js,Valetudo.js']",{'master'},Valetudo
+7fc2b9bffb9a72374f134f7fa2164a3911d24163,Ondřej Nový,2019-04-27,Load manifest.json using CORS (really fix #169),['index.html'],{'master'},Valetudo
+3773547701373613c8fcd6d3ff685a1d2188dc08,Ondřej Nový,2019-04-27,"Fix #187, /api/current_status returns human_error",['Vacuum.js'],{'master'},Valetudo
+91f751e4aec27862acfe0b199f149259db933318,Ondřej Nový,2019-04-27,"Fix race condition in manual control start/stopSometimes, just after pressing ""Start Manual Control"", client sendsstop_manual_control API request. It looks like there is smallrace-condition. If you ask for vacuum state just after starting manualcontrol, robots reports state != 7 (!= manual). Some problem is withstopping. Robot reports state = 7 for few x00 ms after pressing stop.This patch changes two things:* don't send API request to start/stop vacuuming when buttons are notclicked (information about state is read from robot) - just update UI* postpone refreshing of vacuum internal state just after clickingbuttonsTested on firmware Gen2 1768.",['index.html'],{'master'},Valetudo
+a571348ca844219b3c2c1a19e8000be4a4dbedef,Ondřej Nový,2019-04-28,"Fix buttons disable stateIn ""Going to target"" and ""Spot cleaning"" state robot is not inin_cleaning. Stop and home buttons are not working, so disable them butenable pause button, which works.In ""Zone cleaning"" state Home button doesn't work, so disable them.Tested on firmware Gen2 1768.",['index.html'],{'master'},Valetudo
+fce79de1f687388897f1740b45b38660a3ca03a2,Ondřej Nový,2019-04-28,"Always show error if there is anyRobot can be in normal (for example Charging) state but there couldstill be some error. For example try remove dust bin and press ""Start"".Robot will be in Charging state, but error_code will be > 0.",['index.html'],{'master'},Valetudo
+871b76bca4116e86936f97fe528a2272424e4440,balu,2019-04-28,"replaces ""Sensor"" with ""Sensor cleaning""in Replaceable Section of the Settings",['index.html'],{'master'},Valetudo
+8f9ca7b3f8455aa90d2980b612c6ab0bf180ce6b,Matthias Harrer,2019-04-28,Add ability to edit saved zones on map,"['index.html,vacuum-map.js']",{'master'},Valetudo
+c05427973f4d164d28414428225b99d912d3751d,Matthias Harrer,2019-04-28,rebuild zone configuration page to use map only,"['index.html,WebServer.js']",{'master'},Valetudo
+da00c261e49f9a27660bd30a856d0badfab87adb,Matthias Harrer,2019-04-28,cosmetic improvements for zone definition,['index.html'],{'master'},Valetudo
+969488bc0ba09f3b024c4019a4a63b4e1039dcd3,Matthias Harrer,2019-04-28,add possibility to configure gotopoints / spots,"['index.html,vacuum-map.js,WebServer.js']",{'master'},Valetudo
+25e5b35257e4bb592b890aae894d5a749ddbcd1d,Sören Beye,2019-04-28,Update WebServer.js,['WebServer.js'],{'master'},Valetudo
+3b1a9449af6c9fbcf684c63f144e6b137c27167b,Hypfer,2019-04-28,Zoned_cleanup + Go_to via MQTT,"['MqttClient.js,Valetudo.js']",{'master'},Valetudo
+91088195f869d6d6f96bb612770e3bcc7a1d00b8,Ondřej Nový,2019-04-30,"Limit memory allocationProcess valetudo on robot can sometimes consume a lots of memory (memoryleak?). If this happens, kernel sometimes kill player (instead of valetudoeven with high oom score). So let's limit max memory allocation of valetudoprocess to 200 MB, which should be enough. Better is to kill valetudothan player itself.",['valetudo.conf'],{'master'},Valetudo
+9a5e6a71c4c6a65a525f57b754cf2bd85384b45c,Christoph Oechslein,2019-04-30,* Added check if mqtt client is connected to a server in updateMapDataTopic* Added console output if mqtt client did successfully connect to server,['MqttClient.js'],{'master'},Valetudo
+33a4f4502f2ede95a8486972091acf55acd38b7b,Hypfer,2019-04-30,RRMap Image Metadata actually consists of signed Ints,['RRMapParser.js'],{'master'},Valetudo
+2b8e4e354a092cdb5e7aa0c5f68ce00a58c57e17,Hypfer,2019-04-30,Might fix memory leak,['Dummycloud.js'],{'master'},Valetudo
+f4e164ed19b87b29f2452d31e3f0f7631e131067,Hypfer,2019-04-30,Prevent concurrent map uploads,['WebServer.js'],{'master'},Valetudo
+6fd1be698a990e0746fa9eec460734fc8cdfd761,Benjamin Bennett,2019-05-01,Changed the upstart file to work when unprovisioned (AP mode)This change made my vacuum bring up Valetudo when unprovisioned(i.e. when it had not joined a host network and was running the AProborock-vacuum-s5_... one itself).,['valetudo.conf'],{'master'},Valetudo
+a9fa64fcec23639b7367a0d3fa61b84cd07eaebe,Hypfer,2019-05-02,More attempts to prevent Valetudo from going out of memory,"['MqttClient.js,Valetudo.js,Dummycloud.js,WebServer.js,package.json']",{'master'},Valetudo
+672a22ce58be58e5df51527e536704245de3e2d7,Sören Beye,2019-05-03,"Fixed lonely pixel at 0,-1",['RRMapParser.js'],{'master'},Valetudo
+e0cd63e33b7a6c48cd3bcad2e7fcc1bf68f098ca,Matthias Harrer,2019-05-04,add map metadata like nogozones / virtual walls / predicted path etc.,"['locations.js,path-drawer.js,vacuum-map.js']",{'master'},Valetudo
+2e54e9ce3e9d0311db60e7214fe4b3f86ef120a5,Anna Prosvetova,2019-05-04,Allow multiple zone ids for MQTT zoned_cleanup command,['MqttClient.js'],{'master'},Valetudo
+b9691e394bcfb897eba4045cf16139b89c5d3c76,thepill,2019-05-04,Align consumable titles vertically,['index.html'],{'master'},Valetudo
+c1e7f5140cb292c38429bf7462ac55cbe4ae661d,thepill,2019-05-04,Use 130px for consumable title width in settings,['index.html'],{'master'},Valetudo
+6b74c66e5e6bc685fcdd6e24f22a94588a076b05,leonardpitzu,2019-05-07,Update index.html,['index.html'],{'master'},Valetudo
+d14a22b9635003f640eafcb6c3d146de39cca1d5,Milan Pässler,2019-05-10,add ssh keys settings page,"['index.html,SSHManager.js,Valetudo.js,WebServer.js']",{'master'},Valetudo
+7af87314cae16c69b70f1a8664e94984154eb55d,Milan Pässler,2019-05-10,"add ""permanently"" disable ssh key settings and basic http auth","['index.html,Configuration.js,WebServer.js,package.json,yarn.lock']",{'master'},Valetudo
+0fce6d2a0273c3a543f45fa3956020aa87ebe126,Matthias Harrer,2019-05-13,reset the line dash when drawing predicted path,['path-drawer.js'],{'master'},Valetudo
+92e8693884fd8b3ccbb859e2ff687367907ba4cc,Matthias Harrer,2019-05-13,read model from device.conf and provide it with /api/current_status,"['env.example,Valetudo.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+bb2338ec9abee7366783946242ad8fd9f8c589ae,Pawel Szafer,2019-05-14,support for mqtt state component in future HA,['MqttClient.js'],{'master'},Valetudo
+fa7bdb6215aa5792842cef0826043137ccc2c78d,Hypfer,2019-05-14,Reintroducing a nice looking default map,"['Valetudo.js,default_map.json']",{'master'},Valetudo
+96a12dcd90547466c2fda2a69288bd0f0ea00142,Hypfer,2019-05-14,Added map text drawing script,"['default_map.json,super_hackish_map_text_drawing.js']",{'master'},Valetudo
+df3ed0c459f4361a81f32dd2dfd4a0c92cc27721,Matthias Harrer,2019-05-16,display nogozone as quadrilateral instead of as rectangle,"['locations.js,vacuum-map.js']",{'master'},Valetudo
+901ae066a06eddf5e26700a30b387f7bd66973aa,Daniel Lashua,2019-05-16,"corrected config for new mqtt vacuum componentadded schema: state, removed component",['MqttClient.js'],{'master'},Valetudo
+6ed35ed0a37404437e15a36e2e7e72f4213743e4,Pawel Szafer,2019-05-16,add mop fan speed,['MqttClient.js'],{'master'},Valetudo
+e7a233bdb38407c261376b206a511c0e3b4751ed,Pawel Szafer,2019-05-16,extra state info,['MqttClient.js'],{'master'},Valetudo
+1286d06cc042ef84a82aa446079156b5d359f772,Simon,2019-05-28,Install voice packs through valetudo,"['index.html,Vacuum.js,WebServer.js,package.json']",{'master'},Valetudo
+a9ac38a8343198e8eb2deb704d0a088d3d68bc36,r1sim,2019-05-28,Improved file upload & error handling,"['index.html,WebServer.js']",{'master'},Valetudo
+c00207ad8fe2f5c29090e7bbf6cad6334dca6594,Hypfer,2019-05-28,Downgrade pkg version due to #232,['package.json'],{'master'},Valetudo
+de0a28db98d577746ca7bcc185083035dafbdeb1,Hypfer,2019-05-28,Flipping the coordinates should not change saved zones,['Vacuum.js'],{'master'},Valetudo
+ae6d291cdcd57b4876461a2508286876968476bd,Hypfer,2019-05-28,Code cleanup,['MqttClient.js'],{'master'},Valetudo
+4565a5ec0288cf0bb362f127a96432657b8dfd30,Hypfer,2019-05-31,Minor cleanup,['MqttClient.js'],{'master'},Valetudo
+a21c233ac6f0432e62400266a67b3288165ab6b1,Daniel Lashua,2019-05-31,"Make ""zone cleanup"" more appropriate for HASS.""zone cleanup"" is not recognized by HASS. Changing this to ""cleaning"" causes HASS state to change.",['MqttClient.js'],{'master'},Valetudo
+50ef5bc6bbdb9eb6b0ad6657148011e2b3bf0b6f,Hypfer,2019-05-31,#245 Limit pending websocket responses to one per client,"['MqttClient.js,WebServer.js']",{'master'},Valetudo
+0288179fe13c37825880fd7d24549ee3d71adaff,r1sim,2019-05-31,rename zones and goto locations,['index.html'],{'master'},Valetudo
+6c08f4feb56a9d34ad73247960d72288a03362be,Hypfer,2019-05-31,Added more letters to text drawing utility,"['default_map.json,super_hackish_map_text_drawing.js']",{'master'},Valetudo
+45cf3ce224e88de786d46230793a3bf7d3876a58,Hypfer,2019-05-31,Handle provideMapData option,['MqttClient.js'],{'master'},Valetudo
+6b304f090b555d6a2cb5445e1a275654bf51e406,Hypfer,2019-05-31,Added more detailed non-HA state to mqtt interface,['MqttClient.js'],{'master'},Valetudo
+32ff03f1e4fc926d606522b7848c0cd707cf78f9,Matthias Harrer,2019-06-01,add UI for enabling lab_status and map reset,"['index.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+3ef3bc6fd8a1693f9f2bf3fbda5a053d3e4cd696,Matthias Harrer,2019-06-01,Improve model name S50 -> S5x,['index.html'],{'master'},Valetudo
+7a9cdc42673af0cc6fc8a5cd03e27d651297751c,balu,2019-06-04,adds Ping/Pong to ws connectionsTries to find dead ws connections & terminates themSee https://www.npmjs.com/package/ws#how-to-detect-and-close-broken-connectionsPong messages are automatically sent in response to ping messages as required by the spec,['WebServer.js'],{'master'},Valetudo
+c31a7ea1ecd7cce8169a920938a20a8f5834d6ad,Ondřej Nový,2019-06-06,Fix ReferenceError: err is not defined,['WebServer.js'],{'master'},Valetudo
+1b9880b47c450b92deecdea0fb5e9d648c24c8ac,Ondřej Nový,2019-06-07,Fix wrong id settings-access-control-ssh-keys-input-permanently-disable-button,['index.html'],{'master'},Valetudo
+97edab761173ef9f0fcc53c42a0ba173808fc4cf,Ondřej Nový,2019-06-07,Hide SSH keys settings if it's disabled,['index.html'],{'master'},Valetudo
+83c89ad2e617b41e2d12e6d7048d8329e531379e,Ondřej Nový,2019-06-07,"Don't set password to empty string, keep old oneIf user doesn't provide new password, don't set password to emptystring, but keep old one.",['WebServer.js'],{'master'},Valetudo
+40ac947a25b1362c547324911d701c68a8ea335f,zigster,2019-06-11,#255 fan power mapping and whisper mode   added matching of fan power to value label pairs,['index.html'],{'master'},Valetudo
+fb94b7e747741251dad531ec9e3b0865c003945d,sklerotraficon,2019-06-11,#255 fan power mapping and whisper mode> added Custom Fan Power in percent if preset is matching exactly,['index.html'],{'master'},Valetudo
+b6ff0f26c25b4b26b3e1b27aeb508e37ca052686,Skeletorjus,2019-06-24,"Dockerfile for building ValetudoAs requested is issue #266, here's a simple Dockerfile which will build Valetudo and drop a binary in the current directory by running the following command: docker run --rm -it -v $(pwd):/host valetudo-compiler bash -c ""cp /Valetudo/valetudo /host && chown $(id -u):$(id -g) /host/valetudo""",['Dockerfile'],{'master'},Valetudo
+e91debac633ad59630961e4a0d03534f0f37f249,Ondřej Nový,2019-06-24,"Fix map with HTTP authDustcloud is uploading map using /api/miio/map_upload_handler. When HTTPauth is enabled, dustcloud can't upload that map. This patches disableHTTP auth for requests from localhost.",['WebServer.js'],{'master'},Valetudo
+f0844244540dbe483cb15cfd1e31c483ed6c110e,rand256,2019-06-28,make basic auth dynamically switchable on/off,['WebServer.js'],{'master'},Valetudo
+4194d171b7b79afe4dfd047113ea78287781a555,bruvv,2019-06-28,Made the image much smallerAlso made it much simpelere and do not clutter it.,['Dockerfile'],{'master'},Valetudo
+ba172d24e8985ca747e4009bd6919ee2fbf410c4,bruvv,2019-06-28,chmod it :),['Dockerfile'],{'master'},Valetudo
+abc26d9fbea70293f70423ad4950fbd7cf9bf1cd,bruvv,2019-06-28,speed up the build by using 1 run,['Dockerfile'],{'master'},Valetudo
+0293e3fa7686bcb296fb271e10975e73da08ab1c,balu,2019-06-28,Adds a button to manually trigger a check for the newest valetudo version (on github).See #146,['settings-info.html'],{'master'},Valetudo
+da191f4564bff5eafc0116f774e6e4f0a94257c5,rand256,2019-07-11,make virtual walls and forbidden zones user-configurablea bit stripped version of the same functionality from Valetudo RE mod,"['forbidden-markers-configuration-map.html,spot-configuration-map.html,locations.js,vacuum-map.js,zones-configuration-map.html,zones.html,Vacuum.js,WebServer.js']",{'master'},Valetudo
+df761e043647b48cdea189bcc3665a633af49f5a,Hypfer,2019-07-11,Poll map on save_map,"['settings-persistent-data.html,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+948d6eaeac7184591acb2cf9e766d1e95252041b,manutenfruits,2019-07-14,Make mqttConfig.provideMapdata not always true.,['MqttClient.js'],{'master'},Valetudo
+33601ff403758d33333529c3c9dc0040f763d1c6,rand256,2019-07-14,fix copy-paste issues in forbidden markers,"['locations.js,vacuum-map.js']",{'master'},Valetudo
+ca725ef38540d8d80561692259a9bcd3ae4fbc9d,dependabot[bot],2019-07-14,Bump lodash from 4.17.11 to 4.17.14Bumps [lodash](https://github.com/lodash/lodash) from 4.17.11 to 4.17.14.- [Release notes](https://github.com/lodash/lodash/releases)- [Commits](https://github.com/lodash/lodash/compare/4.17.11...4.17.14)Signed-off-by: dependabot[bot] <support@github.com>,['yarn.lock'],{'master'},Valetudo
+b4ff3563be8e399cfd8ee2a31c855df2a8de74ae,Hypfer,2019-07-14,Bump to Valetudo 0.4.0,['package.json'],{'master'},Valetudo
+a140eeaa3956dec7cf548e3d1938e2ccb43a1e91,Hypfer,2019-07-14,Fix mqttConfig.provideMapData,['MqttClient.js'],{'master'},Valetudo
+28149f098fe13930c48611b74373210719027ba4,Hypfer,2019-07-15,Fix #134 crash on FHEM MQTT Broker,['MqttClient.js'],{'master'},Valetudo
+95f7f6c7ddc952b382d4b7b0c304c43a079b3101,Sören Beye,2019-07-17,Update issue templates,['bug_report.md'],{'master'},Valetudo
+bff1717be4d3d188e27f026c58bd89f274a8f7f2,beeguy1234,2019-07-28,Implement QoS optionUse QoS defined in config.json.  Else keep default zero level.,['MqttClient.js'],{'master'},Valetudo
+3ff20c063d1e8300c2a0399c541d2bee10c35949,beeguy1234,2019-07-28,Implement QoS optionUse QoS defined in config.json. Else keep default zero level.,['MqttClient.js'],{'master'},Valetudo
+22be426ac0f24b61ecbb8a099e5ba075781cfae3,Sören Beye,2019-07-28,Add qos setting to default config,['Configuration.js'],{'master'},Valetudo
+ee509ca982ee6d556ef53471b9f6ceee806976af,Manuel Díez Frutos,2019-08-14,Fixed API URL to a relative path,['settings-timers.html'],{'master'},Valetudo
+15433304f9e499339e2e43ff6759a45f5cf6389c,Sören Beye,2019-09-17,Fix map click handling,['locations.js'],{'master'},Valetudo
+d41b5e733baabdec6dcb3c54b06eb4c27dabdcda,Algram,2019-10-02,feat(docker): switch to yarn and latest node lts,['Dockerfile'],{'master'},Valetudo
+f21d4531b8fe06762d1af6e9fcecc7d1f696d371,Pawel,2019-10-02,"Support for status of zone cleanup (#322)* support for status of zone cleanup* delay turn off zone cleanup after returning to dock* add config to Vacuum.js* remove typo","['home.html,map.html,main.js,MqttClient.js,Valetudo.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+92d7285b2a3bf76096ce86fb5a7f823f133960b8,TheRealMoeder,2019-10-05,"Fix MQTT autoconf features (#336)* Fix MQTT autoconf features* Add fan speed ""whisper"" to MQTT",['MqttClient.js'],{'master'},Valetudo
+b95c25466b7ca1cceb00c875a0b8002f056b3bec,Maxim Lyubimov,2019-10-05,Send MQTT attributes only if they changed,['MqttClient.js'],{'master'},Valetudo
+e5535ef763e3ee2fcc9f341c8039ad01adef67ee,Sören Beye,2019-10-26,"Revert ""Fix MQTT autoconf features (#336)""This reverts commit 92d7285b2a3bf76096ce86fb5a7f823f133960b8.",['MqttClient.js'],{'master'},Valetudo
+5addc40a48377b3223255ab3b054c0a812979487,Christian Chavez,2019-11-05,"refactor: Convert issue template bolds to headersSo as to not break on `**Valetudo version: **` e.g.Also group `Vacuum Model`, `Version`, `Screenshots`, and `User-Agent`under `To reproduce`.",['bug_report.md'],{'master'},Valetudo
+4ba4468f1c80a285e13101806a09f55ca3587d38,Sylvia van Os,2019-11-11,Make action sheets scrollable,"['dark-onsen-css-components.css,onsen-css-components.css']",{'master'},Valetudo
+e6fa41ff78abe768572aabe2f115b55493fa2348,MitschiBoy,2019-11-21,"Ad unique_id for MQTT DiscoverySee https://www.home-assistant.io/docs/mqtt/discovery/ and https://github.com/home-assistant/home-assistant/pull/20503Without unique_id MQTT Discovery isn't working with actual versions of Home Assistant",['MqttClient.js'],{'master'},Valetudo
+0f068cda7efb807f1e033c51a54395ee98e200dc,Matthias Aßhauer,2019-11-21,make action sheets scrollable in minified css,"['dark-onsen-css-components.min.css,onsen-css-components.min.css']",{'master'},Valetudo
+7ff84ece27c2876a19821b088bd10a8b006b38a2,Matthias Aßhauer,2019-11-29,Add a rudimentary dark modeThis dark mode can be toggled from the side bar.,"['dark-valetudo-map.css,valetudo-map.css,index.html,map.html']",{'master'},Valetudo
+cc69e673fedf303cbc5fb87f23577895a879c9ce,Matthias Aßhauer,2019-11-29,Update dark theme to look more like valetudo and less green and orange,"['dark-onsen-css-components.css,dark-onsen-css-components.min.css']",{'master'},Valetudo
+99e8b79d1804e85e795135988aea08633d075f0c,Matthias Aßhauer,2019-11-29,theme: honor 'prefers-color-scheme' media queries,['index.html'],{'master'},Valetudo
+1aece2e7e36d0c1b764fa7a5e2cdc60f83a47167,Matthias Aßhauer,2019-11-29,"theme: persist user choice into local storageThe value from local storage takes precedence over 'prefers-color-scheme'media queries, because it's an explicit choice about valetudo.",['index.html'],{'master'},Valetudo
+fa74db60a52fe6af96090234bc7c95f41c8809d1,bbarbisch,2019-11-29,"adds proper shutdown on SIGTERM and SIGINTShutdown handler on unix signals:- SIGTERM- SIGINTcloses all open sockets, clients and shuts down the webserver","['index.js,MqttClient.js,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+9fc8db27d757b196b3036028468ec5f905d216f8,bbarbisch,2019-11-29,refactors shutdown calls from sync to async,"['index.js,MqttClient.js,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+d751a63e7a8e4733d78dfdbb5ca8d8ca583420f6,Sören Beye,2020-01-17,Create support_request.md,['support_request.md'],{'master'},Valetudo
+7293f3d9135ce4b74c3d2f73ecf194557e034c99,Alexander Knöbel,2020-02-10,"refactor shutdown ""callback hell"" with async/await","['index.js,MqttClient.js,Valetudo.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+04b5f113d81722835db0b9cd4e805be1a0997960,Hagen Fritsch,2020-02-10,Some more fixes and minor restructuring after testing.,"['Valetudo.js,MiioDevice.js,Roborock.js,Viomi.js,Codec.js,Dummycloud.js,MiioSocket.js,RetryWrapper.js,WebServer.js']",{'master'},Valetudo
+f250b241827445a1abbf2719443d8aae7db83f50,Hagen Fritsch,2020-02-10,Move viomi README stuff out of README.md,['viomi_instructions.md'],{'master'},Valetudo
+685b7b328b01b9bd8ca9ec5c85a2d11f6b1a78e9,Hagen Fritsch,2020-02-10,Fix token display. Also show both cloud & local token.,"['settings-token.html,MiioDevice.js,WebServer.js']",{'master'},Valetudo
+5b2039331188a6915ca9e2f65e00385a0d553615,Hagen Fritsch,2020-02-10,Fix inverted map display.,['ViomiMapParser.js'],{'master'},Valetudo
+f033a4c25157b3e67029aa1e75a6477671077180,Hagen Fritsch,2020-02-10,Map Viomi.goTo to point_clean. This allows to perform spot cleaning.,['Viomi.js'],{'master'},Valetudo
+7dd6f2b164f53d0f74b35e94833c23c026439bff,Hagen Fritsch,2020-02-10,"Viomi maps: parse charger, robot and goto locationsAlso fix location in set_pointclean command.","['ViomiMapParser.js,Viomi.js']",{'master'},Valetudo
+e1c6b7eb6df211f3830c3db66d4eefe6fb32560f,Hagen Fritsch,2020-02-10,Viomi: Ask for curpos after connect. Map upload always uses PUT method.,"['MiioDevice.js,Viomi.js']",{'master'},Valetudo
+5c9f37eef081b28e266b8f3f54057129989f6091,Hagen Fritsch,2020-02-10,Viomi: add basic deployment instructions,['viomi_instructions.md'],{'master'},Valetudo
+365ae386b67f7799a4640958020a214edb467ce5,Hagen Fritsch,2020-02-10,Support other paths and make develop/local environment similar to actual robot.,"['Testing.md,HOWTO.md,env.example,run,Configuration.js,Valetudo.js']",{'master'},Valetudo
+296173c42c49aca42c185ab4a7c60d628f697511,Hagen Fritsch,2020-02-10,Allow to STOP / GO_HOME in more states.,['home.html'],{'master'},Valetudo
+2d62ceca2d421aaeb39695e365ae77287960b881,Hagen Fritsch,2020-02-10,Viomi: Fix map history parsing. 2nd param seems to be authoritative.,['ViomiMapParser.js'],{'master'},Valetudo
+f823a6935d41dec978992c9ac199c7528812d968,Hagen Fritsch,2020-02-10,set_charge is a command common to Roborock & Viomi,"['MiioDevice.js,Roborock.js']",{'master'},Valetudo
+205df272f3709506902d49fea2c12dcf14122d76,Alexander Knöbel,2020-02-11,remove unnecessary nested loop,['WebServer.js'],{'master'},Valetudo
+41836dbeb64467e08eb1cba2709c13b7ce4fea81,Hagen Fritsch,2020-02-11,Use explicit names to disambiguate logging messages rather than tokens.,"['Valetudo.js,MiioDevice.js,Dummycloud.js,MiioSocket.js']",{'master'},Valetudo
+98a951d28988c30ac9b49f015ec3d62b87eebd54,Hagen Fritsch,2020-02-11,MiioSocket: Handle ping and pong commands 'correctly'.,['MiioSocket.js'],{'master'},Valetudo
+e94b7912cf39db146c3439daeb28d03c8e7ac5f2,Hagen Fritsch,2020-02-11,Add 'fakerobot.js' a simple robot emulation tool. Usage: node -r esm fakerobot.js,"['fakerobot.js,package.json']",{'master'},Valetudo
+24b874d8c7444884451c9ccceecf138fd034ce7c,Hagen Fritsch,2020-02-11,Fix bug mentioned in #420.,"['MiioDevice.js,Roborock.js']",{'master'},Valetudo
+48b7612ddd38e347fbb96021f98955fe449fc752,Hagen Fritsch,2020-02-12,Rename MiioDevice to MiioVacuum #420,"['Valetudo.js,MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'},Valetudo
+3f59588094e756c09ba740ff9c5d8ead98f1ddc4,Hagen Fritsch,2020-02-12,Fix Roborock map polling logic #420,"['Valetudo.js,MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+37bf22601bd9777e5a9813046316a9ea94b1d2de,Hagen Fritsch,2020-02-12,Use Promises for MiioSockets.,"['MiioVacuum.js,Roborock.js,Viomi.js,MiioSocket.js,RetryWrapper.js']",{'master'},Valetudo
+58d350e9fc845257aec033f8b1c56a5f75d3ff57,Hagen Fritsch,2020-02-12,Fix driveHome (turns out the commands are not equivalent after all). #420,"['MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'},Valetudo
+9c7894aac0fe38fece8a4ac1b41eeec14df0f8ce,Hagen Fritsch,2020-02-12,Introduce Capabilities as concept of Model. Fix persistent_data detection. #420,"['settings-persistent-data.html,Valetudo.js,Model.js,WebServer.js']",{'master'},Valetudo
+94816e83e165e383ee163f69ae177bdb583bda24,Hagen Fritsch,2020-02-12,Only warn on unhandledRejections,['index.js'],{'master'},Valetudo
+7d89bd873ffed5dae97988e8c0870270b80d5391,Hagen Fritsch,2020-02-12,Enable dummycloud connection from fakerobot.js.,"['fakerobot.js,MiioVacuum.js,MiioSocket.js,RetryWrapper.js']",{'master'},Valetudo
+3905920f1a37f2b25e9e0521171cb27c762a334a,Hagen Fritsch,2020-02-12,Reintroduce most of the original map-polling logic. #420,"['MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+74c5cbe74355ab87814f6ba907aa5fb3cf3a07f3,Hagen Fritsch,2020-02-15,Extract the default port DummyCloud listens on into a constant.,"['fakerobot.js,Dummycloud.js,WebServer.js']",{'master'},Valetudo
+c06c06ab05dce15a746dc8aa96c365f23a178cd9,Alexander Knöbel,2020-02-15,"Add logger (#430)* Add logger* Check for invalid log level","['index.js,Configuration.js,Logger.js,MqttClient.js,RRMapParser.js,Valetudo.js,Codec.js,Dummycloud.js,Vacuum.js,WebServer.js']",{'master'},Valetudo
+37affb0d20fd678e0c11453ae7f2e4711dc0347f,Hagen Fritsch,2020-02-15,Add instructions for using fakerobot.js,['Testing.md'],{'master'},Valetudo
+03ccb5bbf297fce561123bc158730e1ade69a40f,Hagen Fritsch,2020-02-15,Convert MiioSocket to ES6,"['Valetudo.js,MiioSocket.js']",{'master'},Valetudo
+60610e534ce5ca11e6568fad0ba3159a3ba8fbe1,Hagen Fritsch,2020-02-15,Prefer sending commands via cloud connection once it's available. #431,['MiioVacuum.js'],{'master'},Valetudo
+8688b85f12ca4bbd5eba8484bbdfbdfa31bdb72d,Hagen Fritsch,2020-02-15,enforce eslint:no-trailing-spaces #427,"['.eslintrc.json,path-drawer.js,tracked-canvas.js,fakerobot.js,index.js,Roborock.js,Dummycloud.js,RetryWrapper.js,WebServer.js']",{'master'},Valetudo
+f8c6e98dae96cf87b0f9657560645fae2a94b828,Alexander Knöbel,2020-02-15,Fix LogLevel handling (#432),"['Logger.js,Valetudo.js']",{'master'},Valetudo
+cc4224250e36af506f7a2827792a5311c96c6e79,Alexander Knöbel,2020-02-15,refactor to ES6 classes (#433),"['Configuration.js,MqttClient.js,RRMapParser.js,SSHManager.js,Tools.js,default_settings.json']",{'master'},Valetudo
+7a47cb84d7ec907fd4999e8738b70cd0caaffb79,Hagen Fritsch,2020-02-15,Don't warn for LogLevel['info'],['Logger.js'],{'master'},Valetudo
+f885fc35b5a732a7135ce482eed43f3b050fa56f,Hagen Fritsch,2020-02-15,Adopt Logger for classes in viomi branch.,"['MiioVacuum.js,MiioSocket.js,RetryWrapper.js']",{'master'},Valetudo
+8b8ef18e14b89f4e5b3856836972c503ecef1635,Hagen Fritsch,2020-02-16,Update viomi installation instructions.,"['valetudo,S97valetudo,package.json,viomi_instructions.md']",{'master'},Valetudo
+bb68247e6c86425381b8ebb82acebcbe7b1ef5eb,Hagen Fritsch,2020-02-16,Add getCurrentStatus to the MiioVacuum interface and convert to Promise.,"['MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'},Valetudo
+c8832526d8531b5098eb427b2b615a6377e9bbd1,Hagen Fritsch,2020-02-16,Viomi: add initial support for some error states. poll map regularly.,"['Viomi.js,MiioSocket.js']",{'master'},Valetudo
+e0681fa103467aa925a38c06530aa75a2f583710,Hagen Fritsch,2020-02-16,Move Dummycloud construction from Valetudo to MiioVacuum. #420,"['Valetudo.js,MiioVacuum.js,Dummycloud.js']",{'master'},Valetudo
+dbf5bd4356a338369a6dee575c35cfbcbd31e3c5,Hagen Fritsch,2020-02-16,Add device.{token|conf}.example files missed from a previous commit.,"['device.conf.example,device.token.example']",{'master'},Valetudo
+90fcd656e4eaa8d927969b00d5b42543aff01b75,Hagen Fritsch,2020-02-16,Move createLocalSocket() from Valetudo to MiioVacuum.,"['Valetudo.js,MiioVacuum.js']",{'master'},Valetudo
+652233099a90378b50599f3637cafa6bec7b0d43,Hagen Fritsch,2020-02-16,MiioSocket: keep the remote stamp. #420,"['MiioSocket.js,Stamp.js']",{'master'},Valetudo
+6ba43529016d8f8c0c46bcc31210df3572f114c7,Hagen Fritsch,2020-02-16,Exceptions within promises are logged and don't exit the tool. Manually exit where desired.,['RetryWrapper.js'],{'master'},Valetudo
+239b0421969d79dbccf3a7c0f70b465fa5c6dc58,Hypfer,2020-02-17,Convert all usages of MiioVacuum.getCurrentStatus to promise,"['MqttClient.js,WebServer.js']",{'master'},Valetudo
+e8dec55975dd7b27158874be08e37ebaff84265d,Hypfer,2020-02-17,Disable timesync on local socket to fix local communication,"['MiioVacuum.js,Dummycloud.js,MiioSocket.js']",{'master'},Valetudo
+9e907e59184e68798fbc331ed8fdd1bbfb3da00e,Hypfer,2020-02-17,Fix #436,['MiioVacuum.js'],{'master'},Valetudo
+9a496f4b76e383912dd26f4117a197f64092bb30,Hypfer,2020-02-17,Fixed roborock live map,"['MiioVacuum.js,Roborock.js,Dummycloud.js,MiioSocket.js']",{'master'},Valetudo
+0662aad90fbf06c7eb4ae057d9c804c2fbf6b7e6,Hypfer,2020-02-17,Lol linter,['Roborock.js'],{'master'},Valetudo
+228e2767f2eb9b63581133b089e76a0ba9561f60,Hypfer,2020-02-17,Forcefully quit valetudo if graceful shutdown fails,['Valetudo.js'],{'master'},Valetudo
+87caf23ba2c790cd5daf9a13793e2873b06880a0,Hypfer,2020-02-17,Use logger instead of console.log,"['Valetudo.js,WebServer.js']",{'master'},Valetudo
+5d690d648097f9de08cf8227e5885da021441c2d,Hypfer,2020-02-17,Properly handle requests with error response,['MiioSocket.js'],{'master'},Valetudo
+d8f4a260c350453b1ca55ff40887b6ddd4ffcc4a,Hypfer,2020-02-17,Fixed persistent data settings for roborock vacuums,"['settings-persistent-data.html,Roborock.js']",{'master'},Valetudo
+ea4c339da633e26408c95bda34eda2977ab78897,Hypfer,2020-02-17,Properly handle cloud keep-alive packets,['MiioSocket.js'],{'master'},Valetudo
+ec2f7db6785edb58dfb2de189c4a6c82c416095c,Hypfer,2020-02-17,Properly handle props message,['Roborock.js'],{'master'},Valetudo
+d3237ee8298e2f01dbfe011451d7642160d024e4,Hypfer,2020-02-17,Add some startup info messages for easier debugging,['Valetudo.js'],{'master'},Valetudo
+b6c67fcb67358fb0bb7ce698d4ca4fd9176ec448,Hypfer,2020-02-19,Reworked Rockrobo map parser,['RRMapParser.js'],{'master'},Valetudo
+a1401e8a590e7bb377fc5521bea860509325ad06,Alexander Knöbel,2020-02-19,"[viomi branch] refactor to ES6 classes (#437)* refactor to ES6 classes* fix jsdoc* add comment for lab_status","['Configuration.js,MqttClient.js,MiioVacuum.js,Roborock.js,Viomi.js,Model.js,Status.js,WebServer.js']",{'master'},Valetudo
+ea084ce5968ea387bbff1e5b60b11309d065d01e,Hagen Fritsch,2020-02-22,Fix Status.status type to string again. #437,"['Status.js,WebServer.js']",{'master'},Valetudo
+96d8421f4c6fa403c468192b6e009da7854f07a3,Hagen Fritsch,2020-02-22,index.html: fix js errors when map page isn't loaded yet,['index.html'],{'master'},Valetudo
+c58219d0eeafe80129554c8808f32cae2424e45a,Hagen Fritsch,2020-02-22,Make sure the onShow() function is also called when the element was shown already.,['home.js'],{'master'},Valetudo
+fd23959422bfe92b6c4e520c0cd438acaa062cad,Hagen Fritsch,2020-02-22,Fix type errors in settings-persistent-data.js,"['settings-persistent-data.js,global.d.ts']",{'master'},Valetudo
+c41d220aa68ac658c3bd42374e5d0d98b3c48aec,Hagen Fritsch,2020-02-22,Add jsconfig.json,['jsconfig.json'],{'master'},Valetudo
+d90775c692e4a651829c8d5557b15f958389337d,Sören Beye,2020-02-23,Agressively re-handshake. Trying to fix #438. (#443)Co-authored-by: Hagen Fritsch <rumpeltux-github@irgendwo.org>,"['MiioSocket.js,RetryWrapper.js']",{'master'},Valetudo
+a20d5d0ba1427d1c3e7f3b7b4841286e51c07f1f,Alexander Knöbel,2020-02-25,Fix typechecking errors (#445),"['jsconfig.json,Configuration.js,MqttClient.js,Valetudo.js,Roborock.js,WebServer.js']",{'master'},Valetudo
+9714fa261bb8cd33006ee05b198449b39556890a,Hagen Fritsch,2020-02-26,Make 'timeout' proper Error instances.,"['MiioSocket.js,RetryWrapper.js']",{'master'},Valetudo
+9f523eac1866d9664eb02eeaa31c64a389b6d87f,Hagen Fritsch,2020-02-26,Reintroduce extended timeout when polling for a new map.,"['MiioVacuum.js,Viomi.js']",{'master'},Valetudo
+d103b0350e5ed49663af08097d38b22264ae6630,Alexander Knöbel,2020-03-01,promisify sendLocal,"['MiioVacuum.js,Roborock.js,RetryWrapper.js']",{'master'},Valetudo
+34221f32a78d2e48f1302912b11ebdff68f24c34,Alexander Knöbel,2020-03-07,fix sendLocal in viomi class,['Viomi.js'],{'master'},Valetudo
+73ce1a13e6db78f4eb85adfd03907d10f0fc5602,Alexander Knöbel,2020-03-07,promisify SSHManager,"['SSHManager.js,WebServer.js']",{'master'},Valetudo
+64a4ca30eb1ab609a4cf890f5d4b2d6a2ba9de09,Alexander Knöbel,2020-03-07,fix JSDoc,['MiioSocket.js'],{'master'},Valetudo
+4f8409c43f7778e7b7019fd6387e4eacac875145,Alexander Knöbel,2020-03-07,remove callback from pollStatusLoop,"['MiioVacuum.js,Roborock.js,Viomi.js']",{'master'},Valetudo
+8dd36bd5bcd8968f9cc9ba2c8728109b9def6cd8,Alexander Knöbel,2020-03-07,promisify preprocessMap,"['MiioVacuum.js,Roborock.js,Viomi.js,WebServer.js']",{'master'},Valetudo
+6de5b853512d19cb346c3c9b5a79c21ed8657751,Alexander Knöbel,2020-03-07,promisify startCleaning,"['MqttClient.js,Roborock.js,WebServer.js']",{'master'},Valetudo
+36c404cc8b7cf81971fdcbb909bee9fa236328f0,Alexander Knöbel,2020-03-07,refactor with async/await,"['MqttClient.js,Roborock.js,Viomi.js,WebServer.js']",{'master'},Valetudo
+670f2d4384d58db53fb45633f58b6b66b5ac6c07,Alexander Knöbel,2020-03-07,simplyfy zlib callback handling,"['Roborock.js,Viomi.js']",{'master'},Valetudo
+cfd82f8daa59e4794e76bf1e5e04b59f3c00636e,Hagen Fritsch,2020-03-08,Actually poll status in pollStatusLoop (broken by 4f8409c),['MiioVacuum.js'],{'master'},Valetudo
+45e06112b657075407cc5d3ed5bdb6dc5927a787,Hagen Fritsch,2020-03-11,Fix Viomi map parsing.,['ViomiMapParser.js'],{'master'},Valetudo
+2148d62c1de9fe68e65128a8989381839a913dcc,Hagen Fritsch,2020-03-11,Viomi: default language to english (boot default is chinese),['Viomi.js'],{'master'},Valetudo
+64cde0fe76e9e10391fbbe6a8f3217b526112c7f,Hagen Fritsch,2020-03-11,Add more error descriptions and limit debug logging to less spammymessages.,"['ViomiMapParser.js,Viomi.js,MiioSocket.js']",{'master'},Valetudo
+645398f8274a7f8f81de3c401721a4f576fb1c84,Hagen Fritsch,2020-03-11,Fix error descriptions.,['Viomi.js'],{'master'},Valetudo
+3f20ba2caba0f4f6f4ea29d764fd3c94eab7723f,Hagen Fritsch,2020-03-11,Fix room parsing for multimaps (tested with viomi firmware version 0046).,['ViomiMapParser.js'],{'master'},Valetudo
+4665e03f1989aa7c3995ddf8a771432fc95c7c29,Hagen Fritsch,2020-03-11,Save maps that failed to parse in /tmp/ and updateviomi_instructions.md.,"['Viomi.js,WebServer.js,viomi_instructions.md']",{'master'},Valetudo
+ea9cdf41d754bb740a73668d9978f75d11889598,Hagen Fritsch,2020-03-11,Fixes per code-review suggestions.,"['ViomiMapParser.js,Viomi.js,MiioSocket.js']",{'master'},Valetudo
+bcf44ccbdd653bc6e5b1b52ec1346169c0bcae08,Hagen Fritsch,2020-03-15,Fix handshake logic,['RetryWrapper.js'],{'master'},Valetudo
+5dc6e438afc1361b1955230a854a8c677da01e45,Hagen Fritsch,2020-03-15,Fix packet header (broken in previous commit).,['RetryWrapper.js'],{'master'},Valetudo
+7467ed8498cb6d7e351474afe4eb5f2b7de72368,Hagen Fritsch,2020-03-21,Viomi: support zone cleaning for manual specified zones,"['ViomiMapParser.js,Viomi.js']",{'master'},Valetudo
+125386f4b9963204ae623279a96e2cb6f6d4a213,Hagen Fritsch,2020-03-21,Fix zones: save new zones,['WebServer.js'],{'master'},Valetudo
+ac9d49b88867c083814f2ca418d49e7481df2d82,Hagen Fritsch,2020-03-21,Fix consecutive zone editing.,"['zones-configuration-map.html,zones-configuration-map.js']",{'master'},Valetudo
+8acda9aedf0643a325155a8bf32ca24e40b261d5,Hagen Fritsch,2020-03-21,Fix Array.concat in startCleaningZonesById,['Roborock.js'],{'master'},Valetudo
+d866da1f9340cca60a2c392a5a9625f8c4d2d15a,Hagen Fritsch,2020-03-21,MQTT interface can still use zone names.,['MqttClient.js'],{'master'},Valetudo
+da559b4c07cbd2df578d2a9c5b1e7f139c987ae2,Hagen Fritsch,2020-03-21,Move adoptLegacyAreas into a separate function.,['Configuration.js'],{'master'},Valetudo
+009efe474fe3f3f044d077f395f1d7355922e2a4,Alexander Knöbel,2020-03-21,add type checking,"['nodejs.yml,package.json']",{'master'},Valetudo
+deb8bd087f3d085eca4433e340e2cf7c6dbcedd4,Alexander Knöbel,2020-03-21,replace prettycron with cronstruecause there are no valid type definitions for prettycron,"['Roborock.js,package.json,yarn.lock']",{'master'},Valetudo
+330f4e30403f53b8c579dddffc43fa7c6f76f72f,Alexander Knöbel,2020-03-21,removed nonexistent parameter,['RetryWrapper.js'],{'master'},Valetudo
+d563d2ccd43d50a8c19aa72c1ebd46381a9644c7,Alexander Knöbel,2020-03-21,fix jsdoc type,['MiioSocket.js'],{'master'},Valetudo
+ee47913df6b8a043c0840235af25748c1670cc4e,Alexander Knöbel,2020-03-21,use abstract MiioVacuum outside of device implementations,"['MqttClient.js,MiioVacuum.js,NotImplementedError.js,WebServer.js']",{'master'},Valetudo
+7dfcb43a7858f91edbd62a5bf70ef7f4db39e2c2,Alexander Knöbel,2020-03-21,remove prettycron from build script,['package.json'],{'master'},Valetudo
+6d3497fd8d99aa1288c86e3bfb7fe678e8285c9b,Alexander Knöbel,2020-03-21,fix startCleaningZonesById interface,['MiioVacuum.js'],{'master'},Valetudo
+ee97c3067de4f2a13984c43d766dfbae6080f88c,Hagen Fritsch,2020-03-21,Add typescript to dev dependencies (required for `tsc` command),['package.json'],{'master'},Valetudo
+3405391e15ef27b1ee40b9c1d0db0e54b1f19123,Hagen Fritsch,2020-03-21,Remove unncessary dependencies.,['package.json'],{'master'},Valetudo
+c769007d86d7469d57c8868c440438c26efe31b5,Hagen Fritsch,2020-03-21,Remove rollup dev deps.,['package.json'],{'master'},Valetudo
+9238fe709c0da13d805ce3028cc4ad4f3d6a9d49,Hagen Fritsch,2020-03-22,Fix marker configuration js loading (fixes #461),"['forbidden-markers-configuration-map.html,forbidden-markers-configuration-map.js']",{'master'},Valetudo
+4534a7874a6b6c59be499a25e193374f97a41f12,Hagen Fritsch,2020-03-29,Only debug-log trace messages.,['Logger.js'],{'master'},Valetudo
+d9ba2c59114df1377506f23ab89c522acb572f8b,Hagen Fritsch,2020-03-29,Consolidate header production into a single file.,"['Codec.js,HandshakePacket.js,MiioHeader.js,MiioSocket.js,RetryWrapper.js,TimeSyncPacket.js']",{'master'},Valetudo
+38bd6374f987412b7202b5d7714ee6ef665c89c4,Hagen Fritsch,2020-03-29,Enable 'Pause' button when in State.CLEANING,['home.js'],{'master'},Valetudo
+037de58e18f624e7f40b593de33f3d9098c6261f,Hagen Fritsch,2020-03-29,Viomi: implement pause & continue controls.,"['Viomi.js,Status.js']",{'master'},Valetudo
+480be73da57591dc0c2619ef62240c56ae11df30,Hagen Fritsch,2020-03-29,"Update viomi_instructions, now that more functionality is working.",['viomi_instructions.md'],{'master'},Valetudo
+19ec1b334a99169835f41c3e92483091edc340d7,Alexander Knöbel,2020-03-29,move web api routes to api router,"['ApiRouter.js,WebServer.js']",{'master'},Valetudo
+8480ac4c5c5c1f109b86069762f8d928a7acf914,Alexander Knöbel,2020-03-29,refactor WebServer to class,['WebServer.js'],{'master'},Valetudo
+70841030895b57df194b9b9d43999c67dec819f8,Alexander Knöbel,2020-03-29,extract initWebSocketServer,['WebServer.js'],{'master'},Valetudo
+3eef1a5057068dbe9cd830b4dd7b61d8d0f025b7,Alexander Knöbel,2020-03-29,extract createAuthMiddleware,['WebServer.js'],{'master'},Valetudo
+09a5df042a00491ea35b33074e9623d34face9d5,Alexander Knöbel,2020-03-29,move routes to device router,"['DeviceRouter.js,WebServer.js']",{'master'},Valetudo
+09b23cd760b5406b3deb69e8284ba0ae2925f591,Alexander Knöbel,2020-03-29,move upload handling completely to ApiRouter,"['ApiRouter.js,DeviceRouter.js,WebServer.js']",{'master'},Valetudo
+732ebc3e6a3b2d1eed6d588a0f1ff1f3b144bbaa,Alexander Knöbel,2020-04-05,jsdoc fixes,"['Configuration.js,MqttClient.js,RRMapParser.js,MiioHeader.js,MiioSocket.js,Model.js,RetryWrapper.js']",{'master'},Valetudo
+f0294ea0ad005fc8b184562d2f8624db83d28b9a,Alexander Knöbel,2020-04-05,refactor to classes,"['MapDTO.js,Codec.js,Dummycloud.js,Stamp.js,Status.js']",{'master'},Valetudo
+30c3dafab3229e37640af68ca96550737252e797,Alexander Knöbel,2020-04-05,refactor to class,['Valetudo.js'],{'master'},Valetudo
+4a1b1364d23f1ef79f273ebff16d049bdeee6253,Alexander Knöbel,2020-04-05,api clean up,"['index.js,settings-info.js,MqttClient.js,MiioVacuum.js,Roborock.js,ApiRouter.js,WebServer.js']",{'master'},Valetudo
+9c9b0d135541d95cee75ec497b32715e51a58f00,Alexander Knöbel,2020-04-05,improve jsdoc,"['MiioVacuum.js,ApiRouter.js,DeviceRouter.js']",{'master'},Valetudo
+2b98874ece33b679062b8081dc1c85c0b43fce44,Alexander Knöbel,2020-04-05,adjust implementation to changed interface,"['Roborock.js,Viomi.js']",{'master'},Valetudo
+cc0ce41b8f9b431b9b81f2ae796ef0ed2b92567b,Alexander Knöbel,2020-04-10,fix websocket heartbeat,['WebServer.js'],{'master'},Valetudo
+e338cf551d2751e3aa931a87a39cbdd2da832e73,Alexander Knöbel,2020-04-10,add mocha test framework and should assertion library,"['.eslintrc.json,nodejs.yml,package.json,yarn.lock']",{'master'},Valetudo
+bd04b99364ca81e30cc5729d3b51ba6117126be5,Alexander Knöbel,2020-04-10,add test for RRMapParser,"['FW1886.bin,FW1886.json,RRMapParser_spec.js']",{'master'},Valetudo
+23929468c8eec04f08d5f4b8093a2d39eea4ea94,Alexander Knöbel,2020-04-10,pretty-print expected map,['FW1886.json'],{'master'},Valetudo
+3ed96e06d7a895caf0e216188136364bfa417dcb,Alexander Knöbel,2020-04-10,fix manual control state,['manualcontrol.js'],{'master'},Valetudo
+8172570d8b5f90bab3e38ceb988b90dcea686a82,Hagen Fritsch,2020-04-10,Viomi: automatically select mopping mode based on installed box & mop.,"['Viomi.js,Status.js']",{'master'},Valetudo
+d48962be3243bb53daf5c50f81cfab44b26a71ae,Hypfer,2020-04-12,Added device information to HA MQTT Autodiscovery,"['MqttClient.js,Valetudo.js,Model.js']",{'master'},Valetudo
+02ec723d7acd7ecd2b134d2ca18b46c96a123522,Alexander Knöbel,2020-04-12,rename test to better match data,"['FW1886_without_extra_data.bin,FW1886_without_extra_data.json,RRMapParser_spec.js']",{'master'},Valetudo
+298a266fc552cf4bda026935780a797100f1b93e,Alexander Knöbel,2020-04-12,fix parsing no_go_areas,"['RRMapParser.js,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.bin,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,RRMapParser_spec.js']",{'master'},Valetudo
+093d58010c17bef1c5ff5e9932aa9dace69a687e,Alexander Knöbel,2020-04-12,add test for goto_target,"['FW1886_with_goto_target.bin,FW1886_with_goto_target.json,RRMapParser_spec.js']",{'master'},Valetudo
+5d3ab1c9803d1deb956adf9026983993d9c3613b,Alexander Knöbel,2020-04-12,add support for firmware 2008 maps,"['RRMapParser.js,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.bin,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,RRMapParser_spec.js']",{'master'},Valetudo
+e444a6021383e083c30aec9fd01be140d9d794fe,Hypfer,2020-04-12,Use views instead of offsets,"['RRMapParser.js,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,FW1886_with_goto_target.json,FW1886_without_extra_data.json,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json']",{'master'},Valetudo
+f8d320c149db8b81ccf53cca07b432fca4fe7e02,Hypfer,2020-04-12,Add support for segment block type 11,['RRMapParser.js'],{'master'},Valetudo
+569067864e5a7323e4d5cf73bb40afe17a36aa42,Hagen Fritsch,2020-04-13,Convert ViomiMapParser to a ES6-class. #426,['ViomiMapParser.js'],{'master'},Valetudo
+c817a762ad7f074f7a762500f24274fee7aed603,Alexander Knöbel,2020-04-15,move fan speed presets to vacuum implementationand support for new firmware,"['home.js,MqttClient.js,Valetudo.js,MiioVacuum.js,Roborock.js,ApiRouter.js']",{'master'},Valetudo
+96b2c9ab95e9025c53ca4c8e02fa1a2dfade2c41,Alexander Knöbel,2020-04-15,use quotes to access fanspeeds,['Roborock.js'],{'master'},Valetudo
+ecd052f441793059cf91023a7cc7cd8d28758aa8,Alexander Knöbel,2020-04-15,define fan speed constants,"['MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+4c022735f45ad94889af37e9000cf1b4b7518644,Hypfer,2020-04-16,Strict comparison for provideMapData option,['MqttClient.js'],{'master'},Valetudo
+edd5c575cdc18f305f753b190974e8a40e9e5630,Alexander Knöbel,2020-04-19,fix addTimer for firmware 2008,['Roborock.js'],{'master'},Valetudo
+1fffc915f5c5d66fbd3711f725e4d090711d825f,Alexander Knöbel,2020-04-19,add comments and line wraps,['Roborock.js'],{'master'},Valetudo
+04e1720f3c5e4d1061c61781451d9dcd0bfd6fd3,Alexander Knöbel,2020-04-19,fix maps with segments,"['RRMapParser.js,FW2008_with_segments.bin,FW2008_with_segments.json,RRMapParser_spec.js']",{'master'},Valetudo
+277061d5a99d5316204b2bc8007c99b6e9c11d75,Alexander Knöbel,2020-04-19,Fix consecutive spot editing,"['spot-configuration-map.html,spot-configuration-map.js']",{'master'},Valetudo
+3743a3d1e9cc0b3ed4e35cae605c37f5464179c4,Alexander Knöbel,2020-04-19,Fix consecutive persistant data editing,['settings-persistent-data.js'],{'master'},Valetudo
+0180208a7cb14207a223533d71cfa8d0e8174f54,Hypfer,2020-04-25,Imported wiki to docs folder,"['faq.md,home-assistant-integration.md,important-files-and-folders.md,index.md,installation-instructions.md,new-vacuum-interface.md,troubleshooting.md']",{'master'},Valetudo
+abf1c879c0efd9b3864973cc93c8ba3803334367,Sören Beye,2020-04-25,Set theme jekyll-theme-minimal,['_config.yml'],{'master'},Valetudo
+160b1e5c8893ad8e63477b5abf745e2800d1ea25,Hypfer,2020-04-25,Updated installation instructions for latest firmwares,"['installation-instructions.md,roborock.md']",{'master'},Valetudo
+d81041ec15dba6699bab1930aa3baa0f86b33283,Hypfer,2020-04-25,How does github pages work,['index.md'],{'master'},Valetudo
+abcf1a5351360bc54e572b0cf7f83a44cc060696,Andrey Sobkanyuk,2020-04-26,Remove unnecessary note,['roborock.md'],{'master'},Valetudo
+78b483893b7152bc15c3edd1abcd2a48b0580033,Alexander Knöbel,2020-04-26,move _config to docs,['_config.yml'],{'master'},Valetudo
+a5c5206392aef8191b5626589b274ca255dfff6a,Alexander Knöbel,2020-04-26,add default layout,['default.html'],{'master'},Valetudo
+a0aadae9e2a74d38ea9d5cab1123fdaaa8367441,Alexander Knöbel,2020-04-26,add navigation,"['_config.yml,default.html,faq.md,home-assistant-integration.md,important-files-and-folders.md,installation-instructions.md,roborock.md,troubleshooting.md,index.md']",{'master'},Valetudo
+3a2fb5634bf5b264c70a413e6fb589c5c8b4532f,Alexander Knöbel,2020-04-26,update links,['index.md'],{'master'},Valetudo
+dd7f3188f6a1d5190255bfc9b115dcc3c112d259,Alexander Knöbel,2020-04-26,add subfolders,"['installation-instructions.md,roborock.md,home-assistant-integration.md,index.md']",{'master'},Valetudo
+cef5ee8f5b08c746abee762823cae9b40da73ec7,Hypfer,2020-04-29,Replaced donate link with something better,"['donate.html,index.html']",{'master'},Valetudo
+1e3ba04ff61e086712c57e1597969aadf61b02ac,Hypfer,2020-04-29,Moved viomi instructions to docs and added home assistant device screenshot,"['viomi.md,home-assistant-integration.md,valetudo_device_homeassistant.png']",{'master'},Valetudo
+1bf2b6e60bfafe0a189a5e947c120fb4959b4ba3,Hypfer,2020-04-29,Release 0.5.0,"['bug_report.md,Dockerfile,Makefile,package.json']",{'master'},Valetudo
+691c00cb67b6651430cdfde67063c00a46e2dbfc,Sylvia van Os,2020-04-29,Slightly clearer Home Assistant instructions,['home-assistant-integration.md'],{'master'},Valetudo
+e566d3df6d3c1a122bf6c621eb05002ee4709bd9,Sören Beye,2020-04-29,Add instructions for newer firmwares,['home-assistant-integration.md'],{'master'},Valetudo
+e5b4959fda499153b01007a0234b27b7b2716c0c,Sylvia van Os,2020-04-29,Fix example config,['home-assistant-integration.md'],{'master'},Valetudo
+6b6a54a48b860648b654221b1d94c5d11f7d972e,Hypfer,2020-04-30,Fix Gen1 Roborock Device Name #498,['Model.js'],{'master'},Valetudo
+49872a9e16e1b472529aaf549c88f11f53ba4abf,Hypfer,2020-04-30,Fixed guide since latest firmwares do not support ed25519 keys,['roborock.md'],{'master'},Valetudo
+8dea867733657946bf6dc9b641bf2e43ffe79c03,Hypfer,2020-05-01,Use os.tmpdir() for soundpack upload location to fix #494,['ApiRouter.js'],{'master'},Valetudo
+59acb48babd555abd399e2fe6ac7ffe156714ffa,Hypfer,2020-05-01,Remove line-ending rule from eslintrc due to issues with developing on windows,['.eslintrc.json'],{'master'},Valetudo
+e3ce09ce4f7479c1a21eec9e894c03be13005da7,Sylvia van Os,2020-05-01,Fix device.token location,['HOWTO.md'],{'master'},Valetudo
+dd9876b82b1b824784165dbf286ea2edc8f4c738,Hypfer,2020-05-01,Removed Basic Auth user/pass length limitations according to RFC2617 to fix #435,['settings-access-control.html'],{'master'},Valetudo
+f6d423a1692b02fac724042606545f72635dd750,Sören Beye,2020-05-02,Update bug_report.md,['bug_report.md'],{'master'},Valetudo
+3ca66202c2bc859c015d2f0f84bb3340e4eb06fe,Alexander Knöbel,2020-05-02,fix: gen1 fanspeeds,['Roborock.js'],{'master'},Valetudo
+60c224dc22a4075ba2528f9523c8b50ff09ba4b1,Sylvia van Os,2020-05-03,Support changing MQTT settings in web UI (#496)Support changing MQTT settings in web UI,"['settings-mqtt.html,settings-mqtt.js,settings.html,ApiRouter.js']",{'master'},Valetudo
+d7ed4fb6783ff70cc7a4e29372ea63149cdc3658,Sören Beye,2020-05-03,Seperated Roborock.js into two different classes for Gen1 and Gen2 (#503)Seperated Roborock.js into two different classes for Gen1 and Gen2,"['Valetudo.js,Roborock.js,RoborockS5.js,RoborockV1.js,Model.js,ApiRouter.js']",{'master'},Valetudo
+4c5777233b722af0ac99b7160e91dbfdb9a4d3cf,Alexander Knöbel,2020-05-04,refactor(mqtt): loadConfig,['MqttClient.js'],{'master'},Valetudo
+c6d2bb9d222e366c7e1fc6e070c39c8704a0a474,Alexander Knöbel,2020-05-04,refactor(mqtt): updateAttributesTopic,['MqttClient.js'],{'master'},Valetudo
+91d241a4a3a8c78083989acd726f70ac1b97bd10,Alexander Knöbel,2020-05-04,refactor(vacuum): getCleanRecord,"['settings-cleaning-history.js,MqttClient.js,MiioVacuum.js,Roborock.js,ApiRouter.js']",{'master'},Valetudo
+c151007b7941c8d3ec4c81cfa5fb47e4129f9cab,Alexander Knöbel,2020-05-04,refactor: encapsulate events,"['Events.js,MqttClient.js,Valetudo.js,MiioVacuum.js,Roborock.js,Viomi.js,DeviceRouter.js,WebServer.js']",{'master'},Valetudo
+8c3866ec3876a7d40ecfe45a764f9194da3a7f1e,Alexander Knöbel,2020-05-04,refactor(mqtt): add more error handling,['MqttClient.js'],{'master'},Valetudo
+970bf2008524e7c948f0dee2828e4e0e331679cb,Alexander Knöbel,2020-05-04,feat(mqtt): restart mqtt client on changed config,"['settings-mqtt.js,Events.js,MqttClient.js,Valetudo.js,ApiRouter.js']",{'master'},Valetudo
+29aad862fc5438c659b4b97d149d3e1248cdaf47,Alexander Knöbel,2020-05-04,docs: Configure MQTT via web interface,"['home-assistant-integration.md,mqtt.md']",{'master'},Valetudo
+c46e57997d1e79740ed441cf0350cb7419711f46,Hypfer,2020-05-05,Dustbuilder supports 2008+ now,['roborock.md'],{'master'},Valetudo
+48064afc1b6f7d9359567278327e3a09863c5693,Alexander Knöbel,2020-05-05,build: use github action to build release (#506),"['release.yml,.travis.yml']",{'master'},Valetudo
+b2342ebd7429d7bfbddb9312bbd7574e25392a3a,Hypfer,2020-05-05,chore(release):0.5.1,['package.json'],{'master'},Valetudo
+5acdc4466cb3a33087412e03763e185dfc36599c,pidator,2020-05-08,adding kernel route for dustcloud connection,['rc.local'],{'master'},Valetudo
+2f4606a3e4f9c113f67ebd478195f26f68a30d74,Alexander Knöbel,2020-05-08,refactor(vacuum): getCleanSummary,"['settings-cleaning-history.js,settings-consumables.js,MqttClient.js,MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+a5b1ef49e6a223a1dfd4d1823d2c01cfb249f23b,Alexander Knöbel,2020-05-08,refactor(vacuum): getConsumableStatus,"['settings-consumables.js,MqttClient.js,MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+4152bcf3e7fabb62f6dbfae844f396e6ca0efca7,Alexander Knöbel,2020-05-08,refactor(mqtt): round to numbers,['MqttClient.js'],{'master'},Valetudo
+8b736d7b09047a1f6f94ddcff5c234ac32cca32b,Alexander Knöbel,2020-05-08,refactor(vacuum): getZoneCleaningStatus,"['MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+9efa812982199603ea851cb9a651dc0a9f9e1600,Alexander Knöbel,2020-05-08,docs(mqtt): add description for precision,['MqttClient.js'],{'master'},Valetudo
+dff2a78fd10fd9ee25b3285d8104ce5a15220369,Alexander Knöbel,2020-05-09,build: use yarn in CI,"['nodejs.yml,release.yml']",{'master'},Valetudo
+d4845722a37677c9657eacfd77cf8acfd20e6bac,Ivan Bessarabov,2020-05-11,Fixing misspell,['important-files-and-folders.md'],{'master'},Valetudo
+606377569cfa31eb968e69536baa07617332213b,Luke Channings,2020-05-13,feat: Upgrade MQTT to 4.0.0 (#518),"['package.json,yarn.lock']",{'master'},Valetudo
+efb480918dec27ba43b82f9bb6e9476f57c10a39,Ivan Bessarabov,2020-05-15,"Update roborock install instractionsI'm spend a lot of time installing Valetudo on my Xiaomi Gen 1.At last I've managed to flash the new software to the robot,but it turned out that Valetudo is not starting.After some investigation I have found the source of the problem.The script builder_vacuum.sh parameter --valetudo-path=should get not only the binary, but also some filesvaletudo.conf, hosts and rc.localI've asked the author of  builder_vacuum.sh and he said that thebest way is just to pass the whole git repo. But the compiled fileis also needed.By the way, the script builder_vacuum.sh is already updated toshow errors:https://github.com/zvldz/vacuum/commit/b27d536448df4b3cff798a9c6ad36f6eb387ae79I",['roborock.md'],{'master'},Valetudo
+0660785a94304339258c96c648c0be6b7a67a287,Ivan Bessarabov,2020-05-15,Improving doc,['roborock.md'],{'master'},Valetudo
+1ab3247089dac4b3e9e0f03a3574dd5ef5e5be67,Ivan Bessarabov,2020-05-15,Chnaged Valetudo clone folder in the doc,['roborock.md'],{'master'},Valetudo
+dea665ea11f8d0461a28cd4f44b4279a8eba68e9,Hagen Fritsch,2020-05-15,Change deviceId from string to number,"['Valetudo.js,MiioVacuum.js,Codec.js,Dummycloud.js,MiioSocket.js']",{'master'},Valetudo
+0253cc2c92513066db9d8d80635f427f8f2ff255,Hagen Fritsch,2020-05-15,Try harder parsing broken packets.,['Codec.js'],{'master'},Valetudo
+697feebf15475016dd8aceb226345b7c2689a757,Hagen Fritsch,2020-05-15,Implement sendPing command.,"['Codec.js,MiioSocket.js']",{'master'},Valetudo
+f327db1260e3261cb126a8bb8e0ea9af6b8130e5,Hagen Fritsch,2020-05-15,Rename doTimesync to isServerSocket,"['MiioVacuum.js,Dummycloud.js,MiioSocket.js']",{'master'},Valetudo
+c41f6da874373b36bc670507d24ee488e5252ee8,Alexander Knöbel,2020-05-15,feat(mqtt): split broker_url in multiple fieldsand hide password,"['settings-mqtt.html,settings-mqtt.js,mqtt.md,MqttClient.js,default_settings.json,ApiRouter.js']",{'master'},Valetudo
+18261bb1680cc28a80526869c2c2a95974f9072c,Alexander Knöbel,2020-05-15,fix(api): remove passwords from /api/get_config,['ApiRouter.js'],{'master'},Valetudo
+4f7ff43bf3ef211f5bf0ea6f41be369bd454c117,Alexander Knöbel,2020-05-15,style(mqtt): add line wraps,"['MqttClient.js,ApiRouter.js']",{'master'},Valetudo
+536fe00b0e8606b6af08335f2e8c5f83fcd0a946,Hagen Fritsch,2020-05-15,Consistently log diffs on status changes.,"['MiioVacuum.js,Roborock.js,RoborockS5.js,Viomi.js']",{'master'},Valetudo
+68d61f7f956a5e8aea1c26a1e4d89af19c63a3ae,Hagen Fritsch,2020-05-15,Viomi: reset current operation once finished.,['Viomi.js'],{'master'},Valetudo
+f5ae248d46fb1cd59d420fdb05d1f4689f157d04,Hagen Fritsch,2020-05-15,Viomi: set correct mopping operation.,['Viomi.js'],{'master'},Valetudo
+153269538cbaa3828aee737f7264f226144adc4a,Hagen Fritsch,2020-05-15,Viomi: support setting suction through UI.,"['viomi.md,Viomi.js,Status.js']",{'master'},Valetudo
+efa8ec2b4a2c03ad9a165ffc8836a79547517141,Hagen Fritsch,2020-05-15,Viomi: Use Mode enum consistently (follow-up from #514).,['Viomi.js'],{'master'},Valetudo
+3cdfbbb2d61c05bed5b99a0e8de114fd2c9dc3dc,Hypfer,2020-05-16,docs: Updated documentation to fix #505 and #512,"['building-and-modifying-valetudo.md,upgrading.md,index.md']",{'master'},Valetudo
+13cfb33f655163cc673552ec65c88bb3145483c6,Hypfer,2020-05-16,docs: Hopefully fix github pages build,['upgrading.md'],{'master'},Valetudo
+fdbb2b0c2bcafe4583fc33d3c10890030d3bbf27,Hypfer,2020-05-16,docs: fix valetudo logo,['index.md'],{'master'},Valetudo
+67b9885b5a54c58d6e7e2375c0f5b80330db7136,Sören Beye,2020-05-16,Create CNAME,['CNAME'],{'master'},Valetudo
+9ccbed7b46d5e60757918fa26b5c70218609ce18,Hypfer,2020-05-16,docs: use domain + seo plugin,"['_config.yml,default.html']",{'master'},Valetudo
+84e284cd30edea09e6adc4ee2ae75bcc95fec66a,Hypfer,2020-05-16,docs: add release rss feed,['default.html'],{'master'},Valetudo
+cd42a7ed50c5b29d586470461f1c1afd9555419f,Hypfer,2020-05-16,fix(vacuum): missing roborock onStatusChange implementation,"['MiioVacuum.js,Roborock.js']",{'master'},Valetudo
+386c344160e5ad17e1d9503121d3ae87abb302b0,Hypfer,2020-05-19,feat: Parse and render segments,"['map-drawer.js,RRMapParser.js,FW2008_with_segments.json']",{'master'},Valetudo
+964b935a21e5af62e87ec84e32a751e99106b90f,Hypfer,2020-05-19,feat: new robot + charger icon,"['charger.svg,robot.svg,path-drawer.js']",{'master'},Valetudo
+9eaf848ef2f25d17ac8e19702abc24bf6ce19c90,Tomi Blinnikka,2020-05-20,feat(mqtt): added time and area information to mqtt attributes,['MqttClient.js'],{'master'},Valetudo
+bff36388e9aacef0e3669c904a04dbf837710b35,Achilleas Pipinellis,2020-05-20,docs: Updated FAQ regarding persistent maps,['faq.md'],{'master'},Valetudo
+b0f4262a89abf3ecd99717402b2e4a5bcc3c567b,Hypfer,2020-05-21,docs: Added reset fix to firmware building docs for roborock devices,['roborock.md'],{'master'},Valetudo
+dd63d75cf2c15bbc7e65e459da7b865be2a3dffd,Hypfer,2020-05-21,fix(vacuum.roborock): getCurrentStatus should return a promise,['Roborock.js'],{'master'},Valetudo
+0315be46b75bb83727f67bd1f65b5f310a3758c7,Hypfer,2020-05-21,fix(ui): Removed unnecessary console.log,['spot-configuration-map.js'],{'master'},Valetudo
+85d38e1c89db4333588e3b96c76e07df7e2de95b,Hypfer,2020-05-21,fix: Make the linter happy,"['.eslintrc.json,Roborock.js']",{'master'},Valetudo
+b9f42aa3ef6085a1586041229dd402f93c0e147c,Hypfer,2020-05-21,"fix: Today's lesson: ""async"" implicitly wraps a function inside a promise","['.eslintrc.json,MiioVacuum.js,Roborock.js,Viomi.js']",{'master'},Valetudo
+afd7e5a95781c7429d0d5b4ee2240fc3e26dfd89,Hypfer,2020-05-21,feat: log process exit code + debug log process exit stacktrace,['index.js'],{'master'},Valetudo
+3bbdd80f99339d8a8efb638f9ae1326399a0dd00,Hypfer,2020-05-21,feat(vacuum.roborock): added more events without handler,['Roborock.js'],{'master'},Valetudo
+88f1149f7f3fd512e7eca6f919f4b60dac5096aa,Hypfer,2020-05-23,docs: Documented supported roborock devices,"['gen-1-front.jpg,gen-1-top.jpg,gen1-label.jpg,gen2-s55-front.jpg,gen2-s55-label.jpg,supported-roborock-devices.md']",{'master'},Valetudo
+717d7315ffebbe2cccf04351189430d2bc66f1e7,Hypfer,2020-05-23,docs: Added flashing timeout to FAQ,['faq.md'],{'master'},Valetudo
+7a529bbe9a41a058b72693cd7d4f64a09e137e08,Hypfer,2020-05-23,refactor(vacuum): Renamed sendLocal to sendCommand since the name was misleading,"['MiioVacuum.js,Roborock.js,RoborockS5.js,RoborockV1.js,Viomi.js']",{'master'},Valetudo
+2b7696565b02615a2aaeb73b6bf4bd1bca7885d4,Hypfer,2020-05-23,feat(vacuum.roborock): Add backup map restore to vacuum class,"['MiioVacuum.js,RoborockS5.js']",{'master'},Valetudo
+ac757b2ba126509c7c61eb7d3aa987b9ea17f95c,Hypfer,2020-05-24,fix(ui): Removed misleading firmware version which was actually the miio_client version,"['api.service.js,settings-info.html,settings-info.js,ApiRouter.js']",{'master'},Valetudo
+8aa96dd5af795d20063582e1fe7d690825ee2f00,Hypfer,2020-05-24,docs: Added hardware specs + features to roborock docs,['supported-roborock-devices.md'],{'master'},Valetudo
+67878263132d3138b2eeb3820ed9c69349d08aea,Hypfer,2020-05-24,fix(vacuum.roborock): Limit maximum amount of virtual walls according to firmware limits,['RoborockS5.js'],{'master'},Valetudo
+e2a542c95a4abd147b3bb7f1c151247334347d1b,Hypfer,2020-05-24,feat: Always log Stacktrace on unclean exit code,['index.js'],{'master'},Valetudo
+dbc92cc6ced084886a4d11410ca587243a4db646,Hypfer,2020-05-28,docs: Remove footer from theme to fix display on lower-res screens,['default.html'],{'master'},Valetudo
+9ef95ebeebd1d6d45992c0ad47de97d16066861e,Hypfer,2020-05-28,docs: Added and customized css to fix navigation scrolling,['style.css'],{'master'},Valetudo
+8db6ca271aa63eeded999a377bcd02c94fa6dc16,Hypfer,2020-05-28,feat(ui): Display Model information in Info Page,"['api.service.js,settings-info.html,settings-info.js,Valetudo.js,MiioVacuum.js,Model.js,ApiRouter.js']",{'master'},Valetudo
+b196625ac73e4932324b2bd2cf487790d6758711,Markus Pöschl,2020-05-28,feat(mqtt): Add availability as last will,['MqttClient.js'],{'master'},Valetudo
+6724e5556f3350c1c3cc6d4d5f09a9e08e8f2a6b,Hypfer,2020-05-28,fix(ui): Fixed virtual wall placement,"['locations.js,RoborockS5.js']",{'master'},Valetudo
+d90913efc97297c4b491bddba2794a8f7cef9e60,Hypfer,2020-05-28,chore(release):0.5.2,['package.json'],{'master'},Valetudo
+15e0e0290fa5633ac16f10c4c8e27c54fc26e6ff,Hypfer,2020-05-29,docs: Added roborock firmware filenames,['roborock.md'],{'master'},Valetudo
+105557eb3ad39bad0f51a64cf2262f60a88e444f,Hypfer,2020-05-29,refactor(webserver): Reformatted code and removed hackish duplicate upload check,['DeviceRouter.js'],{'master'},Valetudo
+e51ece9f34e5934b12b764a5731d6e8cedbc03e0,Hypfer,2020-05-29,docs: Added dustbin capacity to roborock vacuum knowledge base,['supported-roborock-devices.md'],{'master'},Valetudo
+e2ea1ce212c4f85bba492dc273c6b7e75f4768b8,Hypfer,2020-05-29,fix(ui): Fix #527 not working close and cancel buttons in timer settings,"['dark-onsen-css-components.css,dark-onsen-css-components.min.css,settings-timers.js']",{'master'},Valetudo
+1a723a469e35e996dcca754301329046c4c5a7cf,Hypfer,2020-06-01,refactor: Changed segment pixel parsing and reformatted client map code,"['locations.js,map-drawer.js,vacuum-map.js,RRMapParser.js']",{'master'},Valetudo
+3b8172ddd9bca19644bfef6156538335ec3b8a69,Hypfer,2020-06-01,chore: Fixed test for new segment structure,['FW2008_with_segments.json'],{'master'},Valetudo
+cca96ac829d100df4bce31352908865605eb74b6,Hypfer,2020-06-03,build: Use a statically-linked stripped nodev14 base binary,"['built-v12.16.1-linux-armv7,built-v14.0.0-linux-armv7,Valetudo.js,package.json']",{'master'},Valetudo
+3f80b30af544d4734859cf57f2b3a156a31706cd,Hypfer,2020-06-03,chore: Updated yarn.lock,['yarn.lock'],{'master'},Valetudo
+706ddda3235b2e2a244d9153e87d568f731578df,Hypfer,2020-06-04,refactor: Use named capture groups for regexes,"['Model.js,ApiRouter.js']",{'master'},Valetudo
+074fe95855e056feaa3814042a3cb6e9a0c1a84d,Hypfer,2020-06-04,build: Upgrade to latest node v14.4.0,"['built-v14.0.0-linux-armv7,built-v14.0.0-linux-armv7_old']",{'master'},Valetudo
+3a5d2df01ed17e7fa915fe164823909b2add5b79,Hypfer,2020-06-04,chore(build): Removed old nodejs versions,"['built-v12.16.1-linux-armv7,built-v14.0.0-linux-armv7_old']",{'master'},Valetudo
+ea6dc9e60ab277ea63765bafe1efe58f89220e1a,Alexander Knöbel,2020-06-04,ci: use node 14,['nodejs.yml'],{'master'},Valetudo
+d96eb15c8f299ff49d98f9d6661c6f44225bc633,Hypfer,2020-06-06,feat: Added debug config option to continuously log memory usage,"['Valetudo.js,default_settings.json']",{'master'},Valetudo
+af696739d3119fbd84b1e9ba20b50b3fedce7a12,Hypfer,2020-06-06,fix(mqtt): Update availability topic on each attribute topic update to fix false offline status,['MqttClient.js'],{'master'},Valetudo
+f417b4de3f27b0664552471c05adb220592f5c51,Hypfer,2020-06-06,feat: Initial support for S6 T6 and S5 Max,"['Valetudo.js,RoborockGen3.js,RoborockS5.js,Model.js']",{'master'},Valetudo
+98eda41e3c9e4112cbe3efc72b0e75b160cdb7de,Hypfer,2020-06-06,refactor(mqtt): Moved mqtt availability publishing to own method,['MqttClient.js'],{'master'},Valetudo
+ffc06d65ba788cfbc3aee33b8e3d9d9e3fe647f9,Hypfer,2020-06-06,fix: Removed useless app_get_locale functionality to fix #532,"['api.service.js,settings-info.html,settings-info.js,MiioVacuum.js,Roborock.js,ApiRouter.js']",{'master'},Valetudo
+32e94168fb3141fb49721be6019e0611690f3292,ne0phyte,2020-06-08,fix(ui): Hide forbidden zones editor menu item on gen 1 (#382),"['zones.html,zones.js']",{'master'},Valetudo
+1a29155094cdd76e02c5cbea28739d4637d90c00,Felix,2020-06-09,feat(ui): Allow select of multiple zones for zone clean (#535),"['home.html,home.js']",{'master'},Valetudo
+e7384917354efa7e1d1b730b746966d4e46d87f2,Hagen Fritsch,2020-06-09,feat: Try to write a backup in case we're overwriting an invalid configuration file. (#537),['Configuration.js'],{'master'},Valetudo
+7585f86e9fb1ec196b4b710454e1414673482081,Hypfer,2020-06-09,fix: Always assume embedded operation unless specified otherwise (#536),"['Model.js,default_settings.json']",{'master'},Valetudo
+b9097a6f128aa947e4bb4a05fb3d79453f0f9e71,Hagen Fritsch,2020-06-09,fix: Simplify embedded logic now that 'auto' is gone. #536,['Model.js'],{'master'},Valetudo
+b76ce144b4a3eb920a1dbab1991c83cf87ee7967,Hypfer,2020-06-10,fix(mqtt): Removed unnecessary availability topic mitigation,['MqttClient.js'],{'master'},Valetudo
+24579f7acd98e276f4a85344919c4e8a8d356381,Hypfer,2020-06-14,feat: Initial Support for Roborock T/S4 and M1S,"['Valetudo.js,Model.js']",{'master'},Valetudo
+f2b6968736b851f0fdc1b999c94ec52c22935401,Hypfer,2020-06-14,chore(release):0.5.3,['package.json'],{'master'},Valetudo
+a025b4724d826f6e5ca08713444bfc572cdfcfd6,David Duarte,2020-06-23,docs: update information about supported roborock devices,['supported-roborock-devices.md'],{'master'},Valetudo
+88de212274872eca0ca97c3b0dfadb70d2a4baa5,Hypfer,2020-06-25,feat: Experimental support(?) for S6 MaxV,"['Valetudo.js,Model.js']",{'master'},Valetudo
+17bb01efe088a494563f6037076ade6e13c8c553,Hagen Fritsch,2020-06-28,"feat(vacuum.viomi): add support for viomi.vacuum.v8 + mop enhancements (#543)* Viomi: more mop-mode selection fixes* Move 'New Status' diff log message from trace to debug verbosity* Viomi: don't reset this.mode from vacuum status (which is unrelated). This requires to handle the case when initial status is default.* Update Viomi installation instructions (fixes: #541)* Viomi: Add a very basic knowledge base article (#538)* Viomi: Only select mop-moves if mopping is enabled.* Viomi: more debug logging for mopping state, fixes for startup mopping state detection.* Add support for viomi.vacuum.v8 per #547 (fixes #548).* Update supported-xiaomi-devices.mdCo-authored-by: Sören Beye <github@hypfer.de>","['viomi.md,supported-xiaomi-devices.md,Valetudo.js,MiioVacuum.js,Viomi.js,Model.js']",{'master'},Valetudo
+33f94ec6614d15876b5e1f77446500001185b317,mqtt-fan,2020-06-30,"feat(mqtt): add support for client certificate (#549)* add support for client certificate* improved support for client certificate* fixed lint issue","['settings-mqtt.html,settings-mqtt.js,mqtt.md,MqttClient.js,default_settings.json']",{'master'},Valetudo
+2450ceb3f5cb2653ee32dd3d5ef0fbf2c7e69645,Hypfer,2020-07-06,feat(roborock): Experimental support for even more roborock vacuums,"['Valetudo.js,Model.js']",{'master'},Valetudo
+243be0c65e76b14d66c2633032869b192c829c05,Hypfer,2020-07-11,docs: Updated documentation on viomi models,"['CRL-200S-viomi-v2-top.jpg,supported-3irobotix-devices.md,supported-roborock-devices.md,supported-xiaomi-devices.md,Valetudo.js,Model.js']",{'master'},Valetudo
+d462f65e8fe57de43daf098f295d987a11990f9d,Aaron Korte,2020-07-17,feat(ui): Use math (four color theorem) to properly color segments,"['map-color-finder.js,map-drawer.js']",{'master'},Valetudo
+e1565d073642c87c084d93c56e031ebbec1160bd,Hypfer,2020-07-17,fix(ui): Default to colorIndex 0 if solver can't find the segment in its graph,['map-color-finder.js'],{'master'},Valetudo
+ffbb8e75ffc4ce06bab6baa6f7328877cf66659b,Hypfer,2020-07-17,fix(vacuum.viomi): Hackishly fixed map parsing for viomi v6 + fan speed settings for all viomi,"['ViomiMapParser.js,MiioVacuum.js,Viomi.js']",{'master'},Valetudo
+fdd80d24c577a66ecb358f838e675126abd0c084,Hypfer,2020-07-17,fix(vacuum.viomi): Hackishly fixed path + angle,['ViomiMapParser.js'],{'master'},Valetudo
+51a3564c8a1321eab400031a219b74df3394f2ae,Sylvia van Os,2020-07-19,docs: Explain that Mi Home really won't work (#564),['faq.md'],{'master'},Valetudo
+38a0af82db66428b8a6e7340dfaac394bbfcb2ac,Hypfer,2020-07-20,fix(mqtt): Check DNS resolution before connecting to mqtt broker to fix #563,"['MqttClient.js,Tools.js']",{'master'},Valetudo
+ac86c84c8fa75408b52067306f7e0c4a201e9725,Hypfer,2020-07-22,fix(entities.map): Fixed MapLayer area calculation,"['ValetudoMap.js,FW1886_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,FW1886_with_goto_target.json,FW1886_without_extra_data.json,FW2008_with_forbidden_zones_and_virtual_walls_and_currently_cleaned_zones.json,FW2008_with_segments.json,FW2020_with_segments.json']",{'master'},Valetudo
+ef4e010c53a289df9e1561ebfff738ae2f9e0962,Sören Beye,2020-07-25,Update bug_report.md,['bug_report.md'],{'master'},Valetudo
+f1879064b15ea978df32a12f8a23b346ba2e3e39,Hypfer,2020-07-25,fix(vacuum.roborock): Fix map parsing failing for maps with no image data,['RRMapParser.js'],{'master'},Valetudo
+97b5cdfd93bc4f562752a0a890f1b972b620119c,Hypfer,2020-07-25,feat(entities.state): Added Charging/Charged/Discharging status to BatteryStateAttribute,"['Roborock.js,BatteryStateAttribute.js']",{'master'},Valetudo
+f73c7c61dfe786131704fa90fd93e632263b982d,Hypfer,2020-07-25,feat(vacuum.dreame): Initial basic support for the dreame.vacuum.mc1808,"['map.js,1c-front.jpg,supported-dreame-devices.md,Configuration.js,Valetudo.js,Dreame.js,MiioVacuum.js,Dummycloud.js,MiioSocket.js,Model.js']",{'master'},Valetudo
+7133a50de24d12b99271ff9e3947ee5799e2d3bb,Hypfer,2020-07-25,chore: Updated eslint rules,['.eslintrc.json'],{'master'},Valetudo
+19e141efc0b6e9f4798a9bff2482feaa10f3772f,Hypfer,2020-07-25,fix(vacuum.roborock): Changed set_lab_status payload for S6 to fix #540,"['Valetudo.js,RoborockS6.js']",{'master'},Valetudo
+6b61ca816f377c07c784cb9075be43e838ecb405,Hypfer,2020-07-25,"feat(ui): Added zone size display, proper icon/text scaling and limited scaling","['locations.js,path-drawer.js,vacuum-map.js']",{'master'},Valetudo
+0ca13e328d6e4943a444f750eb35365748dd5523,Hypfer,2020-07-25,fix(ui): Fixed zone dimensions,['locations.js'],{'master'},Valetudo
+890120c76930bb8941459a7e0d1baa0af8577d83,Aaron Korte,2020-07-26,"fix(ui): Fix map coloring (#567)* Fix map coloringUse segment ID from metadata instead of generated range.Rename some methods and variables.Colors are now assigned correctly, but we now apparently need five colors for some maps.* Incorporate fifth color into default color array.* Improve coloring algorithmSort vertices by number of edges in descending order before coloring.* Empty map handlingReturn default value instead of Error when given an empty map.Update jsdoc to match the changed parameter.* Increase layer scan accuracyChange the resolution used to scan the given layer data.The previous value leads to invalid coloring with some maps.* Fix map iterationIterate the full map instead of just half of it.* Decrease accuracySet resolution back to 6 as it was not the problem after all.","['map-color-finder.js,map-drawer.js']",{'master'},Valetudo
+a5e086e913198c87226d417dc6ff30f58b7e7a0b,Hypfer,2020-07-26,chore(release):0.6.0,['package.json'],{'master'},Valetudo
+b2410ff5eda5a67f02ff5fcad7ef7c30e498674c,Hypfer,2020-07-28,fix(mqtt): Fix segfault on mqtt hostname resolution,['MqttClient.js'],{'master'},Valetudo
+41f3e981a590e76261e7d57ccff8d97b3d4b94ad,Hypfer,2020-07-28,fix: override dns.lookup to mitigate static nodejs segfaults,"['DnsHack.js,MqttClient.js,Tools.js']",{'master'},Valetudo
+039b7411325b74c2b4abbe58a91134fd1d1b9982,Hypfer,2020-07-28,fix(ui): Fix mqtt settings checkboxes,['settings-mqtt.js'],{'master'},Valetudo
+8b06203de22871c47be97bc8e353118796636853,Hypfer,2020-07-30,fix(mqtt): Fixed #571 mqtt pause status,['MqttClient.js'],{'master'},Valetudo
+f3cc9354d6da3149a69ef5476c922d97df0eb8a3,Hypfer,2020-07-30,fix(vacuum.roborock): Don't multiply iterations by 10 to fix #573,['Roborock.js'],{'master'},Valetudo
+4f7ec2c44e8da163bf30c097df26a3df37380f04,Hypfer,2020-07-30,fix(ui): Restore context after drawing active zone,['locations.js'],{'master'},Valetudo
+a23d5af95b7986c21e3487eb5e2d4f93c16c8ba3,Hypfer,2020-07-30,feat(mqtt): Added sw_version to mqtt autodiscovery to fix #568,"['MqttClient.js,Model.js,ApiRouter.js']",{'master'},Valetudo
+6db8b76bddfea636303d1169fa7441ac21a5deca,Hypfer,2020-07-30,chore(release):0.6.1,['package.json'],{'master'},Valetudo
+5335a0d71fe925eed2ff01335af5657872900647,Hypfer,2020-07-31,chore: Updated pkg to 4.4.9,"['built-v14.4.0-linux-armv7,Valetudo.js,package.json,yarn.lock']",{'master'},Valetudo
+8d14c0a0991a57fa81a2c628e72a5b24c0c6e704,Hypfer,2020-08-03,docs: Added dev faq,"['dev_faq.md,car_radio.jpg,valetudo-ui.png,important-files-and-folders.md,troubleshooting.md']",{'master'},Valetudo
+c059b9baf69e52959f39081e439a583c4132e1a8,fperezm,2020-08-04,docs: Home Assistant Automation for Valetudo version upgrade (#578),['home-assistant-integration.md'],{'master'},Valetudo
+118705d4a98a3e41f29e5965a4bd757513926126,Hypfer,2020-08-04,feat(mqtt)!: Deflate and base64-encode map data before publishing it to mqtt topic,['MqttClient.js'],{'master'},Valetudo
+164266ac984171c362adfdb5032854cdd67ee28d,Hypfer,2020-08-05,docs: Added some lines regarding expectation management,['index.md'],{'master'},Valetudo
+8609612e03bc756194982d35b4389d27557842ac,Hypfer,2020-08-13,fix: Improved dnshack to catch all problematic dns.lookup requests,['DnsHack.js'],{'master'},Valetudo
+ae799a8f4a001120ba2cc34690e1fdef37c07b6d,Alexander Knöbel,2020-08-13,ci: add eslint-jsdoc,"['.eslintrc.json,package.json,yarn.lock']",{'master'},Valetudo
+20d86c3c005ac78d36bab29a78946e17f163f2c3,PaskoMoto,2020-08-15,"fix(vacuum.viomi): Added model names for viomi.v8Added Viomi vacuum v8 to the list of viomi models, so that it correctly appears in the WEB UI.",['Model.js'],{'master'},Valetudo
+8a151ba7d7c523395f19bb8296c51813000f96a9,Alexander Knöbel,2020-08-16,ci: reactivate eslint for tests,"['.eslintignore,RRMapParser_spec.js']",{'master'},Valetudo
+89a5485f17e7ac68e7b8d97ae9a8381d2f0a7767,Hagen Fritsch,2020-09-19,"fix(vacuum.viomi): Segments + Docs (#600)* Provide viomi installation instructions.* Log status delta for better debugging.* Fix error display for ApiService.startCleaningSegments* Render segment names when we know them.* Viomi: Implement startCleaningSegments* Viomi: re-add named rooms into the zone cleaning menu.","['map.js,locations.js,map-color-finder.js,vacuum-map.js,viomi.md,ViomiMapParser.js,MiioVacuum.js,Viomi.js,viomi_manual_map_parser.js']",{'master'},Valetudo
+5cbf50696802f6bfaa1b8945e9400bedf47e5729,linuxlurak,2020-10-04,docs: Update faq.md (#613)Corrected outdated links to sound packages.,['faq.md'],{'master'},Valetudo
+057e1d2b288ae8110b2a13a8af770bd010ebe88e,schannall,2020-10-05,"docs: Update troubleshooting.md (#614)Some more Troubleshooting for Viomi Map GenerationInformation mostly from https://github.com/Hypfer/Valetudo/issues/550 and some small things I ""found out"" during my Problems with the maps.",['troubleshooting.md'],{'master'},Valetudo
+8e8d88acb617bafc1351d34b595d83a8ff5abdf6,i-need-to-tell-you-something,2020-11-02,docs: Update supported-dreame-devices.md (#621)Title was incorrectly same as supported Roborock devices.,['supported-dreame-devices.md'],{'master'},Valetudo

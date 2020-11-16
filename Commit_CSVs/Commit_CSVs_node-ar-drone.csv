@@ -1,210 +1,203 @@
-Commit_ID,Contributor,Date,Message,Files,Branch
-75fdf5edca4a118239927a37caf5da7ea0b4cf6a,Felix Geisendörfer,2012-07-21,Readme,['Readme.md'],{'master'}
-60735ebb79d8b7ed5c226c434fb5a7ba3df066a9,Felix Geisendörfer,2012-07-22,"Some initial stuff, some of it works","['index.js,BitNumber.js,Client.js,ClientConfig.js,MessageParser.js,Navdata.js,package.json,common.js,test-BitNumber.js,test-NavdataParser.js']",{'master'}
-b75c0b6ede7bf0723ebfd734c831541f7f267146,Felix Geisendörfer,2012-07-23,Some more working stuff & repl love,"['Readme.md,Client.js']",{'master'}
-971ed3fb210bd3c4276addc4b4d813b3c616a301,Felix Geisendörfer,2012-07-25,Check in latest stuffGood enough to have lots of fun with the repl!,"['Readme.md,Client.js,Navdata.js,Repl.js,test-Client.js']",{'master'}
-e20f2eac16942ac6f05ce03ee563d561f6bcd35b,Felix Geisendörfer,2012-07-27,New png video streaming and other things,"['Client.js,PngSplitter.js,Repl.js,VideoStream.js']",{'master'}
-34bd9a33cb31cc0befecb4a0933402ea92dcd8f1,Felix Geisendörfer,2012-07-27,Implement client.sequence() featureMakes it easy to script hardcoded flight sequences.,"['Client.js,Sequence.js']",{'master'}
-ad95d1ffefc4ca739a14247c1aeea3df694c824f,Felix Geisendörfer,2012-07-27,WIP: More Navdata parsing,"['Client.js,MessageParser.js,Navdata.js']",{'master'}
-ea40047a2cace66cc3b5aea4b46177977254ee9b,Felix Geisendörfer,2012-07-27,Add PngSplitter#endJust needs to be there so Stream#pipe() does not freak out when thesource is done and it is trying to close the destination.,['PngSplitter.js'],{'master'}
-a8b8fec11f3ac01bb98a723a7b3a8560107a0d75,Felix Geisendörfer,2012-07-27,New readme,['Readme.md'],{'master'}
-cc2c4fd1e83aec1ed804b67a549055183f33790c,Felix Geisendörfer,2012-07-27,Fix markdown rendering,['Readme.md'],{'master'}
-f35952d3ba7828f2cee5ece5ad12e9e6f7259332,Felix Geisendörfer,2012-07-27,Trying markdown fix,['Readme.md'],{'master'}
-7c781913cbb6a10c8757f6487ae2bd05b3a03e95,Felix Geisendörfer,2012-07-27,"Weird, is this it?",['Readme.md'],{'master'}
-2483ae27b0b881483d7a5f76b38a223d76c3b020,Felix Geisendörfer,2012-07-29,"Some tracking stuffAlso better abstractions for handling the drone video feed (videoStream,imageStream, webCam);","['Readme.md,Client.js,ImageStream.js,Tracker.js,VideoStream.js,WebCam.js,constants.js']",{'master'}
-c7226ce7f4859ee2d84ada3d21a7a9810078dc05,Felix Geisendörfer,2012-08-01,More navdata parsing,"['Client.js,Navdata.js,NavdataParser.js,Sequence.js,constants.js,test-NavdataParser.js']",{'master'}
-be0e61bdfa329055dc53e0e5542770feaefe56d9,Felix Geisendörfer,2012-08-16,New stuff,"['Client.js,DroneInfo.js,NavdataParser.js']",{'master'}
-5093ad4cd766b9b9d7becdb5f16ea8e4e6c083fc,Felix Geisendörfer,2012-08-21,Add link to AR Drone 2.0Fixes #1,['Readme.md'],{'master'}
-875a8567ac9da0605e3bad49e70580f86d7f69ff,Felix Geisendörfer,2012-09-05,Add research doc,['Research.md'],{'master'}
-98125d07c6e66d55c897afa5a23b68559b1a630c,Felix Geisendörfer,2012-09-06,Add fixtures path,['common.js'],{'master'}
-1e93ca2b1c03c5d6428bd4a649940114900a5120,Felix Geisendörfer,2012-09-06,Add PaVEParser parser and testsThis allows extracting h264 frames from the video feed. The nextchallenge is to embedd them into a browser streamable format (like mp4),"['PaVEParser.js,pave.bin,test-PaVEParser.js']",{'master'}
-781a3ee77c7cf588a829f8a4e7356923d49779a0,Felix Geisendörfer,2012-09-06,Include buffy,['package.json'],{'master'}
-1cec9124cefb4f32b631fb39557d471aed6a4d2d,Felix Geisendörfer,2012-09-06,Add test command,"['Makefile,package.json,run.js']",{'master'}
-5b3fdb5c3d89ed5571cebd509b0bd3e3e031b30a,Felix Geisendörfer,2012-09-07,Disable failing test for now,['test-NavdataParser.js'],{'master'}
-5c709e38f8abaee990e96a481c7c85bcc1b444f3,Felix Geisendörfer,2012-09-07,Start new AtCommandWriter implementation,"['AtCommand.js,AtCommandWriter.js,test-AtCommand.js,test-AtCommandWriter.js']",{'master'}
-acb57a703a9641775622bbb6fa7b089febd44e71,Felix Geisendörfer,2012-09-07,Remove some stuff,['AtCommandWriter.js'],{'master'}
-e8257b07c675ed415b4c8fdc11322745aa11c02d,Felix Geisendörfer,2012-09-07,Rename to AtCommandCreator,"['AtCommandCreator.js,test-AtCommandCreator.js,test-UdpControl.js']",{'master'}
-b55077b69df79b2fb6745a6b70feceb8f2af7687,Felix Geisendörfer,2012-09-07,Implement partial pcmdEnough to hover,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-ab5a1d0cc11dcc453348958e5b337b01134f8bef,Felix Geisendörfer,2012-09-08,Implement UdpControl,"['constants.js,UdpControl.js,meta.js,package.json,common.js,test-udp-control.js,test-AtCommandCreator.js,test-UdpControl.js,test-meta.js']",{'master'}
-3834ec15659e6dd64349b658e4cdfb6bd1e370f9,Felix Geisendörfer,2012-09-08,Add UdpControl example,['udp-control.js'],{'master'}
-f3a3787b1de9668119be054f477eef3f6a337d02,Felix Geisendörfer,2012-09-08,Initial TcpVideoStream implementation + tests,"['TcpVideoStream.js,common.js,test-normal-connection.js,test-TcpVideoStream.js']",{'master'}
-776db3bc0eec0d67bce2a16a3a32041fa2b5f3e2,Felix Geisendörfer,2012-09-08,Move stuff around,"['test-message-flushing.js,test-normal-connection.js']",{'master'}
-c8196ef3fb7628a16a555e1267b02625fc700240,Felix Geisendörfer,2012-09-08,TcpVideoStream timeout handling,"['TcpVideoStream.js,test-connection-timeout.js,test-TcpVideoStream.js']",{'master'}
-28d8c636bd43fc3bf1991aff51f33b467d1ea6ba,Felix Geisendörfer,2012-09-08,Default values and TcpVideoStream example,"['tcp-video-stream.js,TcpVideoStream.js']",{'master'}
-0760020630eaff48e8a971aeddd416bf0e4a4aa7,Felix Geisendörfer,2012-09-08,Fix tests,"['test-connection-timeout.js,test-normal-connection.js']",{'master'}
-e21a295bfa3d93f351fb7b05a8a95431c0fad99d,Felix Geisendörfer,2012-09-08,Fix package.json,['package.json'],{'master'}
-675343511c606b93bed5a333455907d447cb6ce7,Felix Geisendörfer,2012-09-08,Add PngStream and expose it along with UdpControl,"['png-stream.js,index.js,PngStream.js,common.js']",{'master'}
-776f401fd6d5d0ff9875b43f01e51f0c1eac563c,Felix Geisendörfer,2012-09-08,Test main api,['test-main-api.js'],{'master'}
-9c14c96bbe34c6267a4ebe971b98cfd408ab5545,Felix Geisendörfer,2012-09-08,Implement at module,"['at.js,test-at.js']",{'master'}
-bf4314ccb81ac1ee684a805b7c7c2a8853aad8e6,Felix Geisendörfer,2012-09-08,Add comment,['AtCommandCreator.js'],{'master'}
-4d07f410639e772909b812d3aee8bddccf5e463c,Felix Geisendörfer,2012-09-08,Add comment,['at.js'],{'master'}
-f2ea1f38c922e06c369bedbf5a263e9779d04dc8,Felix Geisendörfer,2012-09-08,Implement PCMD options,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-f0b8c902c1710b3233fa54665dca7fd81d2043f4,Felix Geisendörfer,2012-09-08,Moar comments,['AtCommandCreator.js'],{'master'}
-6fcde6a744fa057d894751679959456c4fcf8f46,Felix Geisendörfer,2012-09-08,Implement PngEncoder,"['PngEncoder.js,test-PngEncoder.js']",{'master'}
-43977803065ef8bf5e69c5dd7008e734312e4f99,Felix Geisendörfer,2012-09-08,Better / working PngEncoder ! yeahAnd a nice integration test,"['PngSplitter.js,PngEncoder.js,PngStream.js,test-sample-encode.js,test-PngEncoder.js']",{'master'}
-75cfba3145362fc53ab96c479e776001ae0c6109,Felix Geisendörfer,2012-09-08,Improve PngStream example,['png-stream.js'],{'master'}
-0f97f8cf402adb279aa24acc24bf0bf19cc8833c,Felix Geisendörfer,2012-09-11,Simplify code,['PngEncoder.js'],{'master'}
-ba8a2357f309fb2cefc9d95bad9acacf342cc300,Felix Geisendörfer,2012-09-11,Groundwork for new PngStream,"['png-stream.js,index.js,PngStream.js,test-main-api.js,test-PngStream.js']",{'master'}
-db94edbe5b09e569709f99c238f68251930ff3d4,Felix Geisendörfer,2012-09-18,Implement raw() method,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-abf48220d53a1bc87402144d730032ffb3035b5c,Felix Geisendörfer,2012-09-18,Rename,['test-AtCommandCreator.js'],{'master'}
-65b96f6e0bc6f5d7ed169ad1a094b0e9abfd1a06,Felix Geisendörfer,2012-09-18,New interface,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-14f1e4ad3f5bde4269be9a6ce0b590d2ab8ea334,Felix Geisendörfer,2012-09-18,Flags and refactorings,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-ca767dabfcb34f812a180a542a4e9332c4ce670d,Felix Geisendörfer,2012-09-18,Slightly nicer,['AtCommandCreator.js'],{'master'}
-2ca9d77915f29992e9d5ff4112760ea0c8d7d7e2,Felix Geisendörfer,2012-09-18,Whitespace,['AtCommandCreator.js'],{'master'}
-6d0819aa8830061f0f90ade8dde1bdd1e8c3b0b5,Felix Geisendörfer,2012-09-18,Add License,['LICENSE'],{'master'}
-7cf74fd9847d460ae598234b1c3ec200eafaf45b,Felix Geisendörfer,2012-09-18,New Readme,['README.NEW.md'],{'master'}
-e82c5508e55ef59fcaa59abb7167e8cf10f031d4,Felix Geisendörfer,2012-09-18,Add CONTRIBUTING guidelines,['CONTRIBUTING.md'],{'master'}
-ecb30f10ebafff32989d5b38d5508488dc6f2bdb,Felix Geisendörfer,2012-09-18,Allow explicit flag setting again,"['README.NEW.md,AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-714556d373a971a3c034d03b41dcd4b8fb557671,Felix Geisendörfer,2012-09-20,Update examples,"['png-stream.js,tcp-video-stream.js,udp-control.js']",{'master'}
-1b8f823c55868e21e490676e85d61f13652ad0ac,Felix Geisendörfer,2012-09-20,Start working on UdpNavdataStream,"['UdpNavdataStream.js,test-basics.js,test-UdpNavdataStream.js']",{'master'}
-b6727761fa6ace0827e4751314f2486170802167,Felix Geisendörfer,2012-09-20,Finish UdpNavdataStreamNext: parser,"['UdpNavdataStream.js,test-basics.js,test-UdpNavdataStream.js']",{'master'}
-81c4856f3af876816b0c0a245df26b67c19943fd,Felix Geisendörfer,2012-09-20,Expose UdpNavdataStream and add #destroy(),"['index.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-index.js']",{'master'}
-86005e83dfa37602112b0b9046d33f5feb4fde0c,Felix Geisendörfer,2012-09-20,Check in navdata fixture,['navdata.bin'],{'master'}
-9eeb153b8dafd6a383c895a1652af8f0ef3b0593,Felix Geisendörfer,2012-09-20,Upgrade buffy,['package.json'],{'master'}
-538e61fc94f464ae920b551ac489bb46abe7df0b,Felix Geisendörfer,2012-09-20,Handle navdata re-requesting after timeout,"['UdpNavdataStream.js,test-UdpNavdataStream.js']",{'master'}
-8942ea978b4ed4260ff4b11d17aa7063b6af755d,Felix Geisendörfer,2012-09-20,Some navdata parsing,"['NavdataReader.js,parseNavdata.js,test-parseNavdata.js']",{'master'}
-661600b3c143bda4e7c945c00750171827ff89af,Felix Geisendörfer,2012-09-20,Fix whitespace,['parseNavdata.js'],{'master'}
-7e3e362b262662cb5aa75db4fc9896408c2e7b88,Felix Geisendörfer,2012-09-23,New docs,['README.NEW.md'],{'master'}
-03ee1d6027824f9a8deead5c69d4f2f50a7195a4,Felix Geisendörfer,2012-09-23,Remove unfinished test,['test-basics.js'],{'master'}
-b49a6aea34564ac2e07f9b5dcd3fec85c5118ff5,Felix Geisendörfer,2012-09-23,Add travis config,['.travis.yml'],{'master'}
-5f4ca6e007c28f25be583a4df8a6dd6e7a8fd48e,Felix Geisendörfer,2012-09-23,Handle ffmpeg not existing better,"['PngEncoder.js,test-PngEncoder.js']",{'master'}
-344717a7b05a34c45ff617fb0d07be80b0986779,Felix Geisendörfer,2012-09-23,Comment,['PngEncoder.js'],{'master'}
-d0dbecb29c91c3126e7a06ced4f27d2673bd598b,Felix Geisendörfer,2012-09-23,Try ffmpeg install for travis,['.travis.yml'],{'master'}
-79c80e34ab293c6a053d79b0fe35cd5fda8b2352,Felix Geisendörfer,2012-09-23,Contributing,['CONTRIBUTING.md'],{'master'}
-97e8253c7ad17652efea11e5ba9579ff76595fd3,Felix Geisendörfer,2012-09-23,Skip broken travis test,"['.travis.yml,common.js,test-sample-encode.js']",{'master'}
-fa5739b8e75d783fe73c3449777f88cefcf74e0b,Felix Geisendörfer,2012-09-23,Don't build in node 0.6 for nowtest-index is hanging for some reason,['.travis.yml'],{'master'}
-9c0f41445dfd796ccd754cb14ce5a7c2410e76dc,Felix Geisendörfer,2012-09-23,More Contributing info,['CONTRIBUTING.md'],{'master'}
-fbb6345ac81f4ca09fa35d1c4a203789fb4a6507,Felix Geisendörfer,2012-09-23,Build badge,['README.NEW.md'],{'master'}
-f0495a401d4778c333e50dcbe21c928406324259,Felix Geisendörfer,2012-09-23,Add note about missing docs,['README.NEW.md'],{'master'}
-8199f4288a518dd1a866031759ec90dbc575c91d,Felix Geisendörfer,2012-09-23,Remove old readme,['Readme.md'],{'master'}
-5a27a28323f56d43a4dccc0da03fecbd30be5f65,Felix Geisendörfer,2012-09-23,Will find a better place to track this,['Research.md'],{'master'}
-240f714c1b133f222d7639d5ef2370d9842c47ba,Felix Geisendörfer,2012-09-23,Ideas for high level API,['CONTRIBUTING.md'],{'master'}
-7c32289f037c23477ef4b6f4e7c2cb0a889d859d,Felix Geisendörfer,2012-09-27,"Use methods, not properties",['CONTRIBUTING.md'],{'master'}
-4b9bdcc871e5728b22ab03b9935f55029d618e2f,Felix Geisendörfer,2012-09-28,0.0.1,['package.json'],{'master'}
-9d4332fbf9ddaf3c55a16d52a61c551d2e2ba928,Felix Geisendörfer,2012-09-28,Delete old test,['test-NavdataParser.js'],{'master'}
-59368e95d77fe9694a603b16a703ea1836b81f99,Felix Geisendörfer,2012-09-28,New Client and bug fixes,"['index.js,Client.js,Repl.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js,test-index.js']",{'master'}
-185bc6a23955f225b059d3e78badd2ee7169d0f7,Felix Geisendörfer,2012-09-28,Implement config,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-e938c679deb297e3537fb19509594ac18a510eb9,Felix Geisendörfer,2012-09-28,Work on API,"['index.js,Client.js,test-Client.js,test-index.js']",{'master'}
-5bd7055849f5d8a8391c8e3b3c2a264b6dd420bd,Felix Geisendörfer,2012-09-28,Implement AtCommandCreator#animateLeds,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-517a4edf8052b4e6b20d7feb0ad6eff65ed5b24f,Felix Geisendörfer,2012-09-28,LED animations for client!,"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js']",{'master'}
-4a40865afd493c9ee911950c474f16aa74270b30,Felix Geisendörfer,2012-09-28,Expose client to REPL,['Repl.js'],{'master'}
-5e662c4c6fc10833721be7e301df1c55ebe745f0,Felix Geisendörfer,2012-09-28,Implement flight animation (still untested),"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js']",{'master'}
-0d2ba9699b93ec6dd7b93585470d4d38301645c2,Felix Geisendörfer,2012-09-28,Simplify repl,['Repl.js'],{'master'}
-a1eacc088d66a9bf694e58ad1934e899fcb652a2,Felix Geisendörfer,2012-09-29,Rename method,"['index.js,PngStream.js,test-index.js']",{'master'}
-adf3c3a7bf519d906541f24ae2004573fe5190a8,Felix Geisendörfer,2012-09-29,Move file around,"['PngEncoder.js,PngSplitter.js,PngStream.js']",{'master'}
-9ead1ed41bb0af1582815c961204afbe4dea53a4,Felix Geisendörfer,2012-10-03,Allow catching navdata errors,"['Client.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-Client.js']",{'master'}
-3a95b6bed1fdc6a16550f53ea586de5ce04a6726,Felix Geisendörfer,2012-10-03,Delegate navdata error events if needed,"['Client.js,test-Client.js']",{'master'}
-1c3116f8e94b32c82f9748be6be6b1d045c3b1c2,Felix Geisendörfer,2012-10-04,Check signature in PaVEParserSeems like the drone is sending another unexpected 4 bytes of payloadright now ... fuck. Will just send the raw data stream to ffmpeg fornow.,"['PaVEParser.js,test-PaVEParser.js']",{'master'}
-a9949abed01728c8cb1b9e533b0a4b6bb20efe4d,Felix Geisendörfer,2012-10-04,Somewhat working pngStream stuff,"['png-stream.js,tcp-video-stream.js,PngEncoder.js,PngStream.js,test-PngEncoder.js,test-PngStream.js']",{'master'}
-9db07c952716d98f67e397727039e12cd923e27b,Felix Geisendörfer,2012-10-04,Hook PngStream into Client,"['Client.js,PngEncoder.js,test-Client.js']",{'master'}
-d095e804de9a126583eb0bddf78b757a6ec6c93e,Felix Geisendörfer,2012-10-04,Implement Client#after API,"['Client.js,test-Client.js']",{'master'}
-4afa7c15fcc9ebe772b2c552fda30b276349dae4,Felix Geisendörfer,2012-10-04,Update todo,['CONTRIBUTING.md'],{'master'}
-ee77d3c541115bcf8ac5e7dc972da125c78bd65b,Felix Geisendörfer,2012-10-04,Client#disableEmergencyt,"['Client.js,test-Client.js']",{'master'}
-7d60e6c96fa3bf5915afae9f8317d316de267363,Felix Geisendörfer,2012-10-04,0.0.2,['package.json'],{'master'}
-aa2683e92db2ff77f77f54be91195594cb4b67fd,Domenic Denicola,2012-10-05,"Use npm test as primary test runner.Makefiles are not cross-platform, but if you want one, it can delegate to npm (which *is* cross-platform).See https://gist.github.com/2790533 for more tips on writing portable Node.js code.","['Makefile,package.json']",{'master'}
-1f3365edf22d04c6b787be1dda6b0bec4bcd04a5,Domenic Denicola,2012-10-05,client#disableEmergency is implemented,['CONTRIBUTING.md'],{'master'}
-5581c2098b3aae8eeecb0a97f83f80ceb2a4c5d1,Felix Geisendörfer,2012-10-05,Add and document config command,"['Client.js,test-Client.js']",{'master'}
-072f9f0539fee57e7bd5fdbe1fd2ff85df4f7c4f,Bernhard K. Weisshuhn,2012-10-11,reenable ffmpeg back pressure (works for me),"['PngEncoder.js,test-PngEncoder.js']",{'master'}
-ca205faa13cecd1b1be95d3565d4f72173c57046,Bernhard K. Weisshuhn,2012-10-11,add workaround for 68 byte PaVE headers,['PaVEParser.js'],{'master'}
-d13c7ecaabc9a6b126b2af444a828be7676625e0,Bernhard K. Weisshuhn,2012-10-11,fix last-minute typo,['PaVEParser.js'],{'master'}
-77b1d44d32e90f696ef647df4e8752591581bd6b,Bernhard K. Weisshuhn,2012-10-11,only advance when buffer size allows,['PaVEParser.js'],{'master'}
-67a27926fb3529495c9fcc601fab6fb2484e17ca,Bernhard K. Weisshuhn,2012-10-11,add test for 68 byte size PaVE frames,"['pave-68.bin,test-PaVEParser.js']",{'master'}
-79aac27764a4e6061889f35d813f6f866e4fa580,Bernhard K. Weisshuhn,2012-10-12,"make 68 byte frames the default, compensate during paring","['PaVEParser.js,test-PaVEParser.js']",{'master'}
-ccc1e53dea91a9309be034d706235d7e8763065a,Felix Geisendörfer,2012-10-13,Update 1.0 info,['CONTRIBUTING.md'],{'master'}
-4f8636dffdf53b44838d167cef377a6b35261d8f,Felix Geisendörfer,2012-10-19,0.0.3,['package.json'],{'master'}
-2e2fa96c3e4e6bc3c4b64df1662789ca187891ad,Christian Sanz,2012-10-20,"Update lib/constants.jsLet me override the IP, so I can take over with my simulator",['constants.js'],{'master'}
-b463228827b2224618dc3635ba78588ec7c08341,Martin Schuhfuss,2012-10-25,changed altitude conversion,['parseNavdata.js'],{'master'}
-90dab765dd14b658a18541db794727a3c9c6cf52,Contra,2012-10-29,custom events,"['Client.js,test-Client.js']",{'master'}
-f7cb45b243828c13da87f915e06c3d600eee91b6,Contra,2012-10-29,fix lastState typo,['Client.js'],{'master'}
-da958666c82f6da3a9b25f7a8a10792461d03689,Contra,2012-10-30,split out + split hovering and flying events,"['Client.js,test-Client.js']",{'master'}
-4ec60e035b6f9fe2390d8d533d51e9b6115a2fce,Eric Schoffstall,2012-11-01,remove explicit port bind,['UdpNavdataStream.js'],{'master'}
-2a6e98492f8a33b9d9a8053fa652ca96bb55866a,Contra,2012-11-01,remove unneeded test,['test-UdpNavdataStream.js'],{'master'}
-bfa07cdae035b793d84f105918182154a027ad4a,Felix Geisendörfer,2012-11-04,0.0.4,['package.json'],{'master'}
-c53167a1748d03856c797bf354366861c384968a,Jan Lehnardt,2012-11-10,Implement `Client.battery();`Returns `Client._lastBattery`.,['Client.js'],{'master'}
-95cd887eb90a2ec284469215d7b70f83f63592dc,John Schulz,2012-11-11,Make JSHint happy.,"['constants.js,parseNavdata.js']",{'master'}
-efc484151ae3356c5ddbd949c98d1de5860fea12,John Schulz,2012-11-11,Add lookup for detection types.,['constants.js'],{'master'}
-6b08477a43667724b5b5c3bac7c15b7f013ec27f,John Schulz,2012-11-11,Add flying modes,['constants.js'],{'master'}
-dfdb6b3a623ebd477a2c9a29ddf6c74247116508,John Schulz,2012-11-11,Add new types based on structs from C SDK.,['NavdataReader.js'],{'master'}
-bac622cd341dfc4e3ce6484bc9dff94494f27841,John Schulz,2012-11-11,Add two utility functions.,['parseNavdata.js'],{'master'}
-ddde825fc954b8082b88861bba9cbf60b4f50c33,John Schulz,2012-11-11,Alter `demo` navdata block.,['parseNavdata.js'],{'master'}
-b613e99e5c1436cb9a1be8e44b8490fc89a3c6eb,John Schulz,2012-11-11,Use `droneTimeToMilliseconds` utility function.,['parseNavdata.js'],{'master'}
-154d4c9d7da1cb0df5979ef241d62a024e162282,John Schulz,2012-11-11,Be consistent with `gyrometers`,['parseNavdata.js'],{'master'}
-9877ea00aeb85e0ea0e73ca3d6d104d662c1c62f,John Schulz,2012-11-11,Alter `demo` navdata block.,['parseNavdata.js'],{'master'}
-7ca3214e7f38e985290ab94623e222f89b6022bd,John Schulz,2012-11-11,"Add all missing navdata blocks (`magneto`, `windSpeed`, `games`, etc).",['parseNavdata.js'],{'master'}
-2f89091e72712cbe4d1ea65277513826c7608243,John Schulz,2012-11-11,Add functions required for dealing with navdata masks.,['maskingFunctions.js'],{'master'}
-c2c6615979cfd403ed44f0f760a626f855d4f34f,John Schulz,2012-11-11,Addressing spacing and syntax errors from a borked commit.,['parseNavdata.js'],{'master'}
-01e008e710c4a4bb5a9e396ef9a42c2cee034018,John Schulz,2012-11-11,Need to supply context b/c NavdataReader methods use `this`.,['parseNavdata.js'],{'master'}
-d1d3dc5dbd855532e54b5bf17a5f5bc08bb789c5,John Schulz,2012-11-11,Remove detritus which is causing errors.,['maskingFunctions.js'],{'master'}
-ae8594305a18b3013b9198cfccc133107b827e24,John Schulz,2012-11-11,"Adding items which, somehow, were omitted from 7ca3214.",['parseNavdata.js'],{'master'}
-af8c0d8b394537bf75911ebb6795f1ab45b879e5,John Schulz,2012-11-12,"Not entirely sure this is correct, but going with it.",['parseNavdata.js'],{'master'}
-2d770c6c6ee31f36b6d965ec1ea62cb96f87b20c,John Schulz,2012-11-19,s/gyrometers/gyroscopes/g,['parseNavdata.js'],{'master'}
-d2b457793856d7ed1b70e3a34222c38e4cb7c014,John Schulz,2012-11-19,Whitespace change,['parseNavdata.js'],{'master'}
-b17d41e58a943a27d17d3dccd950e64dd11491ca,John Schulz,2012-11-19,Display wifi signal strength as a percentage,['parseNavdata.js'],{'master'}
-5d5a3745cf8fc8485b36d075a82bafb7a1e547ba,John Schulz,2012-11-19,"Reverting to approach that allows test to pass.Unsure `ARDrone_SDK_2_0/ARDroneLib/Soft/Common/navdata_common.h:753` has `uint32_t link_quality` but using that: * Breaks a test * Produces a value from 0 - 500 * Causes strange behavior[^1][^1]: (Values were observed to start at 500 and gradually decline to 0 in about 10 seconds. Sometime later the value would incrementally increase back to 500 and, again, slide back down to 0.)",['parseNavdata.js'],{'master'}
-7ea11d33d6b65dea1e561e5895da92ed844f5df0,John Schulz,2012-11-19,Fix two typos in the `navdata` keys.,['parseNavdata.js'],{'master'}
-4144e7e9a7259c46e66fd37888b6a16c8d0b55b2,John Schulz,2012-11-19,Add two properties for navdata option masks.,['maskingFunctions.js'],{'master'}
-b4a0e7d49edd643da0a9fd373b0e84db4da61452,John Schulz,2012-11-19,Missed one in ff9be5c.,['parseNavdata.js'],{'master'}
-4ea2a5104342885f7b05610854ff795369f4772e,John Schulz,2012-11-19,"Some guesses about units for various navdata properties.Based on (guessing, after reading) ARDrone_SDK_2_0/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.c:51",['parseNavdata.js'],{'master'}
-5319cfc092e00b547d676f8612a86b16e013eda3,John Schulz,2012-11-19,Use new structure for `demo` & `rawMeasures` in `navdata` but keep BC.,['parseNavdata.js'],{'master'}
-a5a3f369d41f362ef38871d82f27e212bee42364,John Schulz,2012-11-19,Add tests for data structure introduced in 5319cfc.,['test-parseNavdata.js'],{'master'}
-16c9605bd1e9335be009e8347fda99dedb2d3c58,John Schulz,2012-11-19,WIP commit. Adding tests for 9(?) of the 22(?) new `navdata` objects.,['test-parseNavdata.js'],{'master'}
-69d7a4d9c14f73f0c18fe05c32062f99f011ac0a,John Schulz,2012-11-19,"Add tests for `vision`, `visionPerf`, `trackersSend`, `visionDetect` keys.",['test-parseNavdata.js'],{'master'}
-9c168388746fd4a4fae5bbb54f820cc44ad95539,John Schulz,2012-11-19,Add tests for the 9 `navdata` keys without them.,['test-parseNavdata.js'],{'master'}
-2a3331c115d7288acd20b7862b833d9af7e15ec9,Bernhard K. Weisshuhn,2012-12-16,update to latest buffy (performance),['package.json'],{'master'}
-80f003b387d9ced83d1135675210bd072574806e,Bernhard K. Weisshuhn,2012-12-16,version 0.0.5,['package.json'],{'master'}
-a8ff73c3a77c8dec1e7638345d14fc37b0b07cf0,Felix Geisendörfer,2013-04-23,Request navdata by default,['Client.js'],{'master'}
-fbb54d56e98bc70bb47255096d98354c46113c07,Felix Geisendörfer,2013-04-23,Add takeoff/land callbacksCloses #13,['Client.js'],{'master'}
-37233e1014893db405395162d32c38feb69d0220,Felix Geisendörfer,2013-05-16,0.0.6,['package.json'],{'master'}
-166a049060e6e7b275e010454f4cfe4e3742c79a,Laurent Eschenauer,2013-05-22,Fix uncatched errors when failing to spawn ffmpegFixes issue #44,"['PngEncoder.js,PngStream.js,test-PngEncoder.js,test-PngStream.js']",{'master'}
-621dc688b30a1d2e5d07315a8dafcbf9fa71ea96,Laurent Eschenauer,2013-05-27,Skip broken testSee discussion on issue #47,['test-Client.js'],{'master'}
-daf486d9c9c3b48d81d378f4b8c591b359a411de,Laurent Eschenauer,2013-05-27,Maintain a single png and tcp stream in clientIntroducing two new API calls: getPngStream() and getVideoStream().Multiple calls to these methods return the same objects. The underlyingTcpVideoStream is the same and its lifecylce (connect/reconnect) ismanaged by the client.,"['png-stream.js,tcp-video-stream.js,Client.js,PngStream.js,TcpVideoStream.js,test-Client.js']",{'master'}
-c0d219b41cb883ebf011996d53ff04fd4c3217ee,Laurent Eschenauer,2013-05-28,Added an example on saving the video-stream,['save-video-stream.js'],{'master'}
-de1bc8f6039f3e5a1a46013f6b57f13a485a6194,John Wiseman,2013-05-28,"Added calibrate command to UdpControl and Client, which according tothe SDK docs ""asks the drone to calibrate the magnetometer (must beflying).""","['Client.js,AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-fd2085f19c10a69d2ade250b30ad3205313c6143,Felix Geisendörfer,2013-05-29,0.1.0,['package.json'],{'master'}
-197a588797d86ec6c1eeb8684b6a0508e7a614d0,Laurent Eschenauer,2013-06-07,Added ftrim() command to the clientThis command sets a reference of the horizontal planefor the drone internal control system.Relates to #27,"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js']",{'master'}
-a3ab4df7cba964e67b8317c050e2358f75e4faf2,Laurent Eschenauer,2013-06-07,vidionDetect -> oriantationAngle is a float32,['parseNavdata.js'],{'master'}
-7e26979d643c2f08f7d37a35b06667d5bcdcb74d,Contra,2013-06-28,ignore pcmd methods with no arguments,"['Client.js,test-Client.js']",{'master'}
-9307871755b97bcd9b722a8f04249277759c2cdb,Contra,2013-06-28,test comments. closes #62,['test-Client.js'],{'master'}
-da3a19e548ae6dc5f00549c1fe75b0bd36231b5a,Laurent Eschenauer,2013-08-28,0.2.0,['package.json'],{'master'}
-8f544a5494e2425221193c9c65a5765cfcb725aa,Laurent Eschenauer,2013-08-29,Added a Changelog file,['Changes.md'],{'master'}
-3056077aea721b3e80f81883b30d72d912035d33,Blaine Bublitz,2013-09-03,"add image size option to png encoder, also add frameRate and imageSize options to readme",['PngEncoder.js'],{'master'}
-5f9244d00b69fa9c0ca703b20116f061c6db46c0,Andrew Nesbitt,2013-09-23,Preliminary GPS support,"['NavdataReader.js,parseNavdata.js']",{'master'}
-0cf48cb5785b50d85ef59ecf201de1a0152342f3,Andrew Nesbitt,2013-09-23,Missing comma,['parseNavdata.js'],{'master'}
-320c8d447e73b2287c47d1547a71457cb8e9968b,John Wiseman,2013-10-02,Fixed errors in GPS data definitions.* Fixed incorrect order of unk0 & data_available fields.* Fixed misspellings.* Many fields are actually arrays (this was causing a lot of fields tohave nonsense values).Based on https://github.com/paparazzi/paparazzi/blob/55e3d9d79119f81ed0b11a59487280becf13cf40/sw/airborne/boards/ardrone/at_com.h,"['NavdataReader.js,parseNavdata.js']",{'master'}
-2cef8740c65559c12d922144e5e496ff358710a0,John Wiseman,2013-10-02,"Fixed test-parseNavdata tests (issue #72).* Removed the failing zimmu3000 option test--I think it's been obsoletedby GPS.* Fixed up test/fixtures/navdata.bin by replacing what looked like a bogus GPSoption with a real one, recorded from firmware 2.4.7 (and updated the checksumof the entire data packet).","['navdata.bin,test-parseNavdata.js']",{'master'}
-f58c8eb930c63f95aed167b0b221cae4c446ef12,John Wiseman,2013-10-02,"Added unit tests for gps option.Not all values look legit to me--longitude, hdop and vdop look suspicious.I changed droneTimeToMilliseconds so it won't return negative times andfixed gps.last_frame_timestamp to be in milliseconds.","['parseNavdata.js,test-parseNavdata.js']",{'master'}
-5df9ce2a7942df0e369efef51eda7230dded64ce,Andrew Nesbitt,2013-10-03,0.2.1,['package.json'],{'master'}
-d73074206ee4122ce21f64aa717504f08790226f,John Wiseman,2013-10-14,Fixed missing var.,['UdpControl.js'],{'master'}
-2be22dc0bfc678837df98c7e440b3beb1f0933eb,John Wiseman,2013-10-15,Added unit tests for CONFIG ACKs.,"['Client.js,AtCommand.js,AtCommandCreator.js,UdpControl.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js']",{'master'}
-3e77b5a79061fddf53a7c49edaffdf43e0b4cc92,John Wiseman,2013-10-18,"Changed signature of config.config can now be called as config(key, value, callback) or config(options).Added more info on config to README.","['Client.js,AtCommandCreator.js,UdpControl.js,test-AtCommandCreator.js,test-Client.js']",{'master'}
-03512ad37cf4e0f19698ee6bfabeb6ac1f8dc4c3,John Wiseman,2013-10-21,Fixed config signature to bring callback out of options.,"['AtCommand.js,AtCommandCreator.js,UdpControl.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js']",{'master'}
-9495035c4345448e4ae182fde4439ca6d48efcc5,John Wiseman,2013-10-21,Increased default timeout to 500 ms.Also removed vestigal retries references.,['UdpControl.js'],{'master'}
-3cd3037551c6f26b9b6f61a9a2e94e85f54ebae5,John Wiseman,2013-10-21,Increased delay in test to trigger timeout.,['test-UdpControl.js'],{'master'}
-695abef0a141ca3aa42aa2d1091b372bb522e2db,John Wiseman,2013-10-22,0.3.0. Backwards-compatible new features for Client.config.,['package.json'],{'master'}
-e68bdd6395bf9e504063ff098beabb5a79178338,Jan Pieper,2013-10-22,drop unused variables,"['Repl.js,AtCommandCreator.js']",{'master'}
-70c4bbc49b076d43a91a17bc9c65144e97372d5e,Jan Pieper,2013-10-23,drop duplicate test,['test-Client.js'],{'master'}
-53a03129e4b845473801eb4b87cc9ae8fec7478d,Jan Pieper,2013-10-23,mark single eval as not evil via inline jshint config,['Repl.js'],{'master'}
-14ad836ba2dae9c181f1efc513c04feea09a9ce3,Jan Pieper,2013-10-23,use 2 spaces for indention,"['.jshintrc,Client.js,AtCommandCreator.js,PngSplitter.js,test-parseNavdata.js,test-PngEncoder.js']",{'master'}
-2b936c59b3b0f1c823bc2f24b72e1435e4caa102,Jan Pieper,2013-10-23,force use of curly braces,"['.jshintrc,parseNavdata.js,test-connection-timeout.js,test-normal-connection.js']",{'master'}
-31ff514891115e673600048d2b6265f35e611f9c,Jan Pieper,2013-10-23,disallow trailing whitespace,['.jshintrc'],{'master'}
-04736689c07ce792d4e64bd22aaba50b1313da68,Jan Pieper,2013-10-23,tell jshint we're using node.js,['.jshintrc'],{'master'}
-b8e199613d88dc4c3315b15df2c5e9a3165c049d,Jan Pieper,2013-10-23,check files in examples directory to be jshint compliant,"['save-video-stream.js,package.json']",{'master'}
-6a05eebe1aa6e69d404a31d310bd7546ea6077f9,Robin Mehner,2013-10-24,"Set undef option for jshint, fix code to comply to this rule","['.jshintrc,test-UdpControl.js,test-Client.js']",{'master'}
-0d48cfd2851e8436b38632abe8d6fe6c38c3880f,Robin Mehner,2013-10-24,"Set unused option for jshint, removed unused variables in code","['.jshintrc,UdpControl.js,test-connection-timeout.js,test-UdpControl.js,test-Client.js']",{'master'}
-a2fd2fa28465ce05d16a3550456fa5208e0bb5ee,bmcquee,2013-11-09,some demo programs for tweet driven drone and testing tweet stream,"['simple_flight.js,tweet_repl.js,tweets.js']",{'master'}
-bdb3d4f9ce0cb36a4db666082ed86fec5ee709d2,John Wiseman,2013-11-11,Style fixes for sample code.,"['simple_flight.js,tweet_repl.js,tweets.js']",{'master'}
-f83cd0ab41416b1959e77e4116dac7135fb216aa,John Wiseman,2013-11-11,Removed examples/tweets.js; It just prints tweets to the console & doesn't usethe node-ar-drone API.,['tweets.js'],{'master'}
-3bc3fe083839cca2deb5567506c9cbda8838babe,Ryan Schmukler,2013-12-08,Fixed TCPVideoStream trying to reconnect 2x,"['Client.js,TcpVideoStream.js']",{'master'}
-fb735eeaa98811d0f4546fe00aaa6f7ca8fa0cec,Ryan Schmukler,2013-12-08,Updated so tests pass,"['TcpVideoStream.js,test-normal-connection.js']",{'master'}
-aa776a37d28ec3c488a1f6e1d6e6560ad90051b8,Ryan Schmukler,2013-12-09,"Updated to remove listener from socket, forward errors from socket to client",['TcpVideoStream.js'],{'master'}
-07d799bc2633e47919a1a942ef76a1b5b4311139,Ryan Schmukler,2013-12-10,Release 0.3.1,"['Changes.md,package.json']",{'master'}
-dcfce2013cab8cd0194957ac2612effe665464eb,John Wiseman,2014-03-06,"Changed NavdataReader.char to call buffy Reader.char.This fixes the bug where char wasn't advancing the buffer pointer,causing bad parses of the magneto and kalmanPressure navdata options(issue #90).","['NavdataReader.js,test-parseNavdata.js']",{'master'}
-e0e3144b963cd7af3ee85f8ceb04faef089ae15d,Felix Geisendörfer,2014-05-03,0.3.2,['package.json'],{'master'}
-f1b48cd4d71227a650fb54004eeae5b1f753f46d,John Wiseman,2014-05-08,"Updated GPS navdata definition for firmware version 2.4.8.I also took this opportunity to rename GPS data fields to beconsistent with existing nomenclature (that is, degreeMag instead ofdegree_mag).The new data definitions come fromhttps://github.com/AutonomyLab/ardrone_autonomy/pull/95 whichsupposedly came via backchannels from Parrot.I spliced a GPS navdata option collected from a drone running 2.4.8into test/fixtures/navdata.bin and updated the unit tests.","['parseNavdata.js,navdata.bin,test-parseNavdata.js']",{'master'}
-9a5d0a553fd148864deded61b61389be20810740,Michael Smith,2014-11-25,Fixes a typo,['test-Client.js'],{'master'}
-d57b40a0b5d01da460ceeeac8c0f427a972d5b45,Michael Smith,2014-11-25,"Fixes client up/down, left/right, front/back, clockwise/counterclockwise functions to accept 0 speed. Adds test. Resolves #106Previous implementation would not allow one to supply 0 for speed to stop moving along that axis. The only way to stop would be to issue a client.stop(). But that would also cancel any other movement going on at the time.For example, centering a joystick should stop pitch, but should not stop yaw being controlled by a dpad on the same controller.","['Client.js,test-Client.js']",{'master'}
-0ac5ccc73a42ee5cafa71399ff79e2c2b1d2c1b6,Felix Geisendörfer,2014-11-25,0.3.3,['package.json'],{'master'}
-ed48accdee692824ec010446e1e99e14f62fc467,Paul Hayes,2017-10-08,This should allow Travis builds to now pass. There was possible a BOM character at the begining of the package.json. The best fix is to tell Travis to use a more up to date version of npm and node. As 0.6 is ancient!,['.travis.yml'],{'master'}
-047311e88a818a62ade0c634f81491bb4a2edc22,Arno Bornman,2018-10-21,Initial API documentation for 'navdata' client event,['NavData.md'],{'master'}
-957845ceada89009bd08e778f2f629e39d68d6cb,Skyguy92,2019-10-16,Moved FTRIM into Calibration function and included it in the readme.md.,"['Changes.md,Client.js']",{'master'}
-b1af120f941233916034befad12b7cd36625c09c,Skyguy92,2019-10-17,fix build,['Client.js'],{'master'}
+Commit_ID,Contributor,Date,Message,Files,Branch,Repository
+60735ebb79d8b7ed5c226c434fb5a7ba3df066a9,Felix Geisendörfer,2012-07-22,"Some initial stuff, some of it works","['index.js,BitNumber.js,Client.js,ClientConfig.js,MessageParser.js,Navdata.js,package.json,common.js,test-BitNumber.js,test-NavdataParser.js']",{'master'},node-ar-drone
+b75c0b6ede7bf0723ebfd734c831541f7f267146,Felix Geisendörfer,2012-07-23,Some more working stuff & repl love,['Client.js'],{'master'},node-ar-drone
+971ed3fb210bd3c4276addc4b4d813b3c616a301,Felix Geisendörfer,2012-07-25,Check in latest stuffGood enough to have lots of fun with the repl!,"['Client.js,Navdata.js,Repl.js,test-Client.js']",{'master'},node-ar-drone
+e20f2eac16942ac6f05ce03ee563d561f6bcd35b,Felix Geisendörfer,2012-07-27,New png video streaming and other things,"['Client.js,PngSplitter.js,Repl.js,VideoStream.js']",{'master'},node-ar-drone
+34bd9a33cb31cc0befecb4a0933402ea92dcd8f1,Felix Geisendörfer,2012-07-27,Implement client.sequence() featureMakes it easy to script hardcoded flight sequences.,"['Client.js,Sequence.js']",{'master'},node-ar-drone
+ad95d1ffefc4ca739a14247c1aeea3df694c824f,Felix Geisendörfer,2012-07-27,WIP: More Navdata parsing,"['Client.js,MessageParser.js,Navdata.js']",{'master'},node-ar-drone
+ea40047a2cace66cc3b5aea4b46177977254ee9b,Felix Geisendörfer,2012-07-27,Add PngSplitter#endJust needs to be there so Stream#pipe() does not freak out when thesource is done and it is trying to close the destination.,['PngSplitter.js'],{'master'},node-ar-drone
+2483ae27b0b881483d7a5f76b38a223d76c3b020,Felix Geisendörfer,2012-07-29,"Some tracking stuffAlso better abstractions for handling the drone video feed (videoStream,imageStream, webCam);","['Client.js,ImageStream.js,Tracker.js,VideoStream.js,WebCam.js,constants.js']",{'master'},node-ar-drone
+c7226ce7f4859ee2d84ada3d21a7a9810078dc05,Felix Geisendörfer,2012-08-01,More navdata parsing,"['Client.js,Navdata.js,NavdataParser.js,Sequence.js,constants.js,test-NavdataParser.js']",{'master'},node-ar-drone
+be0e61bdfa329055dc53e0e5542770feaefe56d9,Felix Geisendörfer,2012-08-16,New stuff,"['Client.js,DroneInfo.js,NavdataParser.js']",{'master'},node-ar-drone
+875a8567ac9da0605e3bad49e70580f86d7f69ff,Felix Geisendörfer,2012-09-05,Add research doc,['Research.md'],{'master'},node-ar-drone
+98125d07c6e66d55c897afa5a23b68559b1a630c,Felix Geisendörfer,2012-09-06,Add fixtures path,['common.js'],{'master'},node-ar-drone
+1e93ca2b1c03c5d6428bd4a649940114900a5120,Felix Geisendörfer,2012-09-06,Add PaVEParser parser and testsThis allows extracting h264 frames from the video feed. The nextchallenge is to embedd them into a browser streamable format (like mp4),"['PaVEParser.js,pave.bin,test-PaVEParser.js']",{'master'},node-ar-drone
+781a3ee77c7cf588a829f8a4e7356923d49779a0,Felix Geisendörfer,2012-09-06,Include buffy,['package.json'],{'master'},node-ar-drone
+1cec9124cefb4f32b631fb39557d471aed6a4d2d,Felix Geisendörfer,2012-09-06,Add test command,"['Makefile,package.json,run.js']",{'master'},node-ar-drone
+5b3fdb5c3d89ed5571cebd509b0bd3e3e031b30a,Felix Geisendörfer,2012-09-07,Disable failing test for now,['test-NavdataParser.js'],{'master'},node-ar-drone
+5c709e38f8abaee990e96a481c7c85bcc1b444f3,Felix Geisendörfer,2012-09-07,Start new AtCommandWriter implementation,"['AtCommand.js,AtCommandWriter.js,test-AtCommand.js,test-AtCommandWriter.js']",{'master'},node-ar-drone
+acb57a703a9641775622bbb6fa7b089febd44e71,Felix Geisendörfer,2012-09-07,Remove some stuff,['AtCommandWriter.js'],{'master'},node-ar-drone
+e8257b07c675ed415b4c8fdc11322745aa11c02d,Felix Geisendörfer,2012-09-07,Rename to AtCommandCreator,"['AtCommandCreator.js,test-AtCommandCreator.js,test-UdpControl.js']",{'master'},node-ar-drone
+b55077b69df79b2fb6745a6b70feceb8f2af7687,Felix Geisendörfer,2012-09-07,Implement partial pcmdEnough to hover,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+ab5a1d0cc11dcc453348958e5b337b01134f8bef,Felix Geisendörfer,2012-09-08,Implement UdpControl,"['constants.js,UdpControl.js,meta.js,package.json,common.js,test-udp-control.js,test-AtCommandCreator.js,test-UdpControl.js,test-meta.js']",{'master'},node-ar-drone
+3834ec15659e6dd64349b658e4cdfb6bd1e370f9,Felix Geisendörfer,2012-09-08,Add UdpControl example,['udp-control.js'],{'master'},node-ar-drone
+f3a3787b1de9668119be054f477eef3f6a337d02,Felix Geisendörfer,2012-09-08,Initial TcpVideoStream implementation + tests,"['TcpVideoStream.js,common.js,test-normal-connection.js,test-TcpVideoStream.js']",{'master'},node-ar-drone
+776db3bc0eec0d67bce2a16a3a32041fa2b5f3e2,Felix Geisendörfer,2012-09-08,Move stuff around,"['test-message-flushing.js,test-normal-connection.js']",{'master'},node-ar-drone
+c8196ef3fb7628a16a555e1267b02625fc700240,Felix Geisendörfer,2012-09-08,TcpVideoStream timeout handling,"['TcpVideoStream.js,test-connection-timeout.js,test-TcpVideoStream.js']",{'master'},node-ar-drone
+28d8c636bd43fc3bf1991aff51f33b467d1ea6ba,Felix Geisendörfer,2012-09-08,Default values and TcpVideoStream example,"['tcp-video-stream.js,TcpVideoStream.js']",{'master'},node-ar-drone
+0760020630eaff48e8a971aeddd416bf0e4a4aa7,Felix Geisendörfer,2012-09-08,Fix tests,"['test-connection-timeout.js,test-normal-connection.js']",{'master'},node-ar-drone
+e21a295bfa3d93f351fb7b05a8a95431c0fad99d,Felix Geisendörfer,2012-09-08,Fix package.json,['package.json'],{'master'},node-ar-drone
+675343511c606b93bed5a333455907d447cb6ce7,Felix Geisendörfer,2012-09-08,Add PngStream and expose it along with UdpControl,"['png-stream.js,index.js,PngStream.js,common.js']",{'master'},node-ar-drone
+776f401fd6d5d0ff9875b43f01e51f0c1eac563c,Felix Geisendörfer,2012-09-08,Test main api,['test-main-api.js'],{'master'},node-ar-drone
+9c14c96bbe34c6267a4ebe971b98cfd408ab5545,Felix Geisendörfer,2012-09-08,Implement at module,"['at.js,test-at.js']",{'master'},node-ar-drone
+bf4314ccb81ac1ee684a805b7c7c2a8853aad8e6,Felix Geisendörfer,2012-09-08,Add comment,['AtCommandCreator.js'],{'master'},node-ar-drone
+4d07f410639e772909b812d3aee8bddccf5e463c,Felix Geisendörfer,2012-09-08,Add comment,['at.js'],{'master'},node-ar-drone
+f2ea1f38c922e06c369bedbf5a263e9779d04dc8,Felix Geisendörfer,2012-09-08,Implement PCMD options,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+f0b8c902c1710b3233fa54665dca7fd81d2043f4,Felix Geisendörfer,2012-09-08,Moar comments,['AtCommandCreator.js'],{'master'},node-ar-drone
+6fcde6a744fa057d894751679959456c4fcf8f46,Felix Geisendörfer,2012-09-08,Implement PngEncoder,"['PngEncoder.js,test-PngEncoder.js']",{'master'},node-ar-drone
+43977803065ef8bf5e69c5dd7008e734312e4f99,Felix Geisendörfer,2012-09-08,Better / working PngEncoder ! yeahAnd a nice integration test,"['PngSplitter.js,PngEncoder.js,PngStream.js,test-sample-encode.js,test-PngEncoder.js']",{'master'},node-ar-drone
+75cfba3145362fc53ab96c479e776001ae0c6109,Felix Geisendörfer,2012-09-08,Improve PngStream example,['png-stream.js'],{'master'},node-ar-drone
+0f97f8cf402adb279aa24acc24bf0bf19cc8833c,Felix Geisendörfer,2012-09-11,Simplify code,['PngEncoder.js'],{'master'},node-ar-drone
+ba8a2357f309fb2cefc9d95bad9acacf342cc300,Felix Geisendörfer,2012-09-11,Groundwork for new PngStream,"['png-stream.js,index.js,PngStream.js,test-main-api.js,test-PngStream.js']",{'master'},node-ar-drone
+db94edbe5b09e569709f99c238f68251930ff3d4,Felix Geisendörfer,2012-09-18,Implement raw() method,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+abf48220d53a1bc87402144d730032ffb3035b5c,Felix Geisendörfer,2012-09-18,Rename,['test-AtCommandCreator.js'],{'master'},node-ar-drone
+65b96f6e0bc6f5d7ed169ad1a094b0e9abfd1a06,Felix Geisendörfer,2012-09-18,New interface,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+14f1e4ad3f5bde4269be9a6ce0b590d2ab8ea334,Felix Geisendörfer,2012-09-18,Flags and refactorings,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+ca767dabfcb34f812a180a542a4e9332c4ce670d,Felix Geisendörfer,2012-09-18,Slightly nicer,['AtCommandCreator.js'],{'master'},node-ar-drone
+2ca9d77915f29992e9d5ff4112760ea0c8d7d7e2,Felix Geisendörfer,2012-09-18,Whitespace,['AtCommandCreator.js'],{'master'},node-ar-drone
+6d0819aa8830061f0f90ade8dde1bdd1e8c3b0b5,Felix Geisendörfer,2012-09-18,Add License,['LICENSE'],{'master'},node-ar-drone
+7cf74fd9847d460ae598234b1c3ec200eafaf45b,Felix Geisendörfer,2012-09-18,New Readme,['README.NEW.md'],{'master'},node-ar-drone
+e82c5508e55ef59fcaa59abb7167e8cf10f031d4,Felix Geisendörfer,2012-09-18,Add CONTRIBUTING guidelines,['CONTRIBUTING.md'],{'master'},node-ar-drone
+ecb30f10ebafff32989d5b38d5508488dc6f2bdb,Felix Geisendörfer,2012-09-18,Allow explicit flag setting again,"['README.NEW.md,AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+714556d373a971a3c034d03b41dcd4b8fb557671,Felix Geisendörfer,2012-09-20,Update examples,"['png-stream.js,tcp-video-stream.js,udp-control.js']",{'master'},node-ar-drone
+1b8f823c55868e21e490676e85d61f13652ad0ac,Felix Geisendörfer,2012-09-20,Start working on UdpNavdataStream,"['UdpNavdataStream.js,test-basics.js,test-UdpNavdataStream.js']",{'master'},node-ar-drone
+b6727761fa6ace0827e4751314f2486170802167,Felix Geisendörfer,2012-09-20,Finish UdpNavdataStreamNext: parser,"['UdpNavdataStream.js,test-basics.js,test-UdpNavdataStream.js']",{'master'},node-ar-drone
+81c4856f3af876816b0c0a245df26b67c19943fd,Felix Geisendörfer,2012-09-20,Expose UdpNavdataStream and add #destroy(),"['index.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-index.js']",{'master'},node-ar-drone
+86005e83dfa37602112b0b9046d33f5feb4fde0c,Felix Geisendörfer,2012-09-20,Check in navdata fixture,['navdata.bin'],{'master'},node-ar-drone
+9eeb153b8dafd6a383c895a1652af8f0ef3b0593,Felix Geisendörfer,2012-09-20,Upgrade buffy,['package.json'],{'master'},node-ar-drone
+538e61fc94f464ae920b551ac489bb46abe7df0b,Felix Geisendörfer,2012-09-20,Handle navdata re-requesting after timeout,"['UdpNavdataStream.js,test-UdpNavdataStream.js']",{'master'},node-ar-drone
+8942ea978b4ed4260ff4b11d17aa7063b6af755d,Felix Geisendörfer,2012-09-20,Some navdata parsing,"['NavdataReader.js,parseNavdata.js,test-parseNavdata.js']",{'master'},node-ar-drone
+661600b3c143bda4e7c945c00750171827ff89af,Felix Geisendörfer,2012-09-20,Fix whitespace,['parseNavdata.js'],{'master'},node-ar-drone
+7e3e362b262662cb5aa75db4fc9896408c2e7b88,Felix Geisendörfer,2012-09-23,New docs,['README.NEW.md'],{'master'},node-ar-drone
+03ee1d6027824f9a8deead5c69d4f2f50a7195a4,Felix Geisendörfer,2012-09-23,Remove unfinished test,['test-basics.js'],{'master'},node-ar-drone
+b49a6aea34564ac2e07f9b5dcd3fec85c5118ff5,Felix Geisendörfer,2012-09-23,Add travis config,['.travis.yml'],{'master'},node-ar-drone
+5f4ca6e007c28f25be583a4df8a6dd6e7a8fd48e,Felix Geisendörfer,2012-09-23,Handle ffmpeg not existing better,"['PngEncoder.js,test-PngEncoder.js']",{'master'},node-ar-drone
+344717a7b05a34c45ff617fb0d07be80b0986779,Felix Geisendörfer,2012-09-23,Comment,['PngEncoder.js'],{'master'},node-ar-drone
+d0dbecb29c91c3126e7a06ced4f27d2673bd598b,Felix Geisendörfer,2012-09-23,Try ffmpeg install for travis,['.travis.yml'],{'master'},node-ar-drone
+79c80e34ab293c6a053d79b0fe35cd5fda8b2352,Felix Geisendörfer,2012-09-23,Contributing,['CONTRIBUTING.md'],{'master'},node-ar-drone
+97e8253c7ad17652efea11e5ba9579ff76595fd3,Felix Geisendörfer,2012-09-23,Skip broken travis test,"['.travis.yml,common.js,test-sample-encode.js']",{'master'},node-ar-drone
+fa5739b8e75d783fe73c3449777f88cefcf74e0b,Felix Geisendörfer,2012-09-23,Don't build in node 0.6 for nowtest-index is hanging for some reason,['.travis.yml'],{'master'},node-ar-drone
+9c0f41445dfd796ccd754cb14ce5a7c2410e76dc,Felix Geisendörfer,2012-09-23,More Contributing info,['CONTRIBUTING.md'],{'master'},node-ar-drone
+fbb6345ac81f4ca09fa35d1c4a203789fb4a6507,Felix Geisendörfer,2012-09-23,Build badge,['README.NEW.md'],{'master'},node-ar-drone
+f0495a401d4778c333e50dcbe21c928406324259,Felix Geisendörfer,2012-09-23,Add note about missing docs,['README.NEW.md'],{'master'},node-ar-drone
+5a27a28323f56d43a4dccc0da03fecbd30be5f65,Felix Geisendörfer,2012-09-23,Will find a better place to track this,['Research.md'],{'master'},node-ar-drone
+240f714c1b133f222d7639d5ef2370d9842c47ba,Felix Geisendörfer,2012-09-23,Ideas for high level API,['CONTRIBUTING.md'],{'master'},node-ar-drone
+7c32289f037c23477ef4b6f4e7c2cb0a889d859d,Felix Geisendörfer,2012-09-27,"Use methods, not properties",['CONTRIBUTING.md'],{'master'},node-ar-drone
+4b9bdcc871e5728b22ab03b9935f55029d618e2f,Felix Geisendörfer,2012-09-28,0.0.1,['package.json'],{'master'},node-ar-drone
+9d4332fbf9ddaf3c55a16d52a61c551d2e2ba928,Felix Geisendörfer,2012-09-28,Delete old test,['test-NavdataParser.js'],{'master'},node-ar-drone
+59368e95d77fe9694a603b16a703ea1836b81f99,Felix Geisendörfer,2012-09-28,New Client and bug fixes,"['index.js,Client.js,Repl.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js,test-index.js']",{'master'},node-ar-drone
+185bc6a23955f225b059d3e78badd2ee7169d0f7,Felix Geisendörfer,2012-09-28,Implement config,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+e938c679deb297e3537fb19509594ac18a510eb9,Felix Geisendörfer,2012-09-28,Work on API,"['index.js,Client.js,test-Client.js,test-index.js']",{'master'},node-ar-drone
+5bd7055849f5d8a8391c8e3b3c2a264b6dd420bd,Felix Geisendörfer,2012-09-28,Implement AtCommandCreator#animateLeds,"['AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+517a4edf8052b4e6b20d7feb0ad6eff65ed5b24f,Felix Geisendörfer,2012-09-28,LED animations for client!,"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js']",{'master'},node-ar-drone
+4a40865afd493c9ee911950c474f16aa74270b30,Felix Geisendörfer,2012-09-28,Expose client to REPL,['Repl.js'],{'master'},node-ar-drone
+5e662c4c6fc10833721be7e301df1c55ebe745f0,Felix Geisendörfer,2012-09-28,Implement flight animation (still untested),"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js,test-Client.js']",{'master'},node-ar-drone
+0d2ba9699b93ec6dd7b93585470d4d38301645c2,Felix Geisendörfer,2012-09-28,Simplify repl,['Repl.js'],{'master'},node-ar-drone
+a1eacc088d66a9bf694e58ad1934e899fcb652a2,Felix Geisendörfer,2012-09-29,Rename method,"['index.js,PngStream.js,test-index.js']",{'master'},node-ar-drone
+adf3c3a7bf519d906541f24ae2004573fe5190a8,Felix Geisendörfer,2012-09-29,Move file around,"['PngEncoder.js,PngSplitter.js,PngStream.js']",{'master'},node-ar-drone
+9ead1ed41bb0af1582815c961204afbe4dea53a4,Felix Geisendörfer,2012-10-03,Allow catching navdata errors,"['Client.js,UdpNavdataStream.js,test-UdpNavdataStream.js,test-Client.js']",{'master'},node-ar-drone
+3a95b6bed1fdc6a16550f53ea586de5ce04a6726,Felix Geisendörfer,2012-10-03,Delegate navdata error events if needed,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+1c3116f8e94b32c82f9748be6be6b1d045c3b1c2,Felix Geisendörfer,2012-10-04,Check signature in PaVEParserSeems like the drone is sending another unexpected 4 bytes of payloadright now ... fuck. Will just send the raw data stream to ffmpeg fornow.,"['PaVEParser.js,test-PaVEParser.js']",{'master'},node-ar-drone
+a9949abed01728c8cb1b9e533b0a4b6bb20efe4d,Felix Geisendörfer,2012-10-04,Somewhat working pngStream stuff,"['png-stream.js,tcp-video-stream.js,PngEncoder.js,PngStream.js,test-PngEncoder.js,test-PngStream.js']",{'master'},node-ar-drone
+9db07c952716d98f67e397727039e12cd923e27b,Felix Geisendörfer,2012-10-04,Hook PngStream into Client,"['Client.js,PngEncoder.js,test-Client.js']",{'master'},node-ar-drone
+d095e804de9a126583eb0bddf78b757a6ec6c93e,Felix Geisendörfer,2012-10-04,Implement Client#after API,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+4afa7c15fcc9ebe772b2c552fda30b276349dae4,Felix Geisendörfer,2012-10-04,Update todo,['CONTRIBUTING.md'],{'master'},node-ar-drone
+ee77d3c541115bcf8ac5e7dc972da125c78bd65b,Felix Geisendörfer,2012-10-04,Client#disableEmergencyt,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+7d60e6c96fa3bf5915afae9f8317d316de267363,Felix Geisendörfer,2012-10-04,0.0.2,['package.json'],{'master'},node-ar-drone
+aa2683e92db2ff77f77f54be91195594cb4b67fd,Domenic Denicola,2012-10-05,"Use npm test as primary test runner.Makefiles are not cross-platform, but if you want one, it can delegate to npm (which *is* cross-platform).See https://gist.github.com/2790533 for more tips on writing portable Node.js code.","['Makefile,package.json']",{'master'},node-ar-drone
+1f3365edf22d04c6b787be1dda6b0bec4bcd04a5,Domenic Denicola,2012-10-05,client#disableEmergency is implemented,['CONTRIBUTING.md'],{'master'},node-ar-drone
+5581c2098b3aae8eeecb0a97f83f80ceb2a4c5d1,Felix Geisendörfer,2012-10-05,Add and document config command,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+072f9f0539fee57e7bd5fdbe1fd2ff85df4f7c4f,Bernhard K. Weisshuhn,2012-10-11,reenable ffmpeg back pressure (works for me),"['PngEncoder.js,test-PngEncoder.js']",{'master'},node-ar-drone
+ca205faa13cecd1b1be95d3565d4f72173c57046,Bernhard K. Weisshuhn,2012-10-11,add workaround for 68 byte PaVE headers,['PaVEParser.js'],{'master'},node-ar-drone
+d13c7ecaabc9a6b126b2af444a828be7676625e0,Bernhard K. Weisshuhn,2012-10-11,fix last-minute typo,['PaVEParser.js'],{'master'},node-ar-drone
+77b1d44d32e90f696ef647df4e8752591581bd6b,Bernhard K. Weisshuhn,2012-10-11,only advance when buffer size allows,['PaVEParser.js'],{'master'},node-ar-drone
+67a27926fb3529495c9fcc601fab6fb2484e17ca,Bernhard K. Weisshuhn,2012-10-11,add test for 68 byte size PaVE frames,"['pave-68.bin,test-PaVEParser.js']",{'master'},node-ar-drone
+79aac27764a4e6061889f35d813f6f866e4fa580,Bernhard K. Weisshuhn,2012-10-12,"make 68 byte frames the default, compensate during paring","['PaVEParser.js,test-PaVEParser.js']",{'master'},node-ar-drone
+ccc1e53dea91a9309be034d706235d7e8763065a,Felix Geisendörfer,2012-10-13,Update 1.0 info,['CONTRIBUTING.md'],{'master'},node-ar-drone
+4f8636dffdf53b44838d167cef377a6b35261d8f,Felix Geisendörfer,2012-10-19,0.0.3,['package.json'],{'master'},node-ar-drone
+2e2fa96c3e4e6bc3c4b64df1662789ca187891ad,Christian Sanz,2012-10-20,"Update lib/constants.jsLet me override the IP, so I can take over with my simulator",['constants.js'],{'master'},node-ar-drone
+b463228827b2224618dc3635ba78588ec7c08341,Martin Schuhfuss,2012-10-25,changed altitude conversion,['parseNavdata.js'],{'master'},node-ar-drone
+90dab765dd14b658a18541db794727a3c9c6cf52,Contra,2012-10-29,custom events,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+f7cb45b243828c13da87f915e06c3d600eee91b6,Contra,2012-10-29,fix lastState typo,['Client.js'],{'master'},node-ar-drone
+da958666c82f6da3a9b25f7a8a10792461d03689,Contra,2012-10-30,split out + split hovering and flying events,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+4ec60e035b6f9fe2390d8d533d51e9b6115a2fce,Eric Schoffstall,2012-11-01,remove explicit port bind,['UdpNavdataStream.js'],{'master'},node-ar-drone
+2a6e98492f8a33b9d9a8053fa652ca96bb55866a,Contra,2012-11-01,remove unneeded test,['test-UdpNavdataStream.js'],{'master'},node-ar-drone
+bfa07cdae035b793d84f105918182154a027ad4a,Felix Geisendörfer,2012-11-04,0.0.4,['package.json'],{'master'},node-ar-drone
+c53167a1748d03856c797bf354366861c384968a,Jan Lehnardt,2012-11-10,Implement `Client.battery();`Returns `Client._lastBattery`.,['Client.js'],{'master'},node-ar-drone
+95cd887eb90a2ec284469215d7b70f83f63592dc,John Schulz,2012-11-11,Make JSHint happy.,"['constants.js,parseNavdata.js']",{'master'},node-ar-drone
+efc484151ae3356c5ddbd949c98d1de5860fea12,John Schulz,2012-11-11,Add lookup for detection types.,['constants.js'],{'master'},node-ar-drone
+6b08477a43667724b5b5c3bac7c15b7f013ec27f,John Schulz,2012-11-11,Add flying modes,['constants.js'],{'master'},node-ar-drone
+dfdb6b3a623ebd477a2c9a29ddf6c74247116508,John Schulz,2012-11-11,Add new types based on structs from C SDK.,['NavdataReader.js'],{'master'},node-ar-drone
+bac622cd341dfc4e3ce6484bc9dff94494f27841,John Schulz,2012-11-11,Add two utility functions.,['parseNavdata.js'],{'master'},node-ar-drone
+ddde825fc954b8082b88861bba9cbf60b4f50c33,John Schulz,2012-11-11,Alter `demo` navdata block.,['parseNavdata.js'],{'master'},node-ar-drone
+b613e99e5c1436cb9a1be8e44b8490fc89a3c6eb,John Schulz,2012-11-11,Use `droneTimeToMilliseconds` utility function.,['parseNavdata.js'],{'master'},node-ar-drone
+154d4c9d7da1cb0df5979ef241d62a024e162282,John Schulz,2012-11-11,Be consistent with `gyrometers`,['parseNavdata.js'],{'master'},node-ar-drone
+9877ea00aeb85e0ea0e73ca3d6d104d662c1c62f,John Schulz,2012-11-11,Alter `demo` navdata block.,['parseNavdata.js'],{'master'},node-ar-drone
+7ca3214e7f38e985290ab94623e222f89b6022bd,John Schulz,2012-11-11,"Add all missing navdata blocks (`magneto`, `windSpeed`, `games`, etc).",['parseNavdata.js'],{'master'},node-ar-drone
+2f89091e72712cbe4d1ea65277513826c7608243,John Schulz,2012-11-11,Add functions required for dealing with navdata masks.,['maskingFunctions.js'],{'master'},node-ar-drone
+c2c6615979cfd403ed44f0f760a626f855d4f34f,John Schulz,2012-11-11,Addressing spacing and syntax errors from a borked commit.,['parseNavdata.js'],{'master'},node-ar-drone
+01e008e710c4a4bb5a9e396ef9a42c2cee034018,John Schulz,2012-11-11,Need to supply context b/c NavdataReader methods use `this`.,['parseNavdata.js'],{'master'},node-ar-drone
+d1d3dc5dbd855532e54b5bf17a5f5bc08bb789c5,John Schulz,2012-11-11,Remove detritus which is causing errors.,['maskingFunctions.js'],{'master'},node-ar-drone
+ae8594305a18b3013b9198cfccc133107b827e24,John Schulz,2012-11-11,"Adding items which, somehow, were omitted from 7ca3214.",['parseNavdata.js'],{'master'},node-ar-drone
+af8c0d8b394537bf75911ebb6795f1ab45b879e5,John Schulz,2012-11-12,"Not entirely sure this is correct, but going with it.",['parseNavdata.js'],{'master'},node-ar-drone
+2d770c6c6ee31f36b6d965ec1ea62cb96f87b20c,John Schulz,2012-11-19,s/gyrometers/gyroscopes/g,['parseNavdata.js'],{'master'},node-ar-drone
+d2b457793856d7ed1b70e3a34222c38e4cb7c014,John Schulz,2012-11-19,Whitespace change,['parseNavdata.js'],{'master'},node-ar-drone
+b17d41e58a943a27d17d3dccd950e64dd11491ca,John Schulz,2012-11-19,Display wifi signal strength as a percentage,['parseNavdata.js'],{'master'},node-ar-drone
+5d5a3745cf8fc8485b36d075a82bafb7a1e547ba,John Schulz,2012-11-19,"Reverting to approach that allows test to pass.Unsure `ARDrone_SDK_2_0/ARDroneLib/Soft/Common/navdata_common.h:753` has `uint32_t link_quality` but using that: * Breaks a test * Produces a value from 0 - 500 * Causes strange behavior[^1][^1]: (Values were observed to start at 500 and gradually decline to 0 in about 10 seconds. Sometime later the value would incrementally increase back to 500 and, again, slide back down to 0.)",['parseNavdata.js'],{'master'},node-ar-drone
+7ea11d33d6b65dea1e561e5895da92ed844f5df0,John Schulz,2012-11-19,Fix two typos in the `navdata` keys.,['parseNavdata.js'],{'master'},node-ar-drone
+4144e7e9a7259c46e66fd37888b6a16c8d0b55b2,John Schulz,2012-11-19,Add two properties for navdata option masks.,['maskingFunctions.js'],{'master'},node-ar-drone
+b4a0e7d49edd643da0a9fd373b0e84db4da61452,John Schulz,2012-11-19,Missed one in ff9be5c.,['parseNavdata.js'],{'master'},node-ar-drone
+4ea2a5104342885f7b05610854ff795369f4772e,John Schulz,2012-11-19,"Some guesses about units for various navdata properties.Based on (guessing, after reading) ARDrone_SDK_2_0/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.c:51",['parseNavdata.js'],{'master'},node-ar-drone
+5319cfc092e00b547d676f8612a86b16e013eda3,John Schulz,2012-11-19,Use new structure for `demo` & `rawMeasures` in `navdata` but keep BC.,['parseNavdata.js'],{'master'},node-ar-drone
+a5a3f369d41f362ef38871d82f27e212bee42364,John Schulz,2012-11-19,Add tests for data structure introduced in 5319cfc.,['test-parseNavdata.js'],{'master'},node-ar-drone
+16c9605bd1e9335be009e8347fda99dedb2d3c58,John Schulz,2012-11-19,WIP commit. Adding tests for 9(?) of the 22(?) new `navdata` objects.,['test-parseNavdata.js'],{'master'},node-ar-drone
+69d7a4d9c14f73f0c18fe05c32062f99f011ac0a,John Schulz,2012-11-19,"Add tests for `vision`, `visionPerf`, `trackersSend`, `visionDetect` keys.",['test-parseNavdata.js'],{'master'},node-ar-drone
+9c168388746fd4a4fae5bbb54f820cc44ad95539,John Schulz,2012-11-19,Add tests for the 9 `navdata` keys without them.,['test-parseNavdata.js'],{'master'},node-ar-drone
+2a3331c115d7288acd20b7862b833d9af7e15ec9,Bernhard K. Weisshuhn,2012-12-16,update to latest buffy (performance),['package.json'],{'master'},node-ar-drone
+80f003b387d9ced83d1135675210bd072574806e,Bernhard K. Weisshuhn,2012-12-16,version 0.0.5,['package.json'],{'master'},node-ar-drone
+a8ff73c3a77c8dec1e7638345d14fc37b0b07cf0,Felix Geisendörfer,2013-04-23,Request navdata by default,['Client.js'],{'master'},node-ar-drone
+fbb54d56e98bc70bb47255096d98354c46113c07,Felix Geisendörfer,2013-04-23,Add takeoff/land callbacksCloses #13,['Client.js'],{'master'},node-ar-drone
+37233e1014893db405395162d32c38feb69d0220,Felix Geisendörfer,2013-05-16,0.0.6,['package.json'],{'master'},node-ar-drone
+166a049060e6e7b275e010454f4cfe4e3742c79a,Laurent Eschenauer,2013-05-22,Fix uncatched errors when failing to spawn ffmpegFixes issue #44,"['PngEncoder.js,PngStream.js,test-PngEncoder.js,test-PngStream.js']",{'master'},node-ar-drone
+621dc688b30a1d2e5d07315a8dafcbf9fa71ea96,Laurent Eschenauer,2013-05-27,Skip broken testSee discussion on issue #47,['test-Client.js'],{'master'},node-ar-drone
+daf486d9c9c3b48d81d378f4b8c591b359a411de,Laurent Eschenauer,2013-05-27,Maintain a single png and tcp stream in clientIntroducing two new API calls: getPngStream() and getVideoStream().Multiple calls to these methods return the same objects. The underlyingTcpVideoStream is the same and its lifecylce (connect/reconnect) ismanaged by the client.,"['png-stream.js,tcp-video-stream.js,Client.js,PngStream.js,TcpVideoStream.js,test-Client.js']",{'master'},node-ar-drone
+c0d219b41cb883ebf011996d53ff04fd4c3217ee,Laurent Eschenauer,2013-05-28,Added an example on saving the video-stream,['save-video-stream.js'],{'master'},node-ar-drone
+de1bc8f6039f3e5a1a46013f6b57f13a485a6194,John Wiseman,2013-05-28,"Added calibrate command to UdpControl and Client, which according tothe SDK docs ""asks the drone to calibrate the magnetometer (must beflying).""","['Client.js,AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+fd2085f19c10a69d2ade250b30ad3205313c6143,Felix Geisendörfer,2013-05-29,0.1.0,['package.json'],{'master'},node-ar-drone
+197a588797d86ec6c1eeb8684b6a0508e7a614d0,Laurent Eschenauer,2013-06-07,Added ftrim() command to the clientThis command sets a reference of the horizontal planefor the drone internal control system.Relates to #27,"['Client.js,AtCommandCreator.js,test-AtCommandCreator.js']",{'master'},node-ar-drone
+a3ab4df7cba964e67b8317c050e2358f75e4faf2,Laurent Eschenauer,2013-06-07,vidionDetect -> oriantationAngle is a float32,['parseNavdata.js'],{'master'},node-ar-drone
+7e26979d643c2f08f7d37a35b06667d5bcdcb74d,Contra,2013-06-28,ignore pcmd methods with no arguments,"['Client.js,test-Client.js']",{'master'},node-ar-drone
+9307871755b97bcd9b722a8f04249277759c2cdb,Contra,2013-06-28,test comments. closes #62,['test-Client.js'],{'master'},node-ar-drone
+da3a19e548ae6dc5f00549c1fe75b0bd36231b5a,Laurent Eschenauer,2013-08-28,0.2.0,['package.json'],{'master'},node-ar-drone
+8f544a5494e2425221193c9c65a5765cfcb725aa,Laurent Eschenauer,2013-08-29,Added a Changelog file,['Changes.md'],{'master'},node-ar-drone
+3056077aea721b3e80f81883b30d72d912035d33,Blaine Bublitz,2013-09-03,"add image size option to png encoder, also add frameRate and imageSize options to readme",['PngEncoder.js'],{'master'},node-ar-drone
+5f9244d00b69fa9c0ca703b20116f061c6db46c0,Andrew Nesbitt,2013-09-23,Preliminary GPS support,"['NavdataReader.js,parseNavdata.js']",{'master'},node-ar-drone
+0cf48cb5785b50d85ef59ecf201de1a0152342f3,Andrew Nesbitt,2013-09-23,Missing comma,['parseNavdata.js'],{'master'},node-ar-drone
+320c8d447e73b2287c47d1547a71457cb8e9968b,John Wiseman,2013-10-02,Fixed errors in GPS data definitions.* Fixed incorrect order of unk0 & data_available fields.* Fixed misspellings.* Many fields are actually arrays (this was causing a lot of fields tohave nonsense values).Based on https://github.com/paparazzi/paparazzi/blob/55e3d9d79119f81ed0b11a59487280becf13cf40/sw/airborne/boards/ardrone/at_com.h,"['NavdataReader.js,parseNavdata.js']",{'master'},node-ar-drone
+2cef8740c65559c12d922144e5e496ff358710a0,John Wiseman,2013-10-02,"Fixed test-parseNavdata tests (issue #72).* Removed the failing zimmu3000 option test--I think it's been obsoletedby GPS.* Fixed up test/fixtures/navdata.bin by replacing what looked like a bogus GPSoption with a real one, recorded from firmware 2.4.7 (and updated the checksumof the entire data packet).","['navdata.bin,test-parseNavdata.js']",{'master'},node-ar-drone
+f58c8eb930c63f95aed167b0b221cae4c446ef12,John Wiseman,2013-10-02,"Added unit tests for gps option.Not all values look legit to me--longitude, hdop and vdop look suspicious.I changed droneTimeToMilliseconds so it won't return negative times andfixed gps.last_frame_timestamp to be in milliseconds.","['parseNavdata.js,test-parseNavdata.js']",{'master'},node-ar-drone
+5df9ce2a7942df0e369efef51eda7230dded64ce,Andrew Nesbitt,2013-10-03,0.2.1,['package.json'],{'master'},node-ar-drone
+d73074206ee4122ce21f64aa717504f08790226f,John Wiseman,2013-10-14,Fixed missing var.,['UdpControl.js'],{'master'},node-ar-drone
+2be22dc0bfc678837df98c7e440b3beb1f0933eb,John Wiseman,2013-10-15,Added unit tests for CONFIG ACKs.,"['Client.js,AtCommand.js,AtCommandCreator.js,UdpControl.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js']",{'master'},node-ar-drone
+3e77b5a79061fddf53a7c49edaffdf43e0b4cc92,John Wiseman,2013-10-18,"Changed signature of config.config can now be called as config(key, value, callback) or config(options).Added more info on config to README.","['Client.js,AtCommandCreator.js,UdpControl.js,test-AtCommandCreator.js,test-Client.js']",{'master'},node-ar-drone
+03512ad37cf4e0f19698ee6bfabeb6ac1f8dc4c3,John Wiseman,2013-10-21,Fixed config signature to bring callback out of options.,"['AtCommand.js,AtCommandCreator.js,UdpControl.js,test-AtCommand.js,test-AtCommandCreator.js,test-UdpControl.js']",{'master'},node-ar-drone
+9495035c4345448e4ae182fde4439ca6d48efcc5,John Wiseman,2013-10-21,Increased default timeout to 500 ms.Also removed vestigal retries references.,['UdpControl.js'],{'master'},node-ar-drone
+3cd3037551c6f26b9b6f61a9a2e94e85f54ebae5,John Wiseman,2013-10-21,Increased delay in test to trigger timeout.,['test-UdpControl.js'],{'master'},node-ar-drone
+695abef0a141ca3aa42aa2d1091b372bb522e2db,John Wiseman,2013-10-22,0.3.0. Backwards-compatible new features for Client.config.,['package.json'],{'master'},node-ar-drone
+e68bdd6395bf9e504063ff098beabb5a79178338,Jan Pieper,2013-10-22,drop unused variables,"['Repl.js,AtCommandCreator.js']",{'master'},node-ar-drone
+70c4bbc49b076d43a91a17bc9c65144e97372d5e,Jan Pieper,2013-10-23,drop duplicate test,['test-Client.js'],{'master'},node-ar-drone
+53a03129e4b845473801eb4b87cc9ae8fec7478d,Jan Pieper,2013-10-23,mark single eval as not evil via inline jshint config,['Repl.js'],{'master'},node-ar-drone
+14ad836ba2dae9c181f1efc513c04feea09a9ce3,Jan Pieper,2013-10-23,use 2 spaces for indention,"['.jshintrc,Client.js,AtCommandCreator.js,PngSplitter.js,test-parseNavdata.js,test-PngEncoder.js']",{'master'},node-ar-drone
+2b936c59b3b0f1c823bc2f24b72e1435e4caa102,Jan Pieper,2013-10-23,force use of curly braces,"['.jshintrc,parseNavdata.js,test-connection-timeout.js,test-normal-connection.js']",{'master'},node-ar-drone
+31ff514891115e673600048d2b6265f35e611f9c,Jan Pieper,2013-10-23,disallow trailing whitespace,['.jshintrc'],{'master'},node-ar-drone
+04736689c07ce792d4e64bd22aaba50b1313da68,Jan Pieper,2013-10-23,tell jshint we're using node.js,['.jshintrc'],{'master'},node-ar-drone
+b8e199613d88dc4c3315b15df2c5e9a3165c049d,Jan Pieper,2013-10-23,check files in examples directory to be jshint compliant,"['save-video-stream.js,package.json']",{'master'},node-ar-drone
+6a05eebe1aa6e69d404a31d310bd7546ea6077f9,Robin Mehner,2013-10-24,"Set undef option for jshint, fix code to comply to this rule","['.jshintrc,test-UdpControl.js,test-Client.js']",{'master'},node-ar-drone
+0d48cfd2851e8436b38632abe8d6fe6c38c3880f,Robin Mehner,2013-10-24,"Set unused option for jshint, removed unused variables in code","['.jshintrc,UdpControl.js,test-connection-timeout.js,test-UdpControl.js,test-Client.js']",{'master'},node-ar-drone
+a2fd2fa28465ce05d16a3550456fa5208e0bb5ee,bmcquee,2013-11-09,some demo programs for tweet driven drone and testing tweet stream,"['simple_flight.js,tweet_repl.js,tweets.js']",{'master'},node-ar-drone
+bdb3d4f9ce0cb36a4db666082ed86fec5ee709d2,John Wiseman,2013-11-11,Style fixes for sample code.,"['simple_flight.js,tweet_repl.js,tweets.js']",{'master'},node-ar-drone
+f83cd0ab41416b1959e77e4116dac7135fb216aa,John Wiseman,2013-11-11,Removed examples/tweets.js; It just prints tweets to the console & doesn't usethe node-ar-drone API.,['tweets.js'],{'master'},node-ar-drone
+3bc3fe083839cca2deb5567506c9cbda8838babe,Ryan Schmukler,2013-12-08,Fixed TCPVideoStream trying to reconnect 2x,"['Client.js,TcpVideoStream.js']",{'master'},node-ar-drone
+fb735eeaa98811d0f4546fe00aaa6f7ca8fa0cec,Ryan Schmukler,2013-12-08,Updated so tests pass,"['TcpVideoStream.js,test-normal-connection.js']",{'master'},node-ar-drone
+aa776a37d28ec3c488a1f6e1d6e6560ad90051b8,Ryan Schmukler,2013-12-09,"Updated to remove listener from socket, forward errors from socket to client",['TcpVideoStream.js'],{'master'},node-ar-drone
+07d799bc2633e47919a1a942ef76a1b5b4311139,Ryan Schmukler,2013-12-10,Release 0.3.1,"['Changes.md,package.json']",{'master'},node-ar-drone
+dcfce2013cab8cd0194957ac2612effe665464eb,John Wiseman,2014-03-06,"Changed NavdataReader.char to call buffy Reader.char.This fixes the bug where char wasn't advancing the buffer pointer,causing bad parses of the magneto and kalmanPressure navdata options(issue #90).","['NavdataReader.js,test-parseNavdata.js']",{'master'},node-ar-drone
+e0e3144b963cd7af3ee85f8ceb04faef089ae15d,Felix Geisendörfer,2014-05-03,0.3.2,['package.json'],{'master'},node-ar-drone
+f1b48cd4d71227a650fb54004eeae5b1f753f46d,John Wiseman,2014-05-08,"Updated GPS navdata definition for firmware version 2.4.8.I also took this opportunity to rename GPS data fields to beconsistent with existing nomenclature (that is, degreeMag instead ofdegree_mag).The new data definitions come fromhttps://github.com/AutonomyLab/ardrone_autonomy/pull/95 whichsupposedly came via backchannels from Parrot.I spliced a GPS navdata option collected from a drone running 2.4.8into test/fixtures/navdata.bin and updated the unit tests.","['parseNavdata.js,navdata.bin,test-parseNavdata.js']",{'master'},node-ar-drone
+9a5d0a553fd148864deded61b61389be20810740,Michael Smith,2014-11-25,Fixes a typo,['test-Client.js'],{'master'},node-ar-drone
+d57b40a0b5d01da460ceeeac8c0f427a972d5b45,Michael Smith,2014-11-25,"Fixes client up/down, left/right, front/back, clockwise/counterclockwise functions to accept 0 speed. Adds test. Resolves #106Previous implementation would not allow one to supply 0 for speed to stop moving along that axis. The only way to stop would be to issue a client.stop(). But that would also cancel any other movement going on at the time.For example, centering a joystick should stop pitch, but should not stop yaw being controlled by a dpad on the same controller.","['Client.js,test-Client.js']",{'master'},node-ar-drone
+0ac5ccc73a42ee5cafa71399ff79e2c2b1d2c1b6,Felix Geisendörfer,2014-11-25,0.3.3,['package.json'],{'master'},node-ar-drone
+ed48accdee692824ec010446e1e99e14f62fc467,Paul Hayes,2017-10-08,This should allow Travis builds to now pass. There was possible a BOM character at the begining of the package.json. The best fix is to tell Travis to use a more up to date version of npm and node. As 0.6 is ancient!,['.travis.yml'],{'master'},node-ar-drone
+047311e88a818a62ade0c634f81491bb4a2edc22,Arno Bornman,2018-10-21,Initial API documentation for 'navdata' client event,['NavData.md'],{'master'},node-ar-drone
+957845ceada89009bd08e778f2f629e39d68d6cb,Skyguy92,2019-10-16,Moved FTRIM into Calibration function and included it in the readme.md.,"['Changes.md,Client.js']",{'master'},node-ar-drone
+b1af120f941233916034befad12b7cd36625c09c,Skyguy92,2019-10-17,fix build,['Client.js'],{'master'},node-ar-drone
