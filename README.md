@@ -29,7 +29,9 @@ foobar.pluralize('word') # returns 'words'
 ```
 
 ### Additonal Resources
-- [Midterm Presentation](./SoftMain_HCIRevivalGroup_Change Analysis & Bug Detection for CPS Dev_MidtermPresentation)
+[test](Additional Resources/SoftMain_HCIRevivalGroup_Change Analysis & Bug Detection for CPS Dev_MidtermPresentation.pdf)
+
+[Midterm Presentation](Additional Resources/SoftMain_HCIRevivalGroup_Change Analysis & Bug Detection for CPS Dev_MidtermPresentation.pdf)
 - Final Presentation: LINK
 - GitHub repositories used for example classification: LINK
 - Results of example classification: LINK
