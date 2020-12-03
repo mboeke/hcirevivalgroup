@@ -1,112 +1,112 @@
 ID,Commit_ID,Contributor,Date,Message,Files,Branch,Repository
-1759,62b86332a145588f1da3228446b832389b610495,Rick Waldron,2015-09-23,v0.8.92,['package.json'],{'master'},johnny-five
-970,013dc86449a2916204cf6eb016768706f98834e1,deadprogram,2015-09-08,Update RELEASES,['RELEASES.md'],{'master'},cylon
-697,a735a62b05b1f93e54fec620ec3936e0425d9082,Alexander Grau,2015-05-19,csv output,"['drivecontrol.ino,motorcontrol.cpp,motorcontrol.h']",{'master'},ardumower
-320,8e01fed143c6fbd5239a93bedcdb64f2eb245102,Bertus Kruger,2013-03-13,Update gcode.cRemoved the home_select variable.,['gcode.c'],{'master'},grbl
-2122,096e470e0b5ff43bc5eae8c1ca2e5dc144c8655c,Rick Waldron,2016-03-10,Expander: add missing example,"['keypad-MPR121.md,expander-CD74HC4067_NANO_BACKPACK.js']",{'master'},johnny-five
-1106,1cdc82263ce9f781532541290c5bdeb7b49421f3,Sean D'Epagnier,2019-03-21,work around new issues and rename lcd to make less client.py,"['glut.py,lcd.py,ugfx.cpp,ugfx.h,ugfx.i,setup.py,scope.py']",{'master'},pypilot
-741,8d374dc022cc88e44dadd971b780a081e14a8ace,Sean D'Epagnier,2017-07-19,add lcd readme,['README'],{'master'},pypilot
-111,78d7e961560eb7a369602ea788598b5d9f32c7da,Aldo Vargas,2016-01-05,Changes before hovering tests,['mw-hover-controller.py'],{'master'},DronePilot
-81,8fbff1e14be001021bc25f882ab91fa8a4697c61,Adrian Zankich,2014-04-14,Add coverallsUpdate travis configUpdate travis configAdd coveralls badge,['.travis.yml'],{'master'},gobot
-1004,cf927d99d5d6e425a162d91249d6f2c9d87a4ac7,AlexanderG,2017-05-23,perimeter sender/receiver: new signal codes (SIGCODE),"['mower.h,perimeter.cpp,perimeter.h,pfod.cpp,robot.cpp,settings.h,sender.ino']",{'master'},ardumower
-868,8fd6f8a99e71256ecc1d5ecb8150d9a91545cd28,Andrew Stewart,2015-01-15,Generate lodash script for only methods we use,['lodash.js'],{'master'},cylon
-1136,9fe861ccbdbf74e2df5bf662e4bef36f280089a6,AlexanderG,2018-05-20,ros: added driver and launch file,"['ardumower.launch,ardumower.py,robot.urdf']",{'master'},ardumower
-385,ed417220e1854be9fdda36b7ffb4b3033f7b2492,Sonny Jeon,2014-07-04,"Realtime rate reporting. Updated decimal places.- Added a new optional compile-time feature for ‘realtime’ (within50ms) feed rate reporting. When querying for a status report, a newdata value will state the current operating rate. It’s only beta at themoment and has some kinks to work out.- Updated the code for printing floating point values to N decimalplaces. Generalized the main floating point print code to accept a newdecimal places value and created a set of handler functions to printcertain floating point value types used in Grbl, like position, rates,coordinate offsets, etc. All of these have different decimalrequirements and change when printed in mm or inches mode.- Number of decimal places for the different value types can bere-defined in config.h, but there shouldn’t be a need for this, asthese are physically limited.- Removed the decimal places settings, as this was now obsoleted by thenew decimal places code.- The new decimal places code also saves almost 300kB in flash space,as it’s more efficient.","['config.h,eeprom.h,gcode.c,print.c,print.h,report.c,settings.c,settings.h,stepper.c,stepper.h']",{'master'},grbl
-1234,314640f6261c62f57884f128bff00b0dc72a5dad,Rick Waldron,2015-01-18,"""docs"" -> ""examples""Unfortunately, they still live in the docs/ directory, but I can live with that.","['.travis.yml,Gruntfile.js,.noedit.md,.readme.md']",{'master'},johnny-five
-121,9d70c695ec54a519cbc5b686e22dc1cab284798b,Hasanga Somaratne,2017-08-23,Minor bugfix,['user-view.component.html'],{'develop'},DroneSym
-1130,7f737af7e9a91bec6146ba6bd7ee8cdb611ab5de,Divan Visagie,2014-11-19,fix for issue where both accelerometer and joystick are required and cant work independantly of each other,['wii.js'],{'master'},johnny-five
-154,c1e7f5140cb292c38429bf7462ac55cbe4ae661d,thepill,2019-05-04,Use 130px for consumable title width in settings,['index.html'],{'master'},Valetudo
-166,9b436f810afe16b116f3ac207b270f17c1f70b87,Dilina Dehigama,2019-02-22,Added drone name to marker in map,"['dashboard.component.css,dashboard.component.html']",{'develop'},DroneSym
-1122,e8a1b464410ad81e6d3052e52f6cb1fff13feb85,AlexanderG,2018-04-19,minor cosmetic change,['mower.cpp'],{'master'},ardumower
-144,977c4948bd2156cda7676010d9c0d744522942a0,Simen Svale Skogsrud,2011-02-11,syntax tweak,['gcode.c'],{'master'},grbl
-331,0cd3ed76cd7e050a22c991fd0740d4d090a8d7f7,Tim Ryan,2015-10-13,Adds Vehicle inheritance test.,"['api.py,test_vehicleclass.py']",{'master'},dronekit-python
-523,48bdf6a2cacec92b034195aac1fb5d4a2d96d482,uwezimprich@googlemail.com,2015-03-15,MC 33926,"['mc33926_breakout.kicad_pcb,mc33926_breakout.kicad_pcb-bak']",{'master'},ardumower
-10,2788919f0144917854e2a49d87b49088186d4e73,Rick Waldron waldron.rick@gmail.com,2012-04-11,Add Board.mount() api and testsSigned-off-by: Rick Waldron waldron.rick@gmail.com <waldron.rick@gmail.com>,"['package.json,johnny-five_test.js']",{'master'},johnny-five
-197,948d6eaeac7184591acb2cf9e766d1e95252041b,manutenfruits,2019-07-14,Make mqttConfig.provideMapdata not always true.,['MqttClient.js'],{'master'},Valetudo
-1634,59a6332660e48305f767fee02f87a72df7896f7b,Rick Waldron,2015-06-18,Expander: fix incorrect inversion operation.,"['expander.js,expander.js']",{'master'},johnny-five
-601,837a2fb3d03b98fc4c5ea57b00d78f5fa0c5821c,Rick Waldron,2013-08-02,"Tests: Pin, Led, SensorSigned-off-by: Rick Waldron <waldron.rick@gmail.com>","['Gruntfile.js,pin.js,sensor.js,capabilities.js,led.js,mock-pins.js,pin.js,sensor.js']",{'master'},johnny-five
-1220,90aee283a8096ebb93307fe4b7f809ba517ac5a0,Rick Waldron,2015-01-15,Cleanup MockFirmata,['mock-firmata.js'],{'master'},johnny-five
-359,d5d228e2d686a600a107e2820bf8e79d3744586f,deadprogram,2014-01-15,Remove node 0.8 from travis build,['.travis.yml'],{'master'},cylon
-1911,b4f53775434a206ce46f3ce1305342e3952dc44f,Ron Evans,2018-09-07,up2: add support for built-in LEDsSigned-off-by: Ron Evans <ron@hybridgroup.com>,"['up2_leds.go,adaptor.go,adaptor_test.go']",{'master'},gobot
-1189,f772562da4ea89a5cb21340116efa97969be8a1d,Sean D'Epagnier,2019-06-22,make servo eeprom data more reliable,"['arduino_servo_eeprom.cpp,arduino_servo_eeprom.h']",{'master'},pypilot
-121,91643943d2f5b8449ddf182cb0fc076ac796f645,Aldo Vargas,2016-01-25,Yaw controller fixedWorking yaw controller!!,['mw-hover-controller.py'],{'master'},DronePilot
-489,2450ceb3f5cb2653ee32dd3d5ef0fbf2c7e69645,Hypfer,2020-07-06,feat(roborock): Experimental support for even more roborock vacuums,"['Valetudo.js,Model.js']",{'master'},Valetudo
-143,91088195f869d6d6f96bb612770e3bcc7a1d00b8,Ondřej Nový,2019-04-30,"Limit memory allocationProcess valetudo on robot can sometimes consume a lots of memory (memoryleak?). If this happens, kernel sometimes kill player (instead of valetudoeven with high oom score). So let's limit max memory allocation of valetudoprocess to 200 MB, which should be enough. Better is to kill valetudothan player itself.",['valetudo.conf'],{'master'},Valetudo
-1252,973ca95c92f18f85b31bb18dd75112a3f3e23d60,Rick Waldron,2015-01-23,Remove nodebots examples until more thorough documentation is complete,['programs.json'],{'master'},johnny-five
-101,3a5d305d46857e42f8e696b0d2af4efba882ca18,Raveen Harith Perera,2017-08-08,Change pytest command for trusty envs,['.travis.yml'],{'develop'},DroneSym
-997,4a3856eff8574f4186f17b56e4e7a169245d1cf7,Rick Waldron,2014-08-12,Initial Led.Digits.prototype.print,['ledcontrol.js'],{'master'},johnny-five
-1501,b250670ccb2613806733b4caebb1112f98c4ae97,deadprogram,2017-04-29,joule: export PWMPin adaptor methodsSigned-off-by: deadprogram <ron@hybridgroup.com>,"['edison_adaptor.go,joule_adaptor.go']",{'master'},gobot
-511,59dea1edc6b2ea9f019c7f357c27f00ce2fec9bf,Hamish Willee,2015-12-30,Update instructions to use DK-SITL,['sitl_setup.rst'],{'master'},dronekit-python
-75,be58ed5c7aaaa65eb756b122efdc01c884fa87a7,Benedikt Krueger,2019-02-16,made timer configuration intuitive- Added form for easy timer configuration- Added human readable timer interpretation,['index.html'],{'master'},Valetudo
-1100,772c4d4bce5802900658cf3767c6d84406e08456,Erik Agsjö,2017-01-14,Fixed formatting,['chip_adaptor.go'],{'master'},gobot
-1288,a75170620b9849b4af6e5b880d4d9cef03d9586f,Sean D'Epagnier,2020-05-24,correct logic,['client.py'],{'master'},pypilot
-1929,20677abec3e22698ea32d7eb8bfdaa6124ed455e,Rearth,2019-01-23,"Added some new features to the sphero ollie, bb-8 and sprkplusSigned-off-by: Rearth <davidus2010@gmail.com>","['ollie_driver.go,ollie_driver_test.go,ollie_packets.go']",{'master'},gobot
-553,2bbdf4291c6f17234b77b9036dcb000d69a6762a,Sean D'Epagnier,2020-02-08,correct a few typos,['calibration_fit.py'],{'master'},pypilot
-26,9e7614a4a1ae085fb708af4c62c74b32f890affa,Andrew Stewart,2013-10-21,Add Port class functionality and tests from Artoo,"['port.coffee,port.spec.coffee']",{'master'},cylon
-253,d3be21693171ed597dd212176c6fb33d35cff622,Sonny Jeon,2012-03-10,Minor fix related to spindle_stop() crashing abort in certain cases.- Updated spindle_stop() to fix abort bug and to be more in line withv0.8.,"['config.h,gcode.c,main.c,serial.c,spindle_control.c']",{'master'},grbl
-1847,14398a71ba573bed7c9f519702809bc9c43ef5c8,dtex,2015-10-21,Switch to use expander for PCA9685 in motorAlso there was a bug in the old code and the brake test for PCA9685 wasflat out wrong.,"['motor.js,motor.js']",{'master'},johnny-five
-175,a18a89c77962d2dded0edb42ad98a4167fbb230b,Simen Svale Skogsrud,2011-02-24,"fixed linebreaks, was LFCR, is CRLF",['protocol.c'],{'master'},grbl
-799,fe08d3b6fe2dac9b661ebeeb66bd71dbdfd675c9,Sean D'Epagnier,2017-08-11,nicer cal error display,['client.py'],{'master'},pypilot
-1116,edd559714c2c7847f0472c466d99ab9d09c216a4,Sean D'Epagnier,2019-03-23,ifdef for davis for now,['weathersensors.ino'],{'master'},pypilot
-2240,8f898c748a9c26776d6f2a61f26c795df12e5cec,Rick Waldron,2016-04-22,v0.9.44Signed-off-by: Rick Waldron <waldron.rick@gmail.com>,['package.json'],{'master'},johnny-five
-310,a85e1b80f7ccf8b58fa44c235cfa5d4a8bb47b9a,Sonny Jeon,2013-02-22,Push additional updates from @jgeisler0303,"['planner.c,planner.h,stepper.c']",{'master'},grbl
-175,8f1d027f77c92c5a7633289fa36618ead3ae38c7,greymfm@googlemail.com,2014-08-25,ahrs test: changed to complementary filter,"['imu.cpp,imu.h,imuahrs.ino']",{'master'},ardumower
-112,2a6e98492f8a33b9d9a8053fa652ca96bb55866a,Contra,2012-11-01,remove unneeded test,['test-UdpNavdataStream.js'],{'master'},node-ar-drone
-1196,3407c88d7b83a35dd15cd4b02a5ebd78dd85c2bd,deadprogram,2017-02-16,Update version to 1.2.0 for releaseSigned-off-by: deadprogram <ron@hybridgroup.com>,['version.go'],{'master'},gobot
-2716,ff4da5f029fa6c2fde9ef990cb0a17ed5c0ef731,Donovan Buck,2019-08-23,"Fix error in VNH5019 exampleI also noticed that this doc file was not being generated, so I added it.","['motor-vnh5019.md,motor-vnh5019.js,programs.json']",{'master'},johnny-five
-83,9875101ca88f014bc0742b4744fcbca1c365ec9a,Adrian Zankich,2014-04-15,More tests,"['connection_test.go,device_test.go,master_test.go,robot_test.go,test_helper.go']",{'master'},gobot
-1919,fa6d8c994b78d7c134b8f96ab60c385a6248aa67,Rick Waldron,2015-11-30,v0.9.12,['package.json'],{'master'},johnny-five
-492,c5108e5fe65b0948258d6b6fb68ed1ef45e64648,uwezimprich@googlemail.com,2015-03-08,Perimetersender 2 Poti hinzugefügt und ein LED Anschluss von analog auf digitalen Pin umgeändert,"['Perimeter sender v2.bak,Perimeter sender v2.cmp,Perimeter sender v2.kicad_pcb,Perimeter sender v2.kicad_pcb-bak,Perimeter sender v2.net,Perimeter sender v2.sch,Bauteile.pdf,Leiterbahnen.pdf,Rückseite.jpg,Vorderseite.jpg']",{'master'},ardumower
-255,fc2a36fe2337c854a6d564dc97795b2862f202ac,Tim Ryan,2015-07-24,v1.4.0,"['github_latest_release.txt,setup.py']",{'master'},dronekit-python
-179,74dcf58c5c0d6c9a9c5e4862aca8514dfc3dd9a6,Simen Svale Skogsrud,2011-02-25,simplification in gcode.c also thanks to etienne,['gcode.c'],{'master'},grbl
-472,a2ee95e5f0a0297cdd7558283b3e4a32788b3710,Andrew Stewart,2014-02-27,Add some globals to .jshintrc,['.jshintrc'],{'master'},cylon
-1012,401a5d881e2db3e2a1d787bdb4da376ae4b0e1ff,Chris,2017-06-04,Perimeter tracking PID for very smooth tracking,['mower.cpp'],{'master'},ardumower
-457,2ef81d4dba608e1980b0002e14b5b9f6d36286cc,Tim Ryan,2015-11-11,"Improves drone delivery example, also cleanup.",['drone_delivery.py'],{'master'},dronekit-python
-726,a488b4fff0853593790f9f5cb056b3ce041af4d1,deadprogram,2016-07-03,[audio] Correct format of adaptorSigned-off-by: deadprogram <ron@hybridgroup.com>,['audio_adaptor.go'],{'master'},gobot
-1035,0339118fd751ebbbf7bb79e6fddda83a63111ba6,deadprogram,2016-12-21,docs: correct Raspberry Pi README linkSigned-off-by: deadprogram <ron@hybridgroup.com>,['doc.go'],{'master'},gobot
-1380,dc88e80dca5a5d9512b3e7188049d9ad017366cf,Vladislav Vlastovskiy,2017-04-12,Fix incorrect change state,['motor_driver.go'],{'master'},gobot
-706,970324cea6a9554347162e9d9bbfb93adfa99814,deadprogram,2016-05-24,[audio] Test coverage for exexcution of audio adaptorSigned-off-by: deadprogram <ron@hybridgroup.com>,"['audio_adaptor.go,audio_adaptor_test.go']",{'master'},gobot
-1397,30df5dc11e51175e0b8155d16b5fbb2d2ea9c2cc,deadprogram,2017-04-15,aio: only need to support AnalogReader interfaceSigned-off-by: deadprogram <ron@hybridgroup.com>,"['aio.go,io_pin_driver.go,io_pin_driver_test.go']",{'master'},gobot
-275,99df7e58b25e3a827b6ab3284004e859c118060c,uwezimprich@googlemail.com,2015-01-01,Ladestromsensor INA169 hinzugefügt,"['mower.cpp,robot.cpp']",{'master'},ardumower
-807,f1b982feddc65c6891eeeeeadafdb0537da4447e,Andrew Stewart,2014-11-10,"Support providing connections/devices as an objectBefore:  connections: [    { name: 'loopback', adaptor: 'loopback', port: 13 }  ],Now:  connections: {    loopback: { adaptor: 'loopback', port: 13 }  }Array syntax still works, but has been marked as deprecated.","['robot.js,robot.spec.js']",{'master'},cylon
-1602,ce8212430e9dcfe923beb4fe3835697f86d22706,Scott González,2015-05-26,Led.RGB: Move internal value writing out of controllers,['rgb.js'],{'master'},johnny-five
-791,75a9d32aed934712563270cf146c7c39379e8baf,Rick Waldron,2014-02-17,Delete johnny-five-js.png,['johnny-five-js.png'],{'master'},johnny-five
-486,707703cae29909e4fe46777817389d33da6da42c,Andrew Stewart,2014-03-03,Improve Device specs,"['device.js,device.spec.js']",{'master'},cylon
-1008,686dc89400e3329f4db520449e3eddaf139aa986,deadprogram,2016-12-19,docs: update main doc.go for godocs generationSigned-off-by: deadprogram <ron@hybridgroup.com>,['doc.go'],{'master'},gobot
-902,d82e893e6f088f536f0040b41fd083fb92837cb6,deadprogram,2016-10-30,gpio: PIR Motion sensor now workingSigned-off-by: deadprogram <ron@hybridgroup.com>,['pir_motion_driver.go'],{'master'},gobot
-754,e5068274d346cdbe8384482ea530daffabaec21a,deadprogram,2016-07-05,[ble] Correcting params to match the Minidrone defsSigned-off-by: deadprogram <ron@hybridgroup.com>,['ble_minidrone.go'],{'master'},gobot
-194,23090ec0995fbeb47aac2baed8d965fefa5fbc9b,greymfm@googlemail.com,2014-08-30,IMU: angles bugfix,"['gps.h,imu.cpp']",{'master'},ardumower
-63,4a168ec101f2872808a6c8c73dfc8be6feba5d70,greymfm@googlemail.com,2014-07-28,moved unused files,"['behavior.cpp,behavior.h']",{'master'},ardumower
-72,ee6b04b788a7021375ea16491de12cfcbaa45c68,Kevin Hester,2014-12-15,remove debugging output,['api.py'],{'master'},dronekit-python
-1003,c0575f74a65cee85461d604eb6456f3fdc11e347,ainagtur,2017-05-21,New sonarSlowBelow was missing in Console.print,['settings.h'],{'master'},ardumower
-856,ea1df8fcfe988ec6123fd6e14ff5b24a99c92021,elektronikjogi,2016-08-20,License erweitertJürgen Lange hinzugefügt,['BumperDuino_und_Sound.ino'],{'master'},ardumower
-65,79c80e34ab293c6a053d79b0fe35cd5fda8b2352,Felix Geisendörfer,2012-09-23,Contributing,['CONTRIBUTING.md'],{'master'},node-ar-drone
-317,269c9bac83da03d0fcf1a25fd49ad654419cf028,Sean D'Epagnier,2019-08-25,update comment,['motor.ino'],{'master'},pypilot
-336,0e190cebdc106345d4baa19fd258474e460e98b0,Rick Waldron,2012-08-29,Update tpl/.fritzing.md to use _just_ fzz file name.Signed-off-by: Rick Waldron <waldron.rick@gmail.com>,['.fritzing.md'],{'master'},johnny-five
-1367,0a6cdbeccf4805ecb96b22ed76f515540eafc716,Sean D'Epagnier,2020-03-14,improve debugging out,['signalk.py'],{'master'},pypilot
-501,77c7255e0c14b1066e361f6f3af283f07404f7ec,Rick Waldron,2013-06-24,Rename duplicated keys in test/board.jsSigned-off-by: Rick Waldron <waldron.rick@gmail.com>,['board.js'],{'master'},johnny-five
-424,557e5a239c5d652d1301522f8089cbbe930ad216,Adrian Zankich,2014-11-19,Update beaglebone package for new i2c interface,"['beaglebone_blinkm.go,beaglebone_adaptor.go,beaglebone_adaptor_test.go,coverage.out']",{'master'},gobot
-442,d867d713793521da3c14ace250b6fb610dfa56c3,Tim Ryan,2015-11-10,Adds tests and fixes dict objects in channels.,['test_channels.py'],{'master'},dronekit-python
-372,6400afdc4d2e072e4ecf97805ada7d4580260b91,Andrew Stewart,2014-01-21,Remove interpolation,['blinkm.js'],{'master'},cylon
-500,97b5cdfd93bc4f562752a0a890f1b972b620119c,Hypfer,2020-07-25,feat(entities.state): Added Charging/Charged/Discharging status to BatteryStateAttribute,"['Roborock.js,BatteryStateAttribute.js']",{'master'},Valetudo
-1068,686c46f536254937d4a61e9a9146e7066e66d7e1,Sean D'Epagnier,2019-01-21,refactor buffered socket code,"['nmea_bridge.py,bufferedsocket.py,client.py,server.py']",{'master'},pypilot
-42,fb963364b1092afc34942910d0898ca4b6bb2338,deadprogram,2013-12-03,Can I build?,"['.travis.yml,blink.go,hello.go,hello_api.go,sphero.go,sphero_api.go,sphero_master.go']",{'master'},gobot
-513,de71de86cb9ab78ca3ad71a795b0438b3c3bce6b,Adrian Zankich,2015-01-02,go lint and documentation tweaks for the firmata package,"['doc.go,firmata.go,firmata_adaptor.go,firmata_test.go']",{'master'},gobot
-11,68e67bbd72a97a82fdecdfa5a6551892de075e7d,pyo,2016-08-25,modified DXL comm_result bug,['turtlebot3_diff_driver_node.cpp'],{'master'},TurtleBot
-116,682e23eb7b1fc46fb9d9e99b96f780ab398cd571,Simen Svale Skogsrud,2011-02-05,added error messages and dropped echoing of command input,"['gcode.h,serial_protocol.c']",{'master'},grbl
-666,341feccd5f8e0fdc54ffc0443cb7544a932d75f8,divanvisagie,2013-09-14,removed unused serial references,"['sonar.js,switch.js']",{'master'},johnny-five
-1528,bb5bd685ce062961155935b2e86e6e08abc0233a,Scott González,2015-05-03,Board: Document that serialport.list() never errors. Fixes #768,['board.js'],{'master'},johnny-five
-1060,ad0fef0d5d58640c942381abc1d8780bb2780b50,deadprogram,2016-12-27,ble: move client adaptor test code to test fileSigned-off-by: deadprogram <ron@hybridgroup.com>,"['ble_client_adaptor.go,ble_client_adaptor_test.go']",{'master'},gobot
-645,642ab409c1cdf608244fdb1868a4e52f433badac,Brian Stengaard,2016-02-18,"Use Seek to speed up read/write in sysfsThis maintains `direction` and `value` `File`s for each DigitalPinimplementation. Instead of Open/Read/Close we now only do Seek/Read,this speeds up Read/Write operations a bit.A silly benchmark on the mock FS gives:benchmark                  old ns/op     new ns/op     deltaBenchmarkDigitalRead-8     647           7.36          -98.86%benchmark                  old allocs     new allocs     deltaBenchmarkDigitalRead-8     5              0              -100.00%benchmark                  old bytes     new bytes     deltaBenchmarkDigitalRead-8     96            0             -100.00%","['digital_pin.go,digital_pin_bench_test.go,digital_pin_test.go,fs.go,fs_mock.go']",{'master'},gobot
-1037,2dd8dab78a9e87dc1b3596d8db62bae6ba8c1cfd,deadprogram,2016-12-21,docs: correct Ollie README linkSigned-off-by: deadprogram <ron@hybridgroup.com>,['doc.go'],{'master'},gobot
-184,326283c1a179638ab04e25233538864895f55730,Adrian Zankich,2014-06-12,NewRobot is now a variadic function,['robot.go'],{'master'},gobot
-20,9473d7e0f40282741490fb5df06e9c53234de356,Kevin Hester,2014-04-24,deployment script for releases,['do-upload.sh'],{'master'},dronekit-python
-378,cef5ee8f5b08c746abee762823cae9b40da73ec7,Hypfer,2020-04-29,Replaced donate link with something better,"['donate.html,index.html']",{'master'},Valetudo
-542,34324dabd520e00c0095639ce9ee664638fb26ed,Andrew Stewart,2014-04-03,Clean up API logic,['api.js'],{'master'},cylon
-2678,c935e16f9ed15658e4c7e8cbb42762171b0be6a4,Donovan Buck,2018-08-20,Add stale.ymlTo help manage old issues that have been inactive for a year or more.https://probot.github.io/apps/stale/,['stale.yml'],{'master'},johnny-five
-189,7039de4bdc6236d288ed46e54d9a1de6af4f5384,Darby Lim,2018-04-25,modified  plugin param,['turtlebot3_waffle_pi_naked.gazebo.xacro'],{'master'},TurtleBot
-278,ea4c339da633e26408c95bda34eda2977ab78897,Hypfer,2020-02-17,Properly handle cloud keep-alive packets,['MiioSocket.js'],{'master'},Valetudo
-413,cd1a016b2bc05788ed9860eec1e1fe4040734e37,Adrian Zankich,2014-11-19,Update edison package for new gpio interface,"['edison_adaptor.go,edison_adaptor_test.go,pwm_pin.go']",{'master'},gobot
-961,442397bf460f1c5dead2594375e5a98ceff9f0bc,Sean D'Epagnier,2018-07-26,fix typo on serialprobe detection (affects openplotter),['serialprobe.py'],{'master'},pypilot
-139,5319cfc092e00b547d676f8612a86b16e013eda3,John Schulz,2012-11-19,Use new structure for `demo` & `rawMeasures` in `navdata` but keep BC.,['parseNavdata.js'],{'master'},node-ar-drone
-154,c3a0a8d441f2e69a655beaffe278f49972b84b5f,Sean D'Epagnier,1999-09-01,improve log message,['sensors.py'],{'master'},pypilot
+1759,62b86332a145588f1da3228446b832389b610495,Rick Waldron,9/23/2015,v0.8.92,['package.json'],{'master'},johnny-five
+970,013dc86449a2916204cf6eb016768706f98834e1,deadprogram,9/8/2015,Update RELEASES,['RELEASES.md'],{'master'},cylon
+697,a735a62b05b1f93e54fec620ec3936e0425d9082,Alexander Grau,5/19/2015,csv output,"['drivecontrol.ino,motorcontrol.cpp,motorcontrol.h']",{'master'},ardumower
+320,8e01fed143c6fbd5239a93bedcdb64f2eb245102,Bertus Kruger,3/13/2013,Update gcode.cRemoved the home_select variable.,['gcode.c'],{'master'},grbl
+2122,096e470e0b5ff43bc5eae8c1ca2e5dc144c8655c,Rick Waldron,3/10/2016,Expander: add missing example,"['keypad-MPR121.md,expander-CD74HC4067_NANO_BACKPACK.js']",{'master'},johnny-five
+1106,1cdc82263ce9f781532541290c5bdeb7b49421f3,Sean D'Epagnier,3/21/2019,work around new issues and rename lcd to make less client.py,"['glut.py,lcd.py,ugfx.cpp,ugfx.h,ugfx.i,setup.py,scope.py']",{'master'},pypilot
+741,8d374dc022cc88e44dadd971b780a081e14a8ace,Sean D'Epagnier,7/19/2017,add lcd readme,['README'],{'master'},pypilot
+111,78d7e961560eb7a369602ea788598b5d9f32c7da,Aldo Vargas,1/5/2016,Changes before hovering tests,['mw-hover-controller.py'],{'master'},DronePilot
+81,8fbff1e14be001021bc25f882ab91fa8a4697c61,Adrian Zankich,4/14/2014,Add coverallsUpdate travis configUpdate travis configAdd coveralls badge,['.travis.yml'],{'master'},gobot
+1004,cf927d99d5d6e425a162d91249d6f2c9d87a4ac7,AlexanderG,5/23/2017,perimeter sender/receiver: new signal codes (SIGCODE),"['mower.h,perimeter.cpp,perimeter.h,pfod.cpp,robot.cpp,settings.h,sender.ino']",{'master'},ardumower
+868,8fd6f8a99e71256ecc1d5ecb8150d9a91545cd28,Andrew Stewart,1/15/2015,Generate lodash script for only methods we use,['lodash.js'],{'master'},cylon
+1136,9fe861ccbdbf74e2df5bf662e4bef36f280089a6,AlexanderG,5/20/2018,ros: added driver and launch file,"['ardumower.launch,ardumower.py,robot.urdf']",{'master'},ardumower
+385,ed417220e1854be9fdda36b7ffb4b3033f7b2492,Sonny Jeon,7/4/2014,"Realtime rate reporting. Updated decimal places.- Added a new optional compile-time feature for ‘realtime’ (within50ms) feed rate reporting. When querying for a status report, a newdata value will state the current operating rate. It’s only beta at themoment and has some kinks to work out.- Updated the code for printing floating point values to N decimalplaces. Generalized the main floating point print code to accept a newdecimal places value and created a set of handler functions to printcertain floating point value types used in Grbl, like position, rates,coordinate offsets, etc. All of these have different decimalrequirements and change when printed in mm or inches mode.- Number of decimal places for the different value types can bere-defined in config.h, but there shouldn’t be a need for this, asthese are physically limited.- Removed the decimal places settings, as this was now obsoleted by thenew decimal places code.- The new decimal places code also saves almost 300kB in flash space,as it’s more efficient.","['config.h,eeprom.h,gcode.c,print.c,print.h,report.c,settings.c,settings.h,stepper.c,stepper.h']",{'master'},grbl
+1234,314640f6261c62f57884f128bff00b0dc72a5dad,Rick Waldron,1/18/2015,"""docs"" -> ""examples""Unfortunately, they still live in the docs/ directory, but I can live with that.","['.travis.yml,Gruntfile.js,.noedit.md,.readme.md']",{'master'},johnny-five
+121,9d70c695ec54a519cbc5b686e22dc1cab284798b,Hasanga Somaratne,8/23/2017,Minor bugfix,['user-view.component.html'],{'develop'},DroneSym
+1130,7f737af7e9a91bec6146ba6bd7ee8cdb611ab5de,Divan Visagie,11/19/2014,fix for issue where both accelerometer and joystick are required and cant work independantly of each other,['wii.js'],{'master'},johnny-five
+154,c1e7f5140cb292c38429bf7462ac55cbe4ae661d,thepill,5/4/2019,Use 130px for consumable title width in settings,['index.html'],{'master'},Valetudo
+166,9b436f810afe16b116f3ac207b270f17c1f70b87,Dilina Dehigama,2/22/2019,Added drone name to marker in map,"['dashboard.component.css,dashboard.component.html']",{'develop'},DroneSym
+1122,e8a1b464410ad81e6d3052e52f6cb1fff13feb85,AlexanderG,4/19/2018,minor cosmetic change,['mower.cpp'],{'master'},ardumower
+144,977c4948bd2156cda7676010d9c0d744522942a0,Simen Svale Skogsrud,2/11/2011,syntax tweak,['gcode.c'],{'master'},grbl
+331,0cd3ed76cd7e050a22c991fd0740d4d090a8d7f7,Tim Ryan,10/13/2015,Adds Vehicle inheritance test.,"['api.py,test_vehicleclass.py']",{'master'},dronekit-python
+523,48bdf6a2cacec92b034195aac1fb5d4a2d96d482,uwezimprich@googlemail.com,3/15/2015,MC 33926,"['mc33926_breakout.kicad_pcb,mc33926_breakout.kicad_pcb-bak']",{'master'},ardumower
+10,2788919f0144917854e2a49d87b49088186d4e73,Rick Waldron waldron.rick@gmail.com,4/11/2012,Add Board.mount() api and testsSigned-off-by: Rick Waldron waldron.rick@gmail.com <waldron.rick@gmail.com>,"['package.json,johnny-five_test.js']",{'master'},johnny-five
+197,948d6eaeac7184591acb2cf9e766d1e95252041b,manutenfruits,7/14/2019,Make mqttConfig.provideMapdata not always true.,['MqttClient.js'],{'master'},Valetudo
+1634,59a6332660e48305f767fee02f87a72df7896f7b,Rick Waldron,6/18/2015,Expander: fix incorrect inversion operation.,"['expander.js,expander.js']",{'master'},johnny-five
+601,837a2fb3d03b98fc4c5ea57b00d78f5fa0c5821c,Rick Waldron,8/2/2013,"Tests: Pin, Led, SensorSigned-off-by: Rick Waldron <waldron.rick@gmail.com>","['Gruntfile.js,pin.js,sensor.js,capabilities.js,led.js,mock-pins.js,pin.js,sensor.js']",{'master'},johnny-five
+1220,90aee283a8096ebb93307fe4b7f809ba517ac5a0,Rick Waldron,1/15/2015,Cleanup MockFirmata,['mock-firmata.js'],{'master'},johnny-five
+359,d5d228e2d686a600a107e2820bf8e79d3744586f,deadprogram,1/15/2014,Remove node 0.8 from travis build,['.travis.yml'],{'master'},cylon
+1911,b4f53775434a206ce46f3ce1305342e3952dc44f,Ron Evans,9/7/2018,up2: add support for built-in LEDsSigned-off-by: Ron Evans <ron@hybridgroup.com>,"['up2_leds.go,adaptor.go,adaptor_test.go']",{'master'},gobot
+1189,f772562da4ea89a5cb21340116efa97969be8a1d,Sean D'Epagnier,6/22/2019,make servo eeprom data more reliable,"['arduino_servo_eeprom.cpp,arduino_servo_eeprom.h']",{'master'},pypilot
+121,91643943d2f5b8449ddf182cb0fc076ac796f645,Aldo Vargas,1/25/2016,Yaw controller fixedWorking yaw controller!!,['mw-hover-controller.py'],{'master'},DronePilot
+489,2450ceb3f5cb2653ee32dd3d5ef0fbf2c7e69645,Hypfer,7/6/2020,feat(roborock): Experimental support for even more roborock vacuums,"['Valetudo.js,Model.js']",{'master'},Valetudo
+143,91088195f869d6d6f96bb612770e3bcc7a1d00b8,Ondřej Nový,4/30/2019,"Limit memory allocationProcess valetudo on robot can sometimes consume a lots of memory (memoryleak?). If this happens, kernel sometimes kill player (instead of valetudoeven with high oom score). So let's limit max memory allocation of valetudoprocess to 200 MB, which should be enough. Better is to kill valetudothan player itself.",['valetudo.conf'],{'master'},Valetudo
+1252,973ca95c92f18f85b31bb18dd75112a3f3e23d60,Rick Waldron,1/23/2015,Remove nodebots examples until more thorough documentation is complete,['programs.json'],{'master'},johnny-five
+101,3a5d305d46857e42f8e696b0d2af4efba882ca18,Raveen Harith Perera,8/8/2017,Change pytest command for trusty envs,['.travis.yml'],{'develop'},DroneSym
+997,4a3856eff8574f4186f17b56e4e7a169245d1cf7,Rick Waldron,8/12/2014,Initial Led.Digits.prototype.print,['ledcontrol.js'],{'master'},johnny-five
+1501,b250670ccb2613806733b4caebb1112f98c4ae97,deadprogram,4/29/2017,joule: export PWMPin adaptor methodsSigned-off-by: deadprogram <ron@hybridgroup.com>,"['edison_adaptor.go,joule_adaptor.go']",{'master'},gobot
+511,59dea1edc6b2ea9f019c7f357c27f00ce2fec9bf,Hamish Willee,12/30/2015,Update instructions to use DK-SITL,['sitl_setup.rst'],{'master'},dronekit-python
+75,be58ed5c7aaaa65eb756b122efdc01c884fa87a7,Benedikt Krueger,2/16/2019,made timer configuration intuitive- Added form for easy timer configuration- Added human readable timer interpretation,['index.html'],{'master'},Valetudo
+1100,772c4d4bce5802900658cf3767c6d84406e08456,Erik Agsjö,1/14/2017,Fixed formatting,['chip_adaptor.go'],{'master'},gobot
+1288,a75170620b9849b4af6e5b880d4d9cef03d9586f,Sean D'Epagnier,5/24/2020,correct logic,['client.py'],{'master'},pypilot
+1929,20677abec3e22698ea32d7eb8bfdaa6124ed455e,Rearth,1/23/2019,"Added some new features to the sphero ollie, bb-8 and sprkplusSigned-off-by: Rearth <davidus2010@gmail.com>","['ollie_driver.go,ollie_driver_test.go,ollie_packets.go']",{'master'},gobot
+553,2bbdf4291c6f17234b77b9036dcb000d69a6762a,Sean D'Epagnier,2/8/2020,correct a few typos,['calibration_fit.py'],{'master'},pypilot
+26,9e7614a4a1ae085fb708af4c62c74b32f890affa,Andrew Stewart,10/21/2013,Add Port class functionality and tests from Artoo,"['port.coffee,port.spec.coffee']",{'master'},cylon
+253,d3be21693171ed597dd212176c6fb33d35cff622,Sonny Jeon,3/10/2012,Minor fix related to spindle_stop() crashing abort in certain cases.- Updated spindle_stop() to fix abort bug and to be more in line withv0.8.,"['config.h,gcode.c,main.c,serial.c,spindle_control.c']",{'master'},grbl
+1847,14398a71ba573bed7c9f519702809bc9c43ef5c8,dtex,10/21/2015,Switch to use expander for PCA9685 in motorAlso there was a bug in the old code and the brake test for PCA9685 wasflat out wrong.,"['motor.js,motor.js']",{'master'},johnny-five
+175,a18a89c77962d2dded0edb42ad98a4167fbb230b,Simen Svale Skogsrud,2/24/2011,"fixed linebreaks, was LFCR, is CRLF",['protocol.c'],{'master'},grbl
+799,fe08d3b6fe2dac9b661ebeeb66bd71dbdfd675c9,Sean D'Epagnier,8/11/2017,nicer cal error display,['client.py'],{'master'},pypilot
+1116,edd559714c2c7847f0472c466d99ab9d09c216a4,Sean D'Epagnier,3/23/2019,ifdef for davis for now,['weathersensors.ino'],{'master'},pypilot
+2240,8f898c748a9c26776d6f2a61f26c795df12e5cec,Rick Waldron,4/22/2016,v0.9.44Signed-off-by: Rick Waldron <waldron.rick@gmail.com>,['package.json'],{'master'},johnny-five
+310,a85e1b80f7ccf8b58fa44c235cfa5d4a8bb47b9a,Sonny Jeon,2/22/2013,Push additional updates from @jgeisler0303,"['planner.c,planner.h,stepper.c']",{'master'},grbl
+175,8f1d027f77c92c5a7633289fa36618ead3ae38c7,greymfm@googlemail.com,8/25/2014,ahrs test: changed to complementary filter,"['imu.cpp,imu.h,imuahrs.ino']",{'master'},ardumower
+112,2a6e98492f8a33b9d9a8053fa652ca96bb55866a,Contra,11/1/2012,remove unneeded test,['test-UdpNavdataStream.js'],{'master'},node-ar-drone
+1196,3407c88d7b83a35dd15cd4b02a5ebd78dd85c2bd,deadprogram,2/16/2017,Update version to 1.2.0 for releaseSigned-off-by: deadprogram <ron@hybridgroup.com>,['version.go'],{'master'},gobot
+2716,ff4da5f029fa6c2fde9ef990cb0a17ed5c0ef731,Donovan Buck,8/23/2019,"Fix error in VNH5019 exampleI also noticed that this doc file was not being generated, so I added it.","['motor-vnh5019.md,motor-vnh5019.js,programs.json']",{'master'},johnny-five
+83,9875101ca88f014bc0742b4744fcbca1c365ec9a,Adrian Zankich,4/15/2014,More tests,"['connection_test.go,device_test.go,master_test.go,robot_test.go,test_helper.go']",{'master'},gobot
+1919,fa6d8c994b78d7c134b8f96ab60c385a6248aa67,Rick Waldron,11/30/2015,v0.9.12,['package.json'],{'master'},johnny-five
+492,c5108e5fe65b0948258d6b6fb68ed1ef45e64648,uwezimprich@googlemail.com,3/8/2015,Perimetersender 2 Poti hinzugefügt und ein LED Anschluss von analog auf digitalen Pin umgeändert,"['Perimeter sender v2.bak,Perimeter sender v2.cmp,Perimeter sender v2.kicad_pcb,Perimeter sender v2.kicad_pcb-bak,Perimeter sender v2.net,Perimeter sender v2.sch,Bauteile.pdf,Leiterbahnen.pdf,Rückseite.jpg,Vorderseite.jpg']",{'master'},ardumower
+255,fc2a36fe2337c854a6d564dc97795b2862f202ac,Tim Ryan,7/24/2015,v1.4.0,"['github_latest_release.txt,setup.py']",{'master'},dronekit-python
+179,74dcf58c5c0d6c9a9c5e4862aca8514dfc3dd9a6,Simen Svale Skogsrud,2/25/2011,simplification in gcode.c also thanks to etienne,['gcode.c'],{'master'},grbl
+472,a2ee95e5f0a0297cdd7558283b3e4a32788b3710,Andrew Stewart,2/27/2014,Add some globals to .jshintrc,['.jshintrc'],{'master'},cylon
+1012,401a5d881e2db3e2a1d787bdb4da376ae4b0e1ff,Chris,6/4/2017,Perimeter tracking PID for very smooth tracking,['mower.cpp'],{'master'},ardumower
+457,2ef81d4dba608e1980b0002e14b5b9f6d36286cc,Tim Ryan,11/11/2015,"Improves drone delivery example, also cleanup.",['drone_delivery.py'],{'master'},dronekit-python
+726,a488b4fff0853593790f9f5cb056b3ce041af4d1,deadprogram,7/3/2016,[audio] Correct format of adaptorSigned-off-by: deadprogram <ron@hybridgroup.com>,['audio_adaptor.go'],{'master'},gobot
+1035,0339118fd751ebbbf7bb79e6fddda83a63111ba6,deadprogram,12/21/2016,docs: correct Raspberry Pi README linkSigned-off-by: deadprogram <ron@hybridgroup.com>,['doc.go'],{'master'},gobot
+1380,dc88e80dca5a5d9512b3e7188049d9ad017366cf,Vladislav Vlastovskiy,4/12/2017,Fix incorrect change state,['motor_driver.go'],{'master'},gobot
+706,970324cea6a9554347162e9d9bbfb93adfa99814,deadprogram,5/24/2016,[audio] Test coverage for exexcution of audio adaptorSigned-off-by: deadprogram <ron@hybridgroup.com>,"['audio_adaptor.go,audio_adaptor_test.go']",{'master'},gobot
+1397,30df5dc11e51175e0b8155d16b5fbb2d2ea9c2cc,deadprogram,4/15/2017,aio: only need to support AnalogReader interfaceSigned-off-by: deadprogram <ron@hybridgroup.com>,"['aio.go,io_pin_driver.go,io_pin_driver_test.go']",{'master'},gobot
+275,99df7e58b25e3a827b6ab3284004e859c118060c,uwezimprich@googlemail.com,1/1/2015,Ladestromsensor INA169 hinzugefügt,"['mower.cpp,robot.cpp']",{'master'},ardumower
+807,f1b982feddc65c6891eeeeeadafdb0537da4447e,Andrew Stewart,11/10/2014,"Support providing connections/devices as an objectBefore:  connections: [    { name: 'loopback', adaptor: 'loopback', port: 13 }  ],Now:  connections: {    loopback: { adaptor: 'loopback', port: 13 }  }Array syntax still works, but has been marked as deprecated.","['robot.js,robot.spec.js']",{'master'},cylon
+1602,ce8212430e9dcfe923beb4fe3835697f86d22706,Scott González,5/26/2015,Led.RGB: Move internal value writing out of controllers,['rgb.js'],{'master'},johnny-five
+791,75a9d32aed934712563270cf146c7c39379e8baf,Rick Waldron,2/17/2014,Delete johnny-five-js.png,['johnny-five-js.png'],{'master'},johnny-five
+486,707703cae29909e4fe46777817389d33da6da42c,Andrew Stewart,3/3/2014,Improve Device specs,"['device.js,device.spec.js']",{'master'},cylon
+1008,686dc89400e3329f4db520449e3eddaf139aa986,deadprogram,12/19/2016,docs: update main doc.go for godocs generationSigned-off-by: deadprogram <ron@hybridgroup.com>,['doc.go'],{'master'},gobot
+902,d82e893e6f088f536f0040b41fd083fb92837cb6,deadprogram,10/30/2016,gpio: PIR Motion sensor now workingSigned-off-by: deadprogram <ron@hybridgroup.com>,['pir_motion_driver.go'],{'master'},gobot
+754,e5068274d346cdbe8384482ea530daffabaec21a,deadprogram,7/5/2016,[ble] Correcting params to match the Minidrone defsSigned-off-by: deadprogram <ron@hybridgroup.com>,['ble_minidrone.go'],{'master'},gobot
+194,23090ec0995fbeb47aac2baed8d965fefa5fbc9b,greymfm@googlemail.com,8/30/2014,IMU: angles bugfix,"['gps.h,imu.cpp']",{'master'},ardumower
+63,4a168ec101f2872808a6c8c73dfc8be6feba5d70,greymfm@googlemail.com,7/28/2014,moved unused files,"['behavior.cpp,behavior.h']",{'master'},ardumower
+72,ee6b04b788a7021375ea16491de12cfcbaa45c68,Kevin Hester,12/15/2014,remove debugging output,['api.py'],{'master'},dronekit-python
+1003,c0575f74a65cee85461d604eb6456f3fdc11e347,ainagtur,5/21/2017,New sonarSlowBelow was missing in Console.print,['settings.h'],{'master'},ardumower
+856,ea1df8fcfe988ec6123fd6e14ff5b24a99c92021,elektronikjogi,8/20/2016,License erweitertJürgen Lange hinzugefügt,['BumperDuino_und_Sound.ino'],{'master'},ardumower
+65,79c80e34ab293c6a053d79b0fe35cd5fda8b2352,Felix Geisendörfer,9/23/2012,Contributing,['CONTRIBUTING.md'],{'master'},node-ar-drone
+317,269c9bac83da03d0fcf1a25fd49ad654419cf028,Sean D'Epagnier,8/25/2019,update comment,['motor.ino'],{'master'},pypilot
+336,0e190cebdc106345d4baa19fd258474e460e98b0,Rick Waldron,8/29/2012,Update tpl/.fritzing.md to use _just_ fzz file name.Signed-off-by: Rick Waldron <waldron.rick@gmail.com>,['.fritzing.md'],{'master'},johnny-five
+1367,0a6cdbeccf4805ecb96b22ed76f515540eafc716,Sean D'Epagnier,3/14/2020,improve debugging out,['signalk.py'],{'master'},pypilot
+501,77c7255e0c14b1066e361f6f3af283f07404f7ec,Rick Waldron,6/24/2013,Rename duplicated keys in test/board.jsSigned-off-by: Rick Waldron <waldron.rick@gmail.com>,['board.js'],{'master'},johnny-five
+424,557e5a239c5d652d1301522f8089cbbe930ad216,Adrian Zankich,11/19/2014,Update beaglebone package for new i2c interface,"['beaglebone_blinkm.go,beaglebone_adaptor.go,beaglebone_adaptor_test.go,coverage.out']",{'master'},gobot
+442,d867d713793521da3c14ace250b6fb610dfa56c3,Tim Ryan,11/10/2015,Adds tests and fixes dict objects in channels.,['test_channels.py'],{'master'},dronekit-python
+372,6400afdc4d2e072e4ecf97805ada7d4580260b91,Andrew Stewart,1/21/2014,Remove interpolation,['blinkm.js'],{'master'},cylon
+500,97b5cdfd93bc4f562752a0a890f1b972b620119c,Hypfer,7/25/2020,feat(entities.state): Added Charging/Charged/Discharging status to BatteryStateAttribute,"['Roborock.js,BatteryStateAttribute.js']",{'master'},Valetudo
+1068,686c46f536254937d4a61e9a9146e7066e66d7e1,Sean D'Epagnier,1/21/2019,refactor buffered socket code,"['nmea_bridge.py,bufferedsocket.py,client.py,server.py']",{'master'},pypilot
+42,fb963364b1092afc34942910d0898ca4b6bb2338,deadprogram,12/3/2013,Can I build?,"['.travis.yml,blink.go,hello.go,hello_api.go,sphero.go,sphero_api.go,sphero_master.go']",{'master'},gobot
+513,de71de86cb9ab78ca3ad71a795b0438b3c3bce6b,Adrian Zankich,1/2/2015,go lint and documentation tweaks for the firmata package,"['doc.go,firmata.go,firmata_adaptor.go,firmata_test.go']",{'master'},gobot
+11,68e67bbd72a97a82fdecdfa5a6551892de075e7d,pyo,8/25/2016,modified DXL comm_result bug,['turtlebot3_diff_driver_node.cpp'],{'master'},TurtleBot
+116,682e23eb7b1fc46fb9d9e99b96f780ab398cd571,Simen Svale Skogsrud,2/5/2011,added error messages and dropped echoing of command input,"['gcode.h,serial_protocol.c']",{'master'},grbl
+666,341feccd5f8e0fdc54ffc0443cb7544a932d75f8,divanvisagie,9/14/2013,removed unused serial references,"['sonar.js,switch.js']",{'master'},johnny-five
+1528,bb5bd685ce062961155935b2e86e6e08abc0233a,Scott González,5/3/2015,Board: Document that serialport.list() never errors. Fixes #768,['board.js'],{'master'},johnny-five
+1060,ad0fef0d5d58640c942381abc1d8780bb2780b50,deadprogram,12/27/2016,ble: move client adaptor test code to test fileSigned-off-by: deadprogram <ron@hybridgroup.com>,"['ble_client_adaptor.go,ble_client_adaptor_test.go']",{'master'},gobot
+645,642ab409c1cdf608244fdb1868a4e52f433badac,Brian Stengaard,2/18/2016,"Use Seek to speed up read/write in sysfsThis maintains `direction` and `value` `File`s for each DigitalPinimplementation. Instead of Open/Read/Close we now only do Seek/Read,this speeds up Read/Write operations a bit.A silly benchmark on the mock FS gives:benchmark                  old ns/op     new ns/op     deltaBenchmarkDigitalRead-8     647           7.36          -98.86%benchmark                  old allocs     new allocs     deltaBenchmarkDigitalRead-8     5              0              -100.00%benchmark                  old bytes     new bytes     deltaBenchmarkDigitalRead-8     96            0             -100.00%","['digital_pin.go,digital_pin_bench_test.go,digital_pin_test.go,fs.go,fs_mock.go']",{'master'},gobot
+1037,2dd8dab78a9e87dc1b3596d8db62bae6ba8c1cfd,deadprogram,12/21/2016,docs: correct Ollie README linkSigned-off-by: deadprogram <ron@hybridgroup.com>,['doc.go'],{'master'},gobot
+184,326283c1a179638ab04e25233538864895f55730,Adrian Zankich,6/12/2014,NewRobot is now a variadic function,['robot.go'],{'master'},gobot
+20,9473d7e0f40282741490fb5df06e9c53234de356,Kevin Hester,4/24/2014,deployment script for releases,['do-upload.sh'],{'master'},dronekit-python
+378,cef5ee8f5b08c746abee762823cae9b40da73ec7,Hypfer,4/29/2020,Replaced donate link with something better,"['donate.html,index.html']",{'master'},Valetudo
+542,34324dabd520e00c0095639ce9ee664638fb26ed,Andrew Stewart,4/3/2014,Clean up API logic,['api.js'],{'master'},cylon
+2678,c935e16f9ed15658e4c7e8cbb42762171b0be6a4,Donovan Buck,8/20/2018,Add stale.ymlTo help manage old issues that have been inactive for a year or more.https://probot.github.io/apps/stale/,['stale.yml'],{'master'},johnny-five
+189,7039de4bdc6236d288ed46e54d9a1de6af4f5384,Darby Lim,4/25/2018,modified  plugin param,['turtlebot3_waffle_pi_naked.gazebo.xacro'],{'master'},TurtleBot
+278,ea4c339da633e26408c95bda34eda2977ab78897,Hypfer,2/17/2020,Properly handle cloud keep-alive packets,['MiioSocket.js'],{'master'},Valetudo
+413,cd1a016b2bc05788ed9860eec1e1fe4040734e37,Adrian Zankich,11/19/2014,Update edison package for new gpio interface,"['edison_adaptor.go,edison_adaptor_test.go,pwm_pin.go']",{'master'},gobot
+961,442397bf460f1c5dead2594375e5a98ceff9f0bc,Sean D'Epagnier,7/26/2018,fix typo on serialprobe detection (affects openplotter),['serialprobe.py'],{'master'},pypilot
+139,5319cfc092e00b547d676f8612a86b16e013eda3,John Schulz,11/19/2012,Use new structure for `demo` & `rawMeasures` in `navdata` but keep BC.,['parseNavdata.js'],{'master'},node-ar-drone
+154,c3a0a8d441f2e69a655beaffe278f49972b84b5f,Sean D'Epagnier,9/1/1999,improve log message,['sensors.py'],{'master'},pypilot
