@@ -1,4 +1,3 @@
-"# hcirevivalgroup" 
 # Example Data for Change Analysis and Bug Detection for Cyber-Physical Systems (CPS)
 
 The following GitHub repository contains several methods to extract commit changes and issues from any GitHub repository. These methods only require the URL of the corresponding GitHub repository(ies).
