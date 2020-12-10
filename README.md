@@ -29,6 +29,9 @@ import foobar
 foobar.pluralize('word') # returns 'words'
 ```
 
+## Use Projects' Results in Bug Prediction
+-to be added-
+
 ### Additonal Resources
 - [Midterm Presentation](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/SoftMain_HCIRevivalGroup_Change%20Analysis%20%26%20Bug%20Detection%20for%20CPS%20Dev_MidtermPresentation.pdf)
 - Final Presentation: LINK
