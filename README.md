@@ -3,7 +3,7 @@
 The following GitHub repository contains several methods to extract commit changes and issues from any GitHub repository. These methods only require the URL of the corresponding GitHub repository(ies).
 
 ## Goal of Repository
-We created this repository as part of a university project. The project's aim was to analyse a set of GitHub repositories of CPS projects to classify a set of commits based on their changes. This set of classified changes can then be used to train ML based bug prediction algorithms for the correct interpretation of commit changes. The result of classified commit changes provides a high and low level change classification as well as the significance of such a change. In the following you can see an extract of the results:
+We created this repository as part of a university project. The project's aim was to analyse a set of GitHub repositories of CPS projects to classify a set of commits according to their changes. This set of classified changes can then be used to train ML based bug prediction algorithms for the correct interpretation of commit changes. The result of classified commit changes provides a high and low level change classification as well as the significance of such a change. In the following you can see an extract of the results:
 ![ClassificationExample](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/ClassificationExample.png)
 
 ## Motivation of Project
