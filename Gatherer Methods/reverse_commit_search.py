@@ -1,5 +1,8 @@
 ## pip install pydriller
 
+## The method reverse_commit_search goes through all sampled commit changes "Sample_Commits.csv" and extracts the code of each file of each commit
+## before and after the actual commit, so that the code of each file can be compared before and after the commit.
+
 from pydriller import RepositoryMining
 import pandas as pd
 import os
