@@ -8,7 +8,7 @@ import pandas as pd
 import os
 import csv
 
-repositories = pd.read_csv("repositories.csv")
+repositories = pd.read_csv("Additional Resources/repositories.csv")
 commits = pd.read_csv("Commit_CSVs/Sample_Commits.csv")
 
 current_directory = os.getcwd()
