@@ -22,12 +22,12 @@ scripts
 ```
 
 ## Usage
-run the scripts like so:
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-```
+In order to use our mining and sampling methods perform the following steps.
+1. First you have to define a list of public GitHub repositories you want to mine. Save all those repositories in an CSV file in the same as this example: [repositories.csv](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/repositories.csv).
+2. Then execute the commit_gatherer.py replacing the path ot the "Additional Resources/repositories.csv" with the path to you repositories-csv-file. This will give you a set of csv files, one listing commits for each of your repositories.
+3. In the next step you will sample a number of commits from the previously extracted commit changes list with the Sample.ipynb code.
+4. Then execute the reverse_commit_search.py script in order to extract the code before and after of each sampled commit. The code will create a folder for each commit and saves theses before and after files in there.
+5. The next step is to manually analyse the extracted code snippets and classify them based on the taxonomy provided in the "Taxonomy" tap of the [Results of example classification](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/HCIRevivalGroup%20Classification%20of%20Commit%20Changes.xlsx).
 
 ## Use Projects' Results in Bug Prediction
 -to be added-
