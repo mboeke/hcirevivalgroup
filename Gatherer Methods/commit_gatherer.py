@@ -8,7 +8,7 @@ from pydriller import RepositoryMining
 import pandas as pd
 import csv
 
-repositories = pd.read_csv("repositories.csv")
+repositories = pd.read_csv("Additional Resources/repositories.csv")
 
 files = []
 ignore_filenames = ['__init__.py', 'readme.md', '.gitignore', '', '__main__.py']
