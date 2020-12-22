@@ -1,5 +1,9 @@
 ## pip install pydriller
 
+## The commit gatherer mines the GitHub repositories given within "respositories.csv" for relevant commit changes,
+## it filters out commit changes that include certains files (see ignore_filenames for details) + only considers commits that involve 1 to 11 files, 
+## for each repositories it creates one CSV file named "Commit_CSVs_{repositoryname}.csv" in which information on each commit change is listed.
+
 from pydriller import RepositoryMining
 import pandas as pd
 import csv
