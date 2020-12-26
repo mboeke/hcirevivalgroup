@@ -1,0 +1,692 @@
+,url,repository_url,labels_url,comments_url,events_url,html_url,id,node_id,number,title,user,labels,state,locked,assignee,assignees,milestone,comments,created_at,updated_at,closed_at,author_association,active_lock_reason,pull_request,body,performed_via_github_app
+0,https://api.github.com/repos/pypilot/pypilot/issues/68,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/68/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/68/comments,https://api.github.com/repos/pypilot/pypilot/issues/68/events,https://github.com/pypilot/pypilot/pull/68,743188521,MDExOlB1bGxSZXF1ZXN0NTIxMTQ4Njcw,68,Update gitIgnore file,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2020-11-15 05:41:23+00:00,2020-11-15 05:41:59+00:00,2020-11-15 05:41:59+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/68', 'html_url': 'https://github.com/pypilot/pypilot/pull/68', 'diff_url': 'https://github.com/pypilot/pypilot/pull/68.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/68.patch'}",,
+1,https://api.github.com/repos/pypilot/pypilot/issues/61,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/61/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/61/comments,https://api.github.com/repos/pypilot/pypilot/issues/61/events,https://github.com/pypilot/pypilot/issues/61,689481633,MDU6SXNzdWU2ODk0ODE2MzM=,61,Debian packaging. ,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,11,2020-08-31 20:23:10+00:00,2020-10-06 19:50:02+00:00,2020-10-04 18:50:46+00:00,CONTRIBUTOR,,,"Hi, I was about to create a Debian package of pypilot to accelerate my OS build time. Then I saw that @sailoog  was also doing the same but with some openplotter's specific config in it.
+
+So in order to avoid work duplication, If there was a implementation neutral Debian package that would exist. Anyone interested could use it as-is or fork the code or write a wrapping meta-package. But share a common base.   
+
+I understand that you use Tiny core and are probably not so motivated about debian packages. But im about to do it anyway for lysmarine. So if you would agree be the owner (and subsequently the benevolent dictator) of the feature/repository. I would prefer to do a Pull request to pypilot and make everyone profit from it then having it for the sole purpose of my project. 
+
+--Fred
+",
+2,https://api.github.com/repos/pypilot/pypilot/issues/60,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/60/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/60/comments,https://api.github.com/repos/pypilot/pypilot/issues/60/events,https://github.com/pypilot/pypilot/pull/60,619509486,MDExOlB1bGxSZXF1ZXN0NDE4OTkwNjIw,60,GPAPB is switching from gps to compass again,"{'login': 'rmvdmr', 'id': 54627771, 'node_id': 'MDQ6VXNlcjU0NjI3Nzcx', 'avatar_url': 'https://avatars0.githubusercontent.com/u/54627771?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/rmvdmr', 'html_url': 'https://github.com/rmvdmr', 'followers_url': 'https://api.github.com/users/rmvdmr/followers', 'following_url': 'https://api.github.com/users/rmvdmr/following{/other_user}', 'gists_url': 'https://api.github.com/users/rmvdmr/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/rmvdmr/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/rmvdmr/subscriptions', 'organizations_url': 'https://api.github.com/users/rmvdmr/orgs', 'repos_url': 'https://api.github.com/users/rmvdmr/repos', 'events_url': 'https://api.github.com/users/rmvdmr/events{/privacy}', 'received_events_url': 'https://api.github.com/users/rmvdmr/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2020-05-16 16:28:11+00:00,2020-05-19 07:00:57+00:00,2020-05-17 13:26:01+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/60', 'html_url': 'https://github.com/pypilot/pypilot/pull/60', 'diff_url': 'https://github.com/pypilot/pypilot/pull/60.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/60.patch'}","Hi Sean, Did some minor changes to NMEA and SENSORS to stop switching from gps to compass mode when GPAPB is received. i used isgp instead off ** (as I'm not an experienced python programmer it feels a bit uncomfortable to use an operator as a variable) I did test it on my boat and it stops switching. I manualy typed the changes in GIT, It should be ok but please check and compile them. ",
+3,https://api.github.com/repos/pypilot/pypilot/issues/56,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/56/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/56/comments,https://api.github.com/repos/pypilot/pypilot/issues/56/events,https://github.com/pypilot/pypilot/issues/56,592554230,MDU6SXNzdWU1OTI1NTQyMzA=,56,crc.h: No such file or directory,"{'login': 'Heaventwo', 'id': 63049409, 'node_id': 'MDQ6VXNlcjYzMDQ5NDA5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/63049409?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/Heaventwo', 'html_url': 'https://github.com/Heaventwo', 'followers_url': 'https://api.github.com/users/Heaventwo/followers', 'following_url': 'https://api.github.com/users/Heaventwo/following{/other_user}', 'gists_url': 'https://api.github.com/users/Heaventwo/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/Heaventwo/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/Heaventwo/subscriptions', 'organizations_url': 'https://api.github.com/users/Heaventwo/orgs', 'repos_url': 'https://api.github.com/users/Heaventwo/repos', 'events_url': 'https://api.github.com/users/Heaventwo/events{/privacy}', 'received_events_url': 'https://api.github.com/users/Heaventwo/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2020-04-02 11:20:02+00:00,2020-10-06 01:42:22+00:00,2020-10-06 01:42:22+00:00,NONE,,,"When I try the code that is given I get a error message.
+The message I get is ""crc.h: No such file or directory""
+I tried to fix it myself but without any succes.
+
+![Knipsel](https://user-images.githubusercontent.com/63049409/78243738-92a6ec80-74e4-11ea-9236-0119e5409578.PNG)
+",
+4,https://api.github.com/repos/pypilot/pypilot/issues/55,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/55/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/55/comments,https://api.github.com/repos/pypilot/pypilot/issues/55/events,https://github.com/pypilot/pypilot/pull/55,577108788,MDExOlB1bGxSZXF1ZXN0Mzg0OTY2NzAy,55,fix import errors and python2/3 compatibility,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2020-03-06 18:44:25+00:00,2020-03-06 19:13:37+00:00,2020-03-06 19:13:37+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/55', 'html_url': 'https://github.com/pypilot/pypilot/pull/55', 'diff_url': 'https://github.com/pypilot/pypilot/pull/55.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/55.patch'}",,
+5,https://api.github.com/repos/pypilot/pypilot/issues/53,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/53/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/53/comments,https://api.github.com/repos/pypilot/pypilot/issues/53/events,https://github.com/pypilot/pypilot/pull/53,566426509,MDExOlB1bGxSZXF1ZXN0Mzc2MjQxMjA3,53,Dark theme for the web client,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2020-02-17 17:07:30+00:00,2020-02-18 01:28:46+00:00,2020-02-18 01:28:45+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/53', 'html_url': 'https://github.com/pypilot/pypilot/pull/53', 'diff_url': 'https://github.com/pypilot/pypilot/pull/53.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/53.patch'}","Outside the CSS file, I have added class and IDs to HTML tags and Javascript functions for the selector and cookie management. 
+
+
+This PR refer to https://github.com/pypilot/pypilot/issues/50",
+6,https://api.github.com/repos/pypilot/pypilot/issues/52,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/52/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/52/comments,https://api.github.com/repos/pypilot/pypilot/issues/52/events,https://github.com/pypilot/pypilot/issues/52,561748699,MDU6SXNzdWU1NjE3NDg2OTk=,52,pypilot modules not found,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2020-02-07 16:40:12+00:00,2020-03-06 18:48:25+00:00,2020-03-06 18:48:25+00:00,CONTRIBUTOR,,,"after last changes GUI issues are fixed but running pypilot you get these errors:
+
+```
+pi@openplotter:~ $ pypilot
+ERROR loading pilot.py name 'RangeProperty' is not defined ,  No module named 'pilot'
+ERROR loading learning.py cannot import name 'AutopilotPilot' from 'autopilot' (/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py) ,  No module named 'learning'
+ERROR loading basic.py No module named 'pilot' ,  No module named 'basic'
+ERROR loading absolute.py cannot import name 'AutopilotPilot' from 'autopilot' (/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py) ,  No module named 'absolute'
+ERROR loading wind.py cannot import name 'AutopilotPilot' from 'autopilot' (/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py) ,  No module named 'wind'
+ERROR loading simple.py No module named 'pilot' ,  No module named 'simple'
+loading servo calibration /home/pi/.pypilot/servocalibration
+WARNING: using default servo calibration!!
+Loaded Pilots: []
+set ap.pilot to invalid enum value basic
+set ap.pilot to invalid enum value basic
+warning: failed to open special file /dev/watchdog0 for writing
+         cannot stroke the watchdog
+connected to gpsd
+set ap.pilot to invalid enum value basic
+Settings file RTIMULib.ini loaded
+Using settings file RTIMULib.ini
+Detected MPU9250/MPU9255 at standard address
+Using fusion algorithm Kalman STATE4
+IMU Name: MPU-925x
+min/max compass calibration not in use
+Using ellipsoid compass calibration
+Using accel calibration
+autopilot failed to read imu at time: 1581092743.0715694
+Traceback (most recent call last):
+  File ""/usr/local/bin/pypilot"", line 11, in <module>
+    load_entry_point('pypilot==0.15', 'console_scripts', 'pypilot')()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 404, in main
+    ap.run()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 217, in run
+    self.iteration()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 343, in iteration
+    self.adjust_mode(pilot)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 221, in adjust_mode
+    newmode = pilot.best_mode(self.preferred_mode.value)
+AttributeError: 'NoneType' object has no attribute 'best_mode'
+got signal atexit cleaning up
+got signal 15 cleaning up
+got signal 15 cleaning up
+Process Process-1:
+Process GpsProcess-5:
+got signal 15 cleaning up
+Process Process-2:
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 297, in _bootstrap
+    self.run()
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/signalk/pipeserver.py"", line 154, in pipe_server_process
+    time.sleep(.1)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 109, in cleanup
+    raise KeyboardInterrupt # to get backtrace on all processes
+KeyboardInterrupt
+Exception ignored in: <function SignalKPipeServerClient.__del__ at 0xb5cfac90>
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/signalk/pipeserver.py"", line 68, in __del__
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 297, in _bootstrap
+    self.run()
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/gpsd.py"", line 68, in gps_process
+    self.read(pipe)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/gpsd.py"", line 41, in read
+    gpsdata = self.gpsd.next()
+  File ""/usr/local/lib/python3.7/dist-packages/gps/gps.py"", line 301, in next
+    return self.__next__()
+  File ""/usr/local/lib/python3.7/dist-packages/gps/gps.py"", line 292, in __next__
+    if self.read() == -1:
+  File ""/usr/local/lib/python3.7/dist-packages/gps/gps.py"", line 281, in read
+    status = gpscommon.read(self)
+  File ""/usr/local/lib/python3.7/dist-packages/gps/client.py"", line 115, in read
+    frag = self.sock.recv(8192)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 109, in cleanup
+    raise KeyboardInterrupt # to get backtrace on all processes
+KeyboardInterrupt
+    super(SignalKPipeServerClient, self).__del__()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/signalk/server.py"", line 69, in __del__
+    self.StorePersistentValues()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/signalk/server.py"", line 81, in StorePersistentValues
+    if not name in self.persistent_data or value.value != self.persistent_data[name]:
+AttributeError: 'EnumProperty' object has no attribute 'value'
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 297, in _bootstrap
+    self.run()
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/calibration_fit.py"", line 575, in CalibrationProcess
+    time.sleep(2)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 109, in cleanup
+    raise KeyboardInterrupt # to get backtrace on all processes
+KeyboardInterrupt
+got signal 17 cleaning up
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/popen_fork.py"", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 109, in cleanup
+    raise KeyboardInterrupt # to get backtrace on all processes
+KeyboardInterrupt
+got signal 15 cleaning up
+Process NmeaBridgeProcess-4:
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 297, in _bootstrap
+    self.run()
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/nmea.py"", line 588, in process
+    time.sleep(2)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 109, in cleanup
+    raise KeyboardInterrupt # to get backtrace on all processes
+KeyboardInterrupt
+closing autopilot
+pi@openplotter:~ $ MPU-925x init complete
+got signal 15 cleaning up
+Process Process-3:
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 297, in _bootstrap
+    self.run()
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/boatimu.py"", line 83, in imu_process
+    if not rtimu.IMUInit():
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.15-py3.7-linux-armv7l.egg/pypilot/autopilot.py"", line 109, in cleanup
+    raise KeyboardInterrupt # to get backtrace on all processes
+KeyboardInterrupt
+```
+",
+7,https://api.github.com/repos/pypilot/pypilot/issues/51,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/51/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/51/comments,https://api.github.com/repos/pypilot/pypilot/issues/51/events,https://github.com/pypilot/pypilot/issues/51,559351466,MDU6SXNzdWU1NTkzNTE0NjY=,51,"GUI crash:  'Window_SetSizeHints', expected argument 2 of type 'int'","{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,6,2020-02-03 21:41:03+00:00,2020-04-04 16:39:04+00:00,2020-02-18 01:29:29+00:00,CONTRIBUTOR,,,"I realised that gui is not working anymore in lysmarine. 
+
+```
+user@lysmarine:~ $ pypilot_control 
+
+Traceback (most recent call last):
+  File ""/usr/local/bin/pypilot_control"", line 11, in <module>
+    load_entry_point('pypilot==0.14', 'console_scripts', 'pypilot_control')()
+ 
+ File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.14-py2.7-linux-armv7l.egg/ui/autopilot_control.py"", line 397, in main
+    AutopilotControl().Show()
+
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.14-py2.7-linux-armv7l.egg/ui/autopilot_control.py"", line 19, in __init__
+    super(AutopilotControl, self).__init__(None)
+
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.14-py2.7-linux-armv7l.egg/ui/autopilot_control_ui.py"", line 23, in __init__
+    self.SetSizeHints( wx.Size( -1,-1 ), wx.DefaultSize )
+
+  File ""/usr/lib/python2.7/dist-packages/wx-3.0-gtk3/wx/_core.py"", line 9718, in SetSizeHints
+    return _core_.Window_SetSizeHints(*args, **kwargs)
+
+TypeError: in method 'Window_SetSizeHints', expected argument 2 of type 'int'
+```
+It was working few weeks ago and I didin't touch my build script. 
+So I tried to cherry pick differents commits to narrow the problem. 
+```
+# BAD:  git checkout 1292dd884f8e3c3d7f3073c96aa398cfdfee6b29
+# BAD:  git checkout 69702f28423aa7bcdf10ebfa21095d462340bb0d
+# BAD:  git checkout 2008b19798a45ba942433305b9b9c61bb8c4686b
+# GOOD: git checkout db173ae4409aba2900dfd58c50bf8a409cd954e7
+# GOOD: git checkout f25d0770e1f502b7168c1f67e38c4cf1892b541e
+```
+so commit 2008b19798a45ba942433305b9b9c61bb8c4686b 
+is the one that breaks it for me 
+
+I tried with both 
+`apt install python-wxgtk3.0` 
+and 
+`apt install python-wxgtk4.0`",
+8,https://api.github.com/repos/pypilot/pypilot/issues/50,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/50/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/50/comments,https://api.github.com/repos/pypilot/pypilot/issues/50/events,https://github.com/pypilot/pypilot/issues/50,552421479,MDU6SXNzdWU1NTI0MjE0Nzk=,50,Theming of webclient,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,7,2020-01-20 17:10:14+00:00,2020-03-21 20:14:28+00:00,2020-03-02 15:35:32+00:00,CONTRIBUTOR,,,"Hi, between here and the spring I plan to redo the theme of the webclient so it fit Lysmarine look and feel. 
+
+I can do it on my side as a patch of a fork. 
+Or I could put a bit more work in it and PR it as dark theme with a GUI theme switcher or CLI argument.
+
+One one hand I prefer contribution then forks, But on the other hand my need is it have to reflect lysmarine look and feel ( mainly based on adapta-nokto work  https://github.com/adapta-project/adapta-gtk-theme ) so it's not much of a common goal. 
+
+So before I start, would you be interested in integrating such PR or you prefer that I keep it on my side  ? As in a what make more sense for pypilot project. ",
+9,https://api.github.com/repos/pypilot/pypilot/issues/49,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/49/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/49/comments,https://api.github.com/repos/pypilot/pypilot/issues/49/events,https://github.com/pypilot/pypilot/pull/49,551441058,MDExOlB1bGxSZXF1ZXN0MzY0MTYyODU3,49,Fix reading port from config file for the pypilot web,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2020-01-17 14:18:28+00:00,2020-01-19 07:30:00+00:00,2020-01-19 07:30:00+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/49', 'html_url': 'https://github.com/pypilot/pypilot/pull/49', 'diff_url': 'https://github.com/pypilot/pypilot/pull/49.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/49.patch'}"," On RPI, armbian and linux mint. I was unable to read port from the configuration file.  
+
+The ~ sign was not working to resolve the path so used the getenv('HOME')
+
+json lib was missing
+
+and I had to modify the example in the doc, single quotes and square brackets where causing json.reads error.  
+
+
+Im not used to code python so I hope did it the right way. 
+",
+10,https://api.github.com/repos/pypilot/pypilot/issues/48,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/48/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/48/comments,https://api.github.com/repos/pypilot/pypilot/issues/48/events,https://github.com/pypilot/pypilot/issues/48,543513010,MDU6SXNzdWU1NDM1MTMwMTA=,48,No module named 'ugfx',"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2019-12-29 18:32:05+00:00,2020-09-25 16:03:59+00:00,2020-09-25 16:03:59+00:00,CONTRIBUTOR,,,"pypilot_lcd sends this error to log and stops. I do not know where to find ugfx, is this something to compile?
+pypilot installed as python3 in RPI4.
+
+```
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]: have gpio for raspberry pi
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]: no lirc available
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]: Traceback (most recent call last):
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:   File ""/usr/local/bin/pypilot_lcd"", line 11, in <module>
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:     load_entry_point('pypilot==0.12', 'console_scripts', 'pypilot_lcd')()
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:   File ""/usr/local/lib/python3.7/dist-packages/pkg_resources/__init__.py"", line 489, in load_entry_point
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:     return get_distribution(dist).load_entry_point(group, name)
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:   File ""/usr/local/lib/python3.7/dist-packages/pkg_resources/__init__.py"", line 2852, in load_entry_point
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:     return ep.load()
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:   File ""/usr/local/lib/python3.7/dist-packages/pkg_resources/__init__.py"", line 2443, in load
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:     return self.resolve()
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:   File ""/usr/local/lib/python3.7/dist-packages/pkg_resources/__init__.py"", line 2449, in resolve
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:     module = __import__(self.module_name, fromlist=['__name__'], level=0)
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:   File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/lcd/lcd.py"", line 41, in <module>
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]:     from ugfx import ugfx
+Dec 29 18:26:56 openplotter pypilot_lcd[1198]: ModuleNotFoundError: No module named 'ugfx'
+Dec 29 18:26:56 openplotter systemd[1]: pypilot_lcd.service: Main process exited, code=exited, status=1/FAILURE
+Dec 29 18:26:56 openplotter systemd[1]: pypilot_lcd.service: Failed with result 'exit-code'.
+```",
+11,https://api.github.com/repos/pypilot/pypilot/issues/47,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/47/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/47/comments,https://api.github.com/repos/pypilot/pypilot/issues/47/events,https://github.com/pypilot/pypilot/issues/47,543134591,MDU6SXNzdWU1NDMxMzQ1OTE=,47,Boat not rendered in calibration window,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,3,2019-12-28 11:56:16+00:00,2020-02-07 16:35:51+00:00,2020-02-07 16:35:51+00:00,CONTRIBUTOR,,,"In RPi 4 opengl is enabled by default and I am getting this error in calibration window. pypilot is installed as python3 and pywavefront with pip3.
+Some users reported that the boat is rendered ok in RPi 3 where opengl is not enabled by default. Not tested.
+
+```
+failed to load pywavefront: expected string or bytes-like object
+
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/ui/autopilot_calibration.py"", line 381, in onSizeGLBoatPlot
+    self.boat_plot.reshape(event.GetSize().x, event.GetSize().y)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/ui/boatplot.py"", line 184, in reshape
+    glFrustum(-ar, ar, -0.5, 0.5, 2.0, 300.0)
+  File ""/usr/lib/python3/dist-packages/OpenGL/error.py"", line 232, in glCheckError
+    baseOperation = baseOperation,
+OpenGL.error.GLError: GLError(
+	err = 1281,
+	description = b'invalid value',
+	baseOperation = glFrustum,
+	cArguments = (-0.0, 0.0, -0.5, 0.5, 2.0, 300.0)
+)
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/ui/autopilot_calibration.py"", line 381, in onSizeGLBoatPlot
+    self.boat_plot.reshape(event.GetSize().x, event.GetSize().y)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/ui/boatplot.py"", line 184, in reshape
+    glFrustum(-ar, ar, -0.5, 0.5, 2.0, 300.0)
+  File ""/usr/lib/python3/dist-packages/OpenGL/error.py"", line 232, in glCheckError
+    baseOperation = baseOperation,
+OpenGL.error.GLError: GLError(
+	err = 1281,
+	description = b'invalid value',
+	baseOperation = glFrustum,
+	cArguments = (-0.0, 0.0, -0.5, 0.5, 2.0, 300.0)
+)
+```
+
+
+",
+12,https://api.github.com/repos/pypilot/pypilot/issues/46,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/46/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/46/comments,https://api.github.com/repos/pypilot/pypilot/issues/46/events,https://github.com/pypilot/pypilot/issues/46,543124089,MDU6SXNzdWU1NDMxMjQwODk=,46,tensorflow error,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-12-28 11:12:26+00:00,2020-02-07 16:36:25+00:00,2020-02-07 16:36:25+00:00,CONTRIBUTOR,,,"pypilot installed as python3 in RPi 4 and tensorflow with pip3. I get this error running pypilot_boatimu or pypilot:
+
+2019-12-28 11:05:11.977219: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+",
+13,https://api.github.com/repos/pypilot/pypilot/issues/45,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/45/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/45/comments,https://api.github.com/repos/pypilot/pypilot/issues/45/events,https://github.com/pypilot/pypilot/pull/45,543123025,MDExOlB1bGxSZXF1ZXN0MzU3NDQwOTEy,45,fix boatimu error,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-12-28 11:06:19+00:00,2020-01-09 12:03:34+00:00,2020-01-09 12:03:34+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/45', 'html_url': 'https://github.com/pypilot/pypilot/pull/45', 'diff_url': 'https://github.com/pypilot/pypilot/pull/45.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/45.patch'}","This change fixes this error:
+
+Traceback (most recent call last):
+  File ""/usr/local/bin/pypilot_boatimu"", line 11, in <module>
+    load_entry_point('pypilot==0.12', 'console_scripts', 'pypilot_boatimu')()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/pypilot/boatimu.py"", line 512, in main
+    boatimu = BoatIMUServer()
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/pypilot/boatimu.py"", line 490, in __init__
+    self.boatimu = BoatIMU(self.server)
+  File ""/usr/local/lib/python3.7/dist-packages/pypilot-0.12-py3.7-linux-armv7l.egg/pypilot/boatimu.py"", line 256, in __init__
+    self.period = 1.0/self.rate.value
+TypeError: unsupported operand type(s) for /: 'float' and 'str'",
+14,https://api.github.com/repos/pypilot/pypilot/issues/44,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/44/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/44/comments,https://api.github.com/repos/pypilot/pypilot/issues/44/events,https://github.com/pypilot/pypilot/pull/44,530756562,MDExOlB1bGxSZXF1ZXN0MzQ3MzQ1Nzc0,44,Add explicit config file location + rephrasing,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-12-01 16:24:22+00:00,2020-02-12 19:47:47+00:00,2020-02-12 19:47:47+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/44', 'html_url': 'https://github.com/pypilot/pypilot/pull/44', 'diff_url': 'https://github.com/pypilot/pypilot/pull/44.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/44.patch'}",,
+15,https://api.github.com/repos/pypilot/pypilot/issues/43,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/43/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/43/comments,https://api.github.com/repos/pypilot/pypilot/issues/43/events,https://github.com/pypilot/pypilot/pull/43,528960512,MDExOlB1bGxSZXF1ZXN0MzQ1OTI2MjEz,43,Pypilot and calibration ui adjust to make it useful on 800x480 screens,"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-11-26 20:40:42+00:00,2019-11-29 01:40:24+00:00,2019-11-29 01:40:24+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/43', 'html_url': 'https://github.com/pypilot/pypilot/pull/43', 'diff_url': 'https://github.com/pypilot/pypilot/pull/43.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/43.patch'}","Curent Master UI was not comfortable on 800x480 screens
+1) light changes in pypilot UI and Calibration windows sizes
+2) Adjusted elements sizes alignment calibration screen
+3) +50% increase size of the Boat in alignment calibration screen to make it better visible on the screen. Downside - sailboat mast top does not fit in the frame
+",
+16,https://api.github.com/repos/pypilot/pypilot/issues/42,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/42/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/42/comments,https://api.github.com/repos/pypilot/pypilot/issues/42/events,https://github.com/pypilot/pypilot/pull/42,528543539,MDExOlB1bGxSZXF1ZXN0MzQ1NTg0OTUx,42,"Driver type is now set at compile time, rather than run time","{'login': 'CapnKernel', 'id': 527149, 'node_id': 'MDQ6VXNlcjUyNzE0OQ==', 'avatar_url': 'https://avatars3.githubusercontent.com/u/527149?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/CapnKernel', 'html_url': 'https://github.com/CapnKernel', 'followers_url': 'https://api.github.com/users/CapnKernel/followers', 'following_url': 'https://api.github.com/users/CapnKernel/following{/other_user}', 'gists_url': 'https://api.github.com/users/CapnKernel/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/CapnKernel/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/CapnKernel/subscriptions', 'organizations_url': 'https://api.github.com/users/CapnKernel/orgs', 'repos_url': 'https://api.github.com/users/CapnKernel/repos', 'events_url': 'https://api.github.com/users/CapnKernel/events{/privacy}', 'received_events_url': 'https://api.github.com/users/CapnKernel/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,11,2019-11-26 07:36:15+00:00,2020-02-18 01:36:12+00:00,2020-02-18 01:36:11+00:00,NONE,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/42', 'html_url': 'https://github.com/pypilot/pypilot/pull/42', 'diff_url': 'https://github.com/pypilot/pypilot/pull/42.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/42.patch'}","Set DRIVER to the kind of driver you have.  Frees two pins that were
+used for run-time checking of driver type.",
+17,https://api.github.com/repos/pypilot/pypilot/issues/41,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/41/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/41/comments,https://api.github.com/repos/pypilot/pypilot/issues/41/events,https://github.com/pypilot/pypilot/pull/41,528494849,MDExOlB1bGxSZXF1ZXN0MzQ1NTQ1NDYz,41,Added missing backslash to fix wrong dead time when running at 4MHz,"{'login': 'CapnKernel', 'id': 527149, 'node_id': 'MDQ6VXNlcjUyNzE0OQ==', 'avatar_url': 'https://avatars3.githubusercontent.com/u/527149?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/CapnKernel', 'html_url': 'https://github.com/CapnKernel', 'followers_url': 'https://api.github.com/users/CapnKernel/followers', 'following_url': 'https://api.github.com/users/CapnKernel/following{/other_user}', 'gists_url': 'https://api.github.com/users/CapnKernel/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/CapnKernel/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/CapnKernel/subscriptions', 'organizations_url': 'https://api.github.com/users/CapnKernel/orgs', 'repos_url': 'https://api.github.com/users/CapnKernel/repos', 'events_url': 'https://api.github.com/users/CapnKernel/events{/privacy}', 'received_events_url': 'https://api.github.com/users/CapnKernel/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-11-26 05:20:31+00:00,2019-11-29 01:38:41+00:00,2019-11-29 01:38:41+00:00,NONE,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/41', 'html_url': 'https://github.com/pypilot/pypilot/pull/41', 'diff_url': 'https://github.com/pypilot/pypilot/pull/41.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/41.patch'}",Preprocessor was giving warning.,
+18,https://api.github.com/repos/pypilot/pypilot/issues/40,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/40/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/40/comments,https://api.github.com/repos/pypilot/pypilot/issues/40/events,https://github.com/pypilot/pypilot/pull/40,528494549,MDExOlB1bGxSZXF1ZXN0MzQ1NTQ1MjIw,40,Squash compiler warning about unused var for lock bits,"{'login': 'CapnKernel', 'id': 527149, 'node_id': 'MDQ6VXNlcjUyNzE0OQ==', 'avatar_url': 'https://avatars3.githubusercontent.com/u/527149?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/CapnKernel', 'html_url': 'https://github.com/CapnKernel', 'followers_url': 'https://api.github.com/users/CapnKernel/followers', 'following_url': 'https://api.github.com/users/CapnKernel/following{/other_user}', 'gists_url': 'https://api.github.com/users/CapnKernel/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/CapnKernel/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/CapnKernel/subscriptions', 'organizations_url': 'https://api.github.com/users/CapnKernel/orgs', 'repos_url': 'https://api.github.com/users/CapnKernel/repos', 'events_url': 'https://api.github.com/users/CapnKernel/events{/privacy}', 'received_events_url': 'https://api.github.com/users/CapnKernel/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-11-26 05:19:40+00:00,2019-11-29 01:36:32+00:00,2019-11-29 01:36:32+00:00,NONE,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/40', 'html_url': 'https://github.com/pypilot/pypilot/pull/40', 'diff_url': 'https://github.com/pypilot/pypilot/pull/40.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/40.patch'}",,
+19,https://api.github.com/repos/pypilot/pypilot/issues/39,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/39/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/39/comments,https://api.github.com/repos/pypilot/pypilot/issues/39/events,https://github.com/pypilot/pypilot/pull/39,527810958,MDExOlB1bGxSZXF1ZXN0MzQ0OTg4NjE0,39,Fix typos from errant search and replace rename,"{'login': 'CapnKernel', 'id': 527149, 'node_id': 'MDQ6VXNlcjUyNzE0OQ==', 'avatar_url': 'https://avatars3.githubusercontent.com/u/527149?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/CapnKernel', 'html_url': 'https://github.com/CapnKernel', 'followers_url': 'https://api.github.com/users/CapnKernel/followers', 'following_url': 'https://api.github.com/users/CapnKernel/following{/other_user}', 'gists_url': 'https://api.github.com/users/CapnKernel/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/CapnKernel/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/CapnKernel/subscriptions', 'organizations_url': 'https://api.github.com/users/CapnKernel/orgs', 'repos_url': 'https://api.github.com/users/CapnKernel/repos', 'events_url': 'https://api.github.com/users/CapnKernel/events{/privacy}', 'received_events_url': 'https://api.github.com/users/CapnKernel/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-11-25 02:43:36+00:00,2019-11-25 13:43:42+00:00,2019-11-25 13:43:42+00:00,NONE,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/39', 'html_url': 'https://github.com/pypilot/pypilot/pull/39', 'diff_url': 'https://github.com/pypilot/pypilot/pull/39.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/39.patch'}",,
+20,https://api.github.com/repos/pypilot/pypilot/issues/38,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/38/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/38/comments,https://api.github.com/repos/pypilot/pypilot/issues/38/events,https://github.com/pypilot/pypilot/pull/38,527646994,MDExOlB1bGxSZXF1ZXN0MzQ0ODcxMTcy,38,"make weathersensor code compilable, variable name misprint fix","{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-11-24 04:14:47+00:00,2019-11-25 13:44:26+00:00,2019-11-25 13:44:26+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/38', 'html_url': 'https://github.com/pypilot/pypilot/pull/38', 'diff_url': 'https://github.com/pypilot/pypilot/pull/38.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/38.patch'}",,
+21,https://api.github.com/repos/pypilot/pypilot/issues/37,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/37/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/37/comments,https://api.github.com/repos/pypilot/pypilot/issues/37/events,https://github.com/pypilot/pypilot/issues/37,527636985,MDU6SXNzdWU1Mjc2MzY5ODU=,37,Motor Driver - Code Style and Timers,"{'login': 'McNugget6750', 'id': 12099353, 'node_id': 'MDQ6VXNlcjEyMDk5MzUz', 'avatar_url': 'https://avatars0.githubusercontent.com/u/12099353?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/McNugget6750', 'html_url': 'https://github.com/McNugget6750', 'followers_url': 'https://api.github.com/users/McNugget6750/followers', 'following_url': 'https://api.github.com/users/McNugget6750/following{/other_user}', 'gists_url': 'https://api.github.com/users/McNugget6750/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/McNugget6750/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/McNugget6750/subscriptions', 'organizations_url': 'https://api.github.com/users/McNugget6750/orgs', 'repos_url': 'https://api.github.com/users/McNugget6750/repos', 'events_url': 'https://api.github.com/users/McNugget6750/events{/privacy}', 'received_events_url': 'https://api.github.com/users/McNugget6750/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,55,2019-11-24 02:01:46+00:00,2020-02-06 02:17:34+00:00,2019-12-15 22:37:28+00:00,NONE,,,"Hi there,
+
+I love how much work has been put into this all to make this work and open source.
+The whole day, I have been reading the Arduino code for the motor driver and added a ton of documentation, changed the layout a little bit and organized the code based on configuration and pin assignments as well as important stuff at the top and tools etc. at the bottom of the file.
+
+However, I wonder, why you are using all the AVR native functions and not the Arduino build in libraries. Is it really necessary to drive this at 60Hz? Is it really necessary to run certain things at exactly 30Hz? Or 50Hz? 
+Why did you decide to configure the code by using external jumpers if the code needs to be modified to fit ones needs anyways?
+
+I guess I would like to propose to make this a bit more modular. I want to implement compatibility with the [IBT 2 H-BRIDGE](http://www.robotpower.com/downloads/BTS7960_v1.1_2004-12-07.pdf). It's cheap and powerful but it needs[ two PWM ](https://www.handsontec.com/dataspecs/module/BTS7960%20Motor%20Driver.pdf)and two enable lines but it also provides two current sense / fault lines. Integrating this into your code seems incredibly complex as it requires detailed knowledge of the AVR timers. It looks like I can't just use analogWrite() to do this because you're running custom timers.
+
+If this code could be restructured to use #defines in a config.h to do the general configuration, a pins.h to do all pin assignments and remove all the #if 1 or #if 0 ... #endif stuff, and removal of all the custom timers, it would already help a lot. At present, without further documentation, I would love to rewrite all this to use standard Arduino functions instead of lowest level AVR code. I mean, who really uses a bare metal H-Bridge these days that would require all this in the first place?
+
+Please don't take this the wrong way! I know people are using and loving your work! And I'm here for a reason: I want to use OpenPlotter and PyPilot, too! However, in order to make this motor driver more modifiable, we need to clean up the code and write more documentation :)",
+22,https://api.github.com/repos/pypilot/pypilot/issues/36,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/36/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/36/comments,https://api.github.com/repos/pypilot/pypilot/issues/36/events,https://github.com/pypilot/pypilot/pull/36,527624939,MDExOlB1bGxSZXF1ZXN0MzQ0ODU1Njg2,36,fix crash in wind pilot in case if GPS is active,"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-11-23 23:45:12+00:00,2019-11-24 01:16:44+00:00,2019-11-24 01:16:44+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/36', 'html_url': 'https://github.com/pypilot/pypilot/pull/36', 'diff_url': 'https://github.com/pypilot/pypilot/pull/36.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/36.patch'}","I did not found ap.truewind at all - added true wind calculation from autopilot.py
+Maybe the better solution exist, but this seems work",
+23,https://api.github.com/repos/pypilot/pypilot/issues/35,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/35/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/35/comments,https://api.github.com/repos/pypilot/pypilot/issues/35/events,https://github.com/pypilot/pypilot/pull/35,527614841,MDExOlB1bGxSZXF1ZXN0MzQ0ODQ4NTQ3,35,fix privent tacking from crash pypilot server,"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-11-23 21:58:21+00:00,2019-11-23 22:54:54+00:00,2019-11-23 22:54:54+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/35', 'html_url': 'https://github.com/pypilot/pypilot/pull/35', 'diff_url': 'https://github.com/pypilot/pypilot/pull/35.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/35.patch'}",,
+24,https://api.github.com/repos/pypilot/pypilot/issues/34,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/34/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/34/comments,https://api.github.com/repos/pypilot/pypilot/issues/34/events,https://github.com/pypilot/pypilot/issues/34,521915479,MDU6SXNzdWU1MjE5MTU0Nzk=,34,Pypilot server starts but crashing ,"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2019-11-13 02:19:23+00:00,2019-11-24 03:31:38+00:00,2019-11-24 03:30:41+00:00,CONTRIBUTOR,,,"Pypilot setver starts but crashing after attempt to connect from Opencpn plugin or openplotter_pypilot
+
+
+raceback (most recent call last):
+  File ""/usr/local/bin/pypilot"", line 11, in <module>
+    load_entry_point('pypilot==0.10', 'console_scripts', 'pypilot')()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.10-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 471, in main
+    ap.run()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.10-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 282, in run
+    self.iteration()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.10-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 430, in iteration
+    pilot.process(reset) # implementation specific process
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.10-py2.7-linux-armv7l.egg/pypilot/pilots/basic.py"", line 86, in process
+    heading_command_diff = resolv(ap.heading_command.value - self.last_heading_command)
+NameError: global name 'resolv' is not defined
+
+Is this some issue on my setup?
+",
+25,https://api.github.com/repos/pypilot/pypilot/issues/33,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/33/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/33/comments,https://api.github.com/repos/pypilot/pypilot/issues/33/events,https://github.com/pypilot/pypilot/issues/33,520731060,MDU6SXNzdWU1MjA3MzEwNjA=,33,server crashing at start,"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,3,2019-11-11 04:18:05+00:00,2019-11-13 01:39:50+00:00,2019-11-13 01:39:49+00:00,CONTRIBUTOR,,,,
+26,https://api.github.com/repos/pypilot/pypilot/issues/32,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/32/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/32/comments,https://api.github.com/repos/pypilot/pypilot/issues/32/events,https://github.com/pypilot/pypilot/issues/32,515868396,MDU6SXNzdWU1MTU4NjgzOTY=,32,Pypilot server crashing - line452 'BoatIMU' has no attribute 'period',"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-11-01 02:11:10+00:00,2019-11-01 04:44:45+00:00,2019-11-01 04:44:45+00:00,CONTRIBUTOR,,,"https://github.com/pypilot/pypilot/blob/7a7ec702cc37786a16e59603dee06c851ce8a74f/pypilot/autopilot.py#L452
+likely instead of  BoatIMU.period has to be self.boatimu.period",
+27,https://api.github.com/repos/pypilot/pypilot/issues/31,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/31/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/31/comments,https://api.github.com/repos/pypilot/pypilot/issues/31/events,https://github.com/pypilot/pypilot/issues/31,509080790,MDU6SXNzdWU1MDkwODA3OTA=,31,weathersensors.ino is not buildable ,"{'login': 'partyvi', 'id': 10502231, 'node_id': 'MDQ6VXNlcjEwNTAyMjMx', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10502231?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/partyvi', 'html_url': 'https://github.com/partyvi', 'followers_url': 'https://api.github.com/users/partyvi/followers', 'following_url': 'https://api.github.com/users/partyvi/following{/other_user}', 'gists_url': 'https://api.github.com/users/partyvi/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/partyvi/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/partyvi/subscriptions', 'organizations_url': 'https://api.github.com/users/partyvi/orgs', 'repos_url': 'https://api.github.com/users/partyvi/repos', 'events_url': 'https://api.github.com/users/partyvi/events{/privacy}', 'received_events_url': 'https://api.github.com/users/partyvi/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-10-18 13:28:06+00:00,2019-11-27 01:37:34+00:00,2019-11-27 01:37:34+00:00,CONTRIBUTOR,,,"master 4bc6203e7fddb257d0de93c09bde1bceace1065f (current for 10/18/2019)
+previous commit is ok. 
+
+
+
+obj/weathersensors.ino.cpp:426:68: error: cannot convert 'eeprom_data_struct' to 'void*' for argument '1' to 'void* memcpy(void*, const void*, size_t)'
+             memcpy(eeprom_data, new_eeprom_data, sizeof eeprom_data);
+                                                                    ^
+In file included from obj/weathersensors.ino.cpp:28:0:
+obj/weathersensors.ino.cpp:431:51: error: 'ram_data' was not declared in this scope
+             if(abs(eeprom_data.wind_max_reading - ram_data.wind_max_reading) > 20 || abs(eeprom_data.wind_min_reading - ram_data.wind_min_reading) > 20)
+                                                   ^
+/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:66:18: note: in definition of macro 'abs'
+ #define abs(x) ((x)>0?(x):-(x))
+                  ^
+obj/weathersensors.ino.cpp:475:13: warning: unused variable 'noise' [-Wunused-variable]
+         int noise = 0;
+             ^
+Makefile:66: recipe for target 'obj/weathersensors.o' failed
+make: *** [obj/weathersensors.o] Error 1
+",
+28,https://api.github.com/repos/pypilot/pypilot/issues/30,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/30/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/30/comments,https://api.github.com/repos/pypilot/pypilot/issues/30/events,https://github.com/pypilot/pypilot/issues/30,493770450,MDU6SXNzdWU0OTM3NzA0NTA=,30,MPU-9250 not detected,"{'login': 'gaultierq', 'id': 2511429, 'node_id': 'MDQ6VXNlcjI1MTE0Mjk=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/2511429?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/gaultierq', 'html_url': 'https://github.com/gaultierq', 'followers_url': 'https://api.github.com/users/gaultierq/followers', 'following_url': 'https://api.github.com/users/gaultierq/following{/other_user}', 'gists_url': 'https://api.github.com/users/gaultierq/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/gaultierq/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/gaultierq/subscriptions', 'organizations_url': 'https://api.github.com/users/gaultierq/orgs', 'repos_url': 'https://api.github.com/users/gaultierq/repos', 'events_url': 'https://api.github.com/users/gaultierq/events{/privacy}', 'received_events_url': 'https://api.github.com/users/gaultierq/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,9,2019-09-15 18:29:51+00:00,2019-11-29 01:40:50+00:00,2019-11-29 01:40:50+00:00,NONE,,,"Running `python pypilot/boatimu.py` with a MPU-9250 plugged gives me _No IMU detected_, even though `sudo i2cdetect -y 1` finds it on 0x68.
+Moreover the output of 
+`watch -n.1 python gyro.py`
+gives me some confidence that the MPU is healthy.
+
+[gyro.py](https://tutorials-raspberrypi.com/measuring-rotation-and-acceleration-raspberry-pi/)",
+29,https://api.github.com/repos/pypilot/pypilot/issues/29,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/29/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/29/comments,https://api.github.com/repos/pypilot/pypilot/issues/29/events,https://github.com/pypilot/pypilot/pull/29,490781581,MDExOlB1bGxSZXF1ZXN0MzE1MjkzMjAx,29,fix error when running pypilot_boatimu,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2019-09-08 17:40:00+00:00,2019-11-12 14:18:04+00:00,2019-11-12 14:18:04+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/29', 'html_url': 'https://github.com/pypilot/pypilot/pull/29', 'diff_url': 'https://github.com/pypilot/pypilot/pull/29.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/29.patch'}","this was the error:
+
+```
+ERROR loading simple.py No module named pilots.simple
+ERROR loading learning.py No module named pilots.learning
+ERROR loading wind.py No module named pilots.wind
+ERROR loading basic.py No module named pilots.basic
+Traceback (most recent call last):
+  File ""/usr/local/bin/pypilot_boatimu"", line 11, in <module>
+    load_entry_point('pypilot==0.9', 'console_scripts', 'pypilot_boatimu')()
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 489, in load_entry_point
+    return get_distribution(dist).load_entry_point(group, name)
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 2793, in load_entry_point
+    return ep.load()
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 2411, in load
+    return self.resolve()
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 2417, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/pypilot/boatimu.py"", line 20, in <module>
+    import autopilot
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 182, in <module>
+    import pilots
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/pypilot/pilots/__init__.py"", line 16, in <module>
+    default += [simple.SimplePilot, basic.BasicPilot, learning.LearningPilot, wind.WindPilot]
+NameError: name 'simple' is not defined
+```",
+30,https://api.github.com/repos/pypilot/pypilot/issues/28,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/28/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/28/comments,https://api.github.com/repos/pypilot/pypilot/issues/28/events,https://github.com/pypilot/pypilot/pull/28,488511076,MDExOlB1bGxSZXF1ZXN0MzEzNTE1NjA4,28,Update nmea.py try:,"{'login': 'rmvdmr', 'id': 54627771, 'node_id': 'MDQ6VXNlcjU0NjI3Nzcx', 'avatar_url': 'https://avatars0.githubusercontent.com/u/54627771?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/rmvdmr', 'html_url': 'https://github.com/rmvdmr', 'followers_url': 'https://api.github.com/users/rmvdmr/followers', 'following_url': 'https://api.github.com/users/rmvdmr/following{/other_user}', 'gists_url': 'https://api.github.com/users/rmvdmr/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/rmvdmr/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/rmvdmr/subscriptions', 'organizations_url': 'https://api.github.com/users/rmvdmr/orgs', 'repos_url': 'https://api.github.com/users/rmvdmr/repos', 'events_url': 'https://api.github.com/users/rmvdmr/events{/privacy}', 'received_events_url': 'https://api.github.com/users/rmvdmr/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-09-03 10:04:25+00:00,2019-09-03 12:50:55+00:00,2019-09-03 12:50:55+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/28', 'html_url': 'https://github.com/pypilot/pypilot/pull/28', 'diff_url': 'https://github.com/pypilot/pypilot/pull/28.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/28.patch'}",forgot :,
+31,https://api.github.com/repos/pypilot/pypilot/issues/27,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/27/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/27/comments,https://api.github.com/repos/pypilot/pypilot/issues/27/events,https://github.com/pypilot/pypilot/issues/27,487124521,MDU6SXNzdWU0ODcxMjQ1MjE=,27,syntax error,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-08-29 19:00:23+00:00,2019-09-03 13:07:21+00:00,2019-09-03 13:07:21+00:00,CONTRIBUTOR,,,"https://github.com/pypilot/pypilot/blob/f0ad106e88d826be0b2a915ed6e4a14d8a3a0155/pypilot/nmea.py#L159
+
+It should be `try:`",
+32,https://api.github.com/repos/pypilot/pypilot/issues/26,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/26/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/26/comments,https://api.github.com/repos/pypilot/pypilot/issues/26/events,https://github.com/pypilot/pypilot/pull/26,486356526,MDExOlB1bGxSZXF1ZXN0MzExODI4NjA4,26,GPAPB with empty data will crash NMEA communication,"{'login': 'rmvdmr', 'id': 54627771, 'node_id': 'MDQ6VXNlcjU0NjI3Nzcx', 'avatar_url': 'https://avatars0.githubusercontent.com/u/54627771?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/rmvdmr', 'html_url': 'https://github.com/rmvdmr', 'followers_url': 'https://api.github.com/users/rmvdmr/followers', 'following_url': 'https://api.github.com/users/rmvdmr/following{/other_user}', 'gists_url': 'https://api.github.com/users/rmvdmr/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/rmvdmr/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/rmvdmr/subscriptions', 'organizations_url': 'https://api.github.com/users/rmvdmr/orgs', 'repos_url': 'https://api.github.com/users/rmvdmr/repos', 'events_url': 'https://api.github.com/users/rmvdmr/events{/privacy}', 'received_events_url': 'https://api.github.com/users/rmvdmr/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-08-28 12:39:04+00:00,2019-08-29 19:00:47+00:00,2019-08-28 18:16:34+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/26', 'html_url': 'https://github.com/pypilot/pypilot/pull/26', 'diff_url': 'https://github.com/pypilot/pypilot/pull/26.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/26.patch'}",As (Garmin) plotters produce GPAPB with empty data when no active waypoint it will crash nmea communication by doing a float on an empty string without try except. With RMC and MWV there is a try except only on APB it is missing.,
+33,https://api.github.com/repos/pypilot/pypilot/issues/25,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/25/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/25/comments,https://api.github.com/repos/pypilot/pypilot/issues/25/events,https://github.com/pypilot/pypilot/issues/25,485310231,MDU6SXNzdWU0ODUzMTAyMzE=,25,boat not rendered in calibration window,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,4,2019-08-26 15:56:00+00:00,2019-11-29 01:42:10+00:00,2019-11-29 01:42:10+00:00,CONTRIBUTOR,,,"Running Raspbian Buster in RPi4 I get this error:
+
+```
+failed to load pywavefront: glXSwapIntervalMESA is not exported by the available OpenGL driver.  MESA_swap_control is required for this functionality.
+
+Traceback (most recent call last):
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/ui/autopilot_calibration.py"", line 443, in onSizeGLBoatPlot
+    self.boat_plot.reshape(event.GetSize().x, event.GetSize().y)
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/ui/boatplot.py"", line 183, in reshape
+    glFrustum(-ar, ar, -0.5, 0.5, 2.0, 300.0)
+  File ""/usr/lib/python2.7/dist-packages/OpenGL/error.py"", line 232, in glCheckError
+    baseOperation = baseOperation,
+OpenGL.error.GLError: GLError(
+	err = 1281,
+	description = 'invalid value',
+	baseOperation = glFrustum,
+	cArguments = (-0.0, 0.0, -0.5, 0.5, 2.0, 300.0)
+)
+Traceback (most recent call last):
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/ui/autopilot_calibration.py"", line 443, in onSizeGLBoatPlot
+    self.boat_plot.reshape(event.GetSize().x, event.GetSize().y)
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.9-py2.7-linux-armv7l.egg/ui/boatplot.py"", line 183, in reshape
+    glFrustum(-ar, ar, -0.5, 0.5, 2.0, 300.0)
+  File ""/usr/lib/python2.7/dist-packages/OpenGL/error.py"", line 232, in glCheckError
+    baseOperation = baseOperation,
+OpenGL.error.GLError: GLError(
+	err = 1281,
+	description = 'invalid value',
+	baseOperation = glFrustum,
+	cArguments = (-0.0, 0.0, -0.5, 0.5, 2.0, 300.0)
+)
+```
+
+
+OpenGL is enabled by default in RPi4.
+
+I have found this, it may help:
+https://www.mail-archive.com/pyglet-users@googlegroups.com/msg11142.html
+",
+34,https://api.github.com/repos/pypilot/pypilot/issues/24,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/24/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/24/comments,https://api.github.com/repos/pypilot/pypilot/issues/24/events,https://github.com/pypilot/pypilot/issues/24,485284604,MDU6SXNzdWU0ODUyODQ2MDQ=,24,error installing,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-08-26 15:02:34+00:00,2019-08-30 18:21:47+00:00,2019-08-30 18:21:47+00:00,CONTRIBUTOR,,,"```
+File ""build/bdist.linux-armv7l/egg/pypilot/servo.py"", line 600
+    if result & ServoTelemetry.EEPROM && self.use_eeprom.value: # occurs only once after connecting
+                                       ^
+SyntaxError: invalid syntax
+```
+Replacing && by & removes the error.
+",
+35,https://api.github.com/repos/pypilot/pypilot/issues/23,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/23/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/23/comments,https://api.github.com/repos/pypilot/pypilot/issues/23/events,https://github.com/pypilot/pypilot/issues/23,435752567,MDU6SXNzdWU0MzU3NTI1Njc=,23,Webapp Basic/Simple/Learning selection not filtering Gain choices.,"{'login': 'gvaughan67', 'id': 13668499, 'node_id': 'MDQ6VXNlcjEzNjY4NDk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/13668499?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/gvaughan67', 'html_url': 'https://github.com/gvaughan67', 'followers_url': 'https://api.github.com/users/gvaughan67/followers', 'following_url': 'https://api.github.com/users/gvaughan67/following{/other_user}', 'gists_url': 'https://api.github.com/users/gvaughan67/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/gvaughan67/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/gvaughan67/subscriptions', 'organizations_url': 'https://api.github.com/users/gvaughan67/orgs', 'repos_url': 'https://api.github.com/users/gvaughan67/repos', 'events_url': 'https://api.github.com/users/gvaughan67/events{/privacy}', 'received_events_url': 'https://api.github.com/users/gvaughan67/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,3,2019-04-22 14:44:30+00:00,2019-05-21 14:41:49+00:00,2019-05-21 14:41:49+00:00,NONE,,,"What I believe is an attempt to filter for the most important Gains and reduce clutter actually results in an even larger list of Gains onscreen (D.basic D. learning etc)
+
+Unless I've misunderstood the purpose of this select list, perhaps choices would better be labeled differently:
+
+quick start, basic, advanced?
+
+Or could use ""more"" and ""less"" to expand the list. 
+
+
+
+
+
+",
+36,https://api.github.com/repos/pypilot/pypilot/issues/22,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/22/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/22/comments,https://api.github.com/repos/pypilot/pypilot/issues/22/events,https://github.com/pypilot/pypilot/issues/22,435749337,MDU6SXNzdWU0MzU3NDkzMzc=,22,Webapp Gains are not saved (or aren't reflected visually upon refresh),"{'login': 'gvaughan67', 'id': 13668499, 'node_id': 'MDQ6VXNlcjEzNjY4NDk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/13668499?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/gvaughan67', 'html_url': 'https://github.com/gvaughan67', 'followers_url': 'https://api.github.com/users/gvaughan67/followers', 'following_url': 'https://api.github.com/users/gvaughan67/following{/other_user}', 'gists_url': 'https://api.github.com/users/gvaughan67/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/gvaughan67/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/gvaughan67/subscriptions', 'organizations_url': 'https://api.github.com/users/gvaughan67/orgs', 'repos_url': 'https://api.github.com/users/gvaughan67/repos', 'events_url': 'https://api.github.com/users/gvaughan67/events{/privacy}', 'received_events_url': 'https://api.github.com/users/gvaughan67/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-04-22 14:35:37+00:00,2019-04-26 22:14:55+00:00,2019-04-26 22:14:55+00:00,NONE,,,"I am not sure if it is just the slider position visually that doensn't keep, but the gains don't seem to be kept when adjusted from the webapp. ",
+37,https://api.github.com/repos/pypilot/pypilot/issues/21,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/21/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/21/comments,https://api.github.com/repos/pypilot/pypilot/issues/21/events,https://github.com/pypilot/pypilot/issues/21,435748723,MDU6SXNzdWU0MzU3NDg3MjM=,21,Webapp doesn't refresh to show when engaged,"{'login': 'gvaughan67', 'id': 13668499, 'node_id': 'MDQ6VXNlcjEzNjY4NDk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/13668499?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/gvaughan67', 'html_url': 'https://github.com/gvaughan67', 'followers_url': 'https://api.github.com/users/gvaughan67/followers', 'following_url': 'https://api.github.com/users/gvaughan67/following{/other_user}', 'gists_url': 'https://api.github.com/users/gvaughan67/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/gvaughan67/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/gvaughan67/subscriptions', 'organizations_url': 'https://api.github.com/users/gvaughan67/orgs', 'repos_url': 'https://api.github.com/users/gvaughan67/repos', 'events_url': 'https://api.github.com/users/gvaughan67/events{/privacy}', 'received_events_url': 'https://api.github.com/users/gvaughan67/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2019-04-22 14:34:01+00:00,2019-04-26 22:08:55+00:00,2019-04-26 22:08:55+00:00,NONE,,,"The sliding button on the webapp does not show that it has changed (turn green, etc) when tapped. The page must be refreshed. 
+
+This same problem effects usability of the app in many areas. 
+
+Running Openplotter with latest Pypilot from Github. Browser on iOS, Android, and Openplotter. ",
+38,https://api.github.com/repos/pypilot/pypilot/issues/20,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/20/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/20/comments,https://api.github.com/repos/pypilot/pypilot/issues/20/events,https://github.com/pypilot/pypilot/pull/20,430093911,MDExOlB1bGxSZXF1ZXN0MjY4MDc0MzMz,20,Update the web_app README,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-04-07 01:29:36+00:00,2019-04-07 01:46:34+00:00,2019-04-07 01:46:34+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/20', 'html_url': 'https://github.com/pypilot/pypilot/pull/20', 'diff_url': 'https://github.com/pypilot/pypilot/pull/20.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/20.patch'}","Document the option to provide the port number as first argument 
++ making the readme sexy (formating for markdown)
+",
+39,https://api.github.com/repos/pypilot/pypilot/issues/19,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/19/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/19/comments,https://api.github.com/repos/pypilot/pypilot/issues/19/events,https://github.com/pypilot/pypilot/issues/19,430093415,MDU6SXNzdWU0MzAwOTM0MTU=,19,NameError: name 'filename' is not defined,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-04-07 01:21:50+00:00,2019-04-07 01:54:45+00:00,2019-04-07 01:54:45+00:00,CONTRIBUTOR,,,"When starting pypilot_webapp from the CLI, if no port is specified as first argument. It seem to be looking for a file but I don't see what should be defining the file name., or what should be the filename. 
+
+In anycase, instead of using the default value defined at line 16. It crash:
+
+
+```
+Traceback (most recent call last):
+  File ""/usr/local/bin/pypilot_webapp"", line 11, in <module>
+    load_entry_point('pypilot==0.2', 'console_scripts', 'pypilot_webapp')()
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 561, in load_entry_point
+    return get_distribution(dist).load_entry_point(group, name)
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 2631, in load_entry_point
+    return ep.load()
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 2291, in load
+    return self.resolve()
+  File ""/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py"", line 2297, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/webapp/webapp.py"", line 20, in <module>
+    file = open(filename, 'r')
+NameError: name 'filename' is not defined
+```",
+40,https://api.github.com/repos/pypilot/pypilot/issues/18,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/18/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/18/comments,https://api.github.com/repos/pypilot/pypilot/issues/18/events,https://github.com/pypilot/pypilot/issues/18,430092940,MDU6SXNzdWU0MzAwOTI5NDA=,18,compass.png not found,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2019-04-07 01:13:19+00:00,2019-04-08 21:09:44+00:00,2019-04-07 01:56:03+00:00,CONTRIBUTOR,,,"When running pypilot_calibration I get the following warning: 
+
+` compass.png not found, texture compass cannot be used `
+
+I guess the file is expected to be provided by my OS ?  ",
+41,https://api.github.com/repos/pypilot/pypilot/issues/17,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/17/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/17/comments,https://api.github.com/repos/pypilot/pypilot/issues/17/events,https://github.com/pypilot/pypilot/pull/17,430088513,MDExOlB1bGxSZXF1ZXN0MjY4MDcwNzgx,17,Missing wiringpi depedency in the README,"{'login': 'FredericGuilbault', 'id': 37122999, 'node_id': 'MDQ6VXNlcjM3MTIyOTk5', 'avatar_url': 'https://avatars0.githubusercontent.com/u/37122999?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/FredericGuilbault', 'html_url': 'https://github.com/FredericGuilbault', 'followers_url': 'https://api.github.com/users/FredericGuilbault/followers', 'following_url': 'https://api.github.com/users/FredericGuilbault/following{/other_user}', 'gists_url': 'https://api.github.com/users/FredericGuilbault/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/FredericGuilbault/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/FredericGuilbault/subscriptions', 'organizations_url': 'https://api.github.com/users/FredericGuilbault/orgs', 'repos_url': 'https://api.github.com/users/FredericGuilbault/repos', 'events_url': 'https://api.github.com/users/FredericGuilbault/events{/privacy}', 'received_events_url': 'https://api.github.com/users/FredericGuilbault/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2019-04-06 23:54:31+00:00,2019-04-07 01:47:37+00:00,2019-04-07 01:47:37+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/17', 'html_url': 'https://github.com/pypilot/pypilot/pull/17', 'diff_url': 'https://github.com/pypilot/pypilot/pull/17.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/17.patch'}",,
+42,https://api.github.com/repos/pypilot/pypilot/issues/16,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/16/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/16/comments,https://api.github.com/repos/pypilot/pypilot/issues/16/events,https://github.com/pypilot/pypilot/issues/16,421854897,MDU6SXNzdWU0MjE4NTQ4OTc=,16,pypilot is crashing when servo.rudder value is transmitted to nmea,"{'login': 'smoothfroggy', 'id': 6676610, 'node_id': 'MDQ6VXNlcjY2NzY2MTA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/6676610?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/smoothfroggy', 'html_url': 'https://github.com/smoothfroggy', 'followers_url': 'https://api.github.com/users/smoothfroggy/followers', 'following_url': 'https://api.github.com/users/smoothfroggy/following{/other_user}', 'gists_url': 'https://api.github.com/users/smoothfroggy/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/smoothfroggy/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/smoothfroggy/subscriptions', 'organizations_url': 'https://api.github.com/users/smoothfroggy/orgs', 'repos_url': 'https://api.github.com/users/smoothfroggy/repos', 'events_url': 'https://api.github.com/users/smoothfroggy/events{/privacy}', 'received_events_url': 'https://api.github.com/users/smoothfroggy/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-03-16 21:34:19+00:00,2019-03-17 18:07:37+00:00,2019-03-17 18:07:37+00:00,NONE,,,"Pypilot is crashing when servo rudder data (servo.rudder) is present in signalK stream from arduino motor driver.
+
+Rough observations:
+  - nmea class from nmea.py does not appear to have 'rudder' attribute expected by lines 370 & 371:
+>     self.rudder.source.update('servo')
+>     self.rudder.angle.update(value)
+  - val does not seem to appear as expected by the code in line 372:
+>     self.handle_messages({'rudder': val}, 'servo')
+
+*********************************
+Log and traceback (launching pypilot through terminal):
+loading servo calibration /home/pi/.pypilot/servocalibration
+WARNING: using default servo calibration!!
+warning: failed to open special file /dev/watchdog0 for writing
+         cannot stroke the watchdog
+connected to gpsd
+Settings file not found. Using defaults and creating settings file
+Failed to open settings file for saveUsing settings file RTIMULib.ini
+Detected MPU9250/MPU9255 at standard address
+Failed to open settings file for saveUsing fusion algorithm Kalman STATE4
+IMU Name: MPU-925x
+min/max compass calibration not in use
+Using ellipsoid compass calibration
+Using accel calibration
+nmea poll times 0.144361019135 1.71661376953e-05 1.38282775879e-05 3.09944152832e-06 3.91006469727e-05
+nmea is running too _slowly_ 0.14456987381
+MPU-925x init complete
+serial reserve /dev/ttyOP_gps
+nmea source for gps source gpsd 1552770457.79
+arduino servo found on [u'/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AH06SD0U-if00-port0', 38400]
+serialprobe success: /home/pi/.pypilot/servodevice [u'/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AH06SD0U-if00-port0', 38400]
+nmea client connected
+listening on port 20220 for nmea connections
+Traceback (most recent call last):
+  File ""/usr/local/bin/pypilot"", line 11, in <module>
+    load_entry_point('pypilot==0.2', 'console_scripts', 'pypilot')()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 424, in main
+    ap.run()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 232, in run
+    self.iteration()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/pypilot/autopilot.py"", line 397, in iteration
+    self.nmea.poll()
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/pypilot/nmea.py"", line 370, in poll
+    self.rudder.source.update('servo')
+AttributeError: 'Nmea' object has no attribute 'rudder'
+",
+43,https://api.github.com/repos/pypilot/pypilot/issues/15,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/15/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/15/comments,https://api.github.com/repos/pypilot/pypilot/issues/15/events,https://github.com/pypilot/pypilot/issues/15,413532125,MDU6SXNzdWU0MTM1MzIxMjU=,15,pypilot_calibration not starting up,"{'login': 'W-Geronius', 'id': 18160302, 'node_id': 'MDQ6VXNlcjE4MTYwMzAy', 'avatar_url': 'https://avatars3.githubusercontent.com/u/18160302?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/W-Geronius', 'html_url': 'https://github.com/W-Geronius', 'followers_url': 'https://api.github.com/users/W-Geronius/followers', 'following_url': 'https://api.github.com/users/W-Geronius/following{/other_user}', 'gists_url': 'https://api.github.com/users/W-Geronius/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/W-Geronius/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/W-Geronius/subscriptions', 'organizations_url': 'https://api.github.com/users/W-Geronius/orgs', 'repos_url': 'https://api.github.com/users/W-Geronius/repos', 'events_url': 'https://api.github.com/users/W-Geronius/events{/privacy}', 'received_events_url': 'https://api.github.com/users/W-Geronius/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,11,2019-02-22 18:51:09+00:00,2019-04-11 19:07:24+00:00,2019-02-27 00:10:28+00:00,NONE,,,"Hello,
+I am getting this error when I try to calibrate my moitessier hat sensors (as seen in openplotter debug window) - Mode 'IMU only'
+
+> `failed to load pywavefront: invalid syntax (obj.py, line 403)
+Traceback (most recent call last):  
+
+>  File ""/usr/local/bin/pypilot_calibration"", line 11, in <module>
+    load_entry_point('pypilot==0.2', 'console_scripts', 'pypilot_calibration')()  
+
+>  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/ui/autopilot_calibration.py"", line 472, in main  CalibrationDialog().ShowModal()  
+
+>  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/ui/autopilot_calibration.py"", line 30, in __init__    super(CalibrationDialog, self).__init__(None)  
+
+>  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.2-py2.7-linux-armv7l.egg/ui/autopilot_control_ui.py"", line 268, in __init__    self.m_panel4.Layout()  
+
+>  File ""/usr/lib/python2.7/dist-packages/wx-3.0-gtk2/wx/_core.py"", line 11496, in Layout
+    return _core_.Window_Layout(*args, **kwargs)
+wx._core.PyAssertionError: C++ assertion ""m_widget"" failed at ../src/gtk/window.cpp(2831) in DoSetSize(): invalid window` 
+
+it is the same error message I see when starting interactively via command pypilot_calibration
+
+Please advise what to do
+Thank you
+Michael",
+44,https://api.github.com/repos/pypilot/pypilot/issues/14,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/14/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/14/comments,https://api.github.com/repos/pypilot/pypilot/issues/14/events,https://github.com/pypilot/pypilot/issues/14,395046598,MDU6SXNzdWUzOTUwNDY1OTg=,14,Website Down,"{'login': 'johngroves', 'id': 10951009, 'node_id': 'MDQ6VXNlcjEwOTUxMDA5', 'avatar_url': 'https://avatars1.githubusercontent.com/u/10951009?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/johngroves', 'html_url': 'https://github.com/johngroves', 'followers_url': 'https://api.github.com/users/johngroves/followers', 'following_url': 'https://api.github.com/users/johngroves/following{/other_user}', 'gists_url': 'https://api.github.com/users/johngroves/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/johngroves/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/johngroves/subscriptions', 'organizations_url': 'https://api.github.com/users/johngroves/orgs', 'repos_url': 'https://api.github.com/users/johngroves/repos', 'events_url': 'https://api.github.com/users/johngroves/events{/privacy}', 'received_events_url': 'https://api.github.com/users/johngroves/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2019-01-01 01:03:44+00:00,2019-02-26 23:55:50+00:00,2019-02-26 23:55:50+00:00,NONE,,,"Hi,
+
+I just found this project and noticed the website is down, is development still active?
+
+Best,
+John",
+45,https://api.github.com/repos/pypilot/pypilot/issues/13,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/13/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/13/comments,https://api.github.com/repos/pypilot/pypilot/issues/13/events,https://github.com/pypilot/pypilot/issues/13,389996861,MDU6SXNzdWUzODk5OTY4NjE=,13,Need some clarification on formula,"{'login': 'dmdelorme', 'id': 6747900, 'node_id': 'MDQ6VXNlcjY3NDc5MDA=', 'avatar_url': 'https://avatars3.githubusercontent.com/u/6747900?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/dmdelorme', 'html_url': 'https://github.com/dmdelorme', 'followers_url': 'https://api.github.com/users/dmdelorme/followers', 'following_url': 'https://api.github.com/users/dmdelorme/following{/other_user}', 'gists_url': 'https://api.github.com/users/dmdelorme/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/dmdelorme/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/dmdelorme/subscriptions', 'organizations_url': 'https://api.github.com/users/dmdelorme/orgs', 'repos_url': 'https://api.github.com/users/dmdelorme/repos', 'events_url': 'https://api.github.com/users/dmdelorme/events{/privacy}', 'received_events_url': 'https://api.github.com/users/dmdelorme/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2018-12-11 23:20:08+00:00,2018-12-25 20:28:09+00:00,2018-12-25 20:28:09+00:00,NONE,,,"Hi i an just tweaking some stuff on my code.
+What var lpdir for
+https://github.com/pypilot/pypilot/blob/2053992f959ee28ea05b52ddea0e5b462d6b4f8b/arduino/weathersensors/weathersensors.ino#L296 What does this function do?
+lpdir does not have a value so are you not just getting 0 back?
+",
+46,https://api.github.com/repos/pypilot/pypilot/issues/12,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/12/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/12/comments,https://api.github.com/repos/pypilot/pypilot/issues/12/events,https://github.com/pypilot/pypilot/issues/12,384946946,MDU6SXNzdWUzODQ5NDY5NDY=,12,void read_anenometer() issue,"{'login': 'dmdelorme', 'id': 6747900, 'node_id': 'MDQ6VXNlcjY3NDc5MDA=', 'avatar_url': 'https://avatars3.githubusercontent.com/u/6747900?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/dmdelorme', 'html_url': 'https://github.com/dmdelorme', 'followers_url': 'https://api.github.com/users/dmdelorme/followers', 'following_url': 'https://api.github.com/users/dmdelorme/following{/other_user}', 'gists_url': 'https://api.github.com/users/dmdelorme/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/dmdelorme/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/dmdelorme/subscriptions', 'organizations_url': 'https://api.github.com/users/dmdelorme/orgs', 'repos_url': 'https://api.github.com/users/dmdelorme/repos', 'events_url': 'https://api.github.com/users/dmdelorme/events{/privacy}', 'received_events_url': 'https://api.github.com/users/dmdelorme/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,6,2018-11-27 19:18:44+00:00,2018-11-29 11:34:49+00:00,2018-11-29 11:34:49+00:00,NONE,,,"I am having trouble getting proper lpdir...
+
+```
+`read_anenometer(){``
+> 
+>   ` //Serial.println(lpdir); //good expected value
+  if (dt >= 100) { // output every 100ms  
+    last_time += 100;
+    //Serial.println(lpdir); //bad`strange value
+.......
+  }
+//Serial.println(lpdir); //good expected value
+}
+```
+the reading for speed is fine but the direction is all messed up in the output loop I am confused?",
+47,https://api.github.com/repos/pypilot/pypilot/issues/11,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/11/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/11/comments,https://api.github.com/repos/pypilot/pypilot/issues/11/events,https://github.com/pypilot/pypilot/pull/11,369309950,MDExOlB1bGxSZXF1ZXN0MjIyMjgzNDQ1,11,Implement volts/amps correction by offset and gain compensation.,"{'login': 'stelian42', 'id': 548364, 'node_id': 'MDQ6VXNlcjU0ODM2NA==', 'avatar_url': 'https://avatars2.githubusercontent.com/u/548364?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/stelian42', 'html_url': 'https://github.com/stelian42', 'followers_url': 'https://api.github.com/users/stelian42/followers', 'following_url': 'https://api.github.com/users/stelian42/following{/other_user}', 'gists_url': 'https://api.github.com/users/stelian42/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/stelian42/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/stelian42/subscriptions', 'organizations_url': 'https://api.github.com/users/stelian42/orgs', 'repos_url': 'https://api.github.com/users/stelian42/repos', 'events_url': 'https://api.github.com/users/stelian42/events{/privacy}', 'received_events_url': 'https://api.github.com/users/stelian42/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,6,2018-10-11 21:21:09+00:00,2019-05-21 07:30:49+00:00,2018-11-27 22:17:06+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/11', 'html_url': 'https://github.com/pypilot/pypilot/pull/11', 'diff_url': 'https://github.com/pypilot/pypilot/pull/11.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/11.patch'}","The offset and gain values are stored in EEPROM and can be modified
+by the clients using special codes.
+
+In addition, a few other parameters (max controller temp,
+max motor temp, rudder range, max slew) are also stored in EEPROM
+making the controller safe even if no client is connected.",
+48,https://api.github.com/repos/pypilot/pypilot/issues/10,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/10/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/10/comments,https://api.github.com/repos/pypilot/pypilot/issues/10/events,https://github.com/pypilot/pypilot/pull/10,368828525,MDExOlB1bGxSZXF1ZXN0MjIxOTE0Mzc3,10,Implement ADC correction by offset and gain compensation.,"{'login': 'stelian42', 'id': 548364, 'node_id': 'MDQ6VXNlcjU0ODM2NA==', 'avatar_url': 'https://avatars2.githubusercontent.com/u/548364?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/stelian42', 'html_url': 'https://github.com/stelian42', 'followers_url': 'https://api.github.com/users/stelian42/followers', 'following_url': 'https://api.github.com/users/stelian42/following{/other_user}', 'gists_url': 'https://api.github.com/users/stelian42/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/stelian42/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/stelian42/subscriptions', 'organizations_url': 'https://api.github.com/users/stelian42/orgs', 'repos_url': 'https://api.github.com/users/stelian42/repos', 'events_url': 'https://api.github.com/users/stelian42/events{/privacy}', 'received_events_url': 'https://api.github.com/users/stelian42/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,6,2018-10-10 19:59:48+00:00,2018-10-11 21:21:35+00:00,2018-10-11 21:21:35+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/10', 'html_url': 'https://github.com/pypilot/pypilot/pull/10', 'diff_url': 'https://github.com/pypilot/pypilot/pull/10.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/10.patch'}",The offset and gain values are stored in EEPROM.,
+49,https://api.github.com/repos/pypilot/pypilot/issues/9,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/9/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/9/comments,https://api.github.com/repos/pypilot/pypilot/issues/9/events,https://github.com/pypilot/pypilot/pull/9,368288702,MDExOlB1bGxSZXF1ZXN0MjIxNTAwNzU5,9,Arduino fixes,"{'login': 'stelian42', 'id': 548364, 'node_id': 'MDQ6VXNlcjU0ODM2NA==', 'avatar_url': 'https://avatars2.githubusercontent.com/u/548364?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/stelian42', 'html_url': 'https://github.com/stelian42', 'followers_url': 'https://api.github.com/users/stelian42/followers', 'following_url': 'https://api.github.com/users/stelian42/following{/other_user}', 'gists_url': 'https://api.github.com/users/stelian42/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/stelian42/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/stelian42/subscriptions', 'organizations_url': 'https://api.github.com/users/stelian42/orgs', 'repos_url': 'https://api.github.com/users/stelian42/repos', 'events_url': 'https://api.github.com/users/stelian42/events{/privacy}', 'received_events_url': 'https://api.github.com/users/stelian42/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,0,2018-10-09 16:12:35+00:00,2018-10-10 06:26:45+00:00,2018-10-09 23:38:56+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/9', 'html_url': 'https://github.com/pypilot/pypilot/pull/9', 'diff_url': 'https://github.com/pypilot/pypilot/pull/9.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/9.patch'}",,
+50,https://api.github.com/repos/pypilot/pypilot/issues/8,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/8/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/8/comments,https://api.github.com/repos/pypilot/pypilot/issues/8/events,https://github.com/pypilot/pypilot/issues/8,339221820,MDU6SXNzdWUzMzkyMjE4MjA=,8,Crash when no imu is connected,"{'login': 'Fixh1', 'id': 17511161, 'node_id': 'MDQ6VXNlcjE3NTExMTYx', 'avatar_url': 'https://avatars0.githubusercontent.com/u/17511161?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/Fixh1', 'html_url': 'https://github.com/Fixh1', 'followers_url': 'https://api.github.com/users/Fixh1/followers', 'following_url': 'https://api.github.com/users/Fixh1/following{/other_user}', 'gists_url': 'https://api.github.com/users/Fixh1/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/Fixh1/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/Fixh1/subscriptions', 'organizations_url': 'https://api.github.com/users/Fixh1/orgs', 'repos_url': 'https://api.github.com/users/Fixh1/repos', 'events_url': 'https://api.github.com/users/Fixh1/events{/privacy}', 'received_events_url': 'https://api.github.com/users/Fixh1/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2018-07-08 12:26:12+00:00,2018-08-02 14:48:27+00:00,2018-08-02 14:48:26+00:00,NONE,,,"I am still waiting for an IMU, so am testing without it. but I encountered a bug there...
+in 
+/usr/local/lib/python2.7/site/packages/lcd/client.py
+the error message in fittext :
+""compass or gyro failure!""
+is not processed correctly 
+
+The client.py crashes and restarts, 
+the log file says:
+
+2018-06-11_20:34:06.74833 fittext ERROR
+2018-06-11_20:34:06.74837 compass or gyro failure! True 0
+2018-06-11_20:34:06.74865 Traceback (most recent call last):
+2018-06-11_20:34:06.74893   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 1236, in <module>
+2018-06-11_20:34:06.75153     main()
+2018-06-11_20:34:06.75209   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 1233, in main
+2018-06-11_20:34:06.75784     idle()
+2018-06-11_20:34:06.75845   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 1194, in idle
+2018-06-11_20:34:06.76091     lcdclient.display()
+2018-06-11_20:34:06.76147   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 903, in display
+2018-06-11_20:34:06.76409     self.display_page()
+2018-06-11_20:34:06.76468   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 661, in display_control
+2018-06-11_20:34:06.76621     self.fittext(r, _('ERROR\ncompass or gyro failure!'), True, black)
+2018-06-11_20:34:06.76678   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 463, in fittext
+2018-06-11_20:34:06.76797     metrics = map(lambda word : (word, font.draw(self.surface, False, word, metric_size, self.bw)), words)
+2018-06-11_20:34:06.76854   File ""/usr/local/lib/python2.7/site-packages/lcd/client.py"", line 463, in <lambda>
+2018-06-11_20:34:06.76977     metrics = map(lambda word : (word, font.draw(self.surface, False, word, metric_size, self.bw)), words)
+2018-06-11_20:34:06.77031   File ""/usr/local/lib/python2.7/site-packages/lcd/font.py"", line 60, in draw
+2018-06-11_20:34:06.77085     font[c] = create_character(os.path.abspath(os.path.dirname(__file__)) + ""/font.ttf"", size, c, surface.bypp, crop, bw)
+2018-06-11_20:34:06.77139   File ""/usr/local/lib/python2.7/site-packages/lcd/font.py"", line 85, in create_character
+2018-06-11_20:34:06.77192     ifont = ImageFont.truetype(fontpath, size)
+2018-06-11_20:34:06.77244   File ""/usr/local/lib/python2.7/site-packages/PIL/ImageFont.py"", line 239, in truetype
+2018-06-11_20:34:06.77332     return FreeTypeFont(font, size, index, encoding)
+2018-06-11_20:34:06.77438   File ""/usr/local/lib/python2.7/site-packages/PIL/ImageFont.py"", line 128, in __init__
+2018-06-11_20:34:06.77503     self.font = core.getfont(font, size, index, encoding)
+2018-06-11_20:34:06.77570 IOError: cannot open resource
+~
+
+I am running the image of 18062018",
+51,https://api.github.com/repos/pypilot/pypilot/issues/7,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/7/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/7/comments,https://api.github.com/repos/pypilot/pypilot/issues/7/events,https://github.com/pypilot/pypilot/issues/7,337016739,MDU6SXNzdWUzMzcwMTY3Mzk=,7,Typo? Engauged should be Engaged,"{'login': 'Fixh1', 'id': 17511161, 'node_id': 'MDQ6VXNlcjE3NTExMTYx', 'avatar_url': 'https://avatars0.githubusercontent.com/u/17511161?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/Fixh1', 'html_url': 'https://github.com/Fixh1', 'followers_url': 'https://api.github.com/users/Fixh1/followers', 'following_url': 'https://api.github.com/users/Fixh1/following{/other_user}', 'gists_url': 'https://api.github.com/users/Fixh1/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/Fixh1/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/Fixh1/subscriptions', 'organizations_url': 'https://api.github.com/users/Fixh1/orgs', 'repos_url': 'https://api.github.com/users/Fixh1/repos', 'events_url': 'https://api.github.com/users/Fixh1/events{/privacy}', 'received_events_url': 'https://api.github.com/users/Fixh1/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2018-06-29 14:18:13+00:00,2018-07-26 03:49:46+00:00,2018-07-26 03:49:46+00:00,NONE,,,"Hi,
+You use the word engauged quit a lot in your code (and displayed messages) but shouldn't this be engaged?
+I'm not native English but every time I see it it itches a little bit.
+:-)",
+52,https://api.github.com/repos/pypilot/pypilot/issues/6,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/6/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/6/comments,https://api.github.com/repos/pypilot/pypilot/issues/6/events,https://github.com/pypilot/pypilot/issues/6,332893094,MDU6SXNzdWUzMzI4OTMwOTQ=,6,Doesn't compile for Windows - Json,"{'login': 'rgleason', 'id': 2363959, 'node_id': 'MDQ6VXNlcjIzNjM5NTk=', 'avatar_url': 'https://avatars1.githubusercontent.com/u/2363959?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/rgleason', 'html_url': 'https://github.com/rgleason', 'followers_url': 'https://api.github.com/users/rgleason/followers', 'following_url': 'https://api.github.com/users/rgleason/following{/other_user}', 'gists_url': 'https://api.github.com/users/rgleason/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/rgleason/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/rgleason/subscriptions', 'organizations_url': 'https://api.github.com/users/rgleason/orgs', 'repos_url': 'https://api.github.com/users/rgleason/repos', 'events_url': 'https://api.github.com/users/rgleason/events{/privacy}', 'received_events_url': 'https://api.github.com/users/rgleason/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,3,2018-06-15 19:42:49+00:00,2018-06-18 14:04:49+00:00,2018-06-18 14:04:48+00:00,NONE,,,"
+
+""C:\Users\Rick\Documents\GitHub\pypilot_pi\build\ALL_BUILD.vcxproj"" (default target) (1) ->
+""C:\Users\Rick\Documents\GitHub\pypilot_pi\build\pypilot_pi.vcxproj"" (default target) (3) ->
+(ClCompile target) ->
+  C:\Users\Rick\Documents\GitHub\pypilot_pi\src\jsoncpp\json_value.cpp(665): error C2668: 'Json::va
+lueToString' : ambiguous call to overloaded function [C:\Users\Rick\Documents\GitHub\pypilot_pi\bui
+ld\pypilot_pi.vcxproj]
+  C:\Users\Rick\Documents\GitHub\pypilot_pi\src\jsoncpp\json_writer.cpp(382): error C2668: 'Json::v
+alueToString' : ambiguous call to overloaded function [C:\Users\Rick\Documents\GitHub\pypilot_pi\bu
+ild\pypilot_pi.vcxproj]
+  C:\Users\Rick\Documents\GitHub\pypilot_pi\src\jsoncpp\json_writer.cpp(452): error C2668: 'Json::v
+alueToString' : ambiguous call to overloaded function [C:\Users\Rick\Documents\GitHub\pypilot_pi\bu
+ild\pypilot_pi.vcxproj]
+  C:\Users\Rick\Documents\GitHub\pypilot_pi\src\jsoncpp\json_writer.cpp(670): error C2668: 'Json::v
+alueToString' : ambiguous call to overloaded function [C:\Users\Rick\Documents\GitHub\pypilot_pi\bu
+ild\pypilot_pi.vcxproj]
+
+    8 Warning(s)
+    4 Error(s)
+",
+53,https://api.github.com/repos/pypilot/pypilot/issues/5,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/5/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/5/comments,https://api.github.com/repos/pypilot/pypilot/issues/5/events,https://github.com/pypilot/pypilot/issues/5,318059041,MDU6SXNzdWUzMTgwNTkwNDE=,5,What about adding your windshield wiper motor to the mix?,"{'login': 'rgleason', 'id': 2363959, 'node_id': 'MDQ6VXNlcjIzNjM5NTk=', 'avatar_url': 'https://avatars1.githubusercontent.com/u/2363959?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/rgleason', 'html_url': 'https://github.com/rgleason', 'followers_url': 'https://api.github.com/users/rgleason/followers', 'following_url': 'https://api.github.com/users/rgleason/following{/other_user}', 'gists_url': 'https://api.github.com/users/rgleason/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/rgleason/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/rgleason/subscriptions', 'organizations_url': 'https://api.github.com/users/rgleason/orgs', 'repos_url': 'https://api.github.com/users/rgleason/repos', 'events_url': 'https://api.github.com/users/rgleason/events{/privacy}', 'received_events_url': 'https://api.github.com/users/rgleason/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2018-04-26 14:37:36+00:00,2018-05-02 00:08:38+00:00,2018-05-02 00:08:38+00:00,NONE,,,In the documentation.,
+54,https://api.github.com/repos/pypilot/pypilot/issues/4,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/4/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/4/comments,https://api.github.com/repos/pypilot/pypilot/issues/4/events,https://github.com/pypilot/pypilot/issues/4,288363509,MDU6SXNzdWUyODgzNjM1MDk=,4,Need more details for Arduino,"{'login': 'dmdelorme', 'id': 6747900, 'node_id': 'MDQ6VXNlcjY3NDc5MDA=', 'avatar_url': 'https://avatars3.githubusercontent.com/u/6747900?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/dmdelorme', 'html_url': 'https://github.com/dmdelorme', 'followers_url': 'https://api.github.com/users/dmdelorme/followers', 'following_url': 'https://api.github.com/users/dmdelorme/following{/other_user}', 'gists_url': 'https://api.github.com/users/dmdelorme/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/dmdelorme/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/dmdelorme/subscriptions', 'organizations_url': 'https://api.github.com/users/dmdelorme/orgs', 'repos_url': 'https://api.github.com/users/dmdelorme/repos', 'events_url': 'https://api.github.com/users/dmdelorme/events{/privacy}', 'received_events_url': 'https://api.github.com/users/dmdelorme/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,1,2018-01-13 22:06:29+00:00,2018-01-19 21:55:18+00:00,2018-01-19 21:55:18+00:00,NONE,,,"I would like to build a controller but never used a Arduino. 
+I would like more details on type of arduino, type of shunt, ECS and ESC driver. A few close ups would be nice.
+I am hopping to bypass the Controller on my Marine pilot 1600.
+",
+55,https://api.github.com/repos/pypilot/pypilot/issues/3,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/3/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/3/comments,https://api.github.com/repos/pypilot/pypilot/issues/3/events,https://github.com/pypilot/pypilot/issues/3,263732533,MDU6SXNzdWUyNjM3MzI1MzM=,3,Calibration error,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2017-10-08 16:59:30+00:00,2017-10-12 10:16:55+00:00,2017-10-12 10:16:55+00:00,CONTRIBUTOR,,,"I have updated pypilot with the last changes and I get this error when calibrating with MPU-9255
+
+len 2
+len 2
+len 3
+len 4
+len 5
+len 6
+FitPoints 6
+sphere bias fit [15.891722827491156, 13.55440349266639, 22.169804683109746, 30]
+sphere fit [13.732123991027981, 14.216547016259632, -7.1043097324847055, 53.27526643071052]
+new bias fit [13.982396574152586, 14.2876672366296, -5.1514629021533693, 51.48872485599539, 0.905202140279608] 64.8505217286
+fit [[13.982396574152586, 14.2876672366296, -5.1514629021533693, 51.48872485599539, 0.905202140279608], [15.891722827491156, 13.55440349266639, 22.169804683109746, 30], [13.732123991027981, 14.216547016259632, -7.1043097324847055, 53.27526643071052], [13.732123991027981, 14.216547016259632, -7.1043097324847055, 53.27526643071052, 1, 1]]
+bias update only
+Process Process-2:
+Traceback (most recent call last):
+  File ""/usr/lib/python2.7/multiprocessing/process.py"", line 258, in _bootstrap
+    self.run()
+  File ""/usr/lib/python2.7/multiprocessing/process.py"", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/usr/local/lib/python2.7/dist-packages/pypilot-0.1-py2.7-linux-armv7l.egg/pypilot/calibration_fit.py"", line 314, in CalibrationProcess
+    print 'coverage', coverage, 'new fit:', fit, 'sphere bias difference', sbd
+UnboundLocalError: local variable 'sbd' referenced before assignment
+coverage 177.673247975 new fit: [[15.891722827491156, 13.55440349266639, 22.169804683109746, 30], [15.891722827491156, 13.55440349266639, 22.169804683109746, 30], [13.732123991027981, 14.216547016259632, -7.1043097324847055, 53.27526643071052], [13.732123991027981, 14.216547016259632, -7.1043097324847055, 53.27526643071052, 1, 1]] sphere bias differencepipe full (1) points pipe[1] cannot send
+pipe full (10) points pipe[1] cannot send
+pipe full (100) points pipe[1] cannot send
+",
+56,https://api.github.com/repos/pypilot/pypilot/issues/2,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/2/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/2/comments,https://api.github.com/repos/pypilot/pypilot/issues/2/events,https://github.com/pypilot/pypilot/pull/2,253123373,MDExOlB1bGxSZXF1ZXN0MTM3ODEyMzQ3,2,fix syntax error and update dependencies in README,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,2,2017-08-26 21:16:39+00:00,2017-08-27 09:37:16+00:00,2017-08-26 21:23:15+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/2', 'html_url': 'https://github.com/pypilot/pypilot/pull/2', 'diff_url': 'https://github.com/pypilot/pypilot/pull/2.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/2.patch'}",,
+57,https://api.github.com/repos/pypilot/pypilot/issues/1,https://api.github.com/repos/pypilot/pypilot,https://api.github.com/repos/pypilot/pypilot/issues/1/labels{/name},https://api.github.com/repos/pypilot/pypilot/issues/1/comments,https://api.github.com/repos/pypilot/pypilot/issues/1/events,https://github.com/pypilot/pypilot/pull/1,245124090,MDExOlB1bGxSZXF1ZXN0MTMyMDgyNTcw,1,add pypilot_calibration entry point,"{'login': 'sailoog', 'id': 8145560, 'node_id': 'MDQ6VXNlcjgxNDU1NjA=', 'avatar_url': 'https://avatars2.githubusercontent.com/u/8145560?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/sailoog', 'html_url': 'https://github.com/sailoog', 'followers_url': 'https://api.github.com/users/sailoog/followers', 'following_url': 'https://api.github.com/users/sailoog/following{/other_user}', 'gists_url': 'https://api.github.com/users/sailoog/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/sailoog/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/sailoog/subscriptions', 'organizations_url': 'https://api.github.com/users/sailoog/orgs', 'repos_url': 'https://api.github.com/users/sailoog/repos', 'events_url': 'https://api.github.com/users/sailoog/events{/privacy}', 'received_events_url': 'https://api.github.com/users/sailoog/received_events', 'type': 'User', 'site_admin': False}",[],closed,False,,[],,4,2017-07-24 15:47:02+00:00,2017-08-16 23:21:08+00:00,2017-08-16 23:21:08+00:00,CONTRIBUTOR,,"{'url': 'https://api.github.com/repos/pypilot/pypilot/pulls/1', 'html_url': 'https://github.com/pypilot/pypilot/pull/1', 'diff_url': 'https://github.com/pypilot/pypilot/pull/1.diff', 'patch_url': 'https://github.com/pypilot/pypilot/pull/1.patch'}",,
