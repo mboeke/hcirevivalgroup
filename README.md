@@ -21,10 +21,6 @@ b) CPS code changes & bugs have a specific taxonomy, which should be useful to d
 
 The approach to create the taxonomy is the following: first, several GitHub repositories of CPS are collected. The repositories should be actively maintained (or at some point) and should have between 100 and 3000 commits. This lead us to a total of 12 repositories. Then, two scripts are created commit_gatherer.py and Issue_gatherer.ipynb to collect issues and commits from our selected GitHub repos and store them in .csv format. Afterwards, the taxonomy is defined and a random sample from the commits of the repositories is created. The commits in the sample are then classified according to our taxonomy using the revers_commit_search.py script to compare the changes.
 
-```bash
-scripts
-```
-
 ## Usage
 In order to use our mining and sampling methods perform the following steps.
 1. First you have to define a list of public GitHub repositories you want to mine. Save all those repositories in an CSV file in the same as this example: [repositories.csv](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/repositories.csv).
