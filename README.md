@@ -30,7 +30,10 @@ In order to use our mining and sampling methods perform the following steps.
 5. The next step is to manually analyse the extracted code snippets and classify them based on the taxonomy provided in the "Taxonomy" tap of the [Results of example classification](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/HCIRevivalGroup%20Classification%20of%20Commit%20Changes.xlsx).
 
 ## Use Projects' Results in Bug Prediction
--to be added-
+The future goal of the project is that bugs in commits for CPS can be predicted. In order to do so a ML pipeline will be set up, that uses the result of the bug classification that was described before. With the data that is already available one can try to build a model wheter a change is a particular change type. But the model gets far more useful when it can predict what change type a given change is. Therefore we aim to have a multiclass classification model instead of a binary classification model. In order to build such a model the following improvements of the data is recommended:
+1. More data: Currently there are 100 classified datapoints and 49 different change types the future system should be able to predict. In order to build a good model there should be at least some dozens of examples for every change type.
+2. Higher quality: In order to classify such an amount of data, there should be clear guidelines how to label them. Different people might classify the same example differently. In order to avoid this it is proposed to establish clear guidlines with criteria on how to derive a certain label.
+3. More features: The current dataset contains information about the commit, such as the commit message. The model to be build will probably perform better if this data is further preprocessed or additional data can be used. We recommend to either do some NLP and sentiment analysis on the commit messages or build use some tool like change distllier to provide the model with information about the actual code change.
 
 ### Additonal Resources
 - [Midterm Presentation](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/SoftMain_HCIRevivalGroup_Change%20Analysis%20%26%20Bug%20Detection%20for%20CPS%20Dev_MidtermPresentation.pdf)
