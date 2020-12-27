@@ -15,7 +15,11 @@ The main focus of the project is to specify a taxonomy specifically for CPS code
 a) to understand how bugs/code changes affect CPS 
 b) to specify and categorize significant and behavioral CPS code changes and
 c) to recognize critical changes affecting the behavior of functionality.
-The approach to create the taxonomy is the following: first, several GitHub repositories of CPS are collected. Then, two scripts are created MENTION SCRIPTS to collect issues and commits from our selected GitHub repos and store them in .csv format. Finally, the issues and commits are combined with the timestamp and commitID
+We formulated the following hypothesis:
+a) Categorization of CPS code changes & bugs is feasible
+b) CPS code changes & bugs have a specific taxonomy, which should be useful to design models for CPS and eventually feed it into ML to predict types of behavioral changes & failures.
+
+The approach to create the taxonomy is the following: first, several GitHub repositories of CPS are collected. The repositories should be actively maintained (or at some point) and should have between 100 and 3000 commits. This lead us to a total of 12 repositories. Then, two scripts are created commit_gatherer.py and Issue_gatherer.ipynb to collect issues and commits from our selected GitHub repos and store them in .csv format. Afterwards, the taxonomy is defined and a random sample from the commits of the repositories is created. The commits in the sample are then classified according to our taxonomy using the revers_commit_search.py script to compare the changes.
 
 ```bash
 scripts
