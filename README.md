@@ -37,6 +37,6 @@ The future goal of the project is that bugs in commits for CPS can be predicted.
 
 ### Additonal Resources
 - [Midterm Presentation](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/SoftMain_HCIRevivalGroup_Change%20Analysis%20%26%20Bug%20Detection%20for%20CPS%20Dev_MidtermPresentation.pdf)
-- Final Presentation: LINK
+- [Final Presentation](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/SoftMain_HCIRevivalGroup_Change%20Analysis%20%26%20Bug%20Detection%20for%20CPS%20Dev_Final.pdf)
 - [GitHub repositories used for example classification](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/HCI%20Revival%20Group%20Notes.pdf)
 - [Results of example classification](https://github.com/mboeke/hcirevivalgroup/blob/main/Additional%20Resources/HCIRevivalGroup%20Classification%20of%20Commit%20Changes.xlsx)
